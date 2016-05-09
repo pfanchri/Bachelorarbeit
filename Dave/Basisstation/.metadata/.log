@@ -8879,3 +8879,42 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 12:48:19.737
 !MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 13:00:50.734
+!MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 13:00:58.793
+!MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 13:01:08.780
+!MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 13:01:30.644
+!MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 13:02:20.622
+!MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 13:02:26.412
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 13:02:26.413
+!MESSAGE 
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 13:02:31.971
+!MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 13:03:11.233
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 13:03:11.233
+!MESSAGE 
+
+!ENTRY org.eclipse.ui 4 4 2016-05-09 13:03:26.427
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.ProjectsView.
+
+!ENTRY org.eclipse.ui 4 4 2016-05-09 13:03:26.960
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.ProjectsView.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 13:03:45.978
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 13:03:45.978
+!MESSAGE 

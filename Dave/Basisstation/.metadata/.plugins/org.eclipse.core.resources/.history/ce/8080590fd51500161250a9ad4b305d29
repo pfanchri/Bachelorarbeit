@@ -32,7 +32,7 @@ int main(void)
 
   //if(status == DAVE_STATUS_FAILURE)
 
-	led_blink( 1,  500000 );
+
 
   /* Placeholder for user application code. The while loop below can be replaced with user application code. */
   while(1U)
