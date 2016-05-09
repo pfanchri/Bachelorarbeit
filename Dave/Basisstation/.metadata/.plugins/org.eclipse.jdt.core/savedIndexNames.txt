@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\org.eclipse.jdt.core
