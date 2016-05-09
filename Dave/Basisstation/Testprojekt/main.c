@@ -24,6 +24,15 @@ void led_blink(uint8_t led, int freq ){
 	    for(int j=0; j<freq; j++ ) XMC_GPIO_SetOutputLow(XMC_GPIO_PORT1, led);
 	}
 }
+
+uint8_t wait_for_button_pressed(void){
+	while(1){
+		if(XMC_GPIO_GetInput(XMC_GPIO_PORT1, 14 )==0) return 1;
+		if(XMC_GPIO_GetInput(XMC_GPIO_PORT1, 15 )==0) return 0;
+	}
+
+}
+
 int main(void)
 {
   // DAVE_STATUS_t status;
@@ -32,7 +41,7 @@ int main(void)
 
   //if(status == DAVE_STATUS_FAILURE)
 
-	led_blink( 1,  500000 );
+	led_blink( wait_for_button_pressed(),  500000 );
 
   /* Placeholder for user application code. The while loop below can be replaced with user application code. */
   while(1U)
