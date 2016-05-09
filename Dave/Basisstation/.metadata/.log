@@ -8648,3 +8648,234 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2016-05-09 12:16:04.656
 !MESSAGE Indexed 'Testprojekt' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 12:16:56.533
+!MESSAGE Resource '/test' does not exist.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:24:29.653
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:24:29.653
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:24:38.607
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:24:38.607
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:24:49.926
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:24:49.926
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:25:13.604
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:25:13.604
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:25:35.411
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:25:35.411
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:28:12.452
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:28:12.452
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:28:32.189
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:28:32.189
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:28:50.003
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:28:50.003
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:29:15.472
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:29:15.472
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:30:47.212
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:30:47.212
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:33:35.467
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:33:35.467
+!MESSAGE 
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 12:33:45.904
+!MESSAGE *************Saving EMF data into file system*******************
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 12:33:45.926
+!MESSAGE *************Saving Groovy data into file system*******************
+
+!ENTRY COMMON 1 0 2016-05-09 12:33:45.949
+!MESSAGE Time Taken By Serialization  : 20 ms :: D:\Bachelorarbeit\Dave\Basisstation\Testprojekt\Dave\Model\projectData.bin
+
+!ENTRY SOLVER 1 0 2016-05-09 12:33:45.953
+!MESSAGE Solver exited (0)
+
+!ENTRY SOLVER 1 0 2016-05-09 12:33:46.212
+!MESSAGE USER_ACTION : Solver Status: DISCONNECTED
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 12:33:46.223
+!MESSAGE ****************Cleaning project data:Testprojekt*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:33:46.335
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 383 msec 
+!SESSION 2016-05-09 12:34:10.235 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_DE
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2016-05-09 12:34:13.083
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-05-09 12:34:13.083
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:34:17.978
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 5 msec 
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-09 12:34:18.041
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-09 12:34:18.044
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\student06'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:34:18.176
+!MESSAGE USER_ACTION : Active project:Testprojekt
+
+!ENTRY COMMON 1 0 2016-05-09 12:34:18.664
+!MESSAGE Time Taken By De-Serialization  : 104 ms :: D:\Bachelorarbeit\Dave\Basisstation\Testprojekt\Dave\Model\projectData.bin
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 12:34:18.669
+!MESSAGE *************Serializing EMF and Groovy data to RAM*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:34:18.697
+!MESSAGE USER_ACTION : Time taken for initializing Application Model is: 521 msec 
+
+!ENTRY APPSTORE 1 0 2016-05-09 12:34:18.915
+!MESSAGE USER_ACTION : Time taken for initializing data from AppStore is: 213 msec 
+
+!ENTRY SOLVER 1 0 2016-05-09 12:34:19.139
+!MESSAGE USER_ACTION : Library store ECO file :C:\Users\student06\Infineon\D_LibraryStore_4.1\resources\XMC4.5.00.F100.ALL\device\xmc4500\0\MANIFEST\solver_data\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-05-09 12:34:19.236
+!MESSAGE USER_ACTION : Copied ECO file to temp location :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-05-09 12:34:19.394
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-05-09 12:34:19.409
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-05-09 12:34:19.414
+!MESSAGE USER_ACTION : GlobalSize= 750MB; LocalSize: 128MB
+
+!ENTRY SOLVER 1 0 2016-05-09 12:34:19.417
+!MESSAGE USER_ACTION : Creating OutOfProcessEclipse instance...
+
+!ENTRY SOLVER 1 0 2016-05-09 12:34:19.825
+!MESSAGE USER_ACTION : Solver Status: CONNECTED
+
+!ENTRY SOLVER 1 0 2016-05-09 12:34:21.836
+!MESSAGE USER_ACTION : Loaded ECO file :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:34:22.399
+!MESSAGE USER_ACTION : Time taken by SolverManager is: 3481 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:34:22.420
+!MESSAGE USER_ACTION : Time taken for updating AddAppDialog is: 18 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:34:22.424
+!MESSAGE USER_ACTION : Time taken for updating views is: 1 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:34:22.960
+!MESSAGE USER_ACTION : Time taken for rendering views is: 531 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 12:34:23.729
+!MESSAGE Only One DAVE Application is running 
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 12:34:23.791
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/Examples/XMC_IFX/v4.1//daveSite.xml
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 12:34:24.150
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/XMC_IFX/v4.1//daveSite.xml
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 12:34:24.916
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/Contributed/v4.1//daveSite.xml
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:34:40.430
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:34:40.430
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:34:59.898
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:34:59.898
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:35:24.587
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:35:24.588
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:37:55.691
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:37:55.691
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:38:17.576
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:38:17.576
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:40:35.130
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:40:35.130
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:42:11.510
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:42:11.510
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:42:15.738
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:42:15.738
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:42:17.625
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:42:17.625
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:42:21.759
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 103 2016-05-09 12:42:21.759
+!MESSAGE 
+
+!ENTRY org.eclipse.ui 4 4 2016-05-09 12:42:52.798
+!MESSAGE Conflicting handlers for org.eclipse.debug.ui.commands.DebugLast: {ActionDelegateHandlerProxy(null,org.eclipse.debug.internal.ui.actions.DebugLastAction)} vs {ActionDelegateHandlerProxy(null,com.dave.activeproject.ui.actions.ActiveProjDebugLastAction)}
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 12:43:25.442
+!MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-09 12:48:19.737
+!MESSAGE Debug session 'Testprojekt Debug (1)' already started. Terminate the first one before restarting.

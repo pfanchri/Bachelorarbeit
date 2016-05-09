@@ -202,3 +202,20 @@ INFO:
 End of solver : getSolution() :  Difference in ms 478
 
 
+May 09, 2016 12:34:21 PM java.util.logging.LogManager$RootLogger log
+INFO: Start of solver :getSolution() : Mon May 09 12:34:21 CEST 2016
+
+
+May 09, 2016 12:34:21 PM java.util.logging.LogManager$RootLogger log
+INFO: 
+timeout(solve_mapping_problem([ 
+reserved([p,1,pad,0],'digital_io$01238362304$0'),
+reserved([devicepackage,0,79],'digital_io$0567432502$0')
+ ],Vars,Regs,Appslocalvars),15,writeln(timeout),all_solution, Timer, Due, Remainder).
+
+
+May 09, 2016 12:34:22 PM java.util.logging.LogManager$RootLogger log
+INFO: 
+End of solver : getSolution() :  Difference in ms 537
+
+
