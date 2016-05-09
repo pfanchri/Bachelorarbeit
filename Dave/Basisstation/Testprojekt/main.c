@@ -14,13 +14,12 @@ void led_blink(uint8_t led, int freq ){
 	//takes number of LED and letts them blink
 	//freq is Frequency of the LED,
 
-	if(led>1 ||led<0) return;
+	if(led>1 ||led<0) return; //check input
 	  XMC_GPIO_SetMode(XMC_GPIO_PORT1, led, XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
-	    XMC_GPIO_SetOutputHigh(XMC_GPIO_PORT1, led);
+	  XMC_GPIO_SetOutputHigh(XMC_GPIO_PORT1, led);	//set as output; set output high
 
 	while (1){
 	    for(int i=0; i<freq; i++ ) XMC_GPIO_SetOutputHigh(XMC_GPIO_PORT1, led);
-
 	    for(int j=0; j<freq; j++ ) XMC_GPIO_SetOutputLow(XMC_GPIO_PORT1, led);
 	}
 }

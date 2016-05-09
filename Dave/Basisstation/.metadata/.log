@@ -9005,3 +9005,231 @@ Caused by: org.eclipse.swt.SWTException: Device is disposed
 	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:709)
 	at org.eclipse.cdt.dsf.ui.concurrent.SimpleDisplayExecutor.execute(SimpleDisplayExecutor.java:77)
 	... 15 more
+!SESSION 2016-05-09 13:48:58.881 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_DE
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2016-05-09 13:49:02.651
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-05-09 13:49:02.651
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:08.208
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 6 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:08.612
+!MESSAGE USER_ACTION : Active project:Testprojekt
+
+!ENTRY COMMON 1 0 2016-05-09 13:49:09.078
+!MESSAGE Time Taken By De-Serialization  : 106 ms :: D:\Bachelorarbeit\Dave\Basisstation\Testprojekt\Dave\Model\projectData.bin
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 13:49:09.086
+!MESSAGE *************Serializing EMF and Groovy data to RAM*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:09.114
+!MESSAGE USER_ACTION : Time taken for initializing Application Model is: 503 msec 
+
+!ENTRY APPSTORE 1 0 2016-05-09 13:49:09.355
+!MESSAGE USER_ACTION : Time taken for initializing data from AppStore is: 235 msec 
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:09.549
+!MESSAGE USER_ACTION : Library store ECO file :C:\Users\student06\Infineon\D_LibraryStore_4.1\resources\XMC4.5.00.F100.ALL\device\xmc4500\0\MANIFEST\solver_data\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:09.586
+!MESSAGE USER_ACTION : Copied ECO file to temp location :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:09.743
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:09.749
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:09.754
+!MESSAGE USER_ACTION : GlobalSize= 750MB; LocalSize: 128MB
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:09.758
+!MESSAGE USER_ACTION : Creating OutOfProcessEclipse instance...
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:09.862
+!MESSAGE USER_ACTION : Solver Status: CONNECTED
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-09 13:49:11.181
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-09 13:49:11.185
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\student06'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:12.189
+!MESSAGE USER_ACTION : Loaded ECO file :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:12.696
+!MESSAGE USER_ACTION : Time taken by SolverManager is: 3336 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:12.703
+!MESSAGE USER_ACTION : Time taken for updating AddAppDialog is: 4 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:12.708
+!MESSAGE USER_ACTION : Time taken for updating views is: 1 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:13.269
+!MESSAGE USER_ACTION : Time taken for rendering views is: 557 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:13.859
+!MESSAGE Only One DAVE Application is running 
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 13:49:13.897
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/Examples/XMC_IFX/v4.1//daveSite.xml
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 13:49:14.371
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/XMC_IFX/v4.1//daveSite.xml
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 13:49:15.127
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/Contributed/v4.1//daveSite.xml
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 13:49:37.166
+!MESSAGE *************Saving EMF data into file system*******************
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 13:49:37.189
+!MESSAGE *************Saving Groovy data into file system*******************
+
+!ENTRY COMMON 1 0 2016-05-09 13:49:37.216
+!MESSAGE Time Taken By Serialization  : 23 ms :: D:\Bachelorarbeit\Dave\Basisstation\Testprojekt\Dave\Model\projectData.bin
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:37.328
+!MESSAGE Solver exited (0)
+
+!ENTRY SOLVER 1 0 2016-05-09 13:49:37.590
+!MESSAGE USER_ACTION : Solver Status: DISCONNECTED
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 13:49:37.615
+!MESSAGE ****************Cleaning project data:Testprojekt*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 13:49:37.785
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 565 msec 
+!SESSION 2016-05-09 14:26:21.311 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_DE
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2016-05-09 14:26:23.771
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-05-09 14:26:23.771
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-09 14:26:28.819
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-09 14:26:28.822
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\student06'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:26:30.179
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 7 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:26:30.514
+!MESSAGE USER_ACTION : Active project:Testprojekt
+
+!ENTRY COMMON 1 0 2016-05-09 14:26:31.266
+!MESSAGE Time Taken By De-Serialization  : 131 ms :: D:\Bachelorarbeit\Dave\Basisstation\Testprojekt\Dave\Model\projectData.bin
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 14:26:31.271
+!MESSAGE *************Serializing EMF and Groovy data to RAM*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:26:31.319
+!MESSAGE USER_ACTION : Time taken for initializing Application Model is: 804 msec 
+
+!ENTRY APPSTORE 1 0 2016-05-09 14:26:31.583
+!MESSAGE USER_ACTION : Time taken for initializing data from AppStore is: 261 msec 
+
+!ENTRY SOLVER 1 0 2016-05-09 14:26:31.833
+!MESSAGE USER_ACTION : Library store ECO file :C:\Users\student06\Infineon\D_LibraryStore_4.1\resources\XMC4.5.00.F100.ALL\device\xmc4500\0\MANIFEST\solver_data\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-05-09 14:26:31.875
+!MESSAGE USER_ACTION : Copied ECO file to temp location :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-05-09 14:26:32.032
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-05-09 14:26:32.037
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-05-09 14:26:32.040
+!MESSAGE USER_ACTION : GlobalSize= 750MB; LocalSize: 128MB
+
+!ENTRY SOLVER 1 0 2016-05-09 14:26:32.043
+!MESSAGE USER_ACTION : Creating OutOfProcessEclipse instance...
+
+!ENTRY SOLVER 1 0 2016-05-09 14:26:34.750
+!MESSAGE USER_ACTION : Solver Status: CONNECTED
+
+!ENTRY SOLVER 1 0 2016-05-09 14:26:45.048
+!MESSAGE USER_ACTION : Loaded ECO file :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:26:45.855
+!MESSAGE USER_ACTION : Time taken by SolverManager is: 14268 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:26:45.881
+!MESSAGE USER_ACTION : Time taken for updating AddAppDialog is: 23 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:26:45.885
+!MESSAGE USER_ACTION : Time taken for updating views is: 1 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:26:58.773
+!MESSAGE USER_ACTION : Time taken for rendering views is: 12884 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:27:05.442
+!MESSAGE Only One DAVE Application is running 
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 14:27:05.873
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/Examples/XMC_IFX/v4.1//daveSite.xml
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 14:27:07.076
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/XMC_IFX/v4.1//daveSite.xml
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-05-09 14:27:07.697
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/Contributed/v4.1//daveSite.xml
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 14:38:33.401
+!MESSAGE *************Saving EMF data into file system*******************
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 14:38:33.430
+!MESSAGE *************Saving Groovy data into file system*******************
+
+!ENTRY COMMON 1 0 2016-05-09 14:38:33.465
+!MESSAGE Time Taken By Serialization  : 32 ms :: D:\Bachelorarbeit\Dave\Basisstation\Testprojekt\Dave\Model\projectData.bin
+
+!ENTRY SOLVER 1 0 2016-05-09 14:38:33.565
+!MESSAGE Solver exited (0)
+
+!ENTRY SOLVER 1 0 2016-05-09 14:38:33.827
+!MESSAGE USER_ACTION : Solver Status: DISCONNECTED
+
+!ENTRY com.dave.mbs.common 1 0 2016-05-09 14:38:33.852
+!MESSAGE ****************Cleaning project data:Testprojekt*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-05-09 14:38:34.252
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 768 msec 
