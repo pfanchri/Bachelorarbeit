@@ -1,0 +1,49 @@
+Added Component: Designator=C1(0402)
+Added Component: Designator=C2(0402)
+Added Component: Designator=C3(0402)
+Added Component: Designator=C4(0402)
+Added Component: Designator=C5(0402)
+Added Component: Designator=C6(0402)
+Added Component: Designator=C7(0402)
+Added Component: Designator=C8(0402)
+Added Component: Designator=TDA5340(INF-PG-TSSOP-28_N)
+Added Component: Designator=XMC4500(INF-PG-LQFP-100-11-7000X7000TP_N)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=XMC4500-32
+Added Pin To Net: NetName=GND Pin=XMC4500-34
+Added Pin To Net: NetName=GND Pin=XMC4500-59
+Added Pin To Net: NetName=GND Pin=XMC4500-63
+Added Pin To Net: NetName=GND Pin=XMC4500-101
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=NetC1_2 Pin=C2-2
+Added Pin To Net: NetName=NetC1_2 Pin=C3-2
+Added Pin To Net: NetName=NetC1_2 Pin=C4-2
+Added Pin To Net: NetName=NetC1_2 Pin=XMC4500-12
+Added Pin To Net: NetName=NetC1_2 Pin=XMC4500-42
+Added Pin To Net: NetName=NetC1_2 Pin=XMC4500-64
+Added Pin To Net: NetName=NetC1_2 Pin=XMC4500-86
+Added Net: Name=NetC1_2
+Added Pin To Net: NetName=VDD (3,3V) Pin=C5-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=C6-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=C7-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=C8-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-11
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-17
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-43
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-60
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-87
+Added Net: Name=VDD (3,3V)
+Added Class: Name=Power Supply
+Added Class: Name=TDA5340
+Added Class: Name=XMC4500
+Added Room: Name=Power Supply
+Added Room: Name=TDA5340
+Added Room: Name=XMC4500
