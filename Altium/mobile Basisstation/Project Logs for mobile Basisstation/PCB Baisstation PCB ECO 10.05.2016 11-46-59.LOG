@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetTDA5340_17 Pin=XMC4500-5
+Removed Pin From Net: NetName=NetTDA5340_13 Pin=XMC4500-6
+Removed Pin From Net: NetName=NetTDA5340_16 Pin=XMC4500-7
+Removed Pin From Net: NetName=NetTDA5340_19 Pin=XMC4500-92
+Removed Pin From Net: NetName=NetTDA5340_18 Pin=XMC4500-93
+Added Pin To Net: NetName=NetTDA5340_17 Pin=XMC4500-22
+Added Pin To Net: NetName=NetTDA5340_16 Pin=XMC4500-23
+Added Pin To Net: NetName=NetTDA5340_18 Pin=XMC4500-24
+Added Pin To Net: NetName=NetTDA5340_19 Pin=XMC4500-25
+Added Pin To Net: NetName=NetTDA5340_13 Pin=XMC4500-26

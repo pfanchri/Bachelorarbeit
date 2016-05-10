@@ -1,0 +1,147 @@
+Added Component: Designator=C1(0402)
+Added Component: Designator=C1(0402)
+Added Component: Designator=C2(0402)
+Added Component: Designator=C2(0402)
+Added Component: Designator=C3(0402)
+Added Component: Designator=C3(0402)
+Added Component: Designator=C4(0402)
+Added Component: Designator=C4(0402)
+Added Component: Designator=C5(0402)
+Added Component: Designator=C5(0402)
+Added Component: Designator=C6(0402)
+Added Component: Designator=C6(0402)
+Added Component: Designator=C7(0402)
+Added Component: Designator=C8(0402)
+Added Component: Designator=C9(0402)
+Added Component: Designator=C10(0402)
+Added Component: Designator=C11(0402)
+Added Component: Designator=C12(0402)
+Added Component: Designator=Q1(R38)
+Added Component: Designator=Q1(R38)
+Added Component: Designator=Q2(R38)
+Added Component: Designator=R1(J1-0603)
+Added Component: Designator=R1(J1-0603)
+Added Component: Designator=R2(J1-0603)
+Added Component: Designator=R3(J1-0603)
+Added Component: Designator=R4(J1-0603)
+Added Component: Designator=TDA5340(INF-PG-TSSOP-28_N)
+Added Component: Designator=XMC4500(INF-PG-LQFP-100-11-7000X7000TP_N)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=TDA5340-3
+Added Pin To Net: NetName=GND Pin=TDA5340-5
+Added Pin To Net: NetName=GND Pin=TDA5340-9
+Added Pin To Net: NetName=GND Pin=TDA5340-21
+Added Pin To Net: NetName=GND Pin=TDA5340-24
+Added Pin To Net: NetName=GND Pin=XMC4500-32
+Added Pin To Net: NetName=GND Pin=XMC4500-34
+Added Pin To Net: NetName=GND Pin=XMC4500-59
+Added Pin To Net: NetName=GND Pin=XMC4500-63
+Added Pin To Net: NetName=GND Pin=XMC4500-101
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=R1-1
+Added Pin To Net: NetName=NetC1_1 Pin=TDA5340-7
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=NetC1_2 Pin=C2-2
+Added Pin To Net: NetName=NetC1_2 Pin=C3-2
+Added Pin To Net: NetName=NetC1_2 Pin=C4-2
+Added Pin To Net: NetName=NetC1_2 Pin=XMC4500-12
+Added Pin To Net: NetName=NetC1_2 Pin=XMC4500-42
+Added Pin To Net: NetName=NetC1_2 Pin=XMC4500-64
+Added Pin To Net: NetName=NetC1_2 Pin=XMC4500-86
+Added Net: Name=NetC1_2
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=R2-1
+Added Pin To Net: NetName=NetC2_1 Pin=TDA5340-2
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=R3-1
+Added Pin To Net: NetName=NetC3_1 Pin=TDA5340-27
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetC4_1 Pin=TDA5340-8
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=Q1-1
+Added Pin To Net: NetName=NetC5_2 Pin=TDA5340-15
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=Q1-2
+Added Pin To Net: NetName=NetC6_2 Pin=TDA5340-14
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC9_2 Pin=Q1-2
+Added Pin To Net: NetName=NetC9_2 Pin=XMC4500-61
+Added Net: Name=NetC9_2
+Added Pin To Net: NetName=NetC10_2 Pin=C10-2
+Added Pin To Net: NetName=NetC10_2 Pin=Q1-1
+Added Pin To Net: NetName=NetC10_2 Pin=R1-2
+Added Net: Name=NetC10_2
+Added Pin To Net: NetName=NetC11_2 Pin=C11-2
+Added Pin To Net: NetName=NetC11_2 Pin=Q2-2
+Added Net: Name=NetC11_2
+Added Pin To Net: NetName=NetC12_2 Pin=C12-2
+Added Pin To Net: NetName=NetC12_2 Pin=Q2-1
+Added Pin To Net: NetName=NetC12_2 Pin=XMC4500-16
+Added Net: Name=NetC12_2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=XMC4500-62
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetR4_1 Pin=TDA5340-6
+Added Net: Name=NetR4_1
+Added Pin To Net: NetName=NetTDA5340_13 Pin=TDA5340-13
+Added Pin To Net: NetName=NetTDA5340_13 Pin=XMC4500-6
+Added Net: Name=NetTDA5340_13
+Added Pin To Net: NetName=NetTDA5340_16 Pin=TDA5340-16
+Added Pin To Net: NetName=NetTDA5340_16 Pin=XMC4500-7
+Added Net: Name=NetTDA5340_16
+Added Pin To Net: NetName=NetTDA5340_17 Pin=TDA5340-17
+Added Pin To Net: NetName=NetTDA5340_17 Pin=XMC4500-5
+Added Net: Name=NetTDA5340_17
+Added Pin To Net: NetName=NetTDA5340_18 Pin=TDA5340-18
+Added Pin To Net: NetName=NetTDA5340_18 Pin=XMC4500-93
+Added Net: Name=NetTDA5340_18
+Added Pin To Net: NetName=NetTDA5340_19 Pin=TDA5340-19
+Added Pin To Net: NetName=NetTDA5340_19 Pin=XMC4500-92
+Added Net: Name=NetTDA5340_19
+Added Pin To Net: NetName=VDD (3,3V) Pin=C5-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=C6-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=C7-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=C8-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R1-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R2-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R3-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R4-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-11
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-17
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-33
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-35
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-43
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-60
+Added Pin To Net: NetName=VDD (3,3V) Pin=XMC4500-87
+Added Net: Name=VDD (3,3V)
+Added Class: Name=Power Supply
+Added Class: Name=TDA5340
+Added Class: Name=XMC4500
+Added Room: Name=Power Supply
+Added Room: Name=TDA5340
+Added Room: Name=XMC4500

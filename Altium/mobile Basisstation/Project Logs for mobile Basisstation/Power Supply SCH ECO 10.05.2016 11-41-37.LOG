@@ -1,0 +1,10 @@
+Change Pin Designator/Name:  Old Designator=XMC4500A-5 Old Name=P3.2 New Designator =P14.15 New Name=20
+Change Pin Designator/Name:  Old Designator=XMC4500A-6 Old Name=P3.1 New Designator =P14.14 New Name=21
+Change Pin Designator/Name:  Old Designator=XMC4500A-7 Old Name=P3.0 New Designator =P14.13 New Name=22
+Change Pin Designator/Name:  Old Designator=XMC4500A-20 Old Name=P14.15 New Designator =P3.2 New Name=5
+Change Pin Designator/Name:  Old Designator=XMC4500A-21 Old Name=P14.14 New Designator =P3.1 New Name=6
+Change Pin Designator/Name:  Old Designator=XMC4500A-22 Old Name=P14.13 New Designator =P3.0 New Name=7
+Change Pin Designator/Name:  Old Designator=XMC4500A-23 Old Name=P14.12 New Designator =P3.4 New Name=92
+Change Pin Designator/Name:  Old Designator=XMC4500A-36 Old Name=P14.9 New Designator =P3.3 New Name=93
+Change Pin Designator/Name:  Old Designator=XMC4500A-92 Old Name=P3.4 New Designator =P14.12 New Name=23
+Change Pin Designator/Name:  Old Designator=XMC4500A-93 Old Name=P3.3 New Designator =P14.9 New Name=36
