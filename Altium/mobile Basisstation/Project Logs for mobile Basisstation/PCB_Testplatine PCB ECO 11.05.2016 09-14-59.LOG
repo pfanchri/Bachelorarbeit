@@ -1,0 +1,13 @@
+Added Pin To Net: NetName=NetXMC4500_74 Pin=XMC4500-74
+Added Net: Name=NetXMC4500_74
+Added Pin To Net: NetName=NetXMC4500_75 Pin=XMC4500-75
+Added Net: Name=NetXMC4500_75
+Added Pin To Net: NetName=NetXMC4500_76 Pin=XMC4500-76
+Added Net: Name=NetXMC4500_76
+Added Pin To Net: NetName=NetXMC4500_81 Pin=XMC4500-81
+Added Net: Name=NetXMC4500_81
+Added Pin To Net: NetName=NetXMC4500_82 Pin=XMC4500-82
+Added Net: Name=NetXMC4500_82
+Added Pin To Net: NetName=NetXMC4500_83 Pin=XMC4500-83
+Added Net: Name=NetXMC4500_83
+Added Member To Class: ClassName=TDA5340_1 Member=Component TDA5340

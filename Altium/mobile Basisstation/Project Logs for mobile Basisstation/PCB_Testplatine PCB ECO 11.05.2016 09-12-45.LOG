@@ -1,0 +1,50 @@
+Removed Pin From Net: NetName=NetTDA5340_1 Pin=TDA5340-1
+Removed Pin From Net: NetName=NetTDA5340_10 Pin=TDA5340-10
+Removed Pin From Net: NetName=NetTDA5340_11 Pin=TDA5340-11
+Removed Pin From Net: NetName=NetTDA5340_12 Pin=TDA5340-12
+Removed Pin From Net: NetName=NetTDA5340_13 Pin=TDA5340-13
+Removed Pin From Net: NetName=NetTDA5340_26 Pin=TDA5340-26
+Removed Pin From Net: NetName=NetTDA5340_18 Pin=XMC4500-18
+Removed Pin From Net: NetName=NetTDA5340_17 Pin=XMC4500-19
+Removed Pin From Net: NetName=NetTDA5340_19 Pin=XMC4500-39
+Added Component: Designator=C1(0402)
+Added Component: Designator=C2(0402)
+Added Component: Designator=C3(0402)
+Added Component: Designator=C4(0402)
+Added Component: Designator=C5(0402)
+Added Component: Designator=C6(0402)
+Added Component: Designator=Q1(R38)
+Added Component: Designator=R1(J1-0603)
+Added Component: Designator=R2(J1-0603)
+Added Component: Designator=R3(J1-0603)
+Added Component: Designator=R4(J1-0603)
+Added Component: Designator=TDA5340(INF-PG-TSSOP-28_N)
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R1-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R2-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R3-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R4-2
+Added Pin To Net: NetName=NetTDA5340_1 Pin=TDA5340-1
+Added Pin To Net: NetName=GND Pin=TDA5340-3
+Added Pin To Net: NetName=GND Pin=TDA5340-5
+Added Pin To Net: NetName=GND Pin=TDA5340-9
+Added Pin To Net: NetName=NetTDA5340_10 Pin=TDA5340-10
+Added Pin To Net: NetName=NetTDA5340_11 Pin=TDA5340-11
+Added Pin To Net: NetName=NetTDA5340_12 Pin=TDA5340-12
+Added Pin To Net: NetName=NetTDA5340_13 Pin=TDA5340-13
+Added Pin To Net: NetName=NetTDA5340_17 Pin=TDA5340-17
+Added Pin To Net: NetName=NetTDA5340_18 Pin=TDA5340-18
+Added Pin To Net: NetName=NetTDA5340_19 Pin=TDA5340-19
+Added Pin To Net: NetName=GND Pin=TDA5340-20
+Added Pin To Net: NetName=GND Pin=TDA5340-21
+Added Pin To Net: NetName=GND Pin=TDA5340-24
+Added Pin To Net: NetName=NetTDA5340_26 Pin=TDA5340-26
+Change Class Name : Old Net Name=TDA5340 New Net Name=TDA5340_2
+Added Class: Name=TDA5340_1
+Added Room: Name=TDA5340_1
+Added Room: Name=TDA5340_2

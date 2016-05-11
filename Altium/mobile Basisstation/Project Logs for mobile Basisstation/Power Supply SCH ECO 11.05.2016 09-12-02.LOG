@@ -1,0 +1,13 @@
+Change Pin Designator/Name:  Old Designator=TDA5340-1 Old Name=PPRF_RSSI New Designator =PPRF_RSSI New Name=1
+Change Pin Designator/Name:  Old Designator=TDA5340-10 Old Name=PP0 New Designator =PP0 New Name=10
+Change Pin Designator/Name:  Old Designator=TDA5340-11 Old Name=PP1 New Designator =PP1 New Name=11
+Change Pin Designator/Name:  Old Designator=TDA5340-12 Old Name=PP2 New Designator =PP2 New Name=12
+Change Pin Designator/Name:  Old Designator=TDA5340-13 Old Name=P_ON New Designator =P_ON New Name=13
+Change Pin Designator/Name:  Old Designator=TDA5340-26 Old Name=PPRF New Designator =PPRF New Name=26
+Change Pin Designator/Name:  Old Designator=XMC4500A-5 Old Name=P3.2 New Designator =P3.1 New Name=6
+Change Pin Designator/Name:  Old Designator=XMC4500A-6 Old Name=P3.1 New Designator =P3.0 New Name=7
+Change Pin Designator/Name:  Old Designator=XMC4500A-7 Old Name=P3.0 New Designator =P3.6 New Name=90
+Change Pin Designator/Name:  Old Designator=XMC4500A-90 Old Name=P3.6 New Designator =P3.5 New Name=91
+Change Pin Designator/Name:  Old Designator=XMC4500A-91 Old Name=P3.5 New Designator =P3.4 New Name=92
+Change Pin Designator/Name:  Old Designator=XMC4500A-92 Old Name=P3.4 New Designator =P3.3 New Name=93
+Change Pin Designator/Name:  Old Designator=XMC4500A-93 Old Name=P3.3 New Designator =P3.2 New Name=5
