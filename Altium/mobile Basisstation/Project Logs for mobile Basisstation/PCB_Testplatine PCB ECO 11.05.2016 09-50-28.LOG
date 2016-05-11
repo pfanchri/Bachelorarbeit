@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=NetTDA5340_11 Pin=XMC4500-5
+Removed Pin From Net: NetName=NetTDA5340_10 Pin=XMC4500-6
+Removed Pin From Net: NetName=NetTDA5340_13 Pin=XMC4500-7
+Removed Pin From Net: NetName=NetTDA5340_1 Pin=XMC4500-91
+Removed Pin From Net: NetName=NetTDA5340_26 Pin=XMC4500-92
+Removed Pin From Net: NetName=NetTDA5340_12 Pin=XMC4500-93
+Added Component: Designator=P?(HDR2X4)
+Added Member To Class: ClassName=Power Supply Member=Component C1 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C1 Cap Semi
+Added Member To Class: ClassName=Power Supply Member=Component C2 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C2 Cap Semi
+Added Member To Class: ClassName=Power Supply Member=Component C3 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C3 Cap Semi
+Added Member To Class: ClassName=Power Supply Member=Component C4 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C4 Cap Semi
+Added Member To Class: ClassName=Power Supply Member=Component C5 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C5 Cap Semi
+Added Member To Class: ClassName=Power Supply Member=Component C6 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C6 Cap Semi
+Added Member To Class: ClassName=Power Supply Member=Component P? Header 4X2
+Added Member To Class: ClassName=Power Supply Member=Component Q1 XTAL
+Added Member To Class: ClassName=TDA5340_1 Member=Component Q1 XTAL
+Added Member To Class: ClassName=Power Supply Member=Component R1 Res3
+Added Member To Class: ClassName=TDA5340_1 Member=Component R1 Res3
+Added Member To Class: ClassName=TDA5340_1 Member=Component R2 Res3
+Added Member To Class: ClassName=TDA5340_1 Member=Component R3 Res3
+Added Member To Class: ClassName=TDA5340_1 Member=Component R4 Res3
+Added Member To Class: ClassName=TDA5340_1 Member=Component TDA5340

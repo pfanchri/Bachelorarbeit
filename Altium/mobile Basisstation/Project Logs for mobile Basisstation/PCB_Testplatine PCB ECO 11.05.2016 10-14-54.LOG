@@ -1,0 +1,12 @@
+Change Component Designator: OldDesignator=P? NewDesignator=JTAG
+Added Pin To Net: NetName=VDD (3,3V) Pin=JTAG-2
+Added Pin To Net: NetName=GND Pin=JTAG-6
+Added Pin To Net: NetName=NetJTAG_4 Pin=JTAG-4
+Added Pin To Net: NetName=NetJTAG_4 Pin=XMC4500-65
+Added Net: Name=NetJTAG_4
+Added Pin To Net: NetName=TCK Pin=JTAG-3
+Added Pin To Net: NetName=TCK Pin=XMC4500-67
+Added Net: Name=TCK
+Added Pin To Net: NetName=TMS Pin=JTAG-1
+Added Pin To Net: NetName=TMS Pin=XMC4500-66
+Added Net: Name=TMS
