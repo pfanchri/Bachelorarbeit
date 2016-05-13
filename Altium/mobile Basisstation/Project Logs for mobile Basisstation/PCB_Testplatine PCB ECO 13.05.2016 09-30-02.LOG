@@ -1,0 +1,30 @@
+Added Component: Designator=C100(C1206)
+Added Component: Designator=C101(C1206)
+Added Component: Designator=LED1(3.5X2.8X1.9)
+Added Component: Designator=R?(J1-0603)
+Added Component: Designator=U1(INF-PG-SOT223_SC-73_N)
+Added Pin To Net: NetName=GND Pin=C100-1
+Added Pin To Net: NetName=GND Pin=C101-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=C101-2
+Added Pin To Net: NetName=GND Pin=LED1-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R?-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=U1-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=U1-4
+Added Pin To Net: NetName=NetC11_2 Pin=XMC4500-15
+Added Pin To Net: NetName=NetTDA5340_19 Pin=XMC4500-74
+Added Pin To Net: NetName=NetTDA5340_18 Pin=XMC4500-82
+Added Pin To Net: NetName=NetTDA5340_17 Pin=XMC4500-83
+Added Pin To Net: NetName=5V Pin=C100-2
+Added Pin To Net: NetName=5V Pin=U1-3
+Added Net: Name=5V
+Added Pin To Net: NetName=NetLED1_1 Pin=LED1-1
+Added Pin To Net: NetName=NetLED1_1 Pin=R?-1
+Added Net: Name=NetLED1_1
+Added Pin To Net: NetName=SELECT1 Pin=XMC4500-81
+Added Net: Name=SELECT1
+Added Member To Class: ClassName=Power Supply Member=Component C100 Cap Semi
+Added Member To Class: ClassName=Power Supply Member=Component C101 Cap Semi
+Added Member To Class: ClassName=Power Supply Member=Component LED1 LED3
+Added Member To Class: ClassName=Power Supply Member=Component R? Res3
+Added Member To Class: ClassName=Power Supply Member=Component U1 IFX1117ME V33
