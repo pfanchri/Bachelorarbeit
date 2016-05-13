@@ -1,0 +1,29 @@
+Added Component: Designator=F1(SOP6)
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=F1-5
+Added Net: Name=+3V3
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=C3-2
+Added Pin To Net: NetName=NetC2_2 Pin=TDA5340-22
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC9_1 Pin=C9-1
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Pin To Net: NetName=NetF1_1 Pin=TDA5340-28
+Added Net: Name=NetF1_1
+Added Pin To Net: NetName=NetF1_6 Pin=F1-6
+Added Pin To Net: NetName=NetF1_6 Pin=TDA5340-4
+Added Net: Name=NetF1_6
+Added Pin To Net: NetName=NetL3_1 Pin=TDA5340-25
+Added Net: Name=NetL3_1
+Added Pin To Net: NetName=RF Pin=C4-2
+Added Net: Name=RF
+Added Member To Class: ClassName=TDA5340_1 Member=Component C1 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C2 0402
+Added Member To Class: ClassName=TDA5340_1 Member=Component C3 0402
+Added Member To Class: ClassName=TDA5340_1 Member=Component C4 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C9 0402
+Added Member To Class: ClassName=TDA5340_1 Member=Component F1 SFECF10M7EA00
+Added Member To Class: ClassName=Power Supply Member=Component U? XMC4500-F144K1024 AB

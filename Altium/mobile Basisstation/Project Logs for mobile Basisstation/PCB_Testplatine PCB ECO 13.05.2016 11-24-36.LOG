@@ -1,0 +1,64 @@
+Removed Pin From Net: NetName=NetC2_2 Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=C3-1
+Removed Pin From Net: NetName=NetC2_2 Pin=C3-2
+Removed Pin From Net: NetName=RF Pin=C4-2
+Removed Pin From Net: NetName=NetJ1_2 Pin=U?-15
+Removed Pin From Net: NetName=NetJ1_3 Pin=U?-16
+Removed Pin From Net: NetName=NetC11_2 Pin=U?-22
+Removed Pin From Net: NetName=NetC12_2 Pin=U?-23
+Removed Pin From Net: NetName=NetC9_2 Pin=U?-87
+Removed Pin From Net: NetName=NetR1_1 Pin=U?-88
+Removed Pin From Net: NetName=NetJTAG_4 Pin=U?-91
+Removed Pin From Net: NetName=TMS Pin=U?-92
+Removed Pin From Net: NetName=TCK Pin=U?-93
+Removed Pin From Net: NetName=SELECT0 Pin=U?-105
+Removed Pin From Net: NetName=NetTDA5340_19 Pin=U?-107
+Removed Pin From Net: NetName=SELECT1 Pin=U?-114
+Removed Pin From Net: NetName=NetTDA5340_18 Pin=U?-115
+Removed Pin From Net: NetName=NetTDA5340_17 Pin=U?-116
+Removed Pin From Net: NetName=SELECT2 Pin=U?-118
+Removed Pin From Net: NetName=SELECT3 Pin=U?-119
+Removed Pin From Net: NetName=SELECT4 Pin=U?-120
+Removed Pin From Net: NetName=SELECT5 Pin=U?-121
+Removed Member From Class: ClassName=Power Supply Member=U?
+Removed Member From Class: ClassName=XMC4500 Member=U?
+Change Component DesignItemId : Designator=C9 Old DesignItemId=Cap Semi New DesignItemId=Cap0402
+Change Component Comment : Designator=C9 Old Comment=Cap Semi New Comment=0402
+Change Component Designator: OldDesignator=U? NewDesignator=XMC4500
+Change Component Description : Designator=C9 Old Description=Capacitor (Semiconductor SIM Model) New Description=Capacitor
+Change Component Library : Designator=C9 Old Library=Miscellaneous Devices.IntLib New Library=LTE.SVNDBLib
+Added Component: Designator=C9(0402)
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=NetC2_2 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=RF Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetJ1_2 Pin=XMC4500-15
+Added Pin To Net: NetName=NetJ1_3 Pin=XMC4500-16
+Added Pin To Net: NetName=NetC11_2 Pin=XMC4500-22
+Added Pin To Net: NetName=NetC12_2 Pin=XMC4500-23
+Added Pin To Net: NetName=NetC9_2 Pin=XMC4500-87
+Added Pin To Net: NetName=NetR1_1 Pin=XMC4500-88
+Added Pin To Net: NetName=NetJTAG_4 Pin=XMC4500-91
+Added Pin To Net: NetName=TMS Pin=XMC4500-92
+Added Pin To Net: NetName=TCK Pin=XMC4500-93
+Added Pin To Net: NetName=SELECT0 Pin=XMC4500-105
+Added Pin To Net: NetName=NetTDA5340_19 Pin=XMC4500-107
+Added Pin To Net: NetName=SELECT1 Pin=XMC4500-114
+Added Pin To Net: NetName=NetTDA5340_18 Pin=XMC4500-115
+Added Pin To Net: NetName=NetTDA5340_17 Pin=XMC4500-116
+Added Pin To Net: NetName=SELECT2 Pin=XMC4500-118
+Added Pin To Net: NetName=SELECT3 Pin=XMC4500-119
+Added Pin To Net: NetName=SELECT4 Pin=XMC4500-120
+Added Pin To Net: NetName=SELECT5 Pin=XMC4500-121
+Added Member To Class: ClassName=TDA5340_1 Member=Component C1 Cap Semi
+Added Member To Class: ClassName=TDA5340_1 Member=Component C2 0402
+Added Member To Class: ClassName=TDA5340_1 Member=Component C3 0402
+Added Member To Class: ClassName=TDA5340_1 Member=Component C4 Cap Semi
+Added Member To Class: ClassName=XMC4500 Member=Component XMC4500 XMC4500-F144K1024 AB
