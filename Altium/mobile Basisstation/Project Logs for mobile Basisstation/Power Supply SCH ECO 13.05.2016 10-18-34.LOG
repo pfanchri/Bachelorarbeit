@@ -1,0 +1,48 @@
+Change Component Footprint: Designator=XMC4500 Old Footprint=INF-PG-LQFP-144-18-6500X6500TP_N New Footprint=INF-PG-LQFP-100-11-7000X7000TP_N
+Change Component Footprint: Designator=XMC4500 Old Footprint=INF-PG-LQFP-144-18-6500X6500TP_N New Footprint=INF-PG-LQFP-100-11-7000X7000TP_N
+Change Component Footprint: Designator=XMC4500 Old Footprint=INF-PG-LQFP-144-18-6500X6500TP_N New Footprint=INF-PG-LQFP-100-11-7000X7000TP_N
+Change Component Comment: Designator=XMC4500 Old Comment=XMC4500-F144K1024 AB New Comment=XMC4500-F100K1024 AB
+Change Component Comment: Designator=XMC4500 Old Comment=XMC4500-F144K1024 AB New Comment=XMC4500-F100K1024 AB
+Change Component Comment: Designator=XMC4500 Old Comment=XMC4500-F144K1024 AB New Comment=XMC4500-F100K1024 AB
+Change Pin Designator/Name:  Old Designator=XMC4500A-11 Old Name=P3.10 New Designator =VDDP New Name=18
+Change Pin Designator/Name:  Old Designator=XMC4500A-12 Old Name=P3.9 New Designator =VDDC New Name=19
+Change Pin Designator/Name:  Old Designator=XMC4500B-15 Old Name=USB_DM New Designator =RTC_XTAL1 New Name=22
+Change Pin Designator/Name:  Old Designator=XMC4500B-16 Old Name=USB_DP New Designator =RTC_XTAL2 New Name=23
+Change Pin Designator/Name:  Old Designator=XMC4500C-17 Old Name=VBUS New Designator =VBAT New Name=24
+Change Pin Designator/Name:  Old Designator=XMC4500C-18 Old Name=VDDP New Designator =VBUS New Name=17
+Change Pin Designator/Name:  Old Designator=XMC4500C-19 Old Name=VDDC New Designator =P3.9 New Name=12
+Change Pin Designator/Name:  Old Designator=XMC4500B-22 Old Name=RTC_XTAL1 New Designator =USB_DM New Name=15
+Change Pin Designator/Name:  Old Designator=XMC4500B-23 Old Name=RTC_XTAL2 New Designator =USB_DP New Name=16
+Change Pin Designator/Name:  Old Designator=XMC4500C-24 Old Name=VBAT New Designator =P14.13 New Name=33
+Change Pin Designator/Name:  Old Designator=XMC4500A-32 Old Name=P14.14 New Designator =VAGND New Name=45
+Change Pin Designator/Name:  Old Designator=XMC4500A-33 Old Name=P14.13 New Designator =VAREF New Name=46
+Change Pin Designator/Name:  Old Designator=XMC4500A-34 Old Name=P14.12 New Designator =VSSA New Name=47
+Change Pin Designator/Name:  Old Designator=XMC4500A-35 Old Name=P14.7 New Designator =VDDA New Name=48
+Change Pin Designator/Name:  Old Designator=XMC4500A-42 Old Name=P14.0 New Designator =VSS New Name=85
+Change Pin Designator/Name:  Old Designator=XMC4500A-43 Old Name=P15.15 New Designator =XTAL2 New Name=88
+Change Pin Designator/Name:  Old Designator=XMC4500C-45 Old Name=VAGND New Designator =P14.14 New Name=32
+Change Pin Designator/Name:  Old Designator=XMC4500C-46 Old Name=VAREF New Designator =P14.7 New Name=35
+Change Pin Designator/Name:  Old Designator=XMC4500C-47 Old Name=VSSA New Designator =P14.12 New Name=34
+Change Pin Designator/Name:  Old Designator=XMC4500C-48 Old Name=VDDA New Designator =P15.15 New Name=43
+Change Pin Designator/Name:  Old Designator=XMC4500A-59 Old Name=P2.15 New Designator =VSSO New Name=89
+Change Pin Designator/Name:  Old Designator=XMC4500A-60 Old Name=P2.14 New Designator =VDDC New Name=90
+Change Pin Designator/Name:  Old Designator=XMC4500C-61 Old Name=VDDC New Designator =VDDP New Name=86
+Change Pin Designator/Name:  Old Designator=XMC4500C-62 Old Name=VDDP New Designator =XTAL1 New Name=87
+Change Pin Designator/Name:  Old Designator=XMC4500A-63 Old Name=P2.13 New Designator =P\O\R\S\T\ New Name=91
+Change Pin Designator/Name:  Old Designator=XMC4500A-64 Old Name=P2.12 New Designator =TMS New Name=92
+Change Pin Designator/Name:  Old Designator=XMC4500A-65 Old Name=P2.11 New Designator =TCK New Name=93
+Change Pin Designator/Name:  Old Designator=XMC4500A-66 Old Name=P2.10 New Designator =VDDC New Name=125
+Change Pin Designator/Name:  Old Designator=XMC4500A-67 Old Name=P2.9 New Designator =VDDP New Name=126
+Change Pin Designator/Name:  Old Designator=XMC4500A-74 Old Name=P2.0 New Designator =EP New Name=145
+Change Pin Designator/Name:  Old Designator=XMC4500C-85 Old Name=VSS New Designator =P2.15 New Name=59
+Change Pin Designator/Name:  Old Designator=XMC4500C-86 Old Name=VDDP New Designator =P3.10 New Name=11
+Change Pin Designator/Name:  Old Designator=XMC4500B-87 Old Name=XTAL1 New Designator =VDDC New Name=61
+Change Pin Designator/Name:  Old Designator=XMC4500B-88 Old Name=XTAL2 New Designator =VDDP New Name=62
+Change Pin Designator/Name:  Old Designator=XMC4500C-89 Old Name=VSSO New Designator =P2.13 New Name=63
+Change Pin Designator/Name:  Old Designator=XMC4500C-90 Old Name=VDDC New Designator =P14.0 New Name=42
+Change Pin Designator/Name:  Old Designator=XMC4500B-91 Old Name=P\O\R\S\T\ New Designator =P2.11 New Name=65
+Change Pin Designator/Name:  Old Designator=XMC4500B-92 Old Name=TMS New Designator =P2.10 New Name=66
+Change Pin Designator/Name:  Old Designator=XMC4500B-93 Old Name=TCK New Designator =P2.9 New Name=67
+Change Pin Designator/Name:  Old Designator=XMC4500C-125 Old Name=VDDC New Designator =P2.12 New Name=64
+Change Pin Designator/Name:  Old Designator=XMC4500C-126 Old Name=VDDP New Designator =P2.14 New Name=60
+Change Pin Designator/Name:  Old Designator=XMC4500C-145 Old Name=EP New Designator =P6.0 New Name=101

@@ -1,0 +1,6 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=TDA-antenna_rev2.PrjPCB
+[Project2]
+ProjectPath=TDA-sma_rev2.PrjPCB
