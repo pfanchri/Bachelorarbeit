@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=NetD1_1 Pin=D1-1
+Removed Pin From Net: NetName=5V Pin=D1-2
+Change Component DesignItemId : Designator=D1 Old DesignItemId=D Schottky New DesignItemId=BAT60A
+Change Component Footprint: Designator=D1 Old Footprint=SMB New Footprint=SOD-323
+Change Component Comment : Designator=D1 Old Comment=D Schottky New Comment=BAT60A
+Added Pin To Net: NetName=5V Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-2
+Change Net Name : Old Net Name=NetD1_1 New Net Name=NetD1_2
