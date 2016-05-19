@@ -583,7 +583,7 @@ GenerateClassCluster=0
 DocumentUniqueId=MKLCKGEJ
 
 [Document33]
-DocumentPath=..\Libraries\Würth\WE-LAN_rev15b.intlib
+DocumentPath=..\Libraries\Würth\WE-RJ45_LAN_rev16b.intlib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -600,7 +600,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document34]
-DocumentPath=..\Libraries\Würth\WE-RJ45_LAN_rev16b.intlib
+DocumentPath=..\Libraries\eigene Library\Schematic library.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -614,7 +614,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OBVEXCKN
 
 [SearchPath1]
 Path=..\Libraries\*.*
