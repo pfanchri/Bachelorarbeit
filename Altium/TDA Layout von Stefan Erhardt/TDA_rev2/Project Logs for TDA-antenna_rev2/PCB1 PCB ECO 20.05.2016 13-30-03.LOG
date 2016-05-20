@@ -1,0 +1,62 @@
+Added Component: Designator=A1(Chip Antenna)
+Added Component: Designator=F1(SOP6)
+Added Component: Designator=U1(INF-PG-TSSOP-28_L)
+Added Component: Designator=X1(Quarz)
+Added Pin To Net: NetName=+3.3V Pin=U1-6
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=GND Pin=F1-2
+Added Pin To Net: NetName=GND Pin=F1-5
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Pin To Net: NetName=GND Pin=U1-9
+Added Pin To Net: NetName=GND Pin=U1-20
+Added Pin To Net: NetName=GND Pin=U1-21
+Added Pin To Net: NetName=GND Pin=U1-24
+Added Pin To Net: NetName=GND Pin=X1-2
+Added Pin To Net: NetName=GND Pin=X1-4
+Added Net: Name=GND
+Added Pin To Net: NetName=MISO Pin=U1-19
+Added Net: Name=MISO
+Added Pin To Net: NetName=MOSI Pin=U1-18
+Added Net: Name=MOSI
+Added Pin To Net: NetName=NCS Pin=U1-16
+Added Net: Name=NCS
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC5_2 Pin=U1-14
+Added Pin To Net: NetName=NetC5_2 Pin=X1-1
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC8_1 Pin=U1-15
+Added Pin To Net: NetName=NetC8_1 Pin=X1-3
+Added Net: Name=NetC8_1
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetC10_2 Pin=U1-7
+Added Net: Name=NetC10_2
+Added Pin To Net: NetName=NetC11_2 Pin=U1-2
+Added Net: Name=NetC11_2
+Added Pin To Net: NetName=NetC12_2 Pin=U1-27
+Added Net: Name=NetC12_2
+Added Pin To Net: NetName=NetC13_2 Pin=U1-8
+Added Net: Name=NetC13_2
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Pin To Net: NetName=NetF1_1 Pin=U1-28
+Added Net: Name=NetF1_1
+Added Pin To Net: NetName=NetF1_6 Pin=F1-6
+Added Pin To Net: NetName=NetF1_6 Pin=U1-4
+Added Net: Name=NetF1_6
+Added Pin To Net: NetName=NetL3_1 Pin=U1-25
+Added Net: Name=NetL3_1
+Added Pin To Net: NetName=PON Pin=U1-13
+Added Net: Name=PON
+Added Pin To Net: NetName=PP2 Pin=U1-12
+Added Net: Name=PP2
+Added Pin To Net: NetName=RF Pin=A1-1
+Added Net: Name=RF
+Added Pin To Net: NetName=RX_N Pin=U1-22
+Added Net: Name=RX_N
+Added Pin To Net: NetName=RX_P Pin=U1-23
+Added Net: Name=RX_P
+Added Pin To Net: NetName=SCLK Pin=U1-17
+Added Net: Name=SCLK
+Added Class: Name=TDA-antenna_rev2
+Added Room: Name=TDA-antenna_rev2
