@@ -1,1 +1,7 @@
-Record=TopLevelDocument|FileName=Ethernet.SchDoc
+Record=TopLevelDocument|FileName=XMC4500.SchDoc
+Record=SheetSymbol|SourceDocument=XMC4500.SchDoc|Designator=TDA1|SchDesignator=REPEAT(TDA,1,6)|FileName=TDA5340.SchDoc|SymbolType=Normal|RawFileName=TDA5340.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=XMC4500.SchDoc|Designator=TDA2|SchDesignator=REPEAT(TDA,1,6)|FileName=TDA5340.SchDoc|SymbolType=Normal|RawFileName=TDA5340.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=XMC4500.SchDoc|Designator=TDA3|SchDesignator=REPEAT(TDA,1,6)|FileName=TDA5340.SchDoc|SymbolType=Normal|RawFileName=TDA5340.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=XMC4500.SchDoc|Designator=TDA4|SchDesignator=REPEAT(TDA,1,6)|FileName=TDA5340.SchDoc|SymbolType=Normal|RawFileName=TDA5340.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=XMC4500.SchDoc|Designator=TDA5|SchDesignator=REPEAT(TDA,1,6)|FileName=TDA5340.SchDoc|SymbolType=Normal|RawFileName=TDA5340.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=XMC4500.SchDoc|Designator=TDA6|SchDesignator=REPEAT(TDA,1,6)|FileName=TDA5340.SchDoc|SymbolType=Normal|RawFileName=TDA5340.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
