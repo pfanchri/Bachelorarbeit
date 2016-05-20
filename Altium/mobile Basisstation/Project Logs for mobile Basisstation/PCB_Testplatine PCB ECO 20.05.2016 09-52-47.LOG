@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=INTRP Pin=XMC4500-6
+Added Net: Name=INTRP
+Added Pin To Net: NetName=NetXMC4500_53 Pin=XMC4500-53
+Added Net: Name=NetXMC4500_53
+Added Pin To Net: NetName=NetXMC4500_54 Pin=XMC4500-54
+Added Net: Name=NetXMC4500_54
+Added Pin To Net: NetName=NetXMC4500_66 Pin=XMC4500-66
+Added Net: Name=NetXMC4500_66
