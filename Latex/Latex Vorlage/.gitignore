@@ -1,0 +1,14 @@
+*.aux
+*.auxlock
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.bak
+*.lot
+*.out
+*.synctex.gz
+*.toc
+Thesis.pdf
+*.log
+*.lof

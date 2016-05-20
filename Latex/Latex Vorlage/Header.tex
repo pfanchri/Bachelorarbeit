@@ -1,0 +1,223 @@
+% Header
+
+\documentclass[
+	a4paper,
+	%oneside,
+	twoside,
+	12pt,
+	numbers=noenddot,
+	openright,	% Kapitel beginnt auf rechter Seite
+	titlepage,	% Titelblatt auf eigener Seite
+	bibliography=totoc,		% Literaturverzeichnis
+	listof=totoc,	% Listen ins Inhaltsverzeichnis
+	twoside,  % zweiseitig
+]{scrbook}
+
+
+
+\usepackage[english,ngerman,shorthands=off]{babel} % Deutsche Sprachanpassungen
+\usepackage[T1]{fontenc}    % Silbentrennung bei Sonderzeichen
+\usepackage[utf8]{inputenc} % Direkte Angabe von Umlauten im Dokument.
+\usepackage{lmodern}					% Umlaute markierbar in PDF
+\usepackage{textcomp}       % Zusätzliche Symbolzeichen
+\usepackage{microtype}       % Optimierter Rand
+\usepackage{amsmath}					% Formeln
+\usepackage{graphicx}					% Graphiken einbinden
+\usepackage{float}
+\usepackage[german]{nomencl}
+\usepackage[countmax]{subfloat}
+\usepackage{wallpaper}
+
+%\clubpenalty = 10000 % schliesst Schusterjungen aus
+%\widowpenalty = 10000 % schliesst Hurenkinder aus
+
+% Farben definieren für package listings 
+\usepackage{color}
+\definecolor{middlegray}{rgb}{0.5,0.5,0.5}
+ \definecolor{lightgray}{rgb}{0.8,0.8,0.8}
+ \definecolor{orange}{rgb}{0.8,0.3,0.3}
+ \definecolor{yac}{rgb}{0.6,0.6,0.1}
+ \definecolor{commentgreen}{rgb}{0.25,0.5,0.37}
+ \definecolor{keyred}{RGB}{127,0,85}
+ 
+% C-Quellcode einfügen
+\usepackage{listings} 				
+\lstset{
+   basicstyle=\scriptsize\ttfamily,
+   keywordstyle=\bfseries\ttfamily\color{keyred},
+   stringstyle=\color{blue}\ttfamily,
+   commentstyle=\color{commentgreen}\ttfamily,
+   emph={square}, 
+   emphstyle=\color{blue}\texttt,
+   emph={[2]root,base},
+   emphstyle={[2]\color{yac}\texttt},
+   showstringspaces=false,
+   flexiblecolumns=false,
+   tabsize=2,
+   numbers=left,
+   numberstyle=\tiny,
+   numberblanklines=false,
+   stepnumber=1,
+   numbersep=10pt,
+   xleftmargin=15pt,
+  breaklines=true,
+  breakatwhitespace=false
+ }
+
+
+\setcounter{tocdepth}{3} %Gibt an, bis in welche Tiefe das Inhaltsverzeichnis geht
+\setcounter{secnumdepth}{3}
+
+\addto\captionsngerman{
+\renewcommand{\figurename}{Abb.}
+\renewcommand{\tablename}{Tab.}
+} %Sorgt dafürm, dass statt Abbildung Abb. steht und statt Tabelle Tab.
+ 
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+ {\bfseries\huge}
+  {\filleft\Large\chaptertitlename~\thechapter}
+  {3ex}
+  {\titlerule\vspace{1.5ex}\filright}
+  [\vspace{1ex}\titlerule]
+
+\usepackage{acronym}
+\usepackage{glossaries}
+\usepackage{wrapfig}
+\usepackage{units}
+\usepackage{icomma} %Korrekte Abstände bei Dezimalkommas im Mathemodus
+
+% % % %LITERATURVERWALTUNG
+	% % % ACHTUNG: Zum kompilieren muss biber, nicht bibtex verwendet werden!
+	\usepackage[
+		backend=biber,
+		style=ieee,
+		backref=true,%Referenzen im LieVerzeichnis auf verwendete Seiten im dokument
+		isbn=false,
+		doi=false,
+		eprint=false,
+		url=false,
+		safeinputenc,
+		defernumbers=true]{biblatex}
+	\usepackage{csquotes}
+	
+	%\ExecuteBibliographyOptions{sorting=ydmdnt}%Sortierung, none bedeutet nach Vorkommen
+	\ExecuteBibliographyOptions{firstinits=true} %Vor- und Mittelnamen als Initialen ausgeben
+	\ExecuteBibliographyOptions{maxbibnames=6} %max angezeigte namen, dann auf minnames reduziert und u.a. ergänzt
+	\ExecuteBibliographyOptions{minbibnames=4} %siehe maxnames
+	\ExecuteBibliographyOptions{maxcitenames=3} %analog für citeauthor, o.ä.
+	\ExecuteBibliographyOptions{mincitenames=1} %siehe maxnames
+
+% %Tikz für schöne Zeichnungen:
+	% Tikz pakete & optionen
+	\usepackage{tikz}
+	\usepackage[european,americaninductors]{circuitikz}
+	\usetikzlibrary{patterns}
+	% % Externalize settings
+	\usetikzlibrary{external} 
+	\tikzset{external/up to date check=simple}
+	%\tikzsetexternalprefix{} %path to graphics ACHTUNG: In header.tex definiert!
+	\tikzexternalize%[shell escape=-enable-write18] %option nötig für miktex
+	\pgfkeys{/pgf/images/include external/.code={\href{file:#1}{\pgfimage{#1}}}} %Links in pdf zu externen PDF-Bildern für Debug
+
+	% pgfplot pakete & Optionen
+	\usepackage{pgfplots}
+	
+	\usepgfplotslibrary{groupplots}
+	
+	\pgfplotsset{compat=1.10}
+	\pgfplotsset{every tick label/.style={font={\scriptsize\sansmath\boldmath}}}
+	\pgfplotsset{every axis label/.style={font={\boldmath\small\sffamily\bfseries}}}
+	\pgfplotsset{every legend /.style={font={\boldmath\small\sffamily\bfseries}}}
+	\pgfplotsset{every label/.style={font={\boldmath\small\sffamily\bfseries}}}
+	
+	\pgfplotsset{width=\textwidth}
+	\pgfplotsset{grid=both}
+	\pgfplotsset{major tick style={thin,black}}% modifies the style ‘every tick’
+	\pgfplotsset{minor tick style={very thin,black}}% modifies the style ‘every tick’
+	\pgfplotsset{major grid style={thin}} %modifies the style ‘every major grid’
+	\pgfplotsset{minor grid style={very thin}} % modifies the style ‘every minor tick’
+	\pgfplotsset{minor x tick num=1} %n minor ticks zwischen major ticks(major tiks müssen selben abstand haben)
+	\pgfplotsset{minor y tick num=1} %n minor ticks zwischen major ticks(major tiks müssen selben abstand haben)
+	\pgfplotsset{xlabel near ticks,ylabel near ticks}
+	%For ylabel offsets:
+	
+	%For ylabel offsets:
+	\pgfplotsset{ylabsh/.style={every axis y label/.style={at={(0,0.5)}, xshift=#1, rotate=90}}}
+	\pgfplotsset{xlabsh/.style={every axis x label/.style={at={(0.5,0)}, yshift=#1}}}
+	%Erweiterung Each nth point mehr als 100 Punkte auslassen
+	\makeatletter
+	\pgfplotsset{
+	/pgfplots/each nth point**/.style={%
+	/pgfplots/x filter/.append code={%
+	        \ifnum\coordindex=0
+	                \def\c@pgfplots@eachnthpoint@xfilter{0}%
+	                \edef\c@pgfplots@eachnthpoint@xfilter@cmp{#1}%
+	        \else
+	                \pgfplotsutil@advancestringcounter\c@pgfplots@eachnthpoint@xfilter
+	                \ifx\c@pgfplots@eachnthpoint@xfilter@cmp\c@pgfplots@eachnthpoint@xfilter
+	                        \def\c@pgfplots@eachnthpoint@xfilter{0}%
+	                \else
+	                        \let\pgfmathresult\pgfutil@empty
+	                \fi
+	        \fi
+	}%
+	},
+	}
+	\makeatother
+	
+	%cycle list für plots, !!!! \addplot+ verwenden!
+	\pgfplotsset{
+	    cycle list={
+	        blue,
+	        red,
+	        {black, thick, dashed},
+	        violet
+	    }
+	}
+	
+	
+
+
+
+%%%% Abkürzungsverzeichnis %%%%
+	%\usepackage[intoc]{nomencl}						% Abkürzungsverzeichnis
+	%\usepackage{nomencl}						% Abkürzungsverzeichnis
+	%\renewcommand{\nomname}{Abkürzungsverzeichnis}	% Deutsche Überschrift
+	%\setlength{\nomlabelwidth}{.25\hsize}			% Punkte zw. Abkürzung und Erklärung
+	%\renewcommand{\nomlabel}[1]{#1 \dotfill}
+	%\setlength{\nomitemsep}{-\parsep}				% Zeilenabstände verkleinern
+	%\makenomenclature
+	\usepackage{geometry}
+	\geometry{a4paper, top=30mm, left=26mm, right=26mm, bottom=35mm,
+	headsep=10mm, footskip=12mm} %Legt Seitenränder fest
+
+
+%%%% Kopf- und Fußzeilen %%%%
+	%\usepackage[automark, headsepline, footsepline]{scrpage2}
+	\usepackage[automark, headsepline]{scrpage2}		% Kopf- und Fußzeilen
+	\pagestyle{scrheadings}
+	\clearscrheadfoot
+	\ohead{\headmark}
+	\ihead{Masterarbeit}
+	\cfoot{Stand: \today }
+	%\cfoot[\pagemark]{\pagemark}
+	%\ohead[\headmark]{\headmark}
+	%\ihead[Masterarbeit]{Masterarbeit}
+	\ofoot{\pagemark}
+	\ofoot[\pagemark]{\pagemark}
+	%\ifoot{Lehrstuhl für Technische Elektronik}
+	%\ifoot[Lehrstuhl für Technische Elektronik]{Lehrstuhl für Technische Elektronik}
+
+
+% Hyperref als letztes laden
+	\usepackage[pdftex,hidelinks]{hyperref} %Für Links im PDF
+	\hypersetup{
+	  pdftitle    = {Abschlussarbeit....},
+	  pdfsubject  = {Thesis},
+	  pdfauthor   = {\authorname},
+	  pdfkeywords = {Stichworte,weitere Stichworte} ,
+	}
+%pfade definieren
+	\graphicspath{{abbildungen/}}
+	\tikzsetexternalprefix{abbildungen/tikz-ext-out/\thesubsection-} %path to graphics
