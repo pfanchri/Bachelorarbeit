@@ -667,6 +667,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for mobile Basisstation\Design Rule Check - PCB_Testplatine.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=..\Libraries\*.*
 IncludeSubFolders=1
