@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=VDD (3,3V) Pin=R4_TDA1-2
+Removed Pin From Net: NetName=VDD (3,3V) Pin=R4_TDA2-2
+Removed Pin From Net: NetName=VDD (3,3V) Pin=R4_TDA3-2
+Removed Pin From Net: NetName=VDD (3,3V) Pin=R4_TDA4-2
+Removed Pin From Net: NetName=VDD (3,3V) Pin=R4_TDA5-2
+Removed Pin From Net: NetName=VDD (3,3V) Pin=R4_TDA6-2
+Removed Member From Class: ClassName=TDA1 Member=R4_TDA1
+Removed Member From Class: ClassName=TDA2 Member=R4_TDA2
+Removed Member From Class: ClassName=TDA3 Member=R4_TDA3
+Removed Member From Class: ClassName=TDA4 Member=R4_TDA4
+Removed Member From Class: ClassName=TDA5 Member=R4_TDA5
+Removed Member From Class: ClassName=TDA6 Member=R4_TDA6
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA1-6
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA2-6
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA3-6
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA4-6
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA5-6
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA6-6
