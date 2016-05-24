@@ -1,0 +1,725 @@
+Added Component: Designator=C21_TDA2(0402)
+Added Component: Designator=C21_TDA3(0402)
+Added Component: Designator=C21_TDA4(0402)
+Added Component: Designator=C21_TDA5(0402)
+Added Component: Designator=C21_TDA6(0402)
+Added Component: Designator=C22_TDA2(0402)
+Added Component: Designator=C22_TDA3(0402)
+Added Component: Designator=C22_TDA4(0402)
+Added Component: Designator=C22_TDA5(0402)
+Added Component: Designator=C22_TDA6(0402)
+Added Component: Designator=C23_TDA2(0402)
+Added Component: Designator=C23_TDA3(0402)
+Added Component: Designator=C23_TDA4(0402)
+Added Component: Designator=C23_TDA5(0402)
+Added Component: Designator=C23_TDA6(0402)
+Added Component: Designator=C24_TDA2(0402)
+Added Component: Designator=C24_TDA3(0402)
+Added Component: Designator=C24_TDA4(0402)
+Added Component: Designator=C24_TDA5(0402)
+Added Component: Designator=C24_TDA6(0402)
+Added Component: Designator=C25_TDA2(0402)
+Added Component: Designator=C25_TDA3(0402)
+Added Component: Designator=C25_TDA4(0402)
+Added Component: Designator=C25_TDA5(0402)
+Added Component: Designator=C25_TDA6(0402)
+Added Component: Designator=C26_TDA2(0402)
+Added Component: Designator=C26_TDA3(0402)
+Added Component: Designator=C26_TDA4(0402)
+Added Component: Designator=C26_TDA5(0402)
+Added Component: Designator=C26_TDA6(0402)
+Added Component: Designator=C27_TDA2(0402)
+Added Component: Designator=C27_TDA3(0402)
+Added Component: Designator=C27_TDA4(0402)
+Added Component: Designator=C27_TDA5(0402)
+Added Component: Designator=C27_TDA6(0402)
+Added Component: Designator=C28_TDA2(0402)
+Added Component: Designator=C28_TDA3(0402)
+Added Component: Designator=C28_TDA4(0402)
+Added Component: Designator=C28_TDA5(0402)
+Added Component: Designator=C28_TDA6(0402)
+Added Component: Designator=C29_TDA2(0402)
+Added Component: Designator=C29_TDA3(0402)
+Added Component: Designator=C29_TDA4(0402)
+Added Component: Designator=C29_TDA5(0402)
+Added Component: Designator=C29_TDA6(0402)
+Added Component: Designator=C30_TDA2(0402)
+Added Component: Designator=C30_TDA3(0402)
+Added Component: Designator=C30_TDA4(0402)
+Added Component: Designator=C30_TDA5(0402)
+Added Component: Designator=C30_TDA6(0402)
+Added Component: Designator=C31_TDA2(0402)
+Added Component: Designator=C31_TDA3(0402)
+Added Component: Designator=C31_TDA4(0402)
+Added Component: Designator=C31_TDA5(0402)
+Added Component: Designator=C31_TDA6(0402)
+Added Component: Designator=CON1_TDA2(SMA)
+Added Component: Designator=CON1_TDA3(SMA)
+Added Component: Designator=CON1_TDA4(SMA)
+Added Component: Designator=CON1_TDA5(SMA)
+Added Component: Designator=CON1_TDA6(SMA)
+Added Component: Designator=F1_TDA2(SOP6)
+Added Component: Designator=F1_TDA3(SOP6)
+Added Component: Designator=F1_TDA4(SOP6)
+Added Component: Designator=F1_TDA5(SOP6)
+Added Component: Designator=F1_TDA6(SOP6)
+Added Component: Designator=H1_TDA2(HDR2X5)
+Added Component: Designator=H1_TDA3(HDR2X5)
+Added Component: Designator=H1_TDA4(HDR2X5)
+Added Component: Designator=H1_TDA5(HDR2X5)
+Added Component: Designator=H1_TDA6(HDR2X5)
+Added Component: Designator=H2_TDA2(HDR2X5)
+Added Component: Designator=H2_TDA3(HDR2X5)
+Added Component: Designator=H2_TDA4(HDR2X5)
+Added Component: Designator=H2_TDA5(HDR2X5)
+Added Component: Designator=H2_TDA6(HDR2X5)
+Added Component: Designator=L1_TDA2(INDC1608L)
+Added Component: Designator=L1_TDA3(INDC1608L)
+Added Component: Designator=L1_TDA4(INDC1608L)
+Added Component: Designator=L1_TDA5(INDC1608L)
+Added Component: Designator=L1_TDA6(INDC1608L)
+Added Component: Designator=L2_TDA2(INDC1608L)
+Added Component: Designator=L2_TDA3(INDC1608L)
+Added Component: Designator=L2_TDA4(INDC1608L)
+Added Component: Designator=L2_TDA5(INDC1608L)
+Added Component: Designator=L2_TDA6(INDC1608L)
+Added Component: Designator=L3_TDA2(INDC1608L)
+Added Component: Designator=L3_TDA3(INDC1608L)
+Added Component: Designator=L3_TDA4(INDC1608L)
+Added Component: Designator=L3_TDA5(INDC1608L)
+Added Component: Designator=L3_TDA6(INDC1608L)
+Added Component: Designator=L4_TDA2(INDC1608L)
+Added Component: Designator=L4_TDA3(INDC1608L)
+Added Component: Designator=L4_TDA4(INDC1608L)
+Added Component: Designator=L4_TDA5(INDC1608L)
+Added Component: Designator=L4_TDA6(INDC1608L)
+Added Component: Designator=R1_TDA2(J1-0603)
+Added Component: Designator=R1_TDA3(J1-0603)
+Added Component: Designator=R1_TDA4(J1-0603)
+Added Component: Designator=R1_TDA5(J1-0603)
+Added Component: Designator=R1_TDA6(J1-0603)
+Added Component: Designator=R2_TDA2(J1-0603)
+Added Component: Designator=R2_TDA3(J1-0603)
+Added Component: Designator=R2_TDA4(J1-0603)
+Added Component: Designator=R2_TDA5(J1-0603)
+Added Component: Designator=R2_TDA6(J1-0603)
+Added Component: Designator=R3_TDA2(J1-0603)
+Added Component: Designator=R3_TDA3(J1-0603)
+Added Component: Designator=R3_TDA4(J1-0603)
+Added Component: Designator=R3_TDA5(J1-0603)
+Added Component: Designator=R3_TDA6(J1-0603)
+Added Component: Designator=TDA5340_TDA2(INF-PG-TSSOP-28_N)
+Added Component: Designator=TDA5340_TDA3(INF-PG-TSSOP-28_N)
+Added Component: Designator=TDA5340_TDA4(INF-PG-TSSOP-28_N)
+Added Component: Designator=TDA5340_TDA5(INF-PG-TSSOP-28_N)
+Added Component: Designator=TDA5340_TDA6(INF-PG-TSSOP-28_N)
+Added Component: Designator=X_TDA_1_TDA2(Quarz)
+Added Component: Designator=X_TDA_1_TDA3(Quarz)
+Added Component: Designator=X_TDA_1_TDA4(Quarz)
+Added Component: Designator=X_TDA_1_TDA5(Quarz)
+Added Component: Designator=X_TDA_1_TDA6(Quarz)
+Added Pin To Net: NetName=NetC21_TDA2_1 Pin=C21_TDA2-1
+Added Pin To Net: NetName=GND Pin=C21_TDA2-2
+Added Pin To Net: NetName=NetC21_TDA3_1 Pin=C21_TDA3-1
+Added Pin To Net: NetName=GND Pin=C21_TDA3-2
+Added Pin To Net: NetName=NetC21_TDA4_1 Pin=C21_TDA4-1
+Added Pin To Net: NetName=GND Pin=C21_TDA4-2
+Added Pin To Net: NetName=NetC21_TDA5_1 Pin=C21_TDA5-1
+Added Pin To Net: NetName=GND Pin=C21_TDA5-2
+Added Pin To Net: NetName=NetC21_TDA6_1 Pin=C21_TDA6-1
+Added Pin To Net: NetName=GND Pin=C21_TDA6-2
+Added Pin To Net: NetName=NetC22_TDA2_1 Pin=C22_TDA2-1
+Added Pin To Net: NetName=GND Pin=C22_TDA2-2
+Added Pin To Net: NetName=NetC22_TDA3_1 Pin=C22_TDA3-1
+Added Pin To Net: NetName=GND Pin=C22_TDA3-2
+Added Pin To Net: NetName=NetC22_TDA4_1 Pin=C22_TDA4-1
+Added Pin To Net: NetName=GND Pin=C22_TDA4-2
+Added Pin To Net: NetName=NetC22_TDA5_1 Pin=C22_TDA5-1
+Added Pin To Net: NetName=GND Pin=C22_TDA5-2
+Added Pin To Net: NetName=NetC22_TDA6_1 Pin=C22_TDA6-1
+Added Pin To Net: NetName=GND Pin=C22_TDA6-2
+Added Pin To Net: NetName=NetC23_TDA2_1 Pin=C23_TDA2-1
+Added Pin To Net: NetName=GND Pin=C23_TDA2-2
+Added Pin To Net: NetName=NetC23_TDA3_1 Pin=C23_TDA3-1
+Added Pin To Net: NetName=GND Pin=C23_TDA3-2
+Added Pin To Net: NetName=NetC23_TDA4_1 Pin=C23_TDA4-1
+Added Pin To Net: NetName=GND Pin=C23_TDA4-2
+Added Pin To Net: NetName=NetC23_TDA5_1 Pin=C23_TDA5-1
+Added Pin To Net: NetName=GND Pin=C23_TDA5-2
+Added Pin To Net: NetName=NetC23_TDA6_1 Pin=C23_TDA6-1
+Added Pin To Net: NetName=GND Pin=C23_TDA6-2
+Added Pin To Net: NetName=NetC24_TDA2_1 Pin=C24_TDA2-1
+Added Pin To Net: NetName=GND Pin=C24_TDA2-2
+Added Pin To Net: NetName=NetC24_TDA3_1 Pin=C24_TDA3-1
+Added Pin To Net: NetName=GND Pin=C24_TDA3-2
+Added Pin To Net: NetName=NetC24_TDA4_1 Pin=C24_TDA4-1
+Added Pin To Net: NetName=GND Pin=C24_TDA4-2
+Added Pin To Net: NetName=NetC24_TDA5_1 Pin=C24_TDA5-1
+Added Pin To Net: NetName=GND Pin=C24_TDA5-2
+Added Pin To Net: NetName=NetC24_TDA6_1 Pin=C24_TDA6-1
+Added Pin To Net: NetName=GND Pin=C24_TDA6-2
+Added Pin To Net: NetName=NetC25_TDA2_1 Pin=C25_TDA2-1
+Added Pin To Net: NetName=GND Pin=C25_TDA2-2
+Added Pin To Net: NetName=NetC25_TDA3_1 Pin=C25_TDA3-1
+Added Pin To Net: NetName=GND Pin=C25_TDA3-2
+Added Pin To Net: NetName=NetC25_TDA4_1 Pin=C25_TDA4-1
+Added Pin To Net: NetName=GND Pin=C25_TDA4-2
+Added Pin To Net: NetName=NetC25_TDA5_1 Pin=C25_TDA5-1
+Added Pin To Net: NetName=GND Pin=C25_TDA5-2
+Added Pin To Net: NetName=NetC25_TDA6_1 Pin=C25_TDA6-1
+Added Pin To Net: NetName=GND Pin=C25_TDA6-2
+Added Pin To Net: NetName=GND Pin=C26_TDA2-1
+Added Pin To Net: NetName=NetC26_TDA2_2 Pin=C26_TDA2-2
+Added Pin To Net: NetName=GND Pin=C26_TDA3-1
+Added Pin To Net: NetName=NetC26_TDA3_2 Pin=C26_TDA3-2
+Added Pin To Net: NetName=GND Pin=C26_TDA4-1
+Added Pin To Net: NetName=NetC26_TDA4_2 Pin=C26_TDA4-2
+Added Pin To Net: NetName=GND Pin=C26_TDA5-1
+Added Pin To Net: NetName=NetC26_TDA5_2 Pin=C26_TDA5-2
+Added Pin To Net: NetName=GND Pin=C26_TDA6-1
+Added Pin To Net: NetName=NetC26_TDA6_2 Pin=C26_TDA6-2
+Added Pin To Net: NetName=GND Pin=C27_TDA2-1
+Added Pin To Net: NetName=RX_TDA2_P Pin=C27_TDA2-2
+Added Pin To Net: NetName=GND Pin=C27_TDA3-1
+Added Pin To Net: NetName=RX_TDA3_P Pin=C27_TDA3-2
+Added Pin To Net: NetName=GND Pin=C27_TDA4-1
+Added Pin To Net: NetName=RX_TDA4_P Pin=C27_TDA4-2
+Added Pin To Net: NetName=GND Pin=C27_TDA5-1
+Added Pin To Net: NetName=RX_TDA5_P Pin=C27_TDA5-2
+Added Pin To Net: NetName=GND Pin=C27_TDA6-1
+Added Pin To Net: NetName=RX_TDA6_P Pin=C27_TDA6-2
+Added Pin To Net: NetName=RX_TDA2_N Pin=C28_TDA2-1
+Added Pin To Net: NetName=GND Pin=C28_TDA2-2
+Added Pin To Net: NetName=RX_TDA3_N Pin=C28_TDA3-1
+Added Pin To Net: NetName=GND Pin=C28_TDA3-2
+Added Pin To Net: NetName=RX_TDA4_N Pin=C28_TDA4-1
+Added Pin To Net: NetName=GND Pin=C28_TDA4-2
+Added Pin To Net: NetName=RX_TDA5_N Pin=C28_TDA5-1
+Added Pin To Net: NetName=GND Pin=C28_TDA5-2
+Added Pin To Net: NetName=RX_TDA6_N Pin=C28_TDA6-1
+Added Pin To Net: NetName=GND Pin=C28_TDA6-2
+Added Pin To Net: NetName=NetC29_TDA2_1 Pin=C29_TDA2-1
+Added Pin To Net: NetName=RX_TDA2_N Pin=C29_TDA2-2
+Added Pin To Net: NetName=NetC29_TDA3_1 Pin=C29_TDA3-1
+Added Pin To Net: NetName=RX_TDA3_N Pin=C29_TDA3-2
+Added Pin To Net: NetName=NetC29_TDA4_1 Pin=C29_TDA4-1
+Added Pin To Net: NetName=RX_TDA4_N Pin=C29_TDA4-2
+Added Pin To Net: NetName=NetC29_TDA5_1 Pin=C29_TDA5-1
+Added Pin To Net: NetName=RX_TDA5_N Pin=C29_TDA5-2
+Added Pin To Net: NetName=NetC29_TDA6_1 Pin=C29_TDA6-1
+Added Pin To Net: NetName=RX_TDA6_N Pin=C29_TDA6-2
+Added Pin To Net: NetName=GND Pin=C30_TDA2-1
+Added Pin To Net: NetName=NetC30_TDA2_2 Pin=C30_TDA2-2
+Added Pin To Net: NetName=GND Pin=C30_TDA3-1
+Added Pin To Net: NetName=NetC30_TDA3_2 Pin=C30_TDA3-2
+Added Pin To Net: NetName=GND Pin=C30_TDA4-1
+Added Pin To Net: NetName=NetC30_TDA4_2 Pin=C30_TDA4-2
+Added Pin To Net: NetName=GND Pin=C30_TDA5-1
+Added Pin To Net: NetName=NetC30_TDA5_2 Pin=C30_TDA5-2
+Added Pin To Net: NetName=GND Pin=C30_TDA6-1
+Added Pin To Net: NetName=NetC30_TDA6_2 Pin=C30_TDA6-2
+Added Pin To Net: NetName=NetC29_TDA2_1 Pin=C31_TDA2-1
+Added Pin To Net: NetName=RF_TDA2 Pin=C31_TDA2-2
+Added Pin To Net: NetName=NetC29_TDA3_1 Pin=C31_TDA3-1
+Added Pin To Net: NetName=RF_TDA3 Pin=C31_TDA3-2
+Added Pin To Net: NetName=NetC29_TDA4_1 Pin=C31_TDA4-1
+Added Pin To Net: NetName=RF_TDA4 Pin=C31_TDA4-2
+Added Pin To Net: NetName=NetC29_TDA5_1 Pin=C31_TDA5-1
+Added Pin To Net: NetName=RF_TDA5 Pin=C31_TDA5-2
+Added Pin To Net: NetName=NetC29_TDA6_1 Pin=C31_TDA6-1
+Added Pin To Net: NetName=RF_TDA6 Pin=C31_TDA6-2
+Added Pin To Net: NetName=GND Pin=CON1_TDA2-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA2-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA2-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA2-0
+Added Pin To Net: NetName=RF_TDA2 Pin=CON1_TDA2-1
+Added Pin To Net: NetName=GND Pin=CON1_TDA3-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA3-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA3-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA3-0
+Added Pin To Net: NetName=RF_TDA3 Pin=CON1_TDA3-1
+Added Pin To Net: NetName=GND Pin=CON1_TDA4-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA4-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA4-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA4-0
+Added Pin To Net: NetName=RF_TDA4 Pin=CON1_TDA4-1
+Added Pin To Net: NetName=GND Pin=CON1_TDA5-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA5-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA5-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA5-0
+Added Pin To Net: NetName=RF_TDA5 Pin=CON1_TDA5-1
+Added Pin To Net: NetName=GND Pin=CON1_TDA6-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA6-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA6-0
+Added Pin To Net: NetName=GND Pin=CON1_TDA6-0
+Added Pin To Net: NetName=RF_TDA6 Pin=CON1_TDA6-1
+Added Pin To Net: NetName=NetF1_TDA2_1 Pin=F1_TDA2-1
+Added Pin To Net: NetName=NetF1_TDA2_1 Pin=F1_TDA2-1
+Added Pin To Net: NetName=GND Pin=F1_TDA2-2
+Added Pin To Net: NetName=GND Pin=F1_TDA2-5
+Added Pin To Net: NetName=NetF1_TDA2_6 Pin=F1_TDA2-6
+Added Pin To Net: NetName=NetF1_TDA3_1 Pin=F1_TDA3-1
+Added Pin To Net: NetName=NetF1_TDA3_1 Pin=F1_TDA3-1
+Added Pin To Net: NetName=GND Pin=F1_TDA3-2
+Added Pin To Net: NetName=GND Pin=F1_TDA3-5
+Added Pin To Net: NetName=NetF1_TDA3_6 Pin=F1_TDA3-6
+Added Pin To Net: NetName=NetF1_TDA4_1 Pin=F1_TDA4-1
+Added Pin To Net: NetName=NetF1_TDA4_1 Pin=F1_TDA4-1
+Added Pin To Net: NetName=GND Pin=F1_TDA4-2
+Added Pin To Net: NetName=GND Pin=F1_TDA4-5
+Added Pin To Net: NetName=NetF1_TDA4_6 Pin=F1_TDA4-6
+Added Pin To Net: NetName=NetF1_TDA5_1 Pin=F1_TDA5-1
+Added Pin To Net: NetName=NetF1_TDA5_1 Pin=F1_TDA5-1
+Added Pin To Net: NetName=GND Pin=F1_TDA5-2
+Added Pin To Net: NetName=GND Pin=F1_TDA5-5
+Added Pin To Net: NetName=NetF1_TDA5_6 Pin=F1_TDA5-6
+Added Pin To Net: NetName=NetF1_TDA6_1 Pin=F1_TDA6-1
+Added Pin To Net: NetName=NetF1_TDA6_1 Pin=F1_TDA6-1
+Added Pin To Net: NetName=GND Pin=F1_TDA6-2
+Added Pin To Net: NetName=GND Pin=F1_TDA6-5
+Added Pin To Net: NetName=NetF1_TDA6_6 Pin=F1_TDA6-6
+Added Pin To Net: NetName=SELECT2 Pin=H1_TDA2-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H1_TDA2-2
+Added Pin To Net: NetName=P_ON2 Pin=H1_TDA2-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H1_TDA2-4
+Added Pin To Net: NetName=PP2_TDA2 Pin=H1_TDA2-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H1_TDA2-6
+Added Pin To Net: NetName=PP1_TDA2 Pin=H1_TDA2-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H1_TDA2-8
+Added Pin To Net: NetName=PP0_TDA2 Pin=H1_TDA2-9
+Added Pin To Net: NetName=GND Pin=H1_TDA2-10
+Added Pin To Net: NetName=SELECT3 Pin=H1_TDA3-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H1_TDA3-2
+Added Pin To Net: NetName=P_ON3 Pin=H1_TDA3-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H1_TDA3-4
+Added Pin To Net: NetName=PP2_TDA3 Pin=H1_TDA3-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H1_TDA3-6
+Added Pin To Net: NetName=PP1_TDA3 Pin=H1_TDA3-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H1_TDA3-8
+Added Pin To Net: NetName=PP0_TDA3 Pin=H1_TDA3-9
+Added Pin To Net: NetName=GND Pin=H1_TDA3-10
+Added Pin To Net: NetName=SELECT4 Pin=H1_TDA4-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H1_TDA4-2
+Added Pin To Net: NetName=P_ON4 Pin=H1_TDA4-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H1_TDA4-4
+Added Pin To Net: NetName=PP2_TDA4 Pin=H1_TDA4-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H1_TDA4-6
+Added Pin To Net: NetName=PP1_TDA4 Pin=H1_TDA4-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H1_TDA4-8
+Added Pin To Net: NetName=PP0_TDA4 Pin=H1_TDA4-9
+Added Pin To Net: NetName=GND Pin=H1_TDA4-10
+Added Pin To Net: NetName=SELECT5 Pin=H1_TDA5-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H1_TDA5-2
+Added Pin To Net: NetName=P_ON5 Pin=H1_TDA5-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H1_TDA5-4
+Added Pin To Net: NetName=PP2_TDA5 Pin=H1_TDA5-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H1_TDA5-6
+Added Pin To Net: NetName=PP1_TDA5 Pin=H1_TDA5-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H1_TDA5-8
+Added Pin To Net: NetName=PP0_TDA5 Pin=H1_TDA5-9
+Added Pin To Net: NetName=GND Pin=H1_TDA5-10
+Added Pin To Net: NetName=SELECT6 Pin=H1_TDA6-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H1_TDA6-2
+Added Pin To Net: NetName=P_ON6 Pin=H1_TDA6-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H1_TDA6-4
+Added Pin To Net: NetName=PP2_TDA6 Pin=H1_TDA6-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H1_TDA6-6
+Added Pin To Net: NetName=PP1_TDA6 Pin=H1_TDA6-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H1_TDA6-8
+Added Pin To Net: NetName=PP0_TDA6 Pin=H1_TDA6-9
+Added Pin To Net: NetName=GND Pin=H1_TDA6-10
+Added Pin To Net: NetName=SELECT2 Pin=H2_TDA2-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H2_TDA2-2
+Added Pin To Net: NetName=P_ON2 Pin=H2_TDA2-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H2_TDA2-4
+Added Pin To Net: NetName=PP2_TDA2 Pin=H2_TDA2-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H2_TDA2-6
+Added Pin To Net: NetName=PP1_TDA2 Pin=H2_TDA2-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H2_TDA2-8
+Added Pin To Net: NetName=PP0_TDA2 Pin=H2_TDA2-9
+Added Pin To Net: NetName=GND Pin=H2_TDA2-10
+Added Pin To Net: NetName=SELECT3 Pin=H2_TDA3-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H2_TDA3-2
+Added Pin To Net: NetName=P_ON3 Pin=H2_TDA3-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H2_TDA3-4
+Added Pin To Net: NetName=PP2_TDA3 Pin=H2_TDA3-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H2_TDA3-6
+Added Pin To Net: NetName=PP1_TDA3 Pin=H2_TDA3-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H2_TDA3-8
+Added Pin To Net: NetName=PP0_TDA3 Pin=H2_TDA3-9
+Added Pin To Net: NetName=GND Pin=H2_TDA3-10
+Added Pin To Net: NetName=SELECT4 Pin=H2_TDA4-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H2_TDA4-2
+Added Pin To Net: NetName=P_ON4 Pin=H2_TDA4-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H2_TDA4-4
+Added Pin To Net: NetName=PP2_TDA4 Pin=H2_TDA4-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H2_TDA4-6
+Added Pin To Net: NetName=PP1_TDA4 Pin=H2_TDA4-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H2_TDA4-8
+Added Pin To Net: NetName=PP0_TDA4 Pin=H2_TDA4-9
+Added Pin To Net: NetName=GND Pin=H2_TDA4-10
+Added Pin To Net: NetName=SELECT5 Pin=H2_TDA5-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H2_TDA5-2
+Added Pin To Net: NetName=P_ON5 Pin=H2_TDA5-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H2_TDA5-4
+Added Pin To Net: NetName=PP2_TDA5 Pin=H2_TDA5-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H2_TDA5-6
+Added Pin To Net: NetName=PP1_TDA5 Pin=H2_TDA5-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H2_TDA5-8
+Added Pin To Net: NetName=PP0_TDA5 Pin=H2_TDA5-9
+Added Pin To Net: NetName=GND Pin=H2_TDA5-10
+Added Pin To Net: NetName=SELECT6 Pin=H2_TDA6-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=H2_TDA6-2
+Added Pin To Net: NetName=P_ON6 Pin=H2_TDA6-3
+Added Pin To Net: NetName=SCK_TDA1 Pin=H2_TDA6-4
+Added Pin To Net: NetName=PP2_TDA6 Pin=H2_TDA6-5
+Added Pin To Net: NetName=MOSI_TDA1 Pin=H2_TDA6-6
+Added Pin To Net: NetName=PP1_TDA6 Pin=H2_TDA6-7
+Added Pin To Net: NetName=MISO_TDA1 Pin=H2_TDA6-8
+Added Pin To Net: NetName=PP0_TDA6 Pin=H2_TDA6-9
+Added Pin To Net: NetName=GND Pin=H2_TDA6-10
+Added Pin To Net: NetName=RX_TDA2_P Pin=L1_TDA2-1
+Added Pin To Net: NetName=RX_TDA2_N Pin=L1_TDA2-2
+Added Pin To Net: NetName=RX_TDA3_P Pin=L1_TDA3-1
+Added Pin To Net: NetName=RX_TDA3_N Pin=L1_TDA3-2
+Added Pin To Net: NetName=RX_TDA4_P Pin=L1_TDA4-1
+Added Pin To Net: NetName=RX_TDA4_N Pin=L1_TDA4-2
+Added Pin To Net: NetName=RX_TDA5_P Pin=L1_TDA5-1
+Added Pin To Net: NetName=RX_TDA5_N Pin=L1_TDA5-2
+Added Pin To Net: NetName=RX_TDA6_P Pin=L1_TDA6-1
+Added Pin To Net: NetName=RX_TDA6_N Pin=L1_TDA6-2
+Added Pin To Net: NetName=NetC30_TDA2_2 Pin=L2_TDA2-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=L2_TDA2-2
+Added Pin To Net: NetName=NetC30_TDA3_2 Pin=L2_TDA3-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=L2_TDA3-2
+Added Pin To Net: NetName=NetC30_TDA4_2 Pin=L2_TDA4-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=L2_TDA4-2
+Added Pin To Net: NetName=NetC30_TDA5_2 Pin=L2_TDA5-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=L2_TDA5-2
+Added Pin To Net: NetName=NetC30_TDA6_2 Pin=L2_TDA6-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=L2_TDA6-2
+Added Pin To Net: NetName=NetL3_TDA2_1 Pin=L3_TDA2-1
+Added Pin To Net: NetName=NetC30_TDA2_2 Pin=L3_TDA2-2
+Added Pin To Net: NetName=NetL3_TDA3_1 Pin=L3_TDA3-1
+Added Pin To Net: NetName=NetC30_TDA3_2 Pin=L3_TDA3-2
+Added Pin To Net: NetName=NetL3_TDA4_1 Pin=L3_TDA4-1
+Added Pin To Net: NetName=NetC30_TDA4_2 Pin=L3_TDA4-2
+Added Pin To Net: NetName=NetL3_TDA5_1 Pin=L3_TDA5-1
+Added Pin To Net: NetName=NetC30_TDA5_2 Pin=L3_TDA5-2
+Added Pin To Net: NetName=NetL3_TDA6_1 Pin=L3_TDA6-1
+Added Pin To Net: NetName=NetC30_TDA6_2 Pin=L3_TDA6-2
+Added Pin To Net: NetName=NetC30_TDA2_2 Pin=L4_TDA2-1
+Added Pin To Net: NetName=NetC29_TDA2_1 Pin=L4_TDA2-2
+Added Pin To Net: NetName=NetC30_TDA3_2 Pin=L4_TDA3-1
+Added Pin To Net: NetName=NetC29_TDA3_1 Pin=L4_TDA3-2
+Added Pin To Net: NetName=NetC30_TDA4_2 Pin=L4_TDA4-1
+Added Pin To Net: NetName=NetC29_TDA4_1 Pin=L4_TDA4-2
+Added Pin To Net: NetName=NetC30_TDA5_2 Pin=L4_TDA5-1
+Added Pin To Net: NetName=NetC29_TDA5_1 Pin=L4_TDA5-2
+Added Pin To Net: NetName=NetC30_TDA6_2 Pin=L4_TDA6-1
+Added Pin To Net: NetName=NetC29_TDA6_1 Pin=L4_TDA6-2
+Added Pin To Net: NetName=NetC21_TDA2_1 Pin=R1_TDA2-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R1_TDA2-2
+Added Pin To Net: NetName=NetC21_TDA3_1 Pin=R1_TDA3-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R1_TDA3-2
+Added Pin To Net: NetName=NetC21_TDA4_1 Pin=R1_TDA4-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R1_TDA4-2
+Added Pin To Net: NetName=NetC21_TDA5_1 Pin=R1_TDA5-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R1_TDA5-2
+Added Pin To Net: NetName=NetC21_TDA6_1 Pin=R1_TDA6-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R1_TDA6-2
+Added Pin To Net: NetName=NetC22_TDA2_1 Pin=R2_TDA2-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R2_TDA2-2
+Added Pin To Net: NetName=NetC22_TDA3_1 Pin=R2_TDA3-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R2_TDA3-2
+Added Pin To Net: NetName=NetC22_TDA4_1 Pin=R2_TDA4-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R2_TDA4-2
+Added Pin To Net: NetName=NetC22_TDA5_1 Pin=R2_TDA5-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R2_TDA5-2
+Added Pin To Net: NetName=NetC22_TDA6_1 Pin=R2_TDA6-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R2_TDA6-2
+Added Pin To Net: NetName=NetC23_TDA2_1 Pin=R3_TDA2-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R3_TDA2-2
+Added Pin To Net: NetName=NetC23_TDA3_1 Pin=R3_TDA3-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R3_TDA3-2
+Added Pin To Net: NetName=NetC23_TDA4_1 Pin=R3_TDA4-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R3_TDA4-2
+Added Pin To Net: NetName=NetC23_TDA5_1 Pin=R3_TDA5-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R3_TDA5-2
+Added Pin To Net: NetName=NetC23_TDA6_1 Pin=R3_TDA6-1
+Added Pin To Net: NetName=VDD (3,3V) Pin=R3_TDA6-2
+Added Pin To Net: NetName=NetC22_TDA2_1 Pin=TDA5340_TDA2-2
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA2-3
+Added Pin To Net: NetName=NetF1_TDA2_6 Pin=TDA5340_TDA2-4
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA2-5
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA2-6
+Added Pin To Net: NetName=NetC21_TDA2_1 Pin=TDA5340_TDA2-7
+Added Pin To Net: NetName=NetC24_TDA2_1 Pin=TDA5340_TDA2-8
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA2-9
+Added Pin To Net: NetName=PP0_TDA2 Pin=TDA5340_TDA2-10
+Added Pin To Net: NetName=PP1_TDA2 Pin=TDA5340_TDA2-11
+Added Pin To Net: NetName=PP2_TDA2 Pin=TDA5340_TDA2-12
+Added Pin To Net: NetName=P_ON2 Pin=TDA5340_TDA2-13
+Added Pin To Net: NetName=NetC26_TDA2_2 Pin=TDA5340_TDA2-14
+Added Pin To Net: NetName=NetC25_TDA2_1 Pin=TDA5340_TDA2-15
+Added Pin To Net: NetName=SELECT2 Pin=TDA5340_TDA2-16
+Added Pin To Net: NetName=SCK_TDA1 Pin=TDA5340_TDA2-17
+Added Pin To Net: NetName=MOSI_TDA1 Pin=TDA5340_TDA2-18
+Added Pin To Net: NetName=MISO_TDA1 Pin=TDA5340_TDA2-19
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA2-20
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA2-21
+Added Pin To Net: NetName=RX_TDA2_N Pin=TDA5340_TDA2-22
+Added Pin To Net: NetName=RX_TDA2_P Pin=TDA5340_TDA2-23
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA2-24
+Added Pin To Net: NetName=NetL3_TDA2_1 Pin=TDA5340_TDA2-25
+Added Pin To Net: NetName=NetC23_TDA2_1 Pin=TDA5340_TDA2-27
+Added Pin To Net: NetName=NetF1_TDA2_1 Pin=TDA5340_TDA2-28
+Added Pin To Net: NetName=NetC22_TDA3_1 Pin=TDA5340_TDA3-2
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA3-3
+Added Pin To Net: NetName=NetF1_TDA3_6 Pin=TDA5340_TDA3-4
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA3-5
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA3-6
+Added Pin To Net: NetName=NetC21_TDA3_1 Pin=TDA5340_TDA3-7
+Added Pin To Net: NetName=NetC24_TDA3_1 Pin=TDA5340_TDA3-8
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA3-9
+Added Pin To Net: NetName=PP0_TDA3 Pin=TDA5340_TDA3-10
+Added Pin To Net: NetName=PP1_TDA3 Pin=TDA5340_TDA3-11
+Added Pin To Net: NetName=PP2_TDA3 Pin=TDA5340_TDA3-12
+Added Pin To Net: NetName=P_ON3 Pin=TDA5340_TDA3-13
+Added Pin To Net: NetName=NetC26_TDA3_2 Pin=TDA5340_TDA3-14
+Added Pin To Net: NetName=NetC25_TDA3_1 Pin=TDA5340_TDA3-15
+Added Pin To Net: NetName=SELECT3 Pin=TDA5340_TDA3-16
+Added Pin To Net: NetName=SCK_TDA1 Pin=TDA5340_TDA3-17
+Added Pin To Net: NetName=MOSI_TDA1 Pin=TDA5340_TDA3-18
+Added Pin To Net: NetName=MISO_TDA1 Pin=TDA5340_TDA3-19
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA3-20
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA3-21
+Added Pin To Net: NetName=RX_TDA3_N Pin=TDA5340_TDA3-22
+Added Pin To Net: NetName=RX_TDA3_P Pin=TDA5340_TDA3-23
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA3-24
+Added Pin To Net: NetName=NetL3_TDA3_1 Pin=TDA5340_TDA3-25
+Added Pin To Net: NetName=NetC23_TDA3_1 Pin=TDA5340_TDA3-27
+Added Pin To Net: NetName=NetF1_TDA3_1 Pin=TDA5340_TDA3-28
+Added Pin To Net: NetName=NetC22_TDA4_1 Pin=TDA5340_TDA4-2
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA4-3
+Added Pin To Net: NetName=NetF1_TDA4_6 Pin=TDA5340_TDA4-4
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA4-5
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA4-6
+Added Pin To Net: NetName=NetC21_TDA4_1 Pin=TDA5340_TDA4-7
+Added Pin To Net: NetName=NetC24_TDA4_1 Pin=TDA5340_TDA4-8
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA4-9
+Added Pin To Net: NetName=PP0_TDA4 Pin=TDA5340_TDA4-10
+Added Pin To Net: NetName=PP1_TDA4 Pin=TDA5340_TDA4-11
+Added Pin To Net: NetName=PP2_TDA4 Pin=TDA5340_TDA4-12
+Added Pin To Net: NetName=P_ON4 Pin=TDA5340_TDA4-13
+Added Pin To Net: NetName=NetC26_TDA4_2 Pin=TDA5340_TDA4-14
+Added Pin To Net: NetName=NetC25_TDA4_1 Pin=TDA5340_TDA4-15
+Added Pin To Net: NetName=SELECT4 Pin=TDA5340_TDA4-16
+Added Pin To Net: NetName=SCK_TDA1 Pin=TDA5340_TDA4-17
+Added Pin To Net: NetName=MOSI_TDA1 Pin=TDA5340_TDA4-18
+Added Pin To Net: NetName=MISO_TDA1 Pin=TDA5340_TDA4-19
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA4-20
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA4-21
+Added Pin To Net: NetName=RX_TDA4_N Pin=TDA5340_TDA4-22
+Added Pin To Net: NetName=RX_TDA4_P Pin=TDA5340_TDA4-23
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA4-24
+Added Pin To Net: NetName=NetL3_TDA4_1 Pin=TDA5340_TDA4-25
+Added Pin To Net: NetName=NetC23_TDA4_1 Pin=TDA5340_TDA4-27
+Added Pin To Net: NetName=NetF1_TDA4_1 Pin=TDA5340_TDA4-28
+Added Pin To Net: NetName=NetC22_TDA5_1 Pin=TDA5340_TDA5-2
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA5-3
+Added Pin To Net: NetName=NetF1_TDA5_6 Pin=TDA5340_TDA5-4
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA5-5
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA5-6
+Added Pin To Net: NetName=NetC21_TDA5_1 Pin=TDA5340_TDA5-7
+Added Pin To Net: NetName=NetC24_TDA5_1 Pin=TDA5340_TDA5-8
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA5-9
+Added Pin To Net: NetName=PP0_TDA5 Pin=TDA5340_TDA5-10
+Added Pin To Net: NetName=PP1_TDA5 Pin=TDA5340_TDA5-11
+Added Pin To Net: NetName=PP2_TDA5 Pin=TDA5340_TDA5-12
+Added Pin To Net: NetName=P_ON5 Pin=TDA5340_TDA5-13
+Added Pin To Net: NetName=NetC26_TDA5_2 Pin=TDA5340_TDA5-14
+Added Pin To Net: NetName=NetC25_TDA5_1 Pin=TDA5340_TDA5-15
+Added Pin To Net: NetName=SELECT5 Pin=TDA5340_TDA5-16
+Added Pin To Net: NetName=SCK_TDA1 Pin=TDA5340_TDA5-17
+Added Pin To Net: NetName=MOSI_TDA1 Pin=TDA5340_TDA5-18
+Added Pin To Net: NetName=MISO_TDA1 Pin=TDA5340_TDA5-19
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA5-20
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA5-21
+Added Pin To Net: NetName=RX_TDA5_N Pin=TDA5340_TDA5-22
+Added Pin To Net: NetName=RX_TDA5_P Pin=TDA5340_TDA5-23
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA5-24
+Added Pin To Net: NetName=NetL3_TDA5_1 Pin=TDA5340_TDA5-25
+Added Pin To Net: NetName=NetC23_TDA5_1 Pin=TDA5340_TDA5-27
+Added Pin To Net: NetName=NetF1_TDA5_1 Pin=TDA5340_TDA5-28
+Added Pin To Net: NetName=NetC22_TDA6_1 Pin=TDA5340_TDA6-2
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA6-3
+Added Pin To Net: NetName=NetF1_TDA6_6 Pin=TDA5340_TDA6-4
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA6-5
+Added Pin To Net: NetName=VDD (3,3V) Pin=TDA5340_TDA6-6
+Added Pin To Net: NetName=NetC21_TDA6_1 Pin=TDA5340_TDA6-7
+Added Pin To Net: NetName=NetC24_TDA6_1 Pin=TDA5340_TDA6-8
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA6-9
+Added Pin To Net: NetName=PP0_TDA6 Pin=TDA5340_TDA6-10
+Added Pin To Net: NetName=PP1_TDA6 Pin=TDA5340_TDA6-11
+Added Pin To Net: NetName=PP2_TDA6 Pin=TDA5340_TDA6-12
+Added Pin To Net: NetName=P_ON6 Pin=TDA5340_TDA6-13
+Added Pin To Net: NetName=NetC26_TDA6_2 Pin=TDA5340_TDA6-14
+Added Pin To Net: NetName=NetC25_TDA6_1 Pin=TDA5340_TDA6-15
+Added Pin To Net: NetName=SELECT6 Pin=TDA5340_TDA6-16
+Added Pin To Net: NetName=SCK_TDA1 Pin=TDA5340_TDA6-17
+Added Pin To Net: NetName=MOSI_TDA1 Pin=TDA5340_TDA6-18
+Added Pin To Net: NetName=MISO_TDA1 Pin=TDA5340_TDA6-19
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA6-20
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA6-21
+Added Pin To Net: NetName=RX_TDA6_N Pin=TDA5340_TDA6-22
+Added Pin To Net: NetName=RX_TDA6_P Pin=TDA5340_TDA6-23
+Added Pin To Net: NetName=GND Pin=TDA5340_TDA6-24
+Added Pin To Net: NetName=NetL3_TDA6_1 Pin=TDA5340_TDA6-25
+Added Pin To Net: NetName=NetC23_TDA6_1 Pin=TDA5340_TDA6-27
+Added Pin To Net: NetName=NetF1_TDA6_1 Pin=TDA5340_TDA6-28
+Added Pin To Net: NetName=NetC25_TDA2_1 Pin=X_TDA_1_TDA2-1
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA2-2
+Added Pin To Net: NetName=NetC26_TDA2_2 Pin=X_TDA_1_TDA2-3
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA2-4
+Added Pin To Net: NetName=NetC25_TDA3_1 Pin=X_TDA_1_TDA3-1
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA3-2
+Added Pin To Net: NetName=NetC26_TDA3_2 Pin=X_TDA_1_TDA3-3
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA3-4
+Added Pin To Net: NetName=NetC25_TDA4_1 Pin=X_TDA_1_TDA4-1
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA4-2
+Added Pin To Net: NetName=NetC26_TDA4_2 Pin=X_TDA_1_TDA4-3
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA4-4
+Added Pin To Net: NetName=NetC25_TDA5_1 Pin=X_TDA_1_TDA5-1
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA5-2
+Added Pin To Net: NetName=NetC26_TDA5_2 Pin=X_TDA_1_TDA5-3
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA5-4
+Added Pin To Net: NetName=NetC25_TDA6_1 Pin=X_TDA_1_TDA6-1
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA6-2
+Added Pin To Net: NetName=NetC26_TDA6_2 Pin=X_TDA_1_TDA6-3
+Added Pin To Net: NetName=GND Pin=X_TDA_1_TDA6-4
+Added Member To Class: ClassName=TDA2 Member=Component C21_TDA2 (C21) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C21_TDA3 (C21) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C21_TDA4 (C21) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C21_TDA5 (C21) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C21_TDA6 (C21) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C22_TDA2 (C22) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C22_TDA3 (C22) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C22_TDA4 (C22) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C22_TDA5 (C22) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C22_TDA6 (C22) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C23_TDA2 (C23) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C23_TDA3 (C23) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C23_TDA4 (C23) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C23_TDA5 (C23) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C23_TDA6 (C23) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C24_TDA2 (C24) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C24_TDA3 (C24) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C24_TDA4 (C24) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C24_TDA5 (C24) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C24_TDA6 (C24) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C25_TDA2 (C25) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C25_TDA3 (C25) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C25_TDA4 (C25) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C25_TDA5 (C25) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C25_TDA6 (C25) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C26_TDA2 (C26) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C26_TDA3 (C26) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C26_TDA4 (C26) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C26_TDA5 (C26) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C26_TDA6 (C26) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C27_TDA2 (C27) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C27_TDA3 (C27) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C27_TDA4 (C27) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C27_TDA5 (C27) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C27_TDA6 (C27) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C28_TDA2 (C28) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C28_TDA3 (C28) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C28_TDA4 (C28) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C28_TDA5 (C28) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C28_TDA6 (C28) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C29_TDA2 (C29) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C29_TDA3 (C29) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C29_TDA4 (C29) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C29_TDA5 (C29) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C29_TDA6 (C29) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C30_TDA2 (C30) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C30_TDA3 (C30) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C30_TDA4 (C30) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C30_TDA5 (C30) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C30_TDA6 (C30) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component C31_TDA2 (C31) Cap Semi
+Added Member To Class: ClassName=TDA3 Member=Component C31_TDA3 (C31) Cap Semi
+Added Member To Class: ClassName=TDA4 Member=Component C31_TDA4 (C31) Cap Semi
+Added Member To Class: ClassName=TDA5 Member=Component C31_TDA5 (C31) Cap Semi
+Added Member To Class: ClassName=TDA6 Member=Component C31_TDA6 (C31) Cap Semi
+Added Member To Class: ClassName=TDA2 Member=Component CON1_TDA2 (CON1) SMA
+Added Member To Class: ClassName=TDA3 Member=Component CON1_TDA3 (CON1) SMA
+Added Member To Class: ClassName=TDA4 Member=Component CON1_TDA4 (CON1) SMA
+Added Member To Class: ClassName=TDA5 Member=Component CON1_TDA5 (CON1) SMA
+Added Member To Class: ClassName=TDA6 Member=Component CON1_TDA6 (CON1) SMA
+Added Member To Class: ClassName=TDA2 Member=Component F1_TDA2 (F1) SFECF10M7EA00
+Added Member To Class: ClassName=TDA3 Member=Component F1_TDA3 (F1) SFECF10M7EA00
+Added Member To Class: ClassName=TDA4 Member=Component F1_TDA4 (F1) SFECF10M7EA00
+Added Member To Class: ClassName=TDA5 Member=Component F1_TDA5 (F1) SFECF10M7EA00
+Added Member To Class: ClassName=TDA6 Member=Component F1_TDA6 (F1) SFECF10M7EA00
+Added Member To Class: ClassName=TDA2 Member=Component H1_TDA2 (H1) Header 5X2
+Added Member To Class: ClassName=TDA3 Member=Component H1_TDA3 (H1) Header 5X2
+Added Member To Class: ClassName=TDA4 Member=Component H1_TDA4 (H1) Header 5X2
+Added Member To Class: ClassName=TDA5 Member=Component H1_TDA5 (H1) Header 5X2
+Added Member To Class: ClassName=TDA6 Member=Component H1_TDA6 (H1) Header 5X2
+Added Member To Class: ClassName=TDA2 Member=Component H2_TDA2 (H2) Header 5X2
+Added Member To Class: ClassName=TDA3 Member=Component H2_TDA3 (H2) Header 5X2
+Added Member To Class: ClassName=TDA4 Member=Component H2_TDA4 (H2) Header 5X2
+Added Member To Class: ClassName=TDA5 Member=Component H2_TDA5 (H2) Header 5X2
+Added Member To Class: ClassName=TDA6 Member=Component H2_TDA6 (H2) Header 5X2
+Added Member To Class: ClassName=TDA2 Member=Component L1_TDA2 (L1) Inductor
+Added Member To Class: ClassName=TDA3 Member=Component L1_TDA3 (L1) Inductor
+Added Member To Class: ClassName=TDA4 Member=Component L1_TDA4 (L1) Inductor
+Added Member To Class: ClassName=TDA5 Member=Component L1_TDA5 (L1) Inductor
+Added Member To Class: ClassName=TDA6 Member=Component L1_TDA6 (L1) Inductor
+Added Member To Class: ClassName=TDA2 Member=Component L2_TDA2 (L2) Inductor
+Added Member To Class: ClassName=TDA3 Member=Component L2_TDA3 (L2) Inductor
+Added Member To Class: ClassName=TDA4 Member=Component L2_TDA4 (L2) Inductor
+Added Member To Class: ClassName=TDA5 Member=Component L2_TDA5 (L2) Inductor
+Added Member To Class: ClassName=TDA6 Member=Component L2_TDA6 (L2) Inductor
+Added Member To Class: ClassName=TDA2 Member=Component L3_TDA2 (L3) Inductor
+Added Member To Class: ClassName=TDA3 Member=Component L3_TDA3 (L3) Inductor
+Added Member To Class: ClassName=TDA4 Member=Component L3_TDA4 (L3) Inductor
+Added Member To Class: ClassName=TDA5 Member=Component L3_TDA5 (L3) Inductor
+Added Member To Class: ClassName=TDA6 Member=Component L3_TDA6 (L3) Inductor
+Added Member To Class: ClassName=TDA2 Member=Component L4_TDA2 (L4) Inductor
+Added Member To Class: ClassName=TDA3 Member=Component L4_TDA3 (L4) Inductor
+Added Member To Class: ClassName=TDA4 Member=Component L4_TDA4 (L4) Inductor
+Added Member To Class: ClassName=TDA5 Member=Component L4_TDA5 (L4) Inductor
+Added Member To Class: ClassName=TDA6 Member=Component L4_TDA6 (L4) Inductor
+Added Member To Class: ClassName=TDA2 Member=Component R1_TDA2 (R1) Res3
+Added Member To Class: ClassName=TDA3 Member=Component R1_TDA3 (R1) Res3
+Added Member To Class: ClassName=TDA4 Member=Component R1_TDA4 (R1) Res3
+Added Member To Class: ClassName=TDA5 Member=Component R1_TDA5 (R1) Res3
+Added Member To Class: ClassName=TDA6 Member=Component R1_TDA6 (R1) Res3
+Added Member To Class: ClassName=TDA2 Member=Component R2_TDA2 (R2) Res3
+Added Member To Class: ClassName=TDA3 Member=Component R2_TDA3 (R2) Res3
+Added Member To Class: ClassName=TDA4 Member=Component R2_TDA4 (R2) Res3
+Added Member To Class: ClassName=TDA5 Member=Component R2_TDA5 (R2) Res3
+Added Member To Class: ClassName=TDA6 Member=Component R2_TDA6 (R2) Res3
+Added Member To Class: ClassName=TDA2 Member=Component R3_TDA2 (R3) Res3
+Added Member To Class: ClassName=TDA3 Member=Component R3_TDA3 (R3) Res3
+Added Member To Class: ClassName=TDA4 Member=Component R3_TDA4 (R3) Res3
+Added Member To Class: ClassName=TDA5 Member=Component R3_TDA5 (R3) Res3
+Added Member To Class: ClassName=TDA6 Member=Component R3_TDA6 (R3) Res3
+Added Member To Class: ClassName=TDA2 Member=Component TDA5340_TDA2 (TDA5340) TDA5340
+Added Member To Class: ClassName=TDA3 Member=Component TDA5340_TDA3 (TDA5340) TDA5340
+Added Member To Class: ClassName=TDA4 Member=Component TDA5340_TDA4 (TDA5340) TDA5340
+Added Member To Class: ClassName=TDA5 Member=Component TDA5340_TDA5 (TDA5340) TDA5340
+Added Member To Class: ClassName=TDA6 Member=Component TDA5340_TDA6 (TDA5340) TDA5340
+Added Member To Class: ClassName=TDA2 Member=Component X_TDA_1_TDA2 (X_TDA_1) Quarz
+Added Member To Class: ClassName=TDA3 Member=Component X_TDA_1_TDA3 (X_TDA_1) Quarz
+Added Member To Class: ClassName=TDA4 Member=Component X_TDA_1_TDA4 (X_TDA_1) Quarz
+Added Member To Class: ClassName=TDA5 Member=Component X_TDA_1_TDA5 (X_TDA_1) Quarz
+Added Member To Class: ClassName=TDA6 Member=Component X_TDA_1_TDA6 (X_TDA_1) Quarz
+Added Room: Name=TDA2
+Added Room: Name=TDA3
+Added Room: Name=TDA4
+Added Room: Name=TDA5
+Added Room: Name=TDA6
