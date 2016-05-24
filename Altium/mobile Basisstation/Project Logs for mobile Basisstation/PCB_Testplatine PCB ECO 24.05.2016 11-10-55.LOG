@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetD2_2 Pin=J1-2
+Removed Pin From Net: NetName=NetD3_2 Pin=J1-3
+Change Component DesignItemId : Designator=J1 Old DesignItemId=Micro USB Buchse - Molex New DesignItemId=USB_Micro_TypeB
+Change Component Footprint: Designator=J1 Old Footprint=Micro USB Buchse - Molex New Footprint=USB_Micro-B_Molex_SMD
+Change Component Comment : Designator=J1 Old Comment=Micro USB Buchse - Molex New Comment=USB Micro Type B
+Added Component: Designator=J1(Micro USB Buchse - Molex)
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetD2_2 Pin=J1-2
+Added Pin To Net: NetName=NetD3_2 Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Member To Class: ClassName=U_Power Supply Member=Component J1 USB Micro Type B

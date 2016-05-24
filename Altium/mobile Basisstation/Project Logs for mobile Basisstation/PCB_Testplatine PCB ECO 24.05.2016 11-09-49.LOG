@@ -1,0 +1,5 @@
+Change Component DesignItemId : Designator=J1 Old DesignItemId=USB_Micro_TypeB New DesignItemId=Micro USB Buchse - Molex
+Change Component Footprint: Designator=J1 Old Footprint=USB_Micro-B_Molex_SMD New Footprint=Micro USB Buchse - Molex
+Change Component Comment : Designator=J1 Old Comment=USB Micro Type B New Comment=Micro USB Buchse - Molex
+Added Room: Name=U_Power Supply
+Added Room: Name=U_XMC4500
