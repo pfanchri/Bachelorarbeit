@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=P_ON6 Pin=XMC4500-9
+Removed Pin From Net: NetName=PP0_TDA6 Pin=XMC4500-25
+Removed Pin From Net: NetName=PP2_TDA6 Pin=XMC4500-31
+Removed Pin From Net: NetName=PP1_TDA6 Pin=XMC4500-37
+Added Pin To Net: NetName=PP0_TDA6 Pin=XMC4500-1
+Added Pin To Net: NetName=PP1_TDA6 Pin=XMC4500-2
+Added Pin To Net: NetName=PP2_TDA6 Pin=XMC4500-3
+Added Pin To Net: NetName=P_ON6 Pin=XMC4500-4
+Added Member To Class: ClassName=U_Ethernet Member=Component IC3 KSZ8031RNL
+Added Room: Name=U_Ethernet
+Added Room: Name=U_Power Supply
+Added Room: Name=U_XMC4500

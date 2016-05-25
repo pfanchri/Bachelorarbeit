@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=P_ON1 Pin=XMC4500-14
+Removed Pin From Net: NetName=PP0_TDA1 Pin=XMC4500-30
+Removed Pin From Net: NetName=PP2_TDA1 Pin=XMC4500-36
+Removed Pin From Net: NetName=PP1_TDA1 Pin=XMC4500-42
+Added Pin To Net: NetName=PP0_TDA1 Pin=XMC4500-141
+Added Pin To Net: NetName=PP1_TDA1 Pin=XMC4500-142
+Added Pin To Net: NetName=PP2_TDA1 Pin=XMC4500-143
+Added Pin To Net: NetName=P_ON1 Pin=XMC4500-144
