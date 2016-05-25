@@ -1,0 +1,8 @@
+Added Component: Designator=J1(Micro USB Buchse - Molex)
+Added Pin To Net: NetName=NetD2_2 Pin=J1-2
+Added Pin To Net: NetName=NetD3_2 Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=L11-2
+Added Net: Name=NetJ1_1
+Added Member To Class: ClassName=U_Power Supply Member=Component J1 Micro USB Buchse
