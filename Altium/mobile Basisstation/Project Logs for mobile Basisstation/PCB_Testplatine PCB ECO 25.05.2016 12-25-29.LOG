@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=NetC202_2 Pin=IC3-1
+Removed Pin From Net: NetName=NetC201_2 Pin=IC3-2
+Removed Pin From Net: NetName=NetC205_2 Pin=IC3-7
+Removed Pin From Net: NetName=NetC206_2 Pin=IC3-8
+Removed Pin From Net: NetName=VDD (3,3V) Pin=IC3-14
+Removed Pin From Net: NetName=GND Pin=IC3-22
+Removed Pin From Net: NetName=NetC210_2 Pin=IC3-24
+Removed Pin From Net: NetName=GND Pin=IC3-EXP
+Removed Member From Class: ClassName=U_Ethernet Member=IC3
+Change Net Name : Old Net Name=NetIC3_15 New Net Name=NetXMC4500_53
+Added Pin To Net: NetName=NetR203_1 Pin=R203-1
+Added Pin To Net: NetName=NetR203_1 Pin=R206-1
+Added Net: Name=NetR203_1
+Added Pin To Net: NetName=NetR204_1 Pin=R204-1
+Added Pin To Net: NetName=NetR204_1 Pin=XMC4500-75
+Added Net: Name=NetR204_1
+Added Pin To Net: NetName=NetXMC4500_54 Pin=XMC4500-54
+Added Net: Name=NetXMC4500_54
+Added Pin To Net: NetName=NetXMC4500_67 Pin=XMC4500-67
+Added Net: Name=NetXMC4500_67
+Added Pin To Net: NetName=NetXMC4500_68 Pin=XMC4500-68
+Added Net: Name=NetXMC4500_68
+Added Pin To Net: NetName=NetXMC4500_69 Pin=XMC4500-69
+Added Net: Name=NetXMC4500_69
+Added Pin To Net: NetName=NetXMC4500_70 Pin=XMC4500-70
+Added Net: Name=NetXMC4500_70
+Added Pin To Net: NetName=NetXMC4500_71 Pin=XMC4500-71
+Added Net: Name=NetXMC4500_71
+Added Pin To Net: NetName=NetXMC4500_72 Pin=XMC4500-72
+Added Net: Name=NetXMC4500_72
+Added Pin To Net: NetName=NetXMC4500_74 Pin=XMC4500-74
+Added Net: Name=NetXMC4500_74
+Added Room: Name=U_Ethernet
+Added Room: Name=U_Power Supply
+Added Room: Name=U_XMC4500
