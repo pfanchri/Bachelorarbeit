@@ -1,0 +1,45 @@
+Change Component Footprint: Designator=LED1 Old Footprint=3.2X1.6X1.1 New Footprint=3.5X2.8X1.9
+Added Component: Designator=D4(3.2X1.6X1.1)
+Added Component: Designator=D5(3.2X1.6X1.1)
+Added Component: Designator=D6(3.2X1.6X1.1)
+Added Component: Designator=D7(3.2X1.6X1.1)
+Added Component: Designator=R20(J1-0603)
+Added Component: Designator=R21(J1-0603)
+Added Component: Designator=R22(J1-0603)
+Added Component: Designator=R23(J1-0603)
+Added Pin To Net: NetName=VDD (3,3V) Pin=R20-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R21-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R22-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R23-2
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_1 Pin=R20-1
+Added Net: Name=NetD4_1
+Added Pin To Net: NetName=NetD5_1 Pin=D5-1
+Added Pin To Net: NetName=NetD5_1 Pin=R21-1
+Added Net: Name=NetD5_1
+Added Pin To Net: NetName=NetD6_1 Pin=D6-1
+Added Pin To Net: NetName=NetD6_1 Pin=R22-1
+Added Net: Name=NetD6_1
+Added Pin To Net: NetName=NetD7_1 Pin=D7-1
+Added Pin To Net: NetName=NetD7_1 Pin=R23-1
+Added Net: Name=NetD7_1
+Added Pin To Net: NetName=STATUSLED1 Pin=D7-2
+Added Pin To Net: NetName=STATUSLED1 Pin=XMC4500-101
+Added Net: Name=STATUSLED1
+Added Pin To Net: NetName=STATUSLED2 Pin=D6-2
+Added Pin To Net: NetName=STATUSLED2 Pin=XMC4500-100
+Added Net: Name=STATUSLED2
+Added Pin To Net: NetName=STATUSLED3 Pin=D5-2
+Added Pin To Net: NetName=STATUSLED3 Pin=XMC4500-99
+Added Net: Name=STATUSLED3
+Added Pin To Net: NetName=STATUSLED4 Pin=D4-2
+Added Pin To Net: NetName=STATUSLED4 Pin=XMC4500-98
+Added Net: Name=STATUSLED4
+Added Member To Class: ClassName=U_XMC4500 Member=Component D4 LED2
+Added Member To Class: ClassName=U_XMC4500 Member=Component D5 LED2
+Added Member To Class: ClassName=U_XMC4500 Member=Component D6 LED2
+Added Member To Class: ClassName=U_XMC4500 Member=Component D7 LED2
+Added Member To Class: ClassName=U_XMC4500 Member=Component R20 Res3
+Added Member To Class: ClassName=U_XMC4500 Member=Component R21 Res3
+Added Member To Class: ClassName=U_XMC4500 Member=Component R22 Res3
+Added Member To Class: ClassName=U_XMC4500 Member=Component R23 Res3

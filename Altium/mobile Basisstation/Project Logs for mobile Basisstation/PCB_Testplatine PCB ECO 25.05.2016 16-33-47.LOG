@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=P_ON4 Pin=XMC4500-11
+Removed Pin From Net: NetName=PP0_TDA4 Pin=XMC4500-27
+Removed Pin From Net: NetName=PP2_TDA4 Pin=XMC4500-33
+Removed Pin From Net: NetName=PP1_TDA4 Pin=XMC4500-39
+Added Pin To Net: NetName=P_ON4 Pin=XMC4500-80
+Added Pin To Net: NetName=PP2_TDA4 Pin=XMC4500-81
+Added Pin To Net: NetName=PP1_TDA4 Pin=XMC4500-82
+Added Pin To Net: NetName=PP0_TDA4 Pin=XMC4500-83
+Added Room: Name=U_Ethernet
+Added Room: Name=U_Power Supply
+Added Room: Name=U_XMC4500
