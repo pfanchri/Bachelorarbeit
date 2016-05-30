@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : D:\Bachelorarbeit\Altium\mobile Basisstation\PCB_Testplatine.PcbDoc
 Date     : 30.05.2016
-Time     : 09:38:05
+Time     : 10:25:14
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
@@ -18,12 +18,8 @@ Rule Violations :0
 Processing Rule : Width Constraint (Min=0.254mm) (Max=1mm) (Preferred=0.254mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
-   Violation between Hole Size Constraint: (2.7mm > 2.54mm) Pad Free-Bohrung(0mm,15mm) on Multi-Layer Actual Hole Size = 2.7mm
-   Violation between Hole Size Constraint: (2.7mm > 2.54mm) Pad Free-Bohrung(0mm,-18.5mm) on Multi-Layer Actual Hole Size = 2.7mm
-   Violation between Hole Size Constraint: (3.25mm > 2.54mm) Pad T1-(24.4mm,-5.84mm) on Multi-Layer Actual Hole Size = 3.25mm
-   Violation between Hole Size Constraint: (3.25mm > 2.54mm) Pad T1-(24.4mm,5.59mm) on Multi-Layer Actual Hole Size = 3.25mm
-Rule Violations :4
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=3.5mm) (All)
+Rule Violations :0
 
 Processing Rule : Room TDA1 (Bounding Region = (137.26mm, 135.22mm, 153.86mm, 177.72mm) (InComponentClass('TDA1'))
 Rule Violations :0
@@ -44,5 +40,5 @@ Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 
 Rule Violations :0
 
 
-Violations Detected : 4
-Time Elapsed        : 00:00:02
+Violations Detected : 0
+Time Elapsed        : 00:00:01
