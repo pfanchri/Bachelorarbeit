@@ -1,83 +1,48 @@
 Protel Design System Design Rule Check
 PCB File : D:\Bachelorarbeit\Altium\mobile Basisstation\PCB_Testplatine.PcbDoc
-Date     : 27.05.2016
-Time     : 11:02:57
+Date     : 30.05.2016
+Time     : 09:38:05
 
-Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 152.652mm) (InComponentClass('TDA6'))
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
-Processing Rule : Room TDA5 (Bounding Region = (83.303mm, 65.395mm, 128.409mm, 101.021mm) (InComponentClass('TDA5'))
-Rule Violations :0
-
-Processing Rule : Room TDA4 (Bounding Region = (137.26mm, 40.39mm, 153.86mm, 82.89mm) (InComponentClass('TDA4'))
-Rule Violations :0
-
-Processing Rule : Room TDA3 (Bounding Region = (162.721mm, 65.428mm, 207.827mm, 101.054mm) (InComponentClass('TDA3'))
-Rule Violations :0
-
-Processing Rule : Room TDA2 (Bounding Region = (162.751mm, 117.158mm, 207.857mm, 152.784mm) (InComponentClass('TDA2'))
-Rule Violations :0
-
-Processing Rule : Room TDA1 (Bounding Region = (137.26mm, 135.22mm, 153.86mm, 177.72mm) (InComponentClass('TDA1'))
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
-   Violation between Hole Size Constraint: (3.25mm > 2.54mm) Pad T1-(24.4mm,5.59mm) on Multi-Layer Actual Hole Size = 3.25mm
-   Violation between Hole Size Constraint: (3.25mm > 2.54mm) Pad T1-(24.4mm,-5.84mm) on Multi-Layer Actual Hole Size = 3.25mm
-Rule Violations :2
-
-Processing Rule : Width Constraint (Min=0.254mm) (Max=0.55mm) (Preferred=0.254mm) (All)
-   Violation between Width Constraint: Track (-0.95mm,61.43mm)(-0.42mm,61.96mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (-0.42mm,61.96mm)(-0.42mm,65.44mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (51.418mm,33.716mm)(52.142mm,33.522mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (52.142mm,33.522mm)(55.156mm,35.262mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (52.318mm,-32.054mm)(52.512mm,-32.778mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (52.512mm,-32.778mm)(55.526mm,-34.518mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (0.38mm,-62.01mm)(0.91mm,-61.48mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (0.38mm,-65.49mm)(0.38mm,-62.01mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (-52.142mm,-33.503mm)(-51.418mm,-33.697mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (-55.156mm,-35.243mm)(-52.142mm,-33.503mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (-52.732mm,32.698mm)(-52.538mm,31.974mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-   Violation between Width Constraint: Track (-55.746mm,34.438mm)(-52.732mm,32.698mm) on Top Layer Actual Width = 1mm, Target Width = 0.55mm
-Rule Violations :12
-
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net GND Between Pad XMC4500-45(-9.3mm,-10.6mm) on Top Layer And Pad XMC4500-47(-8.3mm,-10.6mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C28_TDA6-2(-48.808mm,29.855mm) on Top Layer And Via (-48.078mm,29.318mm) from Top Layer to Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Via (47.858mm,-29.398mm) from Top Layer to Bottom Layer And Pad C28_TDA3-2(48.588mm,-29.935mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Track (8.1mm,-17mm)(8.35mm,-16.75mm) on Top Layer And Pad C205-1(13.15mm,-17mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Via (-1.8mm,-1.65mm) from Top Layer to Bottom Layer And Track (4.031mm,-1.689mm)(4.693mm,-1.027mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Track (7.8mm,-11.4mm)(7.828mm,-11.4mm) on Top Layer And Pad IC3-EXP(8.35mm,-16.75mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H1_TDA6-10(-22.68mm,21.19mm) on Multi-Layer And Pad C101-1(-17mm,20.6mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Track (4.45mm,-22.55mm)(4.95mm,-23.05mm) on Top Layer And Track (5.28mm,-16.973mm)(5.307mm,-17mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C100-1(-10.1mm,14.43mm) on Top Layer And Pad C8-1(-4.55mm,13.5mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C1-1(-3.55mm,13.5mm) on Top Layer And Pad JTAG-6(-1.33mm,17.96mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Track (-6.109mm,-21.209mm)(-5.134mm,-22.184mm) on Bottom Layer And Pad C209-1(4.45mm,-22.55mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C10-1(9.25mm,0.55mm) on Top Layer And Pad L201-1(10.65mm,11.25mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C204-1(14.25mm,12.7mm) on Top Layer And Pad H1_TDA2-10(27.15mm,13.25mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad JTAG-6(-1.33mm,17.96mm) on Multi-Layer And Pad H1_TDA1-10(4.64mm,30.18mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad XMC4500-47(-8.3mm,-10.6mm) on Top Layer And Track (-3.57mm,-11.98mm)(-3.57mm,-11.95mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Track (12mm,-23.15mm)(12.4mm,-23.15mm) on Top Layer And Track (13.2mm,-17.05mm)(14.35mm,-17.05mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Via (-4mm,2.75mm) from Top Layer to Bottom Layer And Pad C1-1(-3.55mm,13.5mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U1-1(-14.8mm,21.3mm) on Top Layer And Pad C100-1(-10.1mm,14.43mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Track (7.927mm,-11.301mm)(7.927mm,-11.25mm) on Top Layer And Pad C2-1(8.35mm,-4.7mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net P_ON1 Between Track (-2.98mm,31.4mm)(-2.98mm,34.64mm) on Bottom Layer And Track (-4.111mm,36.712mm)(-2.98mm,35.581mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net P_ON2 Between Pad H2_TDA2-3(27.202mm,22.079mm) on Multi-Layer And Track (28.017mm,22.549mm)(28.431mm,24.094mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net P_ON3 Between Pad H2_TDA3-3(30.132mm,-16.901mm) on Multi-Layer And Track (30.947mm,-17.371mm)(32.492mm,-16.957mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net P_ON4 Between Track (2.94mm,-35.631mm)(4.071mm,-36.762mm) on Bottom Layer And Track (2.94mm,-34.69mm)(2.94mm,-31.45mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net P_ON5 Between Track (-28.431mm,-24.076mm)(-28.017mm,-22.531mm) on Bottom Layer And Pad H2_TDA5-3(-27.202mm,-22.06mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net P_ON6 Between Track (-32.712mm,16.877mm)(-31.167mm,17.291mm) on Bottom Layer And Pad H2_TDA6-3(-30.352mm,16.821mm) on Multi-Layer 
-Rule Violations :25
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
 
-Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Processing Rule : Width Constraint (Min=0.254mm) (Max=1mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+   Violation between Hole Size Constraint: (2.7mm > 2.54mm) Pad Free-Bohrung(0mm,15mm) on Multi-Layer Actual Hole Size = 2.7mm
+   Violation between Hole Size Constraint: (2.7mm > 2.54mm) Pad Free-Bohrung(0mm,-18.5mm) on Multi-Layer Actual Hole Size = 2.7mm
+   Violation between Hole Size Constraint: (3.25mm > 2.54mm) Pad T1-(24.4mm,-5.84mm) on Multi-Layer Actual Hole Size = 3.25mm
+   Violation between Hole Size Constraint: (3.25mm > 2.54mm) Pad T1-(24.4mm,5.59mm) on Multi-Layer Actual Hole Size = 3.25mm
+Rule Violations :4
+
+Processing Rule : Room TDA1 (Bounding Region = (137.26mm, 135.22mm, 153.86mm, 177.72mm) (InComponentClass('TDA1'))
+Rule Violations :0
+
+Processing Rule : Room TDA2 (Bounding Region = (162.751mm, 117.158mm, 207.857mm, 152.784mm) (InComponentClass('TDA2'))
+Rule Violations :0
+
+Processing Rule : Room TDA3 (Bounding Region = (162.721mm, 65.428mm, 207.827mm, 101.054mm) (InComponentClass('TDA3'))
+Rule Violations :0
+
+Processing Rule : Room TDA4 (Bounding Region = (137.26mm, 40.39mm, 153.86mm, 82.89mm) (InComponentClass('TDA4'))
+Rule Violations :0
+
+Processing Rule : Room TDA5 (Bounding Region = (83.303mm, 65.395mm, 128.409mm, 101.021mm) (InComponentClass('TDA5'))
+Rule Violations :0
+
+Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 152.652mm) (InComponentClass('TDA6'))
 Rule Violations :0
 
 
-Violations Detected : 39
-Time Elapsed        : 00:00:01
+Violations Detected : 4
+Time Elapsed        : 00:00:02
