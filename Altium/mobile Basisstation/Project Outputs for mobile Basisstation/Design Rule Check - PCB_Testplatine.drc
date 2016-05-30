@@ -1,42 +1,42 @@
 Protel Design System Design Rule Check
 PCB File : D:\Bachelorarbeit\Altium\mobile Basisstation\PCB_Testplatine.PcbDoc
 Date     : 30.05.2016
-Time     : 11:22:14
+Time     : 16:53:25
 
-Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-Rule Violations :0
-
-Processing Rule : Un-Routed Net Constraint ( (All) )
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
-Rule Violations :0
-
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
-Rule Violations :0
-
-Processing Rule : Width Constraint (Min=0.254mm) (Max=1mm) (Preferred=0.254mm) (All)
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=3.5mm) (All)
-Rule Violations :0
-
-Processing Rule : Room TDA1 (Bounding Region = (137.26mm, 135.22mm, 153.86mm, 177.72mm) (InComponentClass('TDA1'))
-Rule Violations :0
-
-Processing Rule : Room TDA2 (Bounding Region = (162.751mm, 117.158mm, 207.857mm, 152.784mm) (InComponentClass('TDA2'))
-Rule Violations :0
-
-Processing Rule : Room TDA3 (Bounding Region = (162.721mm, 65.428mm, 207.827mm, 101.054mm) (InComponentClass('TDA3'))
-Rule Violations :0
-
-Processing Rule : Room TDA4 (Bounding Region = (137.26mm, 40.39mm, 153.86mm, 82.89mm) (InComponentClass('TDA4'))
+Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 152.652mm) (InComponentClass('TDA6'))
 Rule Violations :0
 
 Processing Rule : Room TDA5 (Bounding Region = (83.303mm, 65.395mm, 128.409mm, 101.021mm) (InComponentClass('TDA5'))
 Rule Violations :0
 
-Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 152.652mm) (InComponentClass('TDA6'))
+Processing Rule : Room TDA4 (Bounding Region = (137.26mm, 40.39mm, 153.86mm, 82.89mm) (InComponentClass('TDA4'))
+Rule Violations :0
+
+Processing Rule : Room TDA3 (Bounding Region = (162.721mm, 65.428mm, 207.827mm, 101.054mm) (InComponentClass('TDA3'))
+Rule Violations :0
+
+Processing Rule : Room TDA2 (Bounding Region = (162.751mm, 117.158mm, 207.857mm, 152.784mm) (InComponentClass('TDA2'))
+Rule Violations :0
+
+Processing Rule : Room TDA1 (Bounding Region = (137.26mm, 135.22mm, 153.86mm, 177.72mm) (InComponentClass('TDA1'))
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=3.5mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=1mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 
