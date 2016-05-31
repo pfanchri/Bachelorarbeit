@@ -1,25 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : D:\Bachelorarbeit\Altium\mobile Basisstation\PCB_Testplatine.PcbDoc
 Date     : 31.05.2016
-Time     : 16:29:59
-
-WARNING: Your board contains 16 shelved polygons - copper connectivity will not be reported correctly. Unshelve polygons and re-run DRC check before  producing manufacturing outputs.
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: VDD_(3,3V)_L01_P054 In net VDD (3,3V) On Top Layer
-   Polygon named: GND_L01_P058 In net GND On Top Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: VDD_(3,3V)_L02_P056 In net VDD (3,3V) On Bottom Layer
-   Polygon named: GND_L02_P064 In net GND On Bottom Layer
+Time     : 17:22:33
 
 Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 152.652mm) (InComponentClass('TDA6'))
 Rule Violations :0
@@ -59,4 +41,4 @@ Rule Violations :0
 
 
 Violations Detected : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:02

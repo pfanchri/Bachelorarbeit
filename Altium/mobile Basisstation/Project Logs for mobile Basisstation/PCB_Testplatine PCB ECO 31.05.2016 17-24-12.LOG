@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetLED1_1 Pin=LED1-1
+Removed Pin From Net: NetName=GND Pin=LED1-2
+Removed Member From Class: ClassName=U_Power Supply Member=LED1
+Added Component: Designator=Power(LED_0805_Red)
+Added Pin To Net: NetName=NetLED1_1 Pin=Power-1
+Added Pin To Net: NetName=GND Pin=Power-2
+Change Net Name : Old Net Name=NetLED1_1 New Net Name=NetPower_1
+Added Member To Class: ClassName=U_XMC4500 Member=Component D8 Red
+Added Member To Class: ClassName=U_XMC4500 Member=Component D9 Red
+Added Member To Class: ClassName=U_Power Supply Member=Component Power Red
