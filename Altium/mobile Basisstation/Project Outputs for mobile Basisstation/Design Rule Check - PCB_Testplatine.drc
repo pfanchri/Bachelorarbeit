@@ -1,44 +1,73 @@
 Protel Design System Design Rule Check
 PCB File : D:\Bachelorarbeit\Altium\mobile Basisstation\PCB_Testplatine.PcbDoc
 Date     : 31.05.2016
-Time     : 13:34:18
+Time     : 15:00:17
 
-Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-Rule Violations :0
+WARNING: Your board contains 16 shelved polygons - copper connectivity will not be reported correctly. Unshelve polygons and re-run DRC check before  producing manufacturing outputs.
+   Polygon named: Top Layer- GND In net GND On Top Layer
+   Polygon named: Top Layer- GND In net GND On Top Layer
+   Polygon named: Top Layer- GND In net GND On Top Layer
+   Polygon named: Top Layer- GND In net GND On Top Layer
+   Polygon named: Top Layer- GND In net GND On Top Layer
+   Polygon named: Top Layer- GND In net GND On Top Layer
+   Polygon named: VDD_(3,3V)_L01_P054 In net VDD (3,3V) On Top Layer
+   Polygon named: GND_L01_P058 In net GND On Top Layer
+   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
+   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
+   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
+   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
+   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
+   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
+   Polygon named: VDD_(3,3V)_L02_P056 In net VDD (3,3V) On Bottom Layer
+   Polygon named: GND_L02_P064 In net GND On Bottom Layer
 
-Processing Rule : Un-Routed Net Constraint ( (All) )
-Rule Violations :0
-
-Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
-Rule Violations :0
-
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
-Rule Violations :0
-
-Processing Rule : Width Constraint (Min=0.254mm) (Max=1mm) (Preferred=0.254mm) (All)
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=3.5mm) (All)
-Rule Violations :0
-
-Processing Rule : Room TDA1 (Bounding Region = (137.26mm, 135.22mm, 153.86mm, 177.72mm) (InComponentClass('TDA1'))
-Rule Violations :0
-
-Processing Rule : Room TDA2 (Bounding Region = (162.751mm, 117.158mm, 207.857mm, 152.784mm) (InComponentClass('TDA2'))
-Rule Violations :0
-
-Processing Rule : Room TDA3 (Bounding Region = (162.721mm, 65.428mm, 207.827mm, 101.054mm) (InComponentClass('TDA3'))
-Rule Violations :0
-
-Processing Rule : Room TDA4 (Bounding Region = (137.26mm, 40.39mm, 153.86mm, 82.89mm) (InComponentClass('TDA4'))
+Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 152.652mm) (InComponentClass('TDA6'))
 Rule Violations :0
 
 Processing Rule : Room TDA5 (Bounding Region = (83.303mm, 65.395mm, 128.409mm, 101.021mm) (InComponentClass('TDA5'))
 Rule Violations :0
 
-Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 152.652mm) (InComponentClass('TDA6'))
+Processing Rule : Room TDA4 (Bounding Region = (137.26mm, 40.39mm, 153.86mm, 82.89mm) (InComponentClass('TDA4'))
+Rule Violations :0
+
+Processing Rule : Room TDA3 (Bounding Region = (162.721mm, 65.428mm, 207.827mm, 101.054mm) (InComponentClass('TDA3'))
+Rule Violations :0
+
+Processing Rule : Room TDA2 (Bounding Region = (162.751mm, 117.158mm, 207.857mm, 152.784mm) (InComponentClass('TDA2'))
+Rule Violations :0
+
+Processing Rule : Room TDA1 (Bounding Region = (137.26mm, 135.22mm, 153.86mm, 177.72mm) (InComponentClass('TDA1'))
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=3.5mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=1mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net STATUSLED7 Between Pad XMC4500-95(6.05mm,2.25mm) on Top Layer And Pad D10-2(64.82mm,-53.07mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net STATUSLED6 Between Pad XMC4500-96(6.05mm,2.75mm) on Top Layer And Pad D9-2(70.41mm,-53.07mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net STATUSLED5 Between Pad XMC4500-97(6.05mm,3.25mm) on Top Layer And Pad D8-2(74.73mm,-53.07mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetD11_2 Between Pad H3-1(-21.75mm,6.34mm) on Multi-Layer And Pad D11-2(-18.76mm,10.575mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetD10_1 Between Pad D10-1(64.82mm,-56.57mm) on Top Layer And Pad R26-1(78.39mm,-53.54mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetD9_1 Between Pad D9-1(70.41mm,-56.57mm) on Top Layer And Pad R25-1(84.23mm,-53.54mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetD8_1 Between Pad D8-1(74.73mm,-56.57mm) on Top Layer And Pad R24-1(90.07mm,-53.54mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net 5V Between Pad D11-1(-18.76mm,12.925mm) on Top Layer And Pad D1-1(-16.75mm,12.925mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VDD (3,3V) Between Pad R26-2(78.39mm,-52.04mm) on Top Layer And Pad R25-2(84.23mm,-52.04mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VDD (3,3V) Between Pad R25-2(84.23mm,-52.04mm) on Top Layer And Pad R24-2(90.07mm,-52.04mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VDD (3,3V) Between Track (49.27mm,-35.733mm)(49.86mm,-34.711mm) on Bottom Layer And Pad R26-2(78.39mm,-52.04mm) on Top Layer 
+Rule Violations :11
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 
-Violations Detected : 0
+Violations Detected : 11
 Time Elapsed        : 00:00:01

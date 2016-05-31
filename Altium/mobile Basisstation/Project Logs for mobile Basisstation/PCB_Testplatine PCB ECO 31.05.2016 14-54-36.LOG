@@ -1,0 +1,58 @@
+Change Component Designator: OldDesignator=D4 NewDesignator=D7
+Change Component Designator: OldDesignator=D5 NewDesignator=D6
+Change Component Designator: OldDesignator=D6 NewDesignator=D5
+Change Component Designator: OldDesignator=D7 NewDesignator=D4
+Change Component Designator: OldDesignator=R20 NewDesignator=R23
+Change Component Designator: OldDesignator=R21 NewDesignator=R22
+Change Component Designator: OldDesignator=R22 NewDesignator=21
+Change Component Designator: OldDesignator=R23 NewDesignator=R20
+Change Component Designator: OldDesignator=X_TDA_1_TDA1 NewDesignator=X_TDA_TDA1
+Change Component Designator: OldDesignator=X_TDA_1_TDA2 NewDesignator=X_TDA_TDA2
+Change Component Designator: OldDesignator=X_TDA_1_TDA3 NewDesignator=X_TDA_TDA3
+Change Component Designator: OldDesignator=X_TDA_1_TDA4 NewDesignator=X_TDA_TDA4
+Change Component Designator: OldDesignator=X_TDA_1_TDA5 NewDesignator=X_TDA_TDA5
+Change Component Designator: OldDesignator=X_TDA_1_TDA6 NewDesignator=X_TDA_TDA6
+Added Component: Designator=D8(3.2X1.6X1.1)
+Added Component: Designator=D9(3.2X1.6X1.1)
+Added Component: Designator=D10(3.2X1.6X1.1)
+Added Component: Designator=D11(SOD-323)
+Added Component: Designator=H3(HDR1X2)
+Added Component: Designator=R24(J1-0603)
+Added Component: Designator=R25(J1-0603)
+Added Component: Designator=R26(J1-0603)
+Added Pin To Net: NetName=5V Pin=D11-1
+Added Pin To Net: NetName=GND Pin=H3-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R24-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R25-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=R26-2
+Change Net Name : Old Net Name=NetD4_1 New Net Name=NetD7_1
+Change Net Name : Old Net Name=NetD5_1 New Net Name=NetD6_1
+Change Net Name : Old Net Name=NetD6_1 New Net Name=Net21_1
+Change Net Name : Old Net Name=NetD7_1 New Net Name=NetD4_1
+Added Pin To Net: NetName=NetD8_1 Pin=D8-1
+Added Pin To Net: NetName=NetD8_1 Pin=R24-1
+Added Net: Name=NetD8_1
+Added Pin To Net: NetName=NetD9_1 Pin=D9-1
+Added Pin To Net: NetName=NetD9_1 Pin=R25-1
+Added Net: Name=NetD9_1
+Added Pin To Net: NetName=NetD10_1 Pin=D10-1
+Added Pin To Net: NetName=NetD10_1 Pin=R26-1
+Added Net: Name=NetD10_1
+Added Pin To Net: NetName=NetD11_2 Pin=D11-2
+Added Pin To Net: NetName=NetD11_2 Pin=H3-1
+Added Net: Name=NetD11_2
+Added Pin To Net: NetName=STATUSLED5 Pin=D8-2
+Added Pin To Net: NetName=STATUSLED5 Pin=XMC4500-97
+Added Net: Name=STATUSLED5
+Added Pin To Net: NetName=STATUSLED6 Pin=D9-2
+Added Pin To Net: NetName=STATUSLED6 Pin=XMC4500-96
+Added Net: Name=STATUSLED6
+Added Pin To Net: NetName=STATUSLED7 Pin=D10-2
+Added Pin To Net: NetName=STATUSLED7 Pin=XMC4500-95
+Added Net: Name=STATUSLED7
+Added Member To Class: ClassName=U_XMC4500 Member=Component D10 LED2
+Added Member To Class: ClassName=U_Power Supply Member=Component D11 BAT60A
+Added Member To Class: ClassName=U_Power Supply Member=Component H3 Header 2
+Added Member To Class: ClassName=U_XMC4500 Member=Component R24 Res3
+Added Member To Class: ClassName=U_XMC4500 Member=Component R25 Res3
+Added Member To Class: ClassName=U_XMC4500 Member=Component R26 Res3
