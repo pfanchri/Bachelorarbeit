@@ -1,0 +1,24 @@
+Change Component DesignItemId : Designator=D4 Old DesignItemId=LED2 New DesignItemId=WL-SMCW 0805  150080GS75000
+Change Component DesignItemId : Designator=D5 Old DesignItemId=LED2 New DesignItemId=WL-SMCW 0805  150080GS75000
+Change Component DesignItemId : Designator=D6 Old DesignItemId=LED2 New DesignItemId=WL-SMCW 0805  150080GS75000
+Change Component DesignItemId : Designator=D7 Old DesignItemId=LED2 New DesignItemId=WL-SMCW 0805  150080GS75000
+Change Component DesignItemId : Designator=D8 Old DesignItemId=LED2 New DesignItemId=WL-SMCW 0805  150080RS75000
+Change Component DesignItemId : Designator=D9 Old DesignItemId=LED2 New DesignItemId=WL-SMCW 0805  150080RS75000
+Change Component DesignItemId : Designator=D10 Old DesignItemId=LED2 New DesignItemId=WL-SMCW 0805  150080RS75000
+Change Component DesignItemId : Designator=LED1 Old DesignItemId=LED3 New DesignItemId=WL-SMCW 0805  150080RS75000
+Change Component Footprint: Designator=D4 Old Footprint=3.2X1.6X1.1 New Footprint=LED_0805_Green
+Change Component Footprint: Designator=D5 Old Footprint=3.2X1.6X1.1 New Footprint=LED_0805_Green
+Change Component Footprint: Designator=D6 Old Footprint=3.2X1.6X1.1 New Footprint=LED_0805_Green
+Change Component Footprint: Designator=D7 Old Footprint=3.2X1.6X1.1 New Footprint=LED_0805_Green
+Change Component Footprint: Designator=D8 Old Footprint=3.2X1.6X1.1 New Footprint=LED_0805_Red
+Change Component Footprint: Designator=D9 Old Footprint=3.2X1.6X1.1 New Footprint=LED_0805_Red
+Change Component Footprint: Designator=D10 Old Footprint=3.2X1.6X1.1 New Footprint=LED_0805_Red
+Change Component Footprint: Designator=LED1 Old Footprint=3.2X1.6X1.1 New Footprint=LED_0805_Red
+Change Component Comment : Designator=D4 Old Comment=LED2 New Comment=Green
+Change Component Comment : Designator=D5 Old Comment=LED2 New Comment=Green
+Change Component Comment : Designator=D6 Old Comment=LED2 New Comment=Green
+Change Component Comment : Designator=D7 Old Comment=LED2 New Comment=Green
+Change Component Comment : Designator=D8 Old Comment=LED2 New Comment=Red
+Change Component Comment : Designator=D9 Old Comment=LED2 New Comment=Red
+Change Component Comment : Designator=D10 Old Comment=LED2 New Comment=Red
+Change Component Comment : Designator=LED1 Old Comment=LED3 New Comment=Red
