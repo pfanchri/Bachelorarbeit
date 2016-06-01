@@ -1,42 +1,31 @@
 Protel Design System Design Rule Check
 PCB File : D:\Bachelorarbeit\Altium\mobile Basisstation\PCB_Testplatine.PcbDoc
 Date     : 01.06.2016
-Time     : 11:31:10
+Time     : 12:37:50
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Violation between Board Outline Clearance(Outline Edge): (0.073mm < 0.2mm) Between Track (13.45mm,-8.065mm)(35.29mm,-8.065mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.073mm < 0.2mm) Between Track (13.45mm,7.815mm)(35.29mm,7.815mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.073mm < 0.2mm) Between Track (35.29mm,-8.065mm)(35.29mm,7.815mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.018mm < 0.2mm) Between Text "10" (6.164mm,36.672mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.087mm < 0.2mm) Between Text "2" (-8.06mm,36.672mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.086mm < 0.2mm) Between Text "2" (26.422mm,27.495mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.016mm < 0.2mm) Between Text "10" (33.534mm,15.176mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.067mm < 0.2mm) Between Text "2" (34.432mm,-13.517mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.015mm < 0.2mm) Between Text "10" (27.32mm,-25.836mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.067mm < 0.2mm) Between Text "2" (8.02mm,-36.722mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.018mm < 0.2mm) Between Text "10" (-6.204mm,-36.722mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.095mm < 0.2mm) Between Text "2" (-34.652mm,13.437mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.026mm < 0.2mm) Between Text "10" (-27.54mm,25.756mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.074mm < 0.2mm) Between Text "2" (-26.422mm,-27.476mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.035mm < 0.2mm) Between Text "10" (-33.534mm,-15.157mm) on Top Overlay And Board Edge 
+Rule Violations :15
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C6-1(-3.4mm,-12.85mm) on Top Layer And Pad C3-1(-3.4mm,-11.95mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C8-1(-4.55mm,13.5mm) on Top Layer And Pad C1-1(-3.55mm,13.5mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C205-1(13.15mm,-17mm) on Top Layer And Pad X3-4(14.35mm,-17.05mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C10-1(9.25mm,0.55mm) on Top Layer And Pad X1-4(9.4mm,-0.6mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad XMC4500-85(6.05mm,-2.75mm) on Top Layer And Pad XMC4500-89(6.05mm,-0.75mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad IC3-22(6.35mm,-17mm) on Top Layer And Pad IC3-EXP(8.35mm,-16.75mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C101-1(-17mm,20.6mm) on Top Layer And Pad U1-1(-14.8mm,21.3mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U1-1(-14.8mm,21.3mm) on Top Layer And Pad Power-2(-12.6mm,24.5mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H1_TDA6-10(-22.68mm,21.19mm) on Multi-Layer And Pad C101-1(-17mm,20.6mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C200-1(7.55mm,-11.25mm) on Top Layer And Pad IC3-EXP(8.35mm,-16.75mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C100-1(-10.1mm,14.43mm) on Top Layer And Pad C8-1(-4.55mm,13.5mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C1-1(-3.55mm,13.5mm) on Top Layer And Pad JTAG-6(-1.33mm,17.96mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H1_TDA1-10(4.64mm,30.18mm) on Multi-Layer And Pad H2_TDA1-10(4.64mm,37.18mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H2_TDA4-10(-4.68mm,-37.23mm) on Multi-Layer And Pad H1_TDA4-10(-4.68mm,-30.23mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C207-1(11.8mm,-22.95mm) on Top Layer And Pad C205-1(13.15mm,-17mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C209-1(4.45mm,-22.55mm) on Top Layer And Pad IC3-22(6.35mm,-17mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C204-1(19.32mm,14.03mm) on Top Layer And Pad H1_TDA2-10(27.15mm,13.25mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C201-1(15.65mm,-23.15mm) on Top Layer And Pad H1_TDA3-10(22.46mm,-21.27mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H2_TDA6-10(-28.742mm,24.69mm) on Multi-Layer And Pad H1_TDA6-10(-22.68mm,21.19mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H1_TDA2-10(27.15mm,13.25mm) on Multi-Layer And Pad H2_TDA2-10(33.212mm,16.75mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H1_TDA3-10(22.46mm,-21.27mm) on Multi-Layer And Pad H2_TDA3-10(28.522mm,-24.77mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H2_TDA5-10(-33.212mm,-16.731mm) on Multi-Layer And Pad H1_TDA5-10(-27.15mm,-13.231mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad XMC4500-85(6.05mm,-2.75mm) on Top Layer And Pad C7-1(7.5mm,-3.4mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad IC3-EXP(8.35mm,-16.75mm) on Top Layer And Pad C205-1(13.15mm,-17mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad XMC4500-47(-8.3mm,-10.6mm) on Top Layer And Pad C3-1(-3.4mm,-11.95mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Via (-4mm,2.75mm) from Top Layer to Bottom Layer And Pad C1-1(-3.55mm,13.5mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U1-1(-14.8mm,21.3mm) on Top Layer And Pad C100-1(-10.1mm,14.43mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad H1_TDA4-10(-4.68mm,-30.23mm) on Multi-Layer And Pad C202-1(4.95mm,-24.7mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad JTAG-6(-1.33mm,17.96mm) on Multi-Layer And Pad H1_TDA1-10(4.64mm,30.18mm) on Multi-Layer 
-Rule Violations :29
+Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -69,5 +58,5 @@ Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 
 Rule Violations :0
 
 
-Violations Detected : 29
-Time Elapsed        : 00:00:01
+Violations Detected : 15
+Time Elapsed        : 00:00:03
