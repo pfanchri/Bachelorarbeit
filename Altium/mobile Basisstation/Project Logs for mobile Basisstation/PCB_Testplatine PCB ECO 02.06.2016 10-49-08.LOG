@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=U1-1
+Removed Pin From Net: NetName=VDD (3,3V) Pin=U1-2
+Removed Pin From Net: NetName=5V Pin=U1-3
+Removed Pin From Net: NetName=VDD (3,3V) Pin=U1-4
+Change Component DesignItemId : Designator=U1 Old DesignItemId=IFX1117ME V33 New DesignItemId=MCP1826S-3302E/DB
+Change Component Footprint: Designator=U1 Old Footprint=INF-PG-SOT223_SC-73_N New Footprint=SOT-223-DB3_N
+Change Component Comment : Designator=U1 Old Comment=IFX1117ME V33 New Comment=MCP1826S-3302E/DB
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=VDD (3,3V) Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-4
