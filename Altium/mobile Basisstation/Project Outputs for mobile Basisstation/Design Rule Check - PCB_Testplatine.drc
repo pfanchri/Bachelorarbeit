@@ -1,25 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : D:\Bachelorarbeit\Altium\mobile Basisstation\PCB_Testplatine.PcbDoc
 Date     : 02.06.2016
-Time     : 11:04:27
-
-WARNING: Your board contains 16 shelved polygons - copper connectivity will not be reported correctly. Unshelve polygons and re-run DRC check before  producing manufacturing outputs.
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: Top Layer- GND In net GND On Top Layer
-   Polygon named: VDD_(3,3V)_L01_P054 In net VDD (3,3V) On Top Layer
-   Polygon named: GND_L01_P058 In net GND On Top Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: Bottom Layer- GND In net GND On Bottom Layer
-   Polygon named: VDD_(3,3V)_L02_P056 In net VDD (3,3V) On Bottom Layer
-   Polygon named: GND_L02_P064 In net GND On Bottom Layer
+Time     : 11:39:43
 
 Processing Rule : Room TDA6 (Bounding Region = (83.113mm, 117.026mm, 128.219mm, 152.652mm) (InComponentClass('TDA6'))
 Rule Violations :0
@@ -52,21 +34,11 @@ Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net 5V Between Pad U1-1(-14.5mm,21.3mm) on Top Layer And Pad C100-2(-13.62mm,23.455mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net 5V Between Track (-16.75mm,12.925mm)(-16.75mm,15.9mm) on Top Layer And Pad U1-1(-14.5mm,21.3mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C101-1(-10.175mm,14.54mm) on Top Layer And Track (-8.295mm,12.535mm)(-8.295mm,12.625mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad Power-2(-12.215mm,27.365mm) on Top Layer And Pad C100-1(-10.92mm,23.455mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U1-2(-14.5mm,19mm) on Top Layer And Pad U1-4(-8.5mm,19mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C101-1(-10.175mm,14.54mm) on Top Layer And Pad U1-4(-8.5mm,19mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad C100-1(-10.92mm,23.455mm) on Top Layer And Pad U1-4(-8.5mm,19mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetPower_1 Between Pad Power-1(-10.115mm,27.365mm) on Top Layer And Pad R11-1(-8.42mm,27.775mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net VDD (3,3V) Between Pad R11-2(-8.42mm,26.275mm) on Top Layer And Via (-7.91mm,25.33mm) from Top Layer to Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net VDD (3,3V) Between Pad U1-3(-14.5mm,16.7mm) on Top Layer And Pad C101-2(-12.875mm,14.54mm) on Top Layer 
-Rule Violations :10
+Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 
-Violations Detected : 10
+Violations Detected : 0
 Time Elapsed        : 00:00:01
