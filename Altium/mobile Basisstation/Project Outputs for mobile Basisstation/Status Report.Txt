@@ -1,14 +1,30 @@
 Project Outputs Generation Report
 ---------------------------------
-Start Output Generation At 16:48:10 On 30.05.2016
+Start Output Generation At 09:51:33 On 02.06.2016
 
-Output: Export STEP
-Type  : ExportSTEP
+Output: Gerber Files
+Type  : Gerber
 From  : Variant [[No Variations]] of PCB Document [PCB_Testplatine.PcbDoc]
-   Generated File[PCB_Testplatine.step]
+   Generated File[PCB_Testplatine.GTL]
+   Generated File[PCB_Testplatine.GBL]
+   Generated File[PCB_Testplatine.GPB]
+   Generated File[PCB_Testplatine.GPT]
+   Generated File[PCB_Testplatine.GTO]
+   Generated File[PCB_Testplatine.GTP]
+   Generated File[PCB_Testplatine.GTS]
+   Generated File[PCB_Testplatine.GBS]
+   Generated File[PCB_Testplatine.GBP]
+   Generated File[PCB_Testplatine.GM1]
+   Generated File[PCB_Testplatine.GM4]
+   Generated File[PCB_Testplatine.GM13]
+   Generated File[PCB_Testplatine.GM15]
+   Generated File[PCB_Testplatine.GM16]
+   Generated File[PCB_Testplatine.RUL]
+   Generated File[PCB_Testplatine.EXTREP]
+   Generated File[PCB_Testplatine.REP]
 
 
-Files Generated   : 1
+Files Generated   : 17
 Documents Printed : 0
 
-Finished Output Generation At 16:48:15 On 30.05.2016
+Finished Output Generation At 09:51:36 On 02.06.2016

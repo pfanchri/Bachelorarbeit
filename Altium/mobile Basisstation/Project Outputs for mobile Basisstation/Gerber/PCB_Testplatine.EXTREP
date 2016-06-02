@@ -1,0 +1,23 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: PCB_Testplatine.GBR   02.06.2016  09:51:33
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
+.GM1                Mechanical 1                            
+.GM4                Mechanical 4                            
+.GM13               Mechanical 13                           
+.GM15               Mechanical 15                           
+.GM16               Mechanical 16                           
+------------------------------------------------------------------------------------------
