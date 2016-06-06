@@ -253,3 +253,54 @@ INFO:
 End of solver : getSolution() :  Difference in ms 552
 
 
+Jun 02, 2016 12:12:29 PM java.util.logging.LogManager$RootLogger log
+INFO: Start of solver :getSolution() : Thu Jun 02 12:12:29 CEST 2016
+
+
+Jun 02, 2016 12:12:29 PM java.util.logging.LogManager$RootLogger log
+INFO: 
+timeout(solve_mapping_problem([ 
+reserved([p,1,pad,0],'digital_io$01238362304$0'),
+reserved([devicepackage,0,79],'digital_io$0567432502$0')
+ ],Vars,Regs,Appslocalvars),15,writeln(timeout),all_solution, Timer, Due, Remainder).
+
+
+Jun 02, 2016 12:12:30 PM java.util.logging.LogManager$RootLogger log
+INFO: 
+End of solver : getSolution() :  Difference in ms 504
+
+
+Jun 02, 2016 12:14:17 PM java.util.logging.LogManager$RootLogger log
+INFO: Start of solver :getSolution() : Thu Jun 02 12:14:17 CEST 2016
+
+
+Jun 02, 2016 12:14:17 PM java.util.logging.LogManager$RootLogger log
+INFO: 
+timeout(solve_mapping_problem([ 
+reserved([p,1,pad,0],'digital_io$01238362304$0'),
+reserved([devicepackage,0,79],'digital_io$0567432502$0')
+ ],Vars,Regs,Appslocalvars),15,writeln(timeout),all_solution, Timer, Due, Remainder).
+
+
+Jun 02, 2016 12:14:18 PM java.util.logging.LogManager$RootLogger log
+INFO: 
+End of solver : getSolution() :  Difference in ms 528
+
+
+Jun 02, 2016 12:16:14 PM java.util.logging.LogManager$RootLogger log
+INFO: Start of solver :getSolution() : Thu Jun 02 12:16:14 CEST 2016
+
+
+Jun 02, 2016 12:16:14 PM java.util.logging.LogManager$RootLogger log
+INFO: 
+timeout(solve_mapping_problem([ 
+reserved([p,1,pad,0],'digital_io$01238362304$0'),
+reserved([devicepackage,0,79],'digital_io$0567432502$0')
+ ],Vars,Regs,Appslocalvars),15,writeln(timeout),all_solution, Timer, Due, Remainder).
+
+
+Jun 02, 2016 12:16:14 PM java.util.logging.LogManager$RootLogger log
+INFO: 
+End of solver : getSolution() :  Difference in ms 512
+
+

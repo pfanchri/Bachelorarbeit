@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for mobile Basisstation
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -804,78 +804,86 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for mobile Basisstation\Design Rule Check - PCB_Testplatine.html
+DocumentPath=Project Outputs for mobile Basisstation\BOM\Bill of Materials-mobile Basisstation.xls
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.EXTREP
+DocumentPath=Project Outputs for mobile Basisstation\Design Rule Check - PCB_Testplatine.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GBL
+DocumentPath=Project Outputs for mobile Basisstation\BOM\mobile Basisstation.xls
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GBP
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GBS
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM1
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM4
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM13
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM15
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM4
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM16
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GPB
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GPT
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GM16
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GTL
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GTO
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GTP
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GTS
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.REP
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.RUL
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument19]
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.REP
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for mobile Basisstation\Gerber\PCB_Testplatine.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument21]
 DocumentPath=Project Outputs for mobile Basisstation\ExportSTEP\PCB_Testplatine.step
 DItemRevisionGUID=
 
@@ -893,7 +901,7 @@ Variant=[No Variations]
 OutputJobsCount=0
 
 [Generic_EDE]
-OutputDir=Project Outputs for mobile Basisstation
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs

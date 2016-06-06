@@ -1,0 +1,45 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~225|Field=Description~String~Description~225|Field=Designator~String~Designator~387|Field=Footprint~String~Footprint~171|Field=LibRef~String~LibRef~171|Field=Manufacturer~String~Manufacturer~137|Field=Quantity~Integer~Quantity~169|Field=Value~String~Value~137|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~mobile Basisstation.PrjPcb|ReportField=ProjectFullPath~D:\Bachelorarbeit\Altium\mobile Basisstation\mobile Basisstation.PrjPcb|ReportField=Title~Bill of Materials For Project [mobile Basisstation.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~214|ReportField=ReportTime~13:03:00|ReportField=ReportDate~02.06.2016|ReportField=ReportDateTime~02.06.2016 13:03:00|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~02.06.2016|ReportField=CurrentTime~12:45:42|ReportField=Date~|ReportField=DocumentFullPathAndName~D:\Bachelorarbeit\Altium\mobile Basisstation\Basisstation.SchDoc|ReportField=DocumentName~Basisstation.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~30.05.2016|ReportField=Organization~|ReportField=ProjectName~mobile Basisstation.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~mobile Basisstation.PrjPcb|ReportField=DataSourceFullPath~D:\Bachelorarbeit\Altium\mobile Basisstation\mobile Basisstation.PrjPcb|ReportField=PCBDataSourceFileName~PCB_Testplatine.PcbDoc|ReportField=PCBDataSourceFullPath~D:\Bachelorarbeit\Altium\mobile Basisstation\PCB_Testplatine.PcbDoc
+1|Cap Semi|Capacitor (Semiconductor SIM Model)|C1, C2, C3, C4, C5, C6, C7, C8, C21_TDA1, C21_TDA2, C21_TDA3, C21_TDA4, C21_TDA5, C21_TDA6, C22_TDA1, C22_TDA2, C22_TDA3, C22_TDA4, C22_TDA5, C22_TDA6, C23_TDA1, C23_TDA2, C23_TDA3, C23_TDA4, C23_TDA5, C23_TDA6, C24_TDA1, C24_TDA2, C24_TDA3, C24_TDA4, C24_TDA5, C24_TDA6, C200, C201|0402|Cap Semi||34|100nF
+2|Cap Semi|Capacitor (Semiconductor SIM Model)|C9, C10, C11, C12|0402|Cap Semi||4|15pF
+3|Cap Semi|Capacitor (Semiconductor SIM Model)|C25_TDA1, C25_TDA2, C25_TDA3, C25_TDA4, C25_TDA5, C25_TDA6, C26_TDA1, C26_TDA2, C26_TDA3, C26_TDA4, C26_TDA5, C26_TDA6|0402|Cap Semi||12|3.9pF
+4|Cap Semi|Capacitor (Semiconductor SIM Model)|C27_TDA1, C27_TDA2, C27_TDA3, C27_TDA4, C27_TDA5, C27_TDA6|0402|Cap Semi||6|4.0pF
+5|Cap Semi|Capacitor (Semiconductor SIM Model)|C28_TDA1, C28_TDA2, C28_TDA3, C28_TDA4, C28_TDA5, C28_TDA6|0402|Cap Semi||6|2.4pF
+6|Cap Semi|Capacitor (Semiconductor SIM Model)|C29_TDA1, C29_TDA2, C29_TDA3, C29_TDA4, C29_TDA5, C29_TDA6|0402|Cap Semi||6|2.7pF
+7|Cap Semi|Capacitor (Semiconductor SIM Model)|C30_TDA1, C30_TDA2, C30_TDA3, C30_TDA4, C30_TDA5, C30_TDA6|0402|Cap Semi||6|6.2pF
+8|Cap Semi|Capacitor (Semiconductor SIM Model)|C31_TDA1, C31_TDA2, C31_TDA3, C31_TDA4, C31_TDA5, C31_TDA6|0402|Cap Semi||6|12pF
+9|Cap Semi|Capacitor (Semiconductor SIM Model)|C100, C101, C210|C1206|Cap Semi||3|10uF
+10|Cap Semi|Capacitor (Semiconductor SIM Model)|C202, C203, C204|C1206|Cap Semi||3|100nF
+11|Cap Semi|Capacitor (Semiconductor SIM Model)|C205, C206|0402|Cap Semi||2|22pF
+12|Cap Semi|Capacitor (Semiconductor SIM Model)|C207, C208, C209|C1206|Cap Semi||3|22uF
+13|SMA||CON1_TDA1, CON1_TDA2, CON1_TDA3, CON1_TDA4, CON1_TDA5, CON1_TDA6|SMA|SMA||6|
+14|BAT60A|Silicon AF Schottky Rectifier Diode with Extreme Low VF Drop|D1, D11|SOD-323|BAT60A||2|
+15|82356050560|WE-VE ESD Suppressor, 0603, VDC=5V|D2, D3|WE-VE_0603|WE-VE 0603, 82356050560|Wurth Elektronik|2|
+16|Green|SMD mono-color Chip LED, WL-SMCW, Green|D4, D5, D6, D7|LED_0805_Green|WL-SMCW 0805  150080GS75000|W黵th Elektronik eiSos GmbH|4|
+17|Red|SMD mono-color Chip LED, WL-SMCW, Red|D8, D9, D10, Power|LED_0805_Red|WL-SMCW 0805  150080RS75000|W黵th Elektronik eiSos GmbH|4|
+18|BAT54-02V|Silicon Schottky Diode, SC79, Reel, Green|D200, D201|INF-SC79_V|BAT54-02V|Infineon|2|
+19|SFECF10M7EA00||F1_TDA1, F1_TDA2, F1_TDA3, F1_TDA4, F1_TDA5, F1_TDA6|SOP6|SFECF10M7EA00||6|
+20|Header 5X2|Header, 5-Pin, Dual row|H1_TDA1, H1_TDA2, H1_TDA3, H1_TDA4, H1_TDA5, H1_TDA6, H2_TDA1, H2_TDA2, H2_TDA3, H2_TDA4, H2_TDA5, H2_TDA6|HDR2X5|Header 5X2||12|
+21|Header 2|Header, 2-Pin|H3|HDR1X2|Header 2||1|
+22|KSZ8031RNL||IC3|QFN /MLF 24pin|KSZ8031RNL||1|
+23|Micro USB Buchse||J1|Micro USB Buchse - Molex|Micro USB Buchse - Molex||1|
+24|Header 4X2|Header, 4-Pin, Dual row|JTAG|HDR2X4|Header 4X2||1|
+25|Inductor|Inductor|L1_TDA1, L1_TDA2, L1_TDA3, L1_TDA4, L1_TDA5, L1_TDA6, L3_TDA1, L3_TDA2, L3_TDA3, L3_TDA4, L3_TDA5, L3_TDA6, L4_TDA1, L4_TDA2, L4_TDA3, L4_TDA4, L4_TDA5, L4_TDA6|INDC1608L|Inductor||18|10nH
+26|Inductor|Inductor|L2_TDA1, L2_TDA2, L2_TDA3, L2_TDA4, L2_TDA5, L2_TDA6|INDC1608L|Inductor||6|150nH
+27|Inductor|Inductor|L11, L200, L201|0603|Inductor||3|60 Ohm
+28|Res3|Resistor|R1_TDA1, R1_TDA2, R1_TDA3, R1_TDA4, R1_TDA5, R1_TDA6, R3_TDA1, R3_TDA2, R3_TDA3, R3_TDA4, R3_TDA5, R3_TDA6|J1-0603|Res3||12|10
+29|Res3|Resistor|R2_TDA1, R2_TDA2, R2_TDA3, R2_TDA4, R2_TDA5, R2_TDA6|J1-0603|Res3||6|4,7
+30|Res3|Resistor|R10|J1-0603|Res3||1|510
+31|Res3|Resistor|R11, R20, R21, R22, R23, R24, R25, R26|J1-0603|Res3||8|68
+32|Res3|Resistor|R12, R13|J1-0603|Res3||2|33
+33|Res3|Resistor|R200, R201|J1-0603|Res3||2|120
+34|Res3|Resistor|R202|J1-0603|Res3||1|10K
+35|Res3|Resistor|R203, R204|J1-0603|Res3||2|1K
+36|Res3|Resistor|R205|J1-0603|Res3||1|6.49K
+37|Res3|Resistor|R206|J1-0603|Res3||1|0
+38|7499010211A|RJ45 LAN Transformer, 10/100 Base-T|T1|7499010211A|7499010211A|Wurth Elektronik|1|
+39|TDA5340|High Sensitivity Multi-Channel Transceiver, -40 to 110 degC, PG-TSSOP-28, Green|TDA5340_TDA1, TDA5340_TDA2, TDA5340_TDA3, TDA5340_TDA4, TDA5340_TDA5, TDA5340_TDA6|INF-PG-TSSOP-28_N|TDA5340|Infineon|6|
+40|MCP1826S-3302E/DB|1000 mA, Low Voltage, Low Quiescent Current LDO Regulator, 3-Pin SOT-223, Extended Temperature|U1|SOT-223-DB3_N|MCP1826S-3302E/DB|Microchip|1|
+41|Quarz||X1, X_TDA_TDA1, X_TDA_TDA2, X_TDA_TDA3, X_TDA_TDA4, X_TDA_TDA5, X_TDA_TDA6|Quarz|Quarz||7|
+42|RTC Crystal||X2|RTC Uhrenquarz  1.5x3.2 SMD|RTC Crystal||1|32.768KHz
+43|25MHz||X3|Quarz|Quarz||1|25MHz
+44|XMC4500-F144K1024 AB|120 MHz XMC4500 MCU with 1,024 KByte Program Memory, 160 KByte SRAM, 3.3 V, -40 to 125 degC, PG-LQFP-144, Green|XMC4500|INF-PG-LQFP-144-18-6500X6500TP_N|XMC4500-F144K1024 AB|Infineon|1|
