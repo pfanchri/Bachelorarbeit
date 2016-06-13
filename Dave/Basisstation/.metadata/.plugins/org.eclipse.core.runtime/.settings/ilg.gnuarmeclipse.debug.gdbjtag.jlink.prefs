@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
-flashDeviceName=XMC4500-F100x1024
+flashDeviceName=XMC4500-F144x1024
 gdb.client.commands=set mem inaccessible-by-default off
 gdb.client.executable=${ARM_GCC_HOME}/bin/arm-none-eabi-gdb
 gdb.client.other=
