@@ -12,50 +12,50 @@
 // Enter all the settings here
 // ----------------------------------------
 
-#define USIC                    1      // USIC-Module
-#define USIC_CHANNEL            1      // USIC-Channel
+#define USIC                    0      // USIC-Module
+#define USIC_CHANNEL            0      // USIC-Channel
 
-#define NUMBER_OF_SPI_SLAVES    1
+#define NUMBER_OF_SPI_SLAVES    6
 
-#define SPI_TX_PORT             0      // Port of Tx-Pin (MOSI): Take the x from Px.y
-#define SPI_TX_PIN              1      // Portpin of Tx-Pin (MOSI): Take the y from Px.y
-#define SPI_RX_PORT             0      // Port of Rx-Pin (MISO): Take the x from Px.y
-#define SPI_RX_PIN              0      // Portpin of Rx-Pin (MISO): Take the y from Px.y
-#define SPI_CLCK_PORT           0      // Port of Clock-Pin (SELO): Take the x from Px.y
-#define SPI_CLCK_PIN            10     // Portpin of Clock-Pin (SELO): Take the y from Px.y
+#define SPI_TX_PORT             1      // Port of Tx-Pin (MOSI): Take the x from Px.y
+#define SPI_TX_PIN              7      // Portpin of Tx-Pin (MOSI): Take the y from Px.y
+#define SPI_RX_PORT             1      // Port of Rx-Pin (MISO): Take the x from Px.y
+#define SPI_RX_PIN              5      // Portpin of Rx-Pin (MISO): Take the y from Px.y
+#define SPI_CLCK_PORT           1      // Port of Clock-Pin (SELO): Take the x from Px.y
+#define SPI_CLCK_PIN            6     // Portpin of Clock-Pin (SELO): Take the y from Px.y
 
-#define SPI_SELO_PORT_0         0      // Port of Slave-Select-Pin (SELO): Take the x from Px.y
-#define SPI_SELO_PIN_0          9      // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
+#define SPI_SELO_PORT_0         1      // Port of Slave-Select-Pin (SELO): Take the x from Px.y
+#define SPI_SELO_PIN_0          11     // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
 #define SPI_SELO_LINE_0         0      // Which slave for the chosen channel is used (0 ... 5) --> Take the z from UxCy.SELOz in the Reference
 
 #if (NUMBER_OF_SPI_SLAVES > 1)
- #define SPI_SELO_PORT_1        0      // Port of Slave-Select-Pin (SELO): Take the x from Px.y
- #define SPI_SELO_PIN_1         2      // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
+ #define SPI_SELO_PORT_1        1      // Port of Slave-Select-Pin (SELO): Take the x from Px.y
+ #define SPI_SELO_PIN_1         8      // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
  #define SPI_SELO_LINE_1        1      // Which slave for the chosen channel is used (0 ... 5) --> Take the z from UxCy.SELOz in the Reference
 #endif
 
 #if (NUMBER_OF_SPI_SLAVES > 2)
- #define SPI_SELO_PORT_2    3          // Port of Slave-Select-Pin (SELO): Take the x from Px.y
- #define SPI_SELO_PIN_2     4          // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
+ #define SPI_SELO_PORT_2    4          // Port of Slave-Select-Pin (SELO): Take the x from Px.y
+ #define SPI_SELO_PIN_2     6          // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
  #define SPI_SELO_LINE_2    2          // Which slave for the chosen channel is used (0 ... 5) --> Take the z from UxCy.SELOz in the Reference
 #endif
 
 #if (NUMBER_OF_SPI_SLAVES > 3)
- #define SPI_SELO_PORT_3    3          // Port of Slave-Select-Pin (SELO): Take the x from Px.y
+ #define SPI_SELO_PORT_3    4          // Port of Slave-Select-Pin (SELO): Take the x from Px.y
  #define SPI_SELO_PIN_3     5          // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
  #define SPI_SELO_LINE_3    3          // Which slave for the chosen channel is used (0 ... 5) --> Take the z from UxCy.SELOz in the Reference
 #endif
 
 #if (NUMBER_OF_SPI_SLAVES > 4)
- #define SPI_SELO_PORT_4    3          // Port of Slave-Select-Pin (SELO): Take the x from Px.y
- #define SPI_SELO_PIN_4     6          // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
+ #define SPI_SELO_PORT_4    4          // Port of Slave-Select-Pin (SELO): Take the x from Px.y
+ #define SPI_SELO_PIN_4     4          // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
  #define SPI_SELO_LINE_4    4          // Which slave for the chosen channel is used (0 ... 5) --> Take the z from UxCy.SELOz in the Reference
 #endif
 
 #if (NUMBER_OF_SPI_SLAVES > 5)
- #define SPI_SELO_PORT_5        0      // Port of Slave-Select-Pin (SELO): Take the x from Px.y
- #define SPI_SELO_PIN_5         9      // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
- #define SPI_SELO_LINE_5        0      // Which slave for the chosen channel is used (0 ... 5) --> Take the z from UxCy.SELOz in the Reference
+ #define SPI_SELO_PORT_5        4      // Port of Slave-Select-Pin (SELO): Take the x from Px.y
+ #define SPI_SELO_PIN_5         3      // Portpin of Slave-Select-Pin (SELO): Take the y from Px.y
+ #define SPI_SELO_LINE_5        5      // Which slave for the chosen channel is used (0 ... 5) --> Take the z from UxCy.SELOz in the Reference
 #endif
 
 #define SPI_ALT_OUT_CHANNEL     2      // Which alternative output are Tx, Selo and Clock (1 ... 4)

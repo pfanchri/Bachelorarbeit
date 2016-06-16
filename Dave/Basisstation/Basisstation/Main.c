@@ -16,6 +16,16 @@ int main(void) {
 	spi_transfer(spi_master_ch, 0, spi_array_tx, spi_array_rx, 3);
 
 
+
+
+
+
+
+
+
+
+	void init(void);
+
 	while (1) {
 	}
 }
