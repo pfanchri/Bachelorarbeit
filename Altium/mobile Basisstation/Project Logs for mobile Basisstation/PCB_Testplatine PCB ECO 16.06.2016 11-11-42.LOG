@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetJTAG_4 Pin=S?-1
+Removed Pin From Net: NetName=NetJTAG_4 Pin=S?-2
+Removed Pin From Net: NetName=GND Pin=S?-3
+Removed Pin From Net: NetName=GND Pin=S?-4
+Removed Member From Class: ClassName=U_Power Supply Member=S?

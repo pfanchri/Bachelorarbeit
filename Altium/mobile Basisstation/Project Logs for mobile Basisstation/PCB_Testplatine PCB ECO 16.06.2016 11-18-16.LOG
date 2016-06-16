@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NetJTAG_4 Pin=S?-1
+Removed Pin From Net: NetName=NetJTAG_4 Pin=S?-2
+Removed Pin From Net: NetName=GND Pin=S?-3
+Removed Pin From Net: NetName=GND Pin=S?-4
+Added Component: Designator=S1(430181038816)
+Added Pin To Net: NetName=NetJTAG_4 Pin=S1-1
+Added Pin To Net: NetName=NetJTAG_4 Pin=S1-2
+Added Pin To Net: NetName=GND Pin=S1-3
+Added Pin To Net: NetName=GND Pin=S1-4
+Added Member To Class: ClassName=U_Power Supply Member=Component S1 430181038816
+Added Room: Name=U_Ethernet
+Added Room: Name=U_Power Supply
+Added Room: Name=U_XMC4500
