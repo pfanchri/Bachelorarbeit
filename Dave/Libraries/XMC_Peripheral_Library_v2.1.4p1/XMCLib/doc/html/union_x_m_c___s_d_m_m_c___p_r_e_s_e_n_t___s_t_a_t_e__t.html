@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>XMC Peripheral Library for XMC4000 Family: XMC_SDMMC_PRESENT_STATE_t Variantenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="IFX_LOGO_4C_medium.bmp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XMC Peripheral Library for XMC4000 Family
+   &#160;<span id="projectnumber">2.1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="modules.html"><span>Module</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">XMC_SDMMC_PRESENT_STATE_t Variantenreferenz<div class="ingroups"><a class="el" href="group___x_m_clib.html">XMC Peripheral Library</a> &raquo; <a class="el" href="group___s_d_m_m_c.html">SDMMC</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;xmc_sdmmc.h&gt;</code></p>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Present state of the SDMMC host controller <br />
+</p>
+<p>The structure presents a convenient way to obtain the SDMMC peripheral's present state information (for example, the write protect pin level). The <a class="el" href="group___s_d_m_m_c.html#ga288474aba13cd8564c6e49628dde449a">XMC_SDMMC_GetPresentState()</a> API can be used to populate the structure with the state of the SD host controller. </p>
+</div><h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="a06adf01a5f9d38bee11f694421ef5f55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t buffer_read_enable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Buffer read enable </p>
+
+</div>
+</div>
+<a class="anchor" id="ab25ce9bbe6110b28f70ad1fc88b22325"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t buffer_write_enable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Buffer write enable </p>
+
+</div>
+</div>
+<a class="anchor" id="ae074912c63f04810db116260a1a92828"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t card_detect_pin_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Card detect pin level </p>
+
+</div>
+</div>
+<a class="anchor" id="aa014e6bf6b6c7ea2f8213cc5f0c63206"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t card_inserted</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Card inserted </p>
+
+</div>
+</div>
+<a class="anchor" id="a416c3fa8fe04aa877a99e0fd8a03b9ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t card_state_stable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Card state stable </p>
+
+</div>
+</div>
+<a class="anchor" id="a33b4fd3cc985217e4d59b07f36da6c65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t cmd_line_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Command line level </p>
+
+</div>
+</div>
+<a class="anchor" id="a79d3397c9475dea4166f75e762f135b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t command_inihibit_cmd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Command: Inhibit command </p>
+
+</div>
+</div>
+<a class="anchor" id="a40119fb7779a5b43726d11dcda636245"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t command_inihibit_dat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Command: Inhibit data </p>
+
+</div>
+</div>
+<a class="anchor" id="ac9ac38e23bdcd624c1f9fe305fa0487b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dat7_4_pin_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Data 7_4 pin level </p>
+
+</div>
+</div>
+<a class="anchor" id="a21893ab9422abec000702bc29eb7cb60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dat_3_0_pin_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Data 3_0 pin level </p>
+
+</div>
+</div>
+<a class="anchor" id="af1ed80404d588ee699bf4e094e4a07fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t dat_line_active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Data line active </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f2f40a7c2439996a2f3c6f5ce7be484"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t read_transfer_active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read transfer active </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0157ee6c9181557b96e0ef5dcee5f57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t write_protect_pin_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write protect pin level </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2f897e8dd8e494d157c3c6a6b9b5e7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t write_transfer_active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write transfer active </p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Variante wurde erzeugt aufgrund der Datei:<ul>
+<li><a class="el" href="xmc__sdmmc_8h.html">xmc_sdmmc.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mit Jun 22 2016 11:37:01 für XMC Peripheral Library for XMC4000 Family von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

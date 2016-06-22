@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>XMC Peripheral Library for XMC4000 Family: XMC_EBU_MODE_CONFIG_t Strukturreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="IFX_LOGO_4C_medium.bmp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XMC Peripheral Library for XMC4000 Family
+   &#160;<span id="projectnumber">2.1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="modules.html"><span>Module</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">XMC_EBU_MODE_CONFIG_t Strukturreferenz<div class="ingroups"><a class="el" href="group___x_m_clib.html">XMC Peripheral Library</a> &raquo; <a class="el" href="group___e_b_u.html">EBU</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;xmc_ebu.h&gt;</code></p>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Mode configuration values for EBU <br />
+</p>
+<p>The structure presents a convenient way to set/obtain the mode configuration, SDRAM tristate, external clock, arbitration, timeout control and ALE mode for EBU. The <a class="el" href="group___e_b_u.html#ga8215e4bdc48f3d94cdacecc6856834a8">XMC_EBU_Init()</a> can be used to populate the structure with the clock configuration values of the EBU module. </p>
+</div><h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="ae7332b8d91580f896a87312900287eaa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t bus_timeout_control</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Determines num of inactive cycles leading to a bus timeout after the EBU gains ownership <br />
+ 00H: Timeout is disabled <br />
+ 01H: Timeout is generated after 1 x 8 clock cycles <br />
+ FFH: Timeout is generated after 255 x 8 clock cycles <br />
+ </p>
+
+</div>
+</div>
+<a class="anchor" id="abccc76a0d96b0327d5b2f27a3f40cd63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ebu_ale_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ALE mode </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3445813fc00a59b18c410f438a638c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ebu_arbitration_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Arbitration mode Determines num of inactive cycles leading to a bus timeout after the EBU gains ownership <br />
+ 00H: Timeout is disabled <br />
+ 01H: Timeout is generated after 1 x 8 clock cycles <br />
+ FFH: Timeout is generated after 255 x 8 clock cycles </p>
+
+</div>
+</div>
+<a class="anchor" id="ac973f71e7c621d6b9d016d8f9586034a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ebu_arbsync</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0 - arbitration inputs are sync; 1 - arbitration inputs are async </p>
+
+</div>
+</div>
+<a class="anchor" id="a6ad219a708060c7d9a080ceba1a47575"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ebu_extlock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0 - ext bus is not locked after the EBU gains ownership; 1 - ext bus is not locked </p>
+
+</div>
+</div>
+<a class="anchor" id="a1954f429c26701371861793627a7116e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ebu_sdram_tristate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0 - SDRAM cannot be shared; 1 - SDRAM can be shared </p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
+<li><a class="el" href="xmc__ebu_8h.html">xmc_ebu.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mit Jun 22 2016 11:37:00 für XMC Peripheral Library for XMC4000 Family von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

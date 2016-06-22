@@ -1,4 +1,4 @@
-10:56:05 **** Build of configuration Debug for project Basisstation ****
+11:21:44 **** Build of configuration Debug for project Basisstation ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
 'Building file: ../Led.c'
 'Invoking: ARM-GCC C Compiler'
@@ -25,5 +25,5 @@
 'Finished building: Basisstation.lst'
 
 
-10:56:06 Build Finished (took 577ms)
+11:21:45 Build Finished (took 515ms)
 

@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>XMC Peripheral Library for XMC4000 Family: $title</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="IFX_LOGO_4C_medium.bmp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XMC Peripheral Library for XMC4000 Family
+   &#160;<span id="projectnumber">2.1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li class="current"><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="modules.html"><span>Module</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="contents">
+<div class="toc"><h3>Inhaltsverzeichnis</h3>
+<ul><li class="level1"><a href="#v214">Version 2.1.4</a><ul><li class="level2"><a href="#GENERAL">GENERAL</a></li>
+<li class="level2"><a href="#ETH_MAC">ETH_MAC</a></li>
+<li class="level2"><a href="#ETH_PHY">ETH_PHY</a></li>
+<li class="level2"><a href="#VADC">VADC</a></li>
+<li class="level2"><a href="#FLASH">FLASH</a></li>
+<li class="level2"><a href="#SDMMC">SDMMC</a></li>
+<li class="level2"><a href="#SPI">SPI</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#v212">Version 2.1.2</a><ul><li class="level2"><a href="#DSD">DSD</a></li>
+<li class="level2"><a href="#CCU4">CCU4</a></li>
+<li class="level2"><a href="#CCU8">CCU8</a></li>
+<li class="level2"><a href="#I2C">I2C</a></li>
+<li class="level2"><a href="#UART">UART</a></li>
+<li class="level2"><a href="#WDT">WDT</a></li>
+<li class="level2"><a href="#SCU">SCU</a></li>
+<li class="level2"><a href="#CAN">CAN</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#v200">Version 2.0.0</a><ul><li class="level2"><a href="#DMA">DMA</a></li>
+<li class="level2"><a href="#HRPWM">HRPWM</a></li>
+<li class="level2"><a href="#LEDTS">LEDTS</a></li>
+<li class="level2"><a href="#POSIF">POSIF</a></li>
+<li class="level2"><a href="#RTC">RTC</a></li>
+<li class="level2"><a href="#USBD">USBD</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#v100">Version 1.0.0</a></li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="v214"></a>
+Version 2.1.4</h1>
+<h2><a class="anchor" id="GENERAL"></a>
+GENERAL</h2>
+<ul>
+<li>Added:<ul>
+<li>Added EtherCAT driver</li>
+<li>Added support for XMC4300 series</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="ETH_MAC"></a>
+ETH_MAC</h2>
+<ul>
+<li>Fixed:<ul>
+<li>XMC_ETH_MAC_GetRxFrameSize return value in case of errors</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="ETH_PHY"></a>
+ETH_PHY</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="xmc__eth__phy_8h.html#ac26b56e5c309c035e78a2f0292bb4478">XMC_ETH_PHY_ExitPowerDown()</a>, <a class="el" href="xmc__eth__phy_8h.html#a9f77136e532864b24617b6cb2a23402d">XMC_ETH_PHY_Reset()</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="VADC"></a>
+VADC</h2>
+<ul>
+<li>Fixed:<ul>
+<li>XMC_VADC_GLOBAL_TriggerEvent API fixed. OR operation removed.</li>
+<li>XMC_VADC_GLOBAL_ClearEvent API fixed. Multiple events triggering on clearing the event is fixed.</li>
+<li>Wrong MACRO name defined in xmc_vadc_map.h file corrected for XMC4200/4100 devices. XMC_VADC_G3_SAMPLE renamed to XMC_VADC_G1_SAMPLE</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="FLASH"></a>
+FLASH</h2>
+<ul>
+<li>Fixed:<ul>
+<li>Flash access time</li>
+<li>Wait until operation is finished for the next functions:<ol type="1">
+<li>XMC_FLASH_InstallProtection</li>
+<li>XMC_FLASH_ConfirmProtection</li>
+<li>XMC_FLASH_ProgramPage</li>
+<li>XMC_FLASH_EraseSector</li>
+<li>XMC_FLASH_ErasePhysicalSector</li>
+<li>XMC_FLASH_EraseUCB</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>Fix XMC_FLASH_VerifyReadProtection and XMC_FLASH_VerifyWriteProtection</p>
+<h2><a class="anchor" id="SDMMC"></a>
+SDMMC</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___s_d_m_m_c.html#ga0bc3ef904c27570baf81424395756090">XMC_SDMMC_EnableDelayCmdDatLines()</a>, <a class="el" href="group___s_d_m_m_c.html#ga73762e35f53a01de7cb95faa19b5025a">XMC_SDMMC_DisableDelayCmdDatLines()</a>, <a class="el" href="group___s_d_m_m_c.html#gaef2f313da8007d163cd9656b80fdcc0a">XMC_SDMMC_SetDelay()</a>,</li>
+<li><a class="el" href="group___s_d_m_m_c.html#ga105e4cde1c6597a967e52386035e86db">XMC_SDMMC_EnableHighSpeed()</a>, <a class="el" href="group___s_d_m_m_c.html#ga5766fd5bd701a4a527199f32d8906d57">XMC_SDMMC_DisableHighSpeed()</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="SPI"></a>
+SPI</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___s_p_i.html#gaa1d508df7f014140bc929286ef63a9c3">XMC_SPI_CH_EnableSlaveSelectCodedMode()</a> and <a class="el" href="group___s_p_i.html#gacb9748ed69822299ecb2a1488a3210e7">XMC_SPI_CH_DisableSlaveSelectCodedMode()</a></li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="v212"></a>
+Version 2.1.2</h1>
+<h2><a class="anchor" id="GENERAL"></a>
+GENERAL</h2>
+<ul>
+<li>Added:<ul>
+<li>Added I2S driver</li>
+<li>Added support for XMC4700 and XMC4800 series</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="DSD"></a>
+DSD</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___d_s_d.html#ga0dfd9c25608f8dd6d28f68fae3a04d68">XMC_DSD_SetResultEventFlag()</a>, <a class="el" href="group___d_s_d.html#gac3e92415ba18b5bcedb454bc02409631">XMC_DSD_ClearResultEventFlag()</a>, <a class="el" href="group___d_s_d.html#gae73cb88751e69031eb5d9ffbbfec47e5">XMC_DSD_SetAlarmEventFlag()</a> and <a class="el" href="group___d_s_d.html#ga14280e89324e1fb9adaa379d8e10b9fa">XMC_DSD_ClearAlarmEventFlag()</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="CCU4"></a>
+CCU4</h2>
+<ul>
+<li>Changed:<ul>
+<li><a class="el" href="group___c_c_u4.html#gadcfbaa660e4c008e78128b8deb4cc5c1">XMC_CCU4_EnableShadowTransfer()</a> API is made as inline, to improve the speed</li>
+</ul>
+</li>
+<li>Added:<ul>
+<li>XMC_CCU4_SLICE_PRESCALER_t enum is added to set the prescaler divider</li>
+<li>XMC_CCU4_SLICE_EVENT_LEVEL_SENSITIVITY_t, two more enum items are added to support external count direction settings</li>
+<li>XMC_CCU4_SLICE_MULTI_IRQ_ID_t is added to support the <a class="el" href="group___c_c_u4.html#gadc79794c8392fdd71e843220786d8d99">XMC_CCU4_SLICE_EnableMultipleEvents()</a> and <a class="el" href="group___c_c_u4.html#ga3152586e4a4d2f25775bb0286653ca8c">XMC_CCU4_SLICE_DisableMultipleEvents()</a> APIs</li>
+<li>Map files added macros with peripheral names for readability</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="CCU8"></a>
+CCU8</h2>
+<ul>
+<li>Changed:<ul>
+<li><a class="el" href="group___c_c_u8.html#ga8adef91554fb4e3e9e40b46b975288b1">XMC_CCU8_EnableShadowTransfer()</a> API is made as inline, to improve the speed</li>
+<li><a class="el" href="group___c_c_u8.html#ga4a31d77bf05c1a957500adb8004a6bd2">XMC_CCU8_SLICE_GetEvent()</a> is made as inline</li>
+</ul>
+</li>
+<li>Added:<ul>
+<li>XMC_CCU8_SLICE_PRESCALER_t enum is added to set the prescaler divider</li>
+<li>XMC_CCU8_SLICE_SHADOW_TRANSFER_MODE_t is added for all the devices except XMC45 devices, to set when the shadow transfer has to happen</li>
+<li>XMC_CCU8_SOURCE_OUT0_t, XMC_CCU8_SOURCE_OUT1_t, XMC_CCU8_SOURCE_OUT2_t, XMC_CCU8_SOURCE_OUT3_t enums are added to map one of the ST to OUT0, OUT1, OUT3, OUT4 signals</li>
+<li>In <a class="el" href="struct_x_m_c___c_c_u8___s_l_i_c_e___c_o_m_p_a_r_e___c_o_n_f_i_g__t.html">XMC_CCU8_SLICE_COMPARE_CONFIG_t</a> structure, selector_out0, selector_out1, selector_out2, selector_out3 are added to support XMC14 devices</li>
+<li><a class="el" href="group___c_c_u8.html#ga8a6d5c547994d20acdb899367e68d1bc">XMC_CCU8_SLICE_EnableCascadedShadowTransfer()</a>, <a class="el" href="group___c_c_u8.html#ga7ab5c7a23e6ff95cbe1e67a0475e1f37">XMC_CCU8_SLICE_DisableCascadedShadowTransfer()</a>,<a class="el" href="group___c_c_u8.html#ga309924341a2e9534fc3a4fb0eb3a8ae1">XMC_CCU8_SLICE_SetShadowTransferMode()</a> API are supported for all the devices except XMC45</li>
+<li>XMC_CCU8_SLICE_EVENT_LEVEL_SENSITIVITY_t, two more enum items are added to support external count direction settings</li>
+<li><a class="el" href="group___c_c_u8.html#ga4585fe25f316e5185947cf21b90624ee">XMC_CCU8_SLICE_SetTimerCompareMatchChannel1()</a>, <a class="el" href="group___c_c_u8.html#ga7d8b7bf17420270c62236439c16f1c3a">XMC_CCU8_SLICE_SetTimerCompareMatchChannel2()</a> inline APIs are added to update the respective compare registers directly</li>
+<li>XMC_CCU8_SLICE_MULTI_IRQ_ID_t is added to support the <a class="el" href="group___c_c_u8.html#ga7fd5bf6d4ffac043be91e2d7291cd0b4">XMC_CCU8_SLICE_EnableMultipleEvents()</a> and <a class="el" href="group___c_c_u8.html#gacf6e711a80117324ead7bf4dd14d0140">XMC_CCU8_SLICE_DisableMultipleEvents()</a> APIs</li>
+<li>Map files added macros with peripheral names for readability</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="I2C"></a>
+I2C</h2>
+<ul>
+<li>Changed:<ul>
+<li><a class="el" href="group___i2_c.html#ga358214504f42dac696c4519efa19307b">XMC_I2C_CH_SetInputSource()</a> API for avoiding complete DXCR register overwriting</li>
+<li>XMC_I2C_CH_EVENT_t enum for supporting <a class="el" href="group___i2_c.html#ga868f80d9e08a0518c38100dda3f77882">XMC_I2C_CH_EnableEvent()</a> and <a class="el" href="group___i2_c.html#ga7d0b7e575a13d2fdd2ead33d96d9e15b">XMC_I2C_CH_DisableEvent()</a> for supporting multiple events configuration</li>
+</ul>
+</li>
+<li>Added:<ul>
+<li>APIs for external input for BRG configuration:<a class="el" href="group___i2_c.html#ga63149dd65f853cc69ed57add87f34627">XMC_I2C_CH_ConfigExternalInputSignalToBRG()</a></li>
+<li>APIs for enabling or disabling the ACK response to a 0x00 slave address: <a class="el" href="group___i2_c.html#gae49923f2679d64f4980518491d844bec">XMC_I2C_CH_EnableAcknowledgeAddress0()</a> and <a class="el" href="group___i2_c.html#ga4d7a2f143c3f07c35b39174d6e802be6">XMC_I2C_CH_DisableAcknowledgeAddress0()</a></li>
+</ul>
+</li>
+<li>Fixed:<ul>
+<li>10bit addressing</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="SPI"></a>
+SPI</h2>
+<ul>
+<li>Changed:<ul>
+<li><a class="el" href="group___s_p_i.html#gab5800f69155c1ecadedf587fd567e2b3">XMC_SPI_CH_SetInputSource()</a> for avoiding complete DXCR register overwriting</li>
+<li>XMC_SPI_CH_EVENT_t enum for supporting <a class="el" href="group___s_p_i.html#ga91fef97e4d595f37fbfb60a4fd5624e4">XMC_SPI_CH_EnableEvent()</a> and <a class="el" href="group___s_p_i.html#ga8f3bb2759c5dc83f4df9674bc7521dfa">XMC_SPI_CH_DisableEvent()</a> for supporting multiple events configuration</li>
+</ul>
+</li>
+<li>Added:<ul>
+<li>APIs for enabling/disabling delay compensation <a class="el" href="group___s_p_i.html#gac0b5cdd04a90124e347ba3ef897dc545">XMC_SPI_CH_DisableDelayCompensation()</a> and <a class="el" href="group___s_p_i.html#gab1fb0a57f619c0d1872482196399a443">XMC_SPI_CH_EnableDelayCompensation()</a></li>
+<li>Added APIs for external input for BRG configuration:<a class="el" href="group___s_p_i.html#gac19e7d5bf3ff9b28764463d224b6e581">XMC_SPI_CH_ConfigExternalInputSignalToBRG()</a></li>
+<li>API for configuring the receiving clock phase in the slave:XMC_SPI_CH_DataLatchedInTrailingEdge() and XMC_SPI_CH_DataLatchedInLeadingEdge()</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="UART"></a>
+UART</h2>
+<ul>
+<li>Changed:<ul>
+<li><a class="el" href="group___u_a_r_t.html#ga1f6aded563def78ca10e8638889bd898">XMC_UART_CH_SetInputSource()</a> for avoiding complete DXCR register overwriting</li>
+<li>XMC_UART_CH_EVENT_t enum for supporting <a class="el" href="group___u_a_r_t.html#gaf511dd60e7f23bc40bad0207ff9bd266">XMC_UART_CH_EnableEvent()</a> and <a class="el" href="group___u_a_r_t.html#ga87743034df2fe747615ce39a6b870a0c">XMC_UART_CH_DisableEvent()</a> for supporting multiple events configuration</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="FLASH"></a>
+FLASH</h2>
+<ul>
+<li>Added:<ul>
+<li>XMC_FLASH_Reset</li>
+<li>XMC_FLASH_ErasePhysicalSector</li>
+<li>XMC_FLASH_EraseUCB</li>
+<li>XMC_FLASH_ResumeProtection</li>
+<li>XMC_FLASH_RepairPhysicalSector</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="WDT"></a>
+WDT</h2>
+<ul>
+<li>Fixed:<ul>
+<li><a class="el" href="group___w_d_t.html#ga5ee071622fac49ddd071a0070bf6c788">XMC_WDT_SetDebugMode()</a> API, Wrong register is being configured</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="VADC"></a>
+VADC</h2>
+<ul>
+<li>Added:<ul>
+<li>XMC_VADC_GLOBAL_SetIndividualBoundary</li>
+<li>XMC_VADC_GROUP_SetIndividualBoundary</li>
+<li>XMC_VADC_GROUP_GetAlias</li>
+<li>XMC_VADC_GROUP_GetInputClass</li>
+<li>XMC_VADC_GROUP_ChannelSetIclass</li>
+<li>XMC_VADC_GROUP_ChannelGetResultAlignment</li>
+<li>XMC_VADC_GROUP_ChannelGetInputClass</li>
+<li>XMC_VADC_GROUP_SetResultSubtractionValue</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="SCU"></a>
+SCU</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___s_c_u.html#gacb869f7d0e646d10680f2ca8eb4124c0">XMC_SCU_CLOCK_SetDeepSleepConfig()</a>,<a class="el" href="group___s_c_u.html#ga14af7311359e751a90c08ca3c80d6777">XMC_SCU_CLOCK_SetSleepConfig()</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="CAN"></a>
+CAN</h2>
+<ul>
+<li>Added:<ul>
+<li>XMC48/47 new signature for XMC_CAN_GetBaudrateClockFrequency(), <a class="el" href="group___c_a_n.html#ga7405cebbdc24a635ad991d1ea3783214">XMC_CAN_Init()</a>, XMC_CAN_SetBaudrateClockSource(), XMC_CAN_GetBaudrateClockSource()</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="v200"></a>
+Version 2.0.0</h1>
+<h2><a class="anchor" id="GENERAL"></a>
+GENERAL</h2>
+<ul>
+<li>Removed:<ul>
+<li>version macros and declaration of GetDriverVersion()</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="CAN"></a>
+CAN</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___c_a_n.html#ga0824727cc57db59df4efe008625af141">XMC_CAN_NODE_ClearStatus()</a></li>
+<li><a class="el" href="group___c_a_n.html#gaa4af5d86b90db9f02681e7059eadfdda">XMC_CAN_MO_ReceiveData()</a></li>
+<li><a class="el" href="group___c_a_n.html#gabec17bceec62048721c0e71c4157b8b4">XMC_CAN_GATEWAY_InitDesObject()</a></li>
+<li><a class="el" href="group___c_a_n.html#ga924a346597f2770058d12d837b7ec05c">XMC_CAN_NODE_Enable()</a></li>
+</ul>
+</li>
+<li>Changed:<ul>
+<li><a class="el" href="group___c_a_n.html#ga3a06733578e85ec9be83df3ca65c82bf">XMC_CAN_MO_Config()</a>. Changed signature.</li>
+</ul>
+</li>
+<li>Fixed:<ul>
+<li><a class="el" href="group___c_a_n.html#gac51fa23741c9f64f35dca049aeb9201b">XMC_CAN_TXFIFO_ConfigMOSlaveObject()</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="CCU4"></a>
+CCU4</h2>
+<ul>
+<li>Fixed:<ul>
+<li><a class="el" href="group___c_c_u4.html#gac029dc08c5d54be8e773df0de9641691">XMC_CCU4_SLICE_StartConfig()</a>. Assert condition.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="CCU8"></a>
+CCU8</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___c_c_u8.html#ga3053c340acc31fe9899c40bf5d0f2745">XMC_CCU8_SLICE_LoadSelector()</a></li>
+</ul>
+</li>
+<li>Fixed:<ul>
+<li>XMC_CCU8_SLICE_CHECK_INTERRUPT macro. Fixed the missing item for compare match down for channel 2</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="DMA"></a>
+DMA</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___d_m_a.html#gae34f52feae127b101b963043ef2e5439">XMC_DMA_DisableRequestLine()</a></li>
+<li><a class="el" href="group___d_m_a.html#ga5487744727d5c8edaa07f538d401641b">XMC_DMA_ClearRequestLine()</a></li>
+<li><a class="el" href="group___d_m_a.html#gab8ecd554663ac2f57a7aecf962a3a6e4">XMC_DMA_CH_ClearSourcePeripheralRequest()</a></li>
+<li><a class="el" href="group___d_m_a.html#ga2c7fb961b05f06d0ca855c2d60a00f20">XMC_DMA_CH_ClearDestinationPeripheralRequest()</a></li>
+</ul>
+</li>
+<li>Changed:<ul>
+<li><a class="el" href="struct_x_m_c___d_m_a___l_l_i__t.html">XMC_DMA_LLI_t</a> structure. Members src_addr and dst_addr are now uint32_t.</li>
+<li><a class="el" href="group___d_m_a.html#gac423ad1fe2fcbc1f2e53f4f30f77d930">XMC_DMA_CH_SetSourceAddress()</a>. Changed type of addr parameter to uint32_t</li>
+<li>XMC_DMA_CH_SetdestinationAddress(). Changed type of addr parameter to uint32_t</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="HRPWM"></a>
+HRPWM</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___h_r_p_w_m.html#ga03b62754415e1b809501ebac0c3a7fa1">XMC_HRPWM_CSG_SelClampingInput()</a></li>
+<li>XMC_HRPWM_SHADOW_TX_DAC_t</li>
+</ul>
+</li>
+<li>Fixed:<ul>
+<li>CSG trimming data assignment is corrected.</li>
+</ul>
+</li>
+<li>Removed:<ul>
+<li>XMC_HRPWM_SHADOW_TX_t. Gets renamed to XMC_HRPWM_SHADOW_TX_DAC_t</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="I2C"></a>
+I2C</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___i2_c.html#ga72d5d08ec30a105175f9a789ab38c1c7">XMC_I2C_CH_TriggerServiceRequest()</a></li>
+<li><a class="el" href="group___i2_c.html#ga0caf9dbe9035171cc4826ad279a857a3">XMC_I2C_CH_SelectInterruptNodePointer()</a></li>
+</ul>
+</li>
+<li>Fixed:<ul>
+<li><a class="el" href="group___i2_c.html#ga4eeda18d28c90e527c309726ff5d3cb9">XMC_I2C_CH_Stop()</a>. Check if transmission is going before setting the channel to idle.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="LEDTS"></a>
+LEDTS</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___l_e_d_t_s.html#ga240b32cac971a993d1ae0da95ceb17ab">XMC_LEDTS_SetActivePADNo()</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="POSIF"></a>
+POSIF</h2>
+<ul>
+<li>Changed:<ul>
+<li><a class="el" href="group___p_o_s_i_f.html#ga04f9fb976e304266122d683b66dc4134">XMC_POSIF_QD_GetDirection()</a>. Fixed read direction</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="RTC"></a>
+RTC</h2>
+<ul>
+<li>Changed:<ul>
+<li><a class="el" href="group___r_t_c.html#ga6d21f3c6b2be1975f1593301c4ba9698">XMC_RTC_Init()</a>. Check RTC running condition.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="SCU"></a>
+SCU</h2>
+<ul>
+<li>Added:<ul>
+<li>For XMC11 series, <a class="el" href="group___s_c_u.html#ga0f600fa31f024ec9d8e0c17fc767772f">XMC_SCU_SetRawTempLimits()</a></li>
+<li>For XMC11 series, XMC_SCU_StartTempMeasurement()</li>
+<li>For XMC11 series, XMC_SCU_StopTempMeasurement()</li>
+<li>For XMC11 series, <a class="el" href="group___s_c_u.html#ga5a0ad9c467d9549542d0f0275bae6314">XMC_SCU_HighTemperature()</a></li>
+<li>For XMC11 series, <a class="el" href="group___s_c_u.html#ga8573534003ebf11fbaa49e331238fb86">XMC_SCU_LowTemperature()</a></li>
+<li>For XMC11 series, XMC_SCU_GetTemperature()</li>
+</ul>
+</li>
+<li>Changed:<ul>
+<li><a class="el" href="group___s_c_u.html#ga4ae03c6bcc3ccade266b46d84f7715e6">XMC_SCU_INTERRUPT_SetEventHandler()</a>. New implementation</li>
+<li><a class="el" href="group___s_c_u.html#ga9ba1ce317ce89edfea107893fbd8a0be">XMC_SCU_IRQHandler()</a>. New implementation</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="SPI"></a>
+SPI</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___s_p_i.html#ga916c987f6fafac74e740c6b626f37a8d">XMC_SPI_CH_SetSlaveSelectDelay()</a></li>
+<li><a class="el" href="group___s_p_i.html#ga69901d79102b4efda87bc822b0d1e5d0">XMC_SPI_CH_TriggerServiceRequest()</a></li>
+<li><a class="el" href="group___s_p_i.html#ga4a6b621ddf701529b5256181d40bbdac">XMC_SPI_CH_SelectInterruptNodePointer()</a></li>
+<li><a class="el" href="group___s_p_i.html#ga5ebec7e4e0641a615e9a98ccb11ada78">XMC_SPI_CH_SetInterwordDelaySCLK()</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="UART"></a>
+UART</h2>
+<ul>
+<li>Added:<ul>
+<li><a class="el" href="group___u_a_r_t.html#ga3a3d22e4821ed95b364793b3a7e711c0">XMC_UART_CH_TriggerServiceRequest()</a></li>
+<li><a class="el" href="group___u_a_r_t.html#gadd72632ef25d7f44d8518141fde99a2c">XMC_UART_CH_SelectInterruptNodePointer()</a></li>
+</ul>
+</li>
+<li>Fixed:<ul>
+<li>XMC_UART_CH_INPUT_t enum contents.</li>
+<li><a class="el" href="group___u_a_r_t.html#ga083e4d7b2be613994d61ebc9841f7ebd">XMC_UART_CH_Stop()</a>. Check if transmission is going before setting the channel to idle.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="USBD"></a>
+USBD</h2>
+<ul>
+<li>Fixed:<ul>
+<li><a class="el" href="group___u_s_b_d.html#ga6b54b58df01ada8156d8449129778f05">XMC_USBD_EndpointStall()</a>. Fix issue on USB clear stall</li>
+<li><a class="el" href="group___u_s_b_d.html#ga1ec7cf807c281084ab7022c23617bdcb">XMC_USBD_EndpointConfigure()</a>. Fix issue in EP0 configuration</li>
+<li><a class="el" href="group___u_s_b_d.html#ga1c28d84f9afe864fb9dc0e253137ae54">XMC_USBD_Disable()</a>. Gate the clock after programming the SCU registers</li>
+<li><a class="el" href="group___u_s_b_d.html#ga275780df6f1b3acf50c4c51151d228b8">XMC_USBD_IRQHandler()</a>. Removed the DAVE_CE check on SOF event</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="VADC"></a>
+VADC</h2>
+<ul>
+<li>Added:<ul>
+<li>XMC_VADC_GLOBAL_SHS_Init()</li>
+<li>XMC_VADC_GLOBAL_SHS_SetStepperSequence()</li>
+<li>XMC_VADC_GLOBAL_SHS_IsConverterReady()</li>
+<li>XMC_VADC_GLOBAL_SHS_DisableAcceleratedMode()</li>
+<li>XMC_VADC_GLOBAL_SHS_SetGainFactor()</li>
+<li>XMC_VADC_GLOBAL_SHS_SetMaxCalTime()</li>
+<li>XMC_VADC_GLOBAL_SHS_EnableGainAndOffsetCalibrations()</li>
+<li>XMC_VADC_GLOBAL_SHS_DisableGainAndOffsetCalibrations()</li>
+<li>XMC_VADC_GLOBAL_SHS_GetOffsetCalibrationValue()</li>
+<li>XMC_VADC_GLOBAL_SHS_SetOffsetCalibrationValue()</li>
+<li>XMC_VADC_GLOBAL_SHS_SetSigmaDeltaLoop()</li>
+<li>XMC_VADC_GLOBAL_SHS_EnableSigmaDeltaLoop()</li>
+<li>XMC_VADC_GLOBAL_SHS_DisableSigmaDeltaLoop()</li>
+<li><a class="el" href="group___v_a_d_c.html#gad05d956c1ed2061bd737ae62d8a7d29b">XMC_VADC_GROUP_SetBoundaryEventInterruptNode()</a></li>
+<li><a class="el" href="group___v_a_d_c.html#gac4a2232fd93259e95bd4cbb45949edfc">XMC_VADC_GROUP_ScanSelectTriggerEdge()</a></li>
+<li><a class="el" href="group___v_a_d_c.html#gaea3cd4f61981bbc16074a4301b2c1fd3">XMC_VADC_GLOBAL_BackgroundSelectTriggerEdge()</a></li>
+<li><a class="el" href="group___v_a_d_c.html#gac969fb0698f7ecf7a1a177ee4bcd4654">XMC_VADC_GROUP_QueueSelectTriggerEdge()</a></li>
+<li><a class="el" href="group___v_a_d_c.html#gac49297c2076517f3b435504f871ba59d">XMC_VADC_GROUP_QueueFlushEntries()</a></li>
+<li><a class="el" href="group___v_a_d_c.html#ga0bb0fea79161f556b09b65f3a5a5ce16">XMC_VADC_GROUP_ChannelSetBoundarySelection()</a></li>
+</ul>
+</li>
+<li>Changed:<ul>
+<li><a class="el" href="group___v_a_d_c.html#ga13f09c6935ff21f3c034199fd3bfe825">XMC_VADC_GLOBAL_GetResult()</a>. Remove unnecessary masking, return result as 16bit.</li>
+<li><a class="el" href="group___v_a_d_c.html#gad190eca993528847f048cb3791bb1484">XMC_VADC_GROUP_GetResult()</a>. Remove unnecessary masking, return result as 16bit.</li>
+</ul>
+</li>
+<li>Fixed:<ul>
+<li><a class="el" href="group___v_a_d_c.html#ga71ab6e09e78d8cca7fda70210d5d9d0b">XMC_VADC_GROUP_ExternalMuxControlInit()</a>.</li>
+<li>XMC_VADC_GLOBAL_SHS_SetClockDivider(). Disable write protection of DIVS bitfield.</li>
+<li><a class="el" href="group___v_a_d_c.html#ga5db8e4e617a0df8234d948ed26d7d9a3">XMC_VADC_GROUP_ScanSetGatingMode()</a>. Clear current gating before applying the new requested one.</li>
+<li><a class="el" href="group___v_a_d_c.html#ga8c8708cf159e5c190926e0873f4055ca">XMC_VADC_GLOBAL_BackgroundSetGatingMode()</a>. Clear current gating before applying the new requested one.</li>
+<li><a class="el" href="group___v_a_d_c.html#gaaf9874010e5073415ab846b4ef46955e">XMC_VADC_GROUP_QueueSetGatingMode()</a>. Clear current gating before applying the new requested one.</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="v100"></a>
+Version 1.0.0</h1>
+<ul>
+<li>Initial version </li>
+</ul>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mit Jun 22 2016 11:36:59 für XMC Peripheral Library for XMC4000 Family von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>XMC Peripheral Library for XMC4000 Family: XMC_ERU_ETL_CONFIG_t Strukturreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="IFX_LOGO_4C_medium.bmp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XMC Peripheral Library for XMC4000 Family
+   &#160;<span id="projectnumber">2.1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="modules.html"><span>Module</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">XMC_ERU_ETL_CONFIG_t Strukturreferenz<div class="ingroups"><a class="el" href="group___x_m_clib.html">XMC Peripheral Library</a> &raquo; <a class="el" href="group___e_r_u.html">ERU</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;xmc_eru.h&gt;</code></p>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Structure for initializing ERUx_ETLy (x = [0..1], y = [0..4]) module. </p>
+</div><h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="a23f005cc2d2c65241e0b6ce5f52b9b0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t edge_detection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configure the event trigger edge(FE, RE). Refer <a class="el" href="group___e_r_u.html#ga853b59a72ff0b97692d690697f1c9553">XMC_ERU_ETL_EDGE_DETECTION_t</a> for valid values. </p>
+
+</div>
+</div>
+<a class="anchor" id="a10dc323300efdb1e8b8ffc18ecfd3c65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t enable_output_trigger</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables the generation of trigger pulse(PE), for the configured edge detection. This accepts boolean values as input. </p>
+
+</div>
+</div>
+<a class="anchor" id="a237ac13643964d05d26f13a42e1543b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t input</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>While configuring the bit fields, the values have to be shifted according to the position </p>
+
+</div>
+</div>
+<a class="anchor" id="a106f50855416cfe6030a1f2876e9dd9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t input_a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configures input A. Refer <a class="el" href="group___e_r_u.html#ga308f21ee6d582ff8551092860b3f5ba4">XMC_ERU_ETL_INPUT_A_t</a> for valid values </p>
+
+</div>
+</div>
+<a class="anchor" id="a24ee9d7ad79183b004b36bef1160fc39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t input_b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configures input B. Refer <a class="el" href="group___e_r_u.html#gac3fd5e4f15fa5da8177b31e28421bf42">XMC_ERU_ETL_INPUT_B_t</a> for valid values </p>
+
+</div>
+</div>
+<a class="anchor" id="a40c1bf8bdc6ef232e976990848896b83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t output_trigger_channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Output channel select(OCS) for ETLx output trigger pulse. Refer <a class="el" href="group___e_r_u.html#ga15d2fb3d1c965b350e28bcfae34eae87">XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL_t</a> for valid values. </p>
+
+</div>
+</div>
+<a class="anchor" id="acced9a05ed6f381d74d67de65d66fa3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t source</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Input path combination along with polarity for event generation. Refer <a class="el" href="group___e_r_u.html#gace2abdc83ae2a12af12ca448bc5faa1c">XMC_ERU_ETL_SOURCE_t</a> for valid values. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3767979ded8e6ca4f24bb6a8b410c842"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t status_flag_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enables the status flag auto clear(LD), for the opposite edge of the configured event edge. This accepts boolean values as input. </p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei:<ul>
+<li><a class="el" href="xmc__eru_8h.html">xmc_eru.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mit Jun 22 2016 11:37:00 für XMC Peripheral Library for XMC4000 Family von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>XMC Peripheral Library for XMC4000 Family: XMC_ERU_OGU_CONFIG_t Variantenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="IFX_LOGO_4C_medium.bmp"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XMC Peripheral Library for XMC4000 Family
+   &#160;<span id="projectnumber">2.1.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.11 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="modules.html"><span>Module</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">XMC_ERU_OGU_CONFIG_t Variantenreferenz<div class="ingroups"><a class="el" href="group___x_m_clib.html">XMC Peripheral Library</a> &raquo; <a class="el" href="group___e_r_u.html">ERU</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;xmc_eru.h&gt;</code></p>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Structure for initializing ERUx_OGUy (x = [0..1], y = [0..4]) module. </p>
+</div><h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="abcc483ab4303eadec1b836df7d0fbcb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t enable_pattern_detection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable generation of(GEEN) event for pattern detection result change. This accepts boolean values as input. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6b0203da525dc5fd2b284ffe9e964904"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pattern_detection_input</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable input for the pattern detection(IPENx, x = [0 to 3]). Refer <a class="el" href="group___e_r_u.html#gafe843daae3d38c529ffd50b148d61628">XMC_ERU_OGU_PATTERN_DETECTION_INPUT_t</a> for valid values. <b>OR</b> combination of the enum items given as input </p>
+
+</div>
+</div>
+<a class="anchor" id="aaaba12878092ef18157eae0cf89bc766"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t peripheral_trigger</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>peripheral trigger(ISS) input selection. Refer <a class="el" href="group___e_r_u.html#gab2ee1dc0cb1c6218868da04976b6819a">XMC_ERU_OGU_PERIPHERAL_TRIGGER_t</a> for valid values. </p>
+
+</div>
+</div>
+<a class="anchor" id="af4b7148c93733c140d5b8c9d8bd9929e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t service_request</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gating(GP) on service request generation for pattern detection result. Refer <a class="el" href="group___e_r_u.html#gaae4af18f2e9af9ae235a3d69b4007c0e">XMC_ERU_OGU_SERVICE_REQUEST_t</a> for valid values. </p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Variante wurde erzeugt aufgrund der Datei:<ul>
+<li><a class="el" href="xmc__eru_8h.html">xmc_eru.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mit Jun 22 2016 11:37:00 für XMC Peripheral Library for XMC4000 Family von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

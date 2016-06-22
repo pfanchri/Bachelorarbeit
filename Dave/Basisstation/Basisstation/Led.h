@@ -13,6 +13,7 @@
  * Param led: 	0 -> all leds
  * 1 -> first led(top of the bord)
  * ...
+ * 7 -> last led
  */
 void led_on(uint8_t led);
 
@@ -22,6 +23,7 @@ void led_on(uint8_t led);
  * Param led: 	0 -> all leds
  * 1 -> first led(top of the bord)
  * ...
+ * 7 -> last led
  */
 void led_off(uint8_t led);
 

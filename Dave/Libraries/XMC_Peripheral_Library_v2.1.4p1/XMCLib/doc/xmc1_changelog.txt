@@ -1,0 +1,222 @@
+/**
+ * @page Changelog
+ *
+ * @tableofcontents
+ * @section v214 Version 2.1.4
+ * @subsection SCU SCU
+ * - Added:
+ *    - XMC_SCU_EnablePrefetchUnit and XMC_SCU_DisablePrefetchUnit for XMC1400 series
+ *
+ * @subsection SPI SPI
+ * - Added:
+ *    - XMC_SPI_CH_EnableSlaveSelectCodedMode() and XMC_SPI_CH_DisableSlaveSelectCodedMode()
+ *
+ * @section v212 Version 2.1.2
+ * @subsection GENERAL GENERAL
+ * - Added:
+ *    - Support for XMC1400 series
+ *    - Added I2S driver
+ *
+ * @subsection SCU SCU
+ * - Added:
+ *    - Support for XMC1400 series:
+ *       Additional clocking options in XMC_SCU_CLOCK_CONFIG_t
+ *       XMC_SCU_CLOCK_EnableDCO1ExtRefCalibration()
+ *       XMC_SCU_CLOCK_DisableDCO1ExtRefCalibration()
+ *       XMC_SCU_CLOCK_IsDCO1ExtRefCalibrationReady()
+ *       XMC_SCU_CLOCK_EnableDCO1OscillatorWatchdog()
+ *       XMC_SCU_CLOCK_DisableDCO1OscillatorWatchdog()
+ *       XMC_SCU_CLOCK_ClearDCO1OscillatorWatchdogStatus()
+ *       XMC_SCU_CLOCK_IsDCO1ClockFrequencyUsable()
+ *       XMC_SCU_SetInterruptControl()
+ *    - XMC_SCU_CalcTSEVAR
+ *    - XMC_SCU_SetTempLowLimit
+ *    - XMC_SCU_SetTempHighLimit
+ *    - XMC_SCU_CalcTemperature
+ *
+ * @subsection CAN CAN
+ * - Added:
+ *    - Support for XMC1400 series
+ * 
+ * @subsection CCU4 CCU4
+ * - Changed:
+ *    - XMC_CCU4_EnableShadowTransfer() API is made as inline, to improve the speed
+ * - Added:
+ *    - XMC_CCU4_SLICE_PRESCALER_t enum is added to set the prescaler divider
+ *    - XMC_CCU4_SLICE_EVENT_LEVEL_SENSITIVITY_t, two more enum items are added to support external count direction settings
+ *    - XMC_CCU4_SLICE_MULTI_IRQ_ID_t is added to support the XMC_CCU4_SLICE_EnableMultipleEvents() and XMC_CCU4_SLICE_DisableMultipleEvents() APIs
+ *    - Map files added macros with peripheral names for readability
+ *
+ * @subsection CCU8 CCU8
+ * - Changed:
+ *    - XMC_CCU8_EnableShadowTransfer() API is made as inline, to improve the speed
+ *    - XMC_CCU8_SLICE_GetEvent() is made as inline
+ * - Added:
+ *    - XMC_CCU8_SLICE_PRESCALER_t enum is added to set the prescaler divider
+ *    - XMC_CCU8_SLICE_SHADOW_TRANSFER_MODE_t is added for all the devices except XMC45 devices, to set when the shadow transfer has to happen
+ *    - XMC_CCU8_SOURCE_OUT0_t, XMC_CCU8_SOURCE_OUT1_t, XMC_CCU8_SOURCE_OUT2_t, XMC_CCU8_SOURCE_OUT3_t enums are added to map one of the ST to OUT0, OUT1, OUT3, OUT4 signals
+ *    - In XMC_CCU8_SLICE_COMPARE_CONFIG_t structure, selector_out0, selector_out1, selector_out2, selector_out3 are added to support XMC14 devices
+ *    - XMC_CCU8_SLICE_EnableCascadedShadowTransfer(), XMC_CCU8_SLICE_DisableCascadedShadowTransfer(),XMC_CCU8_SLICE_SetShadowTransferMode() API are supported for all the devices except XMC45
+ *    - XMC_CCU8_SLICE_EVENT_LEVEL_SENSITIVITY_t, two more enum items are added to support external count direction settings
+ *    - XMC_CCU8_SLICE_SetTimerCompareMatchChannel1(), XMC_CCU8_SLICE_SetTimerCompareMatchChannel2() inline APIs are added to update the respective compare registers directly
+ *    - XMC_CCU8_SLICE_MULTI_IRQ_ID_t is added to support the XMC_CCU8_SLICE_EnableMultipleEvents() and XMC_CCU8_SLICE_DisableMultipleEvents() APIs
+ *    - Map files added macros with peripheral names for readability
+ *
+ * @subsection I2C I2C
+ * - Changed:
+ *    - XMC_I2C_CH_SetInputSource() API for avoiding complete DXCR register overwriting
+ *    - XMC_I2C_CH_EVENT_t enum for supporting XMC_I2C_CH_EnableEvent() and XMC_I2C_CH_DisableEvent() for supporting multiple events configuration
+ * - Added:
+ *    - APIs for external input for BRG configuration:XMC_I2C_CH_ConfigExternalInputSignalToBRG()
+ *    - APIs for enabling or disabling the ACK response to a 0x00 slave address: XMC_I2C_CH_EnableAcknowledgeAddress0() and XMC_I2C_CH_DisableAcknowledgeAddress0()
+ * - Fixed: 
+ *    - 10bit addressing
+ *
+ * @subsection SPI SPI
+ * - Changed:
+ *    - XMC_SPI_CH_SetInputSource() for avoiding complete DXCR register overwriting
+ *    - XMC_SPI_CH_EVENT_t enum for supporting XMC_SPI_CH_EnableEvent() and XMC_SPI_CH_DisableEvent() for supporting multiple events configuration
+ * - Added:
+ *    - APIs for enabling/disabling delay compensation XMC_SPI_CH_DisableDelayCompensation() and XMC_SPI_CH_EnableDelayCompensation()
+ *    - Added APIs for external input for BRG configuration:XMC_SPI_CH_ConfigExternalInputSignalToBRG()
+ *    - API for configuring the receiving clock phase in the slave:XMC_SPI_CH_DataLatchedInTrailingEdge() and XMC_SPI_CH_DataLatchedInLeadingEdge()
+ *
+ * @subsection UART UART
+ * - Changed:
+ *    - XMC_UART_CH_SetInputSource() for avoiding complete DXCR register overwriting
+ *    - XMC_UART_CH_EVENT_t enum for supporting XMC_UART_CH_EnableEvent() and XMC_UART_CH_DisableEvent() for supporting multiple events configuration
+ *
+ * @subsection MATH MATH
+ * - Added:
+ *    - SQRT functions
+ *    - XMC_MATH_DISABLE_DIV_ABI compilation guard to control whether to override GCC implementation of division and modulo operations
+ *
+ * @subsection WDT WDT
+ * - Fixed:
+ *    - XMC_WDT_SetDebugMode() API, Wrong register is being configured
+ *
+ * @subsection VADC VADC
+ * - Added:
+ *    - XMC_VADC_GLOBAL_SetIndividualBoundary
+ *    - XMC_VADC_GROUP_SetIndividualBoundary
+ *    - XMC_VADC_GROUP_GetAlias
+ *    - XMC_VADC_GROUP_GetInputClass
+ *    - XMC_VADC_GROUP_ChannelSetIclass
+ *    - XMC_VADC_GROUP_ChannelGetResultAlignment
+ *    - XMC_VADC_GROUP_ChannelGetInputClass
+ *    - XMC_VADC_GROUP_SetResultSubtractionValue
+ *
+ * @section v200 Version 2.0.0
+ * @subsection GENERAL GENERAL
+ * - Removed:
+ *    - version macros and declaration of GetDriverVersion()
+ *
+ * @subsection ACMP ACMP
+ * - Added:
+ *    - XMC_ACMP_EnableReferenceDivider(). Prevously part of XMC_ACMP_SetInput
+ *    - XMC_ACMP_DisableReferenceDivider(). Prevously part of XMC_ACMP_SetInput
+ * - Fixed: 
+ *    - XMC_ACMP_Init(). Fixed sequence problem of low power mode.
+ *    - XMC_ACMP_SetInput(). Fixed wrong register setting.
+ * - Changed:
+ *    - Removed return type variable and by default comparator enable from XMC_ACMP_Init()
+ *    - Additional call to XMC_ACMP_EnableComparator() needed to start Comparator after Init
+ * 
+ * @subsection BCCU BCCU
+ * - Added:
+ *    - XMC_BCCU_DIM_ReadDimDivider()
+ *    - XMC_BCCU_DIM_GetDimCurve()
+ *    - XMC_BCCU_IsDitherEnable()
+ * - Fixed: 
+ *    - XMC_BCCU_ClearEventFlag()
+ * 
+ * @subsection CCU4 CCU4
+ * - Fixed:
+ *    - XMC_CCU4_SLICE_StartConfig(). Assert condition.
+ *
+ * @subsection CCU8 CCU8
+ * - Added:
+ *    - XMC_CCU8_SLICE_LoadSelector()
+ * - Fixed:
+ *    - XMC_CCU8_SLICE_CHECK_INTERRUPT macro. Fixed the missing item for compare match down for channel 2
+ *
+ * @subsection I2C I2C
+ * - Added:
+ *    - XMC_I2C_CH_TriggerServiceRequest()
+ *    - XMC_I2C_CH_SelectInterruptNodePointer()
+ * - Fixed:
+ *    - XMC_I2C_CH_Stop(). Check if transmission is going before setting the channel to idle.
+ * 
+ * @subsection LEDTS LEDTS
+ * - Added: 
+ *    - XMC_LEDTS_SetActivePADNo()
+ * 
+ * @subsection POSIF POSIF
+ * - Changed:
+ *    - XMC_POSIF_QD_GetDirection(). Fixed read direction
+ * 
+ * @subsection RTC RTC
+ * - Changed:
+ *    - XMC_RTC_Init(). Check RTC running condition.
+ * 
+ * @subsection SCU SCU
+ * - Added:
+ *    - For XMC11 series, XMC_SCU_SetRawTempLimits()
+ *    - For XMC11 series, XMC_SCU_StartTempMeasurement()
+ *    - For XMC11 series, XMC_SCU_StopTempMeasurement() 
+ *    - For XMC11 series, XMC_SCU_HighTemperature() 
+ *    - For XMC11 series, XMC_SCU_LowTemperature() 
+ *    - For XMC11 series, XMC_SCU_GetTemperature() 
+ * - Changed:
+ *    - XMC_SCU_INTERRUPT_SetEventHandler(). New implementation
+ *    - XMC_SCU_IRQHandler(). New implementation
+ * 
+ * @subsection SPI SPI
+ * - Added: 
+ *    - XMC_SPI_CH_SetSlaveSelectDelay()
+ *    - XMC_SPI_CH_TriggerServiceRequest()
+ *    - XMC_SPI_CH_SelectInterruptNodePointer()
+ *    - XMC_SPI_CH_SetInterwordDelaySCLK()
+ * 
+ * @subsection UART UART
+ * - Added:
+ *    - XMC_UART_CH_TriggerServiceRequest()
+ *    - XMC_UART_CH_SelectInterruptNodePointer()
+ * - Fixed:
+ *    - XMC_UART_CH_INPUT_t enum contents.
+ *    - XMC_UART_CH_Stop(). Check if transmission is going before setting the channel to idle.
+ *  
+ * @subsection VADC VADC 
+ * - Added:
+ *     - XMC_VADC_GLOBAL_SHS_Init()
+ *     - XMC_VADC_GLOBAL_SHS_SetStepperSequence()
+ *     - XMC_VADC_GLOBAL_SHS_IsConverterReady()
+ *     - XMC_VADC_GLOBAL_SHS_DisableAcceleratedMode()
+ *     - XMC_VADC_GLOBAL_SHS_SetGainFactor()
+ *     - XMC_VADC_GLOBAL_SHS_SetMaxCalTime()
+ *     - XMC_VADC_GLOBAL_SHS_EnableGainAndOffsetCalibrations()
+ *     - XMC_VADC_GLOBAL_SHS_DisableGainAndOffsetCalibrations()
+ *     - XMC_VADC_GLOBAL_SHS_GetOffsetCalibrationValue()
+ *     - XMC_VADC_GLOBAL_SHS_SetOffsetCalibrationValue()
+ *     - XMC_VADC_GLOBAL_SHS_SetSigmaDeltaLoop()
+ *     - XMC_VADC_GLOBAL_SHS_EnableSigmaDeltaLoop()
+ *     - XMC_VADC_GLOBAL_SHS_DisableSigmaDeltaLoop()
+ *     - XMC_VADC_GROUP_SetBoundaryEventInterruptNode()
+ *     - XMC_VADC_GROUP_ScanSelectTriggerEdge()
+ *     - XMC_VADC_GLOBAL_BackgroundSelectTriggerEdge()
+ *     - XMC_VADC_GROUP_QueueSelectTriggerEdge()
+ *     - XMC_VADC_GROUP_QueueFlushEntries()
+ *     - XMC_VADC_GROUP_ChannelSetBoundarySelection()
+ * - Changed:
+ *     - XMC_VADC_GLOBAL_GetResult(). Remove unnecessary masking, return result as 16bit.
+ *     - XMC_VADC_GROUP_GetResult(). Remove unnecessary masking, return result as 16bit.
+ * - Fixed:
+ *     - XMC_VADC_GROUP_ExternalMuxControlInit(). 
+ *     - XMC_VADC_GLOBAL_SHS_SetClockDivider(). Disable write protection of DIVS bitfield. 
+ *     - XMC_VADC_GROUP_ScanSetGatingMode(). Clear current gating before applying the new requested one.
+ *     - XMC_VADC_GLOBAL_BackgroundSetGatingMode(). Clear current gating before applying the new requested one.
+ *     - XMC_VADC_GROUP_QueueSetGatingMode(). Clear current gating before applying the new requested one.
+ * 
+ * @section v100 Version 1.0.0
+ * - Initial version
+ */
