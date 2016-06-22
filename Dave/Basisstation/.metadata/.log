@@ -10526,3 +10526,174 @@ com.ifx.dave.appslib.update.CheckForAppUpdatesCommand$UpdateLibThread.run(CheckF
 !ENTRY com.ifx.dave.LibraryManager 4 0 2016-06-21 20:21:15.140
 !MESSAGE ConnectionException:
 :http://dave.infineon.com/Libraries/DAVE_Libs/Contributed/v4.1//daveSite.xml
+
+!ENTRY org.eclipse.cdt.ui 4 0 2016-06-22 10:08:20.659
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element Header_general.h does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:573)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2016-06-22 10:08:20.659
+!MESSAGE Element Header_general.h does not exist.
+
+!ENTRY APPLICATION_MODEL 1 0 2016-06-22 10:09:19.892
+!MESSAGE Only One DAVE Application is running 
+
+!ENTRY DAVE CE 4 0 2016-06-22 10:09:19.892
+!MESSAGE 
+
+***START of Exception Info***
+C:\Users\student06\Infineon\D_LibraryStore_4.1\libLock (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileOutputStream.open0(Native Method)
+java.io.FileOutputStream.open(Unknown Source)
+java.io.FileOutputStream.<init>(Unknown Source)
+java.io.FileOutputStream.<init>(Unknown Source)
+com.ifx.dave.appslib.download.LibraryStoreLocker.serialize(LibraryStoreLocker.java:183)
+com.ifx.dave.appslib.download.LibraryStoreLocker.checkInLibraryStore(LibraryStoreLocker.java:78)
+com.ifx.dave.appslib.provider.LibraryIndexer.<init>(LibraryIndexer.java:82)
+com.ifx.dave.appslib.provider.Import.<init>(Import.java:47)
+com.ifx.dave.appslib.download.LibraryDownloadActionDelegate.run(LibraryDownloadActionDelegate.java:29)
+org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:253)
+org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:237)
+org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+***END of Exception Info***
+
+
+
+!ENTRY APPS_DOWNLOAD 1 0 2016-06-22 10:09:19.908
+!MESSAGE Problem in saving contents to .AppLibraryIndex file.
+
+!ENTRY APPLICATION_MODEL 1 0 2016-06-22 10:10:37.268
+!MESSAGE Only One DAVE Application is running 
+
+!ENTRY DAVE CE 4 0 2016-06-22 10:10:37.284
+!MESSAGE 
+
+***START of Exception Info***
+C:\Users\student06\Infineon\D_LibraryStore_4.1\libLock (Das System kann den angegebenen Pfad nicht finden)
+java.io.FileOutputStream.open0(Native Method)
+java.io.FileOutputStream.open(Unknown Source)
+java.io.FileOutputStream.<init>(Unknown Source)
+java.io.FileOutputStream.<init>(Unknown Source)
+com.ifx.dave.appslib.download.LibraryStoreLocker.serialize(LibraryStoreLocker.java:183)
+com.ifx.dave.appslib.download.LibraryStoreLocker.checkInLibraryStore(LibraryStoreLocker.java:78)
+com.ifx.dave.appslib.provider.LibraryIndexer.<init>(LibraryIndexer.java:82)
+com.ifx.dave.appslib.provider.Import.<init>(Import.java:47)
+com.ifx.dave.appslib.download.LibraryDownloadActionDelegate.run(LibraryDownloadActionDelegate.java:29)
+org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:253)
+org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:237)
+org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+***END of Exception Info***
+
+
+
+!ENTRY APPS_DOWNLOAD 1 0 2016-06-22 10:10:37.284
+!MESSAGE Problem in saving contents to .AppLibraryIndex file.
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-06-22 10:10:46.145
+!MESSAGE 
+
+***START of Exception Infoorg.eclipse.swt.SWT.error(SWT.java:4441)
+org.eclipse.swt.SWT.error(SWT.java:4356)
+org.eclipse.swt.SWT.error(SWT.java:4327)
+org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:367)
+org.eclipse.swt.widgets.Text.getText(Text.java:1351)
+org.eclipse.jface.dialogs.TitleAreaDialog.updateMessage(TitleAreaDialog.java:635)
+org.eclipse.jface.dialogs.TitleAreaDialog.setErrorMessage(TitleAreaDialog.java:430)
+org.eclipse.jface.wizard.WizardDialog.updateMessage(WizardDialog.java:1426)
+org.eclipse.jface.wizard.WizardPage.setErrorMessage(WizardPage.java:267)
+com.ifx.dave.libmanager.ui.wizards.LibManagerDownloadPage.selectSiteWithBusyIndicator(LibManagerDownloadPage.java:905)
+com.ifx.dave.libmanager.ui.wizards.LibManagerDownloadPage.run(LibManagerDownloadPage.java:1034)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+***END of Exception Info
+
+
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-06-22 10:10:50.560
+!MESSAGE 
+
+***START of Exception Infoorg.eclipse.swt.SWT.error(SWT.java:4441)
+org.eclipse.swt.SWT.error(SWT.java:4356)
+org.eclipse.swt.SWT.error(SWT.java:4327)
+org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:367)
+org.eclipse.swt.widgets.Text.getText(Text.java:1351)
+org.eclipse.jface.dialogs.TitleAreaDialog.updateMessage(TitleAreaDialog.java:635)
+org.eclipse.jface.dialogs.TitleAreaDialog.setErrorMessage(TitleAreaDialog.java:430)
+org.eclipse.jface.wizard.WizardDialog.updateMessage(WizardDialog.java:1426)
+org.eclipse.jface.wizard.WizardPage.setErrorMessage(WizardPage.java:267)
+com.ifx.dave.libmanager.ui.wizards.LibManagerDownloadPage.selectSiteWithBusyIndicator(LibManagerDownloadPage.java:905)
+com.ifx.dave.libmanager.ui.wizards.LibManagerDownloadPage.run(LibManagerDownloadPage.java:1034)
+org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+***END of Exception Info
+
+

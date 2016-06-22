@@ -2323,3 +2323,19 @@ rm -rf  ./Startup/startup_XMC4500.o ./Startup/system_XMC4500.o  ./Libraries/XMCL
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
 'Finished building: Basisstation.lst'
 
+10:08:40 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j1 all 
+'Building file: ../Startup/startup_XMC4500.S'
+'Invoking: ARM-GCC Assembler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Startup/startup_XMC4500.o" -x assembler-with-cpp -DXMC4500_F144x1024 -I"Y:\Documents\Uni\Fächer\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"Y:\Documents\Uni\Fächer\Bachelorarbeit\Dave\Basisstation\Basisstation" -Wall -Wa,-adhlns="Startup/startup_XMC4500.o.lst" -mfloat-abi=softfp -c -fmessage-length=0 -MMD -MP -MF"Startup/startup_XMC4500.d" -MT"Startup/startup_XMC4500.d Startup/startup_XMC4500.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Startup/startup_XMC4500.o" "../Startup/startup_XMC4500.S"
+'Finished building: ../Startup/startup_XMC4500.S'
+
+'Building file: ../Startup/system_XMC4500.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Startup/system_XMC4500.o" -DXMC4500_F144x1024 -I"Y:\Documents\Uni\Fächer\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"Y:\Documents\Uni\Fächer\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"Y:\Documents\Uni\Fächer\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"Y:\Documents\Uni\Fächer\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"Y:\Documents\Uni\Fächer\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Startup/system_XMC4500.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Startup/system_XMC4500.d" -MT"Startup/system_XMC4500.d Startup/system_XMC4500.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Startup/system_XMC4500.o" "../Startup/system_XMC4500.c"
+Startup/subdir.mk:31: recipe for target 'Startup/system_XMC4500.o' failed
+../Startup/system_XMC4500.c:34:21: fatal error: XMC4500.h: No such file or directory
+ #include <XMC4500.h>
+                     ^
+compilation terminated.
+make: *** [Startup/system_XMC4500.o] Error 1

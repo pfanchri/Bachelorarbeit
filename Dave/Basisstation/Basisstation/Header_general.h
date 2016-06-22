@@ -18,6 +18,9 @@
 #include "Libraries/SPI/spi.h"
 #include "Libraries/SPI/portmakros.h"
 
+#include <TDA.h>
+#include <Led.h>
+
 
 //TDA Macros
 
