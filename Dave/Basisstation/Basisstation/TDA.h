@@ -18,7 +18,7 @@
  * Param status:0 -> Power down mode
  * 				1 -> Sleep mode
  */
-void set_TDA_status(uint8_t TDA, uint8_t status)
+void set_TDA_status(uint8_t TDA, uint8_t status);
 
 
 

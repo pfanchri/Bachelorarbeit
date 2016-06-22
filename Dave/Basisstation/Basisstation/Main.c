@@ -7,11 +7,19 @@
 #include "Header_general.h" //including all Header files
 
 
-set_TDA_status();
 
 
 
-int main(void) {
+
+int main(void){
+
+
+
+	void init(void);
+
+
+
+
 	uint16_t spi_array_tx[10] = { 0 };
 	uint16_t spi_array_rx[10] = { 0 };
 
@@ -27,10 +35,9 @@ int main(void) {
 
 
 
-	void init(void);
+
 
 	while (1) {
 	}
+
 }
-
-
