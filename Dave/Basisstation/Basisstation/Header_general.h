@@ -9,7 +9,7 @@
 #define HEADER_GENERAL_H_
 
 
-//including all avaliable Header files
+//including all available Header files
 
 #include <XMC4500.h>
 #include <xmc_gpio.h>
@@ -96,7 +96,7 @@
 #define PIN_PP2_TDA_5	2
 #define PORT_PP2_TDA_6	0
 #define PIN_PP2_TDA_6	10
-
+//END of TDA Macros
 
 //LED Macros
 #define PORT_LED_1	6

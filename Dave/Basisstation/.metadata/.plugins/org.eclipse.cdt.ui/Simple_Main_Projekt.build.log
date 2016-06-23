@@ -1,0 +1,11 @@
+15:41:57 **** Incremental Build of configuration Debug for project Simple_Main_Projekt ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Simple_Main_Projekt.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1720	      0	   2068	   3788	    ecc	Simple_Main_Projekt.elf
+'Finished building: Simple_Main_Projekt.siz'
+
+
+15:41:57 Build Finished (took 203ms)
+

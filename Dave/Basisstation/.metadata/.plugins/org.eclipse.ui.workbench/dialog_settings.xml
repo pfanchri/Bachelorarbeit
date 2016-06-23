@@ -5,8 +5,8 @@
 		<item value="218" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="503" key="dialogHeight"/>
-		<item value="887" key="dialogWidth"/>
+		<item value="850" key="dialogHeight"/>
+		<item value="1440" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -26,7 +26,7 @@
 		<item value="706" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="743" key="DIALOG_HEIGHT"/>
-		<item value="615" key="DIALOG_X_ORIGIN"/>
+		<item value="578" key="DIALOG_X_ORIGIN"/>
 		<item value="93" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ImportExportAction">
