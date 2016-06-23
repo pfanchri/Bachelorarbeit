@@ -9,7 +9,7 @@
 //aditional functions
 void delay (unsigned long delay)
 {
-  while (delay--)
+  while (delay–)
   {
     __NOP();
   }

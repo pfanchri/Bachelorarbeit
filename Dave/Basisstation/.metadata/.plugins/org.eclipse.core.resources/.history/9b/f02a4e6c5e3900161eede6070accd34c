@@ -6,16 +6,6 @@
  */
 #include "Header_general.h" //including all Header files
 
-//aditional functions
-void delay (unsigned long delay)
-{
-  while (delay--)
-  {
-    __NOP();
-  }
-}
-
-
 
 
 //init

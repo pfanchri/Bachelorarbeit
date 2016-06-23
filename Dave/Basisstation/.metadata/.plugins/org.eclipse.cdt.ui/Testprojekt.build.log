@@ -1,4 +1,4 @@
-16:46:33 **** Incremental Build of configuration Debug for project Testprojekt ****
+18:02:37 **** Incremental Build of configuration Debug for project Testprojekt ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
 'Invoking: ARM-GCC Print Size'
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Testprojekt.elf"
@@ -7,5 +7,5 @@
 'Finished building: Testprojekt.siz'
 
 
-16:46:33 Build Finished (took 187ms)
+18:02:37 Build Finished (took 216ms)
 
