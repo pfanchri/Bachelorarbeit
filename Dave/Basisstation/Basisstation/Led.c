@@ -8,9 +8,6 @@
 
 void led_on(uint8_t led) {
 	//set corresonding LED Pin low (active low); Pins were set as Output in init()
-
-
-
 	switch (led) {
 	case 0:
 		XMC_GPIO_SetOutputLow(XMC_GPIO_PORT6, PIN_LED_1);

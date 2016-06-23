@@ -21,9 +21,9 @@ led_on(1);
 
 	uint16_t spi_array_tx[10] = { 0 };
 	uint16_t spi_array_rx[10] = { 0 };
-	led_on(2);
+
 	spi_init(spi_master_ch);
-	spi_transfer(spi_master_ch, 0, spi_array_tx, spi_array_rx, 3);
+	//spi_transfer(spi_master_ch, 0, spi_array_tx, spi_array_rx, 3);
 
 
 
