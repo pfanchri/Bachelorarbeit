@@ -50,9 +50,10 @@
 		<item value="true" key="BUILD_NOW"/>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.cdt.ui.wizards.NewCWizard1" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="com.ifx.resource.ui.createProject" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.cdt.ui.newCWizards"/>
+			<item value="com.ifx.project.creator.category"/>
 			<item value="org.eclipse.jdt.ui.java"/>
 		</list>
 	</section>

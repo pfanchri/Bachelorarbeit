@@ -15,6 +15,7 @@
 #include <xmc_gpio.h>
 #include <xmc_usic.h>
 #include <xmc_spi.h>
+#include <xmc_eru.h>
 #include "Libraries/SPI/spi.h"
 #include "Libraries/SPI/portmakros.h"
 #include "Libraries/TDA5340-C/tda5340.h"

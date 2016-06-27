@@ -5,18 +5,13 @@
  *      Author: pflaum
  */
 
-#define TDA5340_PON_PORT    XMC_GPIO_PORT0
-#define TDA5340_PON_PIN     11
-#define TDA5340_PP2_PORT    XMC_GPIO_PORT0
-#define TDA5340_PP2_PIN     6
+#define TDA5340_PON_PORT     XMC_GPIO_PORT1
+#define TDA5340_PON_PIN      0
+#define TDA5340_PP2_PORT     XMC_GPIO_PORT1
+#define TDA5340_PP2_PIN      1
 
-#define RX_MODE             RUN_MODE_SLAVE
+#define RX_MODE              RUN_MODE_SLAVE
 
-// RSSI new settings
-// #define RSSI_SLOPE_VALUE  160
-// #define RSSI_OFFSET_VALUE 8
-
-// RSSI-Standard Settings
 #define RSSI_SLOPE_VALUE     0xA0
 #define RSSI_OFFSET_VALUE    0x00
 
@@ -25,17 +20,16 @@ typedef union {
 	uint8_t  bytes[4];
 } tda5340_serial_t;
 
-void tda5340_init(void);
-void tda5340_gpio_init(void);
-void tda5340_set_rssi_slope_and_offset(uint8_t slope_notoffs, uint8_t value);
-uint8_t tda5340_transfer(const uint8_t instruction, const uint8_t reg_address, uint8_t data);
-uint8_t tda5340_command(const uint8_t instruction, const uint8_t reg_address, uint8_t data);
-uint8_t tda5340_fifo_rw(uint8_t wnr, char *data, uint8_t *length);
-uint8_t tda5340_transmit(char *data, uint8_t length);
-uint8_t tda5340_receive(char *data, uint8_t *length);
-void tda5340_set_mode_and_config(uint8_t mode);
-uint32_t tda5340_interrupt_readout(void);
-uint32_t tda5340_get_serial_number(void);
+void tda5340_init(uint8_t device_number);
+void tda5340_gpio_init(uint8_t device_number);
+uint8_t tda5340_transfer(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint8_t data);
+uint8_t tda5340_command(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint8_t data);
+uint8_t tda5340_fifo_rw(uint8_t device_number, uint8_t wnr, int8_t *data, uint8_t *length);
+uint8_t tda5340_transmit(uint8_t device_number, uint8_t config, int8_t *data, uint8_t length);
+uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+void tda5340_set_mode_and_config(uint8_t device_number, uint8_t mode, uint8_t config);
+uint32_t tda5340_interrupt_readout(uint8_t device_number);
+uint32_t tda5340_get_serial_number(uint8_t device_number);
 
 #define WRITE_TO_CHIP        0x02
 #define READ_FROM_CHIP       0x03

@@ -24,7 +24,9 @@ led_off(0);
 led_on(1);
 
 
-	uint16_t spi_array_tx[SPI_TX_ARRAY_LENGH] = { 0x05,39,0,0,0, 0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0, };
+	uint16_t spi_array_tx[SPI_TX_ARRAY_LENGH] = { 0 };
+	spi_array_tx[0] =0x05;
+	spi_array_tx[1] =0xD0;
 	uint16_t spi_array_rx[SPI_RX_ARRAY_LENGH] = { 0 };
 	led_on(2);
 

@@ -1,0 +1,613 @@
+   1              	 .syntax unified
+   2              	 .cpu cortex-m4
+   3              	 .eabi_attribute 27,3
+   4              	 .fpu fpv4-sp-d16
+   5              	 .eabi_attribute 20,1
+   6              	 .eabi_attribute 21,1
+   7              	 .eabi_attribute 23,3
+   8              	 .eabi_attribute 24,1
+   9              	 .eabi_attribute 25,1
+  10              	 .eabi_attribute 26,1
+  11              	 .eabi_attribute 30,6
+  12              	 .eabi_attribute 34,1
+  13              	 .eabi_attribute 18,4
+  14              	 .thumb
+  15              	 .file "Init.c"
+  16              	 .text
+  17              	.Ltext0:
+  18              	 .cfi_sections .debug_frame
+  19              	 .section .text.delay,"ax",%progbits
+  20              	 .align 2
+  21              	 .global delay
+  22              	 .thumb
+  23              	 .thumb_func
+  25              	delay:
+  26              	.LFB234:
+  27              	 .file 1 "../Init.c"
+   1:../Init.c     **** /*
+   2:../Init.c     ****  * Init.c
+   3:../Init.c     ****  *
+   4:../Init.c     ****  *  Created on: Jun 16, 2016
+   5:../Init.c     ****  *      Author Christof Pfannenmüller (student06)
+   6:../Init.c     ****  */
+   7:../Init.c     **** #include "Header_general.h" //including all Header files
+   8:../Init.c     **** 
+   9:../Init.c     **** //aditional functions
+  10:../Init.c     **** void delay (unsigned long delay)
+  11:../Init.c     **** {
+  28              	 .loc 1 11 0
+  29              	 .cfi_startproc
+  30              	 
+  31              	 
+  32              	 
+  33 0000 80B4     	 push {r7}
+  34              	.LCFI0:
+  35              	 .cfi_def_cfa_offset 4
+  36              	 .cfi_offset 7,-4
+  37 0002 83B0     	 sub sp,sp,#12
+  38              	.LCFI1:
+  39              	 .cfi_def_cfa_offset 16
+  40 0004 00AF     	 add r7,sp,#0
+  41              	.LCFI2:
+  42              	 .cfi_def_cfa_register 7
+  43 0006 7860     	 str r0,[r7,#4]
+  12:../Init.c     ****   while (delay--)
+  44              	 .loc 1 12 0
+  45 0008 00E0     	 b .L2
+  46              	.L3:
+  47              	.LBB4:
+  48              	.LBB5:
+  49              	 .file 2 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation/Libraries/CMSIS/Include/cmsis_gcc.h"
+   1:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**************************************************************************//**
+   2:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  * @file     cmsis_gcc.h
+   3:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  * @brief    CMSIS Cortex-M Core Function/Instruction Header File
+   4:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  * @version  V4.30
+   5:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  * @date     20. October 2015
+   6:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  ******************************************************************************/
+   7:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /* Copyright (c) 2009 - 2015 ARM LIMITED
+   8:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+   9:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    All rights reserved.
+  10:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    Redistribution and use in source and binary forms, with or without
+  11:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    modification, are permitted provided that the following conditions are met:
+  12:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    - Redistributions of source code must retain the above copyright
+  13:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****      notice, this list of conditions and the following disclaimer.
+  14:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    - Redistributions in binary form must reproduce the above copyright
+  15:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****      notice, this list of conditions and the following disclaimer in the
+  16:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****      documentation and/or other materials provided with the distribution.
+  17:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    - Neither the name of ARM nor the names of its contributors may be used
+  18:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****      to endorse or promote products derived from this software without
+  19:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****      specific prior written permission.
+  20:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    *
+  21:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    ARE DISCLAIMED. IN NO EVENT SHALL COPYRIGHT HOLDERS AND CONTRIBUTORS BE
+  25:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    POSSIBILITY OF SUCH DAMAGE.
+  32:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    ---------------------------------------------------------------------------*/
+  33:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  34:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  35:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
+  36:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #define __CMSIS_GCC_H
+  37:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  38:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /* ignore some GCC warnings */
+  39:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #if defined ( __GNUC__ )
+  40:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #pragma GCC diagnostic push
+  41:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
+  42:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wconversion"
+  43:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wunused-parameter"
+  44:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #endif
+  45:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  46:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  47:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
+  48:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
+  49:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
+  50:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   @{
+  51:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+  52:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  53:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+  54:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
+  55:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
+  56:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****            Can only be executed in Privileged modes.
+  57:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+  58:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+  59:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+  60:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
+  61:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+  62:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  63:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  64:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+  65:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
+  66:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Disables IRQ interrupts by setting the I-bit in the CPSR.
+  67:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   Can only be executed in Privileged modes.
+  68:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+  69:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+  70:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+  71:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("cpsid i" : : : "memory");
+  72:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+  73:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  74:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  75:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+  76:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get Control Register
+  77:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the content of the Control Register.
+  78:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               Control Register value
+  79:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+  80:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_CONTROL(void)
+  81:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+  82:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   uint32_t result;
+  83:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  84:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, control" : "=r" (result) );
+  85:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+  86:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+  87:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  88:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  89:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+  90:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Set Control Register
+  91:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Writes the given value to the Control Register.
+  92:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \param [in]    control  Control Register value to set
+  93:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+  94:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_CONTROL(uint32_t control)
+  95:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+  96:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MSR control, %0" : : "r" (control) : "memory");
+  97:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+  98:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+  99:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 100:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 101:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get IPSR Register
+ 102:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the content of the IPSR Register.
+ 103:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               IPSR Register value
+ 104:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 105:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_IPSR(void)
+ 106:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 107:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   uint32_t result;
+ 108:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 109:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, ipsr" : "=r" (result) );
+ 110:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 111:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 112:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 113:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 114:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 115:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get APSR Register
+ 116:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the content of the APSR Register.
+ 117:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               APSR Register value
+ 118:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 119:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_APSR(void)
+ 120:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 121:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   uint32_t result;
+ 122:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 123:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, apsr" : "=r" (result) );
+ 124:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 125:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 126:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 127:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 128:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 129:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get xPSR Register
+ 130:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the content of the xPSR Register.
+ 131:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 132:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****     \return               xPSR Register value
+ 133:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 134:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_xPSR(void)
+ 135:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 136:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   uint32_t result;
+ 137:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 138:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, xpsr" : "=r" (result) );
+ 139:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 140:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 141:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 142:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 143:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 144:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get Process Stack Pointer
+ 145:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer (PSP).
+ 146:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               PSP Register value
+ 147:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 148:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_PSP(void)
+ 149:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 150:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   register uint32_t result;
+ 151:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 152:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, psp\n"  : "=r" (result) );
+ 153:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 154:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 155:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 156:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 157:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 158:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Set Process Stack Pointer
+ 159:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Assigns the given value to the Process Stack Pointer (PSP).
+ 160:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \param [in]    topOfProcStack  Process Stack Pointer value to set
+ 161:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 162:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_PSP(uint32_t topOfProcStack)
+ 163:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 164:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MSR psp, %0\n" : : "r" (topOfProcStack) : "sp");
+ 165:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 166:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 167:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 168:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 169:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get Main Stack Pointer
+ 170:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the current value of the Main Stack Pointer (MSP).
+ 171:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               MSP Register value
+ 172:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 173:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_MSP(void)
+ 174:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 175:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   register uint32_t result;
+ 176:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 177:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp\n" : "=r" (result) );
+ 178:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 179:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 180:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 181:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 182:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 183:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Set Main Stack Pointer
+ 184:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Assigns the given value to the Main Stack Pointer (MSP).
+ 185:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 186:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****     \param [in]    topOfMainStack  Main Stack Pointer value to set
+ 187:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 188:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_MSP(uint32_t topOfMainStack)
+ 189:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 190:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MSR msp, %0\n" : : "r" (topOfMainStack) : "sp");
+ 191:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 192:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 193:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 194:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 195:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get Priority Mask
+ 196:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the current state of the priority mask bit from the Priority Mask Register.
+ 197:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               Priority Mask value
+ 198:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 199:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_PRIMASK(void)
+ 200:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 201:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   uint32_t result;
+ 202:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 203:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, primask" : "=r" (result) );
+ 204:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 205:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 206:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 207:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 208:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 209:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Set Priority Mask
+ 210:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Assigns the given value to the Priority Mask Register.
+ 211:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \param [in]    priMask  Priority Mask
+ 212:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 213:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_PRIMASK(uint32_t priMask)
+ 214:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 215:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MSR primask, %0" : : "r" (priMask) : "memory");
+ 216:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 217:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 218:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 219:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #if       (__CORTEX_M >= 0x03U)
+ 220:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 221:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 222:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Enable FIQ
+ 223:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Enables FIQ interrupts by clearing the F-bit in the CPSR.
+ 224:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 225:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 226:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_fault_irq(void)
+ 227:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 228:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("cpsie f" : : : "memory");
+ 229:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 230:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 231:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 232:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 233:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Disable FIQ
+ 234:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Disables FIQ interrupts by setting the F-bit in the CPSR.
+ 235:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 236:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 237:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_fault_irq(void)
+ 238:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 239:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("cpsid f" : : : "memory");
+ 240:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 241:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 242:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 243:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 244:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get Base Priority
+ 245:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the current value of the Base Priority register.
+ 246:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               Base Priority register value
+ 247:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 248:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_BASEPRI(void)
+ 249:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 250:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   uint32_t result;
+ 251:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 252:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, basepri" : "=r" (result) );
+ 253:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 254:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 255:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 256:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 257:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 258:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Set Base Priority
+ 259:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Assigns the given value to the Base Priority register.
+ 260:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \param [in]    basePri  Base Priority value to set
+ 261:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 262:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_BASEPRI(uint32_t value)
+ 263:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 264:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MSR basepri, %0" : : "r" (value) : "memory");
+ 265:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 266:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 267:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 268:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 269:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Set Base Priority with condition
+ 270:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Assigns the given value to the Base Priority register only if BASEPRI masking is disable
+ 271:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****            or the new value increases the BASEPRI priority level.
+ 272:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \param [in]    basePri  Base Priority value to set
+ 273:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 274:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_BASEPRI_MAX(uint32_t value)
+ 275:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 276:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MSR basepri_max, %0" : : "r" (value) : "memory");
+ 277:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 278:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 279:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 280:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 281:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get Fault Mask
+ 282:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the current value of the Fault Mask register.
+ 283:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               Fault Mask register value
+ 284:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 285:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_FAULTMASK(void)
+ 286:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 287:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   uint32_t result;
+ 288:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 289:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MRS %0, faultmask" : "=r" (result) );
+ 290:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 291:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 292:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 293:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 294:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 295:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Set Fault Mask
+ 296:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Assigns the given value to the Fault Mask register.
+ 297:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \param [in]    faultMask  Fault Mask value to set
+ 298:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 299:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_FAULTMASK(uint32_t faultMask)
+ 300:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 301:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("MSR faultmask, %0" : : "r" (faultMask) : "memory");
+ 302:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 303:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 304:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #endif /* (__CORTEX_M >= 0x03U) */
+ 305:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 306:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 307:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #if       (__CORTEX_M == 0x04U) || (__CORTEX_M == 0x07U)
+ 308:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 309:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 310:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Get FPSCR
+ 311:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Returns the current value of the Floating Point Status/Control register.
+ 312:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \return               Floating Point Status/Control register value
+ 313:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 314:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_FPSCR(void)
+ 315:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 316:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #if (__FPU_PRESENT == 1U) && (__FPU_USED == 1U)
+ 317:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   uint32_t result;
+ 318:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 319:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   /* Empty asm statement works as a scheduling barrier */
+ 320:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("");
+ 321:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("VMRS %0, fpscr" : "=r" (result) );
+ 322:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("");
+ 323:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   return(result);
+ 324:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #else
+ 325:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****    return(0);
+ 326:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #endif
+ 327:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 328:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 329:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 330:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 331:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   Set FPSCR
+ 332:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details Assigns the given value to the Floating Point Status/Control register.
+ 333:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \param [in]    fpscr  Floating Point Status/Control value to set
+ 334:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 335:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_FPSCR(uint32_t fpscr)
+ 336:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 337:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #if (__FPU_PRESENT == 1U) && (__FPU_USED == 1U)
+ 338:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   /* Empty asm statement works as a scheduling barrier */
+ 339:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("");
+ 340:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+ 341:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("");
+ 342:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #endif
+ 343:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** }
+ 344:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 345:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #endif /* (__CORTEX_M == 0x04U) || (__CORTEX_M == 0x07U) */
+ 346:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 347:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 348:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 349:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /*@} end of CMSIS_Core_RegAccFunctions */
+ 350:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 351:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 352:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /* ##########################  Core Instruction Access  ######################### */
+ 353:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /** \defgroup CMSIS_Core_InstructionInterface CMSIS Core Instruction Interface
+ 354:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   Access to dedicated instructions
+ 355:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   @{
+ 356:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** */
+ 357:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 358:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /* Define macros for porting to both thumb1 and thumb2.
+ 359:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  * For thumb1, use low register (r0-r7), specified by constraint "l"
+ 360:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  * Otherwise, use general registers, specified by constraint "r" */
+ 361:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #if defined (__thumb__) && !defined (__thumb2__)
+ 362:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=l" (r)
+ 363:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "l" (r)
+ 364:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #else
+ 365:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=r" (r)
+ 366:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "r" (r)
+ 367:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** #endif
+ 368:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** 
+ 369:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** /**
+ 370:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \brief   No Operation
+ 371:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   \details No Operation does nothing. This instruction can be used for code alignment purposes.
+ 372:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****  */
+ 373:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __NOP(void)
+ 374:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h **** {
+ 375:D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include\cmsis_gcc.h ****   __ASM volatile ("nop");
+  50              	 .loc 2 375 0
+  51              	
+  52 000a 00BF     	 nop
+  53              	
+  54              	 .thumb
+  55              	.L2:
+  56              	.LBE5:
+  57              	.LBE4:
+  58              	 .loc 1 12 0
+  59 000c 7B68     	 ldr r3,[r7,#4]
+  60 000e 5A1E     	 subs r2,r3,#1
+  61 0010 7A60     	 str r2,[r7,#4]
+  62 0012 002B     	 cmp r3,#0
+  63 0014 F9D1     	 bne .L3
+  13:../Init.c     ****   {
+  14:../Init.c     ****     __NOP();
+  15:../Init.c     ****   }
+  16:../Init.c     **** }
+  64              	 .loc 1 16 0
+  65 0016 0C37     	 adds r7,r7,#12
+  66              	.LCFI3:
+  67              	 .cfi_def_cfa_offset 4
+  68 0018 BD46     	 mov sp,r7
+  69              	.LCFI4:
+  70              	 .cfi_def_cfa_register 13
+  71              	 
+  72 001a 5DF8047B 	 ldr r7,[sp],#4
+  73              	.LCFI5:
+  74              	 .cfi_restore 7
+  75              	 .cfi_def_cfa_offset 0
+  76 001e 7047     	 bx lr
+  77              	 .cfi_endproc
+  78              	.LFE234:
+  80              	 .section .text.init,"ax",%progbits
+  81              	 .align 2
+  82              	 .global init
+  83              	 .thumb
+  84              	 .thumb_func
+  86              	init:
+  87              	.LFB235:
+  17:../Init.c     **** 
+  18:../Init.c     **** 
+  19:../Init.c     **** 
+  20:../Init.c     **** 
+  21:../Init.c     **** //init
+  22:../Init.c     **** 
+  23:../Init.c     **** void init(void){
+  88              	 .loc 1 23 0
+  89              	 .cfi_startproc
+  90              	 
+  91              	 
+  92 0000 80B5     	 push {r7,lr}
+  93              	.LCFI6:
+  94              	 .cfi_def_cfa_offset 8
+  95              	 .cfi_offset 7,-8
+  96              	 .cfi_offset 14,-4
+  97 0002 00AF     	 add r7,sp,#0
+  98              	.LCFI7:
+  99              	 .cfi_def_cfa_register 7
+  24:../Init.c     **** 
+  25:../Init.c     **** 	//sets LED Pins as Outputs
+  26:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT6, PIN_LED_1, XMC_GPIO_MODE_OUTPUT_PUSH_PULL); //LED1
+ 100              	 .loc 1 26 0
+ 101 0004 2048     	 ldr r0,.L5
+ 102 0006 0021     	 movs r1,#0
+ 103 0008 8022     	 movs r2,#128
+ 104 000a FFF7FEFF 	 bl XMC_GPIO_SetMode
+  27:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT6, PIN_LED_2, XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+ 105              	 .loc 1 27 0
+ 106 000e 1E48     	 ldr r0,.L5
+ 107 0010 0121     	 movs r1,#1
+ 108 0012 8022     	 movs r2,#128
+ 109 0014 FFF7FEFF 	 bl XMC_GPIO_SetMode
+  28:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT6, PIN_LED_3, XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+ 110              	 .loc 1 28 0
+ 111 0018 1B48     	 ldr r0,.L5
+ 112 001a 0221     	 movs r1,#2
+ 113 001c 8022     	 movs r2,#128
+ 114 001e FFF7FEFF 	 bl XMC_GPIO_SetMode
+  29:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT6, PIN_LED_4, XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+ 115              	 .loc 1 29 0
+ 116 0022 1948     	 ldr r0,.L5
+ 117 0024 0321     	 movs r1,#3
+ 118 0026 8022     	 movs r2,#128
+ 119 0028 FFF7FEFF 	 bl XMC_GPIO_SetMode
+  30:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT6, PIN_LED_5, XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+ 120              	 .loc 1 30 0
+ 121 002c 1648     	 ldr r0,.L5
+ 122 002e 0421     	 movs r1,#4
+ 123 0030 8022     	 movs r2,#128
+ 124 0032 FFF7FEFF 	 bl XMC_GPIO_SetMode
+  31:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT6, PIN_LED_6, XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+ 125              	 .loc 1 31 0
+ 126 0036 1448     	 ldr r0,.L5
+ 127 0038 0521     	 movs r1,#5
+ 128 003a 8022     	 movs r2,#128
+ 129 003c FFF7FEFF 	 bl XMC_GPIO_SetMode
+  32:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT6, PIN_LED_7, XMC_GPIO_MODE_OUTPUT_PUSH_PULL); //LED7
+ 130              	 .loc 1 32 0
+ 131 0040 1148     	 ldr r0,.L5
+ 132 0042 0621     	 movs r1,#6
+ 133 0044 8022     	 movs r2,#128
+ 134 0046 FFF7FEFF 	 bl XMC_GPIO_SetMode
+  33:../Init.c     **** 
+  34:../Init.c     **** 	//set P_ON Pins as Output
+  35:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT0, PIN_P_ON_TDA_1,
+ 135              	 .loc 1 35 0
+ 136 004a 1048     	 ldr r0,.L5+4
+ 137 004c 0221     	 movs r1,#2
+ 138 004e 8022     	 movs r2,#128
+ 139 0050 FFF7FEFF 	 bl XMC_GPIO_SetMode
+  36:../Init.c     **** 			XMC_GPIO_MODE_OUTPUT_PUSH_PULL); //TDA1
+  37:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT1, PIN_P_ON_TDA_2,
+ 140              	 .loc 1 37 0
+ 141 0054 0E48     	 ldr r0,.L5+8
+ 142 0056 0821     	 movs r1,#8
+ 143 0058 8022     	 movs r2,#128
+ 144 005a FFF7FEFF 	 bl XMC_GPIO_SetMode
+  38:../Init.c     **** 			XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+  39:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT5, PIN_P_ON_TDA_3,
+ 145              	 .loc 1 39 0
+ 146 005e 0D48     	 ldr r0,.L5+12
+ 147 0060 0521     	 movs r1,#5
+ 148 0062 8022     	 movs r2,#128
+ 149 0064 FFF7FEFF 	 bl XMC_GPIO_SetMode
+  40:../Init.c     **** 			XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+  41:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT5, PIN_P_ON_TDA_4,
+ 150              	 .loc 1 41 0
+ 151 0068 0A48     	 ldr r0,.L5+12
+ 152 006a 0421     	 movs r1,#4
+ 153 006c 8022     	 movs r2,#128
+ 154 006e FFF7FEFF 	 bl XMC_GPIO_SetMode
+  42:../Init.c     **** 			XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+  43:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT3, PIN_P_ON_TDA_5,
+ 155              	 .loc 1 43 0
+ 156 0072 0948     	 ldr r0,.L5+16
+ 157 0074 0721     	 movs r1,#7
+ 158 0076 8022     	 movs r2,#128
+ 159 0078 FFF7FEFF 	 bl XMC_GPIO_SetMode
+  44:../Init.c     **** 			XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
+  45:../Init.c     **** 	XMC_GPIO_SetMode(XMC_GPIO_PORT0, PIN_P_ON_TDA_6,
+ 160              	 .loc 1 45 0
+ 161 007c 0348     	 ldr r0,.L5+4
+ 162 007e 0921     	 movs r1,#9
+ 163 0080 8022     	 movs r2,#128
+ 164 0082 FFF7FEFF 	 bl XMC_GPIO_SetMode
+  46:../Init.c     **** 			XMC_GPIO_MODE_OUTPUT_PUSH_PULL); //TDA6
+  47:../Init.c     **** 
+  48:../Init.c     **** }
+ 165              	 .loc 1 48 0
+ 166 0086 80BD     	 pop {r7,pc}
+ 167              	.L6:
+ 168              	 .align 2
+ 169              	.L5:
+ 170 0088 00860248 	 .word 1208124928
+ 171 008c 00800248 	 .word 1208123392
+ 172 0090 00810248 	 .word 1208123648
+ 173 0094 00850248 	 .word 1208124672
+ 174 0098 00830248 	 .word 1208124160
+ 175              	 .cfi_endproc
+ 176              	.LFE235:
+ 178              	 .text
+ 179              	.Letext0:
+ 180              	 .file 3 "c:\\davev4-64bit\\dave-4.2.6\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 181              	 .file 4 "c:\\davev4-64bit\\dave-4.2.6\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\stdint.h"
+ 182              	 .file 5 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation\\Libraries\\XMCLib\\inc/xmc4_gpio.h"
+ 183              	 .file 6 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation/Libraries/CMSIS/Include/core_cm4.h"
+DEFINED SYMBOLS
+                            *ABS*:00000000 Init.c
+    {standard input}:20     .text.delay:00000000 $t
+    {standard input}:25     .text.delay:00000000 delay
+    {standard input}:81     .text.init:00000000 $t
+    {standard input}:86     .text.init:00000000 init
+    {standard input}:170    .text.init:00000088 $d
+                     .debug_frame:00000010 $d
+
+UNDEFINED SYMBOLS
+XMC_GPIO_SetMode
