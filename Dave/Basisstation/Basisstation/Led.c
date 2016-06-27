@@ -6,6 +6,15 @@
  */
 #include "Header_general.h" //including all Header files
 
+
+
+/**
+ * aktivates a specific led;
+ * Param led: 	0 -> all leds
+ * 1 -> first led(top of the bord)
+ * ...
+ * 7 -> last led
+ */
 void led_on(uint8_t led) {
 	//set corresonding LED Pin low (active low); Pins were set as Output in init()
 	switch (led) {
@@ -42,6 +51,16 @@ void led_on(uint8_t led) {
 	}
 }
 
+
+
+
+/**
+ * deactivates a specific led;
+ * Param led: 	0 -> all leds
+ * 1 -> first led(top of the bord)
+ * ...
+ * 7 -> last led
+ */
 void led_off(uint8_t led) {
 	//set corresonding LED Pin high (active low); Pins were set as Output in init()
 	switch (led) {

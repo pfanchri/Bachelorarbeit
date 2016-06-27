@@ -7,6 +7,9 @@
 #include "Header_general.h" //including all Header files
 
 
+#define SPI_TX_ARRAY_LENGH 20
+#define SPI_RX_ARRAY_LENGH 20
+
 int main(void){
 
 	init();
@@ -21,10 +24,13 @@ led_off(0);
 led_on(1);
 
 
-	uint16_t spi_array_tx[10] = { 0 };
-	uint16_t spi_array_rx[10] = { 0 };
+	uint16_t spi_array_tx[SPI_TX_ARRAY_LENGH] = { 0x05,39,0,0,0, 0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0, };
+	uint16_t spi_array_rx[SPI_RX_ARRAY_LENGH] = { 0 };
 	led_on(2);
-	spi_init(spi_master_ch);
+
+
+	set_TDA_status(0,1);
+
 
 led_on(6);
 led_on(7);
@@ -35,12 +41,16 @@ led_on(7);
 			}
 
 
-	spi_transfer(spi_master_ch, 0, spi_array_tx, spi_array_rx, 3);
+spi_init(spi_master_ch);
+delay(4000000);
+delay(4000000);
+delay(4000000);
+	spi_transfer(spi_master_ch, 0, spi_array_tx, spi_array_rx, 20);
 
 
 
 
-	for (int var = 0; var < 10; ++var) {
+	for (int var = 0; var < SPI_RX_ARRAY_LENGH; var++) {
 		if (spi_array_rx[var]  !=  0) {
 			led_on(5);
 		}

@@ -10,14 +10,9 @@
 
 
 
-/**
- * sets TDA(s) in give mode
- * Param TDA: 	0 -> all TDAs
- * 				1 -> TDA1
- * 				2 -> TDA2  ...
- * Param status:0 -> Power down mode
- * 				1 -> Sleep mode
- */
+//TDA function definitions
+
+
 void set_TDA_status(uint8_t TDA, uint8_t status);
 
 

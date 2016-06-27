@@ -8928,3 +8928,707 @@ rm -rf  ./Startup/startup_XMC4500.o ./Startup/system_XMC4500.o  ./Libraries/XMCL
    5308	      4	   2072	   7384	   1cd8	Basisstation.elf
 'Finished building: Basisstation.siz'
 
+09:45:58 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Led.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Led.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Led.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Led.d" -MT"Led.d Led.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Led.o" "../Led.c"
+'Finished building: ../Led.c'
+
+'Building file: ../Init.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Init.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Init.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Init.d" -MT"Init.d Init.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Init.o" "../Init.c"
+'Finished building: ../Init.c'
+../Main.c: In function 'main':
+
+../Main.c:12:2: warning: implicit declaration of function 'init' [-Wimplicit-function-declaration]
+  init();
+'Building file: ../Main.c'
+  ^
+'Invoking: ARM-GCC C Compiler'
+../Main.c:16:1: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+ delay(4000000);
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+ ^
+
+'Building file: ../TDA.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "TDA.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="TDA.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"TDA.d" -MT"TDA.d TDA.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "TDA.o" "../TDA.c"
+'Finished building: ../TDA.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+09:46:19 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+09:46:21 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+09:49:02 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:12:2: warning: implicit declaration of function 'init' [-Wimplicit-function-declaration]
+  init();
+'Invoking: ARM-GCC C Compiler'
+  ^
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+../Main.c:16:1: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+ delay(4000000);
+
+ ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+09:53:52 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+11:49:53 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:15:2: warning: implicit declaration of function 'init' [-Wimplicit-function-declaration]
+  init();
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+  ^
+
+../Main.c:19:1: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+ delay(4000000);
+ ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+11:54:03 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:15:2: warning: implicit declaration of function 'init' [-Wimplicit-function-declaration]
+  init();
+  ^
+../Main.c:19:1: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+ delay(8000000);
+ ^
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+11:54:15 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+11:54:40 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:15:2: warning: implicit declaration of function 'init' [-Wimplicit-function-declaration]
+'Invoking: ARM-GCC C Compiler'
+  init();
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+  ^
+'Finished building: ../Main.c'
+../Main.c:19:1: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+
+ delay(4000000);
+ ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+11:55:55 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Init.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Init.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Init.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Init.d" -MT"Init.d Init.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Init.o" "../Init.c"
+'Finished building: ../Init.c'
+
+'Building file: ../Led.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Led.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Led.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Led.d" -MT"Led.d Led.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Led.o" "../Led.c"
+'Finished building: ../Led.c'
+
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building file: ../TDA.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "TDA.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="TDA.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"TDA.d" -MT"TDA.d TDA.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "TDA.o" "../TDA.c"
+'Finished building: ../TDA.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:36:16 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+12:36:36 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+12:38:29 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:38:30 **** Incremental Build of configuration Debug for project Simple_Main_Projekt ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Simple_Main_Projekt.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1720	      0	   2068	   3788	    ecc	Simple_Main_Projekt.elf
+'Finished building: Simple_Main_Projekt.siz'
+
+12:38:31 **** Incremental Build of configuration Debug for project Testprojekt ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Testprojekt.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2364	      0	   2076	   4440	   1158	Testprojekt.elf
+'Finished building: Testprojekt.siz'
+
+12:38:35 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+12:45:03 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:45:10 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+12:47:43 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:52:53 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5712	      4	   2072	   7788	   1e6c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:58:33 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5712	      4	   2072	   7788	   1e6c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:01:34 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5756	      4	   2072	   7832	   1e98	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:01:38 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5756	      4	   2072	   7832	   1e98	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:06:41 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5712	      4	   2072	   7788	   1e6c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:07:30 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5712	      4	   2072	   7788	   1e6c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:15:03 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building file: ../TDA.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "TDA.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="TDA.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"TDA.d" -MT"TDA.d TDA.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "TDA.o" "../TDA.c"
+'Finished building: ../TDA.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5744	      4	   2072	   7820	   1e8c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:15:08 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5744	      4	   2072	   7820	   1e8c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:15:16 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5744	      4	   2072	   7820	   1e8c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:15:27 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5744	      4	   2072	   7820	   1e8c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:23:38 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:23:42 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:23:52 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:24:18 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:26:24 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:26:26 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:33:16 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:33:26 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:33:31 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:33:45 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:33:57 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+13:34:29 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	      4	   2072	   7836	   1e9c	Basisstation.elf
+'Finished building: Basisstation.siz'
+

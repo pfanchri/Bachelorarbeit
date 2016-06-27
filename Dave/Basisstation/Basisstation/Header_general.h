@@ -17,6 +17,7 @@
 #include <xmc_spi.h>
 #include "Libraries/SPI/spi.h"
 #include "Libraries/SPI/portmakros.h"
+#include "Libraries/TDA5340-C/tda5340.h"
 
 #include <TDA.h>
 #include <Led.h>
@@ -115,7 +116,8 @@
 #define PIN_LED_7	6
 
 
-
+void delay ();
+void init ();
 
 
 #endif /* HEADER_GENERAL_H_ */
