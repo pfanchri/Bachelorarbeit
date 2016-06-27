@@ -11530,3 +11530,42 @@ java.lang.ClassCastException: org.eclipse.e4.ui.model.application.ui.basic.impl.
 
 !ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-06-23 18:40:58.527
 !MESSAGE Debug session 'Basisstation Debug (1)' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-06-27 09:12:17.930
+!MESSAGE J-Link GDB Server failed: 
+Could not connect to J-Link. Please check if plugged into USB port or Ethernet switch.
+
+For more details, see the JLinkGDBServerCL console.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-06-27 09:12:27.003
+!MESSAGE J-Link GDB Server failed: 
+Could not connect to J-Link. Please check if plugged into USB port or Ethernet switch.
+
+For more details, see the JLinkGDBServerCL console.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-06-27 09:12:45.753
+!MESSAGE J-Link GDB Server failed: 
+Could not connect to J-Link. Please check if plugged into USB port or Ethernet switch.
+
+For more details, see the JLinkGDBServerCL console.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-06-27 09:19:08.908
+!MESSAGE J-Link GDB Server failed: 
+Could not connect to J-Link. Please check if plugged into USB port or Ethernet switch.
+
+For more details, see the JLinkGDBServerCL console.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-06-27 09:20:26.623
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@2b71b88d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+Cannot find bounds of current function java.lang.Exception: Cannot find bounds of current function' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-06-27 09:20:26.623
+!MESSAGE Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+Cannot find bounds of current function
+!STACK 0
+java.lang.Exception: Cannot find bounds of current function
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:926)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:755)

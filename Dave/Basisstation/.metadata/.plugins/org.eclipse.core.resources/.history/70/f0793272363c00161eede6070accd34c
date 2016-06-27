@@ -16,25 +16,13 @@ led_on(0);
 delay(4000000);
 led_off(0);
 led_on(1);
-delay(4000000);
-led_off(0);
-led_on(1);
+
 
 
 	uint16_t spi_array_tx[10] = { 0 };
 	uint16_t spi_array_rx[10] = { 0 };
 	led_on(2);
 	spi_init(spi_master_ch);
-
-led_on(6);
-led_on(7);
-
-			if (spi_array_rx[0]  ==  0 &&spi_array_rx[1]  ==  0&&spi_array_rx[2]  ==  0&&spi_array_rx[3]  ==  0&&spi_array_rx[4]  ==  0&&spi_array_rx[5]  ==  0
-					&& spi_array_rx[6]  ==  0 &&spi_array_rx[7]  ==  0&&spi_array_rx[7]  ==  0&&spi_array_rx[8]  ==  0&&spi_array_rx[9]  ==  0	) {
-				led_off(6);
-			}
-
-
 	spi_transfer(spi_master_ch, 0, spi_array_tx, spi_array_rx, 3);
 
 
