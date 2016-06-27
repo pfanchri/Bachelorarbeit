@@ -3,6 +3,7 @@
  *
  *  Created on: Oct 1, 2015
  *      Author: pflaum
+ *      adapt by Pfannenmüller
  */
 
 #ifndef SPI_H_

@@ -3,12 +3,13 @@
  *
  *  Created on: 28.01.2015
  *      Author: pflaum
+ *      adapt by Pfannenmüller
  */
 
-#define TDA5340_PON_PORT     XMC_GPIO_PORT1
-#define TDA5340_PON_PIN      0
-#define TDA5340_PP2_PORT     XMC_GPIO_PORT1
-#define TDA5340_PP2_PIN      1
+#define TDA5340_PON_PORT     XMC_GPIO_PORT0
+#define TDA5340_PON_PIN      2
+#define TDA5340_PP2_PORT     XMC_GPIO_PORT0
+#define TDA5340_PP2_PIN      3
 
 #define RX_MODE              RUN_MODE_SLAVE
 

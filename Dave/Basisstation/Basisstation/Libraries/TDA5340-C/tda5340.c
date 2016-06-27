@@ -3,6 +3,7 @@
  *
  *  Created on: 28.01.2015
  *      Author: pflaum
+ *      adapt by Pfannenmüller
  */
 
 #include "Header_general.h"

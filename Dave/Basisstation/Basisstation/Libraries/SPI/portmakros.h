@@ -3,6 +3,7 @@
  *
  *  Created on: 25.04.2013
  *      Author: Felix
+ *      adapt by Pfannenmüller
  */
 
 #ifndef PORTMAKROS_H_
