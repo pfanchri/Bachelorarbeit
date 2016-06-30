@@ -117,7 +117,7 @@
 #define PIN_LED_7	6
 
 
-void delay (unsigned long delay);
+void delay (void);
 void init (void);
 void general_test(void);
 
