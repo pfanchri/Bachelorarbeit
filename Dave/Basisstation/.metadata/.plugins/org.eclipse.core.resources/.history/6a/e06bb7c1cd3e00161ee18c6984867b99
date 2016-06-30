@@ -8,10 +8,6 @@
 
 #include "Header_general.h"
 
-
-/*
- * Initalises PON und PP2
- */
 void tda5340_gpio_init(uint8_t device_number) {
 	// PON-Configuration
 	XMC_GPIO_CONFIG_t TDA5340_PON_CONFIG = {

@@ -30,12 +30,6 @@ set_TDA_status(0,1);
 	spi_init(spi_master_ch);
 	delay(40000);
 	tda5340_get_serial_number(5);
-
-
-
-
-
-
 //function for general test purposes
 //general_test();
 	while (1) {
