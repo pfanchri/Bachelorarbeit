@@ -65,8 +65,8 @@ spi_init(spi_master_ch);
 delay(4000000);
 delay(4000000);
 delay(4000000);
-	spi_transfer(spi_master_ch, 5, spi_array_tx, spi_array_rx, 20);
-		//TDA 2 antwortet nicht
+	spi_transfer(spi_master_ch, 1, spi_array_tx, spi_array_rx, 20);
+
 
 
 
