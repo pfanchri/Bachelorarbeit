@@ -40,7 +40,7 @@ void tda5340_gpio_init(uint8_t device_number) {
 	NVIC_EnableIRQ(ERU0_0_IRQn);
 }
 
-uint8_t tda5340_transfer(uint8_t device_number, uint8_t instruction, uint8_t reg_address, uint16_t data) {
+uint8_t tda5340_transfer(uint8_t device_number, uint8_t instruction, uint8_t reg_address, uint8_t data) {
 	uint16_t transferdata[3] = {
 		instruction,
 		reg_address,

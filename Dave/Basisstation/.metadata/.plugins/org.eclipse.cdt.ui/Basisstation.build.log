@@ -1,239 +1,29 @@
-14:07:42 **** Build of configuration Debug for project Basisstation ****
+14:59:43 **** Incremental Build of configuration Debug for project Basisstation ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
-'Building file: ../Startup/startup_XMC4500.S'
-'Invoking: ARM-GCC Assembler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Startup/startup_XMC4500.o" -x assembler-with-cpp -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -Wall -Wa,-adhlns="Startup/startup_XMC4500.o.lst" -mfloat-abi=softfp -c -fmessage-length=0 -MMD -MP -MF"Startup/startup_XMC4500.d" -MT"Startup/startup_XMC4500.d Startup/startup_XMC4500.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Startup/startup_XMC4500.o" "../Startup/startup_XMC4500.S"
-'Finished building: ../Startup/startup_XMC4500.S'
-
-'Building file: ../Libraries/XMCLib/src/xmc4_eru.c'
+'Building file: ../Main.c'
 'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc4_eru.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc4_eru.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc4_eru.d" -MT"Libraries/XMCLib/src/xmc4_eru.d Libraries/XMCLib/src/xmc4_eru.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc4_eru.o" "../Libraries/XMCLib/src/xmc4_eru.c"
-'Finished building: ../Libraries/XMCLib/src/xmc4_eru.c'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
 
-'Building file: ../Startup/system_XMC4500.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Startup/system_XMC4500.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Startup/system_XMC4500.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Startup/system_XMC4500.d" -MT"Startup/system_XMC4500.d Startup/system_XMC4500.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Startup/system_XMC4500.o" "../Startup/system_XMC4500.c"
-'Finished building: ../Startup/system_XMC4500.c'
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
 
-'Building file: ../Libraries/XMCLib/src/xmc4_flash.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc4_flash.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc4_flash.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc4_flash.d" -MT"Libraries/XMCLib/src/xmc4_flash.d Libraries/XMCLib/src/xmc4_flash.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc4_flash.o" "../Libraries/XMCLib/src/xmc4_flash.c"
-'Finished building: ../Libraries/XMCLib/src/xmc4_flash.c'
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5604	      4	   2072	   7680	   1e00	Basisstation.elf
+'Finished building: Basisstation.siz'
 
-'Building file: ../Libraries/XMCLib/src/xmc4_gpio.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc4_gpio.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc4_gpio.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc4_gpio.d" -MT"Libraries/XMCLib/src/xmc4_gpio.d Libraries/XMCLib/src/xmc4_gpio.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc4_gpio.o" "../Libraries/XMCLib/src/xmc4_gpio.c"
-'Finished building: ../Libraries/XMCLib/src/xmc4_gpio.c'
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
 
-'Building file: ../Libraries/XMCLib/src/xmc4_rtc.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc4_rtc.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc4_rtc.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc4_rtc.d" -MT"Libraries/XMCLib/src/xmc4_rtc.d Libraries/XMCLib/src/xmc4_rtc.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc4_rtc.o" "../Libraries/XMCLib/src/xmc4_rtc.c"
-'Finished building: ../Libraries/XMCLib/src/xmc4_rtc.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_can.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_can.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_can.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_can.d" -MT"Libraries/XMCLib/src/xmc_can.d Libraries/XMCLib/src/xmc_can.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_can.o" "../Libraries/XMCLib/src/xmc_can.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_can.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc4_scu.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc4_scu.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc4_scu.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc4_scu.d" -MT"Libraries/XMCLib/src/xmc4_scu.d Libraries/XMCLib/src/xmc4_scu.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc4_scu.o" "../Libraries/XMCLib/src/xmc4_scu.c"
-'Finished building: ../Libraries/XMCLib/src/xmc4_scu.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_ccu4.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_ccu4.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_ccu4.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_ccu4.d" -MT"Libraries/XMCLib/src/xmc_ccu4.d Libraries/XMCLib/src/xmc_ccu4.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_ccu4.o" "../Libraries/XMCLib/src/xmc_ccu4.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_ccu4.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_common.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_common.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_common.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_common.d" -MT"Libraries/XMCLib/src/xmc_common.d Libraries/XMCLib/src/xmc_common.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_common.o" "../Libraries/XMCLib/src/xmc_common.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_common.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_ccu8.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_ccu8.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_ccu8.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_ccu8.d" -MT"Libraries/XMCLib/src/xmc_ccu8.d Libraries/XMCLib/src/xmc_ccu8.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_ccu8.o" "../Libraries/XMCLib/src/xmc_ccu8.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_ccu8.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_dac.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_dac.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_dac.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_dac.d" -MT"Libraries/XMCLib/src/xmc_dac.d Libraries/XMCLib/src/xmc_dac.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_dac.o" "../Libraries/XMCLib/src/xmc_dac.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_dac.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_dma.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_dma.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_dma.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_dma.d" -MT"Libraries/XMCLib/src/xmc_dma.d Libraries/XMCLib/src/xmc_dma.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_dma.o" "../Libraries/XMCLib/src/xmc_dma.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_dma.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_dsd.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_dsd.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_dsd.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_dsd.d" -MT"Libraries/XMCLib/src/xmc_dsd.d Libraries/XMCLib/src/xmc_dsd.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_dsd.o" "../Libraries/XMCLib/src/xmc_dsd.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_dsd.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_ebu.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_ebu.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_ebu.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_ebu.d" -MT"Libraries/XMCLib/src/xmc_ebu.d Libraries/XMCLib/src/xmc_ebu.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_ebu.o" "../Libraries/XMCLib/src/xmc_ebu.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_ebu.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_ecat.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_ecat.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_ecat.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_ecat.d" -MT"Libraries/XMCLib/src/xmc_ecat.d Libraries/XMCLib/src/xmc_ecat.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_ecat.o" "../Libraries/XMCLib/src/xmc_ecat.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_ecat.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_eru.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_eru.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_eru.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_eru.d" -MT"Libraries/XMCLib/src/xmc_eru.d Libraries/XMCLib/src/xmc_eru.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_eru.o" "../Libraries/XMCLib/src/xmc_eru.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_eru.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_fce.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_fce.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_fce.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_fce.d" -MT"Libraries/XMCLib/src/xmc_fce.d Libraries/XMCLib/src/xmc_fce.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_fce.o" "../Libraries/XMCLib/src/xmc_fce.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_fce.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_gpio.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_gpio.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_gpio.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_gpio.d" -MT"Libraries/XMCLib/src/xmc_gpio.d Libraries/XMCLib/src/xmc_gpio.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_gpio.o" "../Libraries/XMCLib/src/xmc_gpio.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_gpio.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_hrpwm.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_hrpwm.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_hrpwm.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_hrpwm.d" -MT"Libraries/XMCLib/src/xmc_hrpwm.d Libraries/XMCLib/src/xmc_hrpwm.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_hrpwm.o" "../Libraries/XMCLib/src/xmc_hrpwm.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_hrpwm.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_i2c.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_i2c.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_i2c.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_i2c.d" -MT"Libraries/XMCLib/src/xmc_i2c.d Libraries/XMCLib/src/xmc_i2c.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_i2c.o" "../Libraries/XMCLib/src/xmc_i2c.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_i2c.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_eth_mac.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_eth_mac.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_eth_mac.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_eth_mac.d" -MT"Libraries/XMCLib/src/xmc_eth_mac.d Libraries/XMCLib/src/xmc_eth_mac.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_eth_mac.o" "../Libraries/XMCLib/src/xmc_eth_mac.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_eth_mac.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_i2s.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_i2s.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_i2s.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_i2s.d" -MT"Libraries/XMCLib/src/xmc_i2s.d Libraries/XMCLib/src/xmc_i2s.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_i2s.o" "../Libraries/XMCLib/src/xmc_i2s.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_i2s.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_ledts.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_ledts.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_ledts.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_ledts.d" -MT"Libraries/XMCLib/src/xmc_ledts.d Libraries/XMCLib/src/xmc_ledts.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_ledts.o" "../Libraries/XMCLib/src/xmc_ledts.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_ledts.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_posif.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_posif.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_posif.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_posif.d" -MT"Libraries/XMCLib/src/xmc_posif.d Libraries/XMCLib/src/xmc_posif.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_posif.o" "../Libraries/XMCLib/src/xmc_posif.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_posif.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_rtc.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_rtc.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_rtc.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_rtc.d" -MT"Libraries/XMCLib/src/xmc_rtc.d Libraries/XMCLib/src/xmc_rtc.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_rtc.o" "../Libraries/XMCLib/src/xmc_rtc.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_rtc.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_sdmmc.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_sdmmc.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_sdmmc.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_sdmmc.d" -MT"Libraries/XMCLib/src/xmc_sdmmc.d Libraries/XMCLib/src/xmc_sdmmc.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_sdmmc.o" "../Libraries/XMCLib/src/xmc_sdmmc.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_sdmmc.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_spi.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_spi.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_spi.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_spi.d" -MT"Libraries/XMCLib/src/xmc_spi.d Libraries/XMCLib/src/xmc_spi.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_spi.o" "../Libraries/XMCLib/src/xmc_spi.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_spi.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_uart.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_uart.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_uart.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_uart.d" -MT"Libraries/XMCLib/src/xmc_uart.d Libraries/XMCLib/src/xmc_uart.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_uart.o" "../Libraries/XMCLib/src/xmc_uart.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_uart.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_usic.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_usic.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_usic.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_usic.d" -MT"Libraries/XMCLib/src/xmc_usic.d Libraries/XMCLib/src/xmc_usic.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_usic.o" "../Libraries/XMCLib/src/xmc_usic.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_usic.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_usbd.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_usbd.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_usbd.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_usbd.d" -MT"Libraries/XMCLib/src/xmc_usbd.d Libraries/XMCLib/src/xmc_usbd.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_usbd.o" "../Libraries/XMCLib/src/xmc_usbd.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_usbd.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_wdt.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_wdt.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_wdt.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_wdt.d" -MT"Libraries/XMCLib/src/xmc_wdt.d Libraries/XMCLib/src/xmc_wdt.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_wdt.o" "../Libraries/XMCLib/src/xmc_wdt.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_wdt.c'
-
-'Building file: ../Libraries/XMCLib/src/xmc_vadc.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/XMCLib/src/xmc_vadc.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/XMCLib/src/xmc_vadc.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/XMCLib/src/xmc_vadc.d" -MT"Libraries/XMCLib/src/xmc_vadc.d Libraries/XMCLib/src/xmc_vadc.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/XMCLib/src/xmc_vadc.o" "../Libraries/XMCLib/src/xmc_vadc.c"
-'Finished building: ../Libraries/XMCLib/src/xmc_vadc.c'
-
-'Building file: ../Libraries/TDA5340-C/tda5340.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/TDA5340-C/tda5340.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/TDA5340-C/tda5340.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/TDA5340-C/tda5340.d" -MT"Libraries/TDA5340-C/tda5340.d Libraries/TDA5340-C/tda5340.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/TDA5340-C/tda5340.o" "../Libraries/TDA5340-C/tda5340.c"
-Libraries/TDA5340-C/subdir.mk:18: recipe for target 'Libraries/TDA5340-C/tda5340.o' failed
-../Libraries/TDA5340-C/tda5340.c:56:9: error: conflicting types for 'tda5340_transmit'
- uint8_t tda5340_transmit(uint8_t device_number, uint8_t config, char *data, uint8_t length) {
-         ^
-In file included from D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Header_general.h:21:0,
-                 from ../Libraries/TDA5340-C/tda5340.c:9:
-D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/TDA5340-C/tda5340.h:29:9: note: previous declaration of 'tda5340_transmit' was here
- uint8_t tda5340_transmit(uint8_t device_number, uint8_t config, int8_t *data, uint8_t length);
-         ^
-../Libraries/TDA5340-C/tda5340.c: In function 'tda5340_transmit':
-../Libraries/TDA5340-C/tda5340.c:58:36: warning: pointer targets in passing argument 3 of 'tda5340_fifo_rw' differ in signedness [-Wpointer-sign]
-  tda5340_fifo_rw(device_number, 1, data, &length);
-                                    ^
-In file included from D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Header_general.h:21:0,
-                 from ../Libraries/TDA5340-C/tda5340.c:9:
-D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/TDA5340-C/tda5340.h:28:9: note: expected 'int8_t *' but argument is of type 'char *'
- uint8_t tda5340_fifo_rw(uint8_t device_number, uint8_t wnr, int8_t *data, uint8_t *length);
-         ^
-../Libraries/TDA5340-C/tda5340.c: At top level:
-../Libraries/TDA5340-C/tda5340.c:64:9: error: conflicting types for 'tda5340_receive'
- uint8_t tda5340_receive(uint8_t device_number, char *data, uint8_t *length) {
-         ^
-In file included from D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Header_general.h:21:0,
-                 from ../Libraries/TDA5340-C/tda5340.c:9:
-D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/TDA5340-C/tda5340.h:30:9: note: previous declaration of 'tda5340_receive' was here
- uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
-         ^
-../Libraries/TDA5340-C/tda5340.c: In function 'tda5340_receive':
-../Libraries/TDA5340-C/tda5340.c:65:52: warning: pointer targets in passing argument 3 of 'tda5340_fifo_rw' differ in signedness [-Wpointer-sign]
-  uint8_t error = tda5340_fifo_rw(device_number, 0, data, length);
-                                                    ^
-In file included from D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Header_general.h:21:0,
-                 from ../Libraries/TDA5340-C/tda5340.c:9:
-D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/TDA5340-C/tda5340.h:28:9: note: expected 'int8_t *' but argument is of type 'char *'
- uint8_t tda5340_fifo_rw(uint8_t device_number, uint8_t wnr, int8_t *data, uint8_t *length);
-         ^
-../Libraries/TDA5340-C/tda5340.c: At top level:
-../Libraries/TDA5340-C/tda5340.c:70:9: error: conflicting types for 'tda5340_fifo_rw'
- uint8_t tda5340_fifo_rw(uint8_t device_number, uint8_t wnr, char *data, uint8_t *length) {
-         ^
-In file included from D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Header_general.h:21:0,
-                 from ../Libraries/TDA5340-C/tda5340.c:9:
-D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/TDA5340-C/tda5340.h:28:9: note: previous declaration of 'tda5340_fifo_rw' was here
- uint8_t tda5340_fifo_rw(uint8_t device_number, uint8_t wnr, int8_t *data, uint8_t *length);
-         ^
-../Libraries/TDA5340-C/tda5340.c: In function 'tda5340_fifo_rw':
-../Libraries/TDA5340-C/tda5340.c:89:3: warning: implicit declaration of function 'crc16' [-Wimplicit-function-declaration]
-   crc             = crc16(crc, length_local);
-   ^
-make: *** [Libraries/TDA5340-C/tda5340.o] Error 1
-make: *** Waiting for unfinished jobs....
-'Building file: ../Init.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Init.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Init.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Init.d" -MT"Init.d Init.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Init.o" "../Init.c"
-'Finished building: ../Init.c'
-
-'Building file: ../Libraries/SPI/spi.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/SPI/spi.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/SPI/spi.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/SPI/spi.d" -MT"Libraries/SPI/spi.d Libraries/SPI/spi.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/SPI/spi.o" "../Libraries/SPI/spi.c"
-'Finished building: ../Libraries/SPI/spi.c'
-
-'Building file: ../Libraries/Newlib/syscalls.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/Newlib/syscalls.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/Newlib/syscalls.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/Newlib/syscalls.d" -MT"Libraries/Newlib/syscalls.d Libraries/Newlib/syscalls.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/Newlib/syscalls.o" "../Libraries/Newlib/syscalls.c"
-'Finished building: ../Libraries/Newlib/syscalls.c'
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
 
 
-14:07:44 Build Finished (took 2s.678ms)
+14:59:44 Build Finished (took 510ms)
 

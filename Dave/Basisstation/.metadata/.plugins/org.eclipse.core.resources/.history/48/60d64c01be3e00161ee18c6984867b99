@@ -23,9 +23,9 @@ typedef union {
 
 void tda5340_init(uint8_t device_number);
 void tda5340_gpio_init(uint8_t device_number);
-uint8_t tda5340_transfer(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint16_t data);
+uint8_t tda5340_transfer(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint8_t data);
 uint8_t tda5340_command(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint8_t data);
-uint8_t tda5340_fifo_rw(uint8_t device_number, uint8_t wnr, int8_t *data, uint8_t *length);
+uint8_t tda5340_fifo_rw(uint8_t device_number, uint8_t wnr, int8_t *data, int8_t *length);
 uint8_t tda5340_transmit(uint8_t device_number, uint8_t config, int8_t *data, uint8_t length);
 uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
 void tda5340_set_mode_and_config(uint8_t device_number, uint8_t mode, uint8_t config);

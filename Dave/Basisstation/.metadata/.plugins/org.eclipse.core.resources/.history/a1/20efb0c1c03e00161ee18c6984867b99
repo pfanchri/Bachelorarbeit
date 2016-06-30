@@ -47,17 +47,11 @@ led_on(1);
 //}
 
 
-set_TDA_status(0,1);
 
 spi_init(spi_master_ch);
 
-tda5340_transfer(1, READ_FROM_CHIP, IS2, 0xFF);
-delay(400000);
-tda5340_transfer(1,READ_FROM_CHIP,0xDA,0);
+tda5340_transfer(0,READ_FROM_CHIP,0xDA,0);
 
-tda5340_transfer(1, READ_FROM_CHIP, IS2, 0xFF);
-delay(400000);
-tda5340_transfer(1,READ_FROM_CHIP,0xDA,0);
 
 //
 //	uint16_t spi_array_tx[SPI_TX_ARRAY_LENGH] = { 0 };
