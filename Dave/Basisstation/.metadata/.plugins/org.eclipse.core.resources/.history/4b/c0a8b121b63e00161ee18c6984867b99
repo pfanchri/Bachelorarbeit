@@ -31,32 +31,23 @@ led_on(1);
 //}
 //test für TDA Lib von Felix
 
-//tda5340_gpio_init(0);
-//tda5340_init(0);
-//uint32_t serialnumber = tda5340_get_serial_number(0);
+tda5340_gpio_init(0);tda5340_init(0);
+uint32_t serialnumber = tda5340_get_serial_number(0);
 
 //serialnumber -> LEDs
-//for (int var = 0; var < 32; var++) {
-//		if (serialnumber & (1 << var)) {
-//			led_on(5);
-//		}
-//		led_on(6);
-//		delay(4000000);
-//		led_off(5);
-//		led_off(6);
-//}
+for (int var = 0; var < 32; var++) {
+		if (serialnumber & (1 << var)) {
+			led_on(5);
+		}
+		led_on(6);
+		delay(4000000);
+		led_off(5);
+		led_off(6);
+}
 
-
-
-spi_init(spi_master_ch);
-
-tda5340_transfer(0,READ_FROM_CHIP,0xD4,0);
-
-
-//
 //	uint16_t spi_array_tx[SPI_TX_ARRAY_LENGH] = { 0 };
 //	spi_array_tx[0] =0x05;
-//	spi_array_tx[1] =0xD3;
+//	spi_array_tx[1] =0xD0;
 //	uint16_t spi_array_rx[SPI_RX_ARRAY_LENGH] = { 0 };
 //	led_on(2);
 //
@@ -74,7 +65,11 @@ tda5340_transfer(0,READ_FROM_CHIP,0xD4,0);
 //
 //
 //spi_init(spi_master_ch);
-//	spi_transfer(spi_master_ch, 0, spi_array_tx, spi_array_rx, 20);
+//delay(4000000);
+//delay(4000000);
+//delay(4000000);
+//	spi_transfer(spi_master_ch, 1, spi_array_tx, spi_array_rx, 20);
+//		//TDA 2 antwortet nicht
 //
 //
 //

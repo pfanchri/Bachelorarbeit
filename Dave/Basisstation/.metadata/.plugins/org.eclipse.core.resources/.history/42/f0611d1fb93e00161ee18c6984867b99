@@ -50,7 +50,7 @@
 #define PORT_P_ON_TDA_1	0
 #define PIN_P_ON_TDA_1	2
 #define PORT_P_ON_TDA_2	1
-#define PIN_P_ON_TDA_2	9
+#define PIN_P_ON_TDA_2	8
 #define PORT_P_ON_TDA_3	5
 #define PIN_P_ON_TDA_3	5
 #define PORT_P_ON_TDA_4	5

@@ -252,4 +252,4 @@ uint32_t tda5340_get_serial_number(uint8_t device_number);
 #define SPWR                 0xE9
 #define NPWR                 0xEA
 
-//#define TDA5340_PON          TDA5340_PON_PORT, TDA5340_PON_PIN
+#define TDA5340_PON          TDA5340_PON_PORT, TDA5340_PON_PIN
