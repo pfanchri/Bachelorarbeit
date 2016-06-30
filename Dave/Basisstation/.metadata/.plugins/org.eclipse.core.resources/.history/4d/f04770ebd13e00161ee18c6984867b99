@@ -14,19 +14,12 @@
  */
 void tda5340_gpio_init(uint8_t device_number) {
 
-//	switch (device_number) {
-//		case TDA1:
-//			uint8_t port =0; // hier war ich--------
-//			break;
-//		default:
-//			break;
-//	}
-	// PON-Configuration -> wird von init() durchgeführt und kann evtl entfernt werden
-	XMC_GPIO_CONFIG_t TDA5340_PON_CONFIG = {
-		.mode         = XMC_GPIO_MODE_OUTPUT_PUSH_PULL,
-		.output_level = 1
-	};
-	XMC_GPIO_Init(TDA5340_PON_PORT, TDA5340_PON_PIN, &TDA5340_PON_CONFIG);
+//	// PON-Configuration -> wird von init() durchgeführt
+//	XMC_GPIO_CONFIG_t TDA5340_PON_CONFIG = {
+//		.mode         = XMC_GPIO_MODE_OUTPUT_PUSH_PULL,
+//		.output_level = 1
+//	};
+//	XMC_GPIO_Init(TDA5340_PON_PORT, TDA5340_PON_PIN, &TDA5340_PON_CONFIG);
 
 	// PP2-Pin- and Interrupt-Config
 	XMC_GPIO_EnableDigitalInput(TDA5340_PP2_PORT, TDA5340_PP2_PIN);

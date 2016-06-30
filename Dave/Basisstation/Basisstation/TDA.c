@@ -10,9 +10,9 @@
 
 /**
  * sets TDA(s) in give mode
- * Param TDA: 	0 -> all TDAs
- * 				1 -> TDA1
- * 				2 -> TDA2  ...
+ * Param TDA: 	TDA_ALL -> all TDAs
+ * 				TDA1 -> TDA1 will be set
+ * 				TDA2 -> TDA2  ...
  * Param status:0 -> Power down mode
  * 				1 -> Sleep mode
  */

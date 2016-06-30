@@ -109,17 +109,6 @@
 //END of TDA Macros
 
 //LED Macros
-
-#define LED_ALL 0
-#define LED1	1
-#define LED2	2
-#define LED3	3
-#define LED4	4
-#define LED5	5
-#define LED6	6
-#define LED7	7
-
-
 #define PORT_LED_1	XMC_GPIO_PORT6
 #define PIN_LED_1	0
 #define PORT_LED_2	XMC_GPIO_PORT6

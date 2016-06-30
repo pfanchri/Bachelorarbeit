@@ -10,15 +10,15 @@
 
 /**
  * aktivates a specific led;
- * Param led: 	0 -> all leds
- * 1 -> first led(top of the bord)
+ * Param led: 	LED_ALL activates all LEDs
+ * LED1 -> first led(top of the bord)
  * ...
- * 7 -> last led
+ * LED7 -> last led
  */
 void led_on(uint8_t led) {
 	//set corresonding LED Pin low (active low); Pins were set as Output in init()
 	switch (led) {
-	case 0:
+	case LED_ALL:
 		XMC_GPIO_SetOutputLow(PORT_LED_1, PIN_LED_1);
 		XMC_GPIO_SetOutputLow(PORT_LED_2, PIN_LED_2);
 		XMC_GPIO_SetOutputLow(PORT_LED_3, PIN_LED_3);
@@ -27,25 +27,25 @@ void led_on(uint8_t led) {
 		XMC_GPIO_SetOutputLow(PORT_LED_6, PIN_LED_6);
 		XMC_GPIO_SetOutputLow(PORT_LED_7, PIN_LED_7);
 		break;
-	case 1:
+	case LED1:
 		XMC_GPIO_SetOutputLow(PORT_LED_1, PIN_LED_1);
 		break;
-	case 2:
+	case LED2:
 		XMC_GPIO_SetOutputLow(PORT_LED_2, PIN_LED_2);
 		break;
-	case 3:
+	case LED3:
 		XMC_GPIO_SetOutputLow(PORT_LED_3, PIN_LED_3);
 		break;
-	case 4:
+	case LED4:
 		XMC_GPIO_SetOutputLow(PORT_LED_4, PIN_LED_4);
 		break;
-	case 5:
+	case LED5:
 		XMC_GPIO_SetOutputLow(PORT_LED_5, PIN_LED_5);
 		break;
-	case 6:
+	case LED6:
 		XMC_GPIO_SetOutputLow(PORT_LED_6, PIN_LED_6);
 		break;
-	case 7:
+	case LED7:
 		XMC_GPIO_SetOutputLow(PORT_LED_7, PIN_LED_7);
 		break;
 	}
