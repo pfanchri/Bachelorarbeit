@@ -8,13 +8,6 @@
 
 #include "Header_general.h"
 
-//crc 16 origaln fehlt noch
-
-uint16_t crc16(uint16_t crc, uint16_t length_local){
-	//do crc
-	return crc;
-}
-
 
 /*
  * Initalises PON und PP2

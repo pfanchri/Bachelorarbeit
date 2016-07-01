@@ -19,21 +19,21 @@
 void set_TDA_status(uint8_t TDA, uint8_t status){
 if(status==0){
 //set P_ON Pin low; Pins were set as Output in init()
-if(TDA==0||TDA==1){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_1, PIN_P_ON_TDA_1);}
-if(TDA==0||TDA==2){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_2, PIN_P_ON_TDA_2);}
-if(TDA==0||TDA==3){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_3, PIN_P_ON_TDA_3);}
-if(TDA==0||TDA==4){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_4, PIN_P_ON_TDA_4);}
-if(TDA==0||TDA==5){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_5, PIN_P_ON_TDA_5);}
-if(TDA==0||TDA==6){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_6, PIN_P_ON_TDA_6);}
+if(TDA==TDA_ALL||TDA==TDA1){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_1, PIN_P_ON_TDA_1);}
+if(TDA==TDA_ALL||TDA==TDA2){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_2, PIN_P_ON_TDA_2);}
+if(TDA==TDA_ALL||TDA==TDA3){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_3, PIN_P_ON_TDA_3);}
+if(TDA==TDA_ALL||TDA==TDA4){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_4, PIN_P_ON_TDA_4);}
+if(TDA==TDA_ALL||TDA==TDA5){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_5, PIN_P_ON_TDA_5);}
+if(TDA==TDA_ALL||TDA==TDA6){ XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_6, PIN_P_ON_TDA_6);}
 
 }else if(status==1){
 //set P_ON Pin high; Pins were set as Output in init()
-	if(TDA==0||TDA==1){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_1, PIN_P_ON_TDA_1);}
-	if(TDA==0||TDA==2){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_2, PIN_P_ON_TDA_2);}
-	if(TDA==0||TDA==3){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_3, PIN_P_ON_TDA_3);}
-	if(TDA==0||TDA==4){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_4, PIN_P_ON_TDA_4);}
-	if(TDA==0||TDA==5){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_5, PIN_P_ON_TDA_5);}
-	if(TDA==0||TDA==6){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_6, PIN_P_ON_TDA_6);}
+	if(TDA==TDA_ALL||TDA==TDA1){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_1, PIN_P_ON_TDA_1);}
+	if(TDA==TDA_ALL||TDA==TDA2){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_2, PIN_P_ON_TDA_2);}
+	if(TDA==TDA_ALL||TDA==TDA3){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_3, PIN_P_ON_TDA_3);}
+	if(TDA==TDA_ALL||TDA==TDA4){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_4, PIN_P_ON_TDA_4);}
+	if(TDA==TDA_ALL||TDA==TDA5){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_5, PIN_P_ON_TDA_5);}
+	if(TDA==TDA_ALL||TDA==TDA6){ XMC_GPIO_SetOutputHigh(PORT_P_ON_TDA_6, PIN_P_ON_TDA_6);}
 }
 
 }

@@ -8,26 +8,19 @@
 
 #include "Header_general.h"
 
-//crc 16 origaln fehlt noch
-
-uint16_t crc16(uint16_t crc, uint16_t length_local){
-	//do crc
-	return crc;
-}
-
 
 /*
  * Initalises PON und PP2
  */
 void tda5340_gpio_init(uint8_t device_number) {
 
-//	switch (device_number) {
-//		case TDA1:
-//			uint8_t port =0; // hier war ich--------
-//			break;
-//		default:
-//			break;
-//	}
+	switch (device_number) {
+		case TDA1:
+			uint8_t port =0; // hier war ich--------
+			break;
+		default:
+			break;
+	}
 	// PON-Configuration -> wird von init() durchgeführt und kann evtl entfernt werden
 	XMC_GPIO_CONFIG_t TDA5340_PON_CONFIG = {
 		.mode         = XMC_GPIO_MODE_OUTPUT_PUSH_PULL,

@@ -20,7 +20,7 @@ led_off(LED_ALL);
 led_on(LED1);
 delay(4000000);
 led_off(LED_ALL);
-led_on(LED1);
+led_on(LED7);
 
 
 
