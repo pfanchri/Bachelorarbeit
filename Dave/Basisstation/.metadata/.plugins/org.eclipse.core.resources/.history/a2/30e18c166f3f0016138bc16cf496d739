@@ -62,11 +62,10 @@ void tda5340_gpio_init(uint8_t device_number) {
 	}
 
 	//	configure Interrupts (depending of device number)
-	//TODO: Einstellen der Pins/PORTS ERU OGU etc
 	//		for TDA1
 	if (device_number == TDA_ALL || device_number == TDA1) {
 		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
+				.input_b = XMC_ERU_ETL_INPUT_B2,//set here Interrupt Input
 				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
 				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
 				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
@@ -77,100 +76,12 @@ void tda5340_gpio_init(uint8_t device_number) {
 		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
 				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
 		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
-		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
 	}
-	//		for TDA2
-	if (device_number == TDA_ALL || device_number == TDA2) {
-		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
-				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
-				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
-				.enable_output_trigger = 1, .output_trigger_channel =
-						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
-		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
-		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
-				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
-		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
-	}
-	//		for TDA3
-	if (device_number == TDA_ALL || device_number == TDA3) {
-		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
-				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
-				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
-				.enable_output_trigger = 1, .output_trigger_channel =
-						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
-		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
-		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
-				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
-		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
-	}
-	//		for TDA4
-	if (device_number == TDA_ALL || device_number == TDA4) {
-		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
-				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
-				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
-				.enable_output_trigger = 1, .output_trigger_channel =
-						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
-		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
-		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
-				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
-		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
-	}
-	//		for TDA5
-	if (device_number == TDA_ALL || device_number == TDA5) {
-		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
-				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
-				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
-				.enable_output_trigger = 1, .output_trigger_channel =
-						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
-		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
-		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
-				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
-		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
-	}
-	//		for TDA6
-	if (device_number == TDA_ALL || device_number == TDA6) {
-		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
-				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
-				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
-				.enable_output_trigger = 1, .output_trigger_channel =
-						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
-		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
-		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
-				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
-		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
-	}
+
+	//	activate Interrupts and set priority (depending of device number)
+	NVIC_SetPriority(ERU0_0_IRQn, 3U);
+	NVIC_EnableIRQ(ERU0_0_IRQn);
+
 }
 
 //TODO: auf mehrer TDAs anpassen

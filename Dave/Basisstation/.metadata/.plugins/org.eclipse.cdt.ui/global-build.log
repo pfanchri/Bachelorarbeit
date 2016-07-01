@@ -698,3 +698,33 @@ make: *** Waiting for unfinished jobs....
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
 'Finished building: Basisstation.lst'
 
+11:35:04 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Libraries/TDA5340-C/tda5340.c: In function 'tda5340_fifo_rw':
+'Building file: ../Libraries/TDA5340-C/tda5340.c'
+../Libraries/TDA5340-C/tda5340.c:225:3: warning: implicit declaration of function 'crc16' [-Wimplicit-function-declaration]
+'Invoking: ARM-GCC C Compiler'
+   crc = crc16(crc, length_local);
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/TDA5340-C/tda5340.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/TDA5340-C/tda5340.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/TDA5340-C/tda5340.d" -MT"Libraries/TDA5340-C/tda5340.d Libraries/TDA5340-C/tda5340.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/TDA5340-C/tda5340.o" "../Libraries/TDA5340-C/tda5340.c"
+'Finished building: ../Libraries/TDA5340-C/tda5340.c'
+
+   ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5644	      4	   2072	   7720	   1e28	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
