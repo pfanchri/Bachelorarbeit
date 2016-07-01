@@ -6,8 +6,38 @@
  */
 #include "Header_general.h" //including all Header files
 
-// ISR für ERU1 OGU0 IRQ
+// ISR für TDA1  (ERU1 OGU0 IRQ)
+extern void ERU1_0_IRQHandler(void)
+{
+	// LED toggle
+	led_on(LED2);
+}
+// ISR für TDA2  (ERU0 OGU0 IRQ)
 extern void ERU0_0_IRQHandler(void)
+{
+	// LED toggle
+	led_on(LED3);
+}
+// ISR für TDA3  (ERU0 OGU1 IRQ)
+extern void ERU0_1_IRQHandler(void)
+{
+	// LED toggle
+	led_on(LED4);
+}
+// ISR für TDA4  (ERU1 OGU1 IRQ)
+extern void ERU1_1_IRQHandler(void)
+{
+	// LED toggle
+	led_on(LED5);
+}
+// ISR für TDA5  (ERU0 OGU2 IRQ)
+extern void ERU0_2_IRQHandler(void)
+{
+	// LED toggle
+	led_on(LED6);
+}
+// ISR für TDA6  (ERU1 OGU0 IRQ)
+extern void ERU0_3_IRQHandler(void)
 {
 	// LED toggle
 	led_on(LED7);
@@ -16,7 +46,10 @@ extern void ERU0_0_IRQHandler(void)
 int main(void) {
 
 	init();
-	tda5340_gpio_init(TDA1);
+	spi_init(spi_master_ch);
+	tda5340_gpio_init(TDA5);
+
+
 	led_on(LED_ALL);
 	delay(4000000);
 	led_off(LED_ALL);
@@ -25,13 +58,13 @@ int main(void) {
 	led_off(LED_ALL);
 	led_on(LED1);
 
-	set_TDA_status(TDA_ALL, 1);
-	spi_init(spi_master_ch);
-	delay(4000);
+	set_TDA_status(TDA5, 1);	delay(40000);
 
-	tda5340_get_serial_number(TDA6);
+	delay(4000);
+	// INterrupt  1&2 funktioniert rest noch nciht
 	tda5340_get_serial_number(TDA5);
-	tda5340_get_serial_number(TDA6);
+	tda5340_get_serial_number(TDA5);
+	tda5340_get_serial_number(TDA5);
 
 //	set_TDA_status(TDA_ALL, 0);
 //	set_TDA_status(TDA_ALL, 1);

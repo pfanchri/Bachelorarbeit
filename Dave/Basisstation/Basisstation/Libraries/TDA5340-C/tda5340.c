@@ -73,13 +73,13 @@ void tda5340_gpio_init(uint8_t device_number) {
 				.enable_output_trigger = 1, .output_trigger_channel =
 						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
 		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
+		XMC_ERU_ETL_Init(ERU1_ETL3, &PP2_ETL_CONFIG);
 		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
 				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
+		XMC_ERU_OGU_Init(ERU1_OGU0, &PP2_EVENT_DETECTION_CONFIG);
 		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
+		NVIC_SetPriority(ERU1_0_IRQn, 3U);
+		NVIC_EnableIRQ(ERU1_0_IRQn);
 	}
 	//		for TDA2
 	if (device_number == TDA_ALL || device_number == TDA2) {
@@ -109,13 +109,13 @@ void tda5340_gpio_init(uint8_t device_number) {
 				.enable_output_trigger = 1, .output_trigger_channel =
 						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
 		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
+		XMC_ERU_ETL_Init(ERU0_ETL1, &PP2_ETL_CONFIG);
 		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
 				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
+		XMC_ERU_OGU_Init(ERU0_OGU1, &PP2_EVENT_DETECTION_CONFIG);
 		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
+		NVIC_SetPriority(ERU0_1_IRQn, 3U);
+		NVIC_EnableIRQ(ERU0_1_IRQn);
 	}
 	//		for TDA4
 	if (device_number == TDA_ALL || device_number == TDA4) {
@@ -127,13 +127,13 @@ void tda5340_gpio_init(uint8_t device_number) {
 				.enable_output_trigger = 1, .output_trigger_channel =
 						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
 		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
+		XMC_ERU_ETL_Init(ERU1_ETL0, &PP2_ETL_CONFIG);
 		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
 				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
+		XMC_ERU_OGU_Init(ERU1_OGU1, &PP2_EVENT_DETECTION_CONFIG);
 		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
+		NVIC_SetPriority(ERU1_1_IRQn, 3U);
+		NVIC_EnableIRQ(ERU1_1_IRQn);
 	}
 	//		for TDA5
 	if (device_number == TDA_ALL || device_number == TDA5) {
@@ -145,13 +145,13 @@ void tda5340_gpio_init(uint8_t device_number) {
 				.enable_output_trigger = 1, .output_trigger_channel =
 						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
 		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
+		XMC_ERU_ETL_Init(ERU0_ETL0, &PP2_ETL_CONFIG);
 		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
 				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
+		XMC_ERU_OGU_Init(ERU0_OGU2, &PP2_EVENT_DETECTION_CONFIG);
 		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
+		NVIC_SetPriority(ERU0_2_IRQn, 3U);
+		NVIC_EnableIRQ(ERU0_2_IRQn);
 	}
 	//		for TDA6
 	if (device_number == TDA_ALL || device_number == TDA6) {
@@ -163,13 +163,13 @@ void tda5340_gpio_init(uint8_t device_number) {
 				.enable_output_trigger = 1, .output_trigger_channel =
 						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL0 /* OGU0 */
 		};
-		XMC_ERU_ETL_Init(ERU0_ETL3, &PP2_ETL_CONFIG);
+		XMC_ERU_ETL_Init(ERU0_ETL1, &PP2_ETL_CONFIG);
 		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG = {
 				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG);
+		XMC_ERU_OGU_Init(ERU0_OGU3, &PP2_EVENT_DETECTION_CONFIG);
 		//	activate Interrupts and set priority
-		NVIC_SetPriority(ERU0_0_IRQn, 3U);
-		NVIC_EnableIRQ(ERU0_0_IRQn);
+		NVIC_SetPriority(ERU0_3_IRQn, 3U);
+		NVIC_EnableIRQ(ERU0_3_IRQn);
 	}
 }
 
