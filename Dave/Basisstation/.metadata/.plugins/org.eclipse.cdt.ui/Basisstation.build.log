@@ -1,4 +1,4 @@
-11:35:04 **** Build of configuration Debug for project Basisstation ****
+12:36:30 **** Build of configuration Debug for project Basisstation ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
 ../Libraries/TDA5340-C/tda5340.c: In function 'tda5340_fifo_rw':
 'Building file: ../Libraries/TDA5340-C/tda5340.c'
@@ -29,5 +29,5 @@
 'Finished building: Basisstation.lst'
 
 
-11:35:05 Build Finished (took 560ms)
+12:36:31 Build Finished (took 570ms)
 

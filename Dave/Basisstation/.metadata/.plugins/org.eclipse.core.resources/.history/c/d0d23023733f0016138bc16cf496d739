@@ -66,8 +66,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	//		for TDA1
 	if (device_number == TDA_ALL || device_number == TDA1) {
 		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B0,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual)
+				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
+				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
 				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
 				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
 				.enable_output_trigger = 1, .output_trigger_channel =
@@ -84,8 +84,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	//		for TDA2
 	if (device_number == TDA_ALL || device_number == TDA2) {
 		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B0,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual)
+				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
+				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
 				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
 				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
 				.enable_output_trigger = 1, .output_trigger_channel =
@@ -102,8 +102,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	//		for TDA3
 	if (device_number == TDA_ALL || device_number == TDA3) {
 		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B3,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual)
+				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
+				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
 				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
 				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
 				.enable_output_trigger = 1, .output_trigger_channel =
@@ -120,8 +120,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	//		for TDA4
 	if (device_number == TDA_ALL || device_number == TDA4) {
 		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_B0,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual)
+				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
+				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
 				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
 				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
 				.enable_output_trigger = 1, .output_trigger_channel =
@@ -138,8 +138,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	//		for TDA5
 	if (device_number == TDA_ALL || device_number == TDA5) {
 		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_A1,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_A,	//and Interrupt source (from Ref.Manual)
+				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
+				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
 				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
 				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
 				.enable_output_trigger = 1, .output_trigger_channel =
@@ -156,8 +156,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	//		for TDA6
 	if (device_number == TDA_ALL || device_number == TDA6) {
 		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG = {
-				.input_b = XMC_ERU_ETL_INPUT_A0,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_A,	//and Interrupt source (from Ref.Manual)
+				.input_b = XMC_ERU_ETL_INPUT_B2,	//set here Interrupt Input
+				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual
 				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
 				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
 				.enable_output_trigger = 1, .output_trigger_channel =
