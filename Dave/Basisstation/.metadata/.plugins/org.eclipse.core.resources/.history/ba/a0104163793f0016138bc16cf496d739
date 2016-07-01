@@ -16,7 +16,7 @@ extern void ERU0_0_IRQHandler(void)
 int main(void) {
 
 	init();
-	tda5340_gpio_init(TDA1);
+	tda5340_gpio_init(TDA_ALL);
 	led_on(LED_ALL);
 	delay(4000000);
 	led_off(LED_ALL);
@@ -33,13 +33,13 @@ int main(void) {
 	tda5340_get_serial_number(TDA5);
 	tda5340_get_serial_number(TDA6);
 
-//	set_TDA_status(TDA_ALL, 0);
-//	set_TDA_status(TDA_ALL, 1);
-//
-//	set_TDA_status(TDA_ALL, 0);
-//	set_TDA_status(TDA_ALL, 1);
-//	set_TDA_status(TDA_ALL, 0);
-//	set_TDA_status(TDA_ALL, 1);
+	set_TDA_status(TDA_ALL, 0);
+	set_TDA_status(TDA_ALL, 1);
+
+	set_TDA_status(TDA_ALL, 0);
+	set_TDA_status(TDA_ALL, 1);
+	set_TDA_status(TDA_ALL, 0);
+	set_TDA_status(TDA_ALL, 1);
 
 //function for general test purposes
 //general_test();

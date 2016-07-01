@@ -33,13 +33,13 @@ int main(void) {
 	tda5340_get_serial_number(TDA5);
 	tda5340_get_serial_number(TDA6);
 
-//	set_TDA_status(TDA_ALL, 0);
-//	set_TDA_status(TDA_ALL, 1);
-//
-//	set_TDA_status(TDA_ALL, 0);
-//	set_TDA_status(TDA_ALL, 1);
-//	set_TDA_status(TDA_ALL, 0);
-//	set_TDA_status(TDA_ALL, 1);
+	set_TDA_status(TDA_ALL, 0);
+	set_TDA_status(TDA_ALL, 1);
+
+	set_TDA_status(TDA_ALL, 0);
+	set_TDA_status(TDA_ALL, 1);
+	set_TDA_status(TDA_ALL, 0);
+	set_TDA_status(TDA_ALL, 1);
 
 //function for general test purposes
 //general_test();
