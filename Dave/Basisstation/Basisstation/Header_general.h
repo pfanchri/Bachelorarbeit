@@ -34,6 +34,14 @@
 #define TDA5		4
 #define TDA6		5
 
+#define IRQ_PRIORITY_TDA1	5
+#define IRQ_PRIORITY_TDA2	6
+#define IRQ_PRIORITY_TDA3	7
+#define IRQ_PRIORITY_TDA4	8
+#define IRQ_PRIORITY_TDA5	9
+#define IRQ_PRIORITY_TDA6	10
+
+
 #define PORT_MOSI 	1
 #define PIN_MOSI	7
 #define PORT_MISO	1

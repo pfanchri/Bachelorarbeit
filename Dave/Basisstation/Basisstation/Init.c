@@ -7,20 +7,15 @@
 #include "Header_general.h" //including all Header files
 
 //aditional functions
-void delay (unsigned long delay)
-{
-  while (delay--)
-  {
-    __NOP();
-  }
+void delay(unsigned long delay) {
+	while (delay--) {
+		__NOP();
+	}
 }
-
-
-
 
 //init
 
-void init(void){
+void init(void) {
 
 	//sets LED Pins as Outputs
 	XMC_GPIO_SetMode(PORT_LED_1, PIN_LED_1, XMC_GPIO_MODE_OUTPUT_PUSH_PULL); //LED1
@@ -30,6 +25,14 @@ void init(void){
 	XMC_GPIO_SetMode(PORT_LED_5, PIN_LED_5, XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
 	XMC_GPIO_SetMode(PORT_LED_6, PIN_LED_6, XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
 	XMC_GPIO_SetMode(PORT_LED_7, PIN_LED_7, XMC_GPIO_MODE_OUTPUT_PUSH_PULL); //LED7
+	//set  LED Pins high (active low);
+	XMC_GPIO_SetOutputHigh(PORT_LED_1, PIN_LED_1);
+	XMC_GPIO_SetOutputHigh(PORT_LED_2, PIN_LED_2);
+	XMC_GPIO_SetOutputHigh(PORT_LED_3, PIN_LED_3);
+	XMC_GPIO_SetOutputHigh(PORT_LED_4, PIN_LED_4);
+	XMC_GPIO_SetOutputHigh(PORT_LED_5, PIN_LED_5);
+	XMC_GPIO_SetOutputHigh(PORT_LED_6, PIN_LED_6);
+	XMC_GPIO_SetOutputHigh(PORT_LED_7, PIN_LED_7);
 
 	//set P_ON Pins as Output
 	XMC_GPIO_SetMode(PORT_P_ON_TDA_1, PIN_P_ON_TDA_1,
@@ -44,10 +47,17 @@ void init(void){
 			XMC_GPIO_MODE_OUTPUT_PUSH_PULL);
 	XMC_GPIO_SetMode(PORT_P_ON_TDA_6, PIN_P_ON_TDA_6,
 			XMC_GPIO_MODE_OUTPUT_PUSH_PULL); //TDA6
+//P_PON low -> TDAs off state
+	XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_1, PIN_P_ON_TDA_1);
+	XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_2, PIN_P_ON_TDA_2);
+	XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_3, PIN_P_ON_TDA_3);
+	XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_4, PIN_P_ON_TDA_4);
+	XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_5, PIN_P_ON_TDA_5);
+	XMC_GPIO_SetOutputLow(PORT_P_ON_TDA_6, PIN_P_ON_TDA_6);
 
 }
 
-void general_test(void){
+void general_test(void) {
 	//uint8_t i = 0;
 	//i=tda5340_transfer(0, 0x05, 0xD0 , 0);
 	//
@@ -71,8 +81,7 @@ void general_test(void){
 	//		led_off(6);
 	//}
 
-
-	set_TDA_status(0,1);
+	set_TDA_status(0, 1);
 	delay(40000);
 
 	spi_init(spi_master_ch);
@@ -80,12 +89,11 @@ void general_test(void){
 
 	tda5340_transfer(5, READ_FROM_CHIP, IS2, 0xFF);
 	delay(40000);
-	tda5340_transfer(5,READ_FROM_CHIP,0xDB,0);
+	tda5340_transfer(5, READ_FROM_CHIP, 0xDB, 0);
 
 	tda5340_transfer(5, READ_FROM_CHIP, IS2, 0xFF);
 	delay(40000);
-	tda5340_transfer(5,READ_FROM_CHIP,0xDB,0);
-
+	tda5340_transfer(5, READ_FROM_CHIP, 0xDB, 0);
 
 //
 //
