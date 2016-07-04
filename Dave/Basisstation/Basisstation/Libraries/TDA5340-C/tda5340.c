@@ -84,10 +84,10 @@ void tda5340_gpio_init(uint8_t device_number) {
 		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG_2);
 	}
 	//		for TDA3 & 6
-	if (device_number == TDA_ALL || device_number == TDA3 || device_number == TDA6 ){
-		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_3 = { .input_a = XMC_ERU_ETL_INPUT_A0,
+	if (device_number == TDA_ALL || device_number == TDA3){ //|| device_number == TDA6 ){
+		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_3 = { //.input_a = XMC_ERU_ETL_INPUT_A0,
 				.input_b = XMC_ERU_ETL_INPUT_B3,	//set here Interrupt Input
-				.source = XMC_ERU_ETL_SOURCE_A_OR_B,	//and Interrupt source (from Ref.Manual)
+				.source = XMC_ERU_ETL_SOURCE_B, //A_OR_B,	//and Interrupt source (from Ref.Manual)
 				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING, .status_flag_mode =
 						XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL, .enable_output_trigger = 1, .output_trigger_channel =
 						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL1 /* OGU1 */
@@ -158,8 +158,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	NVIC_SetPriority(ERU0_2_IRQn, IRQ_PRIORITY_TDA5);
 	NVIC_EnableIRQ(ERU0_2_IRQn);
 	//	activate Interrupts and set priority
-//	NVIC_SetPriority(ERU0_3_IRQn, IRQ_PRIORITY_TDA6);
-//	NVIC_EnableIRQ(ERU0_3_IRQn);
+	//NVIC_SetPriority(ERU0_3_IRQn, IRQ_PRIORITY_TDA6);
+	//NVIC_EnableIRQ(ERU0_3_IRQn);
 
 }
 
