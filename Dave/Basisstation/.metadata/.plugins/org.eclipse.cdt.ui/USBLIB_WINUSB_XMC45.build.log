@@ -1,0 +1,11 @@
+18:22:52 **** Incremental Build of configuration Debug for project USBLIB_WINUSB_XMC45 ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "USBLIB_WINUSB_XMC45.elf"
+   text	   data	    bss	    dec	    hex	filename
+  12576	    100	   7864	  20540	   503c	USBLIB_WINUSB_XMC45.elf
+'Finished building: USBLIB_WINUSB_XMC45.siz'
+
+
+18:22:52 Build Finished (took 320ms)
+

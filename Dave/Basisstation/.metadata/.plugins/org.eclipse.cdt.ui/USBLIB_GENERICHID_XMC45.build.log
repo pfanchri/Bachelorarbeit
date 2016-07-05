@@ -1,0 +1,11 @@
+18:24:22 **** Incremental Build of configuration Debug for project USBLIB_GENERICHID_XMC45 ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "USBLIB_GENERICHID_XMC45.elf"
+   text	   data	    bss	    dec	    hex	filename
+  11116	     40	   7100	  18256	   4750	USBLIB_GENERICHID_XMC45.elf
+'Finished building: USBLIB_GENERICHID_XMC45.siz'
+
+
+18:24:22 Build Finished (took 317ms)
+

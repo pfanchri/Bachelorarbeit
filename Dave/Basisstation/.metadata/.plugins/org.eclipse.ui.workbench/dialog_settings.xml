@@ -30,5 +30,10 @@
 		<item value="93" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ImportExportAction">
+		<item value="com.ifx.daveBench.importProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="com.ifx.xc800.imports"/>
+		</list>
 	</section>
 </section>
