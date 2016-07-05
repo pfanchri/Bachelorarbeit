@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="1" key="selection"/>
+		<item value="leD" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="led"/>
 			<item value="1"/>
 			<item value="0"/>
 			<item value="10"/>
@@ -15,7 +16,6 @@
 			<item value="XMC_GPIO_PORT6"/>
 			<item value="crc"/>
 			<item value="tda5340_transmit"/>
-			<item value="wnr"/>
 		</list>
 		<list key="replacehistory">
 			<item value="TDA_ALL"/>
