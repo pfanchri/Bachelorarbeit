@@ -1,29 +1,11 @@
-15:53:29 **** Build of configuration Debug for project Basisstation ****
+10:30:22 **** Incremental Build of configuration Debug for project Basisstation ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
-'Building file: ../Libraries/CRC/crcchk.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/CRC/crcchk.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/CRC/crcchk.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/CRC/crcchk.d" -MT"Libraries/CRC/crcchk.d Libraries/CRC/crcchk.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/CRC/crcchk.o" "../Libraries/CRC/crcchk.c"
-'Finished building: ../Libraries/CRC/crcchk.c'
-
-'Building target: Basisstation.elf'
-'Invoking: ARM-GCC C Linker'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
-'Finished building target: Basisstation.elf'
-
-'Invoking: ARM-GCC Create Flash Image'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
-'Finished building: Basisstation.hex'
-
 'Invoking: ARM-GCC Print Size'
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
    text	   data	    bss	    dec	    hex	filename
-   7352	      4	   2072	   9428	   24d4	Basisstation.elf
+   7560	      4	   2072	   9636	   25a4	Basisstation.elf
 'Finished building: Basisstation.siz'
 
-'Invoking: ARM-GCC Create Listing'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
-'Finished building: Basisstation.lst'
 
-
-15:53:31 Build Finished (took 1s.320ms)
+10:30:22 Build Finished (took 220ms)
 

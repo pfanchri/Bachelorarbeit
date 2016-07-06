@@ -4,3 +4,7 @@ Entering Function :com.dave.common.apiwrapper.EclipseAPI-updateWorkingSet
 Exiting Function :com.dave.common.apiwrapper.EclipseAPI-updateWorkingSet
 Entering Function :com.dave.common.apiwrapper.EclipseAPI-updateWorkingSet
 Exiting Function :com.dave.common.apiwrapper.EclipseAPI-updateWorkingSet
+Entering Function :com.dave.common.apiwrapper.EclipseAPI-updateWorkingSet
+Exiting Function :com.dave.common.apiwrapper.EclipseAPI-updateWorkingSet
+Entering Function :com.dave.common.apiwrapper.EclipseAPI-updateWorkingSet
+Exiting Function :com.dave.common.apiwrapper.EclipseAPI-updateWorkingSet

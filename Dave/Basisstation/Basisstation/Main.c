@@ -16,21 +16,21 @@ extern void ERU0_0_IRQHandler(void) {
 	// LED toggle
 	led_on(LED3);
 }
-// ISR für TDA3  (ERU0 OGU1 IRQ)
+// ISR für TDA3 + TDA6  (ERU0 OGU1 IRQ)
 extern void ERU0_1_IRQHandler(void) {
 	// LED toggle
-	led_on(LED4);
 
 	//Check which Intterrupt has occured
 	uint32_t status_tda3 = XMC_GPIO_GetInput(PORT_PP2_TDA_3, PIN_PP2_TDA_3);
 	uint32_t status_tda6 = XMC_GPIO_GetInput(PORT_PP2_TDA_6, PIN_PP2_TDA_6);
-
-	if (status_tda3==0||status_tda6!=0) {
-
-	} else if (status_tda6==0||status_tda3!=0) {
-
-	} else if (status_tda6==0||status_tda3==0) {
-
+	if (status_tda3 == 0 && status_tda6 != 0) {
+		led_on(LED4);
+	} else if (status_tda6 == 0 && status_tda3 != 0) {
+		led_on(LED7);
+	} else if (status_tda6 == 0 && status_tda3 == 0) {
+		led_off(LED1);
+//		led_on(LED4);
+//		led_on(LED7);
 	}
 
 }
@@ -44,15 +44,16 @@ extern void ERU0_2_IRQHandler(void) {
 	// LED toggle
 	led_on(LED6);
 }
-// ISR für TDA6  (ERU1 OGU0 IRQ)
-extern void ERU0_3_IRQHandler(void) {
-	// LED toggle
-	led_on(LED7);
-}
+//// ISR für TDA6  (ERU1 OGU0 IRQ)
+//extern void ERU0_3_IRQHandler(void) {
+//	// LED toggle
+//	led_on(LED7);
+//}
 
 int main(void) {
 
 	init();
+
 	spi_init(spi_master_ch);
 //	tda5340_gpio_init(TDA1);
 //	tda5340_gpio_init(TDA2);
@@ -79,16 +80,17 @@ int main(void) {
 	delay(4000);
 	set_TDA_status(TDA2, 1);
 	delay(4000);
-	set_TDA_status(TDA3, 1);
-	delay(4000);
+
 	set_TDA_status(TDA4, 1);
 	delay(4000);
 	set_TDA_status(TDA5, 1);
 	delay(4000);
 	set_TDA_status(TDA6, 1);
 	delay(4000);
-
+	set_TDA_status(TDA3, 1);
 	delay(4000);
+	delay(40000); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
+
 	tda5340_get_serial_number(TDA6);
 	tda5340_get_serial_number(TDA6);
 	tda5340_get_serial_number(TDA6);
