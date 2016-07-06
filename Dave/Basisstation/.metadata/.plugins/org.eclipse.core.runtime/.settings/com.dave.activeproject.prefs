@@ -1,3 +1,3 @@
-com.ifx.xc800.ActiveProject=USBLIB_GENERICHID_XMC45
-com.ifx.xc800.Old_ActiveProject=USBLIB_WINUSB_XMC45
+com.ifx.xc800.ActiveProject=USBLIB_VIRTUALSERIAL_XMC45
+com.ifx.xc800.Old_ActiveProject=Basisstation
 eclipse.preferences.version=1
