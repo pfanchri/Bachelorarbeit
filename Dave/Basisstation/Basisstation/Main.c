@@ -6,53 +6,10 @@
  */
 #include "Header_general.h" //including all Header files
 
-// ISR für TDA1  (ERU1 OGU0 IRQ)
-extern void ERU1_0_IRQHandler(void) {
-	// LED toggle
-	led_on(LED2);
-}
-// ISR für TDA2  (ERU0 OGU0 IRQ)
-extern void ERU0_0_IRQHandler(void) {
-	// LED toggle
-	led_on(LED3);
-}
-// ISR für TDA3 + TDA6  (ERU0 OGU1 IRQ)
-extern void ERU0_1_IRQHandler(void) {
-	// LED toggle
-
-	//Check which Intterrupt has occured
-	uint32_t status_tda3 = XMC_GPIO_GetInput(PORT_PP2_TDA_3, PIN_PP2_TDA_3);
-	uint32_t status_tda6 = XMC_GPIO_GetInput(PORT_PP2_TDA_6, PIN_PP2_TDA_6);
-	if (status_tda3 == 0 && status_tda6 != 0) {
-		led_on(LED4);
-	} else if (status_tda6 == 0 && status_tda3 != 0) {
-		led_on(LED7);
-	} else if (status_tda6 == 0 && status_tda3 == 0) {
-		led_off(LED1);
-//		led_on(LED4);
-//		led_on(LED7);
-	}
-
-}
-// ISR für TDA4  (ERU1 OGU1 IRQ)
-extern void ERU1_1_IRQHandler(void) {
-	// LED toggle
-	led_on(LED5);
-}
-// ISR für TDA5  (ERU0 OGU2 IRQ)
-extern void ERU0_2_IRQHandler(void) {
-	// LED toggle
-	led_on(LED6);
-}
-//// ISR für TDA6  (ERU1 OGU0 IRQ)
-//extern void ERU0_3_IRQHandler(void) {
-//	// LED toggle
-//	led_on(LED7);
-//}
-
 int main(void) {
 
 	init();
+	USB_Init(); //for virt. COM Port
 
 	spi_init(spi_master_ch);
 //	tda5340_gpio_init(TDA1);
@@ -93,7 +50,43 @@ int main(void) {
 
 	tda5340_get_serial_number(TDA6);
 	tda5340_get_serial_number(TDA6);
-	tda5340_get_serial_number(TDA6);
+
+	tda5340_get_serial_number(TDA4);
+
+
+	COM_send_int_as_string(11111);
+
+
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Serial Number TDA1\r\n", 20);
+
+	COM_send_int_as_string(tda5340_get_serial_number(TDA1));CDC_Device_SendData(&VirtualSerial_CDC_Interface, "\r\n", 2);
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Serial Number TDA2\r\n", 20);
+
+	COM_send_int_as_string(tda5340_get_serial_number(TDA2));CDC_Device_SendData(&VirtualSerial_CDC_Interface, "\r\n", 2);
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Serial Number TDA3\r\n", 20);
+
+	COM_send_int_as_string(tda5340_get_serial_number(TDA3));CDC_Device_SendData(&VirtualSerial_CDC_Interface, "\r\n", 2);
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Serial Number TDA4\r\n", 20);
+
+	COM_send_int_as_string(tda5340_get_serial_number(TDA4));CDC_Device_SendData(&VirtualSerial_CDC_Interface, "\r\n", 2);
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Serial Number TDA5\r\n", 20);
+
+	COM_send_int_as_string(tda5340_get_serial_number(TDA5));CDC_Device_SendData(&VirtualSerial_CDC_Interface, "\r\n", 2);
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Serial Number TDA6\r\n", 20);
+
+	COM_send_int_as_string(tda5340_get_serial_number(TDA6));CDC_Device_SendData(&VirtualSerial_CDC_Interface, "\r\n", 2);
+
+	COM_send_int_as_string(99999);
+	COM_send_int_as_string(99999);
+	COM_send_int_as_string(99999);
+
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Hello, World! TEST\n", 19);
+
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "TESTo, World! TEST\n", 19);
+
+
+
+	CDC_Device_USBTask(&VirtualSerial_CDC_Interface);
 
 //	set_TDA_status(TDA_ALL, 0);
 //	set_TDA_status(TDA_ALL, 1);

@@ -75,12 +75,12 @@ int main(void)
 
   while (1)
   {
-	/* Check if data received */
-	Bytes = CDC_Device_BytesReceived(&VirtualSerial_CDC_Interface);
-
-    if(Bytes)
-    {
-    	uint16_t i = CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
+//	/* Check if data received */
+//	Bytes = CDC_Device_BytesReceived(&VirtualSerial_CDC_Interface);
+//
+//    if(Bytes)
+//    {
+//    	uint16_t i = CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
     	char string[] = "Hello, World! TEST\n";
 
       /* Send data back to the host */
@@ -88,18 +88,18 @@ int main(void)
 
     	CDC_Device_SendData(&VirtualSerial_CDC_Interface, &string, 30);
      //CDC_Device_SendByte(&VirtualSerial_CDC_Interface, i);
-//      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, i);
-//      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, 100);
-//      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, 101);
-//      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, 102);
-//      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, 103);
-//
+     // CDC_Device_SendByte(&VirtualSerial_CDC_Interface, i);
+      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, 100);
+      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, 101);
+      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, 102);
+      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, 103);
+
 //      for (int var = 0; var < 14; ++var) {
 //		      CDC_Device_SendByte(&VirtualSerial_CDC_Interface, string[var]);
 //
 //	}
-
-    }
+//
+//    }
 
     CDC_Device_USBTask(&VirtualSerial_CDC_Interface);
   }

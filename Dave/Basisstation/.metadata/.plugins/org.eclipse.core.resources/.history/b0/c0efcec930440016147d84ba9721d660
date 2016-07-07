@@ -1,0 +1,160 @@
+   1              	 .syntax unified
+   2              	 .cpu cortex-m4
+   3              	 .eabi_attribute 27,3
+   4              	 .fpu fpv4-sp-d16
+   5              	 .eabi_attribute 20,1
+   6              	 .eabi_attribute 21,1
+   7              	 .eabi_attribute 23,3
+   8              	 .eabi_attribute 24,1
+   9              	 .eabi_attribute 25,1
+  10              	 .eabi_attribute 26,1
+  11              	 .eabi_attribute 30,6
+  12              	 .eabi_attribute 34,1
+  13              	 .eabi_attribute 18,4
+  14              	 .thumb
+  15              	 .file "COMtransmit.c"
+  16              	 .text
+  17              	.Ltext0:
+  18              	 .cfi_sections .debug_frame
+  19              	 .global clock_config
+  20              	 .section .rodata.clock_config,"a",%progbits
+  21              	 .align 2
+  24              	clock_config:
+  25 0000 50       	 .byte 80
+  26 0001 02       	 .byte 2
+  27 0002 04       	 .byte 4
+  28 0003 01       	 .byte 1
+  29 0004 0000     	 .short 0
+  30 0006 01       	 .byte 1
+  31 0007 00       	 .space 1
+  32 0008 00       	 .byte 0
+  33 0009 000000   	 .space 3
+  34 000c 00000100 	 .word 65536
+  35 0010 01       	 .byte 1
+  36 0011 01       	 .byte 1
+  37 0012 01       	 .byte 1
+  38 0013 01       	 .byte 1
+  39              	 .section .text.SystemCoreClockSetup,"ax",%progbits
+  40              	 .align 2
+  41              	 .global SystemCoreClockSetup
+  42              	 .thumb
+  43              	 .thumb_func
+  45              	SystemCoreClockSetup:
+  46              	.LFB292:
+  47              	 .file 1 "../Libraries/VirtualCOMPort/COMtransmit.c"
+   1:../Libraries/VirtualCOMPort/COMtransmit.c **** /*
+   2:../Libraries/VirtualCOMPort/COMtransmit.c ****  * COMtransmit.c
+   3:../Libraries/VirtualCOMPort/COMtransmit.c ****  *
+   4:../Libraries/VirtualCOMPort/COMtransmit.c ****  *  Created on: Jul 7, 2016
+   5:../Libraries/VirtualCOMPort/COMtransmit.c ****  *      Author: student06
+   6:../Libraries/VirtualCOMPort/COMtransmit.c ****  */
+   7:../Libraries/VirtualCOMPort/COMtransmit.c **** #include "Header_general.h" //including all Header files
+   8:../Libraries/VirtualCOMPort/COMtransmit.c **** 
+   9:../Libraries/VirtualCOMPort/COMtransmit.c **** 
+  10:../Libraries/VirtualCOMPort/COMtransmit.c **** /* Clock configuration */
+  11:../Libraries/VirtualCOMPort/COMtransmit.c **** XMC_SCU_CLOCK_CONFIG_t clock_config =
+  12:../Libraries/VirtualCOMPort/COMtransmit.c **** {
+  13:../Libraries/VirtualCOMPort/COMtransmit.c ****   .syspll_config.p_div = 2,
+  14:../Libraries/VirtualCOMPort/COMtransmit.c ****   .syspll_config.n_div = 80,
+  15:../Libraries/VirtualCOMPort/COMtransmit.c ****   .syspll_config.k_div = 4,
+  16:../Libraries/VirtualCOMPort/COMtransmit.c ****   .syspll_config.mode = XMC_SCU_CLOCK_SYSPLL_MODE_NORMAL,
+  17:../Libraries/VirtualCOMPort/COMtransmit.c ****   .syspll_config.clksrc = XMC_SCU_CLOCK_SYSPLLCLKSRC_OSCHP,
+  18:../Libraries/VirtualCOMPort/COMtransmit.c ****   .enable_oschp = true,
+  19:../Libraries/VirtualCOMPort/COMtransmit.c ****   .calibration_mode = XMC_SCU_CLOCK_FOFI_CALIBRATION_MODE_FACTORY,
+  20:../Libraries/VirtualCOMPort/COMtransmit.c ****   .fsys_clksrc = XMC_SCU_CLOCK_SYSCLKSRC_PLL,
+  21:../Libraries/VirtualCOMPort/COMtransmit.c ****   .fsys_clkdiv = 1,
+  22:../Libraries/VirtualCOMPort/COMtransmit.c ****   .fcpu_clkdiv = 1,
+  23:../Libraries/VirtualCOMPort/COMtransmit.c ****   .fccu_clkdiv = 1,
+  24:../Libraries/VirtualCOMPort/COMtransmit.c ****   .fperipheral_clkdiv = 1
+  25:../Libraries/VirtualCOMPort/COMtransmit.c **** };
+  26:../Libraries/VirtualCOMPort/COMtransmit.c **** 
+  27:../Libraries/VirtualCOMPort/COMtransmit.c **** 
+  28:../Libraries/VirtualCOMPort/COMtransmit.c **** void SystemCoreClockSetup(void)
+  29:../Libraries/VirtualCOMPort/COMtransmit.c **** {
+  48              	 .loc 1 29 0
+  49              	 .cfi_startproc
+  50              	 
+  51              	 
+  52 0000 80B5     	 push {r7,lr}
+  53              	.LCFI0:
+  54              	 .cfi_def_cfa_offset 8
+  55              	 .cfi_offset 7,-8
+  56              	 .cfi_offset 14,-4
+  57 0002 00AF     	 add r7,sp,#0
+  58              	.LCFI1:
+  59              	 .cfi_def_cfa_register 7
+  30:../Libraries/VirtualCOMPort/COMtransmit.c ****   /* Setup settings for USB clock */
+  31:../Libraries/VirtualCOMPort/COMtransmit.c ****   XMC_SCU_CLOCK_Init(&clock_config);
+  60              	 .loc 1 31 0
+  61 0004 0A48     	 ldr r0,.L2
+  62 0006 FFF7FEFF 	 bl XMC_SCU_CLOCK_Init
+  32:../Libraries/VirtualCOMPort/COMtransmit.c **** 
+  33:../Libraries/VirtualCOMPort/COMtransmit.c ****   XMC_SCU_CLOCK_EnableUsbPll();
+  63              	 .loc 1 33 0
+  64 000a FFF7FEFF 	 bl XMC_SCU_CLOCK_EnableUsbPll
+  34:../Libraries/VirtualCOMPort/COMtransmit.c ****   XMC_SCU_CLOCK_StartUsbPll(2, 64);
+  65              	 .loc 1 34 0
+  66 000e 0220     	 movs r0,#2
+  67 0010 4021     	 movs r1,#64
+  68 0012 FFF7FEFF 	 bl XMC_SCU_CLOCK_StartUsbPll
+  35:../Libraries/VirtualCOMPort/COMtransmit.c ****   XMC_SCU_CLOCK_SetUsbClockDivider(4);
+  69              	 .loc 1 35 0
+  70 0016 0420     	 movs r0,#4
+  71 0018 FFF7FEFF 	 bl XMC_SCU_CLOCK_SetUsbClockDivider
+  36:../Libraries/VirtualCOMPort/COMtransmit.c ****   XMC_SCU_CLOCK_SetUsbClockSource(XMC_SCU_CLOCK_USBCLKSRC_USBPLL);
+  72              	 .loc 1 36 0
+  73 001c 0020     	 movs r0,#0
+  74 001e FFF7FEFF 	 bl XMC_SCU_CLOCK_SetUsbClockSource
+  37:../Libraries/VirtualCOMPort/COMtransmit.c ****   XMC_SCU_CLOCK_EnableClock(XMC_SCU_CLOCK_USB);
+  75              	 .loc 1 37 0
+  76 0022 0120     	 movs r0,#1
+  77 0024 FFF7FEFF 	 bl XMC_SCU_CLOCK_EnableClock
+  38:../Libraries/VirtualCOMPort/COMtransmit.c **** 
+  39:../Libraries/VirtualCOMPort/COMtransmit.c ****   SystemCoreClockUpdate();
+  78              	 .loc 1 39 0
+  79 0028 FFF7FEFF 	 bl SystemCoreClockUpdate
+  40:../Libraries/VirtualCOMPort/COMtransmit.c **** }
+  80              	 .loc 1 40 0
+  81 002c 80BD     	 pop {r7,pc}
+  82              	.L3:
+  83 002e 00BF     	 .align 2
+  84              	.L2:
+  85 0030 00000000 	 .word clock_config
+  86              	 .cfi_endproc
+  87              	.LFE292:
+  89              	 .global Bytes
+  90              	 .section .bss.Bytes,"aw",%nobits
+  91              	 .align 1
+  94              	Bytes:
+  95 0000 0000     	 .space 2
+  96              	 .text
+  97              	.Letext0:
+  98              	 .file 2 "c:\\davev4-64bit\\dave-4.2.6\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\machine\\_default_types.h"
+  99              	 .file 3 "c:\\davev4-64bit\\dave-4.2.6\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\stdint.h"
+ 100              	 .file 4 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include/XMC4500.h"
+ 101              	 .file 5 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation\\Libraries\\XMCLib\\inc/xmc_usic.h"
+ 102              	 .file 6 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation\\Libraries\\XMCLib\\inc/xmc_usbd_regs.h"
+ 103              	 .file 7 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation\\Libraries\\XMCLib\\inc/xmc4_scu.h"
+ 104              	 .file 8 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation\\Libraries\\XMCLib\\inc/xmc_usbd.h"
+ 105              	 .file 9 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation/Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.h"
+ 106              	 .file 10 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation/Libraries/CMSIS/Include/core_cm4.h"
+ 107              	 .file 11 "D:\\Bachelorarbeit\\Dave\\Basisstation\\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include/system_XMC4500.h"
+DEFINED SYMBOLS
+                            *ABS*:00000000 COMtransmit.c
+    {standard input}:24     .rodata.clock_config:00000000 clock_config
+    {standard input}:21     .rodata.clock_config:00000000 $d
+    {standard input}:40     .text.SystemCoreClockSetup:00000000 $t
+    {standard input}:45     .text.SystemCoreClockSetup:00000000 SystemCoreClockSetup
+    {standard input}:85     .text.SystemCoreClockSetup:00000030 $d
+    {standard input}:94     .bss.Bytes:00000000 Bytes
+    {standard input}:91     .bss.Bytes:00000000 $d
+                     .debug_frame:00000010 $d
+
+UNDEFINED SYMBOLS
+XMC_SCU_CLOCK_Init
+XMC_SCU_CLOCK_EnableUsbPll
+XMC_SCU_CLOCK_StartUsbPll
+XMC_SCU_CLOCK_SetUsbClockDivider
+XMC_SCU_CLOCK_SetUsbClockSource
+XMC_SCU_CLOCK_EnableClock
+SystemCoreClockUpdate

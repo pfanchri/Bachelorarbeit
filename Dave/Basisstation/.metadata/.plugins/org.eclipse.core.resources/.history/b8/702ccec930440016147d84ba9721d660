@@ -1,0 +1,309 @@
+Libraries/VirtualCOMPort/COMtransmit.o \
+ Libraries/VirtualCOMPort/COMtransmit.d Libraries/VirtualCOMPort/COMtransmit.o: \
+ ../Libraries/VirtualCOMPort/COMtransmit.c \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Header_general.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include/XMC4500.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/core_cm4.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/core_cmInstr.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/cmsis_gcc.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/core_cmFunc.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/core_cmSimd.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include/system_XMC4500.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_gpio.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_common.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_device.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_gpio.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_gpio_map.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_usic.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_usic_map.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_spi.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_usic.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_eru.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_eru_map.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/SPI/spi.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/SPI/portmakros.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/TDA5340-C/tda5340.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CRC/crcchk.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/VirtualSerial.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/Descriptors.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/USB.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/Common.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/Architectures.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/BoardTypes.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/ArchitectureSpecific.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/CompilerSpecific.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/Attributes.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_common.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/Endianness.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBMode.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBTask.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBMode.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBController.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_usbd.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_usbd_regs.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_scu.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_scu.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbmode.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\events.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\USBMode.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbtask.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbinterrupt.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\device.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\StdDescriptors.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\Events.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\USBInterrupt.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\Endpoint.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\XMC4000/Endpoint_XMC4000.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbtask.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbinterrupt.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbcontroller.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\XMC4000/Device_XMC4000.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\stddescriptors.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\endpoint.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\endpoint.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\devicestandardreq.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\StdRequestType.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\USBTask.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\USBController.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\endpointstream.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\XMC4000/EndpointStream_XMC4000.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbmode.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/Events.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/StdRequestType.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/StdDescriptors.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/DeviceStandardReq.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/Events.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/StdDescriptors.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBController.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/Device.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/Endpoint.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/DeviceStandardReq.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/EndpointStream.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/CDCClass.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbmode.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\usb.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\cdcclasscommon.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\stddescriptors.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/HIDClass.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\hidclasscommon.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\HIDParser.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\HIDReportData.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\HIDClassCommon.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/MassStorageClass.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.h \
+ d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\massstorageclasscommon.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/TDA.h \
+ D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Led.h
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Header_general.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include/XMC4500.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/core_cm4.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/core_cmInstr.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/cmsis_gcc.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/core_cmFunc.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include/core_cmSimd.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include/system_XMC4500.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_gpio.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_common.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_device.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_gpio.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_gpio_map.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_usic.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_usic_map.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_spi.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_usic.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_eru.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_eru_map.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/SPI/spi.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/SPI/portmakros.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/TDA5340-C/tda5340.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CRC/crcchk.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/VirtualSerial.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/Descriptors.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/USB.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/Common.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/Architectures.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/BoardTypes.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/ArchitectureSpecific.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/CompilerSpecific.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/Attributes.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_common.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Common/Endianness.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBMode.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBTask.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBMode.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBController.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_usbd.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_usbd_regs.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_scu.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc4_scu.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbmode.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\events.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\USBMode.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbtask.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbinterrupt.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\device.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\StdDescriptors.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\Events.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\USBInterrupt.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\Endpoint.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\XMC4000/Endpoint_XMC4000.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbtask.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbinterrupt.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbcontroller.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\XMC4000/Device_XMC4000.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\stddescriptors.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\endpoint.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\endpoint.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\devicestandardreq.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\StdRequestType.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\USBTask.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\USBController.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\endpointstream.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\XMC4000/EndpointStream_XMC4000.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbmode.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/Events.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/StdRequestType.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/StdDescriptors.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/DeviceStandardReq.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/Events.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/StdDescriptors.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/USBController.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/Device.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/Endpoint.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/DeviceStandardReq.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Core/EndpointStream.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/CDCClass.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\usbmode.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\usb.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\cdcclasscommon.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\core\stddescriptors.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/HIDClass.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\hidclasscommon.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\HIDParser.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\common\common.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\HIDReportData.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\HIDClassCommon.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/MassStorageClass.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.h:
+
+d:\bachelorarbeit\dave\basisstation\basisstation\libraries\virtualcomport\usb\class\common\massstorageclasscommon.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/TDA.h:
+
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Led.h:

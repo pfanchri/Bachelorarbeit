@@ -1,103 +1,11 @@
-12:15:21 **** Build of configuration Debug for project USBLIB_VIRTUALSERIAL_XMC45 ****
+12:53:21 **** Build of configuration Debug for project USBLIB_VIRTUALSERIAL_XMC45 ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
-'Building file: ../Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.d" -MT"Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.d Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.o" "../Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Core/XMC4000/Endpoint_XMC4000.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.d" -MT"Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.d Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.o" "../Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Core/XMC4000/EndpointStream_XMC4000.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.d" -MT"Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.d Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.o" "../Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Core/ConfigDescriptors.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.d" -MT"Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.d Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.o" "../Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Core/XMC4000/USBController_XMC4000.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Core/Events.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Core/Events.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Core/Events.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Core/Events.d" -MT"Libraries/VirtualCOMPort/USB/Core/Events.d Libraries/VirtualCOMPort/USB/Core/Events.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Core/Events.o" "../Libraries/VirtualCOMPort/USB/Core/Events.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Core/Events.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Core/HostStandardReq.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Core/HostStandardReq.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Core/HostStandardReq.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Core/HostStandardReq.d" -MT"Libraries/VirtualCOMPort/USB/Core/HostStandardReq.d Libraries/VirtualCOMPort/USB/Core/HostStandardReq.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Core/HostStandardReq.o" "../Libraries/VirtualCOMPort/USB/Core/HostStandardReq.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Core/HostStandardReq.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Common/memcpy.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Common/memcpy.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Common/memcpy.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Common/memcpy.d" -MT"Libraries/VirtualCOMPort/USB/Common/memcpy.d Libraries/VirtualCOMPort/USB/Common/memcpy.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Common/memcpy.o" "../Libraries/VirtualCOMPort/USB/Common/memcpy.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Common/memcpy.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Core/USBTask.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Core/USBTask.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Core/USBTask.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Core/USBTask.d" -MT"Libraries/VirtualCOMPort/USB/Core/USBTask.d Libraries/VirtualCOMPort/USB/Core/USBTask.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Core/USBTask.o" "../Libraries/VirtualCOMPort/USB/Core/USBTask.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Core/USBTask.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.d" -MT"Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.d Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.o" "../Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Class/Device/CDCClassDevice.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.d" -MT"Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.d Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.o" "../Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Class/Device/MassStorageClassDevice.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.d" -MT"Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.d Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.o" "../Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Class/Device/HIDClassDevice.c'
-
-'Building file: ../Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.d" -MT"Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.d Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.o" "../Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.c"
-'Finished building: ../Libraries/VirtualCOMPort/USB/Class/Common/HIDParser.c'
-
-'Building file: ../Libraries/VirtualCOMPort/Descriptors.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/Descriptors.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/Descriptors.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/Descriptors.d" -MT"Libraries/VirtualCOMPort/Descriptors.d Libraries/VirtualCOMPort/Descriptors.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/Descriptors.o" "../Libraries/VirtualCOMPort/Descriptors.c"
-'Finished building: ../Libraries/VirtualCOMPort/Descriptors.c'
-
-'Building file: ../main.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "main.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "main.o" "../main.c"
-../main.c: In function 'main':
-'Finished building: ../main.c'
-../main.c:83:15: warning: unused variable 'i' [-Wunused-variable]
-
-      uint16_t i = CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
-               ^
-'Building file: ../Libraries/VirtualCOMPort/VirtualSerial.c'
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/VirtualSerial.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45" -I"D:\Bachelorarbeit\Dave\Basisstation\USBLIB_VIRTUALSERIAL_XMC45\Libraries" -O1 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/VirtualSerial.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/VirtualSerial.d" -MT"Libraries/VirtualCOMPort/VirtualSerial.d Libraries/VirtualCOMPort/VirtualSerial.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/VirtualSerial.o" "../Libraries/VirtualCOMPort/VirtualSerial.c"
-'Finished building: ../Libraries/VirtualCOMPort/VirtualSerial.c'
-
-'Building target: USBLIB_VIRTUALSERIAL_XMC45.elf'
-'Invoking: ARM-GCC C Linker'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,USBLIB_VIRTUALSERIAL_XMC45.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "USBLIB_VIRTUALSERIAL_XMC45.elf" "@objects.rsp"  -lm
-'Finished building target: USBLIB_VIRTUALSERIAL_XMC45.elf'
-
-'Invoking: ARM-GCC Create Flash Image'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "USBLIB_VIRTUALSERIAL_XMC45.elf"  "USBLIB_VIRTUALSERIAL_XMC45.hex"
-'Finished building: USBLIB_VIRTUALSERIAL_XMC45.hex'
-
 'Invoking: ARM-GCC Print Size'
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "USBLIB_VIRTUALSERIAL_XMC45.elf"
    text	   data	    bss	    dec	    hex	filename
-  11172	     48	   7276	  18496	   4840	USBLIB_VIRTUALSERIAL_XMC45.elf
+  10980	     48	   7276	  18304	   4780	USBLIB_VIRTUALSERIAL_XMC45.elf
 'Finished building: USBLIB_VIRTUALSERIAL_XMC45.siz'
 
-'Invoking: ARM-GCC Create Listing'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "USBLIB_VIRTUALSERIAL_XMC45.elf" > "USBLIB_VIRTUALSERIAL_XMC45.lst"
-'Finished building: USBLIB_VIRTUALSERIAL_XMC45.lst'
 
-
-12:15:23 Build Finished (took 1s.468ms)
+12:53:21 Build Finished (took 313ms)
 

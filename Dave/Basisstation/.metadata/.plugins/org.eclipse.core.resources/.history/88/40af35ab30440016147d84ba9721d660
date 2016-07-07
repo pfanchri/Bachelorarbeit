@@ -1,0 +1,14 @@
+/*
+ * COMtransmit.h
+ *
+ *  Created on: Jul 7, 2016
+ *      Author: student06
+ */
+
+#ifndef LIBRARIES_VIRTUALCOMPORT_COMTRANSMIT_H_
+#define LIBRARIES_VIRTUALCOMPORT_COMTRANSMIT_H_
+
+void SystemCoreClockSetup(void);
+
+
+#endif /* LIBRARIES_VIRTUALCOMPORT_COMTRANSMIT_H_ */

@@ -20,6 +20,9 @@
 #include "Libraries/SPI/portmakros.h"
 #include "Libraries/TDA5340-C/tda5340.h"
 #include "Libraries/CRC/crcchk.h"
+#include "Libraries/VirtualCOMPort/VirtualSerial.h"
+#include "Libraries/VirtualCOMPort/COMtransfer.h"
+
 
 
 #include <TDA.h>
