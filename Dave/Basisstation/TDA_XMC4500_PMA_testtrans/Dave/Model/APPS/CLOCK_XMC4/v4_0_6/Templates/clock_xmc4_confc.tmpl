@@ -1,0 +1,199 @@
+package Model.APPS.CLOCK_XMC4.v4_0_6.Templates;
+
+import Model.APPS.CLOCK_XMC4.v4_0_6.CLOCK_XMC4
+
+out.print("""
+/**
+ * @cond
+ ***********************************************************************************************************************
+ *
+ * Copyright (c) 2015, Infineon Technologies AG
+ * All rights reserved.                        
+ *                                             
+ * Redistribution and use in source and binary forms, with or without modification,are permitted provided that the           
+ * following conditions are met:   
+ *                                                                              
+ *   Redistributions of source code must retain the above copyright notice, this list of conditions and the  following   
+ *   disclaimer.                        
+ * 
+ *   Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the    
+ *   following disclaimer in the documentation and/or other materials provided with the distribution.     
+ *                         
+ *   Neither the name of the copyright holders nor the names of its contributors may be used to endorse or promote 
+ *   products derived from this software without specific prior written permission. 
+ *                                             
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,  
+ * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE   
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE  FOR ANY DIRECT, INDIRECT, INCIDENTAL,  
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR        
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,      
+ * WHETHER IN CONTRACT, STRICT LIABILITY,OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT  OF THE   
+ * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.    
+ *                                                                              
+ * To improve the quality of the software, users are encouraged to share modifications, enhancements or bug fixes       
+ * with Infineon Technologies AG (dave@infineon.com).        
+ ***********************************************************************************************************************
+ *
+ * Change History
+ * --------------
+ * 2015-02-16:
+ *     - Initial version for DAVEv4. <BR>
+ * 2015-05-08:
+ *     - No functional change; Updated to adhere latest guidelines <br>
+ * @endcond 
+ *
+ */
+
+/***********************************************************************************************************************
+ * HEADER FILES                                                                                                      
+ **********************************************************************************************************************/
+#include "clock_xmc4.h"
+""");
+
+ // Variable declaration
+ String appInst = null
+
+//************************************************************************************
+//**    Conversion of GUI values into corresponding LLD Enumeration values   ***
+//************************************************************************************
+ Map sys_clk_src            = ["Main PLL Clock":"XMC_SCU_CLOCK_SYSCLKSRC_PLL", "Internal Fast Oscillator":"XMC_SCU_CLOCK_SYSCLKSRC_OFI"] //gcombo_sysclksrc
+ Map mainpll_mode           = ["Normal Mode":"XMC_SCU_CLOCK_SYSPLL_MODE_NORMAL","Prescaler Mode":"XMC_SCU_CLOCK_SYSPLL_MODE_PRESCALAR"] //gcombo_mainpllset
+ Map pll_clk_src            = ["External Crystal High Precision Oscillator":"XMC_SCU_CLOCK_SYSPLLCLKSRC_OSCHP","Internal Fast Oscillator":"XMC_SCU_CLOCK_SYSPLLCLKSRC_OFI"]//gcombo_pllclksrc
+ Map wdt_clk_src            = ["Internal Fast Oscillator":"XMC_SCU_CLOCK_WDTCLKSRC_OFI","Standby Clock":"XMC_SCU_CLOCK_WDTCLKSRC_STDBY", "Main PLL Clock":"XMC_SCU_CLOCK_WDTCLKSRC_PLL"]//gcombo_pllclksrc
+ Map rtc_clk_src            = ["External Crystal Ultra Low Power Oscillator":"XMC_SCU_HIB_RTCCLKSRC_ULP","Internal Slow Oscillator":"XMC_SCU_HIB_RTCCLKSRC_OSI"]//gcombo_pllclksrc
+ Map standby_clk_src        = ["External Crystal Ultra Low Power Oscillator":"XMC_SCU_HIB_STDBYCLKSRC_OSCULP","Internal Slow Oscillator":"XMC_SCU_HIB_STDBYCLKSRC_OSI"]//gcombo_pllclksrc
+ Map backup_clk_trimming_sel = ["Automatic Calibration Using Standby Clock":"XMC_SCU_CLOCK_FOFI_CALIBRATION_MODE_AUTOMATIC","Factory Calibration":"XMC_SCU_CLOCK_FOFI_CALIBRATION_MODE_FACTORY"] //gcombo_backupclktrim
+ Map usb_clk_src            = ["USB PLL Clock":"XMC_SCU_CLOCK_USBCLKSRC_USBPLL","Main PLL Clock":"XMC_SCU_CLOCK_USBCLKSRC_SYSPLL"]//gcombo_usbclksrc
+ Map ext_clkout_src         = ["System Clock":"XMC_SCU_CLOCK_EXTOUTCLKSRC_SYS","USB PLL Clock":"XMC_SCU_CLOCK_EXTOUTCLKSRC_USB","Main PLL Clock":"XMC_SCU_CLOCK_EXTOUTCLKSRC_PLL", "Standby Clock":"XMC_SCU_CLOCK_EXTOUTCLKSRC_STDBY"] //gcombo_extclkoutsrc
+ int ext_clkout_pinmode_index
+ List ext_clkout_pinalt_func  = ["XMC_GPIO_MODE_OUTPUT_PUSH_PULL", "XMC_GPIO_MODE_OUTPUT_PUSH_PULL_ALT1", "XMC_GPIO_MODE_OUTPUT_PUSH_PULL_ALT2", "XMC_GPIO_MODE_OUTPUT_PUSH_PULL_ALT3", "XMC_GPIO_MODE_OUTPUT_PUSH_PULL_ALT4", "XMC_GPIO_MODE_OUTPUT_PUSH_PULL_ALT5", "XMC_GPIO_MODE_OUTPUT_PUSH_PULL_ALT6", "XMC_GPIO_MODE_OUTPUT_PUSH_PULL_ALT7"]
+ List ext_clkout_pinstrength = ["XMC_GPIO_OUTPUT_STRENGTH_STRONG_SHARP_EDGE", "XMC_GPIO_OUTPUT_STRENGTH_STRONG_MEDIUM_EDGE", "XMC_GPIO_OUTPUT_STRENGTH_STRONG_SOFT_EDGE", "XMC_GPIO_OUTPUT_STRENGTH_STRONG_SLOW_EDGE", "XMC_GPIO_OUTPUT_STRENGTH_MEDIUM", "XMC_GPIO_OUTPUT_STRENGTH_WEAK"]
+ int hwsel_hw
+
+  // To identify the number of instances created in the project
+ for (CLOCK_XMC4 Instance : appInstancesList) {
+  appInst= Instance.getInstanceLabel()
+  //******************************************************
+  // Local variables which holds GUI check box actions
+  //******************************************************
+  // Calculation for osc_val derived from external oscillator frequency
+  float osc_val = ((Instance.gfloat_extclkoscfreq.value * 1000000) / (2500000))-1
+  int cpu_divider = (Instance.gint_cpuclkdiv.value)
+  int capcom_divider = (Instance.gint_ccufreqdiv.value)
+  int ebu_divider = (Instance.gint_ebufreqdiv.value)
+  int peripheral_clk_divider = (Instance.gint_peribusdiv.value)
+  int ext_clkout_enable = ((Instance.gcheck_extclkout.value)?1:0)
+  float osc_freq = ((Instance.gfloat_extclkoscfreq.value) * 1000000)
+	
+if(ext_clkout_enable == 1){
+out.print("""
+/**********************************************************************************************************************
+* DATA STRUCTURES
+**********************************************************************************************************************/
+const XMC_GPIO_CONFIG_t ${appInst}_extclk_config = {
+  .mode = ${ext_clkout_pinalt_func.get((int)Instance.hwres_extclkpin.getRegValue("", "iocr_pcr"))},
+  .output_strength = XMC_GPIO_OUTPUT_STRENGTH_STRONG_SHARP_EDGE
+};
+""");
+
+ext_clkout_pinmode_index = (int) Instance.hwres_extclkpin.getRegValue("", "iocr_oe")
+if(ext_clkout_pinmode_index == 1)
+{
+	hwsel_hw = (int) Instance.hwres_extclkpin.getRegValue("", "hwsel_hw")
+}
+}
+
+out.print("""
+const XMC_SCU_CLOCK_CONFIG_t ${appInst}_CONFIG =
+{
+  .syspll_config.n_div = ${Instance.gint_mainpllndiv.value}U,
+  .syspll_config.p_div = ${Instance.gint_mainpllpdiv.value}U,
+""");
+if(Instance.gcombo_mainpllset.value == "Normal Mode")
+{
+out.print("""
+  .syspll_config.k_div = ${Instance.gint_mainpllk2div.value}U,
+""");
+}
+else
+{
+out.print("""
+  .syspll_config.k_div = ${Instance.gint_mainpllk1div.value}U,
+""");
+}
+out.print("""
+  .syspll_config.mode = ${mainpll_mode.get(Instance.gcombo_mainpllset.value)},
+  .syspll_config.clksrc = ${pll_clk_src.get(Instance.gcombo_pllclksrc.value)},
+  .enable_oschp = ${(Instance.gcombo_extclkmode.value == "External Crystal Mode") && ((Instance.gcombo_pllclksrc.value == "External Crystal High Precision Oscillator") || (Instance.gcombo_usbclksrc.value == "USB PLL Clock"))},
+""");
+out.print("""
+  .enable_osculp = ${(Instance.gcombo_rtcclksrc.value == "External Crystal Ultra Low Power Oscillator") || (Instance.gcombo_standbyclksrc.value == "External Crystal Ultra Low Power Oscillator")}, 
+""");
+out.print("""
+  .calibration_mode = ${backup_clk_trimming_sel.get(Instance.gcombo_backupclktrim.value)},
+  .fstdby_clksrc = ${standby_clk_src.get(Instance.gcombo_standbyclksrc.value)},
+  .fsys_clksrc = ${sys_clk_src.get(Instance.gcombo_sysclksrc.value)},
+  .fsys_clkdiv = ${Instance.gint_sysclkdiv.value}U,
+  .fcpu_clkdiv = ${cpu_divider}U,
+  .fccu_clkdiv = ${capcom_divider}U,
+  .fperipheral_clkdiv = ${peripheral_clk_divider}U
+};
+""");
+
+out.print("""
+ /**********************************************************************************************************************
+ * API IMPLEMENTATION
+ **********************************************************************************************************************/
+/**
+* @brief  Function to initialize the Clock Tree based on UI configuration
+* @note   -
+* @param  None
+* @retval None
+*/
+void SystemCoreClockSetup(void)
+{
+""");
+if(ext_clkout_enable == 1)
+{
+out.print("""
+  XMC_SCU_CLOCK_SetExternalOutputClockSource(${ext_clkout_src.get(Instance.gcombo_extclkoutsrc.value)});
+  XMC_SCU_CLOCK_SetExternalOutputClockDivider(${Instance.gint_extclkplldiv.value}U);
+  XMC_GPIO_Init((XMC_GPIO_PORT_t *)PORT${Instance.hwres_extclkpin.getSolverUri().get(4)}_BASE, ${Instance.hwres_extclkpin.getSolverUri().get(6)}U, &${appInst}_extclk_config);
+""");
+}
+out.print("""
+  /* Initialize the SCU clock */
+  XMC_SCU_CLOCK_Init(&${appInst}_CONFIG);
+  /* RTC source clock*/
+  XMC_SCU_HIB_SetRtcClockSource(${rtc_clk_src.get(Instance.gcombo_rtcclksrc.value)});
+""");
+if(Instance.ggroup_usbfreq.visible == true)
+{
+out.print("""
+  /* USB/SDMMC source clock*/
+  XMC_SCU_CLOCK_SetUsbClockSource(${usb_clk_src.get(Instance.gcombo_usbclksrc.value)});
+  XMC_SCU_CLOCK_SetUsbClockDivider(${Instance.gint_usbdiv.value}U);
+""");
+if(Instance.gcombo_usbclksrc.value == "USB PLL Clock")
+{
+out.print("""
+  XMC_SCU_CLOCK_StartUsbPll(2U, ${Instance.gint_usbpll_ndiv.value}U);
+""");
+}
+}
+
+out.print("""
+  XMC_SCU_CLOCK_SetWdtClockSource(${wdt_clk_src.get(Instance.gcombo_wdtclksrc.value)});
+  XMC_SCU_CLOCK_SetWdtClockDivider(${Instance.ginteger_wdtclkdiv.value}U);
+""");
+if(Instance.ggroup_ebufreq.visible == true)
+{
+out.print("""
+  XMC_SCU_CLOCK_SetEbuClockDivider(${ebu_divider}U);
+""");
+}
+out.print("""
+}
+""");
+ } /* End of for loop */
+ 

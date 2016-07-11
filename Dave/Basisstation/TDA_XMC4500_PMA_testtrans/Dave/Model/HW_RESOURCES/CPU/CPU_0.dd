@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ResourceModel:Peripheral xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ResourceModel="http://www.infineon.com/Davex/Resource.ecore" name="CPU" URI="http://resources/0.1.31/peripheral/cpu/0" description="CPU" baseAddress="0xE000E000">
+  <provided xsi:type="ResourceModel:ResourceGroup" name="SYSTEM_CONTROL" URI="http://resources/0.1.31/peripheral/cpu/0/system_control">
+    <upwardMapList xsi:type="ResourceModel:HWResource" href="../../APPS/CPU_CTRL_XMC4/v4_0_4/CPU_CTRL_XMC4_0.app#//@hwResources.0"/>
+    <resourcesList name="vtor" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/vtor"/>
+    <resourcesList name="aircr" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/aircr"/>
+    <resourcesList name="scr" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/scr"/>
+    <resourcesList name="ccr" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/ccr"/>
+    <resourcesList name="shcsr" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/shcsr"/>
+    <resourcesList name="cfsr" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/cfsr"/>
+    <resourcesList name="hfsr" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/hfsr"/>
+    <resourcesList name="mmfar" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/mmfar"/>
+    <resourcesList name="bfar" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/bfar"/>
+    <resourcesList name="afsr" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/afsr"/>
+  </provided>
+  <provided xsi:type="ResourceModel:ResourceGroup" name="CCU81_0_IRQHandler" URI="http://resources/0.1.31/peripheral/cpu/0/nvic/interrupt/64">
+    <resourcesList name="iser_setena" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/iser2/setena0"/>
+    <resourcesList name="icer_clrena" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/icer2/clrena0"/>
+    <resourcesList name="ispr_setpend" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/ispr2/setpend0"/>
+    <resourcesList name="icpr_clrpend" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/icpr2/clrpend0"/>
+    <resourcesList name="iabr_active" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/iabr2/active0"/>
+    <resourcesList name="ipr_pri" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/ipr16/pri_64"/>
+    <resourcesList name="signal_in" requiredResourceUri="http://resources/0.1.31/peripheral/cpu/0/ccu81_0_irqhandler"/>
+  </provided>
+  <categoryDescription description="v0.7 - 04_10_2011 - Sheshadri - default values" name="CPU"/>
+  <addressBlock offset="0x0" size="3488" usage="registers"/>
+</ResourceModel:Peripheral>

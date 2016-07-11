@@ -1,0 +1,155 @@
+package Model.APPS.CLOCK_XMC4.v4_0_6;
+
+// Import statements
+import ifx.davex.app.manifest.*
+
+abstract class CLOCK_XMC4_GUI extends AppManifest {
+	/* Begin : UI variable section */
+	 public GImage gimage_1;
+	 public GInteger gint_sysclkdiv;
+	 public GInteger gint_cpuclkdiv;
+	 public GInteger gint_peribusdiv;
+	 public GInteger gint_ccufreqdiv;
+	 public GInteger gint_usbdiv;
+	 public GInteger ginteger_wdtclkdiv;
+	 public GInteger gint_ebufreqdiv;
+	 public GInteger gint_extclkplldiv;
+	 public GCombo gcombo_pllclksrc;
+	 public GCombo gcombo_mainpllset;
+	 public GCombo gcombo_extclkmode;
+	 public GCombo gcombo_backupclktrim;
+	 public GCombo gcombo_standbyclksrc;
+	 public GCombo gcombo_rtcclksrc;
+	 public GCombo gcombo_sysclksrc;
+	 public GCombo gcombo_usbclksrc;
+	 public GCombo gcombo_wdtclksrc;
+	 public GCombo gcombo_extclkoutsrc;
+	 public GFloat gfloat_dia_cpuclkfreq;
+	 public GFloat gfloat_dia_dmaclkfreq;
+	 public GFloat gfloat_dia_periphclkfreq;
+	 public GFloat gfloat_dia_ccuclkfreq;
+	 public GFloat gfloat_dia_usbclkfreq;
+	 public GFloat gfloat_dia_sdmmcclkfreq;
+	 public GFloat gfloat_dia_ethclkfreq;
+	 public GFloat gfloat_dia_ebuclkfreq;
+	 public GFloat gfloat_dia_wdtclkfreq;
+	 public GFloat gfloat_dia_extclkoutfreq;
+	 public GFloat gfloat_dia_usbpllclkfreq;
+	 public GFloat gfloat_dia_pllclkfreq;
+	 public GFloat gfloat_dia_oficlkfreq;
+	 public GFloat gfloat_dia_ohpclkfreq;
+	 public GFloat gfloat_dia_oscclkfreq;
+	 public GFloat gfloat_mainplldesfreq;
+	 public GFloat gfloat_mainpllactfreq;
+	 public GFloat gfloat_extclkoscfreq;
+	 public GFloat gfloat_actsysfreq;
+	 public GFloat gfloat_cpuclkfreq;
+	 public GFloat gfloat_peribusfreq;
+	 public GFloat gfloat_ccufreq;
+	 public GFloat gfloat_usbactfreq;
+	 public GFloat gfloat_wdtactfreq;
+	 public GFloat gfloat_ebufreq;
+	 public GFloat gfloat_extclkfreqact;
+	 public GString gstring_note;
+	 public GCheck gcheck_extclkout;
+	 public GLabel glabel_dia_usbclkfreq;
+	 public GLabel glabel_dia_sdmmcclkfreq;
+	 public GLabel glabel_dia_ethclkfreq;
+	 public GLabel glabel_dia_ebuclkfreq;
+	 public GLabel glabel_dia_usbpllclkfreq;
+	 public GLabel glabel_dia_ohpclkfreq;
+	 public GLabel glabel_mainplldesfreq;
+	 public GLabel glabel_mainpllactfreq;
+	 public GLabel glabel_extclkmode;
+	 public GLabel glabel_extclkoscfreq;
+	 public GLabel glabel_wdtactfreq;
+	 public GLabel glabel_ebufreqdiv;
+	 public GLabel glabel_ebufreq;
+	 public GLabel glabel_extclkoutsrc;
+	 public GLabel glabel_extclkplldiv;
+	 public GLabel glabel_extclkfreqact;
+	 public GGroup ggroup_extclk;
+	 public GGroup ggroup_standbyclkfreq;
+	 public GGroup ggroup_rtcclkfreq;
+	 public GGroup ggroup_usbfreq;
+	 public GGroup ggroup_ebufreq;
+	 public GGroup ggroup_extclkoutfreq;
+	 public GMessage gmessage_extclkoutfreq;
+
+	 public CLOCK_XMC4_GUI(DaveEnv daveEnv){
+
+	 gimage_1 = GImage(widgetName:"gimage_1", path: "doc/ClockTree.png", enabled:true, visible:true)
+	 gint_sysclkdiv = GInteger(widgetName:"gint_sysclkdiv", value:1, minValue:1, maxValue:256, enabled:true, visible:true, isMandatoryValue:false)
+	 gint_cpuclkdiv = GInteger(widgetName:"gint_cpuclkdiv", value:1, minValue:1, maxValue:2, enabled:true, visible:true, isMandatoryValue:false)
+	 gint_peribusdiv = GInteger(widgetName:"gint_peribusdiv", value:1, minValue:1, maxValue:2, enabled:true, visible:true, isMandatoryValue:false)
+	 gint_ccufreqdiv = GInteger(widgetName:"gint_ccufreqdiv", value:1, minValue:1, maxValue:2, enabled:true, visible:true, isMandatoryValue:false)
+	 gint_usbdiv = GInteger(widgetName:"gint_usbdiv", value:4, minValue:1, maxValue:8, enabled:false, visible:true, isMandatoryValue:false)
+	 ginteger_wdtclkdiv = GInteger(widgetName:"ginteger_wdtclkdiv", value:1, minValue:1, maxValue:256, enabled:true, visible:true, isMandatoryValue:false)
+	 gint_ebufreqdiv = GInteger(widgetName:"gint_ebufreqdiv", value:1, minValue:1, maxValue:64, enabled:true, visible:true, isMandatoryValue:false)
+	 gint_extclkplldiv = GInteger(widgetName:"gint_extclkplldiv", value:1, minValue:1, maxValue:512, enabled:false, visible:true, isMandatoryValue:false)
+	 gcombo_pllclksrc = GCombo(widgetName:"gcombo_pllclksrc", options:["Internal Fast Oscillator","External Crystal High Precision Oscillator"], value:"External Crystal High Precision Oscillator", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_mainpllset = GCombo(widgetName:"gcombo_mainpllset", options:["Normal Mode","Prescaler Mode"], value:"Normal Mode", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_extclkmode = GCombo(widgetName:"gcombo_extclkmode", options:["External Crystal Mode","External Clock Input Mode"], value:"External Crystal Mode", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_backupclktrim = GCombo(widgetName:"gcombo_backupclktrim", options:["Factory Calibration","Automatic Calibration Using Standby Clock"], value:"Factory Calibration", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_standbyclksrc = GCombo(widgetName:"gcombo_standbyclksrc", options:["External Crystal Ultra Low Power Oscillator","Internal Slow Oscillator"], value:"Internal Slow Oscillator", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_rtcclksrc = GCombo(widgetName:"gcombo_rtcclksrc", options:["External Crystal Ultra Low Power Oscillator","Internal Slow Oscillator"], value:"Internal Slow Oscillator", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_sysclksrc = GCombo(widgetName:"gcombo_sysclksrc", options:["Main PLL Clock","Internal Fast Oscillator"], value:"Main PLL Clock", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_usbclksrc = GCombo(widgetName:"gcombo_usbclksrc", options:["USB PLL Clock","Main PLL Clock"], value:"USB PLL Clock", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_wdtclksrc = GCombo(widgetName:"gcombo_wdtclksrc", options:["Internal Fast Oscillator","Standby Clock","Main PLL Clock"], value:"Internal Fast Oscillator", enabled:true, visible:true, isMandatoryValue:false)
+	 gcombo_extclkoutsrc = GCombo(widgetName:"gcombo_extclkoutsrc", options:["System Clock","USB PLL Clock","Main PLL Clock"], value:"System Clock", enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_cpuclkfreq = GFloat(widgetName:"gfloat_dia_cpuclkfreq", value:120, minValue:0.0, maxValue:120, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_dmaclkfreq = GFloat(widgetName:"gfloat_dia_dmaclkfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_periphclkfreq = GFloat(widgetName:"gfloat_dia_periphclkfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_ccuclkfreq = GFloat(widgetName:"gfloat_dia_ccuclkfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_usbclkfreq = GFloat(widgetName:"gfloat_dia_usbclkfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_sdmmcclkfreq = GFloat(widgetName:"gfloat_dia_sdmmcclkfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_ethclkfreq = GFloat(widgetName:"gfloat_dia_ethclkfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_ebuclkfreq = GFloat(widgetName:"gfloat_dia_ebuclkfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_wdtclkfreq = GFloat(widgetName:"gfloat_dia_wdtclkfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_extclkoutfreq = GFloat(widgetName:"gfloat_dia_extclkoutfreq", value:120, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_usbpllclkfreq = GFloat(widgetName:"gfloat_dia_usbpllclkfreq", value:48, minValue:0.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_pllclkfreq = GFloat(widgetName:"gfloat_dia_pllclkfreq", value:120, minValue:2.03125, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_oficlkfreq = GFloat(widgetName:"gfloat_dia_oficlkfreq", value:24, minValue:24.0, maxValue:24.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_ohpclkfreq = GFloat(widgetName:"gfloat_dia_ohpclkfreq", value:12, minValue:4.0, maxValue:40.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_dia_oscclkfreq = GFloat(widgetName:"gfloat_dia_oscclkfreq", value:12, minValue:4.0, maxValue:40.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_mainplldesfreq = GFloat(widgetName:"gfloat_mainplldesfreq", value:120, minValue:3.0, maxValue:120.0, enabled:true, visible:true, isMandatoryValue:false)
+	 gfloat_mainpllactfreq = GFloat(widgetName:"gfloat_mainpllactfreq", value:120, minValue:3.0, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_extclkoscfreq = GFloat(widgetName:"gfloat_extclkoscfreq", value:12, minValue:4.0, maxValue:25.0, enabled:true, visible:true, isMandatoryValue:false)
+	 gfloat_actsysfreq = GFloat(widgetName:"gfloat_actsysfreq", value:120, minValue:0.00001, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_cpuclkfreq = GFloat(widgetName:"gfloat_cpuclkfreq", value:120, minValue:0.00001, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_peribusfreq = GFloat(widgetName:"gfloat_peribusfreq", value:120, minValue:0.00001, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_ccufreq = GFloat(widgetName:"gfloat_ccufreq", value:120, minValue:0.00001, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_usbactfreq = GFloat(widgetName:"gfloat_usbactfreq", value:48, minValue:0.00001, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_wdtactfreq = GFloat(widgetName:"gfloat_wdtactfreq", value:24, minValue:0.00001, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_ebufreq = GFloat(widgetName:"gfloat_ebufreq", value:120, minValue:0.00001, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gfloat_extclkfreqact = GFloat(widgetName:"gfloat_extclkfreqact", value:120, minValue:0.00001, maxValue:120.0, enabled:false, visible:true, isMandatoryValue:false)
+	 gstring_note = GString(widgetName:"gstring_note", value:"Note: Modules shown in the image are static.  The availability of modules are specific to device", enabled:false, visible:true, isMandatoryValue:false)
+	 gcheck_extclkout = GCheck(widgetName:"gcheck_extclkout", value:false, enabled:true, visible:true)
+	 glabel_dia_usbclkfreq = GLabel(widgetName:"glabel_dia_usbclkfreq", text:"MHz", enabled:true, visible:true)
+	 glabel_dia_sdmmcclkfreq = GLabel(widgetName:"glabel_dia_sdmmcclkfreq", text:"MHz", enabled:true, visible:true)
+	 glabel_dia_ethclkfreq = GLabel(widgetName:"glabel_dia_ethclkfreq", text:"MHz", enabled:true, visible:true)
+	 glabel_dia_ebuclkfreq = GLabel(widgetName:"glabel_dia_ebuclkfreq", text:"MHz", enabled:true, visible:true)
+	 glabel_dia_usbpllclkfreq = GLabel(widgetName:"glabel_dia_usbpllclkfreq", text:"MHz", enabled:true, visible:true)
+	 glabel_dia_ohpclkfreq = GLabel(widgetName:"glabel_dia_ohpclkfreq", text:"MHz", enabled:true, visible:true)
+	 glabel_mainplldesfreq = GLabel(widgetName:"glabel_mainplldesfreq", text:"Requested PLL frequency [MHz]:", enabled:true, visible:true)
+	 glabel_mainpllactfreq = GLabel(widgetName:"glabel_mainpllactfreq", text:"Actual PLL frequency [MHz]:", enabled:true, visible:true)
+	 glabel_extclkmode = GLabel(widgetName:"glabel_extclkmode", text:"Operating mode:", enabled:true, visible:true)
+	 glabel_extclkoscfreq = GLabel(widgetName:"glabel_extclkoscfreq", text:"External clock frequency [MHz]:", enabled:true, visible:true)
+	 glabel_wdtactfreq = GLabel(widgetName:"glabel_wdtactfreq", text:"Actual frequency [MHz]:", enabled:true, visible:true)
+	 glabel_ebufreqdiv = GLabel(widgetName:"glabel_ebufreqdiv", text:"Clock divider:", enabled:true, visible:true)
+	 glabel_ebufreq = GLabel(widgetName:"glabel_ebufreq", text:"Actual frequency [MHz]:", enabled:true, visible:true)
+	 glabel_extclkoutsrc = GLabel(widgetName:"glabel_extclkoutsrc", text:"Clock source:", enabled:false, visible:true)
+	 glabel_extclkplldiv = GLabel(widgetName:"glabel_extclkplldiv", text:"Clock divider:", enabled:false, visible:true)
+	 glabel_extclkfreqact = GLabel(widgetName:"glabel_extclkfreqact", text:"Actual frequency [MHz]:", enabled:false, visible:true)
+	 ggroup_extclk = GGroup(widgetName:"ggroup_extclk", text:"High Precision Oscillator Settings", enabled:true, visible:true)
+	 ggroup_standbyclkfreq = GGroup(widgetName:"ggroup_standbyclkfreq", text:"Standby Clock (fSTDBY)", enabled:true, visible:true)
+	 ggroup_rtcclkfreq = GGroup(widgetName:"ggroup_rtcclkfreq", text:"RTC Clock (fRTC)", enabled:true, visible:true)
+	 ggroup_usbfreq = GGroup(widgetName:"ggroup_usbfreq", text:"USB Clock (fUSB) and SDMMC Clock (fSDMMC)", enabled:true, visible:true)
+	 ggroup_ebufreq = GGroup(widgetName:"ggroup_ebufreq", text:"EBU Clock (fEBU)", enabled:true, visible:true)
+	 ggroup_extclkoutfreq = GGroup(widgetName:"ggroup_extclkoutfreq", text:"External Clock (fEXT)", enabled:true, visible:true)
+	 gmessage_extclkoutfreq = GMessage(widgetName:"gmessage_extclkoutfreq", text:"The output frequency at the pin is not supported (max. 80MHz).", isError:false, visible:true)
+
+
+	 }
+	/* End : UI variable section */
+}

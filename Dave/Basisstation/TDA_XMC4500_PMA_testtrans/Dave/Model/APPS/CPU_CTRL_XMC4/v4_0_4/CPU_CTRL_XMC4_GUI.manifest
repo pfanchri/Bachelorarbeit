@@ -1,0 +1,17 @@
+package Model.APPS.CPU_CTRL_XMC4.v4_0_4;
+
+// Import statements
+import ifx.davex.app.manifest.*
+
+abstract class CPU_CTRL_XMC4_GUI extends AppManifest {
+	/* Begin : UI variable section */
+	 public GInteger gint_preemptPriorityBits;
+
+	 public CPU_CTRL_XMC4_GUI(DaveEnv daveEnv){
+
+	 gint_preemptPriorityBits = GInteger(widgetName:"gint_preemptPriorityBits", value:6, minValue:0, maxValue:6, enabled:false, visible:true, isMandatoryValue:false)
+
+
+	 }
+	/* End : UI variable section */
+}

@@ -1,0 +1,88 @@
+package Model.APPS.CPU_CTRL_XMC4.v4_0_4;
+
+/*************** Revision History **********************************************
+ Version      Date          Description 
+
+  4.0.0       16-Feb-2015   Initial version for DAVE v4
+  4.0.1       20-Apr-2015   documentation updated
+  4.0.2       16-Jun-2015   version updated for public release
+  4.0.4       02-Jul-2015   Preemption priority bits made as read-only
+*******************************************************************************/
+// Import statements
+import ifx.davex.app.manifest.*
+
+class  CPU_CTRL_XMC4 extends CPU_CTRL_XMC4_GUI {
+
+	// Note  : Following App properties are mandatory and important
+	// Begin : App property section
+	def version            = '4.0.4'
+	
+	def categoriesDescription = ["System"] 
+
+	// Minimum DAVE version required for the App
+	def minDaveVersion           = '4.0.0'
+	
+	// Keywords to search in Apps selection view
+	def keywords      = [
+		'CPU', 
+		'Exceptions', 
+		'Priority bits',
+		'all'
+	]
+	
+	def softwareIDs  = [
+		
+		"XMC4.*.*.*.*":"1.0.0"
+	]
+
+
+	def singleton     = true
+	def initProvider  = true
+	def deprecated    = false
+	def sharable      = true
+
+	// App short description 
+	def description = "Defines the number of bits assigned to preemption priority and subpriority."
+		
+	// End   : CPU property section
+	
+	// Begin : User variable section
+		
+	MVirtualResourceGroup hwres_cpu
+	GInteger gint_maxInterruptPreemptPriority = GInteger(widgetName:"gint_maxInterruptPreemptPriority")
+	GInteger gint_maxInterruptSubPriority = GInteger(widgetName:"gint_maxInterruptSubPriority")
+	
+	// End   : User variable section
+
+	public CPU_CTRL_XMC4(DaveEnv daveEnv) {
+		String family = daveEnv.project.selectedDevice.deviceId.family
+		int nvicbits = daveEnv.project.selectedDevice.nvicPrioBits
+	
+		gint_preemptPriorityBits.maxValue = [daveEnv.project.selectedDevice.nvicPrioBits, 7].min()
+		gint_preemptPriorityBits.value = [daveEnv.project.selectedDevice.nvicPrioBits, 7].min()		
+		
+		/* calculate max value for preemption priority */
+		gint_maxInterruptPreemptPriority.value = MF({
+								   Integer Priority = ((1 << gint_preemptPriorityBits.value) - 1) as Integer
+								   return Priority
+								}, Integer)
+		
+		/* calculate max value for sub priority */
+		gint_maxInterruptSubPriority.value = MF({	
+									Integer SubPriority = ((1 << (nvicbits - gint_preemptPriorityBits.value)) - 1) as Integer
+									return SubPriority
+								}, Integer)
+		
+		hwres_cpu = MVirtualResourceGroup("system_control", ["peripheral", "cpu", "0", "system_control"])
+	}
+	
+	// File Generation
+	def generateFiles(){
+		copy("cpu_ctrl_xmc4.c", "cpu_ctrl_xmc4.c")
+		copy("cpu_ctrl_xmc4.h", "cpu_ctrl_xmc4.h")
+		generate("cpu_ctrl_xmc4_confc.tmpl", "cpu_ctrl_xmc4_conf.c")
+		generate("cpu_ctrl_xmc4_confh.tmpl", "cpu_ctrl_xmc4_conf.h")
+		generate("cpu_ctrl_xmc4_externh.tmpl", "cpu_ctrl_xmc4_extern.h")
+	}
+	
+}
