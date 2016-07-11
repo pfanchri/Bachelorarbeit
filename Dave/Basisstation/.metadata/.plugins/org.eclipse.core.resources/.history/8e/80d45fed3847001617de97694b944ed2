@@ -73,6 +73,6 @@ if (COM_transfer_started==0) {
 }
 	char str[11];
 
-		   sprintf(str, "%u" , data);
+		   sprintf(str, "% u" , data);
 		   CDC_Device_SendData(&VirtualSerial_CDC_Interface, str, strlen(str));
 }
