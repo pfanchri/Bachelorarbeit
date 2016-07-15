@@ -1,4 +1,4 @@
-12:53:21 **** Build of configuration Debug for project USBLIB_VIRTUALSERIAL_XMC45 ****
+10:01:58 **** Incremental Build of configuration Debug for project USBLIB_VIRTUALSERIAL_XMC45 ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
 'Invoking: ARM-GCC Print Size'
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "USBLIB_VIRTUALSERIAL_XMC45.elf"
@@ -7,5 +7,5 @@
 'Finished building: USBLIB_VIRTUALSERIAL_XMC45.siz'
 
 
-12:53:21 Build Finished (took 313ms)
+10:01:58 Build Finished (took 262ms)
 

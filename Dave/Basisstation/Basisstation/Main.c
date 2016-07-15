@@ -25,21 +25,23 @@ int main(void) {
 	led_off(LED_ALL);
 	led_on(LED1);
 
+
+	//COM_wait_for_transfer();
 	//set_TDA_status(TDA_ALL, 1);	delay(40000);
 
 	set_TDA_status(TDA1, 1);
 	delay(4000);
 	set_TDA_status(TDA2, 1);
 	delay(4000);
-
+	set_TDA_status(TDA3, 1);
+	delay(4000000);
 	set_TDA_status(TDA4, 1);
 	delay(4000);
 	set_TDA_status(TDA5, 1);
-	delay(4000);
-	set_TDA_status(TDA3, 1);
-	delay(4000);
+	delay(4000000);
 	set_TDA_status(TDA6, 1);
 	delay(4000);
+
 	delay(40000);
 	tda5340_init(TDA1); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
 
@@ -49,13 +51,11 @@ int main(void) {
 
 
 
-	//tda5340_set_mode_and_config(TDA1, RX_MODE, 0);
+	tda5340_set_mode_and_config(TDA1, RX_MODE, 0);
 
 
 
 
-
-	COM_wait_for_transfer();
 
 	CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Serial Number TDA1\r\n", 20);
 

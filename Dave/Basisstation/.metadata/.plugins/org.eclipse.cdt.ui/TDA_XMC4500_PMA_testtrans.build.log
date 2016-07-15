@@ -1,4 +1,4 @@
-10:43:23 **** Incremental Build of configuration Debug for project TDA_XMC4500_PMA_testtrans ****
+10:01:56 **** Incremental Build of configuration Debug for project TDA_XMC4500_PMA_testtrans ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
 'Invoking: ARM-GCC Print Size'
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "TDA_XMC4500_PMA_testtrans.elf"
@@ -7,5 +7,5 @@
 'Finished building: TDA_XMC4500_PMA_testtrans.siz'
 
 
-10:43:24 Build Finished (took 314ms)
+10:01:57 Build Finished (took 319ms)
 

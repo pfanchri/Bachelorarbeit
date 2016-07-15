@@ -85,17 +85,19 @@ void tda5340_gpio_init(uint8_t device_number) {
 	}
 	//		for TDA3 & 6
 	if (device_number == TDA_ALL || device_number == TDA3|| device_number == TDA6 ){
-		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_3 = { .input_a = XMC_ERU_ETL_INPUT_A0,
+		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_3 = {
+				.input_a = XMC_ERU_ETL_INPUT_A0,
 				.input_b = XMC_ERU_ETL_INPUT_B3,	//set here Interrupt Input
 				.source = XMC_ERU_ETL_SOURCE_A_AND_B,	//and Interrupt source (from Ref.Manual)
 				//für nur TDA3: .input_b = XMC_ERU_ETL_INPUT_B3 .source = XMC_ERU_ETL_SOURCE_B kein.input_a
-				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING, .status_flag_mode =
-						XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL, .enable_output_trigger = 1, .output_trigger_channel =
-						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL1 /* OGU1 */
+				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
+				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
+				.enable_output_trigger = 1, .output_trigger_channel = XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL1 /* OGU1 */
 		};
 		XMC_ERU_ETL_Init(ERU0_ETL1, &PP2_ETL_CONFIG_3);
-		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG_3 = { .service_request =
-				XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
+		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG_3 = {
+				.service_request =	XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER
+		};
 		XMC_ERU_OGU_Init(ERU0_OGU1, &PP2_EVENT_DETECTION_CONFIG_3);
 	}
 	//		for TDA4
