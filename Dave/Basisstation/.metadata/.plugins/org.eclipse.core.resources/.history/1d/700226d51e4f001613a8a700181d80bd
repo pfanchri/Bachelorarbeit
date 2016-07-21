@@ -26,7 +26,7 @@ int main(void) {
 	led_on(LED1);
 
 
-	COM_wait_for_transfer();
+	//COM_wait_for_transfer();
 	//set_TDA_status(TDA_ALL, 1);	delay(40000);
 
 	set_TDA_status(TDA1, 1);
