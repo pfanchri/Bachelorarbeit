@@ -152,6 +152,6 @@
 void delay (unsigned long delay);
 void init (void);
 void general_test(void);
-void send_serialnumber_to_com(void);
+
 
 #endif /* HEADER_GENERAL_H_ */
