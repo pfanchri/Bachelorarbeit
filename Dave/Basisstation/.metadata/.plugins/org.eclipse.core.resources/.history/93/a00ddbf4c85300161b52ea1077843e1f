@@ -56,34 +56,19 @@ int main(void) {
 
 
 //TESTMODUL-START-------------------------------------------------------------------------------------------------------------------------------------------------------
-	char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		char rx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		uint8_t length = 0;
-
-		struct {
-			uint8_t pmf;
-			uint8_t prx;
-			uint8_t rx;
-			uint8_t ppl;
-			uint8_t agc;
-		} rssi = { .pmf = 0, .prx = 0, .rx  = 0, .ppl = 0, .agc = 0 };
-
-		uint32_t istate = 0, led1_ctr = 0, led2_ctr = 0;
-
-
 	// Main loop
 		while (1) {
 			// NINT Interrupt handling
 			if (query_interruptTDA1_flag) {
-				query_interruptTDA1_flag = 0;
+				query_interrupt_flag = 0;
 				istate               = tda5340_interrupt_readout(TDA1);
 			}
 
 			// -----------------------------------------------------------------------------------------------------------
 
-//			if(XMC_GPIO_GetInput(BUTTON1)) {
-//				tda5340_transmit(tx_data, 8);
-//			}
+			if(XMC_GPIO_GetInput(BUTTON1)) {
+				tda5340_transmit(tx_data, 8);
+			}
 
 			// -----------------------------------------------------------------------------------------------------------
 

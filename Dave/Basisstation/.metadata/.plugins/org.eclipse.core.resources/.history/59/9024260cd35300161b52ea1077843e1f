@@ -166,14 +166,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 
 }
 
-/**
- * reads/writes to given Register
- * Param device number:	Number of TDA; TDA1...TDA6
- * Param instruction:	Instruction such as: READ_FROM_CHIP, WRITE_TO_CHIP,...
- * Param reg_address	Address of Register
- * Param *length		Data to store in Register
- * return:				SPI answer of TDA to communication
- */uint8_t tda5340_transfer(uint8_t device_number, uint8_t instruction, uint8_t reg_address, uint16_t data) {
+//TODO: auf mehrer TDAs anpassen
+uint8_t tda5340_transfer(uint8_t device_number, uint8_t instruction, uint8_t reg_address, uint16_t data) {
 	uint16_t transferdata[3] = { instruction, reg_address, data };
 	uint8_t data_rd;
 
@@ -182,14 +176,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	return data_rd;
 }
 
-/**
- * gets Data to TDA and sets TDA to transmit mode
- * Param device number:	Number of TDA; TDA1...TDA6
- * Param config:		??? TODO: was macht dies?
- * Param *data:			Array of Data to send or store Data From FIFO
- * Param *length		Length of data
- * return:				CRC error if occurs
- */uint8_t tda5340_transmit(uint8_t device_number, uint8_t config, int8_t *data, uint8_t length) {
+//TODO: auf mehrer TDAs anpassen
+uint8_t tda5340_transmit(uint8_t device_number, uint8_t config, int8_t *data, uint8_t length) {
 	tda5340_set_mode_and_config(device_number, SLEEP_MODE, 0);
 	tda5340_fifo_rw(device_number, 1, data, &length);
 	tda5340_set_mode_and_config(device_number, TRANSMIT_MODE, config);
@@ -197,27 +185,14 @@ void tda5340_gpio_init(uint8_t device_number) {
 	return 0;
 }
 
-/**
- * reads received data from FIFO
- * Param device number:	Number of TDA; TDA1...TDA6
- * Param *data:			Array of Data to send or store Data From FIFO
- * Param *length		Length of data
- * return:				CRC error if occurs
- */
+//TODO: auf mehrer TDAs anpassen
 uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length) {
 	uint8_t error = tda5340_fifo_rw(device_number, 0, data, length);
 	data[*length] = 0;
 	return error;
 }
 
-/**
- * reads or writes in FIFO
- * Param device number:	Number of TDA; TDA1...TDA6
- * Param wnr:			Read/write control: 1->write to FIFO; 0->read from FIFO
- * Param *data:			Array of Data to send or store Data From FIFO
- * Param *length			Length of data
- * return:				0 when write to FIFO or CRC when read from FIFO
- */
+//TODO: auf mehrer TDAs anpassen
 uint8_t tda5340_fifo_rw(uint8_t device_number, uint8_t wnr, int8_t *data, uint8_t *length) {
 	uint8_t length_local = *length;
 	uint16_t transferdata[66] = { 0 };

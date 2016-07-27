@@ -709,11 +709,11 @@
         <points x="-10" y="-5"/>
       </graphicsAlgorithm>
       <link>
-        <businessObjects href="ModelConfigData.data#//@connections.2"/>
+        <businessObjects href="ModelConfigData.data#//@connections.0"/>
       </link>
     </connectionDecorators>
-    <bendpoints x="272" y="50"/>
-    <bendpoints x="272" y="50"/>
+    <bendpoints x="273" y="50"/>
+    <bendpoints x="263" y="50"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.2/@anchors.0" end="//@children.0/@anchors.0">
     <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="1" filled="false" transparency="0.0" style="//@styles.2"/>
@@ -727,11 +727,11 @@
         <points x="-10" y="-5"/>
       </graphicsAlgorithm>
       <link>
-        <businessObjects href="ModelConfigData.data#//@connections.3"/>
+        <businessObjects href="ModelConfigData.data#//@connections.1"/>
       </link>
     </connectionDecorators>
-    <bendpoints x="292" y="110"/>
-    <bendpoints x="622" y="110"/>
+    <bendpoints x="280" y="110"/>
+    <bendpoints x="619" y="110"/>
   </connections>
   <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.2/@anchors.0" end="//@children.3/@anchors.0">
     <graphicsAlgorithm xsi:type="al:Polyline" lineWidth="1" filled="false" transparency="0.0" style="//@styles.3"/>
@@ -745,11 +745,10 @@
         <points x="-10" y="-5"/>
       </graphicsAlgorithm>
       <link>
-        <businessObjects href="ModelConfigData.data#//@connections.4"/>
+        <businessObjects href="ModelConfigData.data#//@connections.2"/>
       </link>
     </connectionDecorators>
-    <bendpoints x="258" y="100"/>
-    <bendpoints x="252" y="110"/>
+    <bendpoints x="246" y="110"/>
     <bendpoints x="272" y="110"/>
   </connections>
   <colors red="227" green="238" blue="249"/>

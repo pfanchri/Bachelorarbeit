@@ -75,7 +75,7 @@ int main(void) {
 		while (1) {
 			// NINT Interrupt handling
 			if (query_interruptTDA1_flag) {
-				query_interruptTDA1_flag = 0;
+				query_interrupt_flag = 0;
 				istate               = tda5340_interrupt_readout(TDA1);
 			}
 

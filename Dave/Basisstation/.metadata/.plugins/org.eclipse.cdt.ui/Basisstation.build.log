@@ -1,11 +1,175 @@
-10:42:27 **** Incremental Build of configuration Debug for project Basisstation ****
+09:14:19 **** Build of configuration Debug for project Basisstation ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
-'Invoking: ARM-GCC Print Size'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
-   text	   data	    bss	    dec	    hex	filename
-  28352	    152	   7292	  35796	   8bd4	Basisstation.elf
-'Finished building: Basisstation.siz'
+'Building file: ../ISRs.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "ISRs.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="ISRs.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"ISRs.d" -MT"ISRs.d ISRs.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "ISRs.o" "../ISRs.c"
+../ISRs.c: In function 'ERU0_1_IRQHandler':
+subdir.mk:30: recipe for target 'ISRs.o' failed
+../ISRs.c:33:16: error: stray '#' in program
+   led_on(LED4);#
+                ^
+make: *** [ISRs.o] Error 1
+make: *** Waiting for unfinished jobs....
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:92:5: error: too few arguments to function 'tda5340_set_mode_and_config'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+     tda5340_set_mode_and_config(RX_MODE);
+subdir.mk:30: recipe for target 'Main.o' failed
+     ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:31:6: note: declared here
+ void tda5340_set_mode_and_config(uint8_t device_number, uint8_t mode, uint8_t config);
+      ^
+../Main.c:100:16: error: too few arguments to function 'tda5340_transfer'
+     rssi.pmf = tda5340_transfer(READ_FROM_CHIP, RSSIPMF, 0xFF);
+                ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: declared here
+ uint8_t tda5340_transfer(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint16_t data);
+         ^
+../Main.c:101:16: error: too few arguments to function 'tda5340_transfer'
+     rssi.rx  = tda5340_transfer(READ_FROM_CHIP, RSSIRX, 0xFF);
+                ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: declared here
+ uint8_t tda5340_transfer(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint16_t data);
+         ^
+../Main.c:102:17: error: too few arguments to function 'tda5340_transfer'
+     rssi.agc = (tda5340_transfer(READ_FROM_CHIP, AGCADRR, 0xFF) & 0x06) >> 1;
+                 ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: declared here
+ uint8_t tda5340_transfer(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint16_t data);
+         ^
+../Main.c:109:16: error: too few arguments to function 'tda5340_transfer'
+     rssi.prx = tda5340_transfer(READ_FROM_CHIP, RSSIPRX, 0xFF);
+                ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: declared here
+ uint8_t tda5340_transfer(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint16_t data);
+         ^
+../Main.c:110:16: error: too few arguments to function 'tda5340_transfer'
+     rssi.ppl = tda5340_transfer(READ_FROM_CHIP, RSSIPPL, 0xFF);
+                ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: declared here
+ uint8_t tda5340_transfer(uint8_t device_number, const uint8_t instruction, const uint8_t reg_address, uint16_t data);
+         ^
+../Main.c:112:5: error: too few arguments to function 'tda5340_set_mode_and_config'
+     tda5340_set_mode_and_config(SLEEP_MODE);
+     ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:31:6: note: declared here
+ void tda5340_set_mode_and_config(uint8_t device_number, uint8_t mode, uint8_t config);
+      ^
+../Main.c:114:26: warning: passing argument 1 of 'tda5340_receive' makes integer from pointer without a cast
+     if (!tda5340_receive(rx_data, &length)) {
+                          ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:30:9: note: expected 'uint8_t' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:114:35: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+     if (!tda5340_receive(rx_data, &length)) {
+                                   ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:30:9: note: expected 'int8_t *' but argument is of type 'uint8_t *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:114:10: error: too few arguments to function 'tda5340_receive'
+     if (!tda5340_receive(rx_data, &length)) {
+          ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:30:9: note: declared here
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+In file included from ../Main.c:7:0:
+../Header_general.h:128:14: warning: passing argument 1 of 'XMC_GPIO_SetOutputHigh' makes pointer from integer without a cast
+ #define LED2 2
+              ^
+../Main.c:115:29: note: in expansion of macro 'LED2'
+      XMC_GPIO_SetOutputHigh(LED2);
+                             ^
+In file included from ../Header_general.h:15:0,
+                 from ../Main.c:7:
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_gpio.h:256:22: note: expected 'struct XMC_GPIO_PORT_t * const' but argument is of type 'int'
+ __STATIC_INLINE void XMC_GPIO_SetOutputHigh(XMC_GPIO_PORT_t *const port, const uint8_t pin)
+                      ^
+../Main.c:115:6: error: too few arguments to function 'XMC_GPIO_SetOutputHigh'
+      XMC_GPIO_SetOutputHigh(LED2);
+      ^
+In file included from ../Header_general.h:15:0,
+                 from ../Main.c:7:
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_gpio.h:256:22: note: declared here
+ __STATIC_INLINE void XMC_GPIO_SetOutputHigh(XMC_GPIO_PORT_t *const port, const uint8_t pin)
+                      ^
+../Main.c:122:5: error: too few arguments to function 'tda5340_set_mode_and_config'
+     tda5340_set_mode_and_config(RX_MODE);
+     ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:31:6: note: declared here
+ void tda5340_set_mode_and_config(uint8_t device_number, uint8_t mode, uint8_t config);
+      ^
+In file included from ../Main.c:7:0:
+../Header_general.h:127:14: warning: passing argument 1 of 'XMC_GPIO_SetOutputLow' makes pointer from integer without a cast
+ #define LED1 1
+              ^
+../Main.c:132:42: note: in expansion of macro 'LED1'
+     if (!led1_ctr) XMC_GPIO_SetOutputLow(LED1);
+                                          ^
+In file included from ../Header_general.h:15:0,
+                 from ../Main.c:7:
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_gpio.h:282:22: note: expected 'struct XMC_GPIO_PORT_t * const' but argument is of type 'int'
+ __STATIC_INLINE void XMC_GPIO_SetOutputLow(XMC_GPIO_PORT_t *const port, const uint8_t pin)
+                      ^
+../Main.c:132:20: error: too few arguments to function 'XMC_GPIO_SetOutputLow'
+     if (!led1_ctr) XMC_GPIO_SetOutputLow(LED1);
+                    ^
+In file included from ../Header_general.h:15:0,
+                 from ../Main.c:7:
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_gpio.h:282:22: note: declared here
+ __STATIC_INLINE void XMC_GPIO_SetOutputLow(XMC_GPIO_PORT_t *const port, const uint8_t pin)
+                      ^
+In file included from ../Main.c:7:0:
+../Header_general.h:128:14: warning: passing argument 1 of 'XMC_GPIO_SetOutputLow' makes pointer from integer without a cast
+ #define LED2 2
+              ^
+../Main.c:138:42: note: in expansion of macro 'LED2'
+     if (!led2_ctr) XMC_GPIO_SetOutputLow(LED2);
+                                          ^
+In file included from ../Header_general.h:15:0,
+                 from ../Main.c:7:
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_gpio.h:282:22: note: expected 'struct XMC_GPIO_PORT_t * const' but argument is of type 'int'
+ __STATIC_INLINE void XMC_GPIO_SetOutputLow(XMC_GPIO_PORT_t *const port, const uint8_t pin)
+                      ^
+../Main.c:138:20: error: too few arguments to function 'XMC_GPIO_SetOutputLow'
+     if (!led2_ctr) XMC_GPIO_SetOutputLow(LED2);
+                    ^
+In file included from ../Header_general.h:15:0,
+                 from ../Main.c:7:
+D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc/xmc_gpio.h:282:22: note: declared here
+ __STATIC_INLINE void XMC_GPIO_SetOutputLow(XMC_GPIO_PORT_t *const port, const uint8_t pin)
+                      ^
+../Main.c:69:5: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+   } rssi = { .pmf = 0, .prx = 0, .rx  = 0, .ppl = 0, .agc = 0 };
+     ^
+../Main.c:59:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+make: *** [Main.o] Error 1
 
-
-10:42:27 Build Finished (took 318ms)
+09:14:19 Build Finished (took 452ms)
 

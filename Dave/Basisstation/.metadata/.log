@@ -14552,3 +14552,96 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:51:25.235
 !MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 1170 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:59:55.073
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:59:55.136
+!MESSAGE USER_ACTION : Active project:TDA_XMC4500_PMA_testtrans
+
+!ENTRY COMMON 1 0 2016-07-27 08:59:55.245
+!MESSAGE Time Taken By De-Serialization  : 78 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY com.dave.mbs.common 1 0 2016-07-27 08:59:55.245
+!MESSAGE *************Serializing EMF and Groovy data to RAM*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:59:55.323
+!MESSAGE USER_ACTION : Time taken for initializing Application Model is: 187 msec 
+
+!ENTRY APPSTORE 1 0 2016-07-27 08:59:55.526
+!MESSAGE USER_ACTION : Time taken for initializing data from AppStore is: 203 msec 
+
+!ENTRY SOLVER 1 0 2016-07-27 08:59:55.853
+!MESSAGE USER_ACTION : Library store ECO file :C:\Users\student06\Infineon\D_LibraryStore_4.1\resources\XMC4.5.00.F100.ALL\device\xmc4500\0\MANIFEST\solver_data\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-07-27 08:59:55.900
+!MESSAGE USER_ACTION : Copied ECO file to temp location :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-07-27 08:59:56.025
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-07-27 08:59:56.025
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-07-27 08:59:56.025
+!MESSAGE USER_ACTION : GlobalSize= 750MB; LocalSize: 128MB
+
+!ENTRY SOLVER 1 0 2016-07-27 08:59:56.025
+!MESSAGE USER_ACTION : Creating OutOfProcessEclipse instance...
+
+!ENTRY SOLVER 1 0 2016-07-27 08:59:56.134
+!MESSAGE USER_ACTION : Solver Status: CONNECTED
+
+!ENTRY SOLVER 1 0 2016-07-27 08:59:58.552
+!MESSAGE USER_ACTION : Loaded ECO file :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:59:59.098
+!MESSAGE USER_ACTION : Time taken by SolverManager is: 3572 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:59:59.098
+!MESSAGE USER_ACTION : Time taken for updating AddAppDialog is: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:59:59.114
+!MESSAGE USER_ACTION : Time taken for updating views is: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:59:59.223
+!MESSAGE USER_ACTION : Time taken for rendering views is: 109 msec 
+
+!ENTRY org.eclipse.ui 4 4 2016-07-27 09:00:23.026
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2016-07-27 09:00:23.030
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2016-07-27 09:00:23.034
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2016-07-27 09:00:23.036
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2016-07-27 09:00:23.039
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2016-07-27 09:00:23.042
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY com.dave.mbs.common 1 0 2016-07-27 09:07:11.569
+!MESSAGE *************Saving EMF data into file system*******************
+
+!ENTRY com.dave.mbs.common 1 0 2016-07-27 09:07:11.647
+!MESSAGE *************Saving Groovy data into file system*******************
+
+!ENTRY COMMON 1 0 2016-07-27 09:07:11.725
+!MESSAGE Time Taken By Serialization  : 78 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY SOLVER 1 0 2016-07-27 09:07:11.865
+!MESSAGE Solver exited (0)
+
+!ENTRY SOLVER 1 0 2016-07-27 09:07:12.130
+!MESSAGE USER_ACTION : Solver Status: DISCONNECTED
+
+!ENTRY com.dave.mbs.common 1 0 2016-07-27 09:07:12.146
+!MESSAGE ****************Cleaning project data:TDA_XMC4500_PMA_testtrans*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 09:07:12.536
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 671 msec 
