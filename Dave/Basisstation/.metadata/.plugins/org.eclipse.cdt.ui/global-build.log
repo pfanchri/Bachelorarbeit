@@ -5480,3 +5480,11 @@ rm -rf Libraries/CRC/crcchk.o  Basisstation.elf ./Startup/startup_XMC4500.o.lst 
   28352	    152	   7292	  35796	   8bd4	Basisstation.elf
 'Finished building: Basisstation.siz'
 
+08:44:19 **** Build of configuration Debug for project TDA_XMC4500_PMA_testtrans ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "TDA_XMC4500_PMA_testtrans.elf"
+   text	   data	    bss	    dec	    hex	filename
+  24716	     92	   7360	  32168	   7da8	TDA_XMC4500_PMA_testtrans.elf
+'Finished building: TDA_XMC4500_PMA_testtrans.siz'
+

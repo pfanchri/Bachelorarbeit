@@ -11,13 +11,11 @@
 extern void ERU1_0_IRQHandler(void) {
 	// LED toggle
 	led_on(LED2);
-	query_interruptTDA1_flag = 1;
 }
 // ISR für TDA2  (ERU0 OGU0 IRQ)
 extern void ERU0_0_IRQHandler(void) {
 	// LED toggle
 	led_on(LED3);
-	query_interruptTDA2_flag = 0;
 }
 // ISR für TDA3 + TDA6  (ERU0 OGU1 IRQ)
 extern void ERU0_1_IRQHandler(void) {
@@ -30,13 +28,11 @@ extern void ERU0_1_IRQHandler(void) {
 	uint32_t status_tda6 = XMC_GPIO_GetInput(PORT_PP2_TDA_6, PIN_PP2_TDA_6);
 	if ((!status_tda3) && (status_tda6)) {
 		CDC_Device_SendData(&VirtualSerial_CDC_Interface, "INTERUPT3", 11);
-		led_on(LED4);#
-		query_interruptTDA3_flag = 0;
+		led_on(LED4);
 	}
  if ((status_tda6 == 0) && (status_tda3 != 0)) {
 	 CDC_Device_SendData(&VirtualSerial_CDC_Interface, "INTERUPT6", 11);
 		led_on(LED7);
-		query_interruptTDA6_flag = 0;
 	}
  if ((status_tda6 == 0) && (status_tda3 == 0)) {
 	 CDC_Device_SendData(&VirtualSerial_CDC_Interface, "INTERUPT", 10);
@@ -49,13 +45,11 @@ extern void ERU0_1_IRQHandler(void) {
 extern void ERU1_1_IRQHandler(void) {
 	// LED toggle
 	led_on(LED5);
-	query_interruptTDA4_flag = 0;
 }
 // ISR für TDA5  (ERU0 OGU2 IRQ)
 extern void ERU0_2_IRQHandler(void) {
 	// LED toggle
 	led_on(LED6);
-	query_interruptTDA5_flag = 0;
 }
 //// ISR für TDA6  (ERU1 OGU0 IRQ)
 //extern void ERU0_3_IRQHandler(void) {

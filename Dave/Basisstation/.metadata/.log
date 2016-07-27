@@ -14474,3 +14474,81 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.ifx.dave.LibraryManager 4 0 2016-07-27 08:06:40.871
 !MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/Contributed/v4.1//daveSite.xml
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:42:07.435
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:42:08.121
+!MESSAGE USER_ACTION : Active project:TDA_XMC4500_PMA_testtrans
+
+!ENTRY COMMON 1 0 2016-07-27 08:42:10.024
+!MESSAGE Time Taken By De-Serialization  : 624 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY com.dave.mbs.common 1 0 2016-07-27 08:42:10.102
+!MESSAGE *************Serializing EMF and Groovy data to RAM*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:42:10.212
+!MESSAGE USER_ACTION : Time taken for initializing Application Model is: 2091 msec 
+
+!ENTRY APPSTORE 1 0 2016-07-27 08:42:12.832
+!MESSAGE USER_ACTION : Time taken for initializing data from AppStore is: 2620 msec 
+
+!ENTRY SOLVER 1 0 2016-07-27 08:42:15.157
+!MESSAGE USER_ACTION : Library store ECO file :C:\Users\student06\Infineon\D_LibraryStore_4.1\resources\XMC4.5.00.F100.ALL\device\xmc4500\0\MANIFEST\solver_data\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-07-27 08:42:17.746
+!MESSAGE USER_ACTION : Copied ECO file to temp location :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-07-27 08:42:17.778
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-07-27 08:42:17.980
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-07-27 08:42:17.980
+!MESSAGE USER_ACTION : GlobalSize= 750MB; LocalSize: 128MB
+
+!ENTRY SOLVER 1 0 2016-07-27 08:42:17.996
+!MESSAGE USER_ACTION : Creating OutOfProcessEclipse instance...
+
+!ENTRY SOLVER 1 0 2016-07-27 08:42:18.526
+!MESSAGE USER_ACTION : Solver Status: CONNECTED
+
+!ENTRY SOLVER 1 0 2016-07-27 08:42:21.653
+!MESSAGE USER_ACTION : Loaded ECO file :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:42:22.448
+!MESSAGE USER_ACTION : Time taken by SolverManager is: 9616 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:42:22.464
+!MESSAGE USER_ACTION : Time taken for updating AddAppDialog is: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:42:22.511
+!MESSAGE USER_ACTION : Time taken for updating views is: 47 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:42:24.280
+!MESSAGE USER_ACTION : Time taken for rendering views is: 1769 msec 
+
+!ENTRY org.eclipse.ui 4 4 2016-07-27 08:44:24.491
+!MESSAGE Conflicting handlers for org.eclipse.debug.ui.commands.DebugLast: {ActionDelegateHandlerProxy(null,com.dave.activeproject.ui.actions.ActiveProjDebugLastAction)} vs {ActionDelegateHandlerProxy(null,org.eclipse.debug.internal.ui.actions.DebugLastAction)}
+
+!ENTRY com.dave.mbs.common 1 0 2016-07-27 08:51:23.846
+!MESSAGE *************Saving EMF data into file system*******************
+
+!ENTRY com.dave.mbs.common 1 0 2016-07-27 08:51:23.909
+!MESSAGE *************Saving Groovy data into file system*******************
+
+!ENTRY COMMON 1 0 2016-07-27 08:51:23.955
+!MESSAGE Time Taken By Serialization  : 31 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY SOLVER 1 0 2016-07-27 08:51:24.065
+!MESSAGE Solver exited (0)
+
+!ENTRY SOLVER 1 0 2016-07-27 08:51:24.345
+!MESSAGE USER_ACTION : Solver Status: DISCONNECTED
+
+!ENTRY com.dave.mbs.common 1 0 2016-07-27 08:51:24.377
+!MESSAGE ****************Cleaning project data:TDA_XMC4500_PMA_testtrans*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-07-27 08:51:25.235
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 1170 msec 

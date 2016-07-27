@@ -6,15 +6,6 @@
  */
 #include "Header_general.h" //including all Header files
 
-
-// Global variables
-volatile uint8_t query_interruptTDA1_flag = 0;
-volatile uint8_t query_interruptTDA2_flag = 0;
-volatile uint8_t query_interruptTDA3_flag = 0;
-volatile uint8_t query_interruptTDA4_flag = 0;
-volatile uint8_t query_interruptTDA5_flag = 0;
-volatile uint8_t query_interruptTDA6_flag = 0;
-
 int main(void) {
 
 	init();
