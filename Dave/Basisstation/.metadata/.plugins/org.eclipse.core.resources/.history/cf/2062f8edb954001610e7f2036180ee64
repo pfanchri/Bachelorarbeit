@@ -337,13 +337,7 @@ void tda5340_set_channels(uint8_t device_number, uint8_t noc, uint8_t mod) {
 	tda5340_transfer(device_number, WRITE_TO_CHIP, A_CHCFG, nocmod);
 }
 
-/**
- * Sets TDA to definded mode
- * Param device number:	Number of TDA; TDA1...TDA6
- * Param mode:			mode TDA should be set to: RX_MODE, TX MODE,...
- * Param config:		Multi Configuration Section: (Run Mode Slave/Self Polling Mode/Transmit) see Chip Mode Controll register (CMC)
- * return:				void
- */
+//TODO: auf mehrer TDAs anpassen
 void tda5340_set_mode_and_config(uint8_t device_number, uint8_t mode, uint8_t config) {
 	uint8_t transferbit = 0;
 
@@ -375,11 +369,7 @@ uint32_t tda5340_interrupt_readout(uint8_t device_number) {
 	return interrupts;
 }
 
-/**
- * reads serial number vom TDA
- * Param device number:	Number of TDA; TDA1...TDA6
- * return:				32 bit serial number
- */
+//TODO: auf mehrer TDAs anpassen
 uint32_t tda5340_get_serial_number(uint8_t device_number) {
 	uint32_t sn = 0;
 
@@ -391,14 +381,7 @@ uint32_t tda5340_get_serial_number(uint8_t device_number) {
 	return sn;
 }
 
-/**
- * initializes TDA
- * Param device number:	Number of TDA; TDA1...TDA6
- * Param wnr:			Read/write control: 1->write to FIFO; 0->read from FIFO
- * Param *data:			Array of Data to send or store Data From FIFO
- * Param *length		Length of data
- * return:				void
- */
+//TODO: auf mehrer TDAs anpassen
 void tda5340_init(uint8_t device_number) {
 	uint8_t invalid = 0;
 

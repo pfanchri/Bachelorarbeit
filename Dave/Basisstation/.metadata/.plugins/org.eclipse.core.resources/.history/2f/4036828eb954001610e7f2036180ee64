@@ -30,7 +30,7 @@ extern void ERU0_1_IRQHandler(void) {
 	uint32_t status_tda6 = XMC_GPIO_GetInput(PORT_PP2_TDA_6, PIN_PP2_TDA_6);
 	if ((!status_tda3) && (status_tda6)) {
 		CDC_Device_SendData(&VirtualSerial_CDC_Interface, "INTERUPT3", 11);
-		led_on(LED4);
+		led_on(LED4);#
 		query_interruptTDA3_flag = 0;
 	}
  if ((status_tda6 == 0) && (status_tda3 != 0)) {

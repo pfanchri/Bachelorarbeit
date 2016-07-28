@@ -91,7 +91,7 @@ int main(void) {
 
 			// Switch to Rx-Mode if Tx is finished
 			if (istate & (1 << 18)) {
-				tda5340_set_mode_and_config(TDA1, RX_MODE,1); //TODO: was is
+				tda5340_set_mode_and_config(RX_MODE); //TODO: was is
 				istate &= ~(1 << 18);CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Switch  to Rx-Mode\r\n", 20);
 			}
 
@@ -111,7 +111,7 @@ int main(void) {
 				rssi.prx = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPRX, 0xFF);
 				rssi.ppl = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPPL, 0xFF);
 
-				tda5340_set_mode_and_config(TDA1,SLEEP_MODE,1);
+				tda5340_set_mode_and_config(SLEEP_MODE);
 				CDC_Device_SendData(&VirtualSerial_CDC_Interface, "sleep-Mode\r\n", 12);
 				if (!tda5340_receive(TDA1, rx_data, &length)) {
 					led_on(LED2);
@@ -121,7 +121,7 @@ int main(void) {
 					led2_ctr = 100000;
 				}
 
-				tda5340_set_mode_and_config(TDA1,RX_MODE,1);
+				tda5340_set_mode_and_config(RX_MODE);
 				istate &= ~(1 << 3);
 			}
 
