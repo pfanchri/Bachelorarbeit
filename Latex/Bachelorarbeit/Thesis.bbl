@@ -16,41 +16,5 @@
   {}
 \endgroup
 
-
-\refsection{0}
-  \sortlist{none}{none}
-    \entry{BibDEMO1}{article}{}
-      \name{author}{1}{}{%
-        {{hash=817a8e5b286a0291d14b34e02ba59327}{Freely}{F\bibinitperiod}{I.P.}{I\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{817a8e5b286a0291d14b34e02ba59327}
-      \strng{fullhash}{817a8e5b286a0291d14b34e02ba59327}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The journal of small papers}
-      \field{note}{to appear}
-      \field{title}{A small paper}
-      \field{volume}{-1}
-      \field{year}{1997}
-    \endentry
-    \entry{BibDEMO2}{article}{}
-      \name{author}{1}{}{%
-        {{hash=4989c42af5801e5d5604be6bf7f11ade}{Jass}{J\bibinitperiod}{Hugh}{H\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{4989c42af5801e5d5604be6bf7f11ade}
-      \strng{fullhash}{4989c42af5801e5d5604be6bf7f11ade}
-      \field{sortinit}{0}
-      \field{sortinithash}{990108227b3316c02842d895999a0165}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The journal of big papers}
-      \field{title}{A big paper}
-      \field{volume}{MCMXCVII}
-      \field{year}{7991}
-    \endentry
-  \endsortlist
-\endrefsection
 \endinput
 
