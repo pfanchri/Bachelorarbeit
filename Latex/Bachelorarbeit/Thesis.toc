@@ -4,22 +4,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{3}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}N\IeC {\"o}tige Programme}{3}{section.1.1}
+\contentsline {section}{\numberline {1.1}Motivation}{3}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Einige tex Kommandos}{3}{section.1.2}
+\contentsline {chapter}{\numberline {2}Platinenaufbau}{5}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Unter\IeC {\"u}berschrift}{3}{subsection.1.2.1}
+\contentsline {chapter}{\numberline {3}Software}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Bilder und Quellen}{3}{subsection.1.2.2}
+\contentsline {chapter}{\numberline {4}Feldtest}{9}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Formeln}{4}{subsection.1.2.3}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{11}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}H\IeC {\"a}ufige Fehler}{4}{subsection.1.2.4}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{13}{chapter*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Einleitung}{5}{chapter.2}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{15}{chapter*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Motivation}{5}{section.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{7}{chapter*.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{9}{chapter*.6}
+\contentsline {chapter}{\numberline {6}Anhang}{17}{chapter.6}
