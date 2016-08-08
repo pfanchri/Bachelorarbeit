@@ -470,8 +470,8 @@ void tda5340_init(uint8_t device_number) {
 
 	// Setting RX-frequency to 867.0000 MHz (with IF-frequency 274 kHz low side LO-injection)
 	tda5340_command(device_number, WRITE_TO_CHIP, A_PLLINTC1, 0x67);   //PLL MMD Integer Value Register Channel 1
-	tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC0C1, 0x8C); //PLL Fractional Division Ratio Register 0 Channel 1
-	tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC1C1, 0x18); //PLL Fractional Division Ratio Register 1 Channel 1
+	tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC0C1, 0x62); //PLL Fractional Division Ratio Register 0 Channel 1
+	tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC1C1, 0x88); //PLL Fractional Division Ratio Register 1 Channel 1
 	tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC2C1, 0x11); //PLL Fractional Division Ratio Register 2 Channel 1
 
 	// Wake up control
@@ -495,8 +495,8 @@ void tda5340_init(uint8_t device_number) {
 
 	// Setting TX-frequency to 868.0 MHz
 	invalid += tda5340_command(device_number, WRITE_TO_CHIP, A_PLLINTC1, 0x67);   /**< PLL multi modulus divider integer value channel 1 */
-	invalid += tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC0C1, 0xD1); /**< PLL fractional division ratio channel 1 */
-	invalid += tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC1C1, 0x7E); /**< PLL fractional division ratio channel 1 */
+	invalid += tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC0C1, 0xA5); /**< PLL fractional division ratio channel 1 */
+	invalid += tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC1C1, 0xEE); /**< PLL fractional division ratio channel 1 */
 	invalid += tda5340_command(device_number, WRITE_TO_CHIP, A_PLLFRAC2C1, 0x11); /**< PLL fractional division ratio channel 1 */
 
 	// Config C for TX

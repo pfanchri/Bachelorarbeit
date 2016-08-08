@@ -14847,3 +14847,132 @@ For more details, see the JLinkGDBServerCL console.
 
 !ENTRY APPLICATION_MODEL 1 0 2016-08-08 12:42:33.620
 !MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 1155 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:37:43.601
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:37:43.700
+!MESSAGE USER_ACTION : Active project:TDA_XMC4500_PMA_testtrans
+
+!ENTRY COMMON 1 0 2016-08-08 13:37:43.814
+!MESSAGE Time Taken By De-Serialization  : 79 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY com.dave.mbs.common 1 0 2016-08-08 13:37:43.818
+!MESSAGE *************Serializing EMF and Groovy data to RAM*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:37:43.843
+!MESSAGE USER_ACTION : Time taken for initializing Application Model is: 143 msec 
+
+!ENTRY APPSTORE 1 0 2016-08-08 13:37:43.986
+!MESSAGE USER_ACTION : Time taken for initializing data from AppStore is: 140 msec 
+
+!ENTRY SOLVER 1 0 2016-08-08 13:37:44.423
+!MESSAGE USER_ACTION : Library store ECO file :C:\Users\student06\Infineon\D_LibraryStore_4.1\resources\XMC4.5.00.F100.ALL\device\xmc4500\0\MANIFEST\solver_data\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-08-08 13:37:44.462
+!MESSAGE USER_ACTION : Copied ECO file to temp location :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-08-08 13:37:44.615
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-08-08 13:37:44.619
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-08-08 13:37:44.623
+!MESSAGE USER_ACTION : GlobalSize= 750MB; LocalSize: 128MB
+
+!ENTRY SOLVER 1 0 2016-08-08 13:37:44.626
+!MESSAGE USER_ACTION : Creating OutOfProcessEclipse instance...
+
+!ENTRY SOLVER 1 0 2016-08-08 13:37:44.908
+!MESSAGE USER_ACTION : Solver Status: CONNECTED
+
+!ENTRY SOLVER 1 0 2016-08-08 13:37:53.074
+!MESSAGE USER_ACTION : Loaded ECO file :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:37:53.685
+!MESSAGE USER_ACTION : Time taken by SolverManager is: 9689 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:37:53.688
+!MESSAGE USER_ACTION : Time taken for updating AddAppDialog is: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:37:53.691
+!MESSAGE USER_ACTION : Time taken for updating views is: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:37:53.766
+!MESSAGE USER_ACTION : Time taken for rendering views is: 73 msec 
+
+!ENTRY com.dave.mbs.common 1 0 2016-08-08 13:38:19.916
+!MESSAGE *************Saving EMF data into file system*******************
+
+!ENTRY com.dave.mbs.common 1 0 2016-08-08 13:38:20.000
+!MESSAGE *************Saving Groovy data into file system*******************
+
+!ENTRY COMMON 1 0 2016-08-08 13:38:20.040
+!MESSAGE Time Taken By Serialization  : 37 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY SOLVER 1 0 2016-08-08 13:38:20.147
+!MESSAGE Solver exited (0)
+
+!ENTRY SOLVER 1 0 2016-08-08 13:38:20.409
+!MESSAGE USER_ACTION : Solver Status: DISCONNECTED
+
+!ENTRY com.dave.mbs.common 1 0 2016-08-08 13:38:20.435
+!MESSAGE ****************Cleaning project data:TDA_XMC4500_PMA_testtrans*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:38:20.765
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 618 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:50:43.782
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:50:43.894
+!MESSAGE USER_ACTION : Active project:TDA_XMC4500_PMA_testtrans
+
+!ENTRY COMMON 1 0 2016-08-08 13:50:43.967
+!MESSAGE Time Taken By De-Serialization  : 49 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY com.dave.mbs.common 1 0 2016-08-08 13:50:43.971
+!MESSAGE *************Serializing EMF and Groovy data to RAM*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:50:43.990
+!MESSAGE USER_ACTION : Time taken for initializing Application Model is: 96 msec 
+
+!ENTRY APPSTORE 1 0 2016-08-08 13:50:44.119
+!MESSAGE USER_ACTION : Time taken for initializing data from AppStore is: 125 msec 
+
+!ENTRY SOLVER 1 0 2016-08-08 13:50:44.432
+!MESSAGE USER_ACTION : Library store ECO file :C:\Users\student06\Infineon\D_LibraryStore_4.1\resources\XMC4.5.00.F100.ALL\device\xmc4500\0\MANIFEST\solver_data\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-08-08 13:50:44.471
+!MESSAGE USER_ACTION : Copied ECO file to temp location :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-08-08 13:50:44.724
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-08-08 13:50:44.735
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-08-08 13:50:44.746
+!MESSAGE USER_ACTION : GlobalSize= 750MB; LocalSize: 128MB
+
+!ENTRY SOLVER 1 0 2016-08-08 13:50:44.756
+!MESSAGE USER_ACTION : Creating OutOfProcessEclipse instance...
+
+!ENTRY SOLVER 1 0 2016-08-08 13:50:45.169
+!MESSAGE USER_ACTION : Solver Status: CONNECTED
+
+!ENTRY SOLVER 1 0 2016-08-08 13:50:50.824
+!MESSAGE USER_ACTION : Loaded ECO file :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:50:51.332
+!MESSAGE USER_ACTION : Time taken by SolverManager is: 7210 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:50:51.358
+!MESSAGE USER_ACTION : Time taken for updating AddAppDialog is: 1 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:50:51.362
+!MESSAGE USER_ACTION : Time taken for updating views is: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-08-08 13:50:51.434
+!MESSAGE USER_ACTION : Time taken for rendering views is: 69 msec 
