@@ -73,13 +73,15 @@ if (COM_transfer_started==0) { //TODO: kann entfernt werden??
 }
 	char str[11];
 
-		   sprintf(str, "%u" , data);
-		   CDC_Device_SendData(&VirtualSerial_CDC_Interface, str, strlen(str));
+		   sprintf(str, "%x" , data);
+		   CDC_Device_SendData(&VirtualSerial_CDC_Interface, str, 8);
+			CDC_Device_USBTask(&VirtualSerial_CDC_Interface); //TODO: hier notwendig?
 }
 
 
 void COM_send_string(const void* const string){
 	CDC_Device_SendData(&VirtualSerial_CDC_Interface, string, strlen(string));
+	CDC_Device_USBTask(&VirtualSerial_CDC_Interface); //TODO: hier notwendig? evtl zyklisch aufrufen
 
 }
 

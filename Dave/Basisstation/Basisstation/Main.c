@@ -20,8 +20,8 @@ int main(void) {
 	init();
 	USB_Init(); //for virt. COM Port
 
-	spi_init(spi_master_ch);
 	tda5340_gpio_init(TDA_ALL);
+	spi_init(spi_master_ch);
 
 	delay(500);
 	delay(500);
@@ -54,6 +54,7 @@ int main(void) {
 	delay(40000);
 	tda5340_init(TDA1); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
 
+	tda5340_set_mode_and_config(TDA1, RX_MODE, 0);
 
 //TESTMODUL-START-------------------------------------------------------------------------------------------------------------------------------------------------------
 	char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -71,17 +72,22 @@ int main(void) {
 
 		uint32_t istate = 0, led1_ctr = 0, led2_ctr = 0;
 
+			COM_send_string("Beginn while loop \r\n");
 
 	// Main loop
+led_off(LED_ALL );
+query_interruptTDA1_flag=0;//damit keine Auswirkungen von Iterruots beim Einschalten
 
-		while (1) {
+		while (1) {			//COM_send_string(".");
+
 			// NINT Interrupt handling
-			COM_send_string("Beginn while loop \r\n");
 
 
 			if (query_interruptTDA1_flag) {
 				query_interruptTDA1_flag = 0;
 				istate               = tda5340_interrupt_readout(TDA1);
+				COM_send_string("Interrupt ist aufgetreten\r\n");
+				COM_send_int_as_string(istate);
 			}
 
 			// -----------------------------------------------------------------------------------------------------------
@@ -94,7 +100,7 @@ int main(void) {
 
 			// Switch to Rx-Mode if Tx is finished
 			if (istate & (1 << 18)) {
-				tda5340_set_mode_and_config(TDA1, RX_MODE,1); //TODO: was is
+				tda5340_set_mode_and_config(TDA1, RX_MODE,0); //TODO: was is
 				istate &= ~(1 << 18);
 				COM_send_string("Switch  to Rx-Mode\r\n");
 			}
@@ -116,7 +122,7 @@ int main(void) {
 				rssi.prx = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPRX, 0xFF);
 				rssi.ppl = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPPL, 0xFF);
 
-				tda5340_set_mode_and_config(TDA1,SLEEP_MODE,1);
+				tda5340_set_mode_and_config(TDA1,SLEEP_MODE,0);
 				COM_send_string("sleep-Mode\r\n");
 				if (!tda5340_receive(TDA1, rx_data, &length)) {
 					led_on(LED2);
@@ -126,7 +132,7 @@ int main(void) {
 					led2_ctr = 100000;
 				}
 
-				tda5340_set_mode_and_config(TDA1,RX_MODE,1);
+				tda5340_set_mode_and_config(TDA1,RX_MODE,0);
 				istate &= ~(1 << 3);
 			}
 
