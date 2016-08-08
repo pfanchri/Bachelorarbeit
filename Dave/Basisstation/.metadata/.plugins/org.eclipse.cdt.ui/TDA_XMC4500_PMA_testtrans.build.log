@@ -1,11 +1,29 @@
-12:41:00 **** Incremental Build of configuration Debug for project TDA_XMC4500_PMA_testtrans ****
+13:34:46 **** Incremental Build of configuration Debug for project TDA_XMC4500_PMA_testtrans ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../tda5340.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "tda5340.o" -DXMC4500_F100x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans" -I"D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Generated" -I"D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=soft -Wa,-adhlns="tda5340.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"tda5340.d" -MT"tda5340.d tda5340.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "tda5340.o" "../tda5340.c"
+'Finished building: ../tda5340.c'
+
+'Building target: TDA_XMC4500_PMA_testtrans.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -Wl,-Map,TDA_XMC4500_PMA_testtrans.map -mfloat-abi=soft -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "TDA_XMC4500_PMA_testtrans.elf" "@objects.rsp"  -lm
+'Finished building target: TDA_XMC4500_PMA_testtrans.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "TDA_XMC4500_PMA_testtrans.elf"  "TDA_XMC4500_PMA_testtrans.hex"
+'Finished building: TDA_XMC4500_PMA_testtrans.hex'
+
 'Invoking: ARM-GCC Print Size'
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "TDA_XMC4500_PMA_testtrans.elf"
    text	   data	    bss	    dec	    hex	filename
-  24716	     92	   7360	  32168	   7da8	TDA_XMC4500_PMA_testtrans.elf
+  25400	     92	   7360	  32852	   8054	TDA_XMC4500_PMA_testtrans.elf
 'Finished building: TDA_XMC4500_PMA_testtrans.siz'
 
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "TDA_XMC4500_PMA_testtrans.elf" > "TDA_XMC4500_PMA_testtrans.lst"
+'Finished building: TDA_XMC4500_PMA_testtrans.lst'
 
-12:41:01 Build Finished (took 313ms)
+
+13:34:48 Build Finished (took 1s.843ms)
 

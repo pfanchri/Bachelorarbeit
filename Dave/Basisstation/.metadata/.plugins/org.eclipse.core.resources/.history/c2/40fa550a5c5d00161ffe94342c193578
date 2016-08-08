@@ -219,8 +219,6 @@ uint32_t tda5340_get_serial_number(void) {
 }
 
 void tda5340_init(void) {
-	uint8_t invalid = 0;
-
 	// Read interrupt registers to force NINT high
 	tda5340_interrupt_readout();
 
@@ -229,32 +227,32 @@ void tda5340_init(void) {
 
 	// Set common registers
 	// Clock output 100 kHz but not enabled
-	invalid += tda5340_command(WRITE_TO_CHIP, CLKOUT0, 0x6E); //Clock Divider Register 0
-	invalid += tda5340_command(WRITE_TO_CHIP, CLKOUT2, 0x00); //Clock Divider Register 2
+	tda5340_command(WRITE_TO_CHIP, CLKOUT0, 0x6E); //Clock Divider Register 0
+	tda5340_command(WRITE_TO_CHIP, CLKOUT2, 0x00); //Clock Divider Register 2
 
 	/* General configuration register set */
-	invalid += tda5340_command(WRITE_TO_CHIP, PPCFG0, 0xFF);                /**< Pin configuration */
-	invalid += tda5340_command(WRITE_TO_CHIP, PPCFG1, 0xF2);                /**< Pin configuration */
-	invalid += tda5340_command(WRITE_TO_CHIP, PPCFG2, 0x40);                /**< Pin configuration */
-	invalid += tda5340_command(WRITE_TO_CHIP, RSSICFG, 0x11);               /**< RSSI Configuration register */
-	invalid += tda5340_command(WRITE_TO_CHIP, RSSIOFFS, RSSI_OFFSET_VALUE); /**< RSSI offset register */
-	invalid += tda5340_command(WRITE_TO_CHIP, RSSISLOPE, RSSI_SLOPE_VALUE); /**< RSSI slope register */
-	invalid += tda5340_command(WRITE_TO_CHIP, ADCINSEL, 0x00);              /**< ADC Input Selection Register */
-	invalid += tda5340_command(WRITE_TO_CHIP, IM0, 0xF0);                   /**< Interruption enable mask */
-	invalid += tda5340_command(WRITE_TO_CHIP, IM1, 0xFF);                   /**< Interruption enable mask */
-	invalid += tda5340_command(WRITE_TO_CHIP, IM2, 0xB8);                   /**< Interruption enable mask */
-	invalid += tda5340_command(WRITE_TO_CHIP, RXC, 0x84);                   /**< RX control register */
-	invalid += tda5340_command(WRITE_TO_CHIP, TXC, 0x27);                   /**< TX control register */
-	invalid += tda5340_command(WRITE_TO_CHIP, TXFIFOAEL, 0x20);
+	tda5340_command(WRITE_TO_CHIP, PPCFG0, 0x1F);                /**< Pin configuration */
+	tda5340_command(WRITE_TO_CHIP, PPCFG1, 0xF2);                /**< Pin configuration */
+	tda5340_command(WRITE_TO_CHIP, PPCFG2, 0x60);                /**< Pin configuration */
+	tda5340_command(WRITE_TO_CHIP, RSSICFG, 0x11);               /**< RSSI Configuration register */
+	tda5340_command(WRITE_TO_CHIP, RSSIOFFS, RSSI_OFFSET_VALUE); /**< RSSI offset register */
+	tda5340_command(WRITE_TO_CHIP, RSSISLOPE, RSSI_SLOPE_VALUE); /**< RSSI slope register */
+	tda5340_command(WRITE_TO_CHIP, ADCINSEL, 0x00);              /**< ADC Input Selection Register */
+	tda5340_command(WRITE_TO_CHIP, IM0, 0xF0);                   /**< Interruption enable mask */
+	tda5340_command(WRITE_TO_CHIP, IM1, 0xFF);                   /**< Interruption enable mask */
+	tda5340_command(WRITE_TO_CHIP, IM2, 0xB8);                   /**< Interruption enable mask */
+	tda5340_command(WRITE_TO_CHIP, RXC, 0x84);                   /**< RX control register */
+	tda5340_command(WRITE_TO_CHIP, TXC, 0x27);                   /**< TX control register */
+	tda5340_command(WRITE_TO_CHIP, TXFIFOAEL, 0x10);
 
 	#if (RX_MODE == SELF_POLLING_MODE)
 		// Self Polling Mode configuration
-		invalid += tda5340_command(WRITE_TO_CHIP, SPMC, 0x09); // SPM control register
-		invalid += tda5340_command(WRITE_TO_CHIP, SPMRT, 0x0A);
-		invalid += tda5340_command(WRITE_TO_CHIP, SPMOFFT0, 0x2C);
-		invalid += tda5340_command(WRITE_TO_CHIP, SPMOFFT1, 0x01);
-		invalid += tda5340_command(WRITE_TO_CHIP, SPMONTA0, 0x1D);
-		invalid += tda5340_command(WRITE_TO_CHIP, SPMONTA1, 0x00);
+		tda5340_command(WRITE_TO_CHIP, SPMC, 0x09); // SPM control register
+		tda5340_command(WRITE_TO_CHIP, SPMRT, 0x0A);
+		tda5340_command(WRITE_TO_CHIP, SPMOFFT0, 0x2C);
+		tda5340_command(WRITE_TO_CHIP, SPMOFFT1, 0x01);
+		tda5340_command(WRITE_TO_CHIP, SPMONTA0, 0x1D);
+		tda5340_command(WRITE_TO_CHIP, SPMONTA1, 0x00);
 	#endif
 
 	// Config A for RX
@@ -287,58 +285,38 @@ void tda5340_init(void) {
 	tda5340_command(WRITE_TO_CHIP, A_PKBITPOS, 0x08);  //RSSI Peak Detector Bit Position Register
 	tda5340_command(WRITE_TO_CHIP, A_CHCFG, 0x11);     //Channel Configuration Register
 
-	// Setting RX-frequency to 867.0000 MHz (with IF-frequency 274 kHz low side LO-injection)
+	// Setting RX-frequency to 868.0 MHz (with IF-frequency 274 kHz low side LO-injection)
 	tda5340_command(WRITE_TO_CHIP, A_PLLINTC1, 0x67);   //PLL MMD Integer Value Register Channel 1
-	tda5340_command(WRITE_TO_CHIP, A_PLLFRAC0C1, 0x8C); //PLL Fractional Division Ratio Register 0 Channel 1
-	tda5340_command(WRITE_TO_CHIP, A_PLLFRAC1C1, 0x18); //PLL Fractional Division Ratio Register 1 Channel 1
+	tda5340_command(WRITE_TO_CHIP, A_PLLFRAC0C1, 0x62); //PLL Fractional Division Ratio Register 0 Channel 1
+	tda5340_command(WRITE_TO_CHIP, A_PLLFRAC1C1, 0x88); //PLL Fractional Division Ratio Register 1 Channel 1
 	tda5340_command(WRITE_TO_CHIP, A_PLLFRAC2C1, 0x11); //PLL Fractional Division Ratio Register 2 Channel 1
 
 	// Wake up control
-	invalid += tda5340_command(WRITE_TO_CHIP, A_WURSSITH1, 0x80);
+	tda5340_command(WRITE_TO_CHIP, A_WURSSITH1, 0x80);
 
 	// Config B for TX
 	tda5340_set_page(1);
-	invalid += tda5340_command(WRITE_TO_CHIP, TXCHNL, 0x00);      /**< TX channel selection */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXRF, 0x00);      /**< Duty cycle control selection */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXCFG, 0x40);     /**< TX configuration register */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXBDRDIV0, 0x76); /**< TX baudrate divider register 0. Fsys = 21948KHz */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXBDRDIV1, 0x04); /**< TX baudrate divider register 1. Fsys = 21948KHz */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXCHOFFS0, 0x00); /**< TX Channel Offset Register 0 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXCHOFFS1, 0x00); /**< TX Channel Offset Register 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG0, 0x00); /**< TX data shaping configuration register 0. ASK sloping division */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG1, 0x00); /**< TX data shaping configuration register 1. Gaussian filter division */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG2, 0x00); /**< TX data shaping configuration register 2. Gaussian filter division. ASK sloping division */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXPOWER0, 0x00);  /**< TX power configuration register 0 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXPOWER1, 0x1F);  /**< TX power configuration register 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXFDEV, 0xD7);    /**< TX frequency deviation register */
+	tda5340_command(WRITE_TO_CHIP, TXCHNL, 0x00);      /**< TX channel selection */
+	tda5340_command(WRITE_TO_CHIP, A_TXRF, 0x00);      /**< Duty cycle control selection */
+	tda5340_command(WRITE_TO_CHIP, A_TXCFG, 0x40);     /**< TX configuration register */
+	tda5340_command(WRITE_TO_CHIP, A_TXBDRDIV0, 0x76); /**< TX baudrate divider register 0. Fsys = 21948KHz */
+	tda5340_command(WRITE_TO_CHIP, A_TXBDRDIV1, 0x04); /**< TX baudrate divider register 1. Fsys = 21948KHz */
+	tda5340_command(WRITE_TO_CHIP, A_TXCHOFFS0, 0x00); /**< TX Channel Offset Register 0 */
+	tda5340_command(WRITE_TO_CHIP, A_TXCHOFFS1, 0x00); /**< TX Channel Offset Register 1 */
+	tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG0, 0x00); /**< TX data shaping configuration register 0. ASK sloping division */
+	tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG1, 0x00); /**< TX data shaping configuration register 1. Gaussian filter division */
+	tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG2, 0x00); /**< TX data shaping configuration register 2. Gaussian filter division. ASK sloping division */
+	tda5340_command(WRITE_TO_CHIP, A_TXPOWER0, 0x00);  /**< TX power configuration register 0 */
+	tda5340_command(WRITE_TO_CHIP, A_TXPOWER1, 0x1F);  /**< TX power configuration register 1 */
+	tda5340_command(WRITE_TO_CHIP, A_TXFDEV, 0xD7);    /**< TX frequency deviation register */
 
-	// Setting TX-frequency to 868.0 MHz
-	invalid += tda5340_command(WRITE_TO_CHIP, A_PLLINTC1, 0x67);   /**< PLL multi modulus divider integer value channel 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_PLLFRAC0C1, 0xD1); /**< PLL fractional division ratio channel 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_PLLFRAC1C1, 0x7E); /**< PLL fractional division ratio channel 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_PLLFRAC2C1, 0x11); /**< PLL fractional division ratio channel 1 */
+	// Setting TX-frequency to 867.0 MHz
+	tda5340_command(WRITE_TO_CHIP, A_PLLINTC1, 0x67);   /**< PLL multi modulus divider integer value channel 1 */
+	tda5340_command(WRITE_TO_CHIP, A_PLLFRAC0C1, 0xA5); /**< PLL fractional division ratio channel 1 */
+	tda5340_command(WRITE_TO_CHIP, A_PLLFRAC1C1, 0xEE); /**< PLL fractional division ratio channel 1 */
+	tda5340_command(WRITE_TO_CHIP, A_PLLFRAC2C1, 0x11); /**< PLL fractional division ratio channel 1 */
 
-	// Config C for TX
-	tda5340_set_page(2);
-	invalid += tda5340_command(WRITE_TO_CHIP, TXCHNL, 0x00);      /**< TX channel selection */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXRF, 0x00);      /**< Duty cycle control selection */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXCFG, 0x40);     /**< TX configuration register */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXBDRDIV0, 0x76); /**< TX baudrate divider register 0. Fsys = 21948KHz */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXBDRDIV1, 0x04); /**< TX baudrate divider register 1. Fsys = 21948KHz */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXCHOFFS0, 0x00); /**< TX Channel Offset Register 0 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXCHOFFS1, 0x00); /**< TX Channel Offset Register 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG0, 0x00); /**< TX data shaping configuration register 0. ASK sloping division */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG1, 0x00); /**< TX data shaping configuration register 1. Gaussian filter division */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXDSHCFG2, 0x00); /**< TX data shaping configuration register 2. Gaussian filter division. ASK sloping division */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXPOWER0, 0x00);  /**< TX power configuration register 0 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXPOWER1, 0x1F);  /**< TX power configuration register 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_TXFDEV, 0xD7);    /**< TX frequency deviation register */
 
-	// Setting TX-frequency to 868.0 MHz
-	invalid += tda5340_command(WRITE_TO_CHIP, A_PLLINTC1, 0x67);   /**< PLL multi modulus divider integer value channel 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_PLLFRAC0C1, 0x95); /**< PLL fractional division ratio channel 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_PLLFRAC1C1, 0x09); /**< PLL fractional division ratio channel 1 */
-	invalid += tda5340_command(WRITE_TO_CHIP, A_PLLFRAC2C1, 0x10); /**< PLL fractional division ratio channel 1 */
 
 	tda5340_interrupt_readout();
 }
