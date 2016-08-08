@@ -88,6 +88,7 @@ query_interruptTDA1_flag=0;//damit keine Auswirkungen von Iterruots beim Einscha
 				istate               = tda5340_interrupt_readout(TDA1);
 				COM_send_string("Interrupt ist aufgetreten\r\n");
 				COM_send_int_as_string(istate);
+				led_on(LED5);
 			}
 
 			// -----------------------------------------------------------------------------------------------------------
