@@ -58,7 +58,7 @@ int main(void) {
 //TESTMODUL-START-------------------------------------------------------------------------------------------------------------------------------------------------------
 	char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		char rx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		COM_send_string("CHAR   TX RX  DATA\r\n");
+		CDC_Device_SendData(&VirtualSerial_CDC_Interface, "CHAR   TX RX  DATA\r\n", 20);
 		uint8_t length = 0;
 
 		struct {
@@ -73,12 +73,9 @@ int main(void) {
 
 
 	// Main loop
-
 		while (1) {
+			CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Beginn while loop \r\n", 20);
 			// NINT Interrupt handling
-			COM_send_string("Beginn while loop \r\n");
-
-
 			if (query_interruptTDA1_flag) {
 				query_interruptTDA1_flag = 0;
 				istate               = tda5340_interrupt_readout(TDA1);
@@ -95,8 +92,7 @@ int main(void) {
 			// Switch to Rx-Mode if Tx is finished
 			if (istate & (1 << 18)) {
 				tda5340_set_mode_and_config(TDA1, RX_MODE,1); //TODO: was is
-				istate &= ~(1 << 18);
-				COM_send_string("Switch  to Rx-Mode\r\n");
+				istate &= ~(1 << 18);CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Switch  to Rx-Mode\r\n", 20);
 			}
 
 			// -----------------------------------------------------------------------------------------------------------
@@ -106,8 +102,7 @@ int main(void) {
 				rssi.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
 				rssi.rx  = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIRX, 0xFF);
 				rssi.agc = (tda5340_transfer(TDA1, READ_FROM_CHIP, AGCADRR, 0xFF) & 0x06) >> 1;
-				istate  &= ~(1 << 1);
-				COM_send_string("Frame sync - Config A\r\n");
+				istate  &= ~(1 << 1);CDC_Device_SendData(&VirtualSerial_CDC_Interface, "Frame sync - Config A\r\n", 23);
 			}
 
 			// End of message - Config A
@@ -117,10 +112,10 @@ int main(void) {
 				rssi.ppl = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPPL, 0xFF);
 
 				tda5340_set_mode_and_config(TDA1,SLEEP_MODE,1);
-				COM_send_string("sleep-Mode\r\n");
+				CDC_Device_SendData(&VirtualSerial_CDC_Interface, "sleep-Mode\r\n", 12);
 				if (!tda5340_receive(TDA1, rx_data, &length)) {
 					led_on(LED2);
-					COM_send_string("set led high\r\n");
+					CDC_Device_SendData(&VirtualSerial_CDC_Interface, "set led high\r\n", 15);
 					if (length > 32) length = 32;
 
 					led2_ctr = 100000;

@@ -68,7 +68,7 @@ void COM_wait_for_transfer(void) {
 
 void COM_send_int_as_string(uint32_t data){
 	//TODO: fertigstellen
-if (COM_transfer_started==0) { //TODO: kann entfernt werden??
+if (COM_transfer_started==0) {
 	COM_wait_for_transfer(); //wait till transfer started
 }
 	char str[11];
@@ -76,10 +76,3 @@ if (COM_transfer_started==0) { //TODO: kann entfernt werden??
 		   sprintf(str, "%u" , data);
 		   CDC_Device_SendData(&VirtualSerial_CDC_Interface, str, strlen(str));
 }
-
-
-void COM_send_string(const void* const string){
-	CDC_Device_SendData(&VirtualSerial_CDC_Interface, string, strlen(string));
-
-}
-
