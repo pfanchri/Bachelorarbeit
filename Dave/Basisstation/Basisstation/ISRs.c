@@ -40,6 +40,7 @@ extern void ERU0_1_IRQHandler(void) {
 //	}
 	query_interruptTDA3_flag = 1;
 	query_interruptTDA6_flag = 1;
+	led_on(LED7);
 }
 // ISR für TDA4  (ERU1 OGU1 IRQ)
 extern void ERU1_1_IRQHandler(void) {

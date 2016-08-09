@@ -15312,3 +15312,9 @@ For more details, see the JLinkGDBServerCL console.
 Could not connect to J-Link. Please check if plugged into USB port or Ethernet switch.
 
 For more details, see the JLinkGDBServerCL console.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-08-09 14:12:41.784
+!MESSAGE J-Link GDB Server failed: 
+Could not connect to J-Link. Please check if plugged into USB port or Ethernet switch.
+
+For more details, see the JLinkGDBServerCL console.
