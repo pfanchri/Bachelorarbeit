@@ -1,44 +1,11 @@
-13:04:06 **** Build of configuration Debug for project Basisstation ****
+14:04:52 **** Incremental Build of configuration Debug for project Basisstation ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
-../Main.c: In function 'main':
-'Building file: ../Main.c'
-../Main.c:128:32: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
-     if (!tda5340_receive(TDA5, rx_data, &length)) {
-                                ^
-In file included from ../Header_general.h:21:0,
-                 from ../Main.c:7:
-../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
- uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
-         ^
-../Main.c:71:5: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
-   } rssi = { .pmf = 0, .prx = 0, .rx  = 0, .ppl = 0, .agc = 0 };
-     ^
-../Main.c:60:7: warning: unused variable 'tx_data' [-Wunused-variable]
-  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-       ^
-'Invoking: ARM-GCC C Compiler'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
-'Finished building: ../Main.c'
-
-'Building target: Basisstation.elf'
-'Invoking: ARM-GCC C Linker'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
-'Finished building target: Basisstation.elf'
-
-'Invoking: ARM-GCC Create Flash Image'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
-'Finished building: Basisstation.hex'
-
 'Invoking: ARM-GCC Print Size'
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
    text	   data	    bss	    dec	    hex	filename
-  29652	    152	   7300	  37104	   90f0	Basisstation.elf
+  29484	    152	   7300	  36936	   9048	Basisstation.elf
 'Finished building: Basisstation.siz'
 
-'Invoking: ARM-GCC Create Listing'
-"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
-'Finished building: Basisstation.lst'
 
-
-13:04:07 Build Finished (took 763ms)
+14:04:52 Build Finished (took 314ms)
 
