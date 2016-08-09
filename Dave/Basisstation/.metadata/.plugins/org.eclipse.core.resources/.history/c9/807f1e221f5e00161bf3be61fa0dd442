@@ -154,13 +154,12 @@ void init (void);
 void general_test(void);
 void send_serialnumber_to_com(void);
 
-//global variables
-extern uint8_t query_interruptTDA1_flag;
-extern uint8_t query_interruptTDA2_flag;
-extern uint8_t query_interruptTDA3_flag;
-extern uint8_t query_interruptTDA4_flag;
-extern uint8_t query_interruptTDA5_flag;
-extern uint8_t query_interruptTDA6_flag;
+volatile uint8_t query_interruptTDA1_flag;
+volatile uint8_t query_interruptTDA2_flag;
+volatile uint8_t query_interruptTDA3_flag;
+volatile uint8_t query_interruptTDA4_flag;
+volatile uint8_t query_interruptTDA5_flag;
+volatile uint8_t query_interruptTDA6_flag;
 
 
 #endif /* HEADER_GENERAL_H_ */
