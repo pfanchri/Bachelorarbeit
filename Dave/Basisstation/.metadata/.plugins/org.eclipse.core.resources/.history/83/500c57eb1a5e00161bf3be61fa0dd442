@@ -19,8 +19,7 @@ int main(void) {
 
 	init();
 	USB_Init(); //for virt. COM Port
-	COM_wait_for_transfer();
-	set_TDA_status(TDA_ALL, 1);	delay(40000);
+
 	tda5340_gpio_init(TDA_ALL);
 	spi_init(spi_master_ch);
 
@@ -36,20 +35,21 @@ int main(void) {
 	led_on(LED1);
 
 
+	COM_wait_for_transfer();
+	//set_TDA_status(TDA_ALL, 1);	delay(40000);
 
-
-//	set_TDA_status(TDA1, 1);
-//	delay(4000);
-//	set_TDA_status(TDA2, 1);
-//	delay(4000);
-//	set_TDA_status(TDA3, 1);
-//	delay(4000000);
-//	set_TDA_status(TDA4, 1);
-//	delay(4000);
-//	set_TDA_status(TDA5, 1);
-//	delay(4000000);
-//	set_TDA_status(TDA6, 1);
-//	delay(4000);
+	set_TDA_status(TDA1, 1);
+	delay(4000);
+	set_TDA_status(TDA2, 1);
+	delay(4000);
+	set_TDA_status(TDA3, 1);
+	delay(4000000);
+	set_TDA_status(TDA4, 1);
+	delay(4000);
+	set_TDA_status(TDA5, 1);
+	delay(4000000);
+	set_TDA_status(TDA6, 1);
+	delay(4000);
 
 	delay(40000);
 	tda5340_init(TDA1); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
