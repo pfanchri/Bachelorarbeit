@@ -6,6 +6,10 @@
  *      adapt by Pfannenmüller
  */
 
+#define TDA5340_PON_PORT     XMC_GPIO_PORT0
+#define TDA5340_PON_PIN      2
+#define TDA5340_PP2_PORT     XMC_GPIO_PORT0
+#define TDA5340_PP2_PIN      3
 
 #define RX_MODE              RUN_MODE_SLAVE
 
@@ -247,3 +251,5 @@ uint32_t tda5340_get_serial_number(uint8_t device_number);
 #define RSSIPMF              0xE8
 #define SPWR                 0xE9
 #define NPWR                 0xEA
+
+//#define TDA5340_PON          TDA5340_PON_PORT, TDA5340_PON_PIN
