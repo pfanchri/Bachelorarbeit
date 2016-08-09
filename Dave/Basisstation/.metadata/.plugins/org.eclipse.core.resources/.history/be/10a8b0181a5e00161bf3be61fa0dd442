@@ -357,11 +357,12 @@ void tda5340_set_mode_and_config(uint8_t device_number, uint8_t mode, uint8_t co
 	}
 
 	if (mode == DEEP_SLEEP_MODE) {
-		tda5340_transfer(device_number, WRITE_TO_CHIP, CMC, 0x30 | transferbit);//enable Deep Sleep Mode in CMC Register
-		set_TDA_status(device_number, 0);
+		tda5340_transfer(device_number, WRITE_TO_CHIP, CMC, 0x30 | transferbit);
+		// Set Pins for deep-sleep-mode
+		XMC_GPIO_SetOutputLow(TDA5340_PON_PORT, TDA5340_PON_PIN);
 	} else {
 		tda5340_transfer(device_number, WRITE_TO_CHIP, CMC, 0x10 | transferbit);
-		set_TDA_status(device_number, 1);
+		XMC_GPIO_SetOutputHigh(TDA5340_PON_PORT, TDA5340_PON_PIN);
 	}
 }
 
