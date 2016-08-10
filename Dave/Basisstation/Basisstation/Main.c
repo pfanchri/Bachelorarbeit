@@ -52,14 +52,27 @@ int main(void) {
 //	delay(4000);
 
 	delay(40000);
-	tda5340_init(TDA3); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
+	tda5340_init(TDA6); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
 
-	tda5340_set_mode_and_config(TDA3, RX_MODE, 0);
+	tda5340_set_mode_and_config(TDA6, RX_MODE, 0);
 
+//	Ablaufschleife START+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	//	while (1){
+//		COM_send_string("Initialisierung beendet");
+//
+//
+//
+//
+//
+//
+//
+//
+//	}
+//	Ablaufschleife ENDE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //TESTMODUL-START-------------------------------------------------------------------------------------------------------------------------------------------------------
 	char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		char rx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		COM_send_string("aktuell Test mit TDA3\r\n");
+		COM_send_string("aktuell Test mit TDA6\r\n");
 		uint8_t length = 0;
 
 		struct {
@@ -72,20 +85,23 @@ int main(void) {
 
 		uint32_t istate = 0, led1_ctr = 0, led2_ctr = 0;
 
+
+
+
 			COM_send_string("Beginn while loop------------------------------- \r\n");
 
 	// Main loop
 led_off(LED_ALL );
-query_interruptTDA3_flag=0;//damit keine Auswirkungen von Iterruots beim Einschalten
+query_interruptTDA6_flag=0;//damit keine Auswirkungen von Iterruots beim Einschalten
 
 		while (1) {			//COM_send_string(".");
 
 			// NINT Interrupt handling
 
 
-			if (query_interruptTDA3_flag) {
-				query_interruptTDA3_flag = 0;
-				istate               = tda5340_interrupt_readout(TDA3);
+			if (query_interruptTDA6_flag) {
+				query_interruptTDA6_flag = 0;
+				istate               = tda5340_interrupt_readout(TDA6);
 				COM_send_string("Interrupt ist aufgetreten\r\n");
 				COM_send_int_as_string(istate);
 				led_on(LED5);
@@ -101,7 +117,7 @@ query_interruptTDA3_flag=0;//damit keine Auswirkungen von Iterruots beim Einscha
 
 			// Switch to Rx-Mode if Tx is finished
 			if (istate & (1 << 18)) {
-				tda5340_set_mode_and_config(TDA3, RX_MODE,0); //TODO: was is
+				tda5340_set_mode_and_config(TDA6, RX_MODE,0); //TODO: was is
 				istate &= ~(1 << 18);
 				COM_send_string("Switch  to Rx-Mode\r\n");
 			}
@@ -110,9 +126,9 @@ query_interruptTDA3_flag=0;//damit keine Auswirkungen von Iterruots beim Einscha
 
 			// Frame sync - Config A
 			if (istate & (1 << 1)) {
-				rssi.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
-				rssi.rx  = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIRX, 0xFF);
-				rssi.agc = (tda5340_transfer(TDA3, READ_FROM_CHIP, AGCADRR, 0xFF) & 0x06) >> 1;
+				rssi.pmf = tda5340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+				rssi.rx  = tda5340_transfer(TDA6, READ_FROM_CHIP, RSSIRX, 0xFF);
+				rssi.agc = (tda5340_transfer(TDA6, READ_FROM_CHIP, AGCADRR, 0xFF) & 0x06) >> 1;
 				istate  &= ~(1 << 1);
 				COM_send_string("Frame sync - Config A\r\n");
 			}
@@ -120,20 +136,20 @@ query_interruptTDA3_flag=0;//damit keine Auswirkungen von Iterruots beim Einscha
 			// End of message - Config A
 			if (istate & (1 << 3)) {
 				// delay(5000);
-				rssi.prx = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPRX, 0xFF);
-				rssi.ppl = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPPL, 0xFF);
+				rssi.prx = tda5340_transfer(TDA6, READ_FROM_CHIP, RSSIPRX, 0xFF);
+				rssi.ppl = tda5340_transfer(TDA6, READ_FROM_CHIP, RSSIPPL, 0xFF);
 
-				tda5340_set_mode_and_config(TDA3,SLEEP_MODE,0);
+				tda5340_set_mode_and_config(TDA6,SLEEP_MODE,0);
 				COM_send_string("sleep-Mode\r\n");
-				if (!tda5340_receive(TDA3, rx_data, &length)) {
+				if (!tda5340_receive(TDA6, rx_data, &length)) {
 					led_on(LED2);
 					COM_send_string("set led high\r\n");
 					if (length > 32) length = 32;
 
-					led2_ctr = 100000;
+					led2_ctr = 400000;
 				}
 
-				tda5340_set_mode_and_config(TDA3,RX_MODE,0);
+				tda5340_set_mode_and_config(TDA6,RX_MODE,0);
 				istate &= ~(1 << 3);
 			}
 
@@ -154,12 +170,12 @@ query_interruptTDA3_flag=0;//damit keine Auswirkungen von Iterruots beim Einscha
 
 			// -----------------------------------------------------------------------------------------------------------
 		}
+
+
+	tda5340_set_mode_and_config(TDA6, RX_MODE, 0);// ANPASSEN AN MEJHRE TDAs
+
+
 //TESTMODUL-ENDE---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-	tda5340_set_mode_and_config(TDA3, RX_MODE, 0);// ANPASSEN AN MEJHRE TDAs
-
-
 
 
 

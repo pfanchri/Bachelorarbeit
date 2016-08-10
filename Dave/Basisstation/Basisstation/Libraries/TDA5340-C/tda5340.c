@@ -159,8 +159,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	NVIC_SetPriority(ERU0_2_IRQn, IRQ_PRIORITY_TDA5);
 	NVIC_EnableIRQ(ERU0_2_IRQn);
 	//	activate Interrupts and set priority
-	//NVIC_SetPriority(ERU0_3_IRQn, IRQ_PRIORITY_TDA6);
-	//NVIC_EnableIRQ(ERU0_3_IRQn);
+//	NVIC_SetPriority(ERU0_3_IRQn, IRQ_PRIORITY_TDA6);//Testweise aktiviert, evtl wieder deaktivieren
+//	NVIC_EnableIRQ(ERU0_3_IRQn);//Testweise aktiviert, evtl wieder deaktivieren
 
 }
 

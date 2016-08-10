@@ -73,7 +73,7 @@ if (COM_transfer_started==0) { //TODO: kann entfernt werden??
 }
 	char str[11];
 
-		   sprintf(str, "%x" , data);
+		   sprintf(str, "%u" , data);
 		   CDC_Device_SendData(&VirtualSerial_CDC_Interface, str, 8);
 			CDC_Device_USBTask(&VirtualSerial_CDC_Interface); //TODO: hier notwendig?
 }
