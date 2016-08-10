@@ -3630,3 +3630,1661 @@ In file included from ../Header_general.h:21:0,
   29472	    152	   7300	  36924	   903c	Basisstation.elf
 'Finished building: Basisstation.siz'
 
+13:08:24 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:66:2: warning: statement with no effect [-Wunused-value]
+'Invoking: ARM-GCC C Compiler'
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+subdir.mk:30: recipe for target 'Main.o' failed
+  ^
+../Main.c:66:7: error: expected ';' before 'rssi_TDA1'
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:67:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:67:7: error: expected ';' before 'rssi_TDA2'
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:68:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:68:7: error: expected ';' before 'rssi_TDA3'
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:69:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:69:7: error: expected ';' before 'rssi_TDA4'
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:70:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:70:7: error: expected ';' before 'rssi_TDA5'
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:71:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:71:7: error: expected ';' before 'rssi_TDA6'
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:222:54: error: 'rssi_TDA1' undeclared (first use in this function)
+   COM_send_string("\r\nPMF:");COM_send_int_as_string(rssi_TDA1)
+                                                      ^
+../Main.c:223:3: error: expected ';' before 'COM_send_string'
+   COM_send_string("\r\nPRX:");
+   ^
+../Main.c:234:2: error: expected identifier before '}' token
+  }
+  ^
+../Main.c:249:4: error: conflicting types for 'rssi'
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:65:4: note: previous declaration of 'rssi' was here
+  } rssi;
+    ^
+../Main.c:305:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data, &length)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:249:4: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:238:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+make: *** [Main.o] Error 1
+make: *** Waiting for unfinished jobs....
+'Building file: ../ISRs.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "ISRs.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="ISRs.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"ISRs.d" -MT"ISRs.d ISRs.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "ISRs.o" "../ISRs.c"
+'Finished building: ../ISRs.c'
+
+13:10:22 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:66:9: error: variable 'rssi_TDA1' has initializer but incomplete type
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+  struct rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:66:9: error: unknown field 'pmf' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:9: error: unknown field 'prx' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:9: error: unknown field 'rx' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:9: error: unknown field 'ppl' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:9: error: unknown field 'agc' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:14: error: storage size of 'rssi_TDA1' isn't known
+  struct rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:9: error: variable 'rssi_TDA2' has initializer but incomplete type
+  struct rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:67:9: error: unknown field 'pmf' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssi_TDA2')
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:67:9: error: unknown field 'prx' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssi_TDA2')
+../Main.c:67:9: error: unknown field 'rx' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssi_TDA2')
+../Main.c:67:9: error: unknown field 'ppl' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssi_TDA2')
+../Main.c:67:9: error: unknown field 'agc' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssi_TDA2')
+../Main.c:67:14: error: storage size of 'rssi_TDA2' isn't known
+  struct rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:9: error: variable 'rssi_TDA3' has initializer but incomplete type
+  struct rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:68:9: error: unknown field 'pmf' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssi_TDA3')
+../Main.c:68:9: error: unknown field 'prx' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssi_TDA3')
+../Main.c:68:9: error: unknown field 'rx' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssi_TDA3')
+../Main.c:68:9: error: unknown field 'ppl' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssi_TDA3')
+../Main.c:68:9: error: unknown field 'agc' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssi_TDA3')
+../Main.c:68:14: error: storage size of 'rssi_TDA3' isn't known
+  struct rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:9: error: variable 'rssi_TDA4' has initializer but incomplete type
+  struct rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:69:9: error: unknown field 'pmf' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssi_TDA4')
+../Main.c:69:9: error: unknown field 'prx' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssi_TDA4')
+../Main.c:69:9: error: unknown field 'rx' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssi_TDA4')
+../Main.c:69:9: error: unknown field 'ppl' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssi_TDA4')
+../Main.c:69:9: error: unknown field 'agc' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssi_TDA4')
+../Main.c:69:14: error: storage size of 'rssi_TDA4' isn't known
+  struct rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:9: error: variable 'rssi_TDA5' has initializer but incomplete type
+  struct rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:70:9: error: unknown field 'pmf' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssi_TDA5')
+../Main.c:70:9: error: unknown field 'prx' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssi_TDA5')
+../Main.c:70:9: error: unknown field 'rx' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssi_TDA5')
+../Main.c:70:9: error: unknown field 'ppl' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssi_TDA5')
+../Main.c:70:9: error: unknown field 'agc' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssi_TDA5')
+../Main.c:70:14: error: storage size of 'rssi_TDA5' isn't known
+  struct rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:9: error: variable 'rssi_TDA6' has initializer but incomplete type
+  struct rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:71:9: error: unknown field 'pmf' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssi_TDA6')
+../Main.c:71:9: error: unknown field 'prx' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssi_TDA6')
+../Main.c:71:9: error: unknown field 'rx' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssi_TDA6')
+../Main.c:71:9: error: unknown field 'ppl' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssi_TDA6')
+../Main.c:71:9: error: unknown field 'agc' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssi_TDA6')
+../Main.c:71:14: error: storage size of 'rssi_TDA6' isn't known
+  struct rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:223:3: error: expected ';' before 'COM_send_string'
+   COM_send_string("\r\nPRX:");
+   ^
+../Main.c:234:2: error: expected identifier before '}' token
+  }
+  ^
+../Main.c:249:4: error: conflicting types for 'rssi'
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:65:4: note: previous declaration of 'rssi' was here
+  } rssi;
+    ^
+../Main.c:305:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data, &length)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:249:4: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:238:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+../Main.c:71:14: warning: unused variable 'rssi_TDA6' [-Wunused-variable]
+  struct rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: unused variable 'rssi_TDA5' [-Wunused-variable]
+  struct rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: unused variable 'rssi_TDA4' [-Wunused-variable]
+  struct rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: unused variable 'rssi_TDA3' [-Wunused-variable]
+  struct rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:14: warning: unused variable 'rssi_TDA2' [-Wunused-variable]
+  struct rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:66:14: warning: unused variable 'rssi_TDA1' [-Wunused-variable]
+  struct rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+make: *** [Main.o] Error 1
+13:15:43 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:66:2: warning: statement with no effect [-Wunused-value]
+'Invoking: ARM-GCC C Compiler'
+  rssi rssi_TDA1 = {  0,  0,  0,  0,  0 };
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+subdir.mk:30: recipe for target 'Main.o' failed
+  ^
+../Main.c:66:7: error: expected ';' before 'rssi_TDA1'
+  rssi rssi_TDA1 = {  0,  0,  0,  0,  0 };
+       ^
+../Main.c:67:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:67:7: error: expected ';' before 'rssi_TDA2'
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:68:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:68:7: error: expected ';' before 'rssi_TDA3'
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:69:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:69:7: error: expected ';' before 'rssi_TDA4'
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:70:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:70:7: error: expected ';' before 'rssi_TDA5'
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:71:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:71:7: error: expected ';' before 'rssi_TDA6'
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:222:54: error: 'rssi_TDA1' undeclared (first use in this function)
+   COM_send_string("\r\nPMF:");COM_send_int_as_string(rssi_TDA1)
+                                                      ^
+../Main.c:223:3: error: expected ';' before 'COM_send_string'
+   COM_send_string("\r\nPRX:");
+   ^
+../Main.c:234:2: error: expected identifier before '}' token
+  }
+  ^
+../Main.c:249:4: error: conflicting types for 'rssi'
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:65:4: note: previous declaration of 'rssi' was here
+  } rssi;
+    ^
+../Main.c:305:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data, &length)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:249:4: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:238:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+make: *** [Main.o] Error 1
+13:16:02 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:66:9: error: variable 'rssi_TDA1' has initializer but incomplete type
+  struct rssi rssi_TDA1 = {  0,  0,  0,  0,  0 };
+         ^
+../Main.c:66:9: warning: excess elements in struct initializer
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:9: warning: excess elements in struct initializer
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssi_TDA1')
+../Main.c:66:14: error: storage size of 'rssi_TDA1' isn't known
+  struct rssi rssi_TDA1 = {  0,  0,  0,  0,  0 };
+              ^
+../Main.c:67:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:67:7: error: expected ';' before 'rssi_TDA2'
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:68:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:68:7: error: expected ';' before 'rssi_TDA3'
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:69:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:69:7: error: expected ';' before 'rssi_TDA4'
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:70:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:70:7: error: expected ';' before 'rssi_TDA5'
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:71:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:71:7: error: expected ';' before 'rssi_TDA6'
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:223:3: error: expected ';' before 'COM_send_string'
+   COM_send_string("\r\nPRX:");
+   ^
+../Main.c:234:2: error: expected identifier before '}' token
+  }
+  ^
+../Main.c:249:4: error: conflicting types for 'rssi'
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:65:4: note: previous declaration of 'rssi' was here
+  } rssi;
+    ^
+../Main.c:305:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data, &length)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:249:4: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:238:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+../Main.c:66:14: warning: unused variable 'rssi_TDA1' [-Wunused-variable]
+  struct rssi rssi_TDA1 = {  0,  0,  0,  0,  0 };
+              ^
+make: *** [Main.o] Error 1
+13:16:43 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:66:2: warning: statement with no effect [-Wunused-value]
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+subdir.mk:30: recipe for target 'Main.o' failed
+  ^
+../Main.c:66:7: error: expected ';' before 'rssi_TDA1'
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:67:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:67:7: error: expected ';' before 'rssi_TDA2'
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:68:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:68:7: error: expected ';' before 'rssi_TDA3'
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:69:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:69:7: error: expected ';' before 'rssi_TDA4'
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:70:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:70:7: error: expected ';' before 'rssi_TDA5'
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:71:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:71:7: error: expected ';' before 'rssi_TDA6'
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:222:54: error: 'rssi_TDA1' undeclared (first use in this function)
+   COM_send_string("\r\nPMF:");COM_send_int_as_string(rssi_TDA1)
+                                                      ^
+../Main.c:223:3: error: expected ';' before 'COM_send_string'
+   COM_send_string("\r\nPRX:");
+   ^
+../Main.c:248:4: error: conflicting types for 'rssi'
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:65:4: note: previous declaration of 'rssi' was here
+  } rssi;
+    ^
+../Main.c:304:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data, &length)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:248:4: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:237:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+make: *** [Main.o] Error 1
+13:16:51 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+../Main.c:66:2: warning: statement with no effect [-Wunused-value]
+'Invoking: ARM-GCC C Compiler'
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+  ^
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:66:7: error: expected ';' before 'rssi_TDA1'
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:67:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:67:7: error: expected ';' before 'rssi_TDA2'
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:68:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:68:7: error: expected ';' before 'rssi_TDA3'
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:69:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:69:7: error: expected ';' before 'rssi_TDA4'
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:70:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:70:7: error: expected ';' before 'rssi_TDA5'
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:71:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:71:7: error: expected ';' before 'rssi_TDA6'
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:222:54: error: 'rssi_TDA1' undeclared (first use in this function)
+   COM_send_string("\r\nPMF:");COM_send_int_as_string(rssi_TDA1);
+                                                      ^
+../Main.c:248:4: error: conflicting types for 'rssi'
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:65:4: note: previous declaration of 'rssi' was here
+  } rssi;
+    ^
+../Main.c:304:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data, &length)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:248:4: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:237:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+make: *** [Main.o] Error 1
+13:17:04 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:66:2: warning: statement with no effect [-Wunused-value]
+'Invoking: ARM-GCC C Compiler'
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+  ^
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:66:7: error: expected ';' before 'rssi_TDA1'
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:67:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:67:7: error: expected ';' before 'rssi_TDA2'
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:68:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:68:7: error: expected ';' before 'rssi_TDA3'
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:69:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:69:7: error: expected ';' before 'rssi_TDA4'
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:70:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:70:7: error: expected ';' before 'rssi_TDA5'
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:71:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:71:7: error: expected ';' before 'rssi_TDA6'
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:248:4: error: conflicting types for 'rssi'
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:65:4: note: previous declaration of 'rssi' was here
+  } rssi;
+    ^
+../Main.c:304:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data, &length)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:248:4: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:237:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+make: *** [Main.o] Error 1
+13:41:53 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:66:2: warning: statement with no effect [-Wunused-value]
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+subdir.mk:30: recipe for target 'Main.o' failed
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:66:7: error: expected ';' before 'rssi_TDA1'
+  rssi rssi_TDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:67:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:67:7: error: expected ';' before 'rssi_TDA2'
+  rssi rssi_TDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:68:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:68:7: error: expected ';' before 'rssi_TDA3'
+  rssi rssi_TDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:69:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:69:7: error: expected ';' before 'rssi_TDA4'
+  rssi rssi_TDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:70:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:70:7: error: expected ';' before 'rssi_TDA5'
+  rssi rssi_TDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:71:2: warning: statement with no effect [-Wunused-value]
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:71:7: error: expected ';' before 'rssi_TDA6'
+  rssi rssi_TDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+make: *** [Main.o] Error 1
+13:42:32 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:66:2: warning: statement with no effect [-Wunused-value]
+  rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:66:7: error: expected ';' before 'rssiTDA1'
+  rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:67:2: warning: statement with no effect [-Wunused-value]
+'Invoking: ARM-GCC C Compiler'
+  rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+subdir.mk:30: recipe for target 'Main.o' failed
+  ^
+../Main.c:67:7: error: expected ';' before 'rssiTDA2'
+  rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:68:2: warning: statement with no effect [-Wunused-value]
+  rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:68:7: error: expected ';' before 'rssiTDA3'
+  rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:69:2: warning: statement with no effect [-Wunused-value]
+  rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:69:7: error: expected ';' before 'rssiTDA4'
+  rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:70:2: warning: statement with no effect [-Wunused-value]
+  rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:70:7: error: expected ';' before 'rssiTDA5'
+  rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:71:2: warning: statement with no effect [-Wunused-value]
+  rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+  ^
+../Main.c:71:7: error: expected ';' before 'rssiTDA6'
+  rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+       ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:110:4: error: 'rssiTDA1' undeclared (first use in this function)
+    rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:116:4: error: 'rssiTDA2' undeclared (first use in this function)
+    rssiTDA2.pmf = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:122:4: error: 'rssiTDA3' undeclared (first use in this function)
+    rssiTDA3.pmf = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:128:4: error: 'rssiTDA4' undeclared (first use in this function)
+    rssiTDA4.pmf = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:134:4: error: 'rssiTDA5' undeclared (first use in this function)
+    rssiTDA5.pmf = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: error: 'rssiTDA6' undeclared (first use in this function)
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+make: *** [Main.o] Error 1
+13:43:07 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:66:9: error: variable 'rssiTDA1' has initializer but incomplete type
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+         ^
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:66:9: error: unknown field 'pmf' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssiTDA1')
+../Main.c:66:9: error: unknown field 'prx' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssiTDA1')
+../Main.c:66:9: error: unknown field 'rx' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssiTDA1')
+../Main.c:66:9: error: unknown field 'ppl' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssiTDA1')
+../Main.c:66:9: error: unknown field 'agc' specified in initializer
+../Main.c:66:9: warning: excess elements in struct initializer
+../Main.c:66:9: warning: (near initialization for 'rssiTDA1')
+../Main.c:66:14: error: storage size of 'rssiTDA1' isn't known
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:9: error: variable 'rssiTDA2' has initializer but incomplete type
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:67:9: error: unknown field 'pmf' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssiTDA2')
+../Main.c:67:9: error: unknown field 'prx' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssiTDA2')
+../Main.c:67:9: error: unknown field 'rx' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssiTDA2')
+../Main.c:67:9: error: unknown field 'ppl' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssiTDA2')
+../Main.c:67:9: error: unknown field 'agc' specified in initializer
+../Main.c:67:9: warning: excess elements in struct initializer
+../Main.c:67:9: warning: (near initialization for 'rssiTDA2')
+../Main.c:67:14: error: storage size of 'rssiTDA2' isn't known
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:9: error: variable 'rssiTDA3' has initializer but incomplete type
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:68:9: error: unknown field 'pmf' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssiTDA3')
+../Main.c:68:9: error: unknown field 'prx' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssiTDA3')
+../Main.c:68:9: error: unknown field 'rx' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssiTDA3')
+../Main.c:68:9: error: unknown field 'ppl' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssiTDA3')
+../Main.c:68:9: error: unknown field 'agc' specified in initializer
+../Main.c:68:9: warning: excess elements in struct initializer
+../Main.c:68:9: warning: (near initialization for 'rssiTDA3')
+../Main.c:68:14: error: storage size of 'rssiTDA3' isn't known
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:9: error: variable 'rssiTDA4' has initializer but incomplete type
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:69:9: error: unknown field 'pmf' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssiTDA4')
+../Main.c:69:9: error: unknown field 'prx' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssiTDA4')
+../Main.c:69:9: error: unknown field 'rx' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssiTDA4')
+../Main.c:69:9: error: unknown field 'ppl' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssiTDA4')
+../Main.c:69:9: error: unknown field 'agc' specified in initializer
+../Main.c:69:9: warning: excess elements in struct initializer
+../Main.c:69:9: warning: (near initialization for 'rssiTDA4')
+../Main.c:69:14: error: storage size of 'rssiTDA4' isn't known
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:9: error: variable 'rssiTDA5' has initializer but incomplete type
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:70:9: error: unknown field 'pmf' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssiTDA5')
+../Main.c:70:9: error: unknown field 'prx' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssiTDA5')
+../Main.c:70:9: error: unknown field 'rx' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssiTDA5')
+../Main.c:70:9: error: unknown field 'ppl' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssiTDA5')
+../Main.c:70:9: error: unknown field 'agc' specified in initializer
+../Main.c:70:9: warning: excess elements in struct initializer
+../Main.c:70:9: warning: (near initialization for 'rssiTDA5')
+../Main.c:70:14: error: storage size of 'rssiTDA5' isn't known
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:9: error: variable 'rssiTDA6' has initializer but incomplete type
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+         ^
+../Main.c:71:9: error: unknown field 'pmf' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssiTDA6')
+../Main.c:71:9: error: unknown field 'prx' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssiTDA6')
+../Main.c:71:9: error: unknown field 'rx' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssiTDA6')
+../Main.c:71:9: error: unknown field 'ppl' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssiTDA6')
+../Main.c:71:9: error: unknown field 'agc' specified in initializer
+../Main.c:71:9: warning: excess elements in struct initializer
+../Main.c:71:9: warning: (near initialization for 'rssiTDA6')
+../Main.c:71:14: error: storage size of 'rssiTDA6' isn't known
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:85:4: error: 'istate' undeclared (first use in this function)
+    istate = tda5340_interrupt_readout(TDA1);
+    ^
+../Main.c:85:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:140:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:151:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:151:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:71:14: warning: unused variable 'rssiTDA6' [-Wunused-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: unused variable 'rssiTDA5' [-Wunused-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: unused variable 'rssiTDA4' [-Wunused-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: unused variable 'rssiTDA3' [-Wunused-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:14: warning: unused variable 'rssiTDA2' [-Wunused-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:66:14: warning: unused variable 'rssiTDA1' [-Wunused-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:65:4: warning: unused variable 'rssi' [-Wunused-variable]
+  } rssi;
+    ^
+make: *** [Main.o] Error 1
+13:44:31 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:86:4: error: 'istate' undeclared (first use in this function)
+'Invoking: ARM-GCC C Compiler'
+    istate = tda5340_interrupt_readout(TDA1);
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+    ^
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:86:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:141:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:152:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:152:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:72:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+make: *** [Main.o] Error 1
+13:45:33 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:98:4: error: 'istate' undeclared (first use in this function)
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+    istate = tda5340_interrupt_readout(TDA4);
+subdir.mk:30: recipe for target 'Main.o' failed
+    ^
+../Main.c:98:4: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:141:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+    ^
+../Main.c:152:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:152:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:72:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+make: *** [Main.o] Error 1
+13:45:48 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:141:4: warning: implicit declaration of function 'TDA6340_transfer' [-Wimplicit-function-declaration]
+'Invoking: ARM-GCC C Compiler'
+    rssiTDA6.pmf = TDA6340_transfer(TDA6, READ_FROM_CHIP, RSSIPMF, 0xFF);
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+subdir.mk:30: recipe for target 'Main.o' failed
+    ^
+../Main.c:152:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:152:31: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:152:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:157:4: error: 'istate' undeclared (first use in this function)
+    istate &= ~(1 << 3);
+    ^
+../Main.c:72:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+make: *** [Main.o] Error 1
+13:46:32 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:152:31: error: 'rx_data' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                               ^
+../Main.c:152:31: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:152:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:157:4: error: 'istate' undeclared (first use in this function)
+    istate &= ~(1 << 3);
+    ^
+../Main.c:72:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+make: *** [Main.o] Error 1
+13:48:18 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+../Main.c:152:31: error: 'rx_data' undeclared (first use in this function)
+'Invoking: ARM-GCC C Compiler'
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+                               ^
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:152:31: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:152:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:72:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:67:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+make: *** [Main.o] Error 1
+13:50:02 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:153:31: error: 'rx_data' undeclared (first use in this function)
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+subdir.mk:30: recipe for target 'Main.o' failed
+                               ^
+../Main.c:153:31: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:153:41: error: 'length' undeclared (first use in this function)
+    if (!tda5340_receive(TDA1, rx_data, &length)) {
+                                         ^
+../Main.c:73:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:72:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:59:90: warning: unused variable 'lengthTDA6' [-Wunused-variable]
+  uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
+                                                                                          ^
+../Main.c:59:74: warning: unused variable 'lengthTDA5' [-Wunused-variable]
+  uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
+                                                                          ^
+../Main.c:59:58: warning: unused variable 'lengthTDA4' [-Wunused-variable]
+  uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
+                                                          ^
+../Main.c:59:42: warning: unused variable 'lengthTDA3' [-Wunused-variable]
+  uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
+                                          ^
+../Main.c:59:26: warning: unused variable 'lengthTDA2' [-Wunused-variable]
+  uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
+                          ^
+../Main.c:59:10: warning: unused variable 'lengthTDA1' [-Wunused-variable]
+  uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
+          ^
+make: *** [Main.o] Error 1
+13:51:04 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:153:31: error: 'rx_data' undeclared (first use in this function)
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+    if (!tda5340_receive(TDA1, rx_data, &lengthTDA1)) {
+subdir.mk:30: recipe for target 'Main.o' failed
+                               ^
+../Main.c:153:31: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:154:9: error: 'length' undeclared (first use in this function)
+     if (length > 32)
+         ^
+../Main.c:73:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:72:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+make: *** [Main.o] Error 1
+13:52:07 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+../Main.c:153:31: error: 'rx_data' undeclared (first use in this function)
+'Invoking: ARM-GCC C Compiler'
+    if (!tda5340_receive(TDA1, rx_data, &lengthTDA1)) {
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+                               ^
+subdir.mk:30: recipe for target 'Main.o' failed
+../Main.c:153:31: note: each undeclared identifier is reported only once for each function it appears in
+../Main.c:73:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:72:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:71:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:70:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:69:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:68:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+make: *** [Main.o] Error 1
+13:54:56 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:159:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+'Invoking: ARM-GCC C Compiler'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+         ^
+../Main.c:171:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:183:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:195:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:207:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:219:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:79:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:78:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:77:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:76:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:75:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:74:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  29096	     52	   7280	  36428	   8e4c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:55:34 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:308:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+'Invoking: ARM-GCC C Compiler'
+    if (!tda5340_receive(TDA6, rx_data, &length)) {
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:252:4: warning: variable 'rssi' set but not used [-Wunused-but-set-variable]
+  } rssi = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+    ^
+../Main.c:241:7: warning: unused variable 'tx_data' [-Wunused-variable]
+  char tx_data[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+       ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  29472	    152	   7300	  36924	   903c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:55:57 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:159:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+'Finished building: ../Main.c'
+                               ^
+
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:171:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:183:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:195:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:207:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:219:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:79:14: warning: variable 'rssiTDA6' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA6 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:78:14: warning: variable 'rssiTDA5' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA5 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:77:14: warning: variable 'rssiTDA4' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA4 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:76:14: warning: variable 'rssiTDA3' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA3 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:75:14: warning: variable 'rssiTDA2' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA2 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+../Main.c:74:14: warning: variable 'rssiTDA1' set but not used [-Wunused-but-set-variable]
+  struct rssi rssiTDA1 = { .pmf = 0, .prx = 0, .rx = 0, .ppl = 0, .agc = 0 };
+              ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  29096	     52	   7280	  36428	   8e4c	Basisstation.elf
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+

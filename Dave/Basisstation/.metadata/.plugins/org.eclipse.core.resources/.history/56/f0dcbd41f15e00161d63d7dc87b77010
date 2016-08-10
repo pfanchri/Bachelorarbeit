@@ -57,12 +57,6 @@ int main(void) {
 	COM_send_string("Initialisierung beendet - ");
 	uint32_t istateTDA1 = 0, istateTDA2 = 0, istateTDA3 = 0, istateTDA4 = 0, istateTDA5 = 0, istateTDA6 = 0;
 	uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
-	char rx_data_TDA1[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA2[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA3[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA4[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA5[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA6[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	struct rssi {
 		uint8_t pmf;
 		uint8_t prx;
@@ -156,7 +150,7 @@ int main(void) {
 			rssiTDA1.prx = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPRX, 0xFF);
 			rssiTDA1.ppl = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPPL, 0xFF);
 			tda5340_set_mode_and_config(TDA1, SLEEP_MODE, 0);
-			if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+			if (!tda5340_receive(TDA1, rx_data, &lengthTDA1)) {
 				if (lengthTDA1 > 32)
 					lengthTDA1 = 32;
 			}
@@ -168,7 +162,7 @@ int main(void) {
 			rssiTDA2.prx = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPRX, 0xFF);
 			rssiTDA2.ppl = tda5340_transfer(TDA2, READ_FROM_CHIP, RSSIPPL, 0xFF);
 			tda5340_set_mode_and_config(TDA2, SLEEP_MODE, 0);
-			if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+			if (!tda5340_receive(TDA2, rx_data, &lengthTDA2)) {
 				if (lengthTDA2 > 32)
 					lengthTDA2 = 32;
 			}
@@ -180,7 +174,7 @@ int main(void) {
 			rssiTDA3.prx = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPRX, 0xFF);
 			rssiTDA3.ppl = tda5340_transfer(TDA3, READ_FROM_CHIP, RSSIPPL, 0xFF);
 			tda5340_set_mode_and_config(TDA3, SLEEP_MODE, 0);
-			if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+			if (!tda5340_receive(TDA3, rx_data, &lengthTDA3)) {
 				if (lengthTDA3 > 32)
 					lengthTDA3 = 32;
 			}
@@ -192,7 +186,7 @@ int main(void) {
 			rssiTDA4.prx = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPRX, 0xFF);
 			rssiTDA4.ppl = tda5340_transfer(TDA4, READ_FROM_CHIP, RSSIPPL, 0xFF);
 			tda5340_set_mode_and_config(TDA4, SLEEP_MODE, 0);
-			if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+			if (!tda5340_receive(TDA4, rx_data, &lengthTDA4)) {
 				if (lengthTDA4 > 32)
 					lengthTDA4 = 32;
 			}
@@ -204,7 +198,7 @@ int main(void) {
 			rssiTDA5.prx = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPRX, 0xFF);
 			rssiTDA5.ppl = tda5340_transfer(TDA5, READ_FROM_CHIP, RSSIPPL, 0xFF);
 			tda5340_set_mode_and_config(TDA5, SLEEP_MODE, 0);
-			if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+			if (!tda5340_receive(TDA5, rx_data, &lengthTDA5)) {
 				if (lengthTDA5 > 32)
 					lengthTDA5 = 32;
 			}
@@ -216,7 +210,7 @@ int main(void) {
 			rssiTDA6.prx = tda5340_transfer(TDA6, READ_FROM_CHIP, RSSIPRX, 0xFF);
 			rssiTDA6.ppl = tda5340_transfer(TDA6, READ_FROM_CHIP, RSSIPPL, 0xFF);
 			tda5340_set_mode_and_config(TDA6, SLEEP_MODE, 0);
-			if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+			if (!tda5340_receive(TDA6, rx_data, &lengthTDA6)) {
 				if (lengthTDA6 > 32)
 					lengthTDA6 = 32;
 			}
