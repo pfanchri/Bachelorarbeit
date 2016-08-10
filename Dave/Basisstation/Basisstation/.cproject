@@ -164,7 +164,9 @@
 							<tool id="com.ifx.xmc4000.libLinker.906123153" name="ARM-GCC Archiver" superClass="com.ifx.xmc4000.libLinker"/>
 							<tool id="com.ifx.xmc4000.appDebug.createflash.1585784957" name="ARM-GCC Create Flash Image" superClass="com.ifx.xmc4000.appDebug.createflash"/>
 							<tool id="com.ifx.xmc4000.appDebug.createlisting.1758146306" name="ARM-GCC Create Listing" superClass="com.ifx.xmc4000.appDebug.createlisting"/>
-							<tool id="com.ifx.xmc4000.printsize.1418897995" name="ARM-GCC Print Size" superClass="com.ifx.xmc4000.printsize"/>
+							<tool id="com.ifx.xmc4000.printsize.1418897995" name="ARM-GCC Print Size" superClass="com.ifx.xmc4000.printsize">
+								<option id="org.eclipse.cdt.cross.arm.gnu.printsize.general.totals.794529930" superClass="org.eclipse.cdt.cross.arm.gnu.printsize.general.totals" value="true" valueType="boolean"/>
+							</tool>
 						</toolChain>
 					</folderInfo>
 				</configuration>

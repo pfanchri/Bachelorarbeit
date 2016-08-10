@@ -49,12 +49,22 @@ int main(void) {
 //	delay(4000);
 
 	delay(40000);
-	tda5340_init(TDA6); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
+	tda5340_init(TDA1); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
+	tda5340_set_mode_and_config(TDA1, RX_MODE, 0);
 
-	tda5340_set_mode_and_config(TDA6, RX_MODE, 0);
+	delay(40000);
+
+	//für gesamte Platine:
+	tda5340_init(TDA2); tda5340_set_mode_and_config(TDA2, RX_MODE, 0);
+	tda5340_init(TDA3); tda5340_set_mode_and_config(TDA3, RX_MODE, 0);
+	tda5340_init(TDA4); tda5340_set_mode_and_config(TDA4, RX_MODE, 0);
+	tda5340_init(TDA5); tda5340_set_mode_and_config(TDA5, RX_MODE, 0);
+	tda5340_init(TDA6); tda5340_set_mode_and_config(TDA6, RX_MODE, 0);
+
 
 //	Ablaufschleife START+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	COM_send_string("Initialisierung beendet - ");
+	uint8_t data_recieved = 0;
 	uint32_t istateTDA1 = 0, istateTDA2 = 0, istateTDA3 = 0, istateTDA4 = 0, istateTDA5 = 0, istateTDA6 = 0;
 	uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
 	char rx_data_TDA1[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -161,6 +171,7 @@ int main(void) {
 					lengthTDA1 = 32;
 			}
 			tda5340_set_mode_and_config(TDA1, RX_MODE, 0);
+			data_recieved = 1;
 			istateTDA1 &= ~(1 << 3);
 		}
 		if (istateTDA2 & (1 << 3)) {
@@ -173,6 +184,7 @@ int main(void) {
 					lengthTDA2 = 32;
 			}
 			tda5340_set_mode_and_config(TDA2, RX_MODE, 0);
+			data_recieved = 1;
 			istateTDA2 &= ~(1 << 3);
 		}
 		if (istateTDA3 & (1 << 3)) {
@@ -185,6 +197,7 @@ int main(void) {
 					lengthTDA3 = 32;
 			}
 			tda5340_set_mode_and_config(TDA3, RX_MODE, 0);
+			data_recieved = 1;
 			istateTDA3 &= ~(1 << 3);
 		}
 		if (istateTDA4 & (1 << 3)) {
@@ -197,6 +210,7 @@ int main(void) {
 					lengthTDA4 = 32;
 			}
 			tda5340_set_mode_and_config(TDA4, RX_MODE, 0);
+			data_recieved = 1;
 			istateTDA4 &= ~(1 << 3);
 		}
 		if (istateTDA5 & (1 << 3)) {
@@ -209,6 +223,7 @@ int main(void) {
 					lengthTDA5 = 32;
 			}
 			tda5340_set_mode_and_config(TDA5, RX_MODE, 0);
+			data_recieved = 1;
 			istateTDA5 &= ~(1 << 3);
 		}
 		if (istateTDA6 & (1 << 3)) {
@@ -221,19 +236,93 @@ int main(void) {
 					lengthTDA6 = 32;
 			}
 			tda5340_set_mode_and_config(TDA6, RX_MODE, 0);
+			data_recieved = 1;
 			istateTDA6 &= ~(1 << 3);
 		}
 //-------------------------------------------------------------------------------------
 		//send to COM
-		COM_send_string("Übertragung erkannt\r\n");
-		COM_send_string("TDA1:\r\n");
-		COM_send_string("\r\nPMF:");		//COM_send_int_as_string(rssi_TDA1);
-		COM_send_string("\r\nPRX:");
-		COM_send_string("\r\nRX:");
-		COM_send_string("\r\nPPL:");
-		COM_send_string("\r\nAGC:");
-		COM_send_string("\r\n");
+		if (data_recieved) {
+			COM_send_string("Übertragung erkannt\r\n");
+			COM_send_string("TDA1:");
+			COM_send_string("\r\nPMF:");
+			COM_send_int_as_string(rssiTDA1.pmf);
+			COM_send_string("\r\nPRX:");
+			COM_send_int_as_string(rssiTDA1.prx);
+			COM_send_string("\r\nRX:");
+			COM_send_int_as_string(rssiTDA1.rx);
+			COM_send_string("\r\nPPL:");
+			COM_send_int_as_string(rssiTDA1.ppl);
+			COM_send_string("\r\nAGC:");
+			COM_send_int_as_string(rssiTDA1.agc);
+			COM_send_string("\r\n");
 
+			COM_send_string("TDA2:");
+			COM_send_string("\r\nPMF:");
+			COM_send_int_as_string(rssiTDA2.pmf);
+			COM_send_string("\r\nPRX:");
+			COM_send_int_as_string(rssiTDA2.prx);
+			COM_send_string("\r\nRX:");
+			COM_send_int_as_string(rssiTDA2.rx);
+			COM_send_string("\r\nPPL:");
+			COM_send_int_as_string(rssiTDA2.ppl);
+			COM_send_string("\r\nAGC:");
+			COM_send_int_as_string(rssiTDA2.agc);
+			COM_send_string("\r\n");
+
+			COM_send_string("TDA3:");
+			COM_send_string("\r\nPMF:");
+			COM_send_int_as_string(rssiTDA3.pmf);
+			COM_send_string("\r\nPRX:");
+			COM_send_int_as_string(rssiTDA3.prx);
+			COM_send_string("\r\nRX:");
+			COM_send_int_as_string(rssiTDA3.rx);
+			COM_send_string("\r\nPPL:");
+			COM_send_int_as_string(rssiTDA3.ppl);
+			COM_send_string("\r\nAGC:");
+			COM_send_int_as_string(rssiTDA3.agc);
+			COM_send_string("\r\n");
+
+			COM_send_string("TDA4:");
+			COM_send_string("\r\nPMF:");
+			COM_send_int_as_string(rssiTDA4.pmf);
+			COM_send_string("\r\nPRX:");
+			COM_send_int_as_string(rssiTDA4.prx);
+			COM_send_string("\r\nRX:");
+			COM_send_int_as_string(rssiTDA4.rx);
+			COM_send_string("\r\nPPL:");
+			COM_send_int_as_string(rssiTDA4.ppl);
+			COM_send_string("\r\nAGC:");
+			COM_send_int_as_string(rssiTDA4.agc);
+			COM_send_string("\r\n");
+
+			COM_send_string("TDA5:");
+			COM_send_string("\r\nPMF:");
+			COM_send_int_as_string(rssiTDA5.pmf);
+			COM_send_string("\r\nPRX:");
+			COM_send_int_as_string(rssiTDA5.prx);
+			COM_send_string("\r\nRX:");
+			COM_send_int_as_string(rssiTDA5.rx);
+			COM_send_string("\r\nPPL:");
+			COM_send_int_as_string(rssiTDA5.ppl);
+			COM_send_string("\r\nAGC:");
+			COM_send_int_as_string(rssiTDA5.agc);
+			COM_send_string("\r\n");
+
+			COM_send_string("TDA6:");
+			COM_send_string("\r\nPMF:");
+			COM_send_int_as_string(rssiTDA6.pmf);
+			COM_send_string("\r\nPRX:");
+			COM_send_int_as_string(rssiTDA6.prx);
+			COM_send_string("\r\nRX:");
+			COM_send_int_as_string(rssiTDA6.rx);
+			COM_send_string("\r\nPPL:");
+			COM_send_int_as_string(rssiTDA6.ppl);
+			COM_send_string("\r\nAGC:");
+			COM_send_int_as_string(rssiTDA6.agc);
+			COM_send_string("\r\n");
+
+			data_recieved = 0;
+		}
 	}
 //	Ablaufschleife ENDE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
