@@ -39,7 +39,7 @@ extern void ERU0_1_IRQHandler(void) {
 //		query_interruptTDA6_flag = 1;
 //	}
 	query_interruptTDA3_flag = 1;
-	query_interruptTDA6_flag = 1; //beide setzen egal welcher ankommt -> es werden beide ausgelesen
+//	query_interruptTDA6_flag = 1; //beide setzen egal welcher ankommt -> es werden beide ausgelesen
 //	led_on(LED7);
 }
 // ISR für TDA4  (ERU1 OGU1 IRQ)
@@ -52,8 +52,7 @@ extern void ERU0_2_IRQHandler(void) {
 //	COM_send_string("INTERRUPT5\r\n");
 	query_interruptTDA5_flag = 1;
 }
-//// ISR für TDA6  (ERU1 OGU0 IRQ)
-//extern void ERU0_3_IRQHandler(void) {
-//	// LED toggle
-//	led_on(LED7);
-//}
+// ISR für TDA6  (ERU1 OGU0 IRQ)
+extern void ERU0_3_IRQHandler(void) {
+	query_interruptTDA6_flag = 1;
+}

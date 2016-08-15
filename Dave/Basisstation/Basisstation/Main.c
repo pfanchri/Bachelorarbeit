@@ -131,6 +131,7 @@ int main(void) {
 		}
 		if (query_interruptTDA6_flag) {
 			query_interruptTDA6_flag = 0;
+			led_on(LED3);
 			istateTDA6 = tda5340_interrupt_readout(TDA6);
 		}
 //----------------------------------------------------------------

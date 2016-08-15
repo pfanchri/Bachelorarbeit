@@ -50,9 +50,12 @@ void tda5340_gpio_init(uint8_t device_number) {
 	}
 	//		for TDA6
 	if (device_number == TDA_ALL || device_number == TDA6) {
-		XMC_GPIO_EnableDigitalInput(PORT_PP2_TDA_6, PIN_PP2_TDA_6);
-		XMC_GPIO_CONFIG_t TDA_PP2_CONFIG = { .mode = XMC_GPIO_MODE_INPUT_PULL_UP };
-		XMC_GPIO_Init(PORT_PP2_TDA_6, PIN_PP2_TDA_6, &TDA_PP2_CONFIG);
+//		XMC_GPIO_EnableDigitalInput(PORT_PP2_TDA_6, PIN_PP2_TDA_6);
+//		XMC_GPIO_CONFIG_t TDA_PP2_CONFIG = { .mode = XMC_GPIO_MODE_INPUT_PULL_UP };
+//		XMC_GPIO_Init(PORT_PP2_TDA_6, PIN_PP2_TDA_6, &TDA_PP2_CONFIG);
+		XMC_GPIO_EnableDigitalInput(PORT_PP1_TDA_1, PIN_PP1_TDA_1);				//da PP2 von TDA6 mit Brücke auf PP11 gelegt
+				XMC_GPIO_CONFIG_t TDA_PP2_CONFIG = { .mode = XMC_GPIO_MODE_INPUT_PULL_UP };
+				XMC_GPIO_Init(PORT_PP1_TDA_1, PIN_PP1_TDA_1, &TDA_PP2_CONFIG);
 	}
 
 	//	configure Interrupts (depending of device number)
@@ -84,7 +87,7 @@ void tda5340_gpio_init(uint8_t device_number) {
 		XMC_ERU_OGU_Init(ERU0_OGU0, &PP2_EVENT_DETECTION_CONFIG_2);
 	}
 	//		for TDA3 & 6
-	if (device_number == TDA_ALL || device_number == TDA3 || device_number == TDA6) {
+	if (device_number == TDA_ALL || device_number == TDA3 /*|| device_number == TDA6*/) {
 		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_3 = { .input_a = XMC_ERU_ETL_INPUT_A0,
 				.input_b = XMC_ERU_ETL_INPUT_B3,	//set here Interrupt Input
 				.source = XMC_ERU_ETL_SOURCE_A_AND_B,	//and Interrupt source (from Ref.Manual)
@@ -127,21 +130,21 @@ void tda5340_gpio_init(uint8_t device_number) {
 
 	}
 	//		for TDA6
-//	if (device_number == TDA_ALL || device_number == TDA6) {
-//		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_6 = {
-//				.input_a = XMC_ERU_ETL_INPUT_A0,	//set here Interrupt Input
-//				.source = XMC_ERU_ETL_SOURCE_A,	//and Interrupt source (from Ref.Manual)
-//				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
-//				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
-//				.enable_output_trigger = 1, .output_trigger_channel =
-//						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL3 /* OGU3 */
-//		};
-//		XMC_ERU_ETL_Init(ERU0_ETL1, &PP2_ETL_CONFIG_6);
-//		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG_6 = {
-//				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
-//		XMC_ERU_OGU_Init(ERU0_OGU3, &PP2_EVENT_DETECTION_CONFIG_6);
-//
-//	}
+	if (device_number == TDA_ALL || device_number == TDA6) {
+		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_6 = {
+				.input_a = XMC_ERU_ETL_INPUT_B3,	//set here Interrupt Input
+				.source = XMC_ERU_ETL_SOURCE_B,	//and Interrupt source (from Ref.Manual)
+				.edge_detection = XMC_ERU_ETL_EDGE_DETECTION_FALLING,
+				.status_flag_mode = XMC_ERU_ETL_STATUS_FLAG_MODE_HWCTRL,
+				.enable_output_trigger = 1, .output_trigger_channel =
+						XMC_ERU_ETL_OUTPUT_TRIGGER_CHANNEL3 /* OGU3 */
+		};
+		XMC_ERU_ETL_Init(ERU0_ETL2, &PP2_ETL_CONFIG_6);
+		const XMC_ERU_OGU_CONFIG_t PP2_EVENT_DETECTION_CONFIG_6 = {
+				.service_request = XMC_ERU_OGU_SERVICE_REQUEST_ON_TRIGGER };
+		XMC_ERU_OGU_Init(ERU0_OGU3, &PP2_EVENT_DETECTION_CONFIG_6);
+
+	}
 
 	//	activate Interrupts and set priority
 	NVIC_SetPriority(ERU1_0_IRQn, IRQ_PRIORITY_TDA1);
@@ -159,8 +162,8 @@ void tda5340_gpio_init(uint8_t device_number) {
 	NVIC_SetPriority(ERU0_2_IRQn, IRQ_PRIORITY_TDA5);
 	NVIC_EnableIRQ(ERU0_2_IRQn);
 	//	activate Interrupts and set priority
-//	NVIC_SetPriority(ERU0_3_IRQn, IRQ_PRIORITY_TDA6);//Testweise aktiviert, evtl wieder deaktivieren
-//	NVIC_EnableIRQ(ERU0_3_IRQn);//Testweise aktiviert, evtl wieder deaktivieren
+	NVIC_SetPriority(ERU0_3_IRQn, IRQ_PRIORITY_TDA6);//Testweise aktiviert, evtl wieder deaktivieren
+	NVIC_EnableIRQ(ERU0_3_IRQn);//Testweise aktiviert, evtl wieder deaktivieren
 
 }
 
