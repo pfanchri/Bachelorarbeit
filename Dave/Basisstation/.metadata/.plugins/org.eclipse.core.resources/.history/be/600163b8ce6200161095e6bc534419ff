@@ -55,23 +55,18 @@ int main(void) {
 	delay(40000);
 
 	//für gesamte Platine:
-	tda5340_init(TDA2);
-	tda5340_set_mode_and_config(TDA2, RX_MODE, 0);
-	tda5340_init(TDA3);
-	tda5340_set_mode_and_config(TDA3, RX_MODE, 0);
-	tda5340_init(TDA4);
-	tda5340_set_mode_and_config(TDA4, RX_MODE, 0);
-	tda5340_init(TDA5);
-	tda5340_set_mode_and_config(TDA5, RX_MODE, 0);
-	tda5340_init(TDA6);
-	tda5340_set_mode_and_config(TDA6, RX_MODE, 0);
+	tda5340_init(TDA2); tda5340_set_mode_and_config(TDA2, RX_MODE, 0);
+	tda5340_init(TDA3); tda5340_set_mode_and_config(TDA3, RX_MODE, 0);
+	tda5340_init(TDA4); tda5340_set_mode_and_config(TDA4, RX_MODE, 0);
+	tda5340_init(TDA5); tda5340_set_mode_and_config(TDA5, RX_MODE, 0);
+	tda5340_init(TDA6); tda5340_set_mode_and_config(TDA6, RX_MODE, 0);
+
 
 //	Ablaufschleife START+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	COM_send_string("Initialisierung beendet - ");
 	uint8_t data_recieved = 0;
 	uint32_t istateTDA1 = 0, istateTDA2 = 0, istateTDA3 = 0, istateTDA4 = 0, istateTDA5 = 0, istateTDA6 = 0;
 	uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
-	uint32_t transfernumber = 0;
 	char rx_data_TDA1[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	char rx_data_TDA2[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	char rx_data_TDA3[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -247,10 +242,7 @@ int main(void) {
 //-------------------------------------------------------------------------------------
 		//send to COM
 		if (data_recieved) {
-			transfernumber++;
 			COM_send_string("Übertragung erkannt\r\n");
-			COM_send_string("Übertragung Nummer ");
-			COM_send_int_as_string(transfernumber);
 			COM_send_string("TDA1:");
 			COM_send_string("\r\nPMF:");
 			COM_send_int_as_string(rssiTDA1.pmf);
