@@ -15486,3 +15486,12 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 Could not connect to target. Please check if target is powered and if ribbon cable is plugged properly.
 
 For more details, see the JLinkGDBServerCL console.
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-08-15 13:25:39.512
+!MESSAGE J-Link GDB Server failed: 
+Could not connect to target. Please check if target is powered and if ribbon cable is plugged properly.
+
+For more details, see the JLinkGDBServerCL console.
+
+!ENTRY org.eclipse.ui 4 4 2016-08-15 13:29:42.727
+!MESSAGE Conflicting handlers for org.eclipse.debug.ui.commands.DebugLast: {ActionDelegateHandlerProxy(com.dave.activeproject.ui.actions.ActiveProjDebugLastAction@2603a455,com.dave.activeproject.ui.actions.ActiveProjDebugLastAction)} vs {ActionDelegateHandlerProxy(null,org.eclipse.debug.internal.ui.actions.DebugLastAction)}
