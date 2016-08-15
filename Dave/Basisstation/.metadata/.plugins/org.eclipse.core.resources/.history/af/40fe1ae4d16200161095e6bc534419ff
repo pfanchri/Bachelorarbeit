@@ -253,11 +253,10 @@ int main(void) {
 		//send to COM
 		if (data_recieved) {
 			transfernumber++;
-			COM_send_string("#################### Übertragung erkannt ####################\r\n");
+			COM_send_string("Übertragung erkannt\r\n");
 			COM_send_string("Übertragung Nummer ");
 			COM_send_int_as_string(transfernumber);
-			COM_send_string("\r\n");
-			COM_send_string("----- TDA1 -----:");
+			COM_send_string("TDA1:");
 			COM_send_string("\r\nPMF:");
 			COM_send_int_as_string(rssiTDA1.pmf);
 			COM_send_string("\r\nPRX:");
@@ -268,14 +267,13 @@ int main(void) {
 			COM_send_int_as_string(rssiTDA1.ppl);
 			COM_send_string("\r\nAGC:");
 			COM_send_int_as_string(rssiTDA1.agc);
-			COM_send_string("\r\nEmpfangsleistung (dBm):");
+			COM_send_string("\r\nEmpfangsleistung:");
 			if (dig_to_dbm(rssiTDA1.ppl, rssiTDA1.agc) < 0) {
 				COM_send_string("-");
 			}
 			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA1.ppl, rssiTDA1.agc)));
-			COM_send_string("\r\n");
 
-			COM_send_string("----- TDA2 -----:");
+			COM_send_string("TDA2:");
 			COM_send_string("\r\nPMF:");
 			COM_send_int_as_string(rssiTDA2.pmf);
 			COM_send_string("\r\nPRX:");
@@ -286,14 +284,9 @@ int main(void) {
 			COM_send_int_as_string(rssiTDA2.ppl);
 			COM_send_string("\r\nAGC:");
 			COM_send_int_as_string(rssiTDA2.agc);
-			COM_send_string("\r\nEmpfangsleistung (dBm):");
-			if (dig_to_dbm(rssiTDA2.ppl, rssiTDA2.agc) < 0) {
-				COM_send_string("-");
-			}
-			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA2.ppl, rssiTDA2.agc)));
 			COM_send_string("\r\n");
 
-			COM_send_string("----- TDA3: -----");
+			COM_send_string("TDA3:");
 			COM_send_string("\r\nPMF:");
 			COM_send_int_as_string(rssiTDA3.pmf);
 			COM_send_string("\r\nPRX:");
@@ -304,14 +297,9 @@ int main(void) {
 			COM_send_int_as_string(rssiTDA3.ppl);
 			COM_send_string("\r\nAGC:");
 			COM_send_int_as_string(rssiTDA3.agc);
-			COM_send_string("\r\nEmpfangsleistung (dBm):");
-			if (dig_to_dbm(rssiTDA3.ppl, rssiTDA3.agc) < 0) {
-				COM_send_string("-");
-			}
-			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA3.ppl, rssiTDA3.agc)));
 			COM_send_string("\r\n");
 
-			COM_send_string("----- TDA4: -----");
+			COM_send_string("TDA4:");
 			COM_send_string("\r\nPMF:");
 			COM_send_int_as_string(rssiTDA4.pmf);
 			COM_send_string("\r\nPRX:");
@@ -322,14 +310,9 @@ int main(void) {
 			COM_send_int_as_string(rssiTDA4.ppl);
 			COM_send_string("\r\nAGC:");
 			COM_send_int_as_string(rssiTDA4.agc);
-			COM_send_string("\r\nEmpfangsleistung (dBm):");
-			if (dig_to_dbm(rssiTDA4.ppl, rssiTDA4.agc) < 0) {
-				COM_send_string("-");
-			}
-			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA4.ppl, rssiTDA4.agc)));
 			COM_send_string("\r\n");
 
-			COM_send_string("----- TDA5: -----");
+			COM_send_string("TDA5:");
 			COM_send_string("\r\nPMF:");
 			COM_send_int_as_string(rssiTDA5.pmf);
 			COM_send_string("\r\nPRX:");
@@ -340,14 +323,9 @@ int main(void) {
 			COM_send_int_as_string(rssiTDA5.ppl);
 			COM_send_string("\r\nAGC:");
 			COM_send_int_as_string(rssiTDA5.agc);
-			COM_send_string("\r\nEmpfangsleistung (dBm):");
-			if (dig_to_dbm(rssiTDA5.ppl, rssiTDA5.agc) < 0) {
-				COM_send_string("-");
-			}
-			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA5.ppl, rssiTDA5.agc)));
 			COM_send_string("\r\n");
 
-			COM_send_string("----- TDA6: -----");
+			COM_send_string("TDA6:");
 			COM_send_string("\r\nPMF:");
 			COM_send_int_as_string(rssiTDA6.pmf);
 			COM_send_string("\r\nPRX:");
@@ -358,11 +336,6 @@ int main(void) {
 			COM_send_int_as_string(rssiTDA6.ppl);
 			COM_send_string("\r\nAGC:");
 			COM_send_int_as_string(rssiTDA6.agc);
-			COM_send_string("\r\nEmpfangsleistung (dBm):");
-			if (dig_to_dbm(rssiTDA6.ppl, rssiTDA6.agc) < 0) {
-				COM_send_string("-");
-			}
-			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA6.ppl, rssiTDA6.agc)));
 			COM_send_string("\r\n");
 
 			data_recieved = 0;

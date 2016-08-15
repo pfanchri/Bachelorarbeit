@@ -256,7 +256,7 @@ int main(void) {
 			COM_send_string("#################### Übertragung erkannt ####################\r\n");
 			COM_send_string("Übertragung Nummer ");
 			COM_send_int_as_string(transfernumber);
-			COM_send_string("\r\n");
+			COM_send_string("\r\n")
 			COM_send_string("----- TDA1 -----:");
 			COM_send_string("\r\nPMF:");
 			COM_send_int_as_string(rssiTDA1.pmf);

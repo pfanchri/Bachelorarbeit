@@ -7166,3 +7166,835 @@ In file included from ../Header_general.h:21:0,
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
 'Finished building: Basisstation.lst'
 
+12:18:25 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+'Invoking: ARM-GCC C Compiler'
+         ^
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+subdir.mk:30: recipe for target 'Main.o' failed
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:273:4: error: expected ';' before '}' token
+    }
+    ^
+make: *** [Main.o] Error 1
+12:18:35 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+'Finished building: ../Main.c'
+                               ^
+
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32300	    152	   7300	  39752	   9b48	Basisstation.elf
+  32300	    152	   7300	  39752	   9b48	(TOTALS)
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:18:42 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32300	    152	   7300	  39752	   9b48	Basisstation.elf
+  32300	    152	   7300	  39752	   9b48	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:23:36 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+'Invoking: ARM-GCC C Compiler'
+                               ^
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32312	    152	   7300	  39764	   9b54	Basisstation.elf
+  32312	    152	   7300	  39764	   9b54	(TOTALS)
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:23:39 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32312	    152	   7300	  39764	   9b54	Basisstation.elf
+  32312	    152	   7300	  39764	   9b54	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:29:35 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32312	    152	   7300	  39764	   9b54	Basisstation.elf
+  32312	    152	   7300	  39764	   9b54	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:36:20 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32312	    152	   7300	  39764	   9b54	Basisstation.elf
+  32312	    152	   7300	  39764	   9b54	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:36:22 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32312	    152	   7300	  39764	   9b54	Basisstation.elf
+  32312	    152	   7300	  39764	   9b54	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:46:19 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Libraries/VirtualCOMPort/COMtransfer.c'
+../Libraries/VirtualCOMPort/COMtransfer.c: In function 'COM_send_int_as_string':
+'Invoking: ARM-GCC C Compiler'
+../Libraries/VirtualCOMPort/COMtransfer.c:78:6: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' [-Wformat=]
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/COMtransfer.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/COMtransfer.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/COMtransfer.d" -MT"Libraries/VirtualCOMPort/COMtransfer.d Libraries/VirtualCOMPort/COMtransfer.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/COMtransfer.o" "../Libraries/VirtualCOMPort/COMtransfer.c"
+      sprintf(str, "%u" , data);
+'Finished building: ../Libraries/VirtualCOMPort/COMtransfer.c'
+      ^
+
+../Libraries/VirtualCOMPort/COMtransfer.c:78:6: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' [-Wformat=]
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32328	    152	   7300	  39780	   9b64	Basisstation.elf
+  32328	    152	   7300	  39780	   9b64	(TOTALS)
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:46:32 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32328	    152	   7300	  39780	   9b64	Basisstation.elf
+  32328	    152	   7300	  39780	   9b64	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:46:36 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32328	    152	   7300	  39780	   9b64	Basisstation.elf
+  32328	    152	   7300	  39780	   9b64	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:46:53 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32328	    152	   7300	  39780	   9b64	Basisstation.elf
+  32328	    152	   7300	  39780	   9b64	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:47:01 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32328	    152	   7300	  39780	   9b64	Basisstation.elf
+  32328	    152	   7300	  39780	   9b64	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:52:23 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+'Invoking: ARM-GCC C Compiler'
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+subdir.mk:30: recipe for target 'Main.o' failed
+         ^
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:361:33: error: 'rssiTDA' undeclared (first use in this function)
+    if (dig_to_dbm(rssiTDA6.ppl, rssiTDA.agc) < 0) {
+                                 ^
+../Main.c:361:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Main.o] Error 1
+12:52:36 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+'Invoking: ARM-GCC C Compiler'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+         ^
+'Finished building: ../Main.c'
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32716	    152	   7300	  40168	   9ce8	Basisstation.elf
+  32716	    152	   7300	  40168	   9ce8	(TOTALS)
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:52:57 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32716	    152	   7300	  40168	   9ce8	Basisstation.elf
+  32716	    152	   7300	  40168	   9ce8	(TOTALS)
+'Finished building: Basisstation.siz'
+
+12:58:38 **** Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32760	    152	   7300	  40212	   9d14	Basisstation.elf
+  32760	    152	   7300	  40212	   9d14	(TOTALS)
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+12:58:52 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32760	    152	   7300	  40212	   9d14	Basisstation.elf
+  32760	    152	   7300	  40212	   9d14	(TOTALS)
+'Finished building: Basisstation.siz'
+
+13:10:01 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Libraries/VirtualCOMPort/COMtransfer.c: In function 'COM_send_int_as_string':
+'Building file: ../Libraries/VirtualCOMPort/COMtransfer.c'
+../Libraries/VirtualCOMPort/COMtransfer.c:78:6: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' [-Wformat=]
+      sprintf(str, "%u" , data);
+      ^
+../Libraries/VirtualCOMPort/COMtransfer.c:78:6: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' [-Wformat=]
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/VirtualCOMPort/COMtransfer.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/VirtualCOMPort/COMtransfer.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/VirtualCOMPort/COMtransfer.d" -MT"Libraries/VirtualCOMPort/COMtransfer.d Libraries/VirtualCOMPort/COMtransfer.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/VirtualCOMPort/COMtransfer.o" "../Libraries/VirtualCOMPort/COMtransfer.c"
+'Finished building: ../Libraries/VirtualCOMPort/COMtransfer.c'
+
+'Building file: ../Libraries/CRC/crcchk.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/CRC/crcchk.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/CRC/crcchk.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/CRC/crcchk.d" -MT"Libraries/CRC/crcchk.d Libraries/CRC/crcchk.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/CRC/crcchk.o" "../Libraries/CRC/crcchk.c"
+'Finished building: ../Libraries/CRC/crcchk.c'
+
+'Building file: ../ISRs.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "ISRs.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="ISRs.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"ISRs.d" -MT"ISRs.d ISRs.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "ISRs.o" "../ISRs.c"
+'Finished building: ../ISRs.c'
+
+'Building file: ../Libraries/TDA5340-C/tda5340.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Libraries/TDA5340-C/tda5340.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Libraries/TDA5340-C/tda5340.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Libraries/TDA5340-C/tda5340.d" -MT"Libraries/TDA5340-C/tda5340.d Libraries/TDA5340-C/tda5340.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Libraries/TDA5340-C/tda5340.o" "../Libraries/TDA5340-C/tda5340.c"
+'Finished building: ../Libraries/TDA5340-C/tda5340.c'
+
+'Building file: ../Led.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Led.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Led.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Led.d" -MT"Led.d Led.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Led.o" "../Led.c"
+'Finished building: ../Led.c'
+
+'Building file: ../Init.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Init.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Init.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Init.d" -MT"Init.d Init.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Init.o" "../Init.c"
+'Finished building: ../Init.c'
+
+'Building file: ../TDA.c'
+'Invoking: ARM-GCC C Compiler'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "TDA.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="TDA.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"TDA.d" -MT"TDA.d TDA.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "TDA.o" "../TDA.c"
+'Finished building: ../TDA.c'
+
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+'Invoking: ARM-GCC C Compiler'
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+                               ^
+'Finished building: ../Main.c'
+In file included from ../Header_general.h:21:0,
+
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32760	    152	   7300	  40212	   9d14	Basisstation.elf
+  32760	    152	   7300	  40212	   9d14	(TOTALS)
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:10:07 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32760	    152	   7300	  40212	   9d14	Basisstation.elf
+  32760	    152	   7300	  40212	   9d14	(TOTALS)
+'Finished building: Basisstation.siz'
+
+13:16:58 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Building file: ../Main.c'
+../Main.c: In function 'main':
+'Invoking: ARM-GCC C Compiler'
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+subdir.mk:30: recipe for target 'Main.o' failed
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:260:4: error: expected ';' before 'COM_send_string'
+    COM_send_string("----- TDA1 -----:");
+    ^
+make: *** [Main.o] Error 1
+13:17:12 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+../Main.c: In function 'main':
+'Building file: ../Main.c'
+../Main.c:179:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+'Invoking: ARM-GCC C Compiler'
+    if (!tda5340_receive(TDA1, rx_data_TDA1, &lengthTDA1)) {
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -MMD -MT "Main.o" -DXMC4500_F144x1024 -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries\XMCLib\inc" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation/Libraries/CMSIS/Infineon/XMC4500_series/Include" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation" -I"D:\Bachelorarbeit\Dave\Basisstation\Basisstation\Libraries" -O0 -ffunction-sections -fdata-sections -Wall -std=gnu99 -mfloat-abi=softfp -Wa,-adhlns="Main.o.lst" -pipe -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d Main.o" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mthumb -g -gdwarf-2 -o "Main.o" "../Main.c"
+'Finished building: ../Main.c'
+                               ^
+
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:192:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA2, rx_data_TDA2, &lengthTDA2)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:205:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA3, rx_data_TDA3, &lengthTDA3)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:218:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA4, rx_data_TDA4, &lengthTDA4)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:231:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA5, rx_data_TDA5, &lengthTDA5)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+../Main.c:244:31: warning: pointer targets in passing argument 2 of 'tda5340_receive' differ in signedness [-Wpointer-sign]
+    if (!tda5340_receive(TDA6, rx_data_TDA6, &lengthTDA6)) {
+                               ^
+In file included from ../Header_general.h:21:0,
+                 from ../Main.c:7:
+../Libraries/TDA5340-C/tda5340.h:26:9: note: expected 'int8_t *' but argument is of type 'char *'
+ uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length);
+         ^
+'Building target: Basisstation.elf'
+'Invoking: ARM-GCC C Linker'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-gcc" -T"../linker_script.ld" -nostartfiles -Xlinker --gc-sections -specs=nano.specs -specs=nosys.specs -Wl,-Map,Basisstation.map -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -g -gdwarf-2 -o "Basisstation.elf" "@objects.rsp"  -lm
+'Finished building target: Basisstation.elf'
+
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32840	    152	   7300	  40292	   9d64	Basisstation.elf
+  32840	    152	   7300	  40292	   9d64	(TOTALS)
+'Finished building: Basisstation.siz'
+
+'Invoking: ARM-GCC Create Flash Image'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objcopy" -O ihex "Basisstation.elf"  "Basisstation.hex"
+'Finished building: Basisstation.hex'
+
+'Invoking: ARM-GCC Create Listing'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-objdump" -h -S "Basisstation.elf" > "Basisstation.lst"
+'Finished building: Basisstation.lst'
+
+13:17:16 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32840	    152	   7300	  40292	   9d64	Basisstation.elf
+  32840	    152	   7300	  40292	   9d64	(TOTALS)
+'Finished building: Basisstation.siz'
+
+13:17:28 **** Incremental Build of configuration Debug for project Basisstation ****
+"\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
+'Invoking: ARM-GCC Print Size'
+"C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
+   text	   data	    bss	    dec	    hex	filename
+  32840	    152	   7300	  40292	   9d64	Basisstation.elf
+  32840	    152	   7300	  40292	   9d64	(TOTALS)
+'Finished building: Basisstation.siz'
+
