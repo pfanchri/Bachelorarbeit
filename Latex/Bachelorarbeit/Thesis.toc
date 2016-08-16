@@ -16,15 +16,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Layoutprogramm Altium Designer}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}verwendete Hardware}{5}{section.2.3}
+\contentsline {section}{\numberline {2.3}verwendete Hardware}{6}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}TDA5340}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}TDA5340}{6}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}XMC4500}{5}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}XMC4500}{6}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Ethernet}{5}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Ethernet}{6}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Spannungsversorgung}{5}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}Spannungsversorgung}{6}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Software}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 

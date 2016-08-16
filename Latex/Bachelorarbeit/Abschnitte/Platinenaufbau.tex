@@ -3,9 +3,16 @@
 \pagestyle{scrheadings}
 
 \section{Vorüberlegungen}
-
+Um Sicherzustellen, das alle Antennen gleichmäßig in die sechs vorgegebenen Raumrichtungen abstrahlen sollte bereits die Platine symmetrisch aufgebaut werden. Dazu wurden zuerst das Layout der sechs identischen Transceiver-Einheiten mit dem TDA5340 Baustein und den Antennen erstellt und anschließend gleichmäßig um die weiten notwendigen notwendigen Segmente der Schaltung angeordnet. 
 \section{Layoutprogramm Altium Designer}
+Bei dem Entwicklungswerkzeug \enquote{Altium Designer} des Entwicklers Altium Limited handelt es sich um ein System zum Entwurf von  gedruckten  Schaltungen oder PCBs (Printed Circuit Boards). Ein solches Programm wird auch als Electronic Design Automation (EDA) oder ECAD für electronic CAD bezeichnet, da es den Entwickler bei der Umsetzung der Anforderungen in einen Schaltplan unterstützen soll.
+Wie viele andere EDA-Programme ist auch Altium Designer so aufgebaut das sich der Entwickler zuerst mit dem allgemeinen Schaltplan befassen kann und erst zu einem späteren Zeitpunkt die tatsächliche Anordnung auf dem PCB-Substrat festgelegt wird. Somit können zuerst im Schematic Editor die Funktionen der Schaltung umgesetzt werden. Dazu werden die verwendeten Bauteile aus zuvor angelegten Bibliotheken verwendet oder es werden bestehende Bibliotheken verwendete, die etwa vom Hersteller der Bauteile zur Verfügung gestellt werden. Altium selbst bietet hierfür auch diverse Möglichkeiten an und stellt Bauteile nach Hersteller und Art geordnet bereit.
+In den Bibliotheken sind alle im weiteren Verlauf benötigten Informationen über die einzelnen Bauteile enthalten. So liegen dort etwa  entsprechenden Abbildungen für das Bauteil im  Schaltplan vor.
 
+
+Bauteileingabe und schaltplan
+
+Altium Designer ist dabei in drei Teilbereiche unterteilt: im \enquote{Board Planning Mode}  liegt der Fokus auf dem Anordnen der einzelnen Bauteile und Komponenten auf der Leiterplatte, außerdem wird in diesem Bereich die Form und Ausmaße der Leiterplatte festgelegt. Im 2D-Modus des PCB-Editor lassen sich anschließend die aus der Definition im Schaltplan ergebenden elektrischen Verbindungen örtlich auf den verschiedenen Kupferebenen (Layern) anordnen. Die Hauptarbeit findet also in diesem Teil des PCB-Editors statt. Der 3D-Modus dient anschließend zur Evaluation des Designs und zur Anpassung an Gehäuse oder andere Komponenten.
 \section{verwendete Hardware}
 
 \subsection{TDA5340}
