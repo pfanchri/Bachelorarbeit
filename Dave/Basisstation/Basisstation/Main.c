@@ -25,7 +25,6 @@ int main(void) {
 	USB_Init(); //for virt. COM Port
 	COM_wait_for_transfer();
 
-
 	set_TDA_status(TDA_ALL, 1);
 	delay(40000);
 	tda5340_gpio_init(TDA_ALL);
@@ -277,6 +276,12 @@ int main(void) {
 				COM_send_string("-");
 			}
 			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA1.ppl, rssiTDA1.agc)));
+			COM_send_string("\r\n");
+			COM_send_string("Empfangene Daten:");
+			for (int i = 0; i <= lengthTDA1; ++i) {
+				COM_send_int_as_string(rx_data_TDA1[i]);
+
+			}
 			COM_send_string("\r\n\r\n");
 
 			COM_send_string("TDA2:");
@@ -295,6 +300,12 @@ int main(void) {
 				COM_send_string("-");
 			}
 			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA2.ppl, rssiTDA2.agc)));
+			COM_send_string("\r\n");
+			COM_send_string("Empfangene Daten:");
+			for (int i = 0; i <= lengthTDA2; ++i) {
+				COM_send_int_as_string(rx_data_TDA2[i]);
+
+			}
 			COM_send_string("\r\n\r\n");
 
 			COM_send_string("TDA3:");
@@ -313,6 +324,12 @@ int main(void) {
 				COM_send_string("-");
 			}
 			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA3.ppl, rssiTDA3.agc)));
+			COM_send_string("\r\n");
+			COM_send_string("Empfangene Daten:");
+			for (int i = 0; i <= lengthTDA3; ++i) {
+				COM_send_int_as_string(rx_data_TDA3[i]);
+
+			}
 			COM_send_string("\r\n\r\n");
 
 			COM_send_string("TDA4:");
@@ -331,6 +348,12 @@ int main(void) {
 				COM_send_string("-");
 			}
 			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA4.ppl, rssiTDA4.agc)));
+			COM_send_string("\r\n");
+			COM_send_string("Empfangene Daten:");
+			for (int i = 0; i <= lengthTDA4; ++i) {
+				COM_send_int_as_string(rx_data_TDA4[i]);
+
+			}
 			COM_send_string("\r\n\r\n");
 
 			COM_send_string("TDA5:");
@@ -349,6 +372,12 @@ int main(void) {
 				COM_send_string("-");
 			}
 			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA5.ppl, rssiTDA5.agc)));
+			COM_send_string("\r\n");
+			COM_send_string("Empfangene Daten:");
+			for (int i = 0; i <= lengthTDA5; ++i) {
+				COM_send_int_as_string(rx_data_TDA5[i]);
+
+			}
 			COM_send_string("\r\n\r\n");
 
 			COM_send_string("TDA6:");
@@ -367,7 +396,14 @@ int main(void) {
 				COM_send_string("-");
 			}
 			COM_send_int_as_string(abs(dig_to_dbm(rssiTDA6.ppl, rssiTDA6.agc)));
+			COM_send_string("\r\n");
+			COM_send_string("Empfangene Daten:");
+			for (int i = 0; i <= lengthTDA6; ++i) {
+				COM_send_int_as_string(rx_data_TDA6[i]);
+
+			}
 			COM_send_string("\r\n\r\n");
+
 			led_ctr = 400000;
 			led_on(LED7);
 			data_recieved = 0;

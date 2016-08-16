@@ -207,7 +207,7 @@ void tda5340_gpio_init(uint8_t device_number) {
  */
 uint8_t tda5340_receive(uint8_t device_number, int8_t *data, uint8_t *length) {
 	uint8_t error = tda5340_fifo_rw(device_number, 0, data, length);
-	data[*length] = 0;
+	data[(*length)+1] = 0;
 	return error;
 }
 
