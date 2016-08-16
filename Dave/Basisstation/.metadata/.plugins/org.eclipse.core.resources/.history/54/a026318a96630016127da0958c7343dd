@@ -24,8 +24,6 @@ int main(void) {
 	init();
 	USB_Init(); //for virt. COM Port
 	COM_wait_for_transfer();
-
-
 	set_TDA_status(TDA_ALL, 1);
 	delay(40000);
 	tda5340_gpio_init(TDA_ALL);

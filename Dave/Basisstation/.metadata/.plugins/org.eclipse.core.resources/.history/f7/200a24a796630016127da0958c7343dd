@@ -23,7 +23,8 @@ int main(void) {
 
 	init();
 	USB_Init(); //for virt. COM Port
-	COM_wait_for_transfer();
+	//COM_wait_for_transfer();
+	COM_transfer_started = 1;
 
 
 	set_TDA_status(TDA_ALL, 1);

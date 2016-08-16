@@ -1,12 +1,12 @@
-14:52:42 **** Incremental Build of configuration Debug for project Basisstation ****
+12:28:16 **** Incremental Build of configuration Debug for project Basisstation ****
 "\"C:\\DAVEv4-64Bit\\DAVE-4.2.6\\eclipse\\ARM-GCC-49\\bin\\make\"" --output-sync -j4 all 
 'Invoking: ARM-GCC Print Size'
 "C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\ARM-GCC-49/bin/arm-none-eabi-size"  --format=berkeley -t "Basisstation.elf"
    text	   data	    bss	    dec	    hex	filename
-  32976	    152	   7300	  40428	   9dec	Basisstation.elf
-  32976	    152	   7300	  40428	   9dec	(TOTALS)
+  33036	    152	   7300	  40488	   9e28	Basisstation.elf
+  33036	    152	   7300	  40488	   9e28	(TOTALS)
 'Finished building: Basisstation.siz'
 
 
-14:52:42 Build Finished (took 315ms)
+12:28:16 Build Finished (took 310ms)
 

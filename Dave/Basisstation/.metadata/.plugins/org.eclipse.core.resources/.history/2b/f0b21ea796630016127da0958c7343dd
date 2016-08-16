@@ -70,9 +70,9 @@ void COM_wait_for_transfer(void) {
 
 void COM_send_int_as_string(uint32_t data){
 	//TODO: fertigstellen
-//if (COM_transfer_started==0) { //TODO: kann entfernt werden??
-//	COM_wait_for_transfer(); //wait till transfer started
-//}
+if (COM_transfer_started==0) { //TODO: kann entfernt werden??
+	COM_wait_for_transfer(); //wait till transfer started
+}
 	char str[11];
 
 		   sprintf(str, "%u" , data);

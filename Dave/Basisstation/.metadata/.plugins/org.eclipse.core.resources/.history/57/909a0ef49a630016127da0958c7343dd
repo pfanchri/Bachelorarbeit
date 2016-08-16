@@ -88,7 +88,7 @@ void tda5340_gpio_init(uint8_t device_number) {
 	}
 	//		for TDA3 & 6
 	if (device_number == TDA_ALL || device_number == TDA3 /*|| device_number == TDA6*/) {
-		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_3 = { //.input_a = XMC_ERU_ETL_INPUT_A0,
+		const XMC_ERU_ETL_CONFIG_t PP2_ETL_CONFIG_3 = { .input_a = XMC_ERU_ETL_INPUT_A0,
 				.input_b = XMC_ERU_ETL_INPUT_B3,	//set here Interrupt Input
 				.source = XMC_ERU_ETL_SOURCE_B,//A_AND_B,	//and Interrupt source (from Ref.Manual)
 				//für nur TDA3: .input_b = XMC_ERU_ETL_INPUT_B3 .source = XMC_ERU_ETL_SOURCE_B kein.input_a
