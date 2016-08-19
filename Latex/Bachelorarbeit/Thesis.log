@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  19 AUG 2016 13:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  19 AUG 2016 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2404,21 +2404,21 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
 [5]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 38.
  [6]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 39.
@@ -2730,11 +2730,11 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50447 strings out of 493014
- 1133966 string characters out of 6133351
- 1942037 words of memory out of 5000000
+ 50449 strings out of 493014
+ 1133986 string characters out of 6133351
+ 1943037 words of memory out of 5000000
  52910 multiletter control sequences out of 15000+600000
- 68914 words of font info for 94 fonts, out of 8000000 for 9000
+ 69005 words of font info for 95 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  66i,14n,83p,8500b,1941s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
@@ -2746,10 +2746,10 @@ m/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr17.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on Thesis.pdf (28 pages, 899385 bytes).
+Output written on Thesis.pdf (28 pages, 900495 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 342 compressed objects within 4 object streams
+ 389 PDF objects out of 1000 (max. 8388607)
+ 341 compressed objects within 4 object streams
  71 named destinations out of 1000 (max. 500000)
  20804 words of extra memory for PDF output out of 24883 (max. 10000000)
 
