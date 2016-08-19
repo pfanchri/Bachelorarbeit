@@ -16,18 +16,29 @@ MUlti channel - multi sheet
 
 
 
-
 Altium Designer ist dabei in drei Teilbereiche unterteilt: im \enquote{Board Planning Mode}  liegt der Fokus auf dem Anordnen der einzelnen Bauteile und Komponenten auf der Leiterplatte, außerdem wird in diesem Bereich die Form und Ausmaße der Leiterplatte festgelegt. Im 2D-Modus des PCB-Editor lassen sich anschließend die aus der Definition im Schaltplan ergebenden elektrischen Verbindungen örtlich auf den verschiedenen Kupferebenen (Layern) anordnen. Die Hauptarbeit findet also in diesem Teil des PCB-Editors statt. Der 3D-Modus dient anschließend zur Evaluation des Designs und zur Anpassung an Gehäuse oder andere Komponenten.
 DRC
 
 \section{verwendete Hardware}
 
 \subsection{TDA5340}
-Der verwendete Transceiver TDA5340 wird von Infineon Technologies AG  entwickelt und vertrieben. Er ist teil der SmartLEWIS\textsuperscript{TM} Produktfamilie die  energiesparende Lösungen im Frequenzspektrum unterhalb von einem Gigaherz bietet. 
+Der verwendete Transceiver TDA5340 wird von Infineon Technologies AG  entwickelt und vertrieben. Er ist teil der SmartLEWIS\textsuperscript{TM} Produktfamilie die  energiesparende Lösungen für Funkanwengungen im Frequenzspektrum unterhalb von einem Gigaherz bietet. 
+Der Transceiver kommuniziert mit seinem Host über das SPI-Protokoll, der Mikrocontroller ist in diesem Fall sternförmig mit den einzelnen TDA-Bausteinen verbunden, die als Slaves fungieren. Die Daten werden auf drei gemeinsamen Leitungen übertragen, eine vierte Leitung dient dem XMC zur Auswahl des gewünschten Slaves für die Kommunikation. Diese \enquote{not Chip select}-Leitung (NCS) arbeitet active-low, sodass der jeweilige TDA5340 eine Interaktion akzeptier sobald diese vom XMC-Baustein auf Erdpotential gezogen wird.Von dein drei eigentlichen Datenleitungen fungiert eine als reiner Ausgang des Masters bzw. Dateneingang des TDA (MOSI), eine zweite als Eingang des Masters (MISO) und die dritte als ein vom XMC getriebenes Clock-Signal. Bei dem auf MISO und MOSI anliegenden Signal handelt es sich um ein unipolar kodiertes non-return-to-zero Signal, welches einer logischen $0$ bei Erdpotential entspricht. Der TDA unterstützt acht verschiedene Instruktionen, die es erlauben entweder einzelne Register des Bausteins zu lesen bzw. zu schreiben, auf mehrere hintereinander folgende Register  oder auf die beiden Puffer des Bausteins zuzugreifen. In den beiden Puffern, die als FIFO-Strukturen (first-in-first-out) aufgebaut sind, werden die vom TDA erkannten und demodulierten bzw. die auf Übertragung wartenden Signalpakete zwischengespeichert. Diese Zwischenspeicherung soll den Mikrocontroller entlasten, so können entsprechende Datenpakete dem TDA5340 mitgeteilt werden und dieser übernimmt selbsttätig eine korrekte Modulation und Übertragung mit den eingestellten Parametern. 
+
+Der TDA5340 kann sowohl mit einer Spannungsversorgungsspannung von $5V$ als auch bei $3,3V$ arbeiten. Da aber der XMC nur bei letzterer betrieben werden kann, wurde der TDA-Baustein und die externe Beschaltung einfachheitshalber auch auf  $3,3V$ ausgelegt. 
+
+Package -transparent modes of tda (Des weiteren erlaubt der Baustein noc )
+Anpassnetzwerk
+IF Filter 
+warum komisches Quarz?
+SMA
+
+
+Um zu einem späterem Zeitpunkt eine größere Entfernung zischen den einzelnen Transceiver, und somit auch den jeweiligen Antennen zu erlauben, wurde eine eine Sollbruchstelle vorgesehen. Sollte zur besseren E
 \subsection{XMC4500}
 
 \subsection{Ethernet}
-Die Ethernetschnittstelle der Basisstation basiert auf dem RelaxKit von Infineon. Genau wie im Evaluations Board des Herstellers wurde der Ethernet-Controller KSZ8031RNL von Mircel inc. verwendet. Dieser stellt alle wichtigen Peripherien selbst zur Verfügung und muss somit nur noch durch ein Quarz und diverse Kapazitäten und Induktivitäten an den Versorgungsleitungen ergänzt werden. Da die im Controller verbaute Stufe zur Interruptgenerierung nur über einen schwachen Pull-Up Widerstand verfügt, musste ein externer Widerstand von $1k\Omega$ verbaut werden. Am Reset-Eingang wurde ebenfalls ein Pull-Up Widerstand verbaut. Dieser wurde um zwei Dioden sowie einen Kondensator zu der im Datenblatt empfohlenen Verschaltung erweitert. So kann sichergestellt werden, das sowohl beim Anlegen einer Spannung an das Gesamtsystem, als auch bei einem Reset des Ethernetbausteins durch den steuernden Mikrocontroller alle Spannungen im sicheren Bereich liegen und die Funktion gewähleistet ist. 
+Die Ethernetschnittstelle der Basisstation basiert auf dem RelaxKit von Infineon. Genau wie im Evaluations Board des Herstellers Infineon wurde der Ethernet-Controller KSZ8031RNL von Mircel inc. verwendet. Dieser stellt alle wichtigen Peripherien selbst zur Verfügung und muss somit nur noch durch ein Quarz und diverse Kapazitäten und Induktivitäten an den Versorgungsleitungen ergänzt werden. Da die im Controller verbaute Stufe zur Interruptgenerierung nur über einen schwachen Pull-Up Widerstand verfügt, musste ein externer Widerstand von $1k\Omega$ verbaut werden. Am Reset-Eingang wurde ebenfalls ein Pull-Up Widerstand verbaut. Dieser wurde um zwei Dioden sowie einen Kondensator zu der im Datenblatt empfohlenen Verschaltung erweitert. So kann sichergestellt werden, das sowohl beim Anlegen einer Spannung an das Gesamtsystem, als auch bei einem Reset des Ethernetbausteins durch den steuernden Mikrocontroller alle Spannungen im sicheren Bereich liegen und die Funktion gewähleistet ist. 
 Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von geringem Umfang ist, wurde der Controller und die entsprechende Netzwerkbuchse von Würth Electronics zunächst nicht bestückt. Somit wurde eine Verwendung des Ethernet-Controllers auch in der Software des XMC-Mikrocontroller nicht umgesetzt. Da jedoch ein entsprechendes Softwareprojekt für das RelaxKit von Infineon zur Verfügung gestellt wird (TODO wird es das auch wirklich + webseite zitieren), wäre eine Netzwerkkomunikation vermutlich mit wenigen Anpassungen leicht umzusetzen. 
 
 
