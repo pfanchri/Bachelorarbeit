@@ -27,7 +27,15 @@ Der verwendete Transceiver TDA5340 wird von Infineon Technologies AG  entwickelt
 \subsection{XMC4500}
 
 \subsection{Ethernet}
-Die Ethernetschnittstelle der Basistation basiert auf dem RelaxKit von Infineon. Genau wie im Evaluations Board des Herstellers wurde der Ethernet-Controller KSZ8031RNL von Mircel inc. verwendet. Dieser stellt alle wichtigen Peripherien selbst zur Verfügung und muss somit nur noch durch ein Quarz und diverse Kapazitäten und Induktivitäten an den Versorgungsleitungen ergänzt werden. Da die im Controller verbaute Stufe zur Interruptgenerierung nur über einen schwachen Pull-Up Widerstand verfügt, musste ein externer Widerstand von $1k\Omega$ verbaut werden. Am Reset-Eingang wurde ebenfalls ein Pull-Up Widerstand verbaut. Dieser wurde um zwei Dioden sowie einen Kondensator zu der im Datenblatt empfohlenen Verschaltung erweitert. So kann sichergestellt werden, das sowohl beim Anlegen einer Spannung an das Gesamtsystem, als auch bei einem Reset des Ethernetbausteins durch den steuernden Mikrocontroller alle Spannungen im sicheren Bereich liegen und die Funktion gewähleistet ist.
+Die Ethernetschnittstelle der Basisstation basiert auf dem RelaxKit von Infineon. Genau wie im Evaluations Board des Herstellers wurde der Ethernet-Controller KSZ8031RNL von Mircel inc. verwendet. Dieser stellt alle wichtigen Peripherien selbst zur Verfügung und muss somit nur noch durch ein Quarz und diverse Kapazitäten und Induktivitäten an den Versorgungsleitungen ergänzt werden. Da die im Controller verbaute Stufe zur Interruptgenerierung nur über einen schwachen Pull-Up Widerstand verfügt, musste ein externer Widerstand von $1k\Omega$ verbaut werden. Am Reset-Eingang wurde ebenfalls ein Pull-Up Widerstand verbaut. Dieser wurde um zwei Dioden sowie einen Kondensator zu der im Datenblatt empfohlenen Verschaltung erweitert. So kann sichergestellt werden, das sowohl beim Anlegen einer Spannung an das Gesamtsystem, als auch bei einem Reset des Ethernetbausteins durch den steuernden Mikrocontroller alle Spannungen im sicheren Bereich liegen und die Funktion gewähleistet ist. 
+Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von geringem Umfang ist, wurde der Controller und die entsprechende Netzwerkbuchse von Würth Electronics zunächst nicht bestückt. Somit wurde eine Verwendung des Ethernet-Controllers auch in der Software des XMC-Mikrocontroller nicht umgesetzt. Da jedoch ein entsprechendes Softwareprojekt für das RelaxKit von Infineon zur Verfügung gestellt wird (TODO wird es das auch wirklich + webseite zitieren), wäre eine Netzwerkkomunikation vermutlich mit wenigen Anpassungen leicht umzusetzen. 
+
+
+
+
+
+
+
 
 \subsection{Spannungsversorgung}
 \section{Generierte Dokumente}
