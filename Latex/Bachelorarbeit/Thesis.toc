@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}XMC4500}{8}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Ethernet}{8}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Ethernet}{9}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}Spannungsversorgung}{9}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 

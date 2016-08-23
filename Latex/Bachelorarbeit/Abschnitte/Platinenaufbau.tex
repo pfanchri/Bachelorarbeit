@@ -18,7 +18,7 @@ MUlti channel - multi sheet
 
 Altium Designer ist dabei in drei Teilbereiche unterteilt: im \enquote{Board Planning Mode}  liegt der Fokus auf dem Anordnen der einzelnen Bauteile und Komponenten auf der Leiterplatte, außerdem wird in diesem Bereich die Form und Ausmaße der Leiterplatte festgelegt. Im 2D-Modus des PCB-Editor lassen sich anschließend die aus der Definition im Schaltplan ergebenden elektrischen Verbindungen örtlich auf den verschiedenen Kupferebenen (Layern) anordnen. Die Hauptarbeit findet also in diesem Teil des PCB-Editors statt. Der 3D-Modus dient anschließend zur Evaluation des Designs und zur Anpassung an Gehäuse oder andere Komponenten.
 DRC
-
+Ein Bestückungsdruck wurde auf den Teilplatinen für die Transceiver aus Platzgründen weggelassen.
 \section{verwendete Hardware}
 
 \subsection{TDA5340}
@@ -55,17 +55,27 @@ f_{Crystal} = f_{IF2} * 80 = \frac{f_{IF1}}{39} * 80  = \frac{10,7 Mhz}{39} * 80
 \end{equation}
 wobei die Zwischenfrequenz der ersten Stufe durch die internen funktionalen Blöcke des TDA und den Keramikfilter vorgegeben ist. Die weiteren Faktoren ergeben sich aus dem Aufbau des Empfängers und werden von Infineon bereitgestellt. %\cite{TDA-UserManual}
 
+
 \subsection{XMC4500}
 PP2 an INterrupeingang
 Low Profile Quad Flat Package
 
-Zur Verteilung der entstehenden Abwärme wurde auch in diesem Bereich der Platine  frei gebliebener Abschnitte zwischen den Leiterbahnen mit geerdeten Kupferflächen gefüllt. Durch teilweise auch mehrfache Durchkontaktierungen wurde sowohl eine saubere Kontaktierung der Flächen durchgeführt um Flächen schwimmenden Potentials zu vermeiden. Durch die Vias wurde aber auch die thermische Leitfähigkeit zwischen den beiden Kupferlagen erhöht und somit die Abgabe entstehender Wärme von den Bauteilen verbessert. Beim verwendeten LQFP-Gehäuse des XMC4500 liegt die Rückseite des Halbleiters offen und ist nicht im Gehäuse verschlossen. Im Bereich unter der offenliegenden Rückseite des Chips ist deswegen zur Wärmeableitung ein Feld von 6x6 Vias vorgesehen. 
-Rechnung 
-max 150C Chip temp
+Zur Verteilung der entstehenden Abwärme wurde auch in diesem Bereich der Platine  frei gebliebener Abschnitte zwischen den Leiterbahnen mit geerdeten Kupferflächen gefüllt. Durch teilweise auch mehrfache Durchkontaktierungen wurde sowohl eine saubere Kontaktierung der Flächen durchgeführt um Flächen schwimmenden Potentials zu vermeiden. Durch die Vias wurde aber auch die thermische Leitfähigkeit zwischen den beiden Kupferlagen erhöht und somit die Abgabe entstehender Wärme von den Bauteilen verbessert. Beim verwendeten LQFP-Gehäuse des XMC4500 liegt die Rückseite des Halbleiters offen und ist nicht im Gehäuse verschlossen. Im Bereich unter der offenliegenden Rückseite des Chips ist deswegen zur Wärmeableitung ein Feld von 6x6 Vias vorgesehen. Dieser Aufbau dient dazu die Temperatur des Chips (junction temperature) auf den maximal erlaubten Wert $T_J = 150^\circ C$ zu beschränken.%Rechnung mit Therm wiederst. ??
+
+Quarz (dämpfungswiderstand)
+Für mögliche spätere Anwendungsfälle wurde außerdem ein Quarz für die Realtime-Clock des XMC4500 vorgesehen
+
+Reset taster
+LEDs
+Die Programmierung des Mikrocontrollers erfolgt über das JTAG-Interface über welches auch das debuggen möglich ist. Der XMC4500 stellt dafür ein JTAG Modul bereit welches mit der in IEEE1149.1 festgelegten Standarts übereinstimmt. Verwendet wird hierfür die achpolige Variante des Debug-Steckers bei dem der Platine vom JTAG-Adapter Versorgungsspannung und Masse sowie Signale für Reset, Systemtakt und die Steuerleitung übergeben wird.  %enquote xmc DAtenblatt , nur zwei angeschlossen?
+Abblockkondensatoren
+Für die Kommunikation des Mikrocontroller mit einem Computer wird die im XMC  bereitgestellte Peripherie genutzt. Dabei arbeitet die bereitgestellte Hardware nach den Spezifikationen für USB 2.0 und den \enquote{On-The-Go}-Spezifikationen der Version 1.3
+
+USB (verbautes in XMC und absciherung)
 
 
 \subsection{Ethernet}
-Die Ethernetschnittstelle der Basisstation basiert auf dem RelaxKit von Infineon. Genau wie im Evaluations Board des Herstellers Infineon wurde der Ethernet-Controller KSZ8031RNL von Mircel inc. verwendet. Dieser stellt alle wichtigen Peripherien selbst zur Verfügung und muss somit nur noch durch ein Quarz und diverse Kapazitäten und Induktivitäten an den Versorgungsleitungen ergänzt werden. Da die im Controller verbaute Stufe zur Interruptgenerierung nur über einen schwachen Pull-Up Widerstand verfügt, musste ein externer Widerstand von $1k\Omega$ verbaut werden. Am Reset-Eingang wurde ebenfalls ein Pull-Up Widerstand verbaut. Dieser wurde um zwei Dioden sowie einen Kondensator zu der im Datenblatt empfohlenen Verschaltung erweitert. So kann sichergestellt werden, das sowohl beim Anlegen einer Spannung an das Gesamtsystem, als auch bei einem Reset des Ethernetbausteins durch den steuernden Mikrocontroller alle Spannungen im sicheren Bereich liegen und die Funktion gewähleistet ist. 
+Die Ethernetschnittstelle der Basisstation basiert auf dem RelaxKit von Infineon. Genau wie im Evaluations Board des Herstellers Infineon wurde der Ethernet-Controller KSZ8031RNL von Mircel Inc. verwendet. Dieser stellt alle wichtigen Peripherien selbst zur Verfügung und muss somit nur noch durch ein Quarz und diverse Kapazitäten und Induktivitäten an den Versorgungsleitungen ergänzt werden. Da die im Controller verbaute Stufe zur Interruptgenerierung nur über einen schwachen Pull-Up Widerstand verfügt, musste ein externer Widerstand von $1k\Omega$ verbaut werden. Am Reset-Eingang wurde ebenfalls ein Pull-Up Widerstand verbaut. Dieser wurde um zwei Dioden sowie einen Kondensator zu der im Datenblatt empfohlenen Verschaltung erweitert. So kann sichergestellt werden, das sowohl beim Anlegen einer Spannung an das Gesamtsystem, als auch bei einem Reset des Ethernetbausteins durch den steuernden Mikrocontroller alle Spannungen im sicheren Bereich liegen und die Funktion gewähleistet ist. 
 Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von geringem Umfang ist, wurde der Controller und die entsprechende Netzwerkbuchse von Würth Electronics zunächst nicht bestückt. Somit wurde eine Verwendung des Ethernet-Controllers auch in der Software des XMC-Mikrocontroller nicht umgesetzt. Da jedoch ein entsprechendes Softwareprojekt für das RelaxKit von Infineon zur Verfügung gestellt wird (TODO wird es das auch wirklich + webseite zitieren), wäre eine Netzwerkkommunikation vermutlich mit wenigen Anpassungen leicht umzusetzen. 
 
 
