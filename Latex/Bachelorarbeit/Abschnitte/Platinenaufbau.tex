@@ -30,22 +30,40 @@ Der TDA5340 kann sowohl mit einer Spannungsversorgungsspannung von $5V$ als auch
 Package -transparent modes of tda (Des weiteren erlaubt der Baustein noc )
 Anpassnetzwerk
 IF Filter 
-warum komisches Quarz?
 SMA
+zweiseitige platine, Top und Botom, zwei kupferflächen
 
 
-Um zu einem späterem Zeitpunkt eine größere Entfernung zwischen den einzelnen Antennen, und somit auch den jeweiligen Transceivern zu erlauben, wurde eine Sollbruchstelle vorgesehen. Dadurch könnten die gesamte Baugruppe von der Mutterplatine entfernt werden, was unter Umständen notwendig gewesen wäre um größere Unterschiede in der Signalstärke an den einzelnen Transceivern zu erhalten, und somit eine bessere Auflösung in der Ortung zu erlauben. Dazu wurden Anschlussleisten im Rastermaß $2,54mm$ an beiden Seiten der Sollbruchstelle vorgesehen. Die Verbindung der Transceiver-Einheiten mit der Hauptplatine wäre dann durch Kabel sichergestellt worden. Da es sich bei den zu übertragenden ausschließlich um digitale Signale handelt hätte dies unproblematisch mit ungeschirmten Flachbandkabeln ermöglicht werden können. Ein solches Vergrößern des Abstandes der Antennen war jedoch nicht notwendig. 
+Um zu einem späterem Zeitpunkt eine größere Entfernung zwischen den einzelnen Antennen, und somit auch den jeweiligen Transceivern zu erlauben, wurde eine Sollbruchstelle vorgesehen. Dadurch könnten die gesamte Baugruppe von der Mutterplatine entfernt werden, was unter Umständen notwendig gewesen wäre um größere Unterschiede in der Signalstärke an den einzelnen Transceivern zu erhalten, und somit eine bessere Auflösung in der Ortung zu erlauben. Dazu wurden Anschlussleisten im Rastermaß $2,54mm$ an beiden Seiten der Sollbruchstelle vorgesehen. Die Verbindung der Transceiver-Einheiten mit der Hauptplatine wurde über diese Sollbruchstelle mit Leiterbahnen gewähleistet. Nach dem Abtrennen der TDA-Teilplatine, an der durch Bohrungen vorgesehenen Bruchstelle, wäre die elektrische Verbindung durch Kabel sichergestellt worden. Da es sich bei den zu übertragenden ausschließlich um digitale Signale handelt hätte dies unproblematisch mit ungeschirmten Flachbandkabeln ermöglicht werden können. Ein solches Vergrößern des Abstandes der Antennen war jedoch nicht notwendig. Neben der Versorgungsspannung, Masse und den vier für die SPI-Kommunikation notwendigen Signalen wurden noch die drei multifunktionalen Digitalausgänge und der power-on reset-Pin dem XMC4500 über die Buchsenleisten zur Verfügung gestellt.
+
+
+ 
 Die Antenne wurde am oberen Ende jeder TDA5340-Teilplatine vorgesehen. Als Anschluss für die Antenne wurde hier eine Koaxialbuchse in SMA-Ausführung (Sub-Miniature-A) verwendet, welche auf $50\Omega$ angepasst ist. Durch den Koaxialsteckverbinder konnte sichergestellt werden, das alle notwendigen Frequenzen auch korrekt und ungedämpft passieren können. 
 Das Anpassnetzwerk zwischen dem  integrierten Transceiver und der verwendeten SMA-Buchse diente der Leistungsanpassung zwischen den Pins des TDA5340 und der $50\Omega$-Koaxialbuchse. Der Aufbau des Anpassnetzwerkes basiert auf einem von Stefan Erhard erstellten Schaltplan für eine Aufsteckplatine für das Evaluationsboard \enquote{XMC 2Go} von Infineon. Durch die Verwendung von hoch abgestimmten Spulen und Kondensatoren mit Toleranzen von nur ±0,05pF bei einem Nennwert von 2,5pF wurde die korrekte Anpassung sichergestellt. 
  
-Durch die Verwendung von Vias, vor allem im Bereich des Anpassnetzwerkes, sollte eine niederohmige Verbindung zwischen den beiden Masseflächen auf der Ober- bzw. Unterseite der Platine erreicht werden. Daneben dienten diese, auf Nullpotential liegenden Vias, jedoch vor allem der Abschirmung der Pfade für die HF-Signale gegen mögliche Einkoppelungen aus der Umgebung, welche ankommende Funksignale stören könnten.
+Zur Verbesserung der Hochfrequenzeigenschaften wurden die nach dem Freiräume zwischen den Leiterbahnen mit einer Kupferfläche gefüllt, die mit dem Masseanschluss kontaktiert war. Durch die Verwendung von Vias, vor allem im Bereich des Anpassnetzwerkes, sollte eine niederohmige Verbindung zwischen den beiden Masseflächen auf der Ober- bzw. Unterseite der Platine erreicht werden. Daneben dienten diese, auf Nullpotential liegenden Vias, jedoch vor allem der Abschirmung der Pfade für die HF-Signale gegen mögliche Einkoppelungen aus der Umgebung, welche ankommende Funksignale stören könnten.
 
-Obwohl der TDA5340 einen eingebauten Zwischenfrequenz-Filter hat, der über eine umschaltbare Bandweite verfügt, wurde ein externer Keramikfilter verwendet. Der TDA stellt dafür zwei Pins bereit, zwischen denen ein solcher Filter mit einer Frequenz von  $10,7$ MHz angeschlossen werden kann. Ohne einen hier extern angeschlossenen Filter würde der TDA als einfacher heterodyner Mischer direkt auf die Zwischenfrequenz $274$ kHz heruntermischen. Bei Verwendung eines externen Keramik oder auch eines LC $\pi$-Filters kann das ankommende HF-Signal jedoch in zwei Stufen gefiltert werden, ehe es in das Basisband demoduliert wird, was zu einer höheren Signalqualität führt.\cite{TDA-DataSheet}\cite{TDA-UserManual}
+Obwohl der TDA5340 einen eingebauten Zwischenfrequenz-Filter hat, der über eine umschaltbare Bandweite verfügt, wurde ein externer Keramikfilter verwendet. Der TDA stellt dafür zwei Pins bereit, zwischen denen ein solcher Filter mit einer Frequenz von  $10,7$ MHz angeschlossen werden kann. Ohne einen hier extern angeschlossenen Filter würde der TDA als einfacher heterodyner Mischer direkt auf die Zwischenfrequenz $274$ kHz heruntermischen. Bei Verwendung eines externen Keramik oder auch eines LC $\pi$-Filters kann das ankommende HF-Signal jedoch in zwei Stufen gefiltert werden, ehe es in das Basisband demoduliert wird, was zu einer höheren Signalqualität führt.%\cite{TDA-DataSheet}\cite{TDA-UserManual}
+
+Die elektrischen Verbindungen zwischen den beiden Eingängen des Low Noise Amplifier und dem Anpassnetzwerk wurden mit dem \enquote{Differential Pair Routing}-Feature von Altium Designer erstellt. Durch ein im Schaltplan auf die postitive und die negative elektrischen Verbindung zwischen dem TDA5340 und dem Anpassnetzwerk wird das Leitungspaar als differentiell markiert. Anschließend kann mit dem interatkiven \enquote{Diffential Pair Routing} einer der beiden Leitungen begonnen werden. Altium Designer wird dabei selbstständig versuchen die zweite Leiterbahn des Paares so anzuordnen, das die beiden Leiterbahnen symmetrisch und parallel zueinandern liegen. %hier TI zitieren
+Durch die Verwendung des \enquote{Diffential Pair Routing} versucht Altium Designer auch die Länge der beiden Verbindungen anzugleichen. Durch die Anpassungen der differentielle Leiterbahnen wird eine gleichmäßige Übertragung sichergestellt. Da diese Leitungen hochfrequente Signale führen, ist eine genaue Anpassung notwendig.
 
 
+Um Einkopplungen auf die Pfade für hochfrequente Signale zu vermeiden wurde das für den Transceiver benötigte Quarz möglichst weit vom Sende- bzw. von den Empfangsanschlüssen des TDA angeordnet. Aus diesem Grund wurde der für das für den Oszillator benötigte Quarz mit einer Frequenz $f_{Crystal}=21,948717$ MHz zwischen dem IC und vorgesehenen Stiftleiste platziert.  Die Frequenz des benötigten Quarzes ergibt sich aus dem  Zusammenhang
+\begin{equation}\label{eq:fsys}
+f_{Crystal} = f_{IF2} * 80 = \frac{f_{IF1}}{39} * 80  = \frac{10,7 Mhz}{39} * 80 = 21,948717 MHz
+\end{equation}
+wobei die Zwischenfrequenz der ersten Stufe durch die internen funktionalen Blöcke des TDA und den Keramikfilter vorgegeben ist. Die weiteren Faktoren ergeben sich aus dem Aufbau des Empfängers und werden von Infineon bereitgestellt. %\cite{TDA-UserManual}
 
 \subsection{XMC4500}
 PP2 an INterrupeingang
+Low Profile Quad Flat Package
+
+Zur Verteilung der entstehenden Abwärme wurde auch in diesem Bereich der Platine  frei gebliebener Abschnitte zwischen den Leiterbahnen mit geerdeten Kupferflächen gefüllt. Durch teilweise auch mehrfache Durchkontaktierungen wurde sowohl eine saubere Kontaktierung der Flächen durchgeführt um Flächen schwimmenden Potentials zu vermeiden. Durch die Vias wurde aber auch die thermische Leitfähigkeit zwischen den beiden Kupferlagen erhöht und somit die Abgabe entstehender Wärme von den Bauteilen verbessert. Beim verwendeten LQFP-Gehäuse des XMC4500 liegt die Rückseite des Halbleiters offen und ist nicht im Gehäuse verschlossen. Im Bereich unter der offenliegenden Rückseite des Chips ist deswegen zur Wärmeableitung ein Feld von 6x6 Vias vorgesehen. 
+Rechnung 
+max 150C Chip temp
+
+
 \subsection{Ethernet}
 Die Ethernetschnittstelle der Basisstation basiert auf dem RelaxKit von Infineon. Genau wie im Evaluations Board des Herstellers Infineon wurde der Ethernet-Controller KSZ8031RNL von Mircel inc. verwendet. Dieser stellt alle wichtigen Peripherien selbst zur Verfügung und muss somit nur noch durch ein Quarz und diverse Kapazitäten und Induktivitäten an den Versorgungsleitungen ergänzt werden. Da die im Controller verbaute Stufe zur Interruptgenerierung nur über einen schwachen Pull-Up Widerstand verfügt, musste ein externer Widerstand von $1k\Omega$ verbaut werden. Am Reset-Eingang wurde ebenfalls ein Pull-Up Widerstand verbaut. Dieser wurde um zwei Dioden sowie einen Kondensator zu der im Datenblatt empfohlenen Verschaltung erweitert. So kann sichergestellt werden, das sowohl beim Anlegen einer Spannung an das Gesamtsystem, als auch bei einem Reset des Ethernetbausteins durch den steuernden Mikrocontroller alle Spannungen im sicheren Bereich liegen und die Funktion gewähleistet ist. 
 Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von geringem Umfang ist, wurde der Controller und die entsprechende Netzwerkbuchse von Würth Electronics zunächst nicht bestückt. Somit wurde eine Verwendung des Ethernet-Controllers auch in der Software des XMC-Mikrocontroller nicht umgesetzt. Da jedoch ein entsprechendes Softwareprojekt für das RelaxKit von Infineon zur Verfügung gestellt wird (TODO wird es das auch wirklich + webseite zitieren), wäre eine Netzwerkkommunikation vermutlich mit wenigen Anpassungen leicht umzusetzen. 
@@ -58,4 +76,6 @@ Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von ger
 
 
 \subsection{Spannungsversorgung}
+
+Abwärme deswegen nicht Infineon LDO
 \section{Generierte Dokumente}
