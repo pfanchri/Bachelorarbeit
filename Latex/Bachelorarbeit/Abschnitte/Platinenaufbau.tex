@@ -12,9 +12,10 @@ In den Bibliotheken sind alle im weiteren Verlauf benötigten Informationen übe
 
 %Bauteileingabe und schaltplan
 %MUlti channel - multi sheet
-Wegen der Größte des Projekts wurde zur besseren Übersicht ein 
+Wegen der Größte des Projekts wurde zur besseren Übersicht ein  so genanntes \enquote{Multi-Sheet-Design} erstellt. Dadurch war es möglich die verschiedenen funktionellen Blöcke der Basistation auf getrennte Blätter des Schaltplans zu verteilen. Der Mikrocontroller, die Spannungsversorung und der Transceiver sowie die für eine Netzwerkkommunikation notwendigen Bauteile  wurden dabei auf getrennten Seiten angeordnet und die elektrischen Verbindungen erstellt.
+%Da der Tranciever und die entsprechende Peripherie sechs mal genau identisch verwendet wurde und auch auf dem PCB-Substrat mehrfach mit Leiterbahnen verbunden und angeordnet werden musste wurde hierfür ein so \enquote{Multi-Channel}-Design gewählt. Mit Hilfe eines übergeordneten Sheet-Symbols 
 
-
+%sign harnes Ehterne
 
 Altium Designer ist dabei in drei Teilbereiche unterteilt: im \enquote{Board Planning Mode}  liegt der Fokus auf dem Anordnen der einzelnen Bauteile und Komponenten auf der Leiterplatte, außerdem wird in diesem Bereich die Form und Ausmaße der Leiterplatte festgelegt. Im 2D-Modus des PCB-Editor lassen sich anschließend die aus der Definition im Schaltplan ergebenden elektrischen Verbindungen örtlich auf den verschiedenen Kupferebenen (Layern) anordnen. Die Hauptarbeit findet also in diesem Teil des PCB-Editors statt. Der 3D-Modus dient anschließend zur Evaluation des Designs und zur Anpassung an Gehäuse oder andere Komponenten.
 %DRC
@@ -27,11 +28,11 @@ Der Transceiver kommuniziert mit seinem Host über das SPI-Protokoll, der Mikroc
 
 Der TDA5340 kann sowohl mit einer Spannungsversorgungsspannung von $5V$ als auch bei $3,3V$ arbeiten. Da aber der XMC nur bei letzterer betrieben werden kann, wurde der TDA-Baustein und die externe Beschaltung einfachheitshalber auch auf  $3,3V$ ausgelegt. 
 
-Package -transparent modes of tda (Des weiteren erlaubt der Baustein noc )
-Anpassnetzwerk
-IF Filter 
-SMA
-zweiseitige platine, Top und Botom, zwei kupferflächen
+%Package -transparent modes of tda (Des weiteren erlaubt der Baustein noc )
+%TODO:Anpassnetzwerk
+%IF Filter 
+%SMA
+%zweiseitige platine, Top und Botom, zwei kupferflächen
 
 
 Um zu einem späterem Zeitpunkt eine größere Entfernung zwischen den einzelnen Antennen, und somit auch den jeweiligen Transceivern zu erlauben, wurde eine Sollbruchstelle vorgesehen. Dadurch könnten die gesamte Baugruppe von der Mutterplatine entfernt werden, was unter Umständen notwendig gewesen wäre um größere Unterschiede in der Signalstärke an den einzelnen Transceivern zu erhalten, und somit eine bessere Auflösung in der Ortung zu erlauben. Dazu wurden Anschlussleisten im Rastermaß $2,54mm$ an beiden Seiten der Sollbruchstelle vorgesehen. Die Verbindung der Transceiver-Einheiten mit der Hauptplatine wurde über diese Sollbruchstelle mit Leiterbahnen gewähleistet. Nach dem Abtrennen der TDA-Teilplatine, an der durch Bohrungen vorgesehenen Bruchstelle, wäre die elektrische Verbindung durch Kabel sichergestellt worden. Da es sich bei den zu übertragenden ausschließlich um digitale Signale handelt hätte dies unproblematisch mit ungeschirmten Flachbandkabeln ermöglicht werden können. Ein solches Vergrößern des Abstandes der Antennen war jedoch nicht notwendig. Neben der Versorgungsspannung, Masse und den vier für die SPI-Kommunikation notwendigen Signalen wurden noch die drei multifunktionalen Digitalausgänge und der power-on reset-Pin dem XMC4500 über die Buchsenleisten zur Verfügung gestellt.
@@ -43,7 +44,7 @@ Das Anpassnetzwerk zwischen dem  integrierten Transceiver und der verwendeten SM
  
 Zur Verbesserung der Hochfrequenzeigenschaften wurden die nach dem Freiräume zwischen den Leiterbahnen mit einer Kupferfläche gefüllt, die mit dem Masseanschluss kontaktiert war. Durch die Verwendung von Vias, vor allem im Bereich des Anpassnetzwerkes, sollte eine niederohmige Verbindung zwischen den beiden Masseflächen auf der Ober- bzw. Unterseite der Platine erreicht werden. Daneben dienten diese, auf Nullpotential liegenden Vias, jedoch vor allem der Abschirmung der Pfade für die HF-Signale gegen mögliche Einkoppelungen aus der Umgebung, welche ankommende Funksignale stören könnten.
 
-Obwohl der TDA5340 einen eingebauten Zwischenfrequenz-Filter hat, der über eine umschaltbare Bandweite verfügt, wurde ein externer Keramikfilter verwendet. Der TDA stellt dafür zwei Pins bereit, zwischen denen ein solcher Filter mit einer Frequenz von  $10,7$ MHz angeschlossen werden kann. Ohne einen hier extern angeschlossenen Filter würde der TDA als einfacher heterodyner Mischer direkt auf die Zwischenfrequenz $274$ kHz heruntermischen. Bei Verwendung eines externen Keramik oder auch eines LC $\pi$-Filters kann das ankommende HF-Signal jedoch in zwei Stufen gefiltert werden, ehe es in das Basisband demoduliert wird, was zu einer höheren Signalqualität führt.\cite{TDA-DataSheet}\cite{TDA-UserManual}
+Obwohl der TDA5340 einen eingebauten Zwischenfrequenz-Filter hat, der über eine umschaltbare Bandweite verfügt, wurde ein externer Keramikfilter verwendet. Der TDA stellt dafür zwei Pins bereit, zwischen denen ein solcher Filter mit einer Frequenz von  $10,7$ MHz angeschlossen werden kann. Ohne einen hier extern angeschlossenen Filter würde der TDA als einfacher heterodyner Mischer direkt auf die Zwischenfrequenz $274$ kHz heruntermischen. Bei Verwendung eines externen Keramik oder auch eines LC $\pi$-Filters kann das ankommende HF-Signal jedoch in zwei Stufen gefiltert werden, ehe es in das Basisband demoduliert wird, was zu einer höheren Signalqualität führt.%\cite{TDA-DataSheet}\cite{TDA-UserManual}
 
 Die elektrischen Verbindungen zwischen den beiden Eingängen des Low Noise Amplifier und dem Anpassnetzwerk wurden mit dem \enquote{Differential Pair Routing}-Feature von Altium Designer erstellt. Durch ein im Schaltplan auf die postitive und die negative elektrischen Verbindung zwischen dem TDA5340 und dem Anpassnetzwerk wird das Leitungspaar als differentiell markiert. Anschließend kann mit dem interatkiven \enquote{Diffential Pair Routing} einer der beiden Leitungen begonnen werden. Altium Designer wird dabei selbstständig versuchen die zweite Leiterbahn des Paares so anzuordnen, das die beiden Leiterbahnen symmetrisch und parallel zueinandern liegen. %hier TI zitieren
 Durch die Verwendung des \enquote{Diffential Pair Routing} versucht Altium Designer auch die Länge der beiden Verbindungen anzugleichen. Durch die Anpassungen der differentielle Leiterbahnen wird eine gleichmäßige Übertragung sichergestellt. Da diese Leitungen hochfrequente Signale führen, ist eine genaue Anpassung notwendig.
@@ -53,7 +54,7 @@ Um Einkopplungen auf die Pfade für hochfrequente Signale zu vermeiden wurde das
 \begin{equation}\label{eq:fsys}
 f_{Crystal} = f_{IF2} * 80 = \frac{f_{IF1}}{39} * 80  = \frac{10,7 Mhz}{39} * 80 = 21,948717 MHz
 \end{equation}
-wobei die Zwischenfrequenz der ersten Stufe durch die internen funktionalen Blöcke des TDA und den Keramikfilter vorgegeben ist. Die weiteren Faktoren ergeben sich aus dem Aufbau des Empfängers und werden von Infineon bereitgestellt. \cite{TDA-UserManual}
+wobei die Zwischenfrequenz der ersten Stufe durch die internen funktionalen Blöcke des TDA und den Keramikfilter vorgegeben ist. Die weiteren Faktoren ergeben sich aus dem Aufbau des Empfängers und werden von Infineon bereitgestellt. %\cite{TDA-UserManual}
 
 
 \subsection{XMC4500}
@@ -62,17 +63,17 @@ Der XMC4500 basiert auf einem Kern Cortex\textsuperscript{TM}-M4 des britischen 
 Im speziellen Anwendungsfall kommt die Variante des XMC mit 144 Pins und einem Flash-Speicher von 1024 Kilobit zum Einsatz. Der Chip ist dabei in ein \enquote{Low Profile Quad Flat Package}-Gehäuse (LQFP) verbaut. Durch die Wahl diese Gehäuses konnte die elektrische Verbindung mit der Platine relativ leicht durch löten erreicht werden. Im Gegensatz zum ebenfalls erhältlichen BGA-Gehäuse des XMC sind in diesem alle Kontakte direkt erreichbar und können verlötet werden.
 
 
-PP2 an INterrupeingang
+%PP2 an INterrupeingang
 Zur Verteilung der entstehenden Abwärme wurde auch in diesem Bereich der Platine  frei gebliebener Abschnitte zwischen den Leiterbahnen mit geerdeten Kupferflächen gefüllt. Durch teilweise auch mehrfache Durchkontaktierungen wurde sowohl eine saubere Kontaktierung der Flächen durchgeführt um Flächen schwimmenden Potentials zu vermeiden. Durch die Vias wurde aber auch die thermische Leitfähigkeit zwischen den beiden Kupferlagen erhöht und somit die Abgabe entstehender Wärme von den Bauteilen verbessert. Beim verwendeten LQFP-Gehäuse des XMC4500 liegt die Rückseite des Halbleiters offen und ist nicht im Gehäuse verschlossen. Im Bereich unter der offenliegenden Rückseite des Chips ist deswegen zur Wärmeableitung ein Feld von 6x6 Vias vorgesehen. Dieser Aufbau dient dazu die Temperatur des Chips (junction temperature) auf den maximal erlaubten Wert $T_J = 150^\circ C$ zu beschränken.%Rechnung mit Therm wiederst. ??
 
-Quarz (dämpfungswiderstand)
-Für mögliche spätere Anwendungsfälle wurde außerdem ein Quarz für die Realtime-Clock des XMC4500 vorgesehen
+%Quarz (dämpfungswiderstand)
+%Für mögliche spätere Anwendungsfälle wurde außerdem ein Quarz für die Realtime-Clock des XMC4500 vorgesehen
 
-Reset taster
-LEDs
+%Reset taster
+%LEDs
 Die Programmierung des Mikrocontrollers erfolgt über das JTAG-Interface über welches auch das debuggen möglich ist. Der XMC4500 stellt dafür ein JTAG Modul bereit welches mit der in IEEE1149.1 festgelegten Standarts übereinstimmt. Verwendet wird hierfür die achpolige Variante des Debug-Steckers bei dem der Platine vom JTAG-Adapter Versorgungsspannung und Masse sowie Signale für Reset, Systemtakt und die Steuerleitung übergeben wird.  %enquote xmc DAtenblatt , nur zwei angeschlossen?
 
-Abblockkondensatoren
+%Abblockkondensatoren
 
 Für die Kommunikation des Mikrocontroller mit einem Computer wird die im XMC  bereitgestellte Peripherie genutzt. Dabei arbeitet die bereitgestellte Hardware nach den Spezifikationen für USB 2.0 und den \enquote{On-The-Go}-Spezifikationen der Version 1.3. Zur Verbindung mit einem anderen Gerät wurde deshalb eine kombinierte Micro-USB-Buchse verwendet welche sowohl für Typ A oder Typ B Stecker geeignet ist.
 Um sowohl den Mikrocontroller als auch einen an die Basisstation angeschlossenen Computer gegen Fehlerströme über die USB-Leitung zu schützen wurden die Datenleitungen mit so genannten TVS-Dioden (Transient Voltage Suppressor), welche gegen Masse geklemmt sind geschützt. Sowohl positive als auch negative Spannungsspitzen werden dadurch gegen Masse kurzgeschlossen, was zum Schutz des XMC bzw. des angeschlossenen Computer führt. Um eine Verpolung bei Stromversorgung über die USB-Buchse, und somit eine Zerstörung, zu vermeiden wurde eine Schottky-Diode im Strompfad zum Spannungsregler vorgesehen. Diese soll einen Stromfluss im Verpolungsfall unterbinden. Da der Mikrocontroller für die Kommunikation über das USB-Interface die aktuelle Busspannung auf der USB-Leitung benötigt, muss der extra dafür vorgesehene Pin des XMC direkt und ohne schützende Schottky-Diode mit der 5V Leitung der USB-Buchse verbunden werden.
@@ -91,5 +92,5 @@ Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von ger
 
 \subsection{Spannungsversorgung}
 
-Abwärme deswegen nicht Infineon LDO
+%Abwärme deswegen nicht Infineon LDO
 \section{Generierte Dokumente}
