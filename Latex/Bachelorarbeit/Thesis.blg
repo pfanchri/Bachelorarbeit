@@ -1,6 +1,16 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
-A level-1 auxiliary file: Abschnitte/Anhang.aux
-I found no \citation commands---while reading file Thesis.aux
-I found no \bibdata command---while reading file Thesis.aux
-I found no \bibstyle command---while reading file Thesis.aux
-(There were 3 error messages)
+[0] Config.pm:343> INFO - This is Biber 2.5
+[0] Config.pm:346> INFO - Logfile is 'Thesis.blg'
+[57] biber-darwin:290> INFO - === Wed Aug 24, 2016, 10:38:01
+[93] Biber.pm:351> INFO - Reading 'Thesis.bcf'
+[199] Biber.pm:776> INFO - Found 2 citekeys in bib section 0
+[216] Biber.pm:3493> INFO - Processing section 0
+[241] Biber.pm:3657> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[251] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[260] bibtex.pm:1048> INFO - Found BibTeX data source 'bibliography.bib'
+[286] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[286] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[286] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'de-DE'
+[286] Biber.pm:3310> INFO - No sort tailoring available for locale 'de-DE'
+[288] bbl.pm:526> INFO - Writing 'Thesis.bbl' with encoding 'ascii'
+[288] bbl.pm:527> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[291] bbl.pm:619> INFO - Output to Thesis.bbl
