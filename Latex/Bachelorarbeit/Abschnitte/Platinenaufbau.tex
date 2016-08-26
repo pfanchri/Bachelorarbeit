@@ -8,18 +8,24 @@ Um Sicherzustellen, das alle Antennen gleichmäßig in die sechs vorgegebenen Ra
 Bei dem Entwicklungswerkzeug \enquote{Altium Designer} des Entwicklers Altium Limited handelt es sich um ein System zum Entwurf von  gedruckten  Schaltungen oder PCBs (Printed Circuit Boards). Ein solches Programm wird auch als Electronic Design Automation (EDA) oder ECAD für electronic CAD bezeichnet, da es den Entwickler bei der Umsetzung der Anforderungen in einen Schaltplan unterstützen soll.
 Wie viele andere EDA-Programme ist auch Altium Designer so aufgebaut das sich der Entwickler zuerst mit dem allgemeinen symbolisierten Schaltplan befassen kann und erst zu einem späteren Zeitpunkt die tatsächliche Anordnung der Bauteile auf dem PCB-Substrat festgelegt wird. Somit können zuerst im Schematic Editor die Funktionen der Schaltung umgesetzt werden. Dazu werden die verwendeten Bauteile aus zuvor angelegten Bibliotheken verwendet oder es werden bestehende Bibliotheken verwendete, die etwa vom Hersteller der Bauteile zur Verfügung gestellt werden. Altium selbst bietet hierfür auch diverse Möglichkeiten an und stellt Bauteile nach Hersteller und Art geordnet bereit.
 In den Bibliotheken sind alle im weiteren Verlauf benötigten Informationen über die einzelnen Bauteile enthalten. So liegen dort etwa  entsprechenden Abbildungen für das Bauteil im  Schaltplan  vor. In den so genannten \enquote{Footprints} zu jedem Bauteil, welche ebenfalls in den Bibliotheken enthalten sind, wurde zuvor die, für das physikalische Gehäuse, notwendigen Abmessungen und Lötpads festgelegt. Da es Bauteile, wie den verwendeten  Mikrocontroller, in verschiedenen Gehäusen geben kann, besteht somit auch die Möglichkeit hier verschiedene Footprints zu wählen. Da viele Gehäuse herstellerübergreifend genormt sind, konnten teilweise bestehende Footprints genutzt werden oder diese mehrfach verwendet werden.
-%Ebenfalls...  
+
+Altium Designer ist dabei in drei Teilbereiche unterteilt: im \enquote{Board Planning Mode}  liegt der Fokus auf dem Anordnen der einzelnen Bauteile und Komponenten auf der Leiterplatte, außerdem wird in diesem Bereich die Form und Ausmaße der Leiterplatte festgelegt. Im 2D-Modus des PCB-Editor lassen sich anschließend die aus der Definition im Schaltplan ergebenden elektrischen Verbindungen örtlich auf den verschiedenen Kupferebenen (Layern) anordnen. Die Hauptarbeit findet also in diesem Teil des PCB-Editors statt. Der 3D-Modus dient anschließend zur Evaluation des Designs und zur Anpassung an Gehäuse oder andere Komponenten.
+%Ebenfalls...    Layers/ebene, top, bot, bestückungsdruck, solderresin
+%lagenanzahl 
+%lötpad
+
+
 
 %Bauteileingabe und schaltplan
 %MUlti channel - multi sheet
 Wegen der Größte des Projekts wurde zur besseren Übersicht ein  so genanntes \enquote{Multi-Sheet-Design} erstellt. Dadurch war es möglich die verschiedenen funktionellen Blöcke der Basistation auf getrennte Blätter des Schaltplans zu verteilen. Der Mikrocontroller, die Spannungsversorung und der Transceiver sowie die für eine Netzwerkkommunikation notwendigen Bauteile  wurden dabei auf getrennten Seiten angeordnet und die elektrischen Verbindungen erstellt.
-%Da der Tranciever und die entsprechende Peripherie sechs mal genau identisch verwendet wurde und auch auf dem PCB-Substrat mehrfach mit Leiterbahnen verbunden und angeordnet werden musste wurde hierfür ein so \enquote{Multi-Channel}-Design gewählt. Mit Hilfe eines übergeordneten Sheet-Symbols 
+Da der Tranciever und die entsprechende Peripherie sechs mal genau identisch verwendet wurde und auch auf dem PCB-Substrat mehrfach mit Leiterbahnen verbunden und angeordnet werden musste, wurde hierfür ein so gennantes \enquote{Multi-Channel}-Design gewählt. In Altium Designer können mit diesem Feature identische Schaltungsteile einmal angeordnet und mit Leiterbahnen verbunden werden und dieses Design auf alle anderen entsprechenden Schaltungsteile angewendet werden. Somit muss das aufwändige Anordnen der Bauteile und die Führung der Leiterbahnen nur bei einem der Kanäle durchgeführt werden.  Mit Hilfe eines übergeordneten Sheet-Symbols wurde der Schaltplan des Transceivers in den Schaltplan des Mikrocontroller eingefügt und diesem somit untergeordnet. Über Ports welche zum  Schaltplansymbol hinzugefügt werden, lassen sich elektrische Verbindungen zwischen Netzen innerhalb des Schaltplans für Transceiver  und Mikrocontroller erstellen. Dabei wird im Transceiver-Schaltplan ein Port und hinzugefügt, der mit elektrischen Netzen  verbunden werden kann. Auf dem Schaltplan-Symbol im Mikrocontroller-Schaltplan wird ein entsprechender gleichnamiger Port erstellt, der mit Netzen am Mikrocontroller verbunden werden kann. Da die drei Verbindungen der SPI-Kommunikation jeweils aus einem Netz bestehen und etwa alle MISO-Leitungen an dem selben Pin des XMC4500 und den selben Anschluss bei allen TDAs angebunden sind konnte hierfür ein einfacher Port verwendet werden. Alle anderen Anschlüsse, wie etwa die Auswahlleitung für die SPI-Verbindung, welche für jede der sechs verschiedenen Transceivereinheiten mit einen anderen Anschluss des Mikrocontroller verbunden sein mussten mussten deswegen mit dem Repeat-Kommando erstellt werden. So wird im untergeordneten Schaltplan, in diesem Fall dem des TDA, der Port beliebig benannt, etwa als \enquote{NCS}. Der auf dem Schaltplansymbol erstellte Port wird dagegen in \enquote{Repeat(NCS)} umbenannt. Wird nun noch der Name des Schaltplansymbols nach dem folgenden Muster angepasst, wird Altium Designer beim Kompilieren des Projektes ein Multi-Channel-Design erstellen und die Kanäle wie angegeben durchnummerieren. Dazu wird sollte der Name die Struktur \enquote{Repeat(<Name>,<Startnummer> ,<Endnummer>)} aufweißen.
+Globale Netze wie die Versorgungsspannung von 3,3 Volt oder die Masse müssen dabei nicht als Port hinzugefügt werden. Altium Designer stellt deren Verbindungen automatisch her.
+Altium Designer 
 
-%sign harnes Ehterne
-
-Altium Designer ist dabei in drei Teilbereiche unterteilt: im \enquote{Board Planning Mode}  liegt der Fokus auf dem Anordnen der einzelnen Bauteile und Komponenten auf der Leiterplatte, außerdem wird in diesem Bereich die Form und Ausmaße der Leiterplatte festgelegt. Im 2D-Modus des PCB-Editor lassen sich anschließend die aus der Definition im Schaltplan ergebenden elektrischen Verbindungen örtlich auf den verschiedenen Kupferebenen (Layern) anordnen. Die Hauptarbeit findet also in diesem Teil des PCB-Editors statt. Der 3D-Modus dient anschließend zur Evaluation des Designs und zur Anpassung an Gehäuse oder andere Komponenten.
 %DRC
-Ein Bestückungsdruck wurde auf den Teilplatinen für die Transceiver aus Platzgründen weggelassen.
+Altium Designer nummeriert automatische die verwendeten  Bauelemente  durch um eine genaue Identifikation eine Bauteiles zu erlauben und erstellt automatische einen Aufdruck neben dem Lötpäd mit dem Bauteilnamen in der entsprechenden Ebene. Ein solcher Bestückungsdruck zur leichteren Anordnung der Bauteile auf der fertig entwickelten Platine wurde nur auf der Hauptplatine erstellt. Auf den Teilplatinen für die Transceiver wurde dieser aus Platzgründen weggelassen.
+Um sicherzustellen, das die sich aus der Bauteilanordnung ergebenden Pads und die Leiterbahnen auch fertigbar sind stellt Altium Designer zwei \enquote{Design-Rule-Checks} (DRC bereit. Im ersten Live-DRC werden \enquote{Violations} also Bauteile mit Verstößen durch ein farbiges Overlay markiert. Im folgenden kompletten  Als verst    gegen die fertigbaren und 
 \section{verwendete Hardware}
 
 \subsection{TDA5340}
@@ -71,6 +77,7 @@ Zur Verteilung der entstehenden Abwärme wurde auch in diesem Bereich der Platin
 
 %Reset taster
 %LEDs
+Um die Ausgabe von aktuellen Systemzuständen zu ermöglichen wurden sieben Status-LEDs an freien Ausgänge des XMC4500  angeschlossen. Diese ermöglichten in active-low Ansteuerung eine Anzeige verschiedener im Mikrocontroller ablaufender Prozesse. Für vier der verwendeten Leuchtdioden wurde grün als Farbe gewählt, für die drei weiteren 
 Die Programmierung des Mikrocontrollers erfolgt über das JTAG-Interface über welches auch das debuggen möglich ist. Der XMC4500 stellt dafür ein JTAG Modul bereit welches mit der in IEEE1149.1 festgelegten Standarts übereinstimmt. Verwendet wird hierfür die achpolige Variante des Debug-Steckers bei dem der Platine vom JTAG-Adapter Versorgungsspannung und Masse sowie Signale für Reset, Systemtakt und die Steuerleitung übergeben wird.  %enquote xmc DAtenblatt , nur zwei angeschlossen?
 
 %Abblockkondensatoren
@@ -85,6 +92,7 @@ Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von ger
 
 
 
+%sign harnes Ehterne
 
 
 
