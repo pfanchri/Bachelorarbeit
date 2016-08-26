@@ -25,7 +25,10 @@ Altium Designer
 
 %DRC
 Altium Designer nummeriert automatische die verwendeten  Bauelemente  durch um eine genaue Identifikation eine Bauteiles zu erlauben und erstellt automatische einen Aufdruck neben dem Lötpäd mit dem Bauteilnamen in der entsprechenden Ebene. Ein solcher Bestückungsdruck zur leichteren Anordnung der Bauteile auf der fertig entwickelten Platine wurde nur auf der Hauptplatine erstellt. Auf den Teilplatinen für die Transceiver wurde dieser aus Platzgründen weggelassen.
-Um sicherzustellen, das die sich aus der Bauteilanordnung ergebenden Pads und die Leiterbahnen auch fertigbar sind stellt Altium Designer zwei \enquote{Design-Rule-Checks} (DRC bereit. Im ersten Live-DRC werden \enquote{Violations} also Bauteile mit Verstößen durch ein farbiges Overlay markiert. Im folgenden kompletten  Als verst    gegen die fertigbaren und 
+Um sicherzustellen, das die sich aus der Bauteilanordnung ergebenden Pads und die Leiterbahnen auch fertigbar sind stellt Altium Designer zwei \enquote{Design-Rule-Checks} (DRC) bereit. Im ersten Live-DRC werden \enquote{Violations} also Bauteile mit Verstößen durch ein farbiges Overlay markiert. Im folgenden kompletten Test zeigt Altium alle weiteren Verstöße an. Als Verstoß gelten etwa Leiterbahnen unterschiedlicher Netze die sich berühren und zu einem Kurzschluss führen würden oder auch  Verletzungen der festgelegten Abstandsregeln (Clearance). Alle Regeln für Violations können im \enquote{PCB Rules Editor} eingestellt werden.
+Da Altium im DRC sich überschneidende und falsch verbundene Leiterbahnen angezeigt werden, muss kein extra \enquote{Layout vs. Schematic}-Test durchgeführt werden, da durch den DRC Unterschiede zwischen Schaltplan und dem PCB-Layout bereits angezeigt würden.
+
+    gegen die fertigbaren und 
 \section{verwendete Hardware}
 
 \subsection{TDA5340}
