@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  30 AUG 2016 13:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  30 AUG 2016 14:35
 entering extended mode
 **Thesis.tex
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Thesis.tex
@@ -1834,6 +1834,7 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Thesis.aux
+(D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/AK.aux)
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Anhang.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -2097,23 +2098,47 @@ Package babel Info: Redefining ngerman shorthand "~
 
 ])
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
- [7]
+(babel)             in language  on input line 29.
+ [7] (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/AK.tex
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 3.
  [8
+
+
+
+])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 29.
+
+[9]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+ [10
+
 
 
 ]
@@ -2137,7 +2162,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 69.
- [9])
+ [11])
 \tf@toc=\write7
 
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Einleitung.tex
@@ -2230,6 +2255,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 7.
+Package acronym Info: Label `acro:PCB' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
+Package acronym Info: Label `acro:EDA' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2239,6 +2268,9 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
 [5]
+Package acronym Info: Label `acro:SPI' newly defined as it shall be overridden
+although it is yet undefined on input line 22.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -2250,6 +2282,8 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 23.
  [6]
+Package acronym Info: Label `acro:DRC' newly defined as it shall be overridden
+although it is yet undefined on input line 27.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2258,6 +2292,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
+Package acronym Info: Label `acro:FIFO' newly defined as it shall be overridden
+
+although it is yet undefined on input line 34.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2268,10 +2305,14 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 35.
 
 [7]
+Package acronym Info: Label `acro:SMA' newly defined as it shall be overridden
+although it is yet undefined on input line 49.
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 50.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+Underfull \vbox (badness 1609) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2282,39 +2323,53 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 55.
  [8]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 69.
+Package acronym Info: Label `acro:LQFP' newly defined as it shall be overridden
+
+although it is yet undefined on input line 72.
+Package acronym Info: Label `acro:BGA' newly defined as it shall be overridden
+although it is yet undefined on input line 72.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 75.
- [9]
+(babel)             in language  on input line 76.
+
+[9]
+Package acronym Info: Label `acro:JTAG' newly defined as it shall be overridden
+
+although it is yet undefined on input line 84.
+Package acronym Info: Label `acro:TVS' newly defined as it shall be overridden
+although it is yet undefined on input line 89.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 92.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 95.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 95.
  [10]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 104.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 107.
 )
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Software.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -2597,21 +2652,22 @@ Package babel Info: Redefining ngerman shorthand "~
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (D:\Bachelorarbeit\Latex\Bachelorarbeit\Thesis.aux
+(D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/AK.aux)
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Anhang.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E7D5E69FBD55CA46AEF2C8C362E8E779;2389.
+(rerunfilecheck)             Checksum: 509A86DB3632D26A8E1B582710543F0F;2391.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 46470 strings out of 493705
- 1023585 string characters out of 3144558
- 1711620 words of memory out of 3000000
- 48701 multiletter control sequences out of 15000+200000
- 79161 words of font info for 108 fonts, out of 3000000 for 9000
+ 46555 strings out of 493705
+ 1024617 string characters out of 3144558
+ 1715964 words of memory out of 3000000
+ 48758 multiletter control sequences out of 15000+200000
+ 79070 words of font info for 107 fonts, out of 3000000 for 9000
  1029 hyphenation exceptions out of 8191
- 66i,14n,83p,3120b,1941s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,14n,83p,3153b,1941s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
 es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts
@@ -2624,9 +2680,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX
 blic/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (34 pages, 973000 bytes).
+Output written on Thesis.pdf (36 pages, 983286 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
  22852 words of extra memory for PDF output out of 24883 (max. 10000000)
 
