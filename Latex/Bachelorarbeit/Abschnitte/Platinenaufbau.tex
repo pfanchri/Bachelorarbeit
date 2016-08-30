@@ -59,7 +59,7 @@ Durch die Verwendung des \enquote{Diffential Pair Routing} versucht Altium Desig
 
 
 
-Um Einkopplungen auf die Pfade für hochfrequente Signale zu vermeiden wurde das für den Transceiver benötigte Quarz möglichst weit vom Sende- bzw. von den Empfangsanschlüssen des TDA angeordnet. Aus diesem Grund wurde der für das für den Oszillator benötigte Quarz mit einer Frequenz $f_{Crystal}=21,948717$ MHz zwischen dem IC und vorgesehenen Stiftleiste platziert.  Die Frequenz des benötigten Quarzes ergibt sich aus dem  Zusammenhang
+Um Einkopplungen auf die Pfade für hochfrequente Signale zu vermeiden wurde das für den Transceiver benötigte Quarz möglichst weit vom Sende- bzw. von den Empfangsanschlüssen des TDA angeordnet. Aus diesem Grund wurde der für das für den Oszillator benötigte Quarz mit einer Frequenz $f_{Crystal}=21,948717$ MHz zwischen dem \ac{IC} und vorgesehenen Stiftleiste platziert.  Die Frequenz des benötigten Quarzes ergibt sich aus dem  Zusammenhang
 \begin{equation}\label{eq:fsys}
 f_{Crystal} = f_{IF2} * 80 = \frac{f_{IF1}}{39} * 80  = \frac{10,7 Mhz}{39} * 80 = 21,948717 MHz
 \end{equation}
@@ -67,7 +67,7 @@ wobei die Zwischenfrequenz der ersten Stufe durch die internen funktionalen Blö
 
 
 \subsection{XMC4500}
-Die Hauptsteuerung der Basisstation übernimmt ein Mikrocontroller der Bauart XMC4500, welcher aus der Mikrocontroller-Familie XMC4000 von Infineon stammt. Diese Baureihe stellt energieeffiziente ICs bereit welche für industrielle Steuerungen und \enquote{Sense \& Control} optimiert sind. 
+Die Hauptsteuerung der Basisstation übernimmt ein Mikrocontroller der Bauart XMC4500, welcher aus der Mikrocontroller-Familie XMC4000 von Infineon stammt. Diese Baureihe stellt energieeffiziente \acp{IC} bereit welche für industrielle Steuerungen und \enquote{Sense \& Control} optimiert sind. 
 Der XMC4500 basiert auf einem Kern Cortex\textsuperscript{TM}-M4 des britischen Herstellers ARM\textsuperscript{TM}. Daneben ist der Mikrocontroller auf die von Infineon selbst entwickelte Entwicklungsumgebung DAVE\textsuperscript{TM} angepasst.
 Im speziellen Anwendungsfall kommt die Variante des XMC mit 144 Pins und einem Flash-Speicher von 1024 Kilobit zum Einsatz. Der Chip ist dabei in ein  \ac{LQFP}-Gehäuse verbaut. Durch die Wahl diese Gehäuses konnte die elektrische Verbindung mit der Platine relativ leicht durch löten erreicht werden. Im Gegensatz zum ebenfalls erhältlichen \ac{BGA}-Gehäuse des XMC sind in diesem alle Kontakte direkt erreichbar und können verlötet werden.
 
@@ -102,6 +102,10 @@ Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von ger
 
 
 \subsection{Spannungsversorgung}
+Die Bereitstellung der notwendigen Spannung sollte wahlweise über den zur Datenerfassung angeschlossenen Computer oder über ein externes Netzteil erfolgen. Zum Anschluss eines externen Netzteils wurden Lötanschlüsse für eine Steckerleiste im Rastermaß $2,54$mm vorgesehen. Genau wie bei der Stromversorgung über die USB-Buchse wurde auch hier eine Schottky-Diode zum Verpolungsschutz der Schaltung integriert. Ausgelegt ist die Basisstation für ein Gleichspannungsnetzteil mit $5$V Ausgangsspannung, durch den Aufbau mit den beiden verwendeten Schottky-Dioden und die mögliche Eingangsspannung des nachfolgenden Reglers wäre jedoch eine angeschlossene $6$V-Stromquelle (bei vernachlässigtem Spannungsabfall an der Diode) unproblematisch.
+Wegen der bereits erwähnten notwenigen Versorungspannung von $3,3$V für den XMC4500 und die Transceiver wurde diese mit einem \ac{LDO}-Regler angepasst. Dieser verwendete Spannungsregler der Bauart MCP1826S von Microchip Technology Inc. sollte die Eingangspannung auf das gewünschte Niveau herunter regeln.
+Als Gehäusetyp wurde das dreibeinige \ac{SOT}-Package gewählt, da keine Variante des \ac{LDO} mit einstellbarer Ausgangsspannung und somit keine Variante des \acp{IC} mit mehr Anschlusspins benötigt wurde. Statt des \ac{LDO} von Microchip 
+
 
 %Abwärme deswegen nicht Infineon LDO
 \section{Generierte Dokumente}
