@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  31 AUG 2016 09:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  31 AUG 2016 10:08
 entering extended mode
 **Thesis.tex
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Thesis.tex
@@ -2372,33 +2372,32 @@ Package acronym Info: Label `acro:LDO' newly defined as it shall be overridden
 although it is yet undefined on input line 106.
 Package acronym Info: Label `acro:SOT' newly defined as it shall be overridden
 although it is yet undefined on input line 107.
+Package acronym Info: Label `acro:SMD' newly defined as it shall be overridden
+although it is yet undefined on input line 107.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
-)
-(D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Software.tex
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [11]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [12
+(babel)             in language  on input line 110.
 
-
-]
+[11]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 113.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 113.
+) (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Software.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [12]
 Kapitel 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2469,7 +2468,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [13]
+ [13
+
+
+]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2663,14 +2665,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F23A6FC123D7A3DCC3ABE3A2A683F50F;2391.
+(rerunfilecheck)             Checksum: 8725E0E65C893AC7714EE719C8D05E3F;2391.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 46580 strings out of 493705
- 1024819 string characters out of 3144558
- 1716207 words of memory out of 3000000
- 48773 multiletter control sequences out of 15000+200000
+ 46587 strings out of 493705
+ 1024875 string characters out of 3144558
+ 1716295 words of memory out of 3000000
+ 48778 multiletter control sequences out of 15000+200000
  79244 words of font info for 109 fonts, out of 3000000 for 9000
  1029 hyphenation exceptions out of 8191
  66i,14n,83p,3153b,1941s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2686,9 +2688,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX
 blic/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (36 pages, 986905 bytes).
+Output written on Thesis.pdf (36 pages, 988571 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
+ 513 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
  22852 words of extra memory for PDF output out of 24883 (max. 10000000)
 
