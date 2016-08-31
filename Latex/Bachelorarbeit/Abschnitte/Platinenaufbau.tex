@@ -13,7 +13,8 @@ Altium Designer ist dabei in drei Teilbereiche unterteilt: im \enquote{Board Pla
 %Ebenfalls...    Layers/ebene, top, bot, bestückungsdruck, solderresin
 %lagenanzahl 
 %lötpad
-
+%platinenmaterial (zb bezüglich wärmemangement)s. Übung LEKFZ
+%welche Bauteile in eigener Lib?
 %verwendung SMD Bauteile
 
 %Bauteileingabe und schaltplan
@@ -104,10 +105,14 @@ Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von ger
 \subsection{Spannungsversorgung}
 Die Bereitstellung der notwendigen Spannung sollte wahlweise über den zur Datenerfassung angeschlossenen Computer oder über ein externes Netzteil erfolgen. Zum Anschluss eines externen Netzteils wurden Lötanschlüsse für eine Steckerleiste im Rastermaß $2,54$mm vorgesehen. Genau wie bei der Stromversorgung über die USB-Buchse wurde auch hier eine Schottky-Diode zum Verpolungsschutz der Schaltung integriert. Ausgelegt ist die Basisstation für ein Gleichspannungsnetzteil mit $5$V Ausgangsspannung, durch den Aufbau mit den beiden verwendeten Schottky-Dioden und die mögliche Eingangsspannung des nachfolgenden Reglers wäre jedoch eine angeschlossene $6$V-Stromquelle (bei vernachlässigtem Spannungsabfall an der Diode) unproblematisch.
 Wegen der bereits erwähnten notwenigen Versorungspannung von $3,3$V für den XMC4500 und die Transceiver wurde diese mit einem \ac{LDO}-Regler angepasst. Dieser verwendete Spannungsregler der Bauart MCP1826S von Microchip Technology Inc. sollte die Eingangspannung auf das gewünschte Niveau herunter regeln.
-Als Gehäusetyp wurde das dreibeinige \ac{SOT}-Package gewählt, da keine Variante des \ac{LDO} mit einstellbarer Ausgangsspannung und somit keine Variante des \acp{IC} mit mehr Anschlusspins benötigt wurde. Statt des \ac{LDO} von Microchip war zunächst ein gleichwertiger Spannungsregler von Infineon, der IFX1117MEV33, vorgesehen. Die beiden \acp{LDO} unterscheiden sich in der elektrischen Belegung der Kühlfahne des \ac{SOT}-223 beim Spannungsregler von Infineon ist diese mit dem $3,3$V Output kontaktiert, beim verwendeten \ac{LDO} mit Ground. Da es sich bei dem Spannungsregler um ein \ac{SMD}-Bauteil handelt ist die verwendung von Kühlkörpern schwer möglich. Die Abführung der im Spannungsregler erzeugten Verlustwärme erfolgt deshalb üblicherweise über das Anlöten der Kühlfahne an eine Kupferfläche. So wird die erzeugte Wärme gespreizt und kann gut an die Umgebung abgegeben werden. Bei Verwendung des zuerst eingeplanten IFX1117MEV33 wäre somit eine Kupferfläche auf $3,3$V Potential zum Kühlen notwendig, welche elektrisch isoliert sein müsste. Wegen des XMC4500 und den anderen Bauteilen wäre somit nur eine Kupferfläche mit Abmessungen von etwa $15$mm auf $16$mm möglich, da die elektrischen Verbindungen bestehender Bauteile des Bereiches nicht unterbrochen werden sollten. Durch die Verwendung des entsprechenden Bauteils von Microchip konnte auf eine abgetrennte Kupferinsel verzichtet werden und somit die bereits erwähnte GND-Kupferfläche um den Mikrocontroller als gemeinsame Masse- und Kühlfäche verwendet werden.%GND lasssen?
-Vias damit wäre nach unten
-Der JTAG Stecker des XMC wurde absichtlich im Bereich neben ....
+Als Gehäusetyp wurde das dreibeinige \ac{SOT}-Package gewählt, da keine Variante des \ac{LDO} mit einstellbarer Ausgangsspannung und somit keine Variante des \acp{IC} mit mehr Anschlusspins benötigt wurde. Statt des \ac{LDO} von Microchip war zunächst ein gleichwertiger Spannungsregler von Infineon, der IFX1117MEV33, vorgesehen. Die beiden \acp{LDO} unterscheiden sich in der elektrischen Belegung der Kühlfahne des \ac{SOT}-223 beim Spannungsregler von Infineon ist diese mit dem $3,3$V Output kontaktiert, beim verwendeten \ac{LDO} mit Ground. Da es sich bei dem Spannungsregler um ein \ac{SMD}-Bauteil handelt ist die verwendung von Kühlkörpern schwer möglich. Die Abführung der im Spannungsregler erzeugten Verlustwärme erfolgt deshalb üblicherweise über das Anlöten der Kühlfahne an eine Kupferfläche. So wird die erzeugte Wärme gespreizt und kann gut an die Umgebung abgegeben werden. Bei Verwendung des zuerst eingeplanten IFX1117MEV33 wäre somit eine Kupferfläche auf $3,3$V Potential zum Kühlen notwendig, welche elektrisch isoliert sein müsste. Wegen des XMC4500 und den anderen Bauteilen wäre somit nur eine Kupferfläche mit Abmessungen von etwa $15$mm auf $16$mm möglich, da die elektrischen Verbindungen bestehender Bauteile des Bereiches nicht unterbrochen werden sollten. Durch die Verwendung des entsprechenden Bauteils von Microchip konnte auf eine abgetrennte Kupferinsel verzichtet werden und somit die bereits erwähnte GND-Kupferfläche um den Mikrocontroller als gemeinsame Masse- und Kühlfäche verwendet werden.%"GND" lasssen?
+Wegen der vorderseitigen Bauteilbestückung war die verfügbare Kupferfläche auf der Platinenrückseite  größer. Um dies beim Ableiten der Wärme vom Bauteil zu nutzen wurden vor allem im Bereich um die Kühlfinne des \ac{SOT}-223 Gehäuses Durchkontaktierungen angebracht. Diese parallelen \enquote{Thermal Vias} konnten als Wärmepfad zur unteren Kupferfläche dienen. Außerdem wurde der \ac{JTAG}-Stecker des XMC absichtlich im Bereich neben dem Spannungsregler angebracht. Durch die große Oberfläche stellt auch dieser eine gute Wärmesenke dar. %sicher?
+% Rechnung Thermischer widerstand
 
-
-%Abwärme deswegen nicht Infineon LDO  Rechnung Thermischer widerstand
 \section{Generierte Dokumente}
+
+Schematic rpints
+Assembly drawing
+Bill of materials
+Step
+%gerber?
