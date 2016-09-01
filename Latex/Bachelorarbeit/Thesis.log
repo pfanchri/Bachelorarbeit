@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  1 SEP 2016 10:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  1 SEP 2016 10:53
 entering extended mode
 **Thesis.tex
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Thesis.tex
@@ -1904,11 +1904,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Input encoding 'ascii' forced by
 (biblatex)             'safeinputenc' option.
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Thesis.bbl' not found.
-
-No file Thesis.bbl.
+Package biblatex Info: ... file 'Thesis.bbl' found.
+ (D:\Bachelorarbeit\Latex\Bachelorarbeit\Thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 16.
 Package biblatex Info: Reference segment=0 on input line 16.
+
 ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.11} (current compat level: 1.10).
@@ -2316,16 +2316,20 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Underfull \vbox (badness 1609) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 54.
  [8]
 Package acronym Info: Label `acro:IC' newly defined as it shall be overridden
 although it is yet undefined on input line 63.
+
+
+LaTeX Warning: Citation 'TDA-UserManual' on page 9 undefined on input line 67.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2343,7 +2347,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 74.
-
 [9]
 Package acronym Info: Label `acro:JTAG' newly defined as it shall be overridden
 
@@ -2393,6 +2396,8 @@ Package babel Info: Redefining ngerman shorthand "~
 Package acronym Info: Label `acro:STEP' newly defined as it shall be overridden
 
 although it is yet undefined on input line 115.
+Package acronym Info: Label `acro:NC' newly defined as it shall be overridden
+although it is yet undefined on input line 116.
 ) (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Software.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2678,15 +2683,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A59E8C7CD9B572A2D36AE03024670608;2512.
+(rerunfilecheck)             Checksum: A3B478620EFB04905111F8296118D499;2512.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 46609 strings out of 493705
- 1025097 string characters out of 3144558
- 1717547 words of memory out of 3000000
- 48792 multiletter control sequences out of 15000+200000
- 79331 words of font info for 110 fonts, out of 3000000 for 9000
+ 46738 strings out of 493705
+ 1027433 string characters out of 3144558
+ 1717645 words of memory out of 3000000
+ 48915 multiletter control sequences out of 15000+200000
+ 79422 words of font info for 111 fonts, out of 3000000 for 9000
  1029 hyphenation exceptions out of 8191
  66i,14n,83p,3153b,1941s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
@@ -2701,9 +2715,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX
 blic/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Thesis.pdf (36 pages, 992865 bytes).
+Output written on Thesis.pdf (36 pages, 994941 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
+ 539 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
  22868 words of extra memory for PDF output out of 24883 (max. 10000000)
 

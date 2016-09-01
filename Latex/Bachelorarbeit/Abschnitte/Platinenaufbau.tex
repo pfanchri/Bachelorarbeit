@@ -25,7 +25,7 @@ Da der Tranciever und die entsprechende Peripherie sechs mal genau identisch ver
 
 %DRC
 Altium Designer nummeriert automatische die verwendeten  Bauelemente  durch um eine genaue Identifikation eine Bauteiles zu erlauben und erstellt automatische einen Aufdruck neben dem Lötpäd mit dem Bauteilnamen in der entsprechenden Ebene. Ein solcher Bestückungsdruck zur leichteren Anordnung der Bauteile auf der fertig entwickelten Platine wurde nur auf der Hauptplatine erstellt. Auf den Teilplatinen für die Transceiver wurde dieser aus Platzgründen weggelassen.
-Um sicherzustellen, das die sich aus der Bauteilanordnung ergebenden Pads und die Leiterbahnen auch fertigbar sind stellt Altium Designer zwei \acp{DRC}  bereit. Im ersten Live-\ac{DRC} werden \enquote{Violations} also Bauteile mit Verstößen durch ein farbiges Overlay markiert. Im folgenden kompletten Test zeigt Altium alle weiteren Verstöße an. Als Verstoß gelten etwa Leiterbahnen unterschiedlicher Netze die sich berühren und zu einem Kurzschluss führen würden oder auch  Verletzungen der festgelegten Abstandsregeln (Clearance). Alle Regeln für Violations können im \enquote{PCB Rules Editor} eingestellt werden und so an die Möglichkeiten des \ac{PCB}-Herstellers angepasst werden. Die Leiterplatte für die Basisstation wurde von Multi Circuit Boards Ltd. hergestellt.
+Um sicherzustellen, das die sich aus der Bauteilanordnung ergebenden Pads und die Leiterbahnen auch fertigbar sind stellt Altium Designer zwei \acp{DRC}  bereit. Im ersten Live-\ac{DRC} werden \enquote{Violations} also Bauteile mit Verstößen durch ein farbiges Overlay markiert. Im folgenden kompletten Test zeigt Altium alle weiteren Verstöße an. Als Verstoß gelten etwa Leiterbahnen unterschiedlicher Netze die sich berühren und zu einem Kurzschluss führen würden oder auch  Verletzungen der festgelegten Abstandsregeln (Clearance). Alle Regeln für Violations können im \enquote{PCB Rules Editor} eingestellt werden und so an die Möglichkeiten des \ac{PCB}-Herstellers angepasst werden. Da die Leiterplatte für die Basisstation von Multi Circuit Boards Ltd. hergestellt wurde, konnten die auf der Webseite dieses Herstellers angegebenen Designregeln für den \ac{DRC} übernommen werden.
 Da Altium im \ac{DRC} sich überschneidende und falsch verbundene Leiterbahnen angezeigt werden, muss kein extra \enquote{Layout vs. Schematic}-Test durchgeführt werden, da durch den \ac{DRC} Unterschiede zwischen Schaltplan und dem \ac{PCB}-Layout bereits angezeigt würden.
 
 \section{verwendete Hardware}
@@ -64,7 +64,7 @@ Um Einkopplungen auf die Pfade für hochfrequente Signale zu vermeiden wurde das
 \begin{equation}\label{eq:fsys}
 f_{Crystal} = f_{IF2} * 80 = \frac{f_{IF1}}{39} * 80  = \frac{10,7 Mhz}{39} * 80 = 21,948717 MHz
 \end{equation}
-wobei die Zwischenfrequenz der ersten Stufe durch die internen funktionalen Blöcke des TDA und den Keramikfilter vorgegeben ist. Die weiteren Faktoren ergeben sich aus dem Aufbau des Empfängers und werden von Infineon bereitgestellt%\cite{TDA-UserManual}.
+wobei die Zwischenfrequenz der ersten Stufe durch die internen funktionalen Blöcke des TDA und den Keramikfilter vorgegeben ist. Die weiteren Faktoren ergeben sich aus dem Aufbau des Empfängers und werden von Infineon bereitgestellt\cite{TDA-UserManual}.
 
 
 \subsection{XMC4500}
@@ -111,9 +111,6 @@ Wegen der vorderseitigen Bauteilbestückung war die verfügbare Kupferfläche au
 
 \section{Generierte Dokumente}
 Altium Designer kann aus den erstellten \ac{PCB}-Daten die für die weitere Verarbeitung benötigten Dateien generieren. Im dazu vorgesehene Output-Job-Manager können entsprechende Outputs gewählt werden und einem Output-Container zugeordnet werden. Dies ist vor allem zum Erstellen gewünschter Dateistrukturen bei größeren Projekten notwendig um dies übersichtlich zu halten. Im der vorliegenden Arbeit wurde dies jedoch nur bedingt benötigt.
-Für die Bestückung der Basisstation wurde zunächst eine \enquote{Bill of materials} also eine Materialliste exportiert mit deren Hilfe die entsprechenden Bestellnummern des Lieferanten Digi-Key herausgesucht und sortiert werden konnten. Mithilfe der ebenfalls generierten \enquote{Assembly Drawings} war Ausgabe aller Bauteile und deren Plazierung auf der Platine möglich. Ebenfalls wurden in diesem Menü die strukturierten Schaltpläne ausgegeben.
-Zur dreidimensionalen Visualisierung wurde die fertige Platine mit den in den Footprints enthaltenen Bauteilabmessungen und Formen als 3D-Modell im \ac{STEP}-Format ausgegeben. Mithilfe des \ac{CAD}-Programms \enquote{SolidWorks} 
-
-
-
-%gerber und nc drill?
+Für die Bestückung der Basisstation wurde zunächst eine \enquote{Bill of materials} also eine Materialliste exportiert mit deren Hilfe die entsprechenden Bestellnummern des Lieferanten Digi-Key herausgesucht und sortiert werden konnten. Mithilfe der ebenfalls generierten \enquote{Assembly Drawings} war Ausgabe aller Bauteile und deren Platzierung auf der Platine möglich. Ebenfalls wurden in diesem Menü die strukturierten Schaltpläne ausgegeben.
+Zur dreidimensionalen Visualisierung wurde die fertige Platine mit den in den Footprints enthaltenen Bauteilabmessungen und Formen als 3D-Modell im \ac{STEP}-Format ausgegeben. Mithilfe des \ac{CAD}-Programms \enquote{SolidWorks} wurde daraus ein Gehäuse mit Deckel für die Basisstation erstellt. Diese wurde anschließend mit einem 3D-Drucker ausgedruckt und dient dazu die Platine zu schützen.
+Die Fertig der Platine durch den Hersteller erfolgte durch erstellte Gerber Daten, die ebenfals aus dem Output-Job-Manager generiert werden. Dabei wird für jedes Layer des \ac{PCB}-Editors eine Gerberdatei erstellt in der die Geometrie der entsprechenden Lage angegeben ist. Jede Lage entspricht in der Herstellung dabei einem Fertigungsschritt. Um Bohrungen in der Platine zu setzen werden zusätzliche \enquote{NC Drill-Files} also Daten für die \ac{NC} der automatischen Maschinen zum setzen von Bohrungen. Diese enthalten den Bohrdurchmesser, die Art der Bohrung sowie den Ort auf der Platine und müssen zusätzlich aus Altium Designer exportiert werden.
