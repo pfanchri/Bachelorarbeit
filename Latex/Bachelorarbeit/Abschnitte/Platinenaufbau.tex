@@ -5,7 +5,7 @@
 \section{Vorüberlegungen}
 Um Sicherzustellen, das alle Antennen gleichmäßig in die sechs vorgegebenen Raumrichtungen abstrahlen, sollte bereits die Platine symmetrisch aufgebaut werden. Dazu wurden zuerst das Layout der sechs identischen Transceiver-Einheiten mit dem TDA5340 Baustein und den Antennen erstellt und anschließend gleichmäßig um die weiten für die Schaltung notwendigen notwendigen funktionellen Segmente angeordnet. 
 \section{Layoutprogramm Altium Designer}
-Bei dem Entwicklungswerkzeug \enquote{Altium Designer} des Entwicklers Altium Limited handelt es sich um ein System zum Entwurf von  gedruckten  Schaltungen oder \acp{PCB}. Ein solches Programm wird auch als \acp{EDA} oder ECAD für electronic CAD bezeichnet, da es den Entwickler bei der Umsetzung der Anforderungen in einen Schaltplan unterstützen soll.
+Bei dem Entwicklungswerkzeug \enquote{Altium Designer} des Entwicklers Altium Limited handelt es sich um ein System zum Entwurf von  gedruckten  Schaltungen oder \acp{PCB}. Ein solches Programm wird auch als \acp{EDA} oder ECAD für electronic \ac{CAD} bezeichnet, da es den Entwickler bei der Umsetzung der Anforderungen in einen Schaltplan unterstützen soll.
 Wie viele andere \ac{EDA}-Programme ist auch Altium Designer so aufgebaut das sich der Entwickler zuerst mit dem allgemeinen symbolisierten Schaltplan befassen kann und erst zu einem späteren Zeitpunkt die tatsächliche Anordnung der Bauteile auf dem \ac{PCB}-Substrat festgelegt wird. Somit können zuerst im Schematic Editor die Funktionen der Schaltung umgesetzt werden. Dazu werden die verwendeten Bauteile aus zuvor angelegten Bibliotheken verwendet oder es werden bestehende Bibliotheken verwendete, die etwa vom Hersteller der Bauteile zur Verfügung gestellt werden. Altium selbst bietet hierfür auch diverse Möglichkeiten an und stellt Bauteile nach Hersteller und Art geordnet bereit.
 In den Bibliotheken sind alle im weiteren Verlauf benötigten Informationen über die einzelnen Bauteile enthalten. So liegen dort etwa  entsprechenden Abbildungen für das Bauteil im  Schaltplan  vor. In den so genannten \enquote{Footprints} zu jedem Bauteil, welche ebenfalls in den Bibliotheken enthalten sind, wurde zuvor die, für das physikalische Gehäuse, notwendigen Abmessungen und Lötpads festgelegt. Da es Bauteile, wie den verwendeten  Mikrocontroller, in verschiedenen Gehäusen geben kann, besteht somit auch die Möglichkeit hier verschiedene Footprints zu wählen. Da viele Gehäuse herstellerübergreifend genormt sind, konnten teilweise bestehende Footprints genutzt werden oder diese mehrfach verwendet werden.
 
@@ -110,12 +110,10 @@ Wegen der vorderseitigen Bauteilbestückung war die verfügbare Kupferfläche au
 % Rechnung Thermischer widerstand
 
 \section{Generierte Dokumente}
-Altium Designer kann aus den erstellten \ac{PCB}-Daten die für die weitere Verarbeitung benötigten Dateien generieren. 
+Altium Designer kann aus den erstellten \ac{PCB}-Daten die für die weitere Verarbeitung benötigten Dateien generieren. Im dazu vorgesehene Output-Job-Manager können entsprechende Outputs gewählt werden und einem Output-Container zugeordnet werden. Dies ist vor allem zum Erstellen gewünschter Dateistrukturen bei größeren Projekten notwendig um dies übersichtlich zu halten. Im der vorliegenden Arbeit wurde dies jedoch nur bedingt benötigt.
+Für die Bestückung der Basisstation wurde zunächst eine \enquote{Bill of materials} also eine Materialliste exportiert mit deren Hilfe die entsprechenden Bestellnummern des Lieferanten Digi-Key herausgesucht und sortiert werden konnten. Mithilfe der ebenfalls generierten \enquote{Assembly Drawings} war Ausgabe aller Bauteile und deren Plazierung auf der Platine möglich. Ebenfalls wurden in diesem Menü die strukturierten Schaltpläne ausgegeben.
+Zur dreidimensionalen Visualisierung wurde die fertige Platine mit den in den Footprints enthaltenen Bauteilabmessungen und Formen als 3D-Modell im \ac{STEP}-Format ausgegeben. Mithilfe des \ac{CAD}-Programms \enquote{SolidWorks} 
 
-Für die 
 
-Schematic rpints
-Assembly drawing
-Bill of materials
-Step
-%gerber?
+
+%gerber und nc drill?

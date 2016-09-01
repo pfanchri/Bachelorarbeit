@@ -1,14 +1,13 @@
-Project Outputs Generation Report
----------------------------------
-Start Output Generation At 09:27:02 On 27.06.2016
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [PCB_Testplatine.PcbDoc]
+   Generated File[PCB_Testplatine-RoundHoles.TXT]
+   Generated File[PCB_Testplatine-SlotHoles.TXT]
+   Generated File[PCB_Testplatine.LDP]
+   Generated File[PCB_Testplatine.DRR]
 
-Output: Export STEP
-Type  : ExportSTEP
-From  : Variant [[No Variations]] of PCB Document [PCB_Testplatine.PcbDoc]
-   Generated File[PCB_Testplatine.step]
 
-
-Files Generated   : 1
+Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 09:27:09 On 27.06.2016
+Finished Output Generation At 10:34:33 On 01.09.2016
