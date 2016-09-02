@@ -32,7 +32,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}DAVE Entwicklungsumgebung}{13}{section.3.1}
 \defcounter {refsection}{0}\relax 
-<<<<<<< HEAD
 \contentsline {section}{\numberline {3.2}verwendete Peripherie des XMC4500}{14}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}USIC}{14}{subsection.3.2.1}
@@ -58,33 +57,6 @@
 \contentsline {subsection}{\numberline {3.4.2}interruptbasierte Datenerfassung}{14}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.3}Weiterleitung der erfassten Daten}{14}{subsection.3.4.3}
-=======
-\contentsline {section}{\numberline {3.2}verwendete Peripherie des XMC4500}{13}{section.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}USIC}{13}{subsection.3.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}ERU}{13}{subsection.3.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}USB}{13}{subsection.3.2.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}verwendete Bibliotheken}{13}{section.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}XMC Libraries (XMC Lib)}{13}{subsection.3.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}SPI Library}{13}{subsection.3.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}TDA5340 Library}{13}{subsection.3.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Virtueller COM Port}{13}{subsection.3.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Programmablauf}{13}{section.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Konfiguration der Funkmodule}{13}{subsection.3.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}interruptbasierte Datenerfassung}{13}{subsection.3.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Weiterleitung der erfassten Daten}{13}{subsection.3.4.3}
->>>>>>> origin/master
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Feldtest}{15}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -96,15 +68,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{17}{chapter.5}
 \defcounter {refsection}{0}\relax 
-<<<<<<< HEAD
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{19}{chapter*.24}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{19}{chapter*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{21}{chapter*.25}
-=======
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{19}{chapter*.23}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{21}{chapter*.24}
->>>>>>> origin/master
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{21}{chapter*.27}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Anhang}{23}{chapter.6}
 \defcounter {refsection}{0}\relax 

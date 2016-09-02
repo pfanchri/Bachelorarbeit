@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<bcf:controlfile version="2.6" xmlns:bcf="https://sourceforge.net/projects/biblatex">
-=======
 <bcf:controlfile version="3.1" bltxversion="3.4" xmlns:bcf="https://sourceforge.net/projects/biblatex">
->>>>>>> origin/master
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -23,22 +19,15 @@
       <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-<<<<<<< HEAD
-=======
       <bcf:key>minxrefs</bcf:key>
       <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
->>>>>>> origin/master
       <bcf:key>sortcase</bcf:key>
       <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-<<<<<<< HEAD
-      <bcf:key>sortfirstinits</bcf:key>
-=======
       <bcf:key>sortgiveninits</bcf:key>
->>>>>>> origin/master
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
@@ -147,8 +136,6 @@
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-<<<<<<< HEAD
-=======
       <bcf:key>uniqueprimaryauthor</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
@@ -169,13 +156,10 @@
       <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
->>>>>>> origin/master
       <bcf:key>useauthor</bcf:key>
       <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-<<<<<<< HEAD
-=======
       <bcf:key>usebookauthor</bcf:key>
       <bcf:value>1</bcf:value>
     </bcf:option>
@@ -184,15 +168,10 @@
       <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
->>>>>>> origin/master
       <bcf:key>useeditor</bcf:key>
       <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-<<<<<<< HEAD
-      <bcf:key>useprefix</bcf:key>
-      <bcf:value>0</bcf:value>
-=======
       <bcf:key>useeditora</bcf:key>
       <bcf:value>1</bcf:value>
     </bcf:option>
@@ -227,15 +206,11 @@
     <bcf:option type="singlevalued">
       <bcf:key>usenamec</bcf:key>
       <bcf:value>1</bcf:value>
->>>>>>> origin/master
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>usetranslator</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
-<<<<<<< HEAD
-  </bcf:options>
-=======
     <bcf:option type="singlevalued">
       <bcf:key>useshortauthor</bcf:key>
       <bcf:value>1</bcf:value>
@@ -483,17 +458,13 @@
     <bcf:member field="maintitle"/>
     <bcf:member field="origtitle"/>
   </bcf:datafieldset>
->>>>>>> origin/master
   <!-- SOURCEMAP -->
   <bcf:sourcemap>
     <bcf:maps datatype="bibtex" level="driver">
       <bcf:map>
-<<<<<<< HEAD
-=======
         <bcf:map_step map_field_set="day" map_null="1"/>
       </bcf:map>
       <bcf:map>
->>>>>>> origin/master
         <bcf:map_step map_type_source="conference" map_type_target="inproceedings"/>
         <bcf:map_step map_type_source="electronic" map_type_target="online"/>
         <bcf:map_step map_type_source="www" map_type_target="online"/>
@@ -522,132 +493,6 @@
         <bcf:map_step map_field_source="pdf" map_field_target="file"/>
       </bcf:map>
     </bcf:maps>
-<<<<<<< HEAD
-    <bcf:maps datatype="endnotexml" level="driver">
-      <bcf:map>
-        <bcf:map_step map_type_source="Aggregated Database" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Ancient Text" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Artwork" map_type_target="artwork"/>
-        <bcf:map_step map_type_source="Audiovisual Material" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Bill" map_type_target="jurisdiction"/>
-        <bcf:map_step map_type_source="Blog" map_type_target="online"/>
-        <bcf:map_step map_type_source="Book" map_type_target="book"/>
-        <bcf:map_step map_type_source="Book Section" map_type_target="inbook"/>
-        <bcf:map_step map_type_source="Case" map_type_target="jurisdiction"/>
-        <bcf:map_step map_type_source="Catalog" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Chart or Table" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Classical Work" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Computer Program" map_type_target="software"/>
-        <bcf:map_step map_type_source="Conference Paper" map_type_target="inproceedings"/>
-        <bcf:map_step map_type_source="Conference Proceedings" map_type_target="proceedings"/>
-        <bcf:map_step map_type_source="Dictionary" map_type_target="inreference"/>
-        <bcf:map_step map_type_source="Edited Book" map_type_target="collection"/>
-        <bcf:map_step map_type_source="Electronic Article" map_type_target="article"/>
-        <bcf:map_step map_type_source="Electronic Book" map_type_target="book"/>
-        <bcf:map_step map_type_source="Encyclopedia" map_type_target="reference"/>
-        <bcf:map_step map_type_source="Equation" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Figure" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Film or Broadcast" map_type_target="movie"/>
-        <bcf:map_step map_type_source="Government Document" map_type_target="report"/>
-        <bcf:map_step map_type_source="Grant" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Hearing" map_type_target="jurisdiction"/>
-        <bcf:map_step map_type_source="Journal Article" map_type_target="article"/>
-        <bcf:map_step map_type_source="Legal Rule or Regulation" map_type_target="legislation"/>
-        <bcf:map_step map_type_source="Magazine Article" map_type_target="article"/>
-        <bcf:map_step map_type_source="Manuscript" map_type_target="unpublished"/>
-        <bcf:map_step map_type_source="Map" map_type_target="misc"/>
-        <bcf:map_step map_type_source="Newspaper Article" map_type_target="article"/>
-        <bcf:map_step map_type_source="Online Database" map_type_target="online"/>
-        <bcf:map_step map_type_source="Online Multimedia" map_type_target="online"/>
-        <bcf:map_step map_type_source="Pamphlet" map_type_target="booklet"/>
-        <bcf:map_step map_type_source="Patent" map_type_target="patent"/>
-        <bcf:map_step map_type_source="Personal Communication" map_type_target="letter"/>
-        <bcf:map_step map_type_source="Report" map_type_target="report"/>
-        <bcf:map_step map_type_source="Serial" map_type_target="periodical"/>
-        <bcf:map_step map_type_source="Standard" map_type_target="standard"/>
-        <bcf:map_step map_type_source="Statute" map_type_target="legislation"/>
-        <bcf:map_step map_type_source="Thesis" map_type_target="thesis"/>
-        <bcf:map_step map_type_source="Unpublished Work" map_type_target="unpublished"/>
-        <bcf:map_step map_type_source="Web Page" map_type_target="online"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:map_step map_field_source="electronic-resource-num" map_field_target="eprint"/>
-        <bcf:map_step map_field_source="alt-title" map_field_target="shorttitle"/>
-        <bcf:map_step map_field_source="meeting-place" map_field_target="venue"/>
-        <bcf:map_step map_field_source="pub-location" map_field_target="location"/>
-        <bcf:map_step map_field_source="orig-pub" map_field_target="origpublisher"/>
-        <bcf:map_step map_field_source="authors" map_field_target="author"/>
-        <bcf:map_step map_field_source="secondary-authors" map_field_target="editor"/>
-        <bcf:map_step map_field_source="tertiary-authors" map_field_target="commentator"/>
-        <bcf:map_step map_field_source="subsidiary-authors" map_field_target="translator"/>
-        <bcf:map_step map_field_source="year" map_field_target="date"/>
-        <bcf:map_step map_field_source="pub-dates" map_field_target="date"/>
-        <bcf:map_step map_field_source="num-vols" map_field_target="volumes"/>
-        <bcf:map_step map_field_source="call-num" map_field_target="library"/>
-        <bcf:map_step map_field_source="notes" map_field_target="note"/>
-        <bcf:map_step map_field_source="secondary-title" map_field_target="subtitle"/>
-        <bcf:map_step map_field_source="work-type" map_field_target="type"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Edited Book</bcf:per_type>
-        <bcf:map_step map_field_source="contributors/authors" map_field_target="contributors/editor"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Electronic Article</bcf:per_type>
-        <bcf:per_type>Journal Article</bcf:per_type>
-        <bcf:per_type>Magazine Article</bcf:per_type>
-        <bcf:per_type>Newspaper Article</bcf:per_type>
-        <bcf:map_step map_field_source="isbn" map_field_target="issn"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Patent</bcf:per_type>
-        <bcf:per_type>Report</bcf:per_type>
-        <bcf:per_type>Government Document</bcf:per_type>
-        <bcf:per_type>Legal Rule or Regulation</bcf:per_type>
-        <bcf:map_step map_field_source="isbn" map_field_target="number"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Blog</bcf:per_type>
-        <bcf:per_type>Online Database</bcf:per_type>
-        <bcf:per_type>Online Multimedia</bcf:per_type>
-        <bcf:per_type>Web Page</bcf:per_type>
-        <bcf:map_step map_field_source="titles/secondary-title" map_field_target="titles/title"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Book Section</bcf:per_type>
-        <bcf:map_step map_field_source="titles/secondary-title" map_field_target="titles/booktitle"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Book</bcf:per_type>
-        <bcf:per_type>Electronic Book</bcf:per_type>
-        <bcf:per_type>Manuscript</bcf:per_type>
-        <bcf:per_type>Unpublished Work</bcf:per_type>
-        <bcf:map_step map_field_source="titles/secondary-title" map_field_target="titles/series"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Conference Paper</bcf:per_type>
-        <bcf:per_type>Conference Proceedings</bcf:per_type>
-        <bcf:map_step map_field_source="titles/secondary-title" map_field_target="titles/eventtitle"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Electronic Article</bcf:per_type>
-        <bcf:per_type>Journal Article</bcf:per_type>
-        <bcf:per_type>Magazine Article</bcf:per_type>
-        <bcf:per_type>Newspaper Article</bcf:per_type>
-        <bcf:map_step map_field_source="titles/secondary-title" map_field_target="titles/journaltitle"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Book Section</bcf:per_type>
-        <bcf:map_step map_field_source="titles/tertiary-title" map_field_target="titles/booktitle"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>Conference Proceedings</bcf:per_type>
-        <bcf:per_type>periodical</bcf:per_type>
-        <bcf:map_step map_field_source="titles/tertiary-title" map_field_target="titles/series"/>
-      </bcf:map>
-    </bcf:maps>
-=======
->>>>>>> origin/master
     <bcf:maps datatype="ris" level="driver">
       <bcf:map>
         <bcf:map_step map_type_source="ART" map_type_target="artwork"/>
@@ -707,122 +552,14 @@
         <bcf:map_step map_field_source="L1" map_field_target="file"/>
       </bcf:map>
     </bcf:maps>
-<<<<<<< HEAD
-    <bcf:maps datatype="zoterordfxml" level="driver">
-      <bcf:map>
-        <bcf:map_step map_type_source="conferencePaper" map_type_target="inproceedings"/>
-        <bcf:map_step map_type_source="bookSection" map_type_target="inbook"/>
-        <bcf:map_step map_type_source="journalArticle" map_type_target="article"/>
-        <bcf:map_step map_type_source="magazineArticle" map_type_target="article"/>
-        <bcf:map_step map_type_source="newspaperArticle" map_type_target="article"/>
-        <bcf:map_step map_type_source="encyclopediaArticle" map_type_target="inreference"/>
-        <bcf:map_step map_type_source="manuscript" map_type_target="unpublished"/>
-        <bcf:map_step map_type_source="document" map_type_target="misc"/>
-        <bcf:map_step map_type_source="dictionaryEntry" map_type_target="inreference"/>
-        <bcf:map_step map_type_source="interview" map_type_target="misc"/>
-        <bcf:map_step map_type_source="film" map_type_target="movie"/>
-        <bcf:map_step map_type_source="webpage" map_type_target="online"/>
-        <bcf:map_step map_type_source="note" map_type_target="misc"/>
-        <bcf:map_step map_type_source="attachment" map_type_target="misc"/>
-        <bcf:map_step map_type_source="bill" map_type_target="legislation"/>
-        <bcf:map_step map_type_source="case" map_type_target="jurisdiction"/>
-        <bcf:map_step map_type_source="hearing" map_type_target="jurisdiction"/>
-        <bcf:map_step map_type_source="statute" map_type_target="legislation"/>
-        <bcf:map_step map_type_source="email" map_type_target="letter"/>
-        <bcf:map_step map_type_source="map" map_type_target="image"/>
-        <bcf:map_step map_type_source="blogPost" map_type_target="online"/>
-        <bcf:map_step map_type_source="instantMessage" map_type_target="letter"/>
-        <bcf:map_step map_type_source="forumPost" map_type_target="online"/>
-        <bcf:map_step map_type_source="audioRecording" map_type_target="audio"/>
-        <bcf:map_step map_type_source="presentation" map_type_target="inproceedings"/>
-        <bcf:map_step map_type_source="videoRecording" map_type_target="video"/>
-        <bcf:map_step map_type_source="tvBroadcast" map_type_target="misc"/>
-        <bcf:map_step map_type_source="radioBroadcast" map_type_target="misc"/>
-        <bcf:map_step map_type_source="podcast" map_type_target="online"/>
-        <bcf:map_step map_type_source="computerProgram" map_type_target="software"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:map_step map_field_source="bib:contributors" map_field_target="author"/>
-        <bcf:map_step map_field_source="bib:authors" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:interviewers" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:directors" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:scriptwriters" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:bookAuthor" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:inventors" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:recipients" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:counsels" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:artists" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:podcasters" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:presenters" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:commenters" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:programers" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:composers" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:producers" map_field_target="author"/>
-        <bcf:map_step map_field_source="z:performers" map_field_target="author"/>
-        <bcf:map_step map_field_source="bib:editors" map_field_target="editor"/>
-        <bcf:map_step map_field_source="z:translators" map_field_target="translator"/>
-        <bcf:map_step map_field_source="z:seriesEditors" map_field_target="editor"/>
-        <bcf:map_step map_field_source="dc:date" map_field_target="date"/>
-        <bcf:map_step map_field_source="bib:pages" map_field_target="pages"/>
-        <bcf:map_step map_field_source="dc:title" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:proceedingsTitle" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:encyclopediaTitle" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:dictionaryTitle" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:websiteTitle" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:forumTitle" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:blogTitle" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:nameOfAct" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:caseName" map_field_target="title"/>
-        <bcf:map_step map_field_source="z:meetingName" map_field_target="eventtitle"/>
-        <bcf:map_step map_field_source="prism:volume" map_field_target="volume"/>
-        <bcf:map_step map_field_source="numberOfVolumes" map_field_target="volumes"/>
-        <bcf:map_step map_field_source="z:numPages" map_field_target="pagetotal"/>
-        <bcf:map_step map_field_source="prism:edition" map_field_target="edition"/>
-        <bcf:map_step map_field_source="dc:description" map_field_target="note"/>
-        <bcf:map_step map_field_source="dc:alternative" map_field_target="shortjournal"/>
-        <bcf:map_step map_field_source="dcterms:abstract" map_field_target="abstract"/>
-        <bcf:map_step map_field_source="dc:type" map_field_target="type"/>
-        <bcf:map_step map_field_source="z:shortTitle" map_field_target="shorttitle"/>
-        <bcf:map_step map_field_source="z:bookTitle" map_field_target="booktitle"/>
-        <bcf:map_step map_field_source="prism:number" map_field_target="number"/>
-        <bcf:map_step map_field_source="z:patentNumber" map_field_target="number"/>
-        <bcf:map_step map_field_source="z:codeNumber" map_field_target="number"/>
-        <bcf:map_step map_field_source="z:reportNumber" map_field_target="number"/>
-        <bcf:map_step map_field_source="z:billNumber" map_field_target="number"/>
-        <bcf:map_step map_field_source="z:documentNumber" map_field_target="number"/>
-        <bcf:map_step map_field_source="z:publicLawNumber" map_field_target="number"/>
-        <bcf:map_step map_field_source="z:applicationNumber" map_field_target="number"/>
-        <bcf:map_step map_field_source="z:episodeNumber" map_field_target="number"/>
-        <bcf:map_step map_field_source="dc:coverage" map_field_target="location"/>
-        <bcf:map_step map_field_source="z:university" map_field_target="institution"/>
-        <bcf:map_step map_field_source="z:language" map_field_target="language"/>
-        <bcf:map_step map_field_source="z:version" map_field_target="version"/>
-        <bcf:map_step map_field_source="z:libraryCatalog" map_field_target="library"/>
-        <bcf:map_step map_field_source="dcterms:isPartOf" map_field_target="BIBERCUSTOMpartof"/>
-        <bcf:map_step map_field_source="dc:identifier" map_field_target="BIBERCUSTOMidentifier"/>
-        <bcf:map_step map_field_source="dc:publisher" map_field_target="BIBERCUSTOMpublisher"/>
-        <bcf:map_step map_field_source="dc:presentedAt" map_field_target="BIBERCUSTOMpresentedat"/>
-        <bcf:map_step map_field_source="dc:subject" map_field_target="BIBERCUSTOMsubject"/>
-        <bcf:map_step map_field_source="dcterms:BIBERCUSTOMpartof/bib:Journal" map_field_target="dcterms:BIBERCUSTOMpartof/periodical"/>
-        <bcf:map_step map_field_source="dcterms:BIBERCUSTOMpartof/bib:Book" map_field_target="dcterms:BIBERCUSTOMpartof/book"/>
-        <bcf:map_step map_field_source="dcterms:BIBERCUSTOMpartof/bib:ConferenceProceedings" map_field_target="dcterms:BIBERCUSTOMpartof/proceedings"/>
-      </bcf:map>
-    </bcf:maps>
-=======
->>>>>>> origin/master
   </bcf:sourcemap>
   <!-- LABELALPHA TEMPLATE -->
   <bcf:labelalphatemplate type="global">
     <bcf:labelelement order="1">
       <bcf:labelpart final="1">shorthand</bcf:labelpart>
       <bcf:labelpart>label</bcf:labelpart>
-<<<<<<< HEAD
-      <bcf:labelpart substring_width="3" substring_side="left" ifnamecount="1">labelname</bcf:labelpart>
-      <bcf:labelpart substring_width="1" substring_side="left">labelname</bcf:labelpart>
-=======
       <bcf:labelpart substring_width="3" substring_side="left" ifnames="1" substring_pcompound="1">labelname</bcf:labelpart>
       <bcf:labelpart substring_width="1" substring_side="left" substring_pcompound="1">labelname</bcf:labelpart>
->>>>>>> origin/master
     </bcf:labelelement>
     <bcf:labelelement order="2">
       <bcf:labelpart substring_width="2" substring_side="right">year</bcf:labelpart>
@@ -952,8 +689,6 @@
       <bcf:field source="sortkey" skip="true"/>
     </bcf:inherit>
   </bcf:inheritance>
-<<<<<<< HEAD
-=======
   <!-- SORTING NAME KEY -->
   <bcf:sortingnamekey keyscheme="global">
     <bcf:keypart order="1">
@@ -972,7 +707,6 @@
       <bcf:part type="namepart" order="1" use="0">prefix</bcf:part>
     </bcf:keypart>
   </bcf:sortingnamekey>
->>>>>>> origin/master
   <!-- SORTING -->
   <bcf:sorting>
     <bcf:presort>mm</bcf:presort>
@@ -982,14 +716,11 @@
   </bcf:sorting>
   <!-- DATA MODEL -->
   <bcf:datamodel>
-<<<<<<< HEAD
-=======
     <bcf:constants>
       <bcf:constant type="list" name="gender">sf,sm,sn,pf,pm,pn,pp</bcf:constant>
       <bcf:constant type="list" name="nameparts">prefix,family,suffix,given</bcf:constant>
       <bcf:constant type="list" name="optiondatatypes">boolean,integer,string,xml</bcf:constant>
     </bcf:constants>
->>>>>>> origin/master
     <bcf:entrytypes>
       <bcf:entrytype>article</bcf:entrytype>
       <bcf:entrytype>artwork</bcf:entrytype>
@@ -1021,10 +752,7 @@
       <bcf:entrytype>music</bcf:entrytype>
       <bcf:entrytype>mvcollection</bcf:entrytype>
       <bcf:entrytype>mvreference</bcf:entrytype>
-<<<<<<< HEAD
-=======
       <bcf:entrytype>mvproceedings</bcf:entrytype>
->>>>>>> origin/master
       <bcf:entrytype>mvbook</bcf:entrytype>
       <bcf:entrytype>online</bcf:entrytype>
       <bcf:entrytype>patent</bcf:entrytype>
@@ -1045,29 +773,6 @@
       <bcf:entrytype skip_output="true">xdata</bcf:entrytype>
     </bcf:entrytypes>
     <bcf:fields>
-<<<<<<< HEAD
-      <bcf:field fieldtype="field" datatype="datepart">month</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">year</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">day</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">endday</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">endmonth</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">eventday</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">eventendday</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">eventendmonth</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">eventmonth</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">eventyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">origday</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">origendday</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">origendmonth</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">origmonth</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">origyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">urlday</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">urlendday</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">urlendmonth</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">urlmonth</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart">urlyear</bcf:field>
-=======
->>>>>>> origin/master
       <bcf:field fieldtype="field" datatype="literal">abstract</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">addendum</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">annotation</bcf:field>
@@ -1132,13 +837,6 @@
       <bcf:field fieldtype="field" datatype="literal" label="true">shortjournal</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" label="true">shortseries</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" label="true">shorttitle</bcf:field>
-<<<<<<< HEAD
-      <bcf:field fieldtype="field" datatype="datepart" nullok="true">urlendyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart" nullok="true">endyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart" nullok="true">eventendyear</bcf:field>
-      <bcf:field fieldtype="field" datatype="datepart" nullok="true">origendyear</bcf:field>
-=======
->>>>>>> origin/master
       <bcf:field fieldtype="field" datatype="literal" skip_output="true">sorttitle</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" skip_output="true">sortshorthand</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" skip_output="true">sortyear</bcf:field>
@@ -1192,11 +890,6 @@
       <bcf:field fieldtype="field" datatype="entrykey">crossref</bcf:field>
       <bcf:field fieldtype="field" datatype="entrykey">xref</bcf:field>
       <bcf:field fieldtype="field" datatype="date" skip_output="true">date</bcf:field>
-<<<<<<< HEAD
-      <bcf:field fieldtype="field" datatype="date" skip_output="true">eventdate</bcf:field>
-      <bcf:field fieldtype="field" datatype="date" skip_output="true">origdate</bcf:field>
-      <bcf:field fieldtype="field" datatype="date" skip_output="true">urldate</bcf:field>
-=======
       <bcf:field fieldtype="field" datatype="datepart" nullok="true">endyear</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">year</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">month</bcf:field>
@@ -1224,7 +917,6 @@
       <bcf:field fieldtype="field" datatype="datepart">urlday</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">urlendmonth</bcf:field>
       <bcf:field fieldtype="field" datatype="datepart">urlendday</bcf:field>
->>>>>>> origin/master
       <bcf:field fieldtype="field" datatype="verbatim">doi</bcf:field>
       <bcf:field fieldtype="field" datatype="verbatim">eprint</bcf:field>
       <bcf:field fieldtype="field" datatype="verbatim">file</bcf:field>
@@ -1335,10 +1027,7 @@
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
@@ -1396,10 +1085,7 @@
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
@@ -1456,10 +1142,7 @@
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
@@ -1518,10 +1201,7 @@
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
@@ -1561,10 +1241,7 @@
       <bcf:entrytype>booklet</bcf:entrytype>
       <bcf:field>author</bcf:field>
       <bcf:field>editor</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>title</bcf:field>
       <bcf:field>day</bcf:field>
       <bcf:field>endday</bcf:field>
@@ -1617,10 +1294,7 @@
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
@@ -1678,10 +1352,7 @@
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
@@ -1737,10 +1408,7 @@
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
@@ -1791,10 +1459,7 @@
       <bcf:field>doi</bcf:field>
       <bcf:field>edition</bcf:field>
       <bcf:field>editor</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>eprint</bcf:field>
       <bcf:field>eprintclass</bcf:field>
       <bcf:field>eprinttype</bcf:field>
@@ -1838,10 +1503,7 @@
       <bcf:field>author</bcf:field>
       <bcf:field>doi</bcf:field>
       <bcf:field>editor</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>eprint</bcf:field>
       <bcf:field>eprintclass</bcf:field>
       <bcf:field>eprinttype</bcf:field>
@@ -1870,10 +1532,7 @@
       <bcf:field>addendum</bcf:field>
       <bcf:field>author</bcf:field>
       <bcf:field>editor</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>language</bcf:field>
       <bcf:field>month</bcf:field>
       <bcf:field>note</bcf:field>
@@ -1937,10 +1596,7 @@
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
@@ -1969,10 +1625,7 @@
     <bcf:entryfields>
       <bcf:entrytype>mvproceedings</bcf:entrytype>
       <bcf:field>editor</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>title</bcf:field>
       <bcf:field>day</bcf:field>
       <bcf:field>endday</bcf:field>
@@ -2018,10 +1671,7 @@
     <bcf:entryfields>
       <bcf:entrytype>proceedings</bcf:entrytype>
       <bcf:field>editor</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>title</bcf:field>
       <bcf:field>day</bcf:field>
       <bcf:field>endday</bcf:field>
@@ -2075,10 +1725,7 @@
       <bcf:entrytype>inproceedings</bcf:entrytype>
       <bcf:field>author</bcf:field>
       <bcf:field>editor</bcf:field>
-<<<<<<< HEAD
-=======
       <bcf:field>editortype</bcf:field>
->>>>>>> origin/master
       <bcf:field>title</bcf:field>
       <bcf:field>booktitle</bcf:field>
       <bcf:field>day</bcf:field>
@@ -2370,10 +2017,6 @@
       <bcf:entrytype>inproceedings</bcf:entrytype>
       <bcf:constraint type="mandatory">
         <bcf:field>author</bcf:field>
-<<<<<<< HEAD
-        <bcf:field>editor</bcf:field>
-=======
->>>>>>> origin/master
         <bcf:field>title</bcf:field>
         <bcf:field>booktitle</bcf:field>
       </bcf:constraint>
@@ -2432,11 +2075,7 @@
   <bcf:section number="0">
     <bcf:citekey order="1">TDA-UserManual</bcf:citekey>
   </bcf:section>
-<<<<<<< HEAD
-  <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
-=======
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
->>>>>>> origin/master
   <bcf:sorting>
     <bcf:sort order="1">
       <bcf:sortitem order="1">citeorder</bcf:sortitem>

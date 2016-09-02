@@ -5,43 +5,14 @@
 
 Das Programm DAVE\textsuperscript{TM} (Digital Application Virtual Engineer) wird von Infineon Technologies AG entwickelt. Sie basiert auf der Entwicklungsumgebung oder \ac{IDE} \enquote{eclipse} die von der Eclipse Foundation entwickelt wird. Eine \ac{IDE} beschreibt dabei allgemein ein Programm zur Softwareentwicklung, welches die einzelnen dazu notwendigen Tools gesammelt zur Verfügung stellt. Dies sind vor allem der Compiler, der Linker, und der Debugger auf die im folgenden noch eingegangen werden soll %TODO: auch wirklich machen , GNU C compiler
 %cite c als erste prog sprache
-DAVE\textsuperscript{TM} greift bei der Programmierung von Mikrocontrollern der XMC-Serie auf die so genannten XMC Libraries zurück die von Infineon ebenfalls zur Verfügung gestellt werden.  Auf diese soll ebenfalls im weiteren Verlauf  eingegangen werden. Ein weiteres Feature in der \ac{IDE} sind die sogenannten DAVE\textsuperscript{TM} APPs. Mit diesen soll es die Programmierung des Mikrocontrollers durch ein \ac{GUI} ermöglicht werden. Dazu werden für  mögliche von der Hardware zu verrichtende Teilaufgaben APPs von Infineon bereitgestellt. Durch das Einfügen der entsprechenden APPs in das Projekt können diese angepasst und miteinander grafisch verschalten werden. So wird der spätere Programmablauf im Mikrocontroller und dessen Aufgaben festgelegt. Nachdem vom Programmierer nun noch die Pins ebenfalls grafisch den Aufgaben zugeordnet werden, generiert  DAVE\textsuperscript{TM}  den Programmcode. %\cite{DAVEQuickStart}
-Im Verlauf dieser Arbeit wurden DAVE\textsuperscript{TM}  APPs jedoch nur in einem Projekt für ein RelaxKit genutzt, mit welchem  Signale zum Testen der Empfänger an die Basistation gesendet wurden. In der Basisstation selbst wurden diese jedoch nicht benutzt.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+DAVE\textsuperscript{TM} greift bei der Programmierung von Mikrocontrollern der XMC-Serie auf die so genannten XMC Libraries zurück die von Infineon ebenfalls zur Verfügung gestellt werden.  Auf diese soll ebenfalls im weiteren Verlauf  eingegangen werden. Ein weiteres Feature in der \ac{IDE} sind die sogenannten DAVE\textsuperscript{TM} APPs. Mit diesen soll es die Programmierung des Mikrocontrollers durch ein \ac{GUI} ermöglicht werden. Dazu werden für  mögliche von der Hardware zu verrichtende Teilaufgaben APPs von Infineon bereitgestellt. Durch das Einfügen der entsprechenden APPs in das Projekt können diese angepasst und miteinander grafisch verschalten werden. So wird der spätere Programmablauf im Mikrocontroller und dessen Aufgaben festgelegt. Nachdem vom Programmierer nun noch die Pins ebenfalls grafisch den Aufgaben zugeordnet werden, generiert  DAVE\textsuperscript{TM}  den Programmcode mit den in den Apps enthaltenen Informationen%\cite{DAVEQuickStart}.
+Mithilfe des DAVE\textsuperscript{TM} \ac{SDK} können nicht nur die Parameter der APPs beim programmieren , sonder auch diese selbst grundlegend angepasst werden und das entwickeln eigener APPs ist möglich%\cite{DAVE-Version-4}.
+Im Verlauf dieser Arbeit wurden DAVE\textsuperscript{TM}  APPs jedoch nur in einem bereits existierenden Softwareprojekt für ein RelaxKit genutzt, mit welchem  Signale zum Testen der Empfänger an die Basisstation gesendet wurden. In der Basisstation selbst wurden die APPs jedoch nicht benutzt.
 
 
 \section{verwendete Peripherie des XMC4500}
+Der XMC4500-Baustein enthält diverse funktionelle Blocke die mit einer Bus Matrix an die ARM Cortex M4 \ac{CPU} angebunden sind.%System Block Diagram aus Datenblatt einfügen und zitieren
+
 \subsection{USIC}
 \subsection{ERU}
 \subsection{USB}
