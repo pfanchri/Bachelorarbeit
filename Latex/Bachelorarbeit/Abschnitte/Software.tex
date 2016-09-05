@@ -17,7 +17,10 @@ Für die Basisstation waren vor allem der \ac{USIC}, der \ac{USB} sowie der \ac{
 Die \acp{GPIO} werden im so genannten PORTS-Modul der XMC-Architektur gesteuert. In dieser lassen sich die Treiberstufen für die entsprechenden Pins des Mikrocontroller regeln. Dieses Modul ist ebenfalls über die Peripheriebrücke PBA1 an die Bus Matrix \index{Bus Matrix} und somit den Cortex M4 Kern angebunden.  %Programmable port driver control module (PORTS) Abkürzung richtg?dann einfügen
 %Bild StructureDigitalPin einbinden
 %beschreiben wie pins belegt sind, wann GPIO bzw wann module (s. Pinbelegung) auf Pins liegen ( bei POSIF Kapitel beschreiben
+Das Modul stellt für jeden Pin die erste Funktionsauswahl bereit. Im \enquote{Port Input/Output Control Register} des Moduls wird für jeden Pin festgelegt ob er als Eingang oder Ausgang belegt ist. Ist der Pin ein Eingang, so kann dieser dort zusätzlich invertiert werden. Wird ein Pin des XMC als Ausgang konfiguriert, so kann gewählt werden, ob es sich um einen \ac{GPIO}-Pin handelt, dessen Status von der Software direkt festgelegt wird. Dabei kann ausgewählt werden ob das logische Ausgangssignal durch den einen Treiber in Open-Drain Konfiguration oder durch Push-Pull erzeugt werden soll. Zur Nutzung eines Ausgangs mit der Im Mikrocontroller verfügbaren Peripherie sind diese direkt mit den entsprechenden Modulen verbunden. Dadurch kann das Modul selbst den elektrischen Zustand am Eingang auslesen und verwerten. %zitieren 
+%Schmidt trigger
 
+Auch weitere Verhaltensweisen von Pins, wie etwa das Verhalten beim Anschalten, bevor die Versorgungspannung ein gültiges Level erreicht hat, lassen sich im PORTS-Modul entscheiden.
 \subsection{USIC}
 \subsection{ERU}
 \subsection{USB}
