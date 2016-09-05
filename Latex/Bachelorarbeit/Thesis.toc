@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}XMC4500}{9}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Ethernet}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Ethernet}{10}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}Spannungsversorgung}{11}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
@@ -32,7 +32,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}DAVE Entwicklungsumgebung}{13}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}verwendete Peripherie des XMC4500}{14}{section.3.2}
+\contentsline {section}{\numberline {3.2}verwendete Peripherie des XMC4500}{13}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}GPIO}{14}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
