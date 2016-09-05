@@ -15630,3 +15630,184 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.ifx.dave.LibraryManager 4 0 2016-09-01 11:35:30.034
 !MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/Contributed/v4.1//daveSite.xml
+!SESSION 2016-09-05 07:59:12.886 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_DE
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2016-09-05 07:59:20.429
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-09-05 07:59:20.429
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-09-05 07:59:54.688
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-09-05 07:59:54.692
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\student06'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 08:00:00.417
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 89 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 08:00:02.030
+!MESSAGE Only One DAVE Application is running 
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-09-05 08:00:02.931
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/Examples/XMC_IFX/v4.1//daveSite.xml
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-09-05 08:00:05.692
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/XMC_IFX/v4.1//daveSite.xml
+
+!ENTRY com.ifx.dave.LibraryManager 4 0 2016-09-05 08:00:06.339
+!MESSAGE Reading file: http://dave.infineon.com/Libraries/DAVE_Libs/Contributed/v4.1//daveSite.xml
+
+!ENTRY org.eclipse.ui 4 4 2016-09-05 09:33:30.219
+!MESSAGE Conflicting handlers for org.eclipse.debug.ui.commands.DebugLast: {ActionDelegateHandlerProxy(null,org.eclipse.debug.internal.ui.actions.DebugLastAction)} vs {ActionDelegateHandlerProxy(null,com.dave.activeproject.ui.actions.ActiveProjDebugLastAction)}
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 09:35:03.471
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 0 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 09:35:04.787
+!MESSAGE USER_ACTION : Active project:TDA_XMC4500_PMA_testtrans
+
+!ENTRY COMMON 1 0 2016-09-05 09:35:07.745
+!MESSAGE Time Taken By De-Serialization  : 791 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY com.dave.mbs.common 1 0 2016-09-05 09:35:07.877
+!MESSAGE *************Serializing EMF and Groovy data to RAM*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 09:35:08.010
+!MESSAGE USER_ACTION : Time taken for initializing Application Model is: 3224 msec 
+
+!ENTRY APPSTORE 1 0 2016-09-05 09:35:10.935
+!MESSAGE USER_ACTION : Time taken for initializing data from AppStore is: 2920 msec 
+
+!ENTRY SOLVER 1 0 2016-09-05 09:35:13.745
+!MESSAGE USER_ACTION : Library store ECO file :C:\Users\student06\Infineon\D_LibraryStore_4.1\resources\XMC4.5.00.F100.ALL\device\xmc4500\0\MANIFEST\solver_data\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-09-05 09:35:16.072
+!MESSAGE USER_ACTION : Copied ECO file to temp location :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY SOLVER 1 0 2016-09-05 09:35:16.118
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-09-05 09:35:16.191
+!MESSAGE USER_ACTION : Default solver exe path is: C:\DAVEv4-64Bit\DAVE-4.2.6\eclipse\Solver\lib\i386_nt\eclipse.exe
+
+!ENTRY SOLVER 1 0 2016-09-05 09:35:16.218
+!MESSAGE USER_ACTION : GlobalSize= 750MB; LocalSize: 128MB
+
+!ENTRY SOLVER 1 0 2016-09-05 09:35:16.224
+!MESSAGE USER_ACTION : Creating OutOfProcessEclipse instance...
+
+!ENTRY SOLVER 1 0 2016-09-05 09:35:17.355
+!MESSAGE USER_ACTION : Solver Status: CONNECTED
+
+!ENTRY SOLVER 1 0 2016-09-05 09:35:29.833
+!MESSAGE USER_ACTION : Loaded ECO file :D:\Bachelorarbeit\Dave\Basisstation\.metadata\.plugins\solver_data\XMC4.5.00.F100.ALL\xmc4500_solver.eco
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 09:35:30.651
+!MESSAGE USER_ACTION : Time taken by SolverManager is: 19704 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 09:35:30.658
+!MESSAGE USER_ACTION : Time taken for updating AddAppDialog is: 4 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 09:35:30.681
+!MESSAGE USER_ACTION : Time taken for updating views is: 19 msec 
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 09:35:33.212
+!MESSAGE USER_ACTION : Time taken for rendering views is: 2527 msec 
+
+!ENTRY org.eclipse.ui 4 0 2016-09-05 09:35:40.868
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.gef.ui.parts.ScrollingGraphicalViewer.reveal(ScrollingGraphicalViewer.java:75)
+	at org.eclipse.graphiti.ui.editor.DiagramBehavior$5.run(DiagramBehavior.java:868)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 4 2016-09-05 09:36:43.171
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.ProjectsView.
+
+!ENTRY org.eclipse.ui 4 4 2016-09-05 09:36:44.070
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.ProjectsView.
+
+!ENTRY GLOBAL_INTERRUPT 1 0 2016-09-05 09:36:46.164
+!MESSAGE USER_ACTION : Opening Global Interrupt Dialog.!
+
+!ENTRY GLOBAL_INTERRUPT 1 0 2016-09-05 09:36:49.207
+!MESSAGE USER_ACTION : Global Interrupt Dialog is closed..!
+
+!ENTRY GLOBAL_INTERRUPT 1 0 2016-09-05 09:36:52.196
+!MESSAGE USER_ACTION : Opening Global Interrupt Dialog.!
+
+!ENTRY GLOBAL_INTERRUPT 1 0 2016-09-05 09:36:53.752
+!MESSAGE USER_ACTION : Global Interrupt Dialog is closed..!
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-09-05 09:37:01.323
+!MESSAGE J-Link GDB Server failed: 
+Could not connect to J-Link. Please check if plugged into USB port or Ethernet switch.
+
+For more details, see the JLinkGDBServerCL console.
+
+!ENTRY com.dave.mbs.common 1 0 2016-09-05 09:37:59.413
+!MESSAGE *************Saving EMF data into file system*******************
+
+!ENTRY com.dave.mbs.common 1 0 2016-09-05 09:37:59.544
+!MESSAGE *************Saving Groovy data into file system*******************
+
+!ENTRY COMMON 1 0 2016-09-05 09:37:59.606
+!MESSAGE Time Taken By Serialization  : 56 ms :: D:\Bachelorarbeit\Dave\Basisstation\TDA_XMC4500_PMA_testtrans\Dave\Model\projectData.bin
+
+!ENTRY SOLVER 1 0 2016-09-05 09:37:59.675
+!MESSAGE Solver exited (0)
+
+!ENTRY SOLVER 1 0 2016-09-05 09:37:59.938
+!MESSAGE USER_ACTION : Solver Status: DISCONNECTED
+
+!ENTRY com.dave.mbs.common 1 0 2016-09-05 09:37:59.959
+!MESSAGE ****************Cleaning project data:TDA_XMC4500_PMA_testtrans*******************
+
+!ENTRY APPLICATION_MODEL 1 0 2016-09-05 09:38:00.920
+!MESSAGE USER_ACTION : Time taken for disposing objects for memory cleanup: 1245 msec 

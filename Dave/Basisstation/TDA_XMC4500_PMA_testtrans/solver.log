@@ -3050,3 +3050,31 @@ INFO:
 End of solver : getSolution() :  Difference in ms 537
 
 
+Sep 05, 2016 9:35:29 AM java.util.logging.LogManager$RootLogger log
+INFO: Start of solver :getSolution() : Mon Sep 05 09:35:29 CEST 2016
+
+
+Sep 05, 2016 9:35:30 AM java.util.logging.LogManager$RootLogger log
+INFO: 
+timeout(solve_mapping_problem([ 
+reserved([cpu,0,system_control],'cpu_ctrl_xmc4$01042541550$0'),
+reserved([usb,0,usb],'usbd$187245507$0'),
+reserved([scu,0,clkctrl,0,pll],'clock_xmc4$983483846$0'),
+reserved([scu,0,clkctrl,0,sys],'clock_xmc4$983487139$0'),
+reserved([scu,0,clkctrl,0,cpu],'clock_xmc4$983471486$0'),
+reserved([scu,0,clkctrl,0,perbridge],'clock_xmc4$1975035452$0'),
+reserved([scu,0,clkctrl,0,ebu],'clock_xmc4$983472974$0'),
+reserved([scu,0,clkctrl,0,ccu],'clock_xmc4$983471083$0'),
+reserved([scu,0,clkctrl,0,wdt],'clock_xmc4$983490333$0'),
+reserved([scu,0,clkctrl,0,usb],'clock_xmc4$983488858$0'),
+reserved([scu,0,clkctrl,0,sdmmc],'clock_xmc4$983480985$0'),
+reserved([scu,0,pwrctrl,0,hibernate],'clock_xmc4$701952936$0'),
+reserved([scu,0,rtcclksel],'clock_xmc4$01672013585$0')
+ ],Vars,Regs,Appslocalvars),15,writeln(timeout),all_solution, Timer, Due, Remainder).
+
+
+Sep 05, 2016 9:35:30 AM java.util.logging.LogManager$RootLogger log
+INFO: 
+End of solver : getSolution() :  Difference in ms 551
+
+
