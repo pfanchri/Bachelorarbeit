@@ -3,7 +3,7 @@
 \pagestyle{scrheadings}
 \section{DAVE Entwicklungsumgebung}
 
-Das Programm DAVE\textsuperscript{TM} (Digital Application Virtual Engineer) wird von Infineon Technologies AG entwickelt. Sie basiert auf der Entwicklungsumgebung oder \ac{IDE} \enquote{eclipse} die von der Eclipse Foundation entwickelt wird. Eine \ac{IDE} beschreibt dabei allgemein ein Programm zur Softwareentwicklung, welches die einzelnen dazu notwendigen Tools gesammelt zur Verfügung stellt. Dies sind vor allem der Compiler, der Linker, und der Debugger auf die im folgenden noch eingegangen werden soll %TODO: auch wirklich machen , GNU C compiler
+Das Programm DAVE\textsuperscript{TM} (Digital Application Virtual Engineer) wird von Infineon Technologies AG entwickelt. Sie basiert auf der Entwicklungsumgebung oder \ac{IDE} \enquote{eclipse\index{eclipse}} die von der Eclipse Foundation entwickelt wird. Eine \ac{IDE} beschreibt dabei allgemein ein Programm zur Softwareentwicklung, welches die einzelnen dazu notwendigen Tools gesammelt zur Verfügung stellt. Dies sind vor allem der Compiler\index{Compiler} , der Linker, und der Debugger auf die im folgenden noch eingegangen werden soll %TODO: auch wirklich machen , GNU C compiler
 %cite c als erste prog sprache
 DAVE\textsuperscript{TM} greift bei der Programmierung von Mikrocontrollern der XMC-Serie auf die so genannten XMC Libraries zurück die von Infineon ebenfalls zur Verfügung gestellt werden.  Auf diese soll ebenfalls im weiteren Verlauf  eingegangen werden. Ein weiteres Feature in der \ac{IDE} sind die sogenannten DAVE\textsuperscript{TM} APPs. Mit diesen soll es die Programmierung des Mikrocontrollers durch ein \ac{GUI} ermöglicht werden. Dazu werden für  mögliche von der Hardware zu verrichtende Teilaufgaben APPs von Infineon bereitgestellt. Durch das Einfügen der entsprechenden APPs in das Projekt können diese angepasst und miteinander grafisch verschalten werden. So wird der spätere Programmablauf im Mikrocontroller und dessen Aufgaben festgelegt. Nachdem vom Programmierer nun noch die Pins ebenfalls grafisch den Aufgaben zugeordnet werden, generiert  DAVE\textsuperscript{TM}  den Programmcode mit den in den Apps enthaltenen Informationen%\cite{DAVEQuickStart}.
 Mithilfe des DAVE\textsuperscript{TM} \ac{SDK} können nicht nur die Parameter der APPs beim programmieren , sonder auch diese selbst grundlegend angepasst werden und das entwickeln eigener APPs ist möglich%\cite{DAVE-Version-4}.
@@ -17,12 +17,16 @@ Für die Basisstation waren vor allem der \ac{USIC}, der \ac{USB} sowie der \ac{
 Die \acp{GPIO} werden im so genannten PORTS-Modul der XMC-Architektur gesteuert. In dieser lassen sich die Treiberstufen für die entsprechenden Pins des Mikrocontroller regeln. Dieses Modul ist ebenfalls über die Peripheriebrücke PBA1 an die Bus Matrix \index{Bus Matrix} und somit den Cortex M4 Kern angebunden.  %Programmable port driver control module (PORTS) Abkürzung richtg?dann einfügen
 %Bild StructureDigitalPin einbinden
 %beschreiben wie pins belegt sind, wann GPIO bzw wann module (s. Pinbelegung) auf Pins liegen ( bei POSIF Kapitel beschreiben
-Das Modul stellt für jeden Pin die erste Funktionsauswahl bereit. Im \enquote{Port Input/Output Control Register} des Moduls wird für jeden Pin festgelegt ob er als Eingang oder Ausgang belegt ist. Ist der Pin ein Eingang, so kann dieser dort zusätzlich invertiert werden. Wird ein Pin des XMC als Ausgang konfiguriert, so kann gewählt werden, ob es sich um einen \ac{GPIO}-Pin handelt, dessen Status von der Software direkt festgelegt wird. Dabei kann ausgewählt werden ob das logische Ausgangssignal durch den einen Treiber in Open-Drain Konfiguration oder durch Push-Pull erzeugt werden soll. Zur Nutzung eines Ausgangs mit der Im Mikrocontroller verfügbaren Peripherie sind diese direkt mit den entsprechenden Modulen verbunden. Dadurch kann das Modul selbst den elektrischen Zustand am Eingang auslesen und verwerten. %zitieren 
-%Schmidt trigger
-
-Auch weitere Verhaltensweisen von Pins, wie etwa das Verhalten beim Anschalten, bevor die Versorgungspannung ein gültiges Level erreicht hat, lassen sich im PORTS-Modul entscheiden.
+Das Modul stellt für jeden Pin die erste Funktionsauswahl bereit. Im \enquote{Port Input/Output Control Register} des Moduls wird für jeden Pin festgelegt ob er als Eingang oder Ausgang belegt ist. Das momentane elektrische Potential am Eingang wird dann mit einem Schmitt-Trigger in ein binäres logisches Signal übersetzt. Ist der Pin ein Eingang, so kann dieser dort zusätzlich invertiert werden. Wird ein Pin des XMC als Ausgang konfiguriert, so kann gewählt werden, ob es sich um einen \ac{GPIO}-Pin handelt, dessen Status von der Software direkt festgelegt wird. Dabei kann ausgewählt werden ob das logische Ausgangssignal durch den einen Treiber in Open-Drain Konfiguration oder durch Push-Pull erzeugt werden soll. Zur Nutzung eines Ausgangs mit der Im Mikrocontroller verfügbaren Peripherie sind diese direkt mit den entsprechenden Modulen verbunden. Dadurch kann das Modul selbst den elektrischen Zustand am Eingang auslesen und verwerten\cite{XMC-Reference}. 
+Auch das weitere Verhalten von Pins, wie etwa  beim Anschalten, bevor die Versorgungsspannung ein gültiges Level erreicht hat, lassen sich im PORTS-Modul anpassen.
 \subsection{USIC}
+Die \acp{IC} der XMC-Familie verfügen über ein Modul zu Kommunikation über diverse serielle Protokolle, den \ac{USIC}. Dieses ist programmierbar und erlaubt damit eine individuelle Verwendung, kann aber gleichzeitig die notwendigen Arbeiten für den Prozessor übernehmen. Der XMC4500 verfügt über insgesamt sechs \ac{USIC}-Kanäle und kann somit mehrere Protokolle gleichzeitig verweden. Die Mikrocontroller unterstützen somit die folgenden Protokolle UART/SCI, SPI in einfach, doppelt und quad-Ausführung, IIC/I2C, IIS/I2S und LIN. Für diese Arbeit wurde alle Kommunikation mit einem gemeinsamen Kanal umgesetzt. Da die einzelnen \acp{USIC} und deren Kanäle verschieden viele Slave-Select-Leitungen besitzen wurde der Kanal $0$ des \ac{USIC} $0$ ausgewählt, nur dieser verfügt über die benötigten sechs Select-Leitungen.
+%beschreiben Funktion
+%wo SPI allgmein beschreiben
 \subsection{ERU}
+Von zentraler Bedeutung für die Funktion der Basisstation war die Behandlung von Interrupts durch den  \ac{IC}. Der XMC4500 besitzt dafür zwei entsprechende \ac{ERU}-Module die eine solchen erkennen können und den Prozessor zum Aufrufen einer \ac{ISR} auffordern können. Jedes Modul verfügt über vier Kanäle auf denen  bei einem Interrupt ein vierstufiger Prozess durchlaufen wird: In der ersten Stufe der \ac{ERU}, der so genannten \ac{ERS} lassen sich zwei Eingänge, die mit
+
+%Interrupt Request, IRQ im gegensatz zu isr
 \subsection{USB}
 %subsection Ethernet??
 \section{verwendete Bibliotheken}
@@ -35,5 +39,5 @@ Auch weitere Verhaltensweisen von Pins, wie etwa das Verhalten beim Anschalten, 
 \subsection{Konfiguration der Funkmodule}
 \subsection{interruptbasierte Datenerfassung}
 \subsection{Weiterleitung der erfassten Daten}
-wie viel speicher braucht man aaktuell?
-speichergröße uint immer da 32bit mikrocontroller
+%wie viel speicher braucht man aaktuell?
+%speichergröße uint immer da 32bit mikrocontroller
