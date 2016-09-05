@@ -48,8 +48,19 @@
 	%\input{Abschnitte/Zusammenfassung}
 	\input{Abschnitte/Zusammenfassung_und_Ausblick}
 	%\input{Abschnitte/Literaturverzeichnis}
+	
+	
+	%Index (eigens hinzugefügt)
+	\newpage
+	\renewcommand{\indexname}{Stichwortverzeichnis}
+	\addcontentsline{toc}{section}{Stichwortverzeichnis}
+	\printindex
+	%index ende
+	
 	\listoffigures
 	\listoftables
+	
+	
 
 	%\include{Abschnitte/Lebenslauf} 
 	\include{Abschnitte/Anhang} 
