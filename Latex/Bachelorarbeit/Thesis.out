@@ -18,23 +18,24 @@
 \BOOKMARK [2][-]{subsection.3.2.2}{USIC}{section.3.2}% 18
 \BOOKMARK [2][-]{subsection.3.2.3}{ERU}{section.3.2}% 19
 \BOOKMARK [2][-]{subsection.3.2.4}{USB}{section.3.2}% 20
-\BOOKMARK [1][-]{section.3.3}{verwendete Bibliotheken}{chapter.3}% 21
-\BOOKMARK [2][-]{subsection.3.3.1}{XMC Libraries \(XMC Lib\)}{section.3.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.2}{SPI Library}{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.3}{TDA5340 Library}{section.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.4}{Virtueller COM Port}{section.3.3}% 25
-\BOOKMARK [1][-]{section.3.4}{Programmablauf}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.4.1}{Konfiguration der Funkmodule}{section.3.4}% 27
-\BOOKMARK [2][-]{subsection.3.4.2}{interruptbasierte Datenerfassung}{section.3.4}% 28
-\BOOKMARK [2][-]{subsection.3.4.3}{Weiterleitung der erfassten Daten}{section.3.4}% 29
-\BOOKMARK [0][-]{chapter.4}{Feldtest}{}% 30
-\BOOKMARK [1][-]{section.4.1}{Aufbau}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{Durchf\374hrung}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.3}{Ergebnisse und Auswertung}{chapter.4}% 33
-\BOOKMARK [0][-]{chapter.5}{Zusammenfassung und Ausblick}{}% 34
-\BOOKMARK [0][-]{chapter*.37}{Abbildungsverzeichnis}{}% 35
-\BOOKMARK [0][-]{chapter*.38}{Tabellenverzeichnis}{}% 36
-\BOOKMARK [0][-]{chapter.6}{Anhang}{}% 37
-\BOOKMARK [1][-]{section.6.1}{Seriennummern}{chapter.6}% 38
-\BOOKMARK [1][-]{section.6.2}{3D-Daten}{chapter.6}% 39
-\BOOKMARK [2][-]{subsection.6.2.1}{Geh\344use}{section.6.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.5}{E}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{verwendete Bibliotheken}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{XMC Libraries \(XMC Lib\)}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{SPI Library}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{TDA5340 Library}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.4}{Virtueller COM Port}{section.3.3}% 26
+\BOOKMARK [1][-]{section.3.4}{Programmablauf}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.4.1}{Konfiguration der Funkmodule}{section.3.4}% 28
+\BOOKMARK [2][-]{subsection.3.4.2}{interruptbasierte Datenerfassung}{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.3}{Weiterleitung der erfassten Daten}{section.3.4}% 30
+\BOOKMARK [0][-]{chapter.4}{Feldtest}{}% 31
+\BOOKMARK [1][-]{section.4.1}{Aufbau}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.2}{Durchf\374hrung}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.3}{Ergebnisse und Auswertung}{chapter.4}% 34
+\BOOKMARK [0][-]{chapter.5}{Zusammenfassung und Ausblick}{}% 35
+\BOOKMARK [0][-]{chapter*.40}{Abbildungsverzeichnis}{}% 36
+\BOOKMARK [0][-]{chapter*.41}{Tabellenverzeichnis}{}% 37
+\BOOKMARK [0][-]{chapter.6}{Anhang}{}% 38
+\BOOKMARK [1][-]{section.6.1}{Seriennummern}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{3D-Daten}{chapter.6}% 40
+\BOOKMARK [2][-]{subsection.6.2.1}{Geh\344use}{section.6.2}% 41

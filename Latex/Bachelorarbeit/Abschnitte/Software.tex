@@ -29,16 +29,56 @@ Bei Vorliegen aller Bedingungen für einen Interrupt wird diese Information an d
 %wo falsche wahl der Pins einbringen?
 %Interrupt Request, IRQ im gegensatz zu isr https://de.wikipedia.org/wiki/Interrupt
 \subsection{USB}
-%subsection Ethernet??
+Das \ac{USB}-Modul des XMC4500 arbeitet nach den  Spezifikationen für USB 2.0 und den \enquote{On-The-Go}-Spezifikationen der Version 1.3. Der Mikrocontroller könnte durch das \ac{USB}-Modul sowohl als Host oder als USB-Slave  arbeiten. In diesem Fall wurde der \ac{IC} als Slave betrieben. Das \ac{USB}-Modul besitzt über eine eigene Interruptsteuerung und ist damit eine der gerade erwähnten Peripherien des XMC deren Steuerung auch über Interrupts gelöst ist. Die gesamte Übertragung wird durch den \ac{USB}-Kern gesteuert und empfangene oder zu sendende Pakete werden in einem \ac{FIFO}-Puffer gespeichert. Für die Kommunikation der Basisstation mit dem Host-Computer wird ein virtueller COM-Port durch das \ac{USB}-Interface emuliert.
+\subsection Ethernet 
+%TODO was ist mit bzw. ??
+Im XMC4500 werden Netzwerkverbindungen durch das  Ethernet-Modul behandelt. Diese unterstützt Datenübertragungen mit Geräten über IPv4 und IPv6 sowie Übertragungsraten von 10/100 MBit/s  Dazu werden zunächst die Daten von der CPU über ein Bus-Interface übertragen. Im \enquote{MAC Transaction Layer} werden die vom Prozessor bzw. über Ethernet empfangenen Datenpakete zwischengespeichert. Der Ethernet-Kern formatiert die zu sendenden Daten und stellt sie einem \enquote{Physical Layer} zu, welches die Daten für den Kanal moduliert.
 \section{verwendete Bibliotheken}
 \subsection{XMC Libraries (XMC Lib)}
+Infineon stellt für seine \acp{IC} der XMC4000 Serie zu der auch der XMC4500 gehört die \enquote{XMC Peripheral Library} bereit. Diese erlaubt einen vereinfachten Zugriff auf alle Module und die entsprechenden Register und soll dadurch den Modulzugang übersichtlich gestalten und den Programmcode vereinfachen und leichter lesbar machen. Die Software baut auf dem \ac{CMSIS} auf, erlaubt die Verwendung verschiedener Compiler und kann kann mit oder ohne DAVE\textsuperscript{TM} bzw. mit oder ohne DAVE APPs verwendet werden. %C99 usage +  weiter beschreiben etc
+Für die Programmierung wurde mit der Software \enquote{doxygen} eine Dokumentation zur Bibliothek als HTML generiert.
+
 %XMC Lib mit .. docu erstellt
 \subsection{SPI Library}
 \subsection{TDA5340 Library}
+
+
 \subsection{Virtueller COM Port}
+Die Kommunikation der Basistation mit dem Hostcomputer zum übertragen der gemessene Werte wurde nach dem Vorbild eines Beispielprojektes für DAVE\textsuperscript{TM}. Die Bereitstellung des virtuellen seriellen Ports erfolgt auf Seiten des XMC über die LUFA (Lightweight USB Framework for AVRs)-Bibliothek. Mit dieser beschränkt sich die Ausgabe über den COM-Port auf das übergeben der zu sendenden Zeichen an eine entsprechende Funktion. Eine Steuerung des XMC durch empfangen von Daten über den COM-Port wäre mit der Bibliothek ebenfalls möglich, war jedoch nicht notwendig.
+Die Bibliothek und das Beispielprojekt wurde dahingehend angepasst, das ganze Zeichenketten statt nur einzelner Zeichen der Funktion zum Senden übergeben werden konnten. Auch wurde das Senden von Integer-Variablen ermöglicht, indem diese zu Zeichen umgewandelt wurden. 
 \section{Programmablauf}
+Im Programmablauf des XMC wurde zunächst eine Warteschleife umgesetzt, in welcher der Mikrocontroller auf eine erste Eingabe durch den Benutzer am Hostcomputer wartet. Nach dem diese Bestätigung über den COM-Port vom Mikrocontroller empfangen wurde setzt dieser zunächst alle Transceiver in den Schlafmodus von welchem aus eine Kommunikation möglich ist. Daraufhin beginnt der XMC4500 mit der Konfiguration der für die Interrupts notwendigen Pins und ermöglicht somit das Empfangen von \acp{IRQ} durch die TDA5430. Anschließend initialisiert er zunächst das SPI-Modul um im folgenden den Transceiver darüber konfigurieren zu können. Bevor das dazu notwendige Schreiben in die Register der TDAs jedoch möglich ist, wird eine gewisse Verzögerung benötigt. Diese resultiert daher, dass der Wechsel des TDA vom ausgeschalteten Zustand in den Schlafmodus eine gewisse Zeitspanne benötigt. 
+Im folgenden werden alle Transceiver initalisiert und anschließend in den Resceiver-Modus gefahren.  
+Daraufhin setzt der \ac{IC} noch alle für die Übertragung notwendigen Variablen  und alle Felder zum Speichern von Daten zu null. 
+Nun Beginnt der Prozessor mit einer Dauerschleife in der dieser auf das Ankommen von Übertragungen wartet und teilt dies auch dem Benutzer am Hostcomputer über eine Ausgabe mit. In dieser Endlosschleife wechselt sich die interruptbasierte Datenerfassung mit der Weiterleitung der erfassten Daten zyklisch ab. Wobei nur bei erfolgreichem Empfang ein Senden an den steuernden Computer erfolgt. 
+
+%TODO:genauer alles?!; wo beschreiben? 
+
+
 \subsection{Konfiguration der Funkmodule}
+
+ Bei der Initialisierung erhalten diese die gewünschten Werte für die Sende- und Empfangs-Frequenzen. Diese werden über die Teilerrate für die  \ac{PLL} übergeben und ermittelt. Über die entsprechenden Register wird auch das Verhalten bei
+%und rechnung aus exekl sheet einfügen
 \subsection{interruptbasierte Datenerfassung}
+
+
+
+In der \acl{ISR}, in welche der Prozessor beim Auftreten eines Interrupts springt, wird einer globalen Variable der Wert $1$ zugeordnet. Für jeden der möglichen Transceiver existiert eine solche Flagge, die einen aufgetretenen Interrupt anzeigt. Innerhalb der Dauerschleife wird nun zyklisch abgefragt ob diese Flagge gesetzt wurde. Beim Auftreten einer solchen Flagge, also nach dem aufgetretenen Interrupt, liest der 
+
+
+
+
+
+
 \subsection{Weiterleitung der erfassten Daten}
+
+
+
+
+
+
+
+
+
 %wie viel speicher braucht man aaktuell?
 %speichergröße uint immer da 32bit mikrocontroller
