@@ -24,9 +24,10 @@ Die \acp{IC} der XMC-Familie verfügen über ein Modul zu Kommunikation über di
 %beschreiben Funktion
 %wo SPI allgmein beschreiben
 \subsection{ERU}
-Von zentraler Bedeutung für die Funktion der Basisstation war die Behandlung von Interrupts durch den  \ac{IC}. Der XMC4500 besitzt dafür zwei entsprechende \ac{ERU}-Module die eine solchen erkennen können und den Prozessor zum Aufrufen einer \ac{ISR} auffordern können. Jedes Modul verfügt über vier Kanäle auf denen  bei einem Interrupt ein vierstufiger Prozess durchlaufen wird: In der ersten Stufe der \ac{ERU}, der so genannten \ac{ERS} lassen sich zwei Eingänge, die mit
-
-%Interrupt Request, IRQ im gegensatz zu isr
+Von zentraler Bedeutung für die Funktion der Basisstation war die Behandlung von Interrupts durch den  \ac{IC}. Der XMC4500 besitzt dafür zwei entsprechende \ac{ERU}-Module die eine solchen erkennen können und den Prozessor zum Aufrufen einer \ac{ISR} auffordern können. Jedes Modul verfügt über vier Kanäle auf denen  bei einem Interrupt ein vierstufiger Prozess durchlaufen wird: In der ersten Stufe der \ac{ERU}, der so genannten \ac{ERS} lassen sich aus zwei Eingänge mit jeweils vier Signalen die gewünschten Eingänge wählen. In der \ac{ETL} generiert der \ac{IC} aus dem Signalstatus ein Trigger-Event indem Veränderungen erkannt werden. So kann eine fallende oder steigende Flanke, die einen Interrupt auslösen soll, erkannt werden. In der Cross Connection Matrix können Signale der verschiedenen \acp{ETL} zu den vier \acp{OGU} weitergeleitet und somit dort untereinander und mit Triggersignalen von anderen Peripherie-Modulen des XMC kombiniert werden.  In der \ac{OGU} wird durch Vergleich der verschiedenen aufgetretenen Trigger und Muster entschieden ob ein kompletter Interrupt aufgetreten ist und leitet diesen weiter oder ob etwa nur das gewählte Muster erkannt wurde, was für andere Module wichtig ist. Diese Informationen werden entsprechend an die Peripherie weitergeleitet, sind aber für die Funktion der Basisstation nicht weiter von Bedeutung. 
+Bei Vorliegen aller Bedingungen für einen Interrupt wird diese Information an den \ac{NVIC} im Cortex-M4 weitergeleitet. Dieser Teil des Prozessorkerns erkennt den Interrupt und sorgt dafür, das der aktuelle Prozessorstatus gespeichert wird. Nach Ablauf der \ac{ISR} wird der Prozessorstatus wieder hergestellt.
+%wo falsche wahl der Pins einbringen?
+%Interrupt Request, IRQ im gegensatz zu isr https://de.wikipedia.org/wiki/Interrupt
 \subsection{USB}
 %subsection Ethernet??
 \section{verwendete Bibliotheken}
