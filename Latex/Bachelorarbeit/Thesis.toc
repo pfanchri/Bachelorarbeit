@@ -83,3 +83,5 @@
 \contentsline {section}{\numberline {6.2}3D-Daten}{27}{section.6.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2.1}Geh\IeC {\"a}use}{27}{subsection.6.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Layout TDA5340 Aufsteckboard}{27}{section.6.3}
