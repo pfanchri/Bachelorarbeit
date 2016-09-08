@@ -79,12 +79,12 @@ int main(void) {
 	uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
 	uint32_t transfernumber = 0;
 	uint32_t led_ctr = 0;
-	char rx_data_TDA1[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };//TODO: Test ob er auch wiklich gesetzt wird; aktuell sind vor und nach dem empfangen inhalt der variable gleich
-	char rx_data_TDA2[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA3[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA4[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA5[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	char rx_data_TDA6[36] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	char rx_data_TDA1[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };//TODO: Test ob er auch wiklich gesetzt wird; aktuell sind vor und nach dem empfangen inhalt der variable gleich
+	char rx_data_TDA2[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };
+	char rx_data_TDA3[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };
+	char rx_data_TDA4[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };
+	char rx_data_TDA5[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };
+	char rx_data_TDA6[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };
 	struct rssi {
 		uint8_t pmf;
 		uint8_t prx;

@@ -47,7 +47,7 @@
  \definecolor{keyred}{RGB}{127,0,85}
  
 % C-Quellcode einfügen
-\usepackage{listings} 				
+\usepackage{listings}
 \lstset{
    basicstyle=\scriptsize\ttfamily,
    keywordstyle=\bfseries\ttfamily\color{keyred},
@@ -67,8 +67,11 @@
    numbersep=10pt,
    xleftmargin=15pt,
   breaklines=true,
-  breakatwhitespace=false
+  breakatwhitespace=false,
  }
+ %selbst eingefügt
+ \renewcommand{\lstlistingname}{Quellcode}% Listing -> Algorithm
+ \renewcommand{\lstlistlistingname}{Quellcodeverzeichnis}% List of Listings -> List of Algorithms
 
 
 \setcounter{tocdepth}{3} %Gibt an, bis in welche Tiefe das Inhaltsverzeichnis geht

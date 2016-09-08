@@ -1,0 +1,858 @@
+Press any Key to Start COM-Transfer
+Initialisierung beendet - Warte auf Übertragungen
+#################### Übertragung erkannt ####################
+Übertragung Nummer 1
+
+TDA1:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:1
+
+TDA2:
+PMF:203
+PRX:0
+RX:196
+PPL:0
+AGC:2
+Empfangsleistung (dBm):-110
+Empfangene Daten:1
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:1
+
+TDA4:
+PMF:191
+PRX:0
+RX:186
+PPL:0
+AGC:2
+Empfangsleistung (dBm):-110
+Empfangene Daten:1
+
+TDA5:
+PMF:133
+PRX:137
+RX:126
+PPL:135
+AGC:0
+Empfangsleistung (dBm):-67
+Empfangene Daten:123456789
+
+TDA6:
+PMF:151
+PRX:163
+RX:145
+PPL:152
+AGC:1
+Empfangsleistung (dBm):-59
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 2
+
+TDA1:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:1
+
+TDA2:
+PMF:203
+PRX:210
+RX:196
+PPL:205
+AGC:2
+Empfangsleistung (dBm):-39
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:191
+PRX:201
+RX:186
+PPL:192
+AGC:2
+Empfangsleistung (dBm):-44
+Empfangene Daten:123456789
+
+TDA5:
+PMF:133
+PRX:137
+RX:126
+PPL:135
+AGC:0
+Empfangsleistung (dBm):-67
+Empfangene Daten:123456789
+
+TDA6:
+PMF:151
+PRX:163
+RX:145
+PPL:152
+AGC:1
+Empfangsleistung (dBm):-59
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 3
+
+TDA1:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:1
+
+TDA2:
+PMF:21
+PRX:209
+RX:16
+PPL:204
+AGC:0
+Empfangsleistung (dBm):-43
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:191
+PRX:201
+RX:186
+PPL:192
+AGC:2
+Empfangsleistung (dBm):-44
+Empfangene Daten:123456789
+
+TDA5:
+PMF:0
+PRX:136
+RX:0
+PPL:134
+AGC:0
+Empfangsleistung (dBm):-67
+Empfangene Daten:123456789
+
+TDA6:
+PMF:0
+PRX:164
+RX:0
+PPL:152
+AGC:0
+Empfangsleistung (dBm):-61
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 4
+
+TDA1:
+PMF:0
+PRX:50
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA2:
+PMF:208
+PRX:211
+RX:77
+PPL:210
+AGC:2
+Empfangsleistung (dBm):-37
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:216
+PRX:217
+RX:209
+PPL:217
+AGC:2
+Empfangsleistung (dBm):-35
+Empfangene Daten:123456789
+
+TDA5:
+PMF:177
+PRX:179
+RX:178
+PPL:179
+AGC:1
+Empfangsleistung (dBm):-50
+Empfangene Daten:123456789
+
+TDA6:
+PMF:158
+PRX:159
+RX:152
+PPL:159
+AGC:0
+Empfangsleistung (dBm):-58
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 5
+
+TDA1:
+PMF:0
+PRX:50
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA2:
+PMF:204
+PRX:210
+RX:198
+PPL:206
+AGC:2
+Empfangsleistung (dBm):-39
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:210
+PRX:213
+RX:77
+PPL:211
+AGC:2
+Empfangsleistung (dBm):-37
+Empfangene Daten:123456789
+
+TDA5:
+PMF:189
+PRX:189
+RX:182
+PPL:189
+AGC:1
+Empfangsleistung (dBm):-46
+Empfangene Daten:123456789
+
+TDA6:
+PMF:151
+PRX:165
+RX:152
+PPL:153
+AGC:1
+Empfangsleistung (dBm):-59
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 6
+
+TDA1:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA2:
+PMF:204
+PRX:210
+RX:198
+PPL:206
+AGC:2
+Empfangsleistung (dBm):-39
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:210
+PRX:213
+RX:77
+PPL:211
+AGC:2
+Empfangsleistung (dBm):-37
+Empfangene Daten:123456789
+
+TDA5:
+PMF:189
+PRX:189
+RX:182
+PPL:189
+AGC:1
+Empfangsleistung (dBm):-46
+Empfangene Daten:123456789
+
+TDA6:
+PMF:151
+PRX:165
+RX:152
+PPL:153
+AGC:1
+Empfangsleistung (dBm):-59
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 7
+
+TDA1:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA2:
+PMF:178
+PRX:179
+RX:171
+PPL:179
+AGC:1
+Empfangsleistung (dBm):-50
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:221
+PRX:222
+RX:215
+PPL:222
+AGC:2
+Empfangsleistung (dBm):-33
+Empfangene Daten:123456789
+
+TDA5:
+PMF:191
+PRX:200
+RX:185
+PPL:192
+AGC:2
+Empfangsleistung (dBm):-44
+Empfangene Daten:123456789
+
+TDA6:
+PMF:153
+PRX:165
+RX:153
+PPL:155
+AGC:1
+Empfangsleistung (dBm):-58
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 8
+
+TDA1:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA2:
+PMF:203
+PRX:179
+RX:196
+PPL:179
+AGC:2
+Empfangsleistung (dBm):-48
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:224
+PRX:222
+RX:219
+PPL:222
+AGC:2
+Empfangsleistung (dBm):-33
+Empfangene Daten:123456789
+
+TDA5:
+PMF:194
+PRX:203
+RX:188
+PPL:194
+AGC:2
+Empfangsleistung (dBm):-43
+Empfangene Daten:123456789
+
+TDA6:
+PMF:160
+PRX:171
+RX:161
+PPL:162
+AGC:1
+Empfangsleistung (dBm):-56
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 9
+
+TDA1:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA2:
+PMF:203
+PRX:210
+RX:196
+PPL:204
+AGC:2
+Empfangsleistung (dBm):-39
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:224
+PRX:225
+RX:219
+PPL:225
+AGC:2
+Empfangsleistung (dBm):-32
+Empfangene Daten:123456789
+
+TDA5:
+PMF:194
+PRX:203
+RX:188
+PPL:194
+AGC:2
+Empfangsleistung (dBm):-43
+Empfangene Daten:123456789
+
+TDA6:
+PMF:160
+PRX:171
+RX:161
+PPL:162
+AGC:1
+Empfangsleistung (dBm):-56
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 10
+
+TDA1:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA2:
+PMF:208
+PRX:211
+RX:201
+PPL:209
+AGC:2
+Empfangsleistung (dBm):-38
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:220
+PRX:221
+RX:214
+PPL:221
+AGC:2
+Empfangsleistung (dBm):-34
+Empfangene Daten:123456789
+
+TDA5:
+PMF:189
+PRX:198
+RX:188
+PPL:190
+AGC:2
+Empfangsleistung (dBm):-44
+Empfangene Daten:123456789
+
+TDA6:
+PMF:164
+PRX:172
+RX:157
+PPL:165
+AGC:1
+Empfangsleistung (dBm):-55
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 11
+
+TDA1:
+PMF:0
+PRX:16
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA2:
+PMF:222
+PRX:223
+RX:222
+PPL:223
+AGC:2
+Empfangsleistung (dBm):-33
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:214
+PRX:216
+RX:207
+PPL:215
+AGC:2
+Empfangsleistung (dBm):-36
+Empfangene Daten:123456789
+
+TDA5:
+PMF:193
+PRX:202
+RX:194
+PPL:194
+AGC:2
+Empfangsleistung (dBm):-43
+Empfangene Daten:123456789
+
+TDA6:
+PMF:164
+PRX:172
+RX:157
+PPL:165
+AGC:1
+Empfangsleistung (dBm):-55
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 12
+
+TDA1:
+PMF:14
+PRX:17
+RX:15
+PPL:17
+AGC:0
+Empfangsleistung (dBm):-108
+Empfangene Daten:123456789
+
+TDA2:
+PMF:224
+PRX:225
+RX:220
+PPL:225
+AGC:2
+Empfangsleistung (dBm):-32
+Empfangene Daten:123456789
+
+TDA3:
+PMF:0
+PRX:0
+RX:0
+PPL:0
+AGC:0
+Empfangsleistung (dBm):-114
+Empfangene Daten:123456789
+
+TDA4:
+PMF:225
+PRX:226
+RX:221
+PPL:226
+AGC:2
+Empfangsleistung (dBm):-32
+Empfangene Daten:123456789
+
+TDA5:
+PMF:189
+PRX:197
+RX:189
+PPL:190
+AGC:2
+Empfangsleistung (dBm):-44
+Empfangene Daten:123456789
+
+TDA6:
+PMF:177
+PRX:178
+RX:38
+PPL:178
+AGC:1
+Empfangsleistung (dBm):-50
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 13
+
+TDA1:
+PMF:27
+PRX:29
+RX:0
+PPL:29
+AGC:0
+Empfangsleistung (dBm):-104
+Empfangene Daten:123456789
+
+TDA2:
+PMF:225
+PRX:226
+RX:221
+PPL:226
+AGC:2
+Empfangsleistung (dBm):-32
+Empfangene Daten:123456789
+
+TDA3:
+PMF:11
+PRX:13
+RX:9
+PPL:13
+AGC:0
+Empfangsleistung (dBm):-109
+Empfangene Daten:123456789
+
+TDA4:
+PMF:212
+PRX:214
+RX:207
+PPL:214
+AGC:2
+Empfangsleistung (dBm):-36
+Empfangene Daten:123456789
+
+TDA5:
+PMF:191
+PRX:200
+RX:186
+PPL:192
+AGC:2
+Empfangsleistung (dBm):-44
+Empfangene Daten:123456789
+
+TDA6:
+PMF:184
+PRX:185
+RX:177
+PPL:185
+AGC:1
+Empfangsleistung (dBm):-48
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 14
+
+TDA1:
+PMF:48
+PRX:29
+RX:48
+PPL:29
+AGC:0
+Empfangsleistung (dBm):-104
+Empfangene Daten:123456789
+
+TDA2:
+PMF:225
+PRX:226
+RX:221
+PPL:226
+AGC:2
+Empfangsleistung (dBm):-32
+Empfangene Daten:123456789
+
+TDA3:
+PMF:21
+PRX:23
+RX:19
+PPL:23
+AGC:0
+Empfangsleistung (dBm):-106
+Empfangene Daten:123456789
+
+TDA4:
+PMF:227
+PRX:228
+RX:223
+PPL:228
+AGC:2
+Empfangsleistung (dBm):-31
+Empfangene Daten:123456789
+
+TDA5:
+PMF:223
+PRX:224
+RX:223
+PPL:224
+AGC:2
+Empfangsleistung (dBm):-33
+Empfangene Daten:123456789
+
+TDA6:
+PMF:192
+PRX:202
+RX:77
+PPL:194
+AGC:2
+Empfangsleistung (dBm):-43
+Empfangene Daten:123456789
+
+#################### Übertragung erkannt ####################
+Übertragung Nummer 15
+
+TDA1:
+PMF:48
+PRX:51
+RX:48
+PPL:49
+AGC:0
+Empfangsleistung (dBm):-97
+Empfangene Daten:123456789
+
+TDA2:
+PMF:225
+PRX:226
+RX:221
+PPL:226
+AGC:2
+Empfangsleistung (dBm):-32
+Empfangene Daten:123456789
+
+TDA3:
+PMF:21
+PRX:23
+RX:19
+PPL:23
+AGC:0
+Empfangsleistung (dBm):-106
+Empfangene Daten:123456789
+
+TDA4:
+PMF:227
+PRX:228
+RX:223
+PPL:228
+AGC:2
+Empfangsleistung (dBm):-31
+Empfangene Daten:123456789
+
+TDA5:
+PMF:223
+PRX:224
+RX:223
+PPL:224
+AGC:2
+Empfangsleistung (dBm):-33
+Empfangene Daten:123456789
+
+TDA6:
+PMF:192
+PRX:202
+RX:77
+PPL:194
+AGC:2
+Empfangsleistung (dBm):-43
+Empfangene Daten:123456789
+
+

@@ -20,7 +20,7 @@ Die \acp{GPIO} werden im so genannten PORTS-Modul der XMC-Architektur gesteuert.
 Das Modul stellt für jeden Pin die erste Funktionsauswahl bereit. Im \enquote{Port Input/Output Control Register} des Moduls wird für jeden Pin festgelegt ob er als Eingang oder Ausgang belegt ist. Das momentane elektrische Potential am Eingang wird dann mit einem Schmitt-Trigger in ein binäres logisches Signal übersetzt. Ist der Pin ein Eingang, so kann dieser dort zusätzlich invertiert werden. Wird ein Pin des XMC als Ausgang konfiguriert, so kann gewählt werden, ob es sich um einen \ac{GPIO}-Pin handelt, dessen Status von der Software direkt festgelegt wird. Dabei kann ausgewählt werden ob das logische Ausgangssignal durch den einen Treiber in Open-Drain Konfiguration oder durch Push-Pull erzeugt werden soll. Zur Nutzung eines Ausgangs mit der Im Mikrocontroller verfügbaren Peripherie sind diese direkt mit den entsprechenden Modulen verbunden. Dadurch kann das Modul selbst den elektrischen Zustand am Eingang auslesen und verwerten\cite{XMC-Reference}. 
 Auch das weitere Verhalten von Pins, wie etwa  beim Anschalten, bevor die Versorgungsspannung ein gültiges Level erreicht hat, lassen sich im PORTS-Modul anpassen.
 \subsection{USIC}
-Die \acp{IC} der XMC-Familie verfügen über ein Modul zu Kommunikation über diverse serielle Protokolle, den \ac{USIC}. Dieses ist programmierbar und erlaubt damit eine individuelle Verwendung, kann aber gleichzeitig die notwendigen Arbeiten für den Prozessor übernehmen. Der XMC4500 verfügt über insgesamt sechs \ac{USIC}-Kanäle und kann somit mehrere Protokolle gleichzeitig verweden. Die Mikrocontroller unterstützen somit die folgenden Protokolle UART/SCI, SPI in einfach, doppelt und quad-Ausführung, IIC/I2C, IIS/I2S und LIN. Für diese Arbeit wurde alle Kommunikation mit einem gemeinsamen Kanal umgesetzt. Da die einzelnen \acp{USIC} und deren Kanäle verschieden viele Slave-Select-Leitungen besitzen wurde der Kanal $0$ des \ac{USIC} $0$ ausgewählt, nur dieser verfügt über die benötigten sechs Select-Leitungen.
+Die \acp{IC} der XMC-Familie verfügen über ein Modul zu Kommunikation über diverse serielle Protokolle, den \ac{USIC}. Dieses ist programmierbar und erlaubt damit eine individuelle Verwendung, kann aber gleichzeitig die notwendigen Arbeiten für den Prozessor übernehmen. Der XMC4500 verfügt über insgesamt sechs \ac{USIC}-Kanäle und kann somit mehrere Protokolle gleichzeitig verweden. Die Mikrocontroller unterstützen somit die folgenden Protokolle UART/SCI, SPI in einfach, doppelt und quad-Ausführung, IIC/I2C, IIS/I2S und LIN. Für diese Arbeit wurde alle Kommunikation mit einem gemeinsamen Kanal umgesetzt. Da die einzelnen \acp{USIC} und deren Kanäle verschieden viele Slave-Select-Leitungen besitzen wurde der Kanal $0$ des \ac{USIC} $0$ ausgewählt, nur dieser verfügt über die benötigten sechs Select-Leitungen. Eine Umsetzung mit einem anderen USIC wäre ebenfalls möglich gewesen. Die Wahl des Transceivers hätte dann aber manuell und nicht über die Bibliothek erfolgen müssen.
 %beschreiben Funktion
 %wo SPI allgmein beschreiben
 \subsection{ERU}
@@ -30,24 +30,31 @@ Bei Vorliegen aller Bedingungen für einen Interrupt wird diese Information an d
 %Interrupt Request, IRQ im gegensatz zu isr https://de.wikipedia.org/wiki/Interrupt
 \subsection{USB}
 Das \ac{USB}-Modul des XMC4500 arbeitet nach den  Spezifikationen für USB 2.0 und den \enquote{On-The-Go}-Spezifikationen der Version 1.3. Der Mikrocontroller könnte durch das \ac{USB}-Modul sowohl als Host oder als USB-Slave  arbeiten. In diesem Fall wurde der \ac{IC} als Slave betrieben. Das \ac{USB}-Modul besitzt über eine eigene Interruptsteuerung und ist damit eine der gerade erwähnten Peripherien des XMC deren Steuerung auch über Interrupts gelöst ist. Die gesamte Übertragung wird durch den \ac{USB}-Kern gesteuert und empfangene oder zu sendende Pakete werden in einem \ac{FIFO}-Puffer gespeichert. Für die Kommunikation der Basisstation mit dem Host-Computer wird ein virtueller COM-Port durch das \ac{USB}-Interface emuliert.
-\subsection Ethernet 
-%TODO was ist mit bzw. ??
+\subsection{Ethernet} 
+%TODO was ist mit "bzw." ??
 Im XMC4500 werden Netzwerkverbindungen durch das  Ethernet-Modul behandelt. Diese unterstützt Datenübertragungen mit Geräten über IPv4 und IPv6 sowie Übertragungsraten von 10/100 MBit/s  Dazu werden zunächst die Daten von der CPU über ein Bus-Interface übertragen. Im \enquote{MAC Transaction Layer} werden die vom Prozessor bzw. über Ethernet empfangenen Datenpakete zwischengespeichert. Der Ethernet-Kern formatiert die zu sendenden Daten und stellt sie einem \enquote{Physical Layer} zu, welches die Daten für den Kanal moduliert.
 \section{verwendete Bibliotheken}
-\subsection{XMC Libraries (XMC Lib)}
+\subsection{XMC Library (XMC Lib)}
 Infineon stellt für seine \acp{IC} der XMC4000 Serie zu der auch der XMC4500 gehört die \enquote{XMC Peripheral Library} bereit. Diese erlaubt einen vereinfachten Zugriff auf alle Module und die entsprechenden Register und soll dadurch den Modulzugang übersichtlich gestalten und den Programmcode vereinfachen und leichter lesbar machen. Die Software baut auf dem \ac{CMSIS} auf, erlaubt die Verwendung verschiedener Compiler und kann kann mit oder ohne DAVE\textsuperscript{TM} bzw. mit oder ohne DAVE APPs verwendet werden. %C99 usage +  weiter beschreiben etc
 Für die Programmierung wurde mit der Software \enquote{doxygen} eine Dokumentation zur Bibliothek als HTML generiert.
 
-%XMC Lib mit .. docu erstellt
 \subsection{SPI Library}
-\subsection{TDA5340 Library}
+Die verwendete Bibliothek zur Steuerung des \ac{SPI}-Interfaces basiert auf dem \ac{SPI}-Modul der XMC Library. Die von Infineons XMC Library zur \ac{SPI}-Kommunikation zur Verfügung gestellten Funktionen steuern das \ac{USIC}-Modul des Mikrocontrollers an. Die Bibliothek zur \ac{SPI}-Kommunikation muss somit nur noch die Funktion
+\begin{lstlisting}
+XMC_SPI_CH_Transmit(channel, data, XMC_SPI_CH_MODE_STANDARD);
+\end{lstlisting} der XMC Library aufrufen um eine Übertragung über das Serielle Interface durchzuführen. Daneben liegt die Hauptaufgabe der Bibliothek vor allem in der der Auswahl des entsprechenden Transceivers über das Slave-Select-Signal. Dazu initalisiert die bibliothek zuerst den \ac{USIC} entsprechend den in der Headerdatei vorgegebenen Pins für MISO, MOSI und den Pins für den jeweiligen Slave.
 
+\subsubsection{SPI Übertragung}
+
+\subsection{TDA5340 Library}
+Die Hauptaufgabe in der Kommunikation mit den Transceiver-\acp{IC} wurde durch die vorgegebene Bibliothek für den TDA5340 übernommen. Diese stellte Funktionen zum Senden und Empfangen von Daten mit dem Transceiver zur Verfügung. Die Bibliothek liest dazu den Empfangs-\ac{FIFO} aus oder schreibt in den Puffer für zu sendende Daten. Auch der Lese- und Schreib-Zugriff auf die Steuerregister der Transceiver kann über die Bibliothek geregelt werden. Dazu stellt die Bibliothek auch entsprechende Makros bereit, welche die Namen der Register in die hexadezimale entsprechende Adresse umwandeln, was die Lesbarkeit erheblich beeinflusst. Daneben wurde über die Bibliothek auch die notwendigen  Einstellungen für das Erkennen von Interrupt im XMC4500 vorgenommen. In diesem Bereich waren die notwendigen Anpassungen der Library am tiefgreifendsten, da diese nur für die Interruptbehandlung mit einem Transceiver ausgelegt war. Bei anderen Funktionen der Bibliothek waren nur kleinere Anpassungen notwenig, sodass etwa sichergestellt wurde für welchen Transceiver die aufgerufene Funktion ausgeführt werden sollte, etwa bei welchem das entsprechende Register ausgelesen wurde.
+Zur Verbindung mit den TDA5340 basierte die Bibliothek auf der SPI Library. Dieser wurde die Nummer des Transceivers als Chip-Select übergeben um sicherzustellen, das mit dem richtigen kommuniziert wurde.
 
 \subsection{Virtueller COM Port}
 Die Kommunikation der Basistation mit dem Hostcomputer zum übertragen der gemessene Werte wurde nach dem Vorbild eines Beispielprojektes für DAVE\textsuperscript{TM}. Die Bereitstellung des virtuellen seriellen Ports erfolgt auf Seiten des XMC über die LUFA (Lightweight USB Framework for AVRs)-Bibliothek. Mit dieser beschränkt sich die Ausgabe über den COM-Port auf das übergeben der zu sendenden Zeichen an eine entsprechende Funktion. Eine Steuerung des XMC durch empfangen von Daten über den COM-Port wäre mit der Bibliothek ebenfalls möglich, war jedoch nicht notwendig.
 Die Bibliothek und das Beispielprojekt wurde dahingehend angepasst, das ganze Zeichenketten statt nur einzelner Zeichen der Funktion zum Senden übergeben werden konnten. Auch wurde das Senden von Integer-Variablen ermöglicht, indem diese zu Zeichen umgewandelt wurden. 
 \section{Programmablauf}
-Im Programmablauf des XMC wurde zunächst eine Warteschleife umgesetzt, in welcher der Mikrocontroller auf eine erste Eingabe durch den Benutzer am Hostcomputer wartet. Nach dem diese Bestätigung über den COM-Port vom Mikrocontroller empfangen wurde setzt dieser zunächst alle Transceiver in den Schlafmodus von welchem aus eine Kommunikation möglich ist. Daraufhin beginnt der XMC4500 mit der Konfiguration der für die Interrupts notwendigen Pins und ermöglicht somit das Empfangen von \acp{IRQ} durch die TDA5430. Anschließend initialisiert er zunächst das SPI-Modul um im folgenden den Transceiver darüber konfigurieren zu können. Bevor das dazu notwendige Schreiben in die Register der TDAs jedoch möglich ist, wird eine gewisse Verzögerung benötigt. Diese resultiert daher, dass der Wechsel des TDA vom ausgeschalteten Zustand in den Schlafmodus eine gewisse Zeitspanne benötigt. 
+Im Programmablauf des XMC wurde zunächst eine Warteschleife umgesetzt, in welcher der Mikrocontroller auf eine erste Eingabe durch den Benutzer am Hostcomputer wartet. Bereits hier Bereits hier wurde die Übertragung übe den seriellen COM-Port initialisiert. Nach dem diese Bestätigung über den COM-Port vom Mikrocontroller empfangen wurde setzt dieser zunächst alle Transceiver in den Schlafmodus von welchem aus eine Kommunikation möglich ist. Daraufhin beginnt der XMC4500 mit der Konfiguration der für die Interrupts notwendigen Pins und ermöglicht somit das Empfangen von \acp{IRQ} durch die TDA5430. Anschließend initialisiert er zunächst das SPI-Modul um im folgenden den Transceiver darüber konfigurieren zu können. Bevor das dazu notwendige Schreiben in die Register der TDAs jedoch möglich ist, wird eine gewisse Verzögerung benötigt. Diese resultiert daher, dass der Wechsel des TDA vom ausgeschalteten Zustand in den Schlafmodus eine gewisse Zeitspanne benötigt. 
 Im folgenden werden alle Transceiver initalisiert und anschließend in den Resceiver-Modus gefahren.  
 Daraufhin setzt der \ac{IC} noch alle für die Übertragung notwendigen Variablen  und alle Felder zum Speichern von Daten zu null. 
 Nun Beginnt der Prozessor mit einer Dauerschleife in der dieser auf das Ankommen von Übertragungen wartet und teilt dies auch dem Benutzer am Hostcomputer über eine Ausgabe mit. In dieser Endlosschleife wechselt sich die interruptbasierte Datenerfassung mit der Weiterleitung der erfassten Daten zyklisch ab. Wobei nur bei erfolgreichem Empfang ein Senden an den steuernden Computer erfolgt. 
@@ -71,12 +78,32 @@ In der \acl{ISR}, in welche der Prozessor beim Auftreten eines Interrupts spring
 
 
 \subsection{Weiterleitung der erfassten Daten}
+Das eine Übertragung über den COM-Port bereits weit vor der Dauerschleife vom Mikrocontroller gestartet wurde, diente dazu dem Benutzer  die Bereitschaft zum Empfangen mitzuteilen sobald sämtliche Initialisierungen abgeschlossen waren. Somit musste dieser auch nun nicht mehr selbst initialisiert werden.
+Im zweiten Teil der Ablaufschleife des Programmablaufs wurde nun die Weitergabe der empfangenen Daten und der gemessenen Werte behandelt. Dazu wurde nach dem Abholen der empfangenen Daten von den Transceivern eine Statusflagge in Form einer Integer-Variable gesetzt. Nur beim Auftreten dieser Flagge wurde der Programmteil zum senden über den COM-Port ausgeführt.
+Dort wurde nun jeweils abwechseln ein Wert des Speichers und ein String mit einer Beschreibung oder dem Namen des Wertes über COM ausgegeben. Ein Ausschnitt des Quellcodes ist im Quellcode \ref{lst:COMsend} zu erkennen. Die
+
+\begin{lstlisting}[caption={Ausschnitt aus dem Senden der Daten über den COM-Port}\label{lst:COMsend},captionpos=b,language=C]
+COM_send_string("#################### Ubertragung erkannt ####################\r\n");
+COM_send_string("Ubertragung Nummer ");
+COM_send_int_as_string(transfernumber);
+COM_send_string("\r\n\r\n");
+COM_send_string("TDA1:");
+COM_send_string("\r\nPMF:");
+COM_send_int_as_string(rssiTDA1.pmf);
+COM_send_string("\r\nPRX:");
+COM_send_int_as_string(rssiTDA1.prx);
+COM_send_string("\r\nRX:");
+COM_send_int_as_string(rssiTDA1.rx);
+COM_send_string("\r\nPPL:");
+COM_send_int_as_string(rssiTDA1.ppl);
+COM_send_string("\r\nAGC:");
+\end{lstlisting}
 
 
-
-
-
-
+Am Hostcomputer wurden die Daten mit der Software \enquote{PuTTY} entgegengenommen und dem Benutzer in einer Konsole angezeigt. Dazu wurde der von Infineon zur Verfügung gestellte Treiber verwendet um dem XMC4500 als COM-Port zu erkennen. %im Anhang/auf CD
+Die Einstellungen der Seriellen Übertragung wurden vom Beispielprojekt übernommen, sodass am Computer mit einer Baudrate von $115200$Bd und acht Daten Bits pro Zeichen empfangen wurde und die entsprechenden Einstellungen im Programm vorgenommen werden musste. Nach der bereits erwähnten anfänglichen Bestätigung der Kommunikation durch den Nutzer wurden bei jeder vom Mikrocontroller erkannten   Übertragung die gemessenen Feldstärkewerte ausgegeben. Neben den PMF, PRX RX, PPL und AGC-Werten wurde noch die Empfangsleistung ausgegeben. Diese wurde zur Laufzeit aus dem PPL und dem AGC-Wert errechnet und in dBm angezeigt. Die empfangenen Daten wurden ebenfalls ausgegeben. 
+Alle Werte und Daten wurden nach Transceiver getrennt ausgegeben um eine Vergleichsmöglichkeit zu geben und um die Ausgabe möglichst übersichtlich zu gestalten.
+Auch wurden die empfangenen Übertragungen durchnummeriert und die entsprechende Übertragungsnummer mit ausgegeben. So ließen sich einerseits die Sendepositionen den gemessenen Werte zuordnen. Andererseits waren so aber auch  verlorengegangene  Übertragungen sichtbar. Eine typische Ausgabe der Konsole ist im Bild \ref{fig:ConsolePutty} erkennen. Zur Darstellung einer eingegangenen Übertragung an der Basisstation sollte die LED Nummer 7 nach jedem Empfangen kurz rot aufblinken. %Bild Übertragung 1 einfügen
 
 
 

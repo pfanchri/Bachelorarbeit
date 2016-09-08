@@ -42,46 +42,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.4}USB}{15}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}E}{15}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Ethernet}{15}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}verwendete Bibliotheken}{16}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}XMC Libraries (XMC Lib)}{16}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}XMC Library (XMC Lib)}{16}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}SPI Library}{16}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2.1}SPI \IeC {\"U}bertragung}{16}{subsubsection.3.3.2.1}
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}TDA5340 Library}{16}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Virtueller COM Port}{16}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Virtueller COM Port}{17}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Programmablauf}{16}{section.3.4}
+\contentsline {section}{\numberline {3.4}Programmablauf}{17}{section.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}Konfiguration der Funkmodule}{17}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}interruptbasierte Datenerfassung}{17}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}interruptbasierte Datenerfassung}{18}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Weiterleitung der erfassten Daten}{17}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Weiterleitung der erfassten Daten}{18}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Feldtest}{19}{chapter.4}
+\contentsline {chapter}{\numberline {4}Feldtest}{21}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Aufbau}{19}{section.4.1}
+\contentsline {section}{\numberline {4.1}Aufbau}{21}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Durchf\IeC {\"u}hrung}{19}{section.4.2}
+\contentsline {section}{\numberline {4.2}Durchf\IeC {\"u}hrung}{21}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Ergebnisse und Auswertung}{19}{section.4.3}
+\contentsline {section}{\numberline {4.3}Ergebnisse und Auswertung}{22}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{21}{chapter.5}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{23}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{23}{chapter*.40}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{25}{chapter*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{25}{chapter*.41}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{27}{chapter*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Anhang}{27}{chapter.6}
+\contentsline {chapter}{\numberline {6}Anhang}{29}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Seriennummern}{27}{section.6.1}
+\contentsline {section}{\numberline {6.1}Seriennummern}{29}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}3D-Daten}{27}{section.6.2}
+\contentsline {section}{\numberline {6.2}3D-Daten}{29}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Geh\IeC {\"a}use}{27}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.1}Geh\IeC {\"a}use}{29}{subsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Layout TDA5340 Aufsteckboard}{27}{section.6.3}
+\contentsline {section}{\numberline {6.3}Layout TDA5340 Aufsteckboard}{30}{section.6.3}
