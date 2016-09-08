@@ -69,22 +69,23 @@ Nun Beginnt der Prozessor mit einer Dauerschleife in der dieser auf das Ankommen
 \subsection{interruptbasierte Datenerfassung}
 
 
-
-In der \acl{ISR}, in welche der Prozessor beim Auftreten eines Interrupts springt, wird einer globalen Variable der Wert $1$ zugeordnet. Für jeden der möglichen Transceiver existiert eine solche Flagge, die einen aufgetretenen Interrupt anzeigt. Innerhalb der Dauerschleife wird nun zyklisch abgefragt ob diese Flagge gesetzt wurde. Beim Auftreten einer solchen Flagge, also nach dem aufgetretenen Interrupt, liest der 
-
-
-
+Die Erfassung der Daten erfolgt im Programmablauf innerhalb der dauerhaften Ablaufschleife.
+In der \acl{ISR}, in welche der Prozessor beim Auftreten eines Interrupts springt, wird lediglich einer globalen Variable der Wert $1$ zugeordnet. Für jeden der möglichen Transceiver existiert eine solche Flagge, die einen aufgetretenen Interrupt anzeigt. Nach dem Setzen in der \ac{ISR} kehrt der Prozessor zum Ablauf in die Dauerschleife zurück. Innerhalb dieser wird nun zyklisch abgefragt ob diese Flagge gesetzt wurde. Beim Auftreten einer solchen Flagge, also nach dem aufgetretenen Interrupt, liest der XMC4500 die  Interrupt Status Register des entsprechenden Transceivers aus. 
+Da davon auszugehen ist, das alle sechs Transceiver-\acp{IC} zeitgleich eine Übertragung erhalten wurde diese mehrstufige Abfrage gewählt. So wird zuerst nur in der \ac{ISR} die Flagge gesetzt um die dadurch verstreichende Zeit möglichst kurz zu halten und zu ermöglichen, das eine solche Flagge auch jederzeit im Programmablauf gesetzt werden kann. In der zweiten Stufe liest der Mikrocontroller nun die drei Interrupt Status Register aus. Dies ist notwenig, da es sich dabei um so genannte \enquote{Read-Clear}-Register handelt, welche  nach dem Auslesen über SPI automatisch zurückgesetzt werden.
+Die dritte Stufe  der Datenerfassung ist nun die Abfrage der Daten vom Transceiver. Da diese \ac{SPI}-Datenübertragung deutlich mehr Zeit in Anspruch nimmt, muss diese getrennt vom Erkennen der Interrupts und dem auslesen der Interrupt-Register erfolgen. Da die gewünschten Werte in den Registern gespeichert sind, ist das Auslesen zeitkritisch, da eine erneute Übertragung diese überschreiben würde. Jedoch ist das Auslesen der Werte bei weitem nicht so zeitkritisch wie die ankommenden Interrupts. Das Abfragen der empfangenen Daten aus dem \ac{FIFO}-Speicher hat eine noch geringer Priorität, da dieser die Datenpakete bis zum Auslesen behält. Der XMC4500 speichert alle abgefragten Werte wie Feldstärke, die Einstellungen der \ac{AGC} und die angekommenen Daten in den vorbereiteten dedizierten Speichern. Abschließend werden die Transceiver wieder in den Empfangsmodus gesetzt. 
+%wann fifo voll? was dann?
+%unterscheidung der zwei interruptabfragen
+%was steht in den registern drinnen und wird abgefragt
 
 
 
 \subsection{Weiterleitung der erfassten Daten}
 Das eine Übertragung über den COM-Port bereits weit vor der Dauerschleife vom Mikrocontroller gestartet wurde, diente dazu dem Benutzer  die Bereitschaft zum Empfangen mitzuteilen sobald sämtliche Initialisierungen abgeschlossen waren. Somit musste dieser auch nun nicht mehr selbst initialisiert werden.
 Im zweiten Teil der Ablaufschleife des Programmablaufs wurde nun die Weitergabe der empfangenen Daten und der gemessenen Werte behandelt. Dazu wurde nach dem Abholen der empfangenen Daten von den Transceivern eine Statusflagge in Form einer Integer-Variable gesetzt. Nur beim Auftreten dieser Flagge wurde der Programmteil zum senden über den COM-Port ausgeführt.
-Dort wurde nun jeweils abwechseln ein Wert des Speichers und ein String mit einer Beschreibung oder dem Namen des Wertes über COM ausgegeben. Ein Ausschnitt des Quellcodes ist im Quellcode \ref{lst:COMsend} zu erkennen. Die
-
+Dort wurde nun jeweils abwechseln ein Wert des Speichers und ein String mit einer Beschreibung oder dem Namen des Wertes über COM ausgegeben. Ein Ausschnitt des Quellcodes ist im Quellcode \ref{lst:COMsend} zu erkennen. Die Zeichenfolge $\backslash r\backslash n$ stellt dabei den Übergang in eine neue Zeile in der Ausgabekonsole dar. Wie in C üblich werden Strings in doppelten Anführungszeichen im Quelltext eingefügt.
 \begin{lstlisting}[caption={Ausschnitt aus dem Senden der Daten über den COM-Port}\label{lst:COMsend},captionpos=b,language=C]
-COM_send_string("#################### Ubertragung erkannt ####################\r\n");
-COM_send_string("Ubertragung Nummer ");
+COM_send_string("#################### Übertragung erkannt ####################\r\n");
+COM_send_string("Übertragung Nummer ");
 COM_send_int_as_string(transfernumber);
 COM_send_string("\r\n\r\n");
 COM_send_string("TDA1:");
@@ -98,10 +99,9 @@ COM_send_string("\r\nPPL:");
 COM_send_int_as_string(rssiTDA1.ppl);
 COM_send_string("\r\nAGC:");
 \end{lstlisting}
-
-
 Am Hostcomputer wurden die Daten mit der Software \enquote{PuTTY} entgegengenommen und dem Benutzer in einer Konsole angezeigt. Dazu wurde der von Infineon zur Verfügung gestellte Treiber verwendet um dem XMC4500 als COM-Port zu erkennen. %im Anhang/auf CD
-Die Einstellungen der Seriellen Übertragung wurden vom Beispielprojekt übernommen, sodass am Computer mit einer Baudrate von $115200$Bd und acht Daten Bits pro Zeichen empfangen wurde und die entsprechenden Einstellungen im Programm vorgenommen werden musste. Nach der bereits erwähnten anfänglichen Bestätigung der Kommunikation durch den Nutzer wurden bei jeder vom Mikrocontroller erkannten   Übertragung die gemessenen Feldstärkewerte ausgegeben. Neben den PMF, PRX RX, PPL und AGC-Werten wurde noch die Empfangsleistung ausgegeben. Diese wurde zur Laufzeit aus dem PPL und dem AGC-Wert errechnet und in dBm angezeigt. Die empfangenen Daten wurden ebenfalls ausgegeben. 
+Die Einstellungen der Seriellen Übertragung wurden vom Beispielprojekt übernommen, sodass am Computer mit einer Baudrate von $115200$Bd und acht Daten Bits pro Zeichen empfangen wurde und die entsprechenden Einstellungen im Programm vorgenommen werden musste. Nach der bereits erwähnten anfänglichen Bestätigung der Kommunikation durch den Nutzer wurden bei jeder vom Mikrocontroller erkannten   Übertragung die gemessenen Feldstärkewerte ausgegeben. Neben den PMF, PRX RX, PPL und AGC-Werten wurde noch die Empfangsleistung ausgegeben. Diese wurde zur Laufzeit aus dem PPL und dem AGC-Wert errechnet und in dBm angezeigt. Dazu diente eine vorgegebene Funktion, welche aus dem PPL-Wert und dem Wert der \ac{AGC} mittels kalibrierter Parameter eine Feldstärke berechnete. Die Werte wurden in einem Vorprojekt durch Messungen kalibriert und sind hier nicht weiter von Bedeutung.
+Die empfangenen Daten wurden ebenfalls ausgegeben. 
 Alle Werte und Daten wurden nach Transceiver getrennt ausgegeben um eine Vergleichsmöglichkeit zu geben und um die Ausgabe möglichst übersichtlich zu gestalten.
 Auch wurden die empfangenen Übertragungen durchnummeriert und die entsprechende Übertragungsnummer mit ausgegeben. So ließen sich einerseits die Sendepositionen den gemessenen Werte zuordnen. Andererseits waren so aber auch  verlorengegangene  Übertragungen sichtbar. Eine typische Ausgabe der Konsole ist im Bild \ref{fig:ConsolePutty} erkennen. Zur Darstellung einer eingegangenen Übertragung an der Basisstation sollte die LED Nummer 7 nach jedem Empfangen kurz rot aufblinken. %Bild Übertragung 1 einfügen
 
