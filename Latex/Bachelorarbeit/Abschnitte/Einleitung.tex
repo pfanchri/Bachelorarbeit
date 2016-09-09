@@ -6,8 +6,26 @@
 
 
 \section{Motivation}
+Die Lokalisierung von Objekten bildet in der Sicherheits- und Automatisierungstechnik eine immer größere Basisfunktion. Sie ist daher seit Anbeginn des Informationszeitalters eine zentrale Disziplin der Elektronik. Im Zeitalter von Industrie 4.0 und allgegenwärtiger autonomer Systeme gewinnt diese zunehmend an noch größerer Bedeutung. 
 
+Bisherige Ansätze zur elektronischen Ortsbestimmung sind meist aufwändig mit einem hohen Energieverbrauch und benötigen viele Teilkomponenten. Dies macht die elektronische Ortsbestimmung teuer was sich vor allem im Betrieb von Systemen wie GPS oder Galileo zeigt. Daneben haben diese Systeme vor allem den Nachteil, das die verwendeten Frequenzen Wände kaum durchdringen und somit innerhalb von Gebäuden nicht verwendet werden können. Genau dieses Anwendungsszenario stellt jedoch in der der Industrie 4.0 eine typische Fabrik dar. Dies führt dazu, dass für das beste Beispiel, einen autonom agierenden Roboter in einer Lagerhalle, andere Techniken eingesetzt werden müssen. 
+
+Ortungsansätze für ein solches autonomes bewegliches System existiere bereits und werden wie etwa bei der WLAN-basierte Ortung auch eingesetzt. Diese Systeme haben jedoch den Nachteil, das sie viele Sender mit bekanntem Ort benötigen. Dies erfordert eine aufwändige Kalibierung des Systems und führt vor allem zu einem großen Energieverbrauch des Systems, da alle stationären Einheiten dauerhaft senden müssen um eine Ortung zu ermöglichen.
+Ein weiterer Nachteil der Systeme ist, das nur der zu ortenden Client die Informationen über seinen Standort hat. Für ein außenstehendes System, wie den steuernden Hauptrechner einer Industrieanlage, ist nicht festzustellen wo das Objekt sich befindet. %evtl vertauschen und dann hinzufügen das kalibrierung bei basisstation nich notwendig
+Durch diese Probleme ließe sich das Anwendungsszenario eines einzelnen autarken Funksensors, dessen Messwert vom Hauptrechner abgefragt wird nur schwer realisieren. Der Sensor müsste über eine große Energiereserve verfügen und ständig aktiv sein um zu erkennen wenn er dazu aufgefordert wird seine Position zu ermitteln und mitzuteilen.
+Durch das Verlagern der Ortungsaufgabe auf das stationäre System müsste der Sensor nur beim vorliegen eines neuen Messwertes eine Funkverbindung aufbauen. Die Basisstation könnte aus dem empfangenen Signal sowohl den Messwert extrahieren als auch eine Lokalisierung durchführen.
+Sollte der stationäre Teil  aus nur einer Einheit bestehen wäre auch eine Änderung am Gesamtsystems, wie eine Ortsänderung der stationären Einheit, einfach möglich, da nur die relative Position zu dieser ermittelt wird. Der Sensor selbst benötigt im Normalfall keine Information über seinen Aufenthaltsort.
+%keine stromversorgung am sensor vorhanden
+%sensor muss nicht wissen wo er ist
+%Die Ortung von
+%industie 4.0
+%teuer aufwändig
+%basierend auf cleint weis wo er ist
 \section{Zieldefinition}
+Die Aufgabenstellung dieser Bachelorarbeit bestand im Einarbeiten in den vorgegeben Transceiver TDA5340 und den Mikrocontroller XMC4500. Bei der Gestaltung des Layouts für die Platine mit Altium Designer sollten diese über einen SPI-Bus verbunden sein. Die Platine sollte zusätzlich ein Konzept zur Bereitstellung der Versorgungsspannung enthalten. Um die Weiterverarbeitung der bezogenen Messwerte sicherzustellen, sollte eine LAN-Schnittstelle sowie eine Möglichkeit für einen USB-Anschluss zu einem PC integriert werden.
+Das ursprünglich geplante Design von PCB-Antennen an den Transceivern auf der Platine wurde wegen des Umfangs der dazu vermutlich notwendigen Simulationen aus der Aufgabenstellung entfernt.
+Eine funktionierende Firmware für das initialisieren und betreiben der Basisstation sollte ebenfalls mit der dazu notwendigen Entwicklungsumgebung erstellt werden. So sollte der Mikrocontroller auf, vom Transceiver ausgelösten, Interrupts für ankommende Übertragungen reagieren und Messwerte erfassen und entsprechend weiterleiten.
+
 
 \section{Projektmanagement}
 Als Versionskontrolle für das Projekt wurde Github eingesetzt.

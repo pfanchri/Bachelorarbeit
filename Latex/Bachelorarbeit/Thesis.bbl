@@ -1,0 +1,49 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{TDA-UserManual}{manual}{}
+      \list{organization}{1}{%
+        {Infineon Technologies AG}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revison 1.0}
+      \field{month}{02}
+      \field{title}{TDA5340 User Manual}
+      \field{year}{2012}
+    \endentry
+    \entry{XMC-Reference}{manual}{}
+      \list{organization}{1}{%
+        {Infineon Technologies AG}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revison 1.5}
+      \field{month}{07}
+      \field{title}{XMC4500 Reference Manual}
+      \field{year}{2014}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
