@@ -45,6 +45,13 @@ XMC_SPI_CH_Transmit(channel, data, XMC_SPI_CH_MODE_STANDARD);
 \end{lstlisting} der XMC Library aufrufen um eine Übertragung über das Serielle Interface durchzuführen. Daneben liegt die Hauptaufgabe der Bibliothek vor allem in der der Auswahl des entsprechenden Transceivers über das Slave-Select-Signal. Dazu initalisiert die bibliothek zuerst den \ac{USIC} entsprechend den in der Headerdatei vorgegebenen Pins für MISO, MOSI und den Pins für den jeweiligen Slave.
 
 \subsubsection{SPI Übertragung}
+Die durch die Software 
+
+
+
+
+
+
 
 \subsection{TDA5340 Library}
 Die Hauptaufgabe in der Kommunikation mit den Transceiver-\acp{IC} wurde durch die vorgegebene Bibliothek für den TDA5340 übernommen. Diese stellte Funktionen zum Senden und Empfangen von Daten mit dem Transceiver zur Verfügung. Die Bibliothek liest dazu den Empfangs-\ac{FIFO} aus oder schreibt in den Puffer für zu sendende Daten. Auch der Lese- und Schreib-Zugriff auf die Steuerregister der Transceiver kann über die Bibliothek geregelt werden. Dazu stellt die Bibliothek auch entsprechende Makros bereit, welche die Namen der Register in die hexadezimale entsprechende Adresse umwandeln, was die Lesbarkeit erheblich beeinflusst. Daneben wurde über die Bibliothek auch die notwendigen  Einstellungen für das Erkennen von Interrupt im XMC4500 vorgenommen. In diesem Bereich waren die notwendigen Anpassungen der Library am tiefgreifendsten, da diese nur für die Interruptbehandlung mit einem Transceiver ausgelegt war. Bei anderen Funktionen der Bibliothek waren nur kleinere Anpassungen notwenig, sodass etwa sichergestellt wurde für welchen Transceiver die aufgerufene Funktion ausgeführt werden sollte, etwa bei welchem das entsprechende Register ausgelesen wurde.
