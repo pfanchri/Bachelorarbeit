@@ -50,7 +50,7 @@
 \usepackage{listings}
 \lstset{
 	literate=%
-	{Ü}{{\"U}}1,
+	{Ü}{{\"U}}1{ü}{{\"u}}1{Ö}{{\"O}}1{ö}{{\"o}}1{Ä}{{\"A}}1{ä}{{\"a}}1,
    basicstyle=\scriptsize\ttfamily,
    keywordstyle=\bfseries\ttfamily\color{keyred},
    stringstyle=\color{blue}\ttfamily,
@@ -70,6 +70,7 @@
    xleftmargin=15pt,
   breaklines=true,
   breakatwhitespace=false,
+  extendedchars=true,
  }
  %selbst eingefügt
  \renewcommand{\lstlistingname}{Quellcode}% Listing -> Algorithm

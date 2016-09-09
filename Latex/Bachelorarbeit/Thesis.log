@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  8 SEP 2016 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  8 SEP 2016 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,7 +880,7 @@ Class scrbook Warning: Usage of package `titlesec' together
 (scrbook)              the extended optional argument of the section
 (scrbook)              commands.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `titlesec' on input line 88.
+(scrbook)              package `titlesec' on input line 89.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
@@ -917,7 +917,7 @@ Package titlesec Warning: Non standard sectioning command detected
 )
 
 Package scrbook Warning: Activating an ugly workaround for a missing
-(scrbook)                feature of package `titlesec` on input line 88.
+(scrbook)                feature of package `titlesec` on input line 89.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/acronym/acronym.sty
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
@@ -2154,14 +2154,14 @@ LaTeX Info: Redefining \nameref on input line 16.
 \openout7 = `Thesis.out'.
 
  (./Abschnitte/Titelseite.tex
-<Abbildungen/Logo/FAUlogo.pdf, id=179, 217.37811pt x 58.889pt>
+<Abbildungen/Logo/FAUlogo.pdf, id=187, 217.37811pt x 58.889pt>
 File: Abbildungen/Logo/FAUlogo.pdf Graphic file (type pdf)
 
 <use Abbildungen/Logo/FAUlogo.pdf>
 Package pdftex.def Info: Abbildungen/Logo/FAUlogo.pdf used on input line 7.
 (pdftex.def)             Requested size: 202.29771pt x 54.80394pt.
 
-<Abbildungen/Logo/LTElogo.pdf, id=180, 563.10374pt x 251.94125pt>
+<Abbildungen/Logo/LTElogo.pdf, id=188, 563.10374pt x 251.94125pt>
 File: Abbildungen/Logo/LTElogo.pdf Graphic file (type pdf)
 
 <use Abbildungen/Logo/LTElogo.pdf>
@@ -2196,7 +2196,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 44.
 
-<Abbildungen/Logo/Friedrich_logo_dunkel.pdf, id=181, 456.70625pt x 518.93875pt>
+<Abbildungen/Logo/Friedrich_logo_dunkel.pdf, id=189, 456.70625pt x 518.93875pt>
 File: Abbildungen/Logo/Friedrich_logo_dunkel.pdf Graphic file (type pdf)
 <use Abbildungen/Logo/Friedrich_logo_dunkel.pdf>
 Package pdftex.def Info: Abbildungen/Logo/Friedrich_logo_dunkel.pdf used on inp
@@ -2334,11 +2334,34 @@ Package babel Info: Redefining ngerman shorthand "~
  [10]
 Package tocbasic Info: character protrusion at toc deactivated on input line 32
 .
- (./Thesis.toc)
+ (./Thesis.toc
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 5.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 71.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 71.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 71.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 71.
+ [11
+
+
+
+])
 \tf@toc=\write8
 \openout8 = `Thesis.toc'.
 
- (./Abschnitte/Einleitung.tex
+
+(./Abschnitte/Einleitung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2347,12 +2370,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
-
-[1
-
-
-
-]
+ [1]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2385,14 +2403,6 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 8.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2405,8 +2415,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
-)
-(./Abschnitte/Platinenaufbau.tex
+) (./Abschnitte/Platinenaufbau.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3011,7 +3020,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=597, 2
+<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=661, 2
 98.11375pt x 759.58781pt>
 File: Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png Graph
 ic file (type png)
@@ -3025,28 +3034,116 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 44.
 
+(../../Dave/Basisstation/Basisstation/Init.c
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 34.
+ [32 <./Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-! Package Listings Error: File `../Bachelorarbeit/Dave/Basisstation/Basisstatio
-n/Init(.c)' not found.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 101.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 101.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 101.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 101.
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: c)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 166.
+ [34]))
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 66.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 66.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 66.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 66.
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.45 ...eit/Dave/Basisstation/Basisstation/Init.c}
-                                                  ^^M
-*** (cannot \read from terminal in nonstop modes)
+[35]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 68.
+ [36
 
- 
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 70.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 70.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 70.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 70.
+ [37]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+ (./Thesis.aux (./Abschnitte/AK.aux) (./Abschnitte/Anhang.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: AD0FDA3F2AF6D6A33C6F84A173DA5E9E;2862.
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'Thesis.run.xml'.
+\openout1 = `Thesis.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 51463 strings out of 493014
- 1146486 string characters out of 6133351
- 1966563 words of memory out of 5000000
- 53741 multiletter control sequences out of 15000+600000
- 80674 words of font info for 120 fonts, out of 8000000 for 9000
+ 51908 strings out of 493014
+ 1153675 string characters out of 6133351
+ 2118218 words of memory out of 5000000
+ 53952 multiletter control sequences out of 15000+600000
+ 85641 words of font info for 125 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 66i,14n,83p,8500b,3198s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 66i,14n,83p,8500b,3203s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
+16/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dist/
+fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/
+dvips/lm/lm-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
+mbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm
+/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro12.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/lm/lmtt8.pfb>
+Output written on Thesis.pdf (48 pages, 1132520 bytes).
+PDF statistics:
+ 1041 PDF objects out of 1200 (max. 8388607)
+ 958 compressed objects within 10 object streams
+ 398 named destinations out of 1000 (max. 500000)
+ 26505 words of extra memory for PDF output out of 29859 (max. 10000000)
+
