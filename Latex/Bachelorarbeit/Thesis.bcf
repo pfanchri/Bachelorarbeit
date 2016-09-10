@@ -2076,6 +2076,7 @@
     <bcf:citekey order="1">SabolcikGHzoderSub</bcf:citekey>
     <bcf:citekey order="2">TDA-UserManual</bcf:citekey>
     <bcf:citekey order="3">XMC-Reference</bcf:citekey>
+    <bcf:citekey order="4">BuchSPI</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

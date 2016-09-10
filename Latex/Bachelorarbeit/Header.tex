@@ -1,5 +1,5 @@
 % Header
-
+\PassOptionsToPackage{printonlyused,withpage}{acronym} %damit acronym Seiten anzeigen kann(wird in documentclass geladen, doppeltes laden mit anderen Optionen ergibt fehler)
 \documentclass[
 	a4paper,
 	%oneside,
@@ -202,6 +202,7 @@
 	%\makenomenclature
 	%eigene version des AK Verzeichnisses
 	\usepackage[]{acronym}
+	
 	\usepackage{geometry}
 	\geometry{a4paper, top=30mm, left=26mm, right=26mm, bottom=35mm,
 	headsep=10mm, footskip=12mm} %Legt Seitenränder fest

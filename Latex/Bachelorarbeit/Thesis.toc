@@ -28,72 +28,76 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Generierte Dokumente}{12}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Software}{13}{chapter.3}
+\contentsline {section}{\numberline {2.5}Best\IeC {\"u}ckung}{13}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}DAVE Entwicklungsumgebung}{13}{section.3.1}
+\contentsline {chapter}{\numberline {3}Software}{15}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}verwendete Peripherie des XMC4500}{14}{section.3.2}
+\contentsline {section}{\numberline {3.1}DAVE Entwicklungsumgebung}{15}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}GPIO}{14}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.2}verwendete Peripherie des XMC4500}{16}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}USIC}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.1}GPIO}{16}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}ERU}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.2}USIC}{16}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}USB}{15}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.3}ERU}{17}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Ethernet}{15}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.4}USB}{17}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}verwendete Bibliotheken}{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.2.5}Ethernet}{17}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}XMC Library (XMC Lib)}{16}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.3}verwendete Bibliotheken}{18}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}SPI Library}{16}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.1}XMC Library (XMC Lib)}{18}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2.1}SPI \IeC {\"U}bertragung}{16}{subsubsection.3.3.2.1}
+\contentsline {subsection}{\numberline {3.3.2}SPI Library}{18}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}TDA5340 Library}{16}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.2.1}SPI \IeC {\"U}bertragung}{18}{subsubsection.3.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Virtueller COM Port}{17}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.3}TDA5340 Library}{19}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Programmablauf}{17}{section.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Virtueller COM Port}{19}{subsection.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Konfiguration der Funkmodule}{17}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.4}Programmablauf}{19}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}interruptbasierte Datenerfassung}{18}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.1}Konfiguration der Funkmodule}{20}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Weiterleitung der erfassten Daten}{18}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.2}interruptbasierte Datenerfassung}{20}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Feldtest}{21}{chapter.4}
+\contentsline {subsection}{\numberline {3.4.3}Weiterleitung der erfassten Daten}{21}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Aufbau}{21}{section.4.1}
+\contentsline {chapter}{\numberline {4}Feldtest}{23}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Durchf\IeC {\"u}hrung}{21}{section.4.2}
+\contentsline {section}{\numberline {4.1}Aufbau}{23}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Ergebnisse und Auswertung}{22}{section.4.3}
+\contentsline {section}{\numberline {4.2}Durchf\IeC {\"u}hrung}{23}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{23}{chapter.5}
+\contentsline {section}{\numberline {4.3}Ergebnisse und Auswertung}{24}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{25}{chapter*.41}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{25}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{27}{chapter*.42}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{27}{chapter*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Quellcodeverzeichnis}{29}{chapter*.43}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{29}{chapter*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Anhang}{31}{chapter.6}
+\contentsline {chapter}{\nonumberline Quellcodeverzeichnis}{31}{chapter*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Seriennummern}{31}{section.6.1}
+\contentsline {chapter}{\numberline {6}Anhang}{33}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}3D-Daten}{31}{section.6.2}
+\contentsline {section}{\numberline {6.1}Seriennummern}{33}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Geh\IeC {\"a}use}{31}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.2}3D-Daten}{33}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Layout TDA5340 Aufsteckboard}{32}{section.6.3}
+\contentsline {subsection}{\numberline {6.2.1}Platine}{33}{subsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Quellcode}{32}{section.6.4}
+\contentsline {subsection}{\numberline {6.2.2}Geh\IeC {\"a}use}{33}{subsection.6.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.1}Main.c}{32}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.3}Layout TDA5340 Aufsteckboard}{34}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.2}ISRs.c}{32}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.4}Quellcode}{34}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.3}Init.c}{33}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.1}Main.c}{34}{subsection.6.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.2}ISRs.c}{34}{subsection.6.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.3}Init.c}{36}{subsection.6.4.3}
