@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  9 SEP 2016 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  10 SEP 2016 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2408,22 +2408,22 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 26.
 [3]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 24.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 32.
 ) (./Abschnitte/Platinenaufbau.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -3022,7 +3022,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=679, 2
+<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=681, 2
 98.11375pt x 759.58781pt>
 File: Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png Graph
 ic file (type png)
@@ -3103,6 +3103,14 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 66.
 
 [36]
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 69.
+
+
+Package biblatex Warning: Month out of range or not an integer
+(biblatex)                at entry 'SabolcikGHzoderSub' on input line 69.
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3111,7 +3119,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
- [37
+[37
 
 
 
@@ -3132,10 +3140,10 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52026 strings out of 493014
- 1155931 string characters out of 6133351
- 2120219 words of memory out of 5000000
- 54002 multiletter control sequences out of 15000+600000
+ 52034 strings out of 493014
+ 1156149 string characters out of 6133351
+ 2120278 words of memory out of 5000000
+ 54009 multiletter control sequences out of 15000+600000
  85728 words of font info for 126 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  66i,14n,83p,8500b,3203s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3156,10 +3164,10 @@ local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/public/lm/lmtt8.pfb>
-Output written on Thesis.pdf (48 pages, 1144187 bytes).
+Output written on Thesis.pdf (48 pages, 1148962 bytes).
 PDF statistics:
- 1131 PDF objects out of 1200 (max. 8388607)
- 1047 compressed objects within 11 object streams
- 461 named destinations out of 1000 (max. 500000)
+ 1134 PDF objects out of 1200 (max. 8388607)
+ 1050 compressed objects within 11 object streams
+ 462 named destinations out of 1000 (max. 500000)
  26529 words of extra memory for PDF output out of 29859 (max. 10000000)
 

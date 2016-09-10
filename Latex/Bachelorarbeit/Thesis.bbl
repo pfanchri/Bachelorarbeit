@@ -19,6 +19,27 @@
 
 \refsection{0}
   \sortlist[entry]{none/global/}
+    \entry{SabolcikGHzoderSub}{webpage}{}
+      \name{author}{1}{}{%
+        {{hash=a404d427fea04c8c70d1a793bbee4c00}{%
+           family={Sabolcik},
+           family_i={S\bibinitperiod},
+           given={Ross},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a404d427fea04c8c70d1a793bbee4c00}
+      \strng{fullhash}{a404d427fea04c8c70d1a793bbee4c00}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{Oktober}
+      \field{title}{2,4-GHz- oder Sub-GHz-Funknetze? Schneller ist nicht immer besser}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://www.elektroniknet.de/kommunikation/sonstiges/artikel/29738/
+      \endverb
+    \endentry
     \entry{TDA-UserManual}{manual}{}
       \list{organization}{1}{%
         {Infineon Technologies AG}%

@@ -14,7 +14,9 @@ Ortungsansätze für ein solches autonomes bewegliches System existiere bereits 
 Ein weiterer Nachteil der Systeme ist, das nur der zu ortenden Client die Informationen über seinen Standort hat. Für ein außenstehendes System, wie den steuernden Hauptrechner einer Industrieanlage, ist nicht festzustellen wo das Objekt sich befindet. %evtl vertauschen und dann hinzufügen das kalibrierung bei basisstation nich notwendig
 Durch diese Probleme ließe sich das Anwendungsszenario eines einzelnen autarken Funksensors, dessen Messwert vom Hauptrechner abgefragt wird nur schwer realisieren. Der Sensor müsste über eine große Energiereserve verfügen und ständig aktiv sein um zu erkennen wenn er dazu aufgefordert wird seine Position zu ermitteln und mitzuteilen.
 Durch das Verlagern der Ortungsaufgabe auf das stationäre System müsste der Sensor nur beim vorliegen eines neuen Messwertes eine Funkverbindung aufbauen. Die Basisstation könnte aus dem empfangenen Signal sowohl den Messwert extrahieren als auch eine Lokalisierung durchführen.
-Sollte der stationäre Teil  aus nur einer Einheit bestehen wäre auch eine Änderung am Gesamtsystems, wie eine Ortsänderung der stationären Einheit, einfach möglich, da nur die relative Position zu dieser ermittelt wird. Der Sensor selbst benötigt im Normalfall keine Information über seinen Aufenthaltsort.
+Sollte der stationäre Teil  aus nur einer Einheit bestehen wäre auch eine Änderung am Gesamtsystems, wie eine Ortsänderung der stationären Einheit, einfach möglich, da nur die relative Position zu dieser ermittelt wird. Der Sensor selbst benötigt im Normalfall keine Information über seinen Aufenthaltsort. 
+Es bietet sich hierfür eine Nutzung des Sub-GHz-Frequenzbandes an, welches deutlich weniger ausgenutzt ist, in dem meist nur kurze Funkdauern verwendet werden und in welchem eine Übertragung vor allem energieeffizienter möglich ist\cite{SabolcikGHzoderSub}.
+Ein weiterer Vorteil des verwendeten Frequenzbandes sind die bessere Penetrationseigenschaften durch Wände und Personen im Vergleich zu Ansätzen die etwa auf WLAN basieren.
 %keine stromversorgung am sensor vorhanden
 %sensor muss nicht wissen wo er ist
 %Die Ortung von
@@ -29,3 +31,4 @@ Eine funktionierende Firmware für das initialisieren und betreiben der Basissta
 
 \section{Projektmanagement}
 Als Versionskontrolle für das Projekt wurde Github eingesetzt.
+%todo erweitern und mehr hinzufügen

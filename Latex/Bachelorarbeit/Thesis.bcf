@@ -2073,8 +2073,9 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">TDA-UserManual</bcf:citekey>
-    <bcf:citekey order="2">XMC-Reference</bcf:citekey>
+    <bcf:citekey order="1">SabolcikGHzoderSub</bcf:citekey>
+    <bcf:citekey order="2">TDA-UserManual</bcf:citekey>
+    <bcf:citekey order="3">XMC-Reference</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
