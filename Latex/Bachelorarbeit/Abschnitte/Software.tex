@@ -85,7 +85,10 @@ Daraufhin setzt der \ac{IC} noch alle für die Übertragung notwendigen Variable
 Nun Beginnt der Prozessor mit einer Dauerschleife in der dieser auf das Ankommen von Übertragungen wartet und teilt dies auch dem Benutzer am Hostcomputer über eine Ausgabe mit. In dieser Endlosschleife wechselt sich die interruptbasierte Datenerfassung mit der Weiterleitung der erfassten Daten zyklisch ab. Wobei nur bei erfolgreichem Empfang ein Senden an den steuernden Computer erfolgt. 
 
 %TODO:genauer alles?!; wo beschreiben? 
-%todo: alle pins/ports mit makro definiert damit leicht änderbar für später
+
+Bei der Programmierung wurde darauf geachtet möglichst alle Konstanten wie Adressen von Pins und Ports durch Makros für den Präprozessor auszulagern. Dadurch konnte einerseits die Lesbarkeit des Quellcodes erhöht werden, andererseits sind so aber Änderungen durch vertauschen von Pins, sowohl in der Hardware als auch nur in Software, leichter möglich. Da es sich beim XMC4500 um einen Mikrocontroller mit einer 32Bit Architektur handelt wurden Integervariablen ausschließlich vom Typ \textit{uint32\_t} oder \textit{int32\_t} verwendet. So konnte eine genaue Anpassung der Software an die Registergrößen im XMC vorgenommen werden.
+
+
 
 \subsection{Konfiguration der Funkmodule}
 
@@ -133,7 +136,21 @@ COM_send_int_as_string(rssiTDA1.ppl);
 COM_send_string("\r\nAGC:");
 \end{lstlisting}
 Am Hostcomputer wurden die Daten mit der Software \enquote{PuTTY} entgegengenommen und dem Benutzer in einer Konsole angezeigt. Dazu wurde der von Infineon zur Verfügung gestellte Treiber verwendet um dem XMC4500 als COM-Port zu erkennen. %im Anhang/auf CD
-Die Einstellungen der Seriellen Übertragung wurden vom Beispielprojekt übernommen, sodass am Computer mit einer Baudrate von $115200$Bd und acht Daten Bits pro Zeichen empfangen wurde und was im Programm eingestellt werden musste. Nach der bereits erwähnten anfänglichen Bestätigung der Kommunikation durch den Nutzer, wurden bei jeder vom Mikrocontroller erkannten Übertragung die gemessenen Feldstärkewerte ausgegeben. Neben den PMF, PRX RX, PPL und AGC-Werten wurde noch die Empfangsleistung ausgegeben. Diese wurde zur Laufzeit aus dem PPL und dem AGC-Wert errechnet und in dBm angezeigt. Dazu diente eine vorgegebene Funktion, welche aus dem PPL-Wert und dem Wert der \ac{AGC} mittels kalibrierter Parameter eine Feldstärke berechnete. Die Werte wurden in einem Vorprojekt durch Messungen kalibriert und sind hier nicht weiter von Bedeutung. Die Abkürzungen und Einheiten der übertragenen Werte sind in Tabelle \ref{
+Die Einstellungen der Seriellen Übertragung wurden vom Beispielprojekt übernommen, sodass am Computer mit einer Baudrate von $115200$Bd und acht Daten Bits pro Zeichen empfangen wurde und was im Programm eingestellt werden musste. Nach der bereits erwähnten anfänglichen Bestätigung der Kommunikation durch den Nutzer, wurden bei jeder vom Mikrocontroller erkannten Übertragung die gemessenen Feldstärkewerte ausgegeben. Neben den PMF, PRX RX, PPL und AGC-Werten wurde noch die Empfangsleistung ausgegeben. Diese wurde zur Laufzeit aus dem PPL und dem AGC-Wert errechnet und in dBm angezeigt. Dazu diente eine vorgegebene Funktion, welche aus dem PPL-Wert und dem Wert der \ac{AGC} mittels kalibrierter Parameter eine Feldstärke berechnete. Die Werte wurden in einem Vorprojekt durch Messungen kalibriert und sind hier nicht weiter von Bedeutung. Die Abkürzungen der übertragenen Werte sind in Tabelle \ref{tab:RSSI} aufgeführt.
+\begin{table}[tbh]
+	\centering
+	\begin{tabular}{ll}
+		
+		PMF			&Peak Memory Filter\\
+		PRX			&Peak Detector\\
+		RX			&\acf{RSSI}\\
+		PPL			&RSSI Payload Peak Detector\\
+		AGC			&Automatic Gain Control\\
+		
+	\end{tabular}
+	\caption{Verwendete Abkürzungen der übertragenen Messwerte}
+	\label{tab:RSSI}
+\end{table}
 Die empfangenen Daten wurden ebenfalls ausgegeben. 
 Alle Werte und Daten wurden nach Transceiver getrennt ausgegeben um eine Vergleichsmöglichkeit zu geben und um die Ausgabe möglichst übersichtlich zu gestalten.
 Auch wurden die empfangenen Übertragungen durchnummeriert und die entsprechende Übertragungsnummer mit ausgegeben. So ließen sich einerseits die Sendepositionen den gemessenen Werte zuordnen. Andererseits waren so aber auch  verlorengegangene  Übertragungen sichtbar. Eine typische Ausgabe der Konsole ist im Bild \ref{fig:ConsolePutty} erkennen. Zur Darstellung einer eingegangenen Übertragung an der Basisstation sollte die LED Nummer 7 nach jedem Empfangen kurz rot aufblinken. %Bild Übertragung 1 einfügen
@@ -141,4 +158,3 @@ Auch wurden die empfangenen Übertragungen durchnummeriert und die entsprechende
 
 
 %wie viel speicher braucht man aaktuell?
-%speichergröße uint immer da 32bit mikrocontroller

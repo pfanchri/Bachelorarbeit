@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  13 SEP 2016 12:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  13 SEP 2016 12:57
 entering extended mode
 **Thesis.tex
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Thesis.tex
@@ -2609,30 +2609,30 @@ Package babel Info: Redefining ngerman shorthand "~
 Package acronym Info: Label `acro:IRQ' newly defined as it shall be overridden
 although it is yet undefined on input line 82.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 93.
 Package acronym Info: Label `acro:PLL' newly defined as it shall be overridden
-although it is yet undefined on input line 92.
+although it is yet undefined on input line 95.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 102.
 Package acronym Info: Label `acro:AGC' newly defined as it shall be overridden
-although it is yet undefined on input line 106.
+although it is yet undefined on input line 109.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 110.
  [20]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 118.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -2640,17 +2640,21 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 124.
  [21]
+Package acronym Info: Label `acro:RSSI' newly defined as it shall be overridden
+
+although it is yet undefined on input line 146.
+
 
 LaTeX Warning: Reference `fig:ConsolePutty' on page 22 undefined on input line 
-139.
+156.
 
 ) (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Feldtest.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -2672,21 +2676,21 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 12.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 12.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 22.
 [23
 
 
@@ -2856,7 +2860,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/3D2.png, id=751, 1070.49937pt x 762.59906p
+<Abbildungen/Aufnahmen/Bilder/Altium/3D2.png, id=759, 1070.49937pt x 762.59906p
 t>
 File: Abbildungen/Aufnahmen/Bilder/Altium/3D2.png Graphic file (type png)
  <use Abbildungen/Aufnahmen/Bilder/Altium/3D2.png>
@@ -2885,7 +2889,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 46.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=757, 2
+<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=765, 2
 98.11375pt x 759.58781pt>
 File: Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png Graph
 ic file (type png)
@@ -3015,7 +3019,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 52CDBFC7E6E595960D287A96D5FE1D7E;3130.
+(rerunfilecheck)             Checksum: D7B13FFE32529C0B8ECB9B0FFC747125;3130.
 
 
 LaTeX Warning: There were undefined references.
@@ -3028,13 +3032,13 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 47989 strings out of 493705
- 1044438 string characters out of 3144558
- 1882009 words of memory out of 3000000
- 49756 multiletter control sequences out of 15000+200000
- 81253 words of font info for 124 fonts, out of 3000000 for 9000
+ 48006 strings out of 493705
+ 1044623 string characters out of 3144558
+ 1882204 words of memory out of 3000000
+ 49765 multiletter control sequences out of 15000+200000
+ 85773 words of font info for 127 fonts, out of 3000000 for 9000
  1031 hyphenation exceptions out of 8191
- 66i,14n,83p,3433b,3118s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,14n,83p,3433b,3213s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
@@ -3044,14 +3048,15 @@ ts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb>
-Output written on Thesis.pdf (52 pages, 1493439 bytes).
+blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb>
+Output written on Thesis.pdf (52 pages, 1508844 bytes).
 PDF statistics:
- 1208 PDF objects out of 1440 (max. 8388607)
- 472 named destinations out of 1000 (max. 500000)
- 24494 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1220 PDF objects out of 1440 (max. 8388607)
+ 475 named destinations out of 1000 (max. 500000)
+ 26542 words of extra memory for PDF output out of 29859 (max. 10000000)
 
