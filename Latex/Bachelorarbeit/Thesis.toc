@@ -24,9 +24,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.3}Ethernet}{11}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Spannungsversorgung}{11}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}Spannungsversorgung}{12}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Generierte Dokumente}{12}{section.2.4}
+\contentsline {section}{\numberline {2.4}Generierte Dokumente}{13}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Best\IeC {\"u}ckung}{13}{section.2.5}
 \defcounter {refsection}{0}\relax 
@@ -52,8 +52,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}SPI Library}{18}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2.1}SPI \IeC {\"U}bertragung}{18}{subsubsection.3.3.2.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}TDA5340 Library}{19}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.4}Virtueller COM Port}{19}{subsection.3.3.4}
@@ -76,11 +74,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{25}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{27}{chapter*.44}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{27}{chapter*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{29}{chapter*.45}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{29}{chapter*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Quellcodeverzeichnis}{31}{chapter*.46}
+\contentsline {chapter}{\nonumberline Quellcodeverzeichnis}{31}{chapter*.47}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Anhang}{33}{chapter.6}
 \defcounter {refsection}{0}\relax 
