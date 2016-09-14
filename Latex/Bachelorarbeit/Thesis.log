@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  14 SEP 2016 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  14 SEP 2016 13:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3182,7 +3182,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=954, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=956, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
@@ -3201,7 +3201,7 @@ mobile Basisstation/Basisstation Schematics".pdf used on input line 6.
 (pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
 
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=957, page=1, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=959, page=1, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
@@ -3262,7 +3262,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [40 <../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics.pdf>]
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=981, page=2, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=983, page=2, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
@@ -3298,7 +3298,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [41 <../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics.pdf>]
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=994, page=3, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=996, page=3, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
@@ -3399,7 +3399,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
  [44]
-<"Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf, id=1016, 845.1575pt 
+<"Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf, id=1018, 845.1575pt 
 x 597.23125pt>
 File: "Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf Graphic file (ty
 pe pdf)
@@ -3415,7 +3415,7 @@ Package pdftex.def Info: "Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".p
 df used on input line 9.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<"Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf, id=1019, page=11, 84
+<"Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf, id=1021, page=11, 84
 5.1575pt x 597.23125pt>
 File: "Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf Graphic file (ty
 pe pdf)
@@ -3467,7 +3467,16 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-) (./Abschnitte/Anhang/3D.tex
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 10.
+ [46] (./Abschnitte/Anhang/3D.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3477,28 +3486,48 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/3D2.png, id=1033, 1070.49937pt x 762.59906
+<Abbildungen/Aufnahmen/Bilder/Altium/3D2.png, id=1039, 1070.49937pt x 762.59906
 pt>
 File: Abbildungen/Aufnahmen/Bilder/Altium/3D2.png Graphic file (type png)
  <use Abbildungen/Aufnahmen/Bilder/Altium/3D2.png>
 Package pdftex.def Info: Abbildungen/Aufnahmen/Bilder/Altium/3D2.png used on in
-put line 6.
+put line 7.
 (pdftex.def)             Requested size: 449.55356pt x 320.25452pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 11.
+
+<Abbildungen/Aufnahmen/Bilder/SolidWorks/BoxBildschirmSW.png, id=1040, 830.1012
+6pt x 654.445pt>
+File: Abbildungen/Aufnahmen/Bilder/SolidWorks/BoxBildschirmSW.png Graphic file 
+(type png)
+
+<use Abbildungen/Aufnahmen/Bilder/SolidWorks/BoxBildschirmSW.png>
+Package pdftex.def Info: Abbildungen/Aufnahmen/Bilder/SolidWorks/BoxBildschirmS
+W.png used on input line 16.
+(pdftex.def)             Requested size: 449.55356pt x 354.4236pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+)
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 10.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 10.
-) (./Abschnitte/Anhang/Aufsteckboard.tex
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+ [47 <./Abbildungen/Aufnahmen/Bilder/Altium/3D2.png>]
+(./Abschnitte/Anhang/Aufsteckboard.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=1034, 
+<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=1046, 
 298.11375pt x 759.58781pt>
 File: Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png Graph
 ic file (type png)
@@ -3511,7 +3540,17 @@ rd/Layout.png used on input line 9.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Abschnitte/Anhang/Quellcode.tex
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 15.
+ [48 <./Abbildungen/Aufnahmen/Bilder/SolidWorks/BoxBildschirmSW.png>]
+(./Abschnitte/Anhang/Quellcode.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3524,64 +3563,55 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 5.
-
-(../../Dave/Basisstation/Basisstation/ISRs.c
+ (../../Dave/Basisstation/Basisstation/ISRs.c
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 8.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
- [46]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 46.
- [47 <./Abbildungen/Aufnahmen/Bilder/Altium/3D2.png>])
+(babel)             in language  on input line 38.
+[49 <./Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png>])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 7.
- (../../Dave/Basisstation/Basisstation/Init.c
+
+(../../Dave/Basisstation/Basisstation/Init.c
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 42.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 28.
- [48 <./Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png>]
+(babel)             in language  on input line 42.
+ [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 95.
- [49]
+(babel)             in language  on input line 110.
+ [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 161.
- [50])))
+(babel)             in language  on input line 176.
+ [52])))
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 66.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3591,7 +3621,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 66.
 
-[51]
+[53]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3600,7 +3630,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 68.
- [52
+ [54
 
 
 
@@ -3633,7 +3663,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 70.
-[53]
+[55]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (./Thesis.aux (./Abschnitte/AK.aux) (./Abschnitte/Anhang.aux))
@@ -3650,10 +3680,10 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52787 strings out of 493014
- 1172163 string characters out of 6133351
- 2141154 words of memory out of 5000000
- 54679 multiletter control sequences out of 15000+600000
+ 52798 strings out of 493014
+ 1172543 string characters out of 6133351
+ 2125254 words of memory out of 5000000
+ 54685 multiletter control sequences out of 15000+600000
  85663 words of font info for 121 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  66i,18n,83p,8500b,3213s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3674,10 +3704,10 @@ local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/public/lm/lmtt8.pfb>
-Output written on Thesis.pdf (64 pages, 2198115 bytes).
+Output written on Thesis.pdf (66 pages, 2240341 bytes).
 PDF statistics:
- 1515 PDF objects out of 1728 (max. 8388607)
- 1367 compressed objects within 14 object streams
- 508 named destinations out of 1000 (max. 500000)
- 27153 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1527 PDF objects out of 1728 (max. 8388607)
+ 1376 compressed objects within 14 object streams
+ 511 named destinations out of 1000 (max. 500000)
+ 27158 words of extra memory for PDF output out of 29859 (max. 10000000)
 

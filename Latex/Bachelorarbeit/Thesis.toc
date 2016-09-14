@@ -86,18 +86,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}Seriennummern}{46}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}3D-Daten}{46}{section.6.3}
+\contentsline {section}{\numberline {6.3}3D-Daten}{47}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Platine}{46}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.1}Platine}{47}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Geh\IeC {\"a}use}{46}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.2}Geh\IeC {\"a}use}{47}{subsection.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Layout Aufsteckboard TDA5340}{46}{section.6.4}
+\contentsline {section}{\numberline {6.4}Layout Aufsteckboard TDA5340}{48}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Quellcode}{46}{section.6.5}
+\contentsline {section}{\numberline {6.5}Quellcode}{49}{section.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.1}Main.c}{46}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.1}Main.c}{49}{subsection.6.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.2}ISRs.c}{46}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.2}ISRs.c}{49}{subsection.6.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.3}Init.c}{48}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.3}Init.c}{50}{subsection.6.5.3}
