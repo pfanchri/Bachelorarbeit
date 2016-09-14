@@ -2,8 +2,8 @@
 \label{sec:Feldtest}
 \pagestyle{scrheadings}
 \section{Aufbau}
-Zur Evaluation der Basisstation wurde ein  XMC4500 Relax Kit von Infineon mit einem aufgesteckten Evaluations-Board für den TDA5340 betrieben. Mit Hilfe einer Powerbank konnte dieses mobil über den \ac{USB}-Anschluss des Relax Kit betrieben werden. %genaue werte eingeben und rechnung aus exekl sheet
-Dieses wurde auf eine Sendefrequenz von $...$ und eine Empfangsfrequenz von $...$ programmiert was durch die Werte für die \ac{PLL} im TDA5340 eingestellt wurde. 
+Zur Evaluation der Basisstation wurde ein  XMC4500 Relax Kit von Infineon mit einem aufgesteckten Evaluations-Board für den TDA5340 betrieben. Mit Hilfe einer Powerbank konnte dieses mobil über den \ac{USB}-Anschluss des Relax Kit betrieben werden.
+Dieses wurde auf eine Sendefrequenz von \unit[868,0]{MHz} und eine Empfangsfrequenz von \unit[867,999]{MHz} programmiert was durch die Werte für die \ac{PLL} im TDA5340 eingestellt wurde. 
 Die Basisistation wurde mit sechs Antennen bestückt, die einen Verstärkungsfaktor von \unit[3,6]{dBi} und eine Mittenfrequenz von \unit[868]{MHz} aufwiesen. Die Basis wurde über \ac{USB} an den Computer zur Auswertung angeschlossen. Das Auslesen der durch virtuellen COM-Port übertragenen Daten erfolgte mit  PuTTY. Die Messungen fanden innerhalb des Gebäudes statt.
 
 
@@ -25,6 +25,6 @@ Daneben waren vereinzelt auch noch Übertragungen zu erkennen, in denen Register
 
 
 Zu beachten ist, dass die vermeintlich doppelt ankommenden Übertragungen auch vom Sender ausgehen konnten. Es ist nicht komplett sicher festzustellen ob die mehrfache Ausgabe einer Übertragung durch die Basisstation  bedingt ist oder ob vom Relax Kit mehr als die gezählten Übertragungen versendet wurden. Das Versenden der Nachricht wurde an diesem durch einen Tastendruck ausgelöst.  Durch ein Prellen des Tasters konnten auch mehrfache, nur minimal verzögerte Übertragungen ausgelöst worden sein.
-Für die Durchführung von nachfolgenden Tests wäre demnach ein Sicherstellen einer nur einfachen Übertragung notwendig. Zusätzlich wäre eine Ausgabe der Sendungsnummer am Relax Kit und ein neuer zu sendender Datensatz für jede Übermittlung hilfreich.
+Für die Durchführung von nachfolgenden Tests wäre demnach ein Sicherstellen einer nur einfachen Übertragung notwendig. Zusätzlich wäre die Ausgabe eines Zähler für die Übertragungen am Relax Kit und ein neuer zu sendender Datensatz für jede Übermittlung hilfreich.
 
 Ein Abtrennen der Transceiver-Baugruppen und somit ein Vergrößern des Abstandes der Antennen war zur Verbesserung der Empfangsleistung nicht notwendig.
