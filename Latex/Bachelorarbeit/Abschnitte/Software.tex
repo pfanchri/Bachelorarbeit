@@ -3,11 +3,10 @@
 \pagestyle{scrheadings}
 \section{DAVE Entwicklungsumgebung}
 
-Das Programm DAVE (Digital Application Virtual Engineer) wird von Infineon Technologies AG entwickelt. Es basiert auf der Entwicklungsumgebung oder \ac{IDE} \enquote{eclipse} die von der Eclipse Foundation entwickelt wird. Eine \ac{IDE} beschreibt dabei allgemein ein Programm zur Softwareentwicklung, welches die einzelnen dazu notwendigen Tools gesammelt zur Verfügung stellt. Dies sind vor allem der Compiler, der Linker, und der Debugger auf die im folgenden noch eingegangen werden soll. DAVE stellt eine Möglichkeit zum Editieren von Quelltexten und Anordnen der einzelnen Programmdateien bereit. Über den enthaltenen GNU C-Compiler wird der erstellte Quellcode in vom XMC lesbare Maschinensprache übersetzt und anschließend durch den Linker zu einem ausführbaren Programm vereint. Durch den enthaltenen Debugger kann das Programm in den Speicher des XMC geladen werden. Dort kann der Programmablauf gestartet und gestoppt werden, außerdem können Werte einzelner Register und Variablen ausgelesen werden. 
-%cite c als erste prog sprache
+Das Programm DAVE (Digital Application Virtual Engineer) wird von Infineon Technologies AG entwickelt. Es basiert auf der Entwicklungsumgebung oder \ac{IDE} \enquote{eclipse} die von der Eclipse Foundation entwickelt wird. Eine \ac{IDE} beschreibt dabei allgemein ein Programm zur Softwareentwicklung, welches die einzelnen dazu notwendigen Tools gesammelt zur Verfügung stellt. Dies sind vor allem der Compiler, der Linker, und der Debugger auf die im folgenden noch eingegangen werden soll. DAVE stellt eine Möglichkeit zum Editieren von Quelltexten und Anordnen der einzelnen Programmdateien bereit. Über den enthaltenen GNU C-Compiler wird der erstellte Quellcode in vom XMC lesbare Maschinensprache übersetzt und anschließend durch den Linker zu einem ausführbaren Programm vereint. Durch den enthaltenen Debugger kann das Programm in den Speicher des XMC geladen werden. Dort kann der Programmablauf gestartet und gestoppt werden, außerdem können Werte einzelner Register und Variablen ausgelesen werden \cite{dausmann2011c}. 
 
-DAVE greift bei der Programmierung von Mikrocontrollern der XMC-Serie auf die so genannten XMC Libraries zurück, die von Infineon ebenfalls zur Verfügung gestellt werden.  Auf diese soll ebenfalls im weiteren Verlauf  eingegangen werden. Ein weiteres Feature in der \ac{IDE} sind die sogenannten DAVE APPs. Mit diesen soll die Programmierung des Mikrocontrollers durch ein \ac{GUI} ermöglicht werden. Dazu werden für  mögliche, von der Hardware zu verrichtende Teilaufgaben, APPs von Infineon bereitgestellt. Durch das Einfügen der entsprechenden APPs in das Projekt können diese angepasst und miteinander grafisch verschalten werden. So wird der spätere Programmablauf im Mikrocontroller und dessen Aufgaben festgelegt. Nachdem vom Programmierer noch die Pins ebenfalls grafisch den Aufgaben zugeordnet werden, generiert  DAVE  den Programmcode mit den in den Apps enthaltenen Informationen%\cite{DAVEQuickStart}.
-Mithilfe des DAVE \ac{SDK} können nicht nur die Parameter der APPs beim Programmieren , sonder auch diese selbst grundlegend angepasst werden und das Entwickeln eigener APPs ist möglich%\cite{DAVE-Version-4}.
+DAVE greift bei der Programmierung von Mikrocontrollern der XMC-Serie auf die so genannten XMC Libraries zurück, die von Infineon ebenfalls zur Verfügung gestellt werden.  Auf diese soll ebenfalls im weiteren Verlauf  eingegangen werden. Ein weiteres Feature in der \ac{IDE} sind die sogenannten DAVE APPs. Mit diesen soll die Programmierung des Mikrocontrollers durch ein \ac{GUI} ermöglicht werden. Dazu werden für  mögliche, von der Hardware zu verrichtende Teilaufgaben, APPs von Infineon bereitgestellt. Durch das Einfügen der entsprechenden APPs in das Projekt können diese angepasst und miteinander grafisch verschalten werden. So wird der spätere Programmablauf im Mikrocontroller und dessen Aufgaben festgelegt. Nachdem vom Programmierer noch die Pins ebenfalls grafisch den Aufgaben zugeordnet werden, generiert  DAVE  den Programmcode mit den in den Apps enthaltenen Informationen \cite{DAVEQuickStart}.
+Mithilfe des DAVE \ac{SDK} können nicht nur die Parameter der APPs beim Programmieren , sonder auch diese selbst grundlegend angepasst werden und das Entwickeln eigener APPs ist möglich \cite{DAVE-Version-4}.
 
 Im Verlauf dieser Arbeit wurden DAVE  APPs jedoch nur in einem bereits existierenden Softwareprojekt für ein Relax Kit genutzt, mit welchem  Signale zum Testen der Empfänger an die Basisstation gesendet wurden. In der Basisstation selbst wurden die APPs\index{APP} jedoch nicht benutzt.
 
@@ -15,8 +14,14 @@ Im Verlauf dieser Arbeit wurden DAVE  APPs jedoch nur in einem bereits existiere
 \section{verwendete Peripherie des XMC4500}
 
 
-Der XMC4500-Baustein enthält diverse funktionelle Blöcke, die mit einer Bus Matrix an die ARM Cortex-M4 \ac{CPU} angebunden sind. Dieser Aufbau soll den Prozessor entlasten und im Programmablauf Ressourcen freihalten für andere Operationen.%System Block Diagram aus Datenblatt einfügen und zitieren
-Für die Basisstation waren vor allem der \acs{USIC}, der \ac{USB} sowie der \ac{ETH} die bedeutende Peripherie. Von besonderer Bedeutung sind jedoch die \acp{GPIO}. %wird plural richtig gebildet?
+Der XMC4500-Baustein enthält diverse funktionelle Blöcke, die mit einer Bus Matrix an die ARM Cortex-M4 \ac{CPU} angebunden sind. Dieser Aufbau soll den Prozessor entlasten und im Programmablauf Ressourcen freihalten für andere Operationen.
+Für die Basisstation waren vor allem der \acs{USIC}, der \ac{USB} sowie der \ac{ETH} die bedeutende Peripherie. Von besonderer Bedeutung sind jedoch die \acp{GPIO}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{Abbildungen/XMCBlockdiagram}
+\caption{Blockdiagramm zur Peripherie des XMC4500 Mikrocontroller und die Anbindung an den Cortex-M4 Kern. aus \cite{XMC-DataSheet}}
+\label{fig:xmcblockdiagram}
+\end{figure}
 
 
 
@@ -106,7 +111,7 @@ Im Programmablauf des XMC wurde zunächst eine Warteschleife umgesetzt, in welch
 Im folgenden werden alle Transceiver initialisiert und anschließend in den Receiver-Modus gefahren.  
 Daraufhin setzt der \ac{IC} noch alle für die Übertragung notwendigen Variablen  und alle Felder zum Speichern von Daten zu null. 
 Nun beginnt der Prozessor mit einer Dauerschleife, in der dieser auf das Ankommen von Übertragungen wartet und teilt dies auch dem Benutzer am Hostcomputer über eine Ausgabe mit. In dieser Endlosschleife wechselt sich die interruptbasierte Datenerfassung mit der Weiterleitung der erfassten Daten zyklisch ab, wobei nur bei erfolgreichem Empfang ein Senden an den steuernden Computer erfolgt. 
-
+%todo: einfügen eines ablaufdiagramms?
 %TODO:genauer alles?!; wo beschreiben? 
 
 Bei der Programmierung wurde darauf geachtet möglichst alle Konstanten wie Adressen von Pins und Ports durch Makros für den Präprozessor auszulagern. Dadurch konnte einerseits die Lesbarkeit des Quellcodes erhöht werden, andererseits sind so aber Änderungen durch vertauschen von Pins, sowohl in der Hardware als auch nur in Software, leichter möglich. Da es sich beim XMC4500 um einen Mikrocontroller mit einer 32Bit Architektur handelt wurden Integervariablen ausschließlich vom Typ \textit{uint32\_t} oder \textit{int32\_t} verwendet. So konnte eine genaue Anpassung der Software an die Registergrößen im XMC vorgenommen werden.
@@ -114,7 +119,6 @@ Bei der Programmierung wurde darauf geachtet möglichst alle Konstanten wie Adre
 
 
 \subsection{Konfiguration der Funkmodule}
-
 Bei der Initialisierung erhalten die Transceiver die gewünschten Werte für die Sende- und Empfangs-Frequenzen. Diese werden über die Teilerrate für die  \ac{PLL} übergeben und ermittelt. Über die entsprechenden Register wird auch das Verhalten bei ankommenden Übertragungen eingestellt. Der TDA5340 stellt dafür mehrere Konfigurationssätze zur Verfügung in denen unterschiedliche Frequenzen eingestellt werden können. In diesem Fall wird zum Empfangen die Konfiguration A und Konfiguration B zum Senden eingestellt. Die entsprechenden Werte wurden zuvor aus der Zwischenfrequenz  $f_{IF2}=\unit[274]{kHz}$ und der gewünschten Übertragungsfrequenz errechnet.
 
 
@@ -149,7 +153,7 @@ Der Versuch den PP2 Pin des TDA6 mittels eines kurzen Drahtes auf den Pin 142 de
 \subsection{Weiterleitung der erfassten Daten}
 Dass eine Übertragung über den COM-Port bereits weit vor der Dauerschleife vom Mikrocontroller gestartet wurde, diente dazu, dem Benutzer  die Bereitschaft zum Empfangen mitzuteilen sobald sämtliche Initialisierungen abgeschlossen waren. Somit musste der COM-Port auch nun nicht mehr selbst initialisiert werden.
 Im zweiten Teil der Ablaufschleife des Programmablaufs wurde nun die Weitergabe der empfangenen Daten und der gemessenen Werte behandelt. Dazu wurde nach dem Abholen der empfangenen Daten von den Transceivern eine Statusflagge in Form einer Integer-Variable gesetzt. Nur beim Auftreten dieser Flagge wurde der Programmteil zum Senden über den COM-Port ausgeführt.
-Dort wurde nun jeweils abwechseln ein Wert des Speichers und ein String mit einer Beschreibung oder dem Namen des Wertes über COM ausgegeben. Ein Ausschnitt des Quellcodes ist im Quellcode \ref{listing:COMsend} zu erkennen. Die Zeichenfolge $\backslash r\backslash n$ stellt dabei den Übergang in eine neue Zeile in der Ausgabekonsole dar. Wie in C üblich werden Strings in doppelten Anführungszeichen im Quelltext eingefügt. Eine entsprechende Ausgabe ist in Bild ... zu erkennen. %TODO eingügen referenz
+Dort wurde nun jeweils abwechseln ein Wert des Speichers und ein String mit einer Beschreibung oder dem Namen des Wertes über COM ausgegeben. Ein Ausschnitt des Quellcodes ist im Quellcode \ref{listing:COMsend} zu erkennen. Die Zeichenfolge $\backslash r\backslash n$ stellt dabei den Übergang in eine neue Zeile in der Ausgabekonsole dar. Wie in C üblich werden Strings in doppelten Anführungszeichen im Quelltext eingefügt. Eine entsprechende Ausgabe ist in Bild \ref{fig:ubertragung} zu erkennen. 
 \begin{lstlisting}[caption={Ausschnitt aus dem Senden der Daten über den COM-Port},label={listing:COMsend},captionpos=b,language=C]
 COM_send_string("#################### Übertragung erkannt ####################\r\n");
 COM_send_string("Übertragung Nummer ");
@@ -184,8 +188,10 @@ Die Einstellungen der Seriellen Übertragung wurden vom Beispielprojekt übernom
 \end{table}
 Die empfangenen Daten wurden ebenfalls ausgegeben. 
 Alle Werte und Daten wurden nach Transceiver getrennt ausgegeben, um eine Vergleichsmöglichkeit zu geben und um die Ausgabe möglichst übersichtlich zu gestalten.
-Auch wurden die empfangenen Übertragungen durchnummeriert und die entsprechende Übertragungsnummer mit ausgegeben. So ließen sich einerseits die Sendepositionen den gemessenen Werte zuordnen. Andererseits waren so aber auch  verlorengegangene  Übertragungen sichtbar. Eine typische Ausgabe der Konsole ist im Bild \ref{fig:ConsolePutty} zu erkennen. Zur Darstellung einer eingegangenen Übertragung an der Basisstation sollte die LED Nummer 7 nach jedem Empfangen kurz rot aufblinken. %Bild Übertragung 1 einfügen
-
-
-
-%wie viel speicher braucht man aaktuell?
+Auch wurden die empfangenen Übertragungen durchnummeriert und die entsprechende Übertragungsnummer mit ausgegeben. So ließen sich einerseits die Sendepositionen den gemessenen Werte zuordnen. Andererseits waren so aber auch  verlorengegangene  Übertragungen sichtbar. Eine typische Ausgabe der Konsole ist im Bild \ref{fig:ConsolePutty} zu erkennen. Zur Darstellung einer eingegangenen Übertragung an der Basisstation sollte die LED Nummer 7 nach jedem Empfangen kurz rot aufblinken.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1}
+\caption{Ausgabe des Mikrocontroller über den COM-Port in der Konsole bei einer beispielhaften Übertragung}
+\label{fig:ubertragung}
+\end{figure}

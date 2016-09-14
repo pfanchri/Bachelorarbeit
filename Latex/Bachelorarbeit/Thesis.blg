@@ -1,8 +1,16 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
-[0] Config.pm:346> INFO - Logfile is 'Thesis.blg'
-[24] biber-MSWIN64:290> INFO - === 
-[42] Biber.pm:351> INFO - Reading 'Thesis.bcf'
-[115] Utils.pm:165> ERROR - Error: Found biblatex control file version 2.6, expected version 3.1.
-This means that your biber (2.5) and biblatex () versions are incompatible.
-See compat matrix in biblatex or biber PDF documentation.
-[115] Biber.pm:112> INFO - ERRORS: 1
+[1] Config.pm:346> INFO - Logfile is 'Thesis.blg'
+[57] biber-darwin:290> INFO - === Wed Sep 14, 2016, 12:37:16
+[83] Biber.pm:351> INFO - Reading 'Thesis.bcf'
+[192] Biber.pm:776> INFO - Found 11 citekeys in bib section 0
+[210] Biber.pm:3493> INFO - Processing section 0
+[231] Biber.pm:3657> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[246] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[260] bibtex.pm:1048> INFO - Found BibTeX data source 'bibliography.bib'
+[310] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[310] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[310] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'de-DE'
+[310] Biber.pm:3310> INFO - No sort tailoring available for locale 'de-DE'
+[318] bbl.pm:526> INFO - Writing 'Thesis.bbl' with encoding 'ascii'
+[318] bbl.pm:527> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[325] bbl.pm:619> INFO - Output to Thesis.bbl

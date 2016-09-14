@@ -49,10 +49,9 @@ Der Transceiver kommuniziert mit seinem Host über das \ac{SPI}-Protokoll, der M
 Der TDA5340 kann sowohl mit einer Spannungsversorgungsspannung von \unit[5]{V} als auch bei \unit[3,3]{V} arbeiten. Da aber der XMC nur bei letzterer betrieben werden kann, wurde der TDA-Baustein und die externe Beschaltung ebenfalls auf  \unit[3,3]{V} ausgelegt. 
 %interruptregister
 %Package -transparent modes of tda (Des weiteren erlaubt der Baustein noc )
-%TODO:Anpassnetzwerk
-%IF Filter 
-%SMA
-%todo überall halbes leerzeichen zwischen zahl und einheit \,
+
+
+
 %zweiseitige platine, Top und Botom, zwei kupferflächen
 %speichert feldstärkewert der letzten übertragung in eigenem register
 %interrupt register
@@ -70,10 +69,16 @@ Um zu einem späterem Zeitpunkt eine größere Entfernung zwischen den einzelnen
 
 Die drei multifunktionalen Digitalausgänge PP0, PP1 und PP2 des Transceivers können durch entsprechende Kalibrierung von Registers im \ac{IC} mit verschiedenen Signalen belegt werden. So  ist es etwa möglich mit diesen einen externen Antennenumschalter zu steuern oder andere Signale wie ein Clocksignal auszugeben. PP2 wird vom TDA standardmäßig als Interrupt Signal verwendet. Die nicht verwendeten PP1 und PP0 wurden bei der späteren Konfiguration in den hochohmige Zustand geschaltet. Durch einen am  P\_ON-Pin anliegenden High-Pegel wechseln der Transceiver in den Schlafmodus. Anderenfalls ist dieser ausgeschaltet. 
 
+\begin{figure}[h]
+\centering
+\includegraphics[trim=4.3cm 0cm 4.4cm 0cm, clip=true, totalheight=0.5\textheight,angle=-90]{Abbildungen/Aufnahmen/Bilder/Altium/TDA}
+\caption{Layout des Transceivers mit der Sollbruchstelle, der Steckerleiste und dem Anpassnetzwerk}
+\label{fig:tdalayout}
+\end{figure}
 
  
 Die Antenne wurde am oberen Ende jeder TDA5340-Teilplatine vorgesehen. Als Anschluss für die Antenne wurde hier eine Koaxialbuchse in \ac{SMA}-Ausführung verwendet, welche auf \unit[50]{$\Omega$} angepasst ist. Durch den Koaxialsteckverbinder konnte sichergestellt werden, dass alle notwendigen Frequenzen auch korrekt und ungedämpft passieren können. 
-Das Anpassnetzwerk zwischen dem  integrierten Transceiver und der verwendeten SMA-Buchse diente der Leistungsanpassung zwischen den Pins des TDA5340 und der \unit[50]{$\Omega$}-Koaxialbuchse. Der Aufbau des Anpassnetzwerkes basiert auf einem von Stefan Erhard erstellten Schaltplan für eine Aufsteckplatine für das Evaluationsboard \enquote{XMC 2Go} von Infineon. Durch die Verwendung von hoch abgestimmten Spulen und Kondensatoren mit Toleranzen von nur \unit[±0,05]{pF} bei einem Nennwert von \unit[2,5]{pF} wurde die korrekte Anpassung sichergestellt. 
+Das Anpassnetzwerk zwischen dem  integrierten Transceiver und der verwendeten \ac{SMA}-Buchse diente der Leistungsanpassung zwischen den Pins des TDA5340 und der \unit[50]{$\Omega$}-Koaxialbuchse. Der Aufbau des Anpassnetzwerkes basiert auf einem von Stefan Erhard erstellten Schaltplan für eine Aufsteckplatine für das Evaluationsboard \enquote{XMC 2Go} von Infineon. Durch die Verwendung von hoch abgestimmten Spulen und Kondensatoren mit Toleranzen von nur \unit[±0,05]{pF} bei einem Nennwert von \unit[2,5]{pF} wurde die korrekte Anpassung sichergestellt. 
  
 
 
@@ -83,9 +88,9 @@ Das Anpassnetzwerk zwischen dem  integrierten Transceiver und der verwendeten SM
  
 Zur Verbesserung der Hochfrequenzeigenschaften wurden die Freiräume zwischen den Leiterbahnen mit einer Kupferfläche gefüllt, die mit dem Masseanschluss verbunden war. Durch die Verwendung von Vias, vor allem im Bereich des Anpassnetzwerkes, sollte eine niederohmige Verbindung zwischen den beiden Masseflächen auf der Ober- bzw. Unterseite der Platine erreicht werden. Daneben dienten diese, auf Nullpotential liegenden Vias, jedoch vor allem der Abschirmung der Pfade für die HF-Signale gegen mögliche Einkoppelungen aus der Umgebung, welche ankommende Funksignale stören könnten.
 
-Obwohl der TDA5340 einen eingebauten Zwischenfrequenz-Filter hat, der über eine umschaltbare Bandbreite verfügt, wurde ein externer Keramikfilter verwendet. Der TDA stellt dafür zwei Pins bereit, zwischen denen ein solcher Filter mit einer Frequenz von \unit[10,7]{MHz} angeschlossen werden kann. Ohne einen hier extern angeschlossenen Filter würde der TDA als einfacher heterodyner Mischer direkt auf die Zwischenfrequenz $f_{IF2}=\unit[274]{kHz}$ heruntermischen. Bei Verwendung eines externen Keramik oder auch eines LC-$\pi$-Filters kann das ankommende HF-Signal jedoch in zwei Stufen gefiltert werden, ehe es in das Basisband demoduliert wird, was zu einer höheren Signalqualität führt. Die Umstellung zwischen einfacher und Double Down Conversion erfolgt durch das setzen eines dafür vorgesehenen Bits%\cite{TDA-DataSheet}\cite{TDA-UserManual}.
+Obwohl der TDA5340 einen eingebauten Zwischenfrequenz-Filter hat, der über eine umschaltbare Bandbreite verfügt, wurde ein externer Keramikfilter verwendet. Der TDA stellt dafür zwei Pins bereit, zwischen denen ein solcher Filter mit einer Frequenz von \unit[10,7]{MHz} angeschlossen werden kann. Ohne einen hier extern angeschlossenen Filter würde der TDA als einfacher heterodyner Mischer direkt auf die Zwischenfrequenz $f_{IF2}=\unit[274]{kHz}$ heruntermischen. Bei Verwendung eines externen Keramik oder auch eines LC-$\pi$-Filters kann das ankommende HF-Signal jedoch in zwei Stufen gefiltert werden, ehe es in das Basisband demoduliert wird, was zu einer höheren Signalqualität führt. Die Umstellung zwischen einfacher und Double Down Conversion erfolgt durch das setzen eines dafür vorgesehenen Bits \cite{TDA-DataSheet}\cite{TDA-UserManual}.
 
-Die elektrischen Verbindungen zwischen den beiden Eingängen des Low Noise Amplifier und dem Anpassnetzwerk wurden mit dem \enquote{Differential Pair Routing}-Feature von Altium Designer erstellt. Durch einen im Schaltplan auf die positive und negative elektrische Leitung zwischen dem TDA5340 und dem Anpassnetzwerk angewendeten Parameter wird das Leitungspaar als differentiell markiert. Anschließend kann mit dem interaktiven \enquote{Diffential Pair Routing} einer der beiden Leitungen begonnen werden. Altium Designer wird dabei selbstständig versuchen, die zweite Leiterbahn des Paares so anzuordnen, das die beiden Leiterbahnen symmetrisch und parallel zueinander liegen. %hier TI zitieren
+Die elektrischen Verbindungen zwischen den beiden Eingängen des Low Noise Amplifier und dem Anpassnetzwerk wurden mit dem \enquote{Differential Pair Routing}-Feature von Altium Designer erstellt. Durch einen im Schaltplan auf die positive und negative elektrische Leitung zwischen dem TDA5340 und dem Anpassnetzwerk angewendeten Parameter wird das Leitungspaar als differentiell markiert. Anschließend kann mit dem interaktiven \enquote{Diffential Pair Routing} einer der beiden Leitungen begonnen werden. Altium Designer wird dabei selbstständig versuchen, die zweite Leiterbahn des Paares so anzuordnen, das die beiden Leiterbahnen symmetrisch und parallel zueinander liegen, was für eine gute Übertragung sorgt \cite{High-Speed-Guide}.
 Durch die Verwendung des \enquote{Diffential Pair Routing} versucht Altium Designer auch die Länge der beiden Verbindungen anzugleichen. Durch die Anpassungen der differentielle Leiterbahnen wird eine gleichmäßige Übertragung sichergestellt. Da diese Leitungen hochfrequente Signale führen, ist eine genaue Anpassung notwendig.
 
 
@@ -95,7 +100,7 @@ Um Einkopplungen auf die Pfade für hochfrequente Signale zu vermeiden, wurde da
 \begin{equation}\label{eq:fsys}
 f_{Crystal} = f_{IF2} * 80 = \frac{f_{IF1}}{39} * 80  = \frac{\unit[10,7]{MHz}}{39} * 80 = \unit[21,948717]{MHz}
 \end{equation}
-wobei die Zwischenfrequenz der ersten Stufe ($f_{IF1}$) durch die internen funktionalen Blöcke des TDA und den Keramikfilter vorgegeben ist. Die weiteren Faktoren ergeben sich aus dem Aufbau des Empfängers und werden von Infineon bereitgestellt\cite{TDA-UserManual}.
+wobei die Zwischenfrequenz der ersten Stufe ($f_{IF1}$) durch die internen funktionalen Blöcke des TDA und den Keramikfilter vorgegeben ist. Die weiteren Faktoren ergeben sich aus dem Aufbau des Empfängers und werden von Infineon bereitgestellt \cite{TDA-UserManual}.
 
 
 \subsection{XMC4500}
@@ -133,8 +138,7 @@ Um sowohl den Mikrocontroller als auch einen an die Basisstation angeschlossenen
 
 \subsection{Ethernet}
 Die Ethernetschnittstelle der Basisstation basiert auf dem  Relax Kit von Infineon. Genau wie im Evaluations Board des Herstellers Infineon wurde der Ethernet-Controller KSZ8031RNL von Mircel Inc. verwendet. Dieser stellt alle wichtigen Peripherien selbst zur Verfügung und muss somit nur noch durch ein Quarz und diverse Kapazitäten und Induktivitäten an den Versorgungsleitungen ergänzt werden. Da die im Controller verbaute Stufe zur Interruptgenerierung nur über einen schwachen Pull-Up Widerstand verfügt, musste ein externer Widerstand von \unit[1]{k$\Omega$} verbaut werden. Am Reset-Eingang wurde ebenfalls ein Pull-Up Widerstand verbaut. Dieser wurde um zwei Dioden sowie einen Kondensator zu der im Datenblatt empfohlenen Verschaltung erweitert. So kann sichergestellt werden, das sowohl beim Anlegen einer Spannung an das Gesamtsystem als auch bei einem Reset des Ethernetbausteins durch den steuernden Mikrocontroller alle Spannungen im sicheren Bereich liegen und die Funktion gewähleistet ist. Die dreizehn zum XMC4500 notwendigen Verbindungen wurden zur besseren Übersicht im Schaltplan in einem Signal-Kabelbaum zusammengefasst. Wegen der Gefahr von Rissen in Lötstellen durch die Platinenbelastung beim Ein- und Ausstecken wurde im Bereich um den Netzwerkstecker die Anordnung von Bauteilen vermieden. 
-Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von geringem Umfang ist, wurde der Controller und die entsprechende Netzwerkbuchse von Würth Electronics zunächst nicht bestückt. Somit wurde eine Verwendung des Ethernet-Controllers auch in der Software des XMC-Mikrocontroller nicht umgesetzt. Da jedoch ein entsprechendes Softwareprojekt für das Relax Kit von Infineon zur Verfügung gestellt wird, wäre eine Netzwerkkommunikation vermutlich mit wenigen Anpassungen schnell umzusetzen.  %TODO wird es das auch wirklich + webseite zitieren
-
+Da der KSZ8031RNL  nicht lieferbar war und die anfallende Datenmenge nur von geringem Umfang ist, wurde der Controller und die entsprechende Netzwerkbuchse von Würth Electronics zunächst nicht bestückt. Somit wurde eine Verwendung des Ethernet-Controllers auch in der Software des XMC-Mikrocontroller nicht umgesetzt. Da jedoch ein entsprechendes Softwareprojekt für das Relax Kit von Infineon zur Verfügung gestellt  wird, wäre eine Netzwerkkommunikation vermutlich mit wenigen Anpassungen schnell umzusetzen \cite{DAVE-3-Example-}. 
 
 
 

@@ -1,0 +1,193 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{SabolcikGHzoderSub}{webpage}{}
+      \name{author}{1}{}{%
+        {{hash=a404d427fea04c8c70d1a793bbee4c00}{%
+           family={Sabolcik},
+           family_i={S\bibinitperiod},
+           given={Ross},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a404d427fea04c8c70d1a793bbee4c00}
+      \strng{fullhash}{a404d427fea04c8c70d1a793bbee4c00}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{Oktober}
+      \field{title}{2,4-GHz- oder Sub-GHz-Funknetze? Schneller ist nicht immer besser}
+      \field{year}{2010}
+      \verb{url}
+      \verb http://www.elektroniknet.de/kommunikation/sonstiges/artikel/29738/
+      \endverb
+    \endentry
+    \entry{TDA-DataSheet}{manual}{}
+      \list{organization}{1}{%
+        {Infineon Technologies AG}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revison 1.2}
+      \field{month}{06}
+      \field{title}{TDA5340 Data Sheet}
+      \field{year}{2012}
+    \endentry
+    \entry{TDA-UserManual}{manual}{}
+      \list{organization}{1}{%
+        {Infineon Technologies AG}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revison 1.0}
+      \field{month}{02}
+      \field{title}{TDA5340 User Manual}
+      \field{year}{2012}
+    \endentry
+    \entry{High-Speed-Guide}{manual}{}
+      \list{organization}{1}{%
+        {Texas Instruments Inc.}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{SPRAAR7E}
+      \field{month}{07}
+      \field{title}{High-Speed Interface Layout Guidelines}
+      \field{year}{2015}
+    \endentry
+    \entry{DAVE-3-Example-}{webpage}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{DAVE{\texttrademark} 3 Example Project Download}
+      \verb{url}
+      \verb http://www.infineon.com/cms/en/product/promopages/aim-mc/DAVE_3_Support_Portal/DAVE_Example_Project_Download.html
+      \endverb
+    \endentry
+    \entry{dausmann2011c}{book}{}
+      \name{author}{4}{}{%
+        {{hash=d1cdb15ad76fe1de70afba00af2ab21d}{%
+           family={Dausmann},
+           family_i={D\bibinitperiod},
+           given={Manfred},
+           given_i={M\bibinitperiod}}}%
+        {{hash=a92dd71ea18b187207aceed25f3f3014}{%
+           family={Br\"{o}ckl},
+           family_i={B\bibinitperiod},
+           given={Ulrich},
+           given_i={U\bibinitperiod}}}%
+        {{hash=31462d93fef3202dd657a1d5072cbc31}{%
+           family={Schoop},
+           family_i={S\bibinitperiod},
+           given={Dominik},
+           given_i={D\bibinitperiod}}}%
+        {{hash=ecf7443c667a529328edec9d962ffb4b}{%
+           family={Goll},
+           family_i={G\bibinitperiod},
+           given={Joachim},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Vieweg+ Teubner Verlag}%
+      }
+      \strng{namehash}{e00092b1fcb9417bf4f09dca249c4a5a}
+      \strng{fullhash}{2e04e2cb3d8192bddde3e9d4d1e0d527}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{C als erste Programmiersprache}
+      \field{volume}{1}
+      \field{year}{2011}
+    \endentry
+    \entry{DAVEQuickStart}{manual}{}
+      \list{organization}{1}{%
+        {Infineon Technologies AG}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{title}{DAVE{\texttrademark} v4 - Quick Start}
+      \field{year}{2015}
+    \endentry
+    \entry{DAVE-Version-4}{webpage}{}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{title}{DAVE{\texttrademark} (Version 4) - Development Platform for XMC{\texttrademark} Microcontrollers}
+      \verb{url}
+      \verb http://www.infineon.com/cms/en/product/channel.html?channel=db3a30433580b37101359f8ee6963814#db3a304412b407950112b41a854c2ac6
+      \endverb
+    \endentry
+    \entry{XMC-DataSheet}{manual}{}
+      \list{organization}{1}{%
+        {Infineon Technologies AG}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revison 1.3}
+      \field{month}{M\"{a}rz}
+      \field{title}{XMC4500 Data Sheet}
+      \field{year}{2014}
+    \endentry
+    \entry{XMC-Reference}{manual}{}
+      \list{organization}{1}{%
+        {Infineon Technologies AG}%
+      }
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labeltitlesource}{title}
+      \field{edition}{Revison 1.5}
+      \field{month}{07}
+      \field{title}{XMC4500 Reference Manual}
+      \field{year}{2014}
+    \endentry
+    \entry{BuchSPI}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=ec6b9d0a81d58179384099537621e0a0}{%
+           family={B\"{u}ch},
+           family_i={B\bibinitperiod},
+           given={Christian},
+           given_i={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universit\"{a}t Koblenz-Landau}%
+      }
+      \strng{namehash}{ec6b9d0a81d58179384099537621e0a0}
+      \strng{fullhash}{ec6b9d0a81d58179384099537621e0a0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Physik- Seminar}
+      \field{title}{SPI -- Serial Peripheral Interface}
+      \field{type}{mathesis}
+      \field{year}{2006}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
