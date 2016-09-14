@@ -6,7 +6,15 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Schaltplan der Transceiverbaugruppe}}{10}{figure.2.1}
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Schaltplan der Transceiverbaugruppe}}{9}{figure.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Schaltplan des XMC4500 Mikrocontrollers}}{12}{figure.2.2}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Struktur eines Digitalpins des XMC Mikrocontroller. aus \cite {XMC-Reference}}}{18}{figure.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Start einer SPI-\IeC {\"U}bertragung zwischen dem Mikrocontroller und dem Transceiver}}{22}{figure.3.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -16,8 +24,6 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Layout des Aufsteckboards mit dem TDA5340}}{46}{figure.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Layout des Aufsteckboards mit dem TDA5340}}{36}{figure.6.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Layout des Aufsteckboards mit dem TDA5340}}{37}{figure.6.2}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Layout des Aufsteckboards mit dem TDA5340}}{47}{figure.6.2}

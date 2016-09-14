@@ -13,18 +13,32 @@ Im Verlauf dieser Arbeit wurden DAVE  APPs jedoch nur in einem bereits existiere
 
 
 \section{verwendete Peripherie des XMC4500}
+
+
 Der XMC4500-Baustein enthält diverse funktionelle Blöcke, die mit einer Bus Matrix an die ARM Cortex-M4 \ac{CPU} angebunden sind. Dieser Aufbau soll den Prozessor entlasten und im Programmablauf Ressourcen freihalten für andere Operationen.%System Block Diagram aus Datenblatt einfügen und zitieren
 Für die Basisstation waren vor allem der \acs{USIC}, der \ac{USB} sowie der \ac{ETH} die bedeutende Peripherie. Von besonderer Bedeutung sind jedoch die \acp{GPIO}. %wird plural richtig gebildet?
+
+
+
+
 
 
 \subsection{GPIO}
 Die \acp{GPIO} werden im so genannten PORTS-Modul der XMC-Architektur gesteuert. In dieser lassen sich die Treiberstufen für die entsprechenden Pins des Mikrocontroller regeln. Dieses Modul ist über die Peripheriebrücke PBA1 ebenfalls an die Bus Matrix \index{Bus Matrix} und somit den Cortex-M4 Kern angebunden.  %Programmable port driver control module (PORTS) Abkürzung richtg?dann einfügen
 %Bild StructureDigitalPin einbinden
 %beschreiben wie pins belegt sind, wann GPIO bzw wann module (s. Pinbelegung) auf Pins liegen ( bei POSIF Kapitel beschreiben
+
 Das Modul stellt für jeden Pin die erste Funktionsauswahl bereit und legt so die Datenrichtung fest. Im \enquote{Port Input/Output Control Register} des Moduls wird für jeden Pin festgelegt, ob er als Eingang oder Ausgang verwendet wird. Das momentane elektrische Potential am Eingang wird bei letzterem mit einem Schmitt-Trigger in ein binäres logisches Signal übersetzt. Ist der Pin ein Eingang, so kann das logische Eingangssignal dort zusätzlich invertiert werden. Wird ein Pin des XMC als Ausgang konfiguriert, so kann gesteuert werden, ob es sich um einen \ac{GPIO}-Pin handelt, dessen Status von der Software direkt festgelegt wird. Dabei kann ausgewählt werden, ob das logische Ausgangssignal durch einen Treiber in Open-Drain Konfiguration oder durch Push-Pull erzeugt werden soll. 
 
-Zur Nutzung eines Ausgangs durch die im Mikrocontroller verfügbaren Peripherie sind diese direkt mit den entsprechenden Modulen verbunden. Dadurch kann das Modul selbst den elektrischen Zustand am Eingang auslesen und verwerten oder festlegen wenn es sich um einen Ausgang handelt\cite{XMC-Reference}. 
+Zur Nutzung eines Ausgangs durch die im Mikrocontroller verfügbaren Peripherie sind diese direkt mit den entsprechenden Modulen verbunden. Dadurch kann das Modul selbst den elektrischen Zustand am Eingang auslesen und verwerten oder festlegen wenn es sich um einen Ausgang handelt \cite{XMC-Reference}. 
 Auch das weitere Verhalten von Pins, wie etwa  beim Anschalten, bevor die Versorgungsspannung ein gültiges Level erreicht hat, lassen sich im PORTS-Modul anpassen.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Abbildungen/StructureDigitalPin}
+	\caption{Struktur eines Digitalpins des XMC Mikrocontroller. aus \cite{XMC-Reference}}
+	\label{fig:structuredigitalpin}
+\end{figure}
+
 
 \subsection{USIC}
 Die \acp{IC} der XMC-Familie verfügen über ein Modul zu Kommunikation über diverse serielle Protokolle, den \acf{USIC}. Dieses ist programmierbar und erlaubt damit eine individuelle Verwendung, kann aber gleichzeitig die notwendigen Arbeiten für den Prozessor übernehmen. Der XMC4500 verfügt über insgesamt sechs \ac{USIC}-Kanäle und kann somit mehrere Protokolle gleichzeitig verwenden. Die Mikrocontroller unterstützen die  Protokolle UART, I$^{2}$C, IIS, LIN und das für die Basisstation verwendete SPI in einfacher, doppelter und quad-Ausführung. Für diese Arbeit wurde alle Kommunikation mit einem gemeinsamen \acs{USIC}-Kanal umgesetzt. Da die einzelnen \acp{USIC} und deren Kanäle verschieden viele Slave-Select-Leitungen besitzen, wurde der Kanal $0$ des \ac{USIC} $0$ ausgewählt, nur dieser verfügt über die benötigten sechs Select-Leitungen. Eine Umsetzung mit einem anderen USIC wäre ebenfalls möglich gewesen. Die Wahl des Transceivers hätte dann aber manuell erfolgen müssen und hätten nicht vom das Modul geregelt werden können.
@@ -66,14 +80,16 @@ Die durch die Software umgesetzte serielle Übertragung zwischen den \acp{IC} en
 Der \ac{USIC} des XMC beginnt nun die Clockleitung des Busses zu treiben. Eine Periode dieser zyklischen Rechteckspannung begrenzen dabei die Zeit in der das auf den \ac{MOSI} und \ac{MISO}-Leitungen ein Bit übertragen wird. Dabei stellt nach der Definition aus dem Datenblatt des Transceivers ein \unit[0]{V}-Spannungspegel eine logische $0$ dar. In der Kommunikation mit den TDA5340 werden jeweils acht Bit zu einem Datenwort zusammengefasst. Der Transceiver erwartet mit dem ersten Datenwort eine Instruktion und je nach Art dieser noch einen Parameter durch die Übertragung des folgenden Wortes. Mögliche Anweisungen sind dabei das Lesen oder Schreiben eines Registers dessen Adresse als Parameter übertragen wird, das Auslesen oder Beschreiben der \ac{FIFO}-Speicher oder das Setzen des TDA5340 in den so genannten \enquote{Transparent Mode} auf den nicht weiter eingegangen werden soll. Nach Übertragung von Instruktion und Parameter werden entweder vom Master oder vom Slave, also vom Transceiver, die gewünschten Daten übertragen.
 
 Beim Schreibzugriff auf den TDA kann durch geeignete Instruktion gewählt werden ob nur auf ein Register geschrieben wird oder ob der Transceiver nachfolgende Datenwörter als Werte in die folgenden Register übernehmen soll. 
-Beim Lesezugriff besteht die selbe Auswahlmöglichkeit. Bild ..... zeigt den Start einer solchen \ac{SPI}-Kommunikation zwischen dem Transceiver und dem Mikrocontroller. Die Dauer der Übertragung betrug etwa \unit[0,26]{ms}.  %TODO einfügen Bild SPI Übertragung  Bei dieser wurde die Instuktion und die Daten... übertragen
+Beim Lesezugriff besteht die selbe Auswahlmöglichkeit. Bild \ref{fig:spistart} zeigt den Start einer solchen \ac{SPI}-Kommunikation zwischen dem Transceiver TDA1 und dem Mikrocontroller. Die Dauer der Übertragung betrug etwa \unit[0,26]{ms}. Bei dieser wurde die Instruktion \enquote{Read from Chip}, dargestellt durch den Hexadezimalwert 0x03 und die Registeradresse 0xD3 als Parameter vom Mikrocontroller zum Transceiver übertragen. Dieser teilt durch das folgende Datenwort auf der \ac{MISO}-Leitung, in diesem Fall 0xFF den aktuellen Wert des Registers mit. Der Master beendet daraufhin die Kommunikation durch einen High-Pegel an der Select-Leitung
 
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{"Abbildungen/Aufnahmen/Bilder/Logic Analyser/SPI_Start"}
+\caption{Start einer SPI-Übertragung zwischen dem Mikrocontroller und dem Transceiver}
+\label{fig:spistart}
+\end{figure}
 
-
-
-
-%cpol etc beschreiben?
 
 \subsection{TDA5340 Library}
 Die Hauptaufgabe in der Kommunikation mit den Transceiver-\acp{IC} wurde durch die vorgegebene Bibliothek für den TDA5340 übernommen. Diese stellte Funktionen zum Senden und Empfangen von Daten mit dem Transceiver zur Verfügung. Die Bibliothek liest dazu den Empfangs-\ac{FIFO} aus oder schreibt in den Puffer für zu sendende Daten. Auch der Lese- und Schreib-Zugriff auf die Steuerregister der Transceiver kann über die Bibliothek geregelt werden. Dazu stellt die Bibliothek auch entsprechende Makros bereit, welche die Namen der Register in die hexadezimale entsprechende Adresse umwandeln, was die Lesbarkeit erheblich beeinflusst. Daneben wurde über die Bibliothek auch die notwendigen  Einstellungen für das Erkennen von Interrupt im XMC4500 vorgenommen. In diesem Bereich waren die notwendigen Anpassungen der Library am tiefgreifendsten, da diese nur für die Interruptbehandlung mit einem Transceiver ausgelegt war. Bei anderen Funktionen der Bibliothek waren nur kleinere Anpassungen notwenig, sodass etwa sichergestellt wurde, für welchen Transceiver die aufgerufene Funktion ausgeführt werden sollte, etwa bei welchem das entsprechende Register ausgelesen wurde.

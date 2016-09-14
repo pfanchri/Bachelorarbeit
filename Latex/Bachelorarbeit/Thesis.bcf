@@ -1948,7 +1948,9 @@
     <bcf:citekey order="1">SabolcikGHzoderSub</bcf:citekey>
     <bcf:citekey order="2">TDA-UserManual</bcf:citekey>
     <bcf:citekey order="3">XMC-Reference</bcf:citekey>
-    <bcf:citekey order="4">BuchSPI</bcf:citekey>
+    <bcf:citekey order="4">XMC-Reference</bcf:citekey>
+    <bcf:citekey order="5">XMC-Reference</bcf:citekey>
+    <bcf:citekey order="6">BuchSPI</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
