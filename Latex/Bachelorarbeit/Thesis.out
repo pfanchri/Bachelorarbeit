@@ -5,7 +5,7 @@
 \BOOKMARK [0][-]{chapter.2}{Platinenaufbau}{}% 5
 \BOOKMARK [1][-]{section.2.1}{Vor\374berlegungen}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.2}{Layoutprogramm Altium Designer}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.3}{verwendete Hardware}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Verwendete Hardware}{chapter.2}% 8
 \BOOKMARK [2][-]{subsection.2.3.1}{TDA5340}{section.2.3}% 9
 \BOOKMARK [2][-]{subsection.2.3.2}{XMC4500}{section.2.3}% 10
 \BOOKMARK [2][-]{subsection.2.3.3}{Ethernet}{section.2.3}% 11
@@ -14,13 +14,13 @@
 \BOOKMARK [1][-]{section.2.5}{Best\374ckung}{chapter.2}% 14
 \BOOKMARK [0][-]{chapter.3}{Software}{}% 15
 \BOOKMARK [1][-]{section.3.1}{DAVE Entwicklungsumgebung}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{verwendete Peripherie des XMC4500}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Verwendete Peripherie des XMC4500}{chapter.3}% 17
 \BOOKMARK [2][-]{subsection.3.2.1}{GPIO}{section.3.2}% 18
 \BOOKMARK [2][-]{subsection.3.2.2}{USIC}{section.3.2}% 19
 \BOOKMARK [2][-]{subsection.3.2.3}{ERU}{section.3.2}% 20
 \BOOKMARK [2][-]{subsection.3.2.4}{USB}{section.3.2}% 21
 \BOOKMARK [2][-]{subsection.3.2.5}{Ethernet}{section.3.2}% 22
-\BOOKMARK [1][-]{section.3.3}{verwendete Bibliotheken}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Verwendete Bibliotheken}{chapter.3}% 23
 \BOOKMARK [2][-]{subsection.3.3.1}{XMC Library \(XMC Lib\)}{section.3.3}% 24
 \BOOKMARK [2][-]{subsection.3.3.2}{SPI Library}{section.3.3}% 25
 \BOOKMARK [2][-]{subsection.3.3.3}{TDA5340 Library}{section.3.3}% 26
