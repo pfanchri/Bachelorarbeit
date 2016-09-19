@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  19 SEP 2016 09:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.20)  19 SEP 2016 10:15
 entering extended mode
 **Thesis.tex
 (D:\Bachelorarbeit\Latex\Bachelorarbeit\Thesis.tex
@@ -2240,9 +2240,9 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 34.
 ) (D:\Bachelorarbeit\Latex\Bachelorarbeit\Abschnitte/Platinenaufbau.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2354,8 +2354,11 @@ Package babel Info: Redefining ngerman shorthand "~
 [6]
 Package acronym Info: Label `acro:IC' newly defined as it shall be overridden
 although it is yet undefined on input line 70.
-
-<Abbildungen/Aufnahmen/Bilder/Altium/TDA.png, id=517, 563.10374pt x 760.34062pt
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 70.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+<Abbildungen/Aufnahmen/Bilder/Altium/TDA.png, id=516, 563.10374pt x 760.34062pt
 >
 File: Abbildungen/Aufnahmen/Bilder/Altium/TDA.png Graphic file (type png)
  <use Abbildungen/Aufnahmen/Bilder/Altium/TDA.png>
@@ -2368,10 +2371,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package acronym Info: Label `acro:SMA' newly defined as it shall be overridden
 although it is yet undefined on input line 80.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 81.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+
 Underfull \vbox (badness 2875) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -3525,10 +3525,10 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 48617 strings out of 493705
- 1058599 string characters out of 3144558
+ 48618 strings out of 493705
+ 1058608 string characters out of 3144558
  1892804 words of memory out of 3000000
- 50329 multiletter control sequences out of 15000+200000
+ 50330 multiletter control sequences out of 15000+200000
  84990 words of font info for 118 fonts, out of 3000000 for 9000
  1031 hyphenation exceptions out of 8191
  66i,18n,83p,3572b,3213s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3547,7 +3547,7 @@ blic/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb>
 ts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb>
-Output written on Thesis.pdf (65 pages, 2378244 bytes).
+Output written on Thesis.pdf (65 pages, 2378500 bytes).
 PDF statistics:
  1464 PDF objects out of 1728 (max. 8388607)
  499 named destinations out of 1000 (max. 500000)
