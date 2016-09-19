@@ -1952,16 +1952,19 @@
     <bcf:citekey order="5">TDA-UserManual</bcf:citekey>
     <bcf:citekey order="6">Bauer2012New-Infineon-32</bcf:citekey>
     <bcf:citekey order="7">Bauer2012New-Infineon-32</bcf:citekey>
-    <bcf:citekey order="8">DAVE-3-Example-</bcf:citekey>
-    <bcf:citekey order="9">dausmann2011c</bcf:citekey>
-    <bcf:citekey order="10">DAVEQuickStart</bcf:citekey>
-    <bcf:citekey order="11">DAVE-Version-4</bcf:citekey>
-    <bcf:citekey order="12">XMC-DataSheet</bcf:citekey>
-    <bcf:citekey order="13">XMC-DataSheet</bcf:citekey>
-    <bcf:citekey order="14">XMC-Reference</bcf:citekey>
-    <bcf:citekey order="15">XMC-Reference</bcf:citekey>
-    <bcf:citekey order="16">XMC-Reference</bcf:citekey>
-    <bcf:citekey order="17">BuchSPI</bcf:citekey>
+    <bcf:citekey order="8">XMC-DataSheet</bcf:citekey>
+    <bcf:citekey order="9">DAVE-3-Example-</bcf:citekey>
+    <bcf:citekey order="10">TDA-DataSheet</bcf:citekey>
+    <bcf:citekey order="11">XMC-DataSheet</bcf:citekey>
+    <bcf:citekey order="12">dausmann2011c</bcf:citekey>
+    <bcf:citekey order="13">DAVEQuickStart</bcf:citekey>
+    <bcf:citekey order="14">DAVE-Version-4</bcf:citekey>
+    <bcf:citekey order="15">XMC-DataSheet</bcf:citekey>
+    <bcf:citekey order="16">XMC-DataSheet</bcf:citekey>
+    <bcf:citekey order="17">XMC-Reference</bcf:citekey>
+    <bcf:citekey order="18">XMC-Reference</bcf:citekey>
+    <bcf:citekey order="19">XMC-Reference</bcf:citekey>
+    <bcf:citekey order="20">BuchSPI</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

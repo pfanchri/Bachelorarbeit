@@ -19,7 +19,7 @@ Für die Basisstation waren vor allem der \acs{USIC}, der \ac{USB} sowie der \ac
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{Abbildungen/XMCBlockdiagram}
-\caption{Blockdiagramm zur Peripherie des XMC4500 Mikrocontroller und die Anbindung an den Cortex-M4 Kern. aus \cite{XMC-DataSheet}}
+\caption{Blockdiagramm zur Peripherie des XMC4500 Mikrocontroller und die Anbindung an den Cortex-M4 Kern \cite{XMC-DataSheet}}
 \label{fig:xmcblockdiagram}
 \end{figure}
 
@@ -33,20 +33,20 @@ Die \acp{GPIO} werden im so genannten PORTS-Modul der XMC-Architektur gesteuert.
 %Bild StructureDigitalPin einbinden
 %beschreiben wie pins belegt sind, wann GPIO bzw wann module (s. Pinbelegung) auf Pins liegen ( bei POSIF Kapitel beschreiben
 
-Das Modul stellt für jeden Pin die erste Funktionsauswahl bereit und legt so die Datenrichtung fest. Im \enquote{Port Input/Output Control Register} des Moduls wird für jeden Pin festgelegt, ob er als Eingang oder Ausgang verwendet wird. Das momentane elektrische Potential am Eingang wird bei letzterem mit einem Schmitt-Trigger in ein binäres logisches Signal übersetzt. Ist der Pin ein Eingang, so kann das logische Eingangssignal dort zusätzlich invertiert werden. Wird ein Pin des XMC als Ausgang konfiguriert, so kann gesteuert werden, ob es sich um einen \ac{GPIO}-Pin handelt, dessen Status von der Software direkt festgelegt wird. Dabei kann ausgewählt werden, ob das logische Ausgangssignal durch einen Treiber in Open-Drain Konfiguration oder durch Push-Pull erzeugt werden soll. 
+Das Modul stellt für jeden Pin die erste Funktionsauswahl bereit und legt so die Datenrichtung fest. Im \enquote{Port Input/Output Control Register} des Moduls wird für jeden Pin festgelegt, ob er als Eingang oder Ausgang verwendet wird. Das momentane elektrische Potential am Eingang wird bei letzterem mit einem Schmitt-Trigger in ein binäres logisches Signal übersetzt. Ist der Pin ein Eingang, so kann das logische Eingangssignal dort zusätzlich invertiert werden. Wird ein Pin des XMC als Ausgang konfiguriert, so kann gesteuert werden, ob es sich um einen \ac{GPIO}-Pin handelt, dessen Status von der Software direkt festgelegt wird. Dabei kann ausgewählt werden, ob das logische Ausgangssignal durch einen Treiber in Open-Drain-Konfiguration oder durch Push-Pull erzeugt werden soll. 
 
 Zur Nutzung eines Ausgangs durch die im Mikrocontroller verfügbaren Peripherie sind diese direkt mit den entsprechenden Modulen verbunden. Dadurch kann das Modul selbst den elektrischen Zustand am Eingang auslesen und verwerten oder festlegen wenn es sich um einen Ausgang handelt \cite{XMC-Reference}. 
 Auch das weitere Verhalten von Pins, wie etwa  beim Anschalten, bevor die Versorgungsspannung ein gültiges Level erreicht hat, lassen sich im PORTS-Modul anpassen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Abbildungen/StructureDigitalPin}
-	\caption{Struktur eines Digitalpins des XMC Mikrocontroller. aus \cite{XMC-Reference}}
+	\caption{Struktur eines Digitalpins des XMC Mikrocontroller \cite{XMC-Reference}}
 	\label{fig:structuredigitalpin}
 \end{figure}
 
 
 \subsection{USIC}
-Die \acp{IC} der XMC-Familie verfügen über ein Modul zu Kommunikation über diverse serielle Protokolle, den \acf{USIC}. Dieses ist programmierbar und erlaubt damit eine individuelle Verwendung, kann aber gleichzeitig die notwendigen Arbeiten für den Prozessor übernehmen. Der XMC4500 verfügt über insgesamt sechs \ac{USIC}-Kanäle und kann somit mehrere Protokolle gleichzeitig verwenden. Die Mikrocontroller unterstützen die  Protokolle UART, I$^{2}$C, IIS, LIN und das für die Basisstation verwendete SPI in einfacher, doppelter und quad-Ausführung. Für diese Arbeit wurde alle Kommunikation mit einem gemeinsamen \acs{USIC}-Kanal umgesetzt. Da die einzelnen \acp{USIC} und deren Kanäle verschieden viele Slave-Select-Leitungen besitzen, wurde der Kanal $0$ des \ac{USIC} $0$ ausgewählt, nur dieser verfügt über die benötigten sechs Select-Leitungen. Eine Umsetzung mit einem anderen USIC wäre ebenfalls möglich gewesen. Die Wahl des Transceivers hätte dann aber manuell erfolgen müssen und hätten nicht vom das Modul geregelt werden können.
+Die \acp{IC} der XMC-Familie verfügen über ein Modul zu Kommunikation über diverse serielle Protokolle, den \acf{USIC}. Dieses ist programmierbar und erlaubt damit eine individuelle Verwendung, kann aber gleichzeitig die notwendigen Arbeiten für den Prozessor übernehmen. Der XMC4500 verfügt über insgesamt sechs \ac{USIC}-Kanäle und kann somit mehrere Protokolle gleichzeitig verwenden. Die Mikrocontroller unterstützen die  Protokolle UART, I$^{2}$C, IIS, LIN und das für die Basisstation verwendete SPI in einfacher, doppelter und quad-Ausführung. Für diese Arbeit wurde alle Kommunikation mit einem gemeinsamen \acs{USIC}-Kanal umgesetzt. Da die einzelnen \acp{USIC} und deren Kanäle verschieden viele Slave-Select-Leitungen besitzen, wurde der Kanal $0$ des \ac{USIC} $0$ ausgewählt, nur dieser verfügt über die benötigten sechs Select-Leitungen. Eine Umsetzung mit einem anderen USIC wäre ebenfalls möglich gewesen. Die Wahl des Transceivers hätte dann aber manuell erfolgen müssen und hätten nicht vom Modul geregelt werden können.
 %beschreiben Funktion
 %wo SPI allgmein beschreiben
 
@@ -58,7 +58,7 @@ Bei Vorliegen aller Bedingungen für einen Interrupt wird diese Information an d
 %Interrupt Request, IRQ im gegensatz zu isr https://de.wikipedia.org/wiki/Interrupt
 
 \subsection{USB}
-Das \ac{USB}-Modul des XMC4500 arbeitet nach den  Spezifikationen für USB 2.0 und den \enquote{On-The-Go}-Spezifikationen der Version 1.3. Der Mikrocontroller könnte durch das \ac{USB}-Modul sowohl als Host oder als USB-Slave  arbeiten. In diesem Fall wurde der \ac{IC} als Slave betrieben. Das \ac{USB}-Modul verfügt über eine eigene Interruptsteuerung und ist damit eine der oben erwähnten Peripherien des XMC, deren Steuerung auch über Interrupts gelöst ist. Die gesamte Übertragung wird durch den \ac{USB}-Kern gesteuert und empfangene oder zu sendende Pakete werden in einem \ac{FIFO}-Puffer gespeichert. Für die Kommunikation der Basisstation mit dem Host-Computer wird ein virtueller COM-Port durch das \ac{USB}-Interface emuliert.
+Das \ac{USB}-Modul des XMC4500 arbeitet nach den  Spezifikationen für USB 2.0 und den \enquote{On-The-Go}-Spezifikationen der Version 1.3. Der Mikrocontroller könnte durch das \ac{USB}-Modul entweder als Host oder als USB-Slave  arbeiten. In diesem Fall wurde der \ac{IC} als Slave betrieben. Das \ac{USB}-Modul verfügt über eine eigene Interruptsteuerung und ist damit eine der oben erwähnten Peripherien des XMC, deren Steuerung auch über Interrupts gelöst ist. Die gesamte Übertragung wird durch den \ac{USB}-Kern gesteuert und empfangene oder zu sendende Pakete werden in einem \ac{FIFO}-Puffer gespeichert. Für die Kommunikation der Basisstation mit dem Host-Computer wird ein virtueller COM-Port durch das \ac{USB}-Interface emuliert.
 
 \subsection{Ethernet} 
 Im XMC4500 werden Netzwerkverbindungen durch das  Ethernet-Modul behandelt. Dieses unterstützt Datenübertragungen mit Geräten über IPv4 und IPv6 sowie Übertragungsraten von \unit[10/100]{MBit/s}.  Dazu werden zunächst die Daten von der CPU über ein Bus-Interface übertragen. Im \enquote{MAC Transaction Layer} werden die vom Prozessor bzw. über Ethernet empfangenen Datenpakete zwischengespeichert. Der Ethernet-Kern formatiert die zu sendenden Daten und stellt sie einem \enquote{Physical Layer} zu, welches die Daten für den Kanal moduliert.
@@ -82,7 +82,33 @@ XMC_SPI_CH_Transmit(channel, data, XMC_SPI_CH_MODE_STANDARD);
 \subsubsection*{SPI Übertragung}
 %todo: verschieben?
 Die durch die Software umgesetzte serielle Übertragung zwischen den \acp{IC} entspricht dem \ac{SPI}-Protokoll, das ursprünglich von Motorola entwickelt wurde\cite{BuchSPI}. Durch das Chip Select–Signal wählt der XMC den entsprechenden Transceiver aus. Da der TDA5340 active-Low arbeitet, also bei anliegendem \ac{GND}-Potential als ausgewählt gilt, wird dieser Eingang im Datenblatt auch als \acf{NCS} bezeichnet. 
-Der \ac{USIC} des XMC beginnt nun die Clockleitung des Busses zu treiben. Eine Periode dieser zyklischen Rechteckspannung begrenzen dabei die Zeit in der das auf den \ac{MOSI} und \ac{MISO}-Leitungen ein Bit übertragen wird. Dabei stellt nach der Definition aus dem Datenblatt des Transceivers ein \unit[0]{V}-Spannungspegel eine logische $0$ dar. In der Kommunikation mit den TDA5340 werden jeweils acht Bit zu einem Datenwort zusammengefasst. Der Transceiver erwartet mit dem ersten Datenwort eine Instruktion und je nach Art dieser noch einen Parameter durch die Übertragung des folgenden Wortes. Mögliche Anweisungen sind dabei das Lesen oder Schreiben eines Registers dessen Adresse als Parameter übertragen wird, das Auslesen oder Beschreiben der \ac{FIFO}-Speicher oder das Setzen des TDA5340 in den so genannten \enquote{Transparent Mode} auf den nicht weiter eingegangen werden soll. Nach Übertragung von Instruktion und Parameter werden entweder vom Master oder vom Slave, also vom Transceiver, die gewünschten Daten übertragen.
+
+Der \ac{USIC} des XMC beginnt nun die Clockleitung des Busses zu treiben. Eine Periode dieser zyklischen Rechteckspannung begrenzt dabei die Zeit in der das auf den \ac{MOSI} und \ac{MISO}-Leitungen ein Bit übertragen wird. Hierbei existieren verschiedene Konfigurationen: so kann die Clock-Leitung im Ruhezustand einen High- oder einen Low-Pegel aufweisen, was durch die Polarität (CPOL) festgelegt wird. Das Auslesen der Spannungswerte auf den Datenleitungen kann bei fallender und steigender Taktflanke (CKPHA) durchgeführt werden, woraus sich insgesamt vier Kombinationsmöglichkeiten ergeben.
+
+Dabei stellt nach der Definition aus dem Datenblatt des Transceivers ein \unit[0]{V}-Spannungspegel eine logische $0$ dar. In der Kommunikation mit den TDA5340 werden jeweils acht Bit zu einem Datenwort zusammengefasst. Der Transceiver erwartet mit dem ersten Datenwort eine Instruktion und je nach Art dieser noch einen Parameter durch die Übertragung des folgenden Wortes. Mögliche Anweisungen sind dabei das Lesen oder Schreiben eines Registers dessen Adresse als Parameter übertragen wird, das Auslesen oder Beschreiben der \ac{FIFO}-Speicher oder das Setzen des TDA5340 in den so genannten \enquote{Transparent Mode} auf den nicht weiter eingegangen werden soll. Nach Übertragung von Instruktion und Parameter werden entweder vom Master oder vom Slave, also vom Transceiver, die gewünschten Daten übertragen.
+
+
+\begin{table}[tbh]
+	\centering
+	\begin{tabular}{lcl}
+		
+		Instruktion & Datenwort & übergebener Parameter  \\
+		Register Schreiben (schnell) & 0x01 & Adresse des ersten zu schreibenden Registers   \\
+		Register Schreiben & 0x02 & Adresse des zu schreibenden Registers   \\  
+		Register Lesen & 0x03 & Adresse des zu lesenden Registers   \\  
+		FIFO Lesen & 0x04 &  $kein Parameter$ \\  
+		Register Lesen (schnell) & 0x05 & Adresse des ersten zu lesenden Registers   \\  
+		FIFO Schreiben & 0x06 & Länge der Übertragung -1   \\  
+	\end{tabular}
+	\caption{SPI-Instruktionen des Transceivers und die entsprechenden auf der MOSI-Leitung übertragenen Datenwörter und Parameter. Die beiden Instruktionen zum transparenten Senden sind nicht enthalten. }
+	\label{tab:SPIcommands}
+\end{table}
+
+
+
+
+
+
 
 Beim Schreibzugriff auf den TDA kann durch geeignete Instruktion gewählt werden ob nur auf ein Register geschrieben wird oder ob der Transceiver nachfolgende Datenwörter als Werte in die folgenden Register übernehmen soll. 
 Beim Lesezugriff besteht die selbe Auswahlmöglichkeit. Bild \ref{fig:spistart} zeigt den Start einer solchen \ac{SPI}-Kommunikation zwischen dem Transceiver TDA1 und dem Mikrocontroller. Die Dauer der Übertragung betrug etwa \unit[0,26]{ms}. Bei dieser wurde die Instruktion \enquote{Read from Chip}, dargestellt durch den Hexadezimalwert 0x03 und die Registeradresse 0xD3 als Parameter vom Mikrocontroller zum Transceiver übertragen. Dieser teilt durch das folgende Datenwort auf der \ac{MISO}-Leitung, in diesem Fall 0xFF den aktuellen Wert des Registers mit. Der Master beendet daraufhin die Kommunikation durch einen High-Pegel an der Select-Leitung
@@ -97,8 +123,8 @@ Beim Lesezugriff besteht die selbe Auswahlmöglichkeit. Bild \ref{fig:spistart} 
 
 
 \subsection{TDA5340 Library}
-Die Hauptaufgabe in der Kommunikation mit den Transceiver-\acp{IC} wurde durch die vorgegebene Bibliothek für den TDA5340 übernommen. Diese stellte Funktionen zum Senden und Empfangen von Daten mit dem Transceiver zur Verfügung. Die Bibliothek liest dazu den Empfangs-\ac{FIFO} aus oder schreibt in den Puffer für zu sendende Daten. Auch der Lese- und Schreib-Zugriff auf die Steuerregister der Transceiver kann über die Bibliothek geregelt werden. Dazu stellt die Bibliothek auch entsprechende Makros bereit, welche die Namen der Register in die hexadezimale entsprechende Adresse umwandeln, was die Lesbarkeit erheblich beeinflusst. Daneben wurde über die Bibliothek auch die notwendigen  Einstellungen für das Erkennen von Interrupt im XMC4500 vorgenommen. In diesem Bereich waren die notwendigen Anpassungen der Library am tiefgreifendsten, da diese nur für die Interruptbehandlung mit einem Transceiver ausgelegt war. Bei anderen Funktionen der Bibliothek waren nur kleinere Anpassungen notwenig, sodass etwa sichergestellt wurde, für welchen Transceiver die aufgerufene Funktion ausgeführt werden sollte, etwa bei welchem das entsprechende Register ausgelesen wurde.
-Zur Verbindung mit den TDA5340 basierte die Bibliothek auf der SPI Library. Dieser wurde die Nummer des Transceivers als Chip-Select übergeben um sicherzustellen, das mit dem richtigen kommuniziert wurde.
+Die Hauptaufgabe in der Kommunikation mit den Transceiver-\acp{IC} wurde durch die vorgegebene Bibliothek für den TDA5340 übernommen. Diese stellte Funktionen zum Senden und Empfangen von Daten mit dem Transceiver zur Verfügung. Die Bibliothek liest dazu den Empfangs-\ac{FIFO} aus oder schreibt in den Puffer für zu sendende Daten. Auch der Lese- und Schreib-Zugriff auf die Steuerregister der Transceiver kann über die Bibliothek geregelt werden. Dazu stellt die Bibliothek auch entsprechende Makros bereit, welche die Namen der Register in die hexadezimale entsprechende Adresse umwandeln um so die Lesbarkeit erheblich zu erhöhen. Daneben wurde über die Bibliothek auch die notwendigen  Einstellungen für das Erkennen von Interrupt im XMC4500 vorgenommen. In diesem Bereich waren die notwendigen Anpassungen der Library am tiefgreifendsten, da diese nur für die Interruptbehandlung mit einem Transceiver ausgelegt war. Bei anderen Funktionen der Bibliothek waren nur kleinere Anpassungen notwenig, sodass etwa sichergestellt wurde, für welchen Transceiver die aufgerufene Funktion ausgeführt werden sollte, etwa bei welchem das entsprechende Register ausgelesen wurde.
+Zur Verbindung mit den TDA5340 basierte die Bibliothek auf der SPI Library. Dieser wurde die Nummer des Transceivers als Chip-Select übergeben um sicherzustellen, dass mit dem richtigen kommuniziert wurde.
 
 
 \subsection{Virtueller COM Port}
@@ -107,6 +133,13 @@ Die Bibliothek und das Beispielprojekt wurde dahingehend angepasst, dass ganze Z
 
 
 \section{Programmablauf}
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.7\linewidth, trim=3.2cm 22.7cm 2.5cm 2.5cm,clip=true]{Abbildungen/Blockdiagramme/Initialisierung}
+\caption{Programmablauf der Basisstation}
+\label{fig:initialisierung}
+\end{figure}
+
 Im Programmablauf des XMC wurde zunächst eine Warteschleife umgesetzt, in welcher der Mikrocontroller auf eine erste Eingabe durch den Benutzer am Hostcomputer wartet. Bereits hier wurde die Übertragung über den seriellen COM-Port initialisiert. Nachdem diese Bestätigung über den COM-Port vom Mikrocontroller empfangen wurde setzt dieser zunächst alle Transceiver in den Schlafmodus, von welchem aus eine Kommunikation möglich ist. Daraufhin beginnt der XMC4500 mit der Konfiguration der für die Interrupts notwendigen Pins und ermöglicht somit das Empfangen von \acp{IRQ} durch die TDA5430. Anschließend initialisiert er zunächst das SPI-Modul, um im folgenden die Transceiver darüber konfigurieren zu können. Bevor das dazu notwendige Schreiben in die Register der TDAs jedoch möglich ist, wird eine gewisse Verzögerung benötigt. Diese resultiert daher, dass der Wechsel des TDA vom ausgeschalteten Zustand in den Schlafmodus eine gewisse Zeitspanne benötigt. 
 Im folgenden werden alle Transceiver initialisiert und anschließend in den Receiver-Modus gefahren.  
 Daraufhin setzt der \ac{IC} noch alle für die Übertragung notwendigen Variablen  und alle Felder zum Speichern von Daten zu null. 
@@ -143,8 +176,21 @@ In den Interrupt-Registern sind die Ereignisse kodiert, die einen Interrupt ausg
 Die dritte Stufe  der Datenerfassung ist nun die Abfrage der Daten vom Transceiver. Da diese \ac{SPI}-Datenübertragung deutlich mehr Zeit in Anspruch nimmt, muss diese getrennt vom Erkennen der Interrupts und dem Auslesen der Interrupt-Register erfolgen. Da die gewünschten Werte in den Registern gespeichert sind, ist das Auslesen zeitkritisch, denn eine erneute Übertragung würde diese Messwerte überschreiben. Jedoch ist das Auslesen der Werte bei weitem nicht so zeitkritisch wie die ankommenden Interrupts, da diese im Verlauf einer Übertragung auch mehrfach ankommen können. Das Abfragen der empfangenen Daten aus dem \ac{FIFO}-Speicher hat eine noch geringere Priorität, da dieser die Datenpakete bis zum Auslesen behält. Eine Abfrage der Messwerte und ein Auslesen des \ac{FIFO} wird bei abgeschlossener Übertragung durchgeführt, diesen Zeitpunkt erkennt der Mikrocontroller durch das entsprechend gesetzte Bit des Interrupt-Register. Der XMC4500 speichert alle abgefragten Werte wie Feldstärke, die Einstellungen der \ac{AGC} und die angekommenen Daten in den vorbereiteten dedizierten Speichern. Abschließend werden die Transceiver wieder in den Empfangsmodus gesetzt. 
 
 Beim Setzen der Flaggen durch den Interrupt fiel auf, das die Interrupteingänge für Transceiver 3 und Transceiver 6 sich überlagern. So ist der PP2 Anschluss des dritten TDA5340 mit der \ac{ETL}3 der \ac{ERU}0 verbunden, ebenso wie der entsprechende Pin des TDA6. Grund dafür ist, die entsprechenden Pins dem Mikrocontroller auf dem Kanal B3 bzw. A0 der genannten \ac{ERU}-\ac{ETL}-Kombination führen. Bei den ersten Tests von Interrupts auf diesen Kanälen stellte sich heraus, das der XMC, entgegen der Erwartungen, somit nicht in der Lage ist ankommende Interrupts der beiden Transceiver zu unterscheiden. Durch entsprechende Einstellungen in der \ac{ERU}0 war ein Sprung des Prozessors in die entsprechende \acl{ISR} nur für jeweils einen der beiden Transceiver möglich. Um trotzdem eine Auslesen der beiden Transceiver zu bewirken, wurden beide Flaggen in der Service Routine gesetzt.
-
-Der Versuch den PP2 Pin des TDA6 mittels eines kurzen Drahtes auf den Pin 142 des XMC4500 zu legen schlug ebenfalls fehl. Dazu wurde der PP1 Pin des TDA1, welcher mit diesem Pin des Mikrocontroller verbunden ist im Transceiver 1 in einen hochohmigen Zustand geschaltet. Dieser Pin des XMC ist intern mit der \ac{ETL}2 der \ac{ERU}0 auf dem Kanal B3 verbunden. Da diese Kombination noch nicht verwendet wurde hätte hier eine Interrupterkennung funktionieren müssen. Warum durch diese Veränderung kein Interrupt ausgelöst werden konnte ist nicht klar. Da in der Betrachtung mit dem Logic-Analyser keine Flanke auf dem Netz festgestellt wurde, ist zu vermuten, dass das Problem aus der Verbindung mit dem Draht resultiert.
+\begin{table}[h]
+	\centering
+\begin{tabular}{ccccc}
+	Transceiver & Port/Pin am XMC & ERU & ETL & Kanal \\ 
+	TDA1 & 0.3 & 1 & 3 & B0 \\ 
+	TDA2 & 1.0 & 0 & 3 & B0 \\ 
+	TDA3 & 2.6 & 0 & 1 & B3 \\ 
+	TDA4 & 2.1 & 1 & 0 & B0 \\ 
+	TDA5 & 3.2 & 0 & 0 & A1 \\ 
+	TDA5 & 0.10 & 0 & 1 & A0 \\ 
+\end{tabular} 
+\caption{PP2-Pins der Transceiver mit den entsprechenden Anschlüssen am XMC4500 und die Verbindung zur ERU}
+\label{tab:PP2ERU}
+\end{table}
+Der Versuch den PP2 Pin des TDA6 mittels eines kurzen Drahtes auf den Pin 142 des XMC4500 zu legen schlug ebenfalls fehl. Dazu wurde der PP1 Pin des TDA1, welcher mit diesem Pin des Mikrocontroller verbunden ist im Transceiver 1 in einen hochohmigen Zustand geschaltet. Dieser Pin des XMC ist intern mit der \ac{ETL}2 der \ac{ERU}0 auf dem Kanal B3 verbunden. Da diese Kombination noch nicht verwendet wurde hätte hier eine Interrupterkennung funktionieren müssen. Warum durch diese Veränderung kein Interrupt ausgelöst werden konnte, ist nicht klar. Da in der Betrachtung mit dem Logic-Analyser keine Flanke auf dem Netz festgestellt wurde, ist zu vermuten, dass das Problem aus der Verbindung mit dem Draht resultiert.
 %unterscheidung der zwei interruptabfragen
 %was steht in den registern drinnen und wird abgefragt
 
@@ -193,5 +239,9 @@ Auch wurden die empfangenen Übertragungen durchnummeriert und die entsprechende
 \centering
 \includegraphics[width=0.7\linewidth]{Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1}
 \caption{Ausgabe des Mikrocontroller über den COM-Port in der Konsole bei einer beispielhaften Übertragung}
-\label{fig:ubertragung}
+\label{fig:ConsolePutty}
 \end{figure}
+
+
+
+

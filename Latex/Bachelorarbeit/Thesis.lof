@@ -8,32 +8,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Schaltplan der Transceiverbaugruppe}}{7}{figure.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Layout des Transceivers mit der Sollbruchstelle, der Steckerleiste und dem Anpassnetzwerk}}{8}{figure.2.2}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Layout des Transceivers mit der Sollbruchstelle, der Steckerleiste und dem Anpassnetzwerk. Die L\IeC {\"o}tfl\IeC {\"a}chen f\IeC {\"u}r die SMA-Buchse sind auf der rechten Seite erkennbar.}}{8}{figure.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Der XMC4500 Mikrocontroller von Infineon im LQFP-Geh\IeC {\"a}use mit 144 Pins \cite {Bauer2012New-Infineon-32}}}{9}{figure.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Schaltplan des XMC4500 Mikrocontrollers}}{10}{figure.2.4}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Schaltplan des XMC4500 Mikrocontrollers}}{11}{figure.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Layout der USB-Buchse (links) auf der Basisstation mit der entsprechenden Schutzbeschaltung. In der Mitte des XMC sind die Thermal Vias zum Abf\IeC {\"u}hren der W\IeC {\"a}rme zu erkennen.}}{12}{figure.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Layout f\IeC {\"u}r den Ethernetcontroller von Mircel und die Anbindung an den XMC4500 Mikrocontroller}}{13}{figure.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Schaltplan des XMC4500 Mikrocontrollers}}{14}{figure.2.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Blockdiagramm zur Peripherie des XMC4500 Mikrocontroller und die Anbindung an den Cortex-M4 Kern. aus \cite {XMC-DataSheet}}}{16}{figure.3.1}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Blockdiagramm zur Peripherie des XMC4500 Mikrocontroller und die Anbindung an den Cortex-M4 Kern \cite {XMC-DataSheet}}}{18}{figure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Struktur eines Digitalpins des XMC Mikrocontroller. aus \cite {XMC-Reference}}}{17}{figure.3.2}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Struktur eines Digitalpins des XMC Mikrocontroller \cite {XMC-Reference}}}{19}{figure.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Start einer SPI-\IeC {\"U}bertragung zwischen dem Mikrocontroller und dem Transceiver}}{20}{figure.3.3}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Start einer SPI-\IeC {\"U}bertragung zwischen dem Mikrocontroller und dem Transceiver}}{22}{figure.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Ausgabe des Mikrocontroller \IeC {\"u}ber den COM-Port in der Konsole bei einer beispielhaften \IeC {\"U}bertragung}}{25}{figure.3.4}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Programmablauf der Basisstation}}{23}{figure.3.4}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Ausgabe des Mikrocontroller \IeC {\"u}ber den COM-Port in der Konsole bei einer beispielhaften \IeC {\"U}bertragung}}{28}{figure.3.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces 3D-Modell der Basisstation in Altium Designer}}{45}{figure.6.1}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Erstellte Box zum Schutz der Basisstation in der Software SolidWorks}}{46}{figure.6.2}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Layout des Aufsteckboards mit dem TDA5340}}{47}{figure.6.3}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces 3D-Modell der Basisstation in Altium Designer}}{47}{figure.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Erstellte Box zum Schutz der Basisstation in der Software SolidWorks}}{48}{figure.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Layout des Aufsteckboards mit dem TDA5340}}{49}{figure.6.3}

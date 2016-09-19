@@ -55,7 +55,7 @@ int main(void) {
 //	delay(4000);
 
 	delay(40000);
-	tda5340_init(TDA1); //Verzögerung nach set Status muss groß genug sein bis SPI Kom möglich ist 		delay(45000); müsste das richtige sein
+	tda5340_init(TDA1); //Verzoegerung nach set Status muss gros genug sein bis SPI Kom moeglich ist, delay(45000); müsste das richtige sein
 	tda5340_set_mode_and_config(TDA1, RX_MODE, 0);
 
 	delay(40000);
