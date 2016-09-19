@@ -1,6 +1,6 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'Thesis.blg'
-[25] biber-MSWIN64:290> INFO - === 
+[24] biber-MSWIN64:290> INFO - === 
 [42] Biber.pm:351> INFO - Reading 'Thesis.bcf'
 [111] Utils.pm:165> ERROR - Error: Found biblatex control file version 2.6, expected version 3.1.
 This means that your biber (2.5) and biblatex () versions are incompatible.
