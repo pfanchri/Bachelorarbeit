@@ -72,8 +72,9 @@ Die drei multifunktionalen Digitalausgänge PP0, PP1 und PP2 des Transceivers k�
 \begin{figure}[h]
 \centering
 \includegraphics[trim=4.3cm 0cm 4.4cm 0cm, clip=true, totalheight=0.5\textheight,angle=-90]{Abbildungen/Aufnahmen/Bilder/Altium/TDA}
-\caption{Layout des Transceivers mit der Sollbruchstelle und der Steckerleiste (links) sowie dem Anpassnetzwerk. Die Lötflächen für die SMA-Buchse sind auf der rechten Seite erkennbar}
+\caption[Layout des Transceivers]{Layout des Transceivers mit der Sollbruchstelle und der Steckerleiste (links) sowie dem Anpassnetzwerk. Die Lötflächen für die SMA-Buchse sind auf der rechten Seite erkennbar}
 \label{fig:tdalayout}
+
 \end{figure}
 
  
@@ -161,7 +162,7 @@ Um sowohl den Mikrocontroller als auch einen an die Basisstation angeschlossenen
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{"Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC"}
-\caption{Layout der USB-Buchse (links) auf der Basisstation mit der entsprechenden Schutzbeschaltung. In der Mitte des XMC sind die Thermal Vias zum Abführen der Wärme zu erkennen}
+\caption[Layout der USB-Buchse mit der entsprechenden Schutzbeschaltung]{Layout der USB-Buchse (links) auf der Basisstation mit der entsprechenden Schutzbeschaltung. In der Mitte des XMC sind die Thermal Vias zum Abführen der Wärme zu erkennen}
 \label{fig:usb-und-xmc}
 \end{figure}
 
@@ -202,11 +203,11 @@ P_V = (U_{Eingang} - U_{Ausgang}) \cdot I_{Basisstation}
 \end{equation} 
 wobei für den Gesamtstrom der Basisstation $I_{Basisstation}$ eine maximale Stromaufnahme des Mikrocontroller von \unit[122]{mA} sowie bei den Transceivern eine Stromaufnahme von \unit[26]{mA} angenommen werden kann \cite{TDA-DataSheet}\cite{XMC-DataSheet}. Mit einem Spannungsabfall von \unit[0,37]{V} an der Diode ergibt sich die Verlustleistung im \ac{LDO} zu
 \begin{equation}
-P_V = ((\unit[5]{V} - \unit[0,37]{V}) - \unit[3,3]{V}) \cdot ( \unit[122]{mA} + 6 \cdot \unit[26]{mA}) = \unit[367]{mW}
+P_V = ((\unit[5]{V} - \unit[0,37]{V}) - \unit[3,3]{V}) \cdot ( \unit[122]{mA} + 6 \cdot \unit[26]{mA}) \approx \unit[370]{mW}
 \end{equation} 
-Beide Spannungsregler dürfen nur bis zu einer Temperatur des Halbleiters von \unit[125]{$^\circ$ C} betrieben werden. Bei der Verwendung des \ac{SOT}-223-Gehäuses ohne eine Kupferfläche zum Abführen der Wärme würde die Chip-Temperatur $T_{j}$ sogar bei einer Umgebungstemperatur von \unit[25]{$^\circ$ C} schnell kritische Werte erreichen, wie Gleichung \ref{eq:Tjunction} zeigt. Der zugrundeliegende Wärmewiederstand $R_{th,j-amb} = \unit[164]{K/W}$ zwischen dem Halbleiter und der Umgebung, welcher durch das Gehäuse bestimmt wird, ist dem Datenblatt des Infineon Spannungsregler entnommen.
+Beide Spannungsregler dürfen nur bis zu einer Temperatur des Halbleiters von \unit[125]{$^\circ$ C} betrieben werden. Bei der Verwendung des \ac{SOT}-223-Gehäuses ohne eine Kupferfläche zum Abführen der Wärme würde die Chip-Temperatur $T_{j}$ sogar bei einer Umgebungstemperatur von \unit[25]{$^\circ$ C} schnell  Werte erreichen, die kritisch werden können, wie Gleichung \ref{eq:Tjunction} zeigt. Der zugrundeliegende Wärmewiederstand $R_{th,j-amb} = \unit[164]{K/W}$ zwischen dem Halbleiter und der Umgebung, welcher durch das Gehäuse bestimmt wird, ist dem Datenblatt des Infineon Spannungsregler entnommen.
 \begin{equation}
-T_{j} = T_{amb} + \Delta T_{j-amb} = T_{amb} + P_V \cdot R_{th,j-amb} = \unit[85,188]{^\circ C}
+T_{j} = T_{amb} + \Delta T_{j-amb} = T_{amb} + P_V \cdot R_{th,j-amb} = \unit[85,68]{^\circ C}
 \label{eq:Tjunction}
 \end{equation}
 Bei Verwendung des zuerst eingeplanten IFX1117MEV33 wäre wegen der elektrischen Belegung der Kühlfinne eine Kupferfläche auf \unit[3,3]{V} Potential zum Kühlen notwendig, welche elektrisch isoliert sein müsste. Wegen des Platzbedarfs durch den XMC4500 und andere Bauteile wäre somit nur eine Kupferfläche mit Abmessungen von etwa \unit[15]{mm} auf \unit[16]{mm} möglich, da die elektrischen Verbindungen bestehender Bauteile des Bereiches nicht unterbrochen werden sollten. Auf diese Weise wäre nicht einmal die im Datenblatt empfohlene Kühlfläche von \unit[300]{mm$^2$} erreichbar. 

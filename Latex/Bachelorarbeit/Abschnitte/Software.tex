@@ -120,7 +120,7 @@ Dabei stellt nach der Definition aus dem Datenblatt des Transceivers ein \unit[0
 		Register Lesen (schnell) & 0x05 & Adresse des ersten zu lesenden Registers   \\  
 		FIFO Schreiben & 0x06 & Länge der Übertragung -1   \\  
 	\end{tabular}
-	\caption{SPI-Instruktionen des Transceivers und die entsprechenden auf der MOSI-Leitung übertragenen Datenwörter und Parameter. Die beiden Instruktionen zum transparenten Senden sind nicht enthalten}
+	\caption[SPI-Instruktionen des Transceivers und die entsprechenden Datenwörter]{SPI-Instruktionen des Transceivers und die entsprechenden auf der MOSI-Leitung übertragenen Datenwörter und Parameter. Die beiden Instruktionen zum transparenten Senden sind nicht enthalten}
 	\label{tab:SPIcommands}
 \end{table}
 
@@ -153,7 +153,7 @@ Die Bibliothek und das Beispielprojekt wurde dahingehend angepasst, dass ganze Z
 
 
 \section{Programmablauf}
-\begin{figure}[t]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth, trim=3.2cm 22.7cm 2.5cm 2.5cm,clip=true]{Abbildungen/Blockdiagramme/Initialisierung}
 \caption{Programmablauf der Basisstation}
@@ -220,7 +220,7 @@ Der Versuch den PP2 Pin des TDA6 mittels eines kurzen Drahtes auf den Pin 142 de
 \subsection{Weiterleitung der erfassten Daten}
 Dass eine Übertragung über den COM-Port bereits weit vor der Dauerschleife vom Mikrocontroller gestartet wurde, diente dazu, dem Benutzer  die Bereitschaft zum Empfangen mitzuteilen sobald sämtliche Initialisierungen abgeschlossen waren. Somit musste der COM-Port auch nun nicht mehr selbst initialisiert werden.
 Im zweiten Teil der Ablaufschleife des Programmablaufs wurde nun die Weitergabe der empfangenen Daten und der gemessenen Werte behandelt. Dazu wurde nach dem Abholen der empfangenen Daten von den Transceivern eine Statusflagge in Form einer Integer-Variable gesetzt. Nur beim Auftreten dieser Flagge wurde der Programmteil zum Senden über den COM-Port ausgeführt.
-Dort wurde nun jeweils abwechseln ein Wert des Speichers und ein String mit einer Beschreibung oder dem Namen des Wertes über COM ausgegeben. Ein Ausschnitt des Quellcodes ist im Quellcode \ref{listing:COMsend} zu erkennen. Die Zeichenfolge $\backslash r\backslash n$ stellt dabei den Übergang in eine neue Zeile in der Ausgabekonsole dar. Wie in C üblich werden Strings in doppelten Anführungszeichen im Quelltext eingefügt. Eine entsprechende Ausgabe ist in Bild \ref{fig:ubertragung} zu erkennen. 
+Dort wurde nun jeweils abwechseln ein Wert des Speichers und ein String mit einer Beschreibung oder dem Namen des Wertes über COM ausgegeben. Ein Ausschnitt des Quellcodes ist im Quellcode \ref{listing:COMsend} zu erkennen. Die Zeichenfolge $\backslash r\backslash n$ stellt dabei den Übergang in eine neue Zeile in der Ausgabekonsole dar. Wie in C üblich werden Strings in doppelten Anführungszeichen im Quelltext eingefügt. Eine entsprechende Ausgabe ist in Bild \ref{fig:ConsolePutty} zu erkennen. 
 \begin{lstlisting}[caption={Ausschnitt aus dem Senden der Daten über den COM-Port},label={listing:COMsend},captionpos=b,language=C]
 COM_send_string("#################### Übertragung erkannt ####################\r\n");
 COM_send_string("Übertragung Nummer ");
@@ -258,7 +258,7 @@ Alle Werte und Daten wurden nach Transceiver getrennt ausgegeben, um eine Vergle
 Auch wurden die empfangenen Übertragungen durchnummeriert und die entsprechende Übertragungsnummer mit ausgegeben. So ließen sich einerseits die Sendepositionen den gemessenen Werte zuordnen. Andererseits waren so aber auch  verlorengegangene  Übertragungen sichtbar. Eine typische Ausgabe der Konsole ist im Bild \ref{fig:ConsolePutty} zu erkennen. Zur Darstellung einer eingegangenen Übertragung an der Basisstation sollte die LED Nummer 7 nach jedem Empfangen kurz rot aufblinken.
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1}
+\includegraphics[width=0.65\linewidth]{Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1}
 \caption{Ausgabe des Mikrocontroller über den COM-Port in der Konsole bei einer beispielhaften Übertragung}
 \label{fig:ConsolePutty}
 \end{figure}
