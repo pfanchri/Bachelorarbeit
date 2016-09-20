@@ -104,12 +104,25 @@ wobei die Zwischenfrequenz der ersten Stufe ($f_{IF1}$) durch die internen funkt
 
 
 \subsection{XMC4500}
-\begin{figure}[h] %trim=16cm 8cm 16cm 26cm,   auf Computer daheim: 8cm 4cm 8cm 13cm
-	\centering
-	\includegraphics[width=0.7\linewidth,trim={16cm 8cm 16cm 26cm},clip=true]{"Quellen/New Infineon Controller Family/XMC4500_LQFP-100_LQFP-144_LFBGA-144"}
-	\caption{Der XMC4500 Mikrocontroller von Infineon im LQFP-Gehäuse mit 144 Pins \cite{Bauer2012New-Infineon-32}}
-	\label{fig:xmc4500}
+%\begin{figure}[h] %trim=16cm 8cm 16cm 26cm,   auf Computer daheim: 8cm 4cm 8cm 13cm
+%	\centering
+%	\includegraphics[width=0.7\linewidth,trim={16cm 8cm 16cm 26cm},clip=true]{"Quellen/New Infineon Controller Family/XMC4500_LQFP-100_LQFP-144_LFBGA-144"}
+%	\caption{Der XMC4500 Mikrocontroller von Infineon im LQFP-Gehäuse mit 144 Pins \cite{Bauer2012New-Infineon-32}}
+%	\label{fig:xmc4500}
+%\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\linewidth]{"Quellen/New Infineon Controller Family/XMC4500_LQFP-100_LQFP-144_LFBGA-144_beschnitten"}
+\caption{Der XMC4500 Mikrocontroller von Infineon im LQFP-Gehäuse mit 144 Pins \cite{Bauer2012New-Infineon-32}}
+\label{fig:xmc4500}
 \end{figure}
+
+
+
+
+
+
+
 Die Hauptsteuerung der Basisstation übernimmt ein Mikrocontroller der Bauart XMC4500, welcher aus der Mikrocontroller-Familie XMC4000 von Infineon stammt. Diese Baureihe stellt energieeffiziente \acp{IC} bereit, welche für industrielle Steuerungen und \enquote{Sense \& Control} optimiert sind. 
 Der XMC4500 basiert auf einem  Cortex\textsuperscript{TM}-M4 Kern des britischen Herstellers ARM. Daneben arbeitet der Mikrocontroller mit der von Infineon selbst entwickelte Entwicklungsumgebung DAVE zusammen.
 Im speziellen Anwendungsfall kommt die Variante des XMC mit 144 Pins und einem Flash-Speicher von 1024 Kilobit zum Einsatz. Der Chip ist dabei in einem \ac{LQFP}-Gehäuse verbaut. Durch die Wahl diese Gehäuses konnte die elektrische Verbindung mit der Platine relativ leicht durch löten erreicht werden. Im Gegensatz zum ebenfalls erhältlichen \ac{BGA}-Gehäuse des XMC sind in diesem alle Kontakte direkt erreichbar und können leicht verlötet werden. Da beim \ac{BGA}-Gehäuse die Anschlüsse auch in der Mitte unter dem Gehäuse sind, wäre hier ein Layout komplizierter und würde möglicherweise einen genaueren und somit teureren Prozess für die Herstellung der Platine fordern. Ein händisches Nachlöten von Kontakten oder Prüfen der Lötverbindung wäre ebenfalls nicht möglich.
@@ -182,7 +195,15 @@ wobei für den Gesamtstrom der Basisstation $I_{Basisstation}$ eine maximale Str
 \begin{equation}
 P_V = ((\unit[5]{V} - \unit[0,37]{V}) - \unit[3,3]{V}) \cdot ( \unit[122]{mA} + 6 \cdot \unit[26]{mA}) = \unit[367]{mW}
 \end{equation} 
-Bei Verwendung des zuerst eingeplanten IFX1117MEV33 wäre wegen der elektrischen Belegung der Kühlfinne eine Kupferfläche auf \unit[3,3]{V} Potential zum Kühlen notwendig, welche elektrisch isoliert sein müsste. Wegen des Platzbedarfs durch den XMC4500 und andere Bauteile wäre somit nur eine Kupferfläche mit Abmessungen von etwa \unit[15]{mm} auf \unit[16]{mm} möglich, da die elektrischen Verbindungen bestehender Bauteile des Bereiches nicht unterbrochen werden sollten. Durch die Verwendung des entsprechenden Bauteils von Microchip konnte auf eine abgetrennte Kupferinsel verzichtet werden und somit die bereits erwähnte \acs{GND}-Kupferfläche um den Mikrocontroller als gemeinsame Masse- und Kühlfäche verwendet werden.
+Beide Spannungsregler dürfen nur bis zu einer Temperatur des Halbleiters von \unit[125]{$^\circ$ C} betrieben werden. Bei der Verwendung des \ac{SOT}-223-Gehäuses ohne eine Kupferfläche zum Abführen der Wärme würde die Chip-Temperatur $T_{j}$ sogar bei einer Umgebungstemperatur von \unit[25]{$^\circ$ C} schnell kritische Werte erreichen, wie Gleichung \ref{eq:Tjunction} zeigt. Der zugrundeliegende Wärmewiederstand $R_{th,j-amb} = \unit[164]{K/W}$ zwischen dem Halbleiter und der Umgebung, welcher durch das Gehäuse bestimmt wird, ist dem Datenblatt des Infineon Spannungsregler entnommen.
+\begin{equation}
+T_{j} = T_{amb} + \Delta T_{j-amb} = T_{amb} + P_V \cdot R_{th,j-amb} = \unit[85,188]{^\circ C}
+\label{eq:Tjunction}
+\end{equation}
+Bei Verwendung des zuerst eingeplanten IFX1117MEV33 wäre wegen der elektrischen Belegung der Kühlfinne eine Kupferfläche auf \unit[3,3]{V} Potential zum Kühlen notwendig, welche elektrisch isoliert sein müsste. Wegen des Platzbedarfs durch den XMC4500 und andere Bauteile wäre somit nur eine Kupferfläche mit Abmessungen von etwa \unit[15]{mm} auf \unit[16]{mm} möglich, da die elektrischen Verbindungen bestehender Bauteile des Bereiches nicht unterbrochen werden sollten. Auf diese Weise wäre nicht einmal die im Datenblatt empfohlene Kühlfläche von \unit[300]{mm$^2$} erreichbar. 
+
+
+Durch die Verwendung des entsprechenden Bauteils von Microchip konnte auf eine abgetrennte Kupferinsel verzichtet werden und somit die bereits erwähnte \acs{GND}-Kupferfläche um den Mikrocontroller als gemeinsame Masse- und Kühlfäche verwendet werden.
 Wegen der vorderseitigen Bauteilbestückung war die verfügbare Kupferfläche auf der Platinenrückseite  größer. Um dies beim Ableiten der Wärme vom Bauteil zu nutzen, wurden vor allem im Bereich um die Kühlfinne des \ac{SOT}-223-Gehäuses Durchkontaktierungen angebracht. Diese parallelen \enquote{Thermal Vias} konnten als Wärmepfad zur unteren Kupferfläche dienen. Außerdem wurde der \ac{JTAG}-Stecker des XMC absichtlich im Bereich neben dem Spannungsregler angebracht. Durch die große Oberfläche stellt auch dieser eine gute Wärmesenke dar. %sicher?
 % Rechnung Thermischer widerstand
 \begin{figure}[h]
