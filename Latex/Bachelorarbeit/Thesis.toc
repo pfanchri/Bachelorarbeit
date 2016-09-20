@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.5}Spannungsversorgung}{12}{subsection.2.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Generierte Dokumente}{14}{section.2.4}
+\contentsline {section}{\numberline {2.4}Generierte Dokumente}{15}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Best\IeC {\"u}ckung}{16}{section.2.5}
 \defcounter {refsection}{0}\relax 
@@ -86,26 +86,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Schaltpl\IeC {\"a}ne}{43}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Seriennummern}{50}{section.6.2}
+\contentsline {section}{\numberline {6.2}Geh\IeC {\"a}use}{50}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}3D-Daten}{51}{section.6.3}
+\contentsline {section}{\numberline {6.3}Seriennummern}{51}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Platine}{51}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Layout Aufsteckboard TDA5340}{51}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Geh\IeC {\"a}use}{51}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.5}Quellcode}{52}{section.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Layout Aufsteckboard TDA5340}{52}{section.6.4}
+\contentsline {subsection}{\numberline {6.5.1}Main.c}{52}{subsection.6.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}Quellcode}{53}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.2}ISRs.c}{58}{subsection.6.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.1}Main.c}{53}{subsection.6.5.1}
+\contentsline {section}{\numberline {6.6}Feldtest}{60}{section.6.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.2}ISRs.c}{61}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.6.1}Feldtest 1}{60}{subsection.6.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.5.3}Init.c}{62}{subsection.6.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.6}Feldtest}{66}{section.6.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6.1}Feldtest 1}{66}{subsection.6.6.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.6.2}Feldtest 2}{78}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.2}Feldtest 2}{72}{subsection.6.6.2}
