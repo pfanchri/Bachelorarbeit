@@ -49,6 +49,25 @@ Auch das weitere Verhalten von Pins, wie etwa  beim Anschalten, bevor die Versor
 Die \acp{IC} der XMC-Familie verfügen über ein Modul zu Kommunikation über diverse serielle Protokolle, den \acf{USIC}. Dieses ist programmierbar und erlaubt damit eine individuelle Verwendung, kann aber gleichzeitig die notwendigen Arbeiten für den Prozessor übernehmen. Der XMC4500 verfügt über insgesamt sechs \ac{USIC}-Kanäle und kann somit mehrere Protokolle gleichzeitig verwenden. Die Mikrocontroller unterstützen die  Protokolle UART, I$^{2}$C, IIS, LIN und das für die Basisstation verwendete SPI in einfacher, doppelter und quad-Ausführung. Für diese Arbeit wurde alle Kommunikation mit einem gemeinsamen \acs{USIC}-Kanal umgesetzt. Da die einzelnen \acp{USIC} und deren Kanäle verschieden viele Slave-Select-Leitungen besitzen, wurde der Kanal $0$ des \ac{USIC} $0$ ausgewählt, nur dieser verfügt über die benötigten sechs Select-Leitungen. Eine Umsetzung mit einem anderen USIC wäre ebenfalls möglich gewesen. Die Wahl des Transceivers hätte dann aber manuell erfolgen müssen und hätten nicht vom Modul geregelt werden können.
 %beschreiben Funktion
 %wo SPI allgmein beschreiben
+\begin{table}
+	\centering
+	\begin{tabular}{cc}
+		
+		Signal & Port/Pin des XMC \\ 
+		\hline 
+		MISO & 1.5 \\  
+		MOSI &  1.7\\ 
+		SCK (Clock) & 1.6 \\ 
+		Select TDA1 & 1.11 \\  
+		Select TDA2 &1.8  \\ 
+		Select TDA3& 4.6 \\  
+		Select TDA4& 4.5 \\  
+		Select TDA5& 4.4 \\ 
+		Select TDA6& 4.3 \\ 
+	\end{tabular} 
+	\caption[Zuordnung SPI-Signale an die Pins des Mikrocontrollers.]{Zuordnung der für die SPI-Kommunikation notwendigen Signale an die Pins des Mikrocontrollers. Alle Leitungen sind mit dem Kanal $0$ der USIC $0$ verbunden.}
+	\label{tab:SPI}
+\end{table}
 
 
 \subsection{ERU}
@@ -93,6 +112,7 @@ Dabei stellt nach der Definition aus dem Datenblatt des Transceivers ein \unit[0
 	\begin{tabular}{lcl}
 		
 		Instruktion & Datenwort & übergebener Parameter  \\
+		\hline
 		Register Schreiben (schnell) & 0x01 & Adresse des ersten zu schreibenden Registers   \\
 		Register Schreiben & 0x02 & Adresse des zu schreibenden Registers   \\  
 		Register Lesen & 0x03 & Adresse des zu lesenden Registers   \\  
@@ -180,6 +200,7 @@ Beim Setzen der Flaggen durch den Interrupt fiel auf, das die Interrupteingänge
 	\centering
 \begin{tabular}{ccccc}
 	Transceiver & Port/Pin am XMC & ERU & ETL & Kanal \\ 
+	\hline
 	TDA1 & 0.3 & 1 & 3 & B0 \\ 
 	TDA2 & 1.0 & 0 & 3 & B0 \\ 
 	TDA3 & 2.6 & 0 & 1 & B3 \\ 

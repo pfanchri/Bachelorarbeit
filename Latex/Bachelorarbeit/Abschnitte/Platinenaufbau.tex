@@ -130,7 +130,10 @@ Im speziellen Anwendungsfall kommt die Variante des XMC mit 144 Pins und einem F
 
 
 %PP2 an INterrupeingang
-Bei der Auswahl von Pins des XMC zur Verbindung mit den Transceivern wurde vor allem auf die Auswahl für die PP2 Pins geachtet. Um eine spätere Interruptsteuerung möglich zu machen wurden hierfür nur solche Eingänge des Mikrocontroller gewählt, die im Datenblatt mit der Möglichkeit zum Erkennen von Interrupts gekennzeichnet waren. Die Zuordnung der Transceiverausgänge an die Pins des Mikrocontroller sind in \mbox{Abbildung \ref{fig:schemXMC}} erkennbar.
+Bei der Auswahl von Pins des XMC zur Verbindung mit den Transceivern wurde vor allem auf die Auswahl für die PP2 Pins geachtet. Um eine spätere Interruptsteuerung möglich zu machen wurden hierfür nur solche Eingänge des Mikrocontroller gewählt, die im Datenblatt mit der Möglichkeit zum Erkennen von Interrupts gekennzeichnet waren. Die Zuordnung der Transceiverausgänge an die Pins des Mikrocontroller sind in \mbox{Abbildung \ref{fig:schemXMC}} erkennbar und in Tabelle \ref{tab:PP2ERU} aufgeführt. Tabelle \ref{tab:SPI} zeigt die Zuordnung der für die \ac{SPI}-Kommunikation notwendigen Leitungen an die Pins des Mikrocontrollers. 
+
+
+
 
 Zur Verteilung der entstehenden Abwärme wurde auch in diesem Bereich der Platine  frei gebliebene Abschnitte zwischen den Leiterbahnen mit geerdeten Kupferflächen gefüllt. Durch teilweise auch mehrfache Durchkontaktierungen wurde sowohl eine saubere Kontaktierung der Flächen durchgeführt, um Flächen schwimmenden Potentials zu vermeiden. Durch die Vias wurde aber auch die thermische Leitfähigkeit zwischen den beiden Kupferlagen erhöht und somit die Abgabe entstehender Wärme von den Bauteilen verbessert. Beim verwendeten \ac{LQFP}-Gehäuse des XMC4500 liegt die Rückseite des Halbleiters offen und ist nicht im Gehäuse verschlossen. Im Bereich unter der offenliegenden Rückseite des Chips ist deswegen zur Wärmeableitung ein Feld von 6x6 Vias vorgesehen. Dieser Aufbau dient dazu die Temperatur des Chips (junction temperature) auf den maximal erlaubten Wert $T_J = \unit[150]{^\circ C}$ zu beschränken.%Rechnung mit Therm wiederst. ??
 
