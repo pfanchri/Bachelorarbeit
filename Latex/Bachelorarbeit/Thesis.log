@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  21 SEP 2016 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  21 SEP 2016 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4134,7 +4134,7 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 Here is how much of TeX's memory you used:
  55052 strings out of 493014
  1210374 string characters out of 6133351
- 2176593 words of memory out of 5000000
+ 2176577 words of memory out of 5000000
  54883 multiletter control sequences out of 15000+600000
  80367 words of font info for 125 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -4157,7 +4157,7 @@ cal/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/lm/lmtt8.pfb>
-Output written on Thesis.pdf (99 pages, 2680063 bytes).
+Output written on Thesis.pdf (99 pages, 2677057 bytes).
 PDF statistics:
  4165 PDF objects out of 4296 (max. 8388607)
  3941 compressed objects within 40 object streams
