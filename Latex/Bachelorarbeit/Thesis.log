@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  20 SEP 2016 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  21 SEP 2016 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2413,26 +2413,26 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 20.
 [1
 
 
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 35.
 ) (./Abschnitte/Platinenaufbau.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2491,32 +2491,32 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 34.
  [4]
 Package acronym Info: Label `acro:DRC' newly defined as it shall be overridden
-although it is yet undefined on input line 40.
+although it is yet undefined on input line 42.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3815) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 44.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 44.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 44.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 44.
  [5]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 47.
 Package acronym Info: Label `acro:NCS' newly defined as it shall be overridden
-although it is yet undefined on input line 47.
+although it is yet undefined on input line 49.
 Package acronym Info: Label `acro:FIFO' newly defined as it shall be overridden
 
-although it is yet undefined on input line 47.
+although it is yet undefined on input line 49.
 
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
 sstation Schematics".pdf, id=519, page=4, 831.105pt x 549.05125pt>
@@ -2526,24 +2526,24 @@ File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 <use "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics".pdf, page 4>
 Package pdftex.def Info: "../../Altium/mobile Basisstation/Project Outputs for 
-mobile Basisstation/Basisstation Schematics".pdf, page4 used on input line 61.
+mobile Basisstation/Basisstation Schematics".pdf, page4 used on input line 63.
 (pdftex.def)             Requested size: 449.55356pt x 296.98593pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 69.
 [6]
 Package acronym Info: Label `acro:IC' newly defined as it shall be overridden
-although it is yet undefined on input line 70.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 70.
+although it is yet undefined on input line 71.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 71.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -2552,75 +2552,75 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: Abbildungen/Aufnahmen/Bilder/Altium/TDA.png Graphic file (type png)
  <use Abbildungen/Aufnahmen/Bilder/Altium/TDA.png>
 Package pdftex.def Info: Abbildungen/Aufnahmen/Bilder/Altium/TDA.png used on in
-put line 74.
+put line 75.
 (pdftex.def)             Requested size: 136.98552pt x 330.05197pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package acronym Info: Label `acro:SMA' newly defined as it shall be overridden
-although it is yet undefined on input line 81.
+although it is yet undefined on input line 82.
 
 Underfull \vbox (badness 2875) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 84.
  [7 <../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/B
 asisstation Schematics.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 96.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 96.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 96.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 96.
+(babel)             in language  on input line 97.
  [8 <./Abbildungen/Aufnahmen/Bilder/Altium/TDA.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 108.
 
 <"Quellen/New Infineon Controller Family/XMC4500_LQFP-100_LQFP-144_LFBGA-144_be
-schnitten".jpg, id=571, 396.5214pt x 231.264pt>
+schnitten".jpg, id=572, 396.5214pt x 231.264pt>
 File: "Quellen/New Infineon Controller Family/XMC4500_LQFP-100_LQFP-144_LFBGA-1
 44_beschnitten".jpg Graphic file (type jpg)
 
 <use "Quellen/New Infineon Controller Family/XMC4500_LQFP-100_LQFP-144_LFBGA-14
 4_beschnitten".jpg>
 Package pdftex.def Info: "Quellen/New Infineon Controller Family/XMC4500_LQFP-1
-00_LQFP-144_LFBGA-144_beschnitten".jpg used on input line 116.
+00_LQFP-144_LFBGA-144_beschnitten".jpg used on input line 117.
 (pdftex.def)             Requested size: 269.73488pt x 157.32448pt.
 Package acronym Info: Label `acro:LQFP' newly defined as it shall be overridden
 
-although it is yet undefined on input line 129.
+although it is yet undefined on input line 130.
 Package acronym Info: Label `acro:BGA' newly defined as it shall be overridden
-although it is yet undefined on input line 129.
+although it is yet undefined on input line 130.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 131.
  [9 <./Quellen/New Infineon Controller Family/XMC4500_LQFP-100_LQFP-144_LFBGA-1
 44_beschnitten.jpg>]
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=593, page=5, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=595, page=5, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
 <use "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics".pdf, page 5>
 Package pdftex.def Info: "../../Altium/mobile Basisstation/Project Outputs for 
-mobile Basisstation/Basisstation Schematics".pdf, page5 used on input line 143.
+mobile Basisstation/Basisstation Schematics".pdf, page5 used on input line 144.
 
 (pdftex.def)             Requested size: 449.55356pt x 296.98593pt.
 
@@ -2629,155 +2629,155 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package acronym Info: Label `acro:JTAG' newly defined as it shall be overridden
 
-although it is yet undefined on input line 155.
+although it is yet undefined on input line 156.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 160.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 159.
+(babel)             in language  on input line 160.
 Package acronym Info: Label `acro:TVS' newly defined as it shall be overridden
-although it is yet undefined on input line 161.
+although it is yet undefined on input line 162.
 
-<"Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC".png, id=599, 907.13907pt x 7
+<"Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC".png, id=603, 907.13907pt x 7
 08.39656pt>
 File: "Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC".png Graphic file (type 
 png)
  <use "Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC".png>
 Package pdftex.def Info: "Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC".png 
-used on input line 164.
+used on input line 165.
 (pdftex.def)             Requested size: 314.68611pt x 245.73741pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 168.
+(babel)             in language  on input line 169.
 
 [10]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 171.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png, id=611, 1011.02719pt x 699.3
+<Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png, id=615, 1011.02719pt x 699.3
 6281pt>
 File: Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png Graphic file (type png)
  <use Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png>
 Package pdftex.def Info: Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png used 
-on input line 175.
+on input line 176.
 (pdftex.def)             Requested size: 314.68611pt x 217.67528pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 180.
  [11 <../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 188.
 Package acronym Info: Label `acro:LDO' newly defined as it shall be overridden
-although it is yet undefined on input line 189.
-Package acronym Info: Label `acro:SOT' newly defined as it shall be overridden
 although it is yet undefined on input line 190.
+Package acronym Info: Label `acro:SOT' newly defined as it shall be overridden
+although it is yet undefined on input line 191.
 
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=636, page=3, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=641, page=3, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
 <use "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics".pdf, page 3>
 Package pdftex.def Info: "../../Altium/mobile Basisstation/Project Outputs for 
-mobile Basisstation/Basisstation Schematics".pdf, page3 used on input line 193.
+mobile Basisstation/Basisstation Schematics".pdf, page3 used on input line 194.
 
 (pdftex.def)             Requested size: 449.55356pt x 296.98593pt.
 
-Underfull \hbox (badness 6876) in paragraph at lines 194--194
+Underfull \hbox (badness 6876) in paragraph at lines 195--195
 [][]\T1/lmr/m/n/12 (+20) Schaltplan der Span-nungs-ver-sor-gung und der USB-Ver
 bindung des
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 197.
-[12 <./Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC.png>]
+(babel)             in language  on input line 198.
+ [12 <./Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 200.
 [13 <./Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 215.
  [14 <../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 225.
 Package acronym Info: Label `acro:STEP' newly defined as it shall be overridden
 
-although it is yet undefined on input line 228.
+although it is yet undefined on input line 229.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/3D2.png, id=693, 1070.49937pt x 762.59906p
+<Abbildungen/Aufnahmen/Bilder/Altium/3D2.png, id=697, 1070.49937pt x 762.59906p
 t>
 File: Abbildungen/Aufnahmen/Bilder/Altium/3D2.png Graphic file (type png)
  <use Abbildungen/Aufnahmen/Bilder/Altium/3D2.png>
 Package pdftex.def Info: Abbildungen/Aufnahmen/Bilder/Altium/3D2.png used on in
-put line 232.
+put line 233.
 (pdftex.def)             Requested size: 224.77678pt x 160.12726pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package acronym Info: Label `acro:NC' newly defined as it shall be overridden
-although it is yet undefined on input line 240.
+although it is yet undefined on input line 241.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 243.
+(babel)             in language  on input line 242.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 243.
-
-Underfull \vbox (badness 5970) has occurred while \output is active []
-
+(babel)             in language  on input line 242.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 245.
+(babel)             in language  on input line 242.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 245.
+(babel)             in language  on input line 242.
+[15]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 245.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 245.
- [15])
-(./Abschnitte/Software.tex
+(babel)             in language  on input line 244.
+) (./Abschnitte/Software.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2827,7 +2827,7 @@ although it is yet undefined on input line 18.
 Package acronym Info: Label `acro:GPIO' newly defined as it shall be overridden
 
 although it is yet undefined on input line 18.
- <Abbildungen/XMCBlockdiagram.pdf, id=727, 327.97713pt x 227.57462pt>
+ <Abbildungen/XMCBlockdiagram.pdf, id=731, 327.97713pt x 227.57462pt>
 File: Abbildungen/XMCBlockdiagram.pdf Graphic file (type pdf)
 
 <use Abbildungen/XMCBlockdiagram.pdf>
@@ -2847,7 +2847,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 37.
  [18 <./Abbildungen/XMCBlockdiagram.pdf>]
-<Abbildungen/StructureDigitalPin.pdf, id=760, 345.14061pt x 241.23415pt>
+<Abbildungen/StructureDigitalPin.pdf, id=764, 345.14061pt x 241.23415pt>
 File: Abbildungen/StructureDigitalPin.pdf Graphic file (type pdf)
 
 <use Abbildungen/StructureDigitalPin.pdf>
@@ -2946,18 +2946,12 @@ Package acronym Info: Label `acro:MISO' newly defined as it shall be overridden
 
 although it is yet undefined on input line 105.
 
-Overfull \hbox (19.75424pt too wide) in paragraph at lines 107--108
-[]\T1/lmr/m/n/12 (-20) Dabei stellt nach der De-fi-ni-ti-on aus dem Da-ten-blat
-t des Tran-scei-vers ein 0V-Spannungspegel
- []
-
-
 Overfull \hbox (13.77321pt too wide) in paragraph at lines 112--123
  [][] 
  []
 
 
-<"Abbildungen/Aufnahmen/Bilder/Logic Analyser/SPI_Start".png, id=853, 1044.9037
+<"Abbildungen/Aufnahmen/Bilder/Logic Analyser/SPI_Start".png, id=857, 1044.9037
 5pt x 312.41719pt>
 File: "Abbildungen/Aufnahmen/Bilder/Logic Analyser/SPI_Start".png Graphic file 
 (type png)
@@ -2974,9 +2968,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 145.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 145.
-
-Underfull \vbox (badness 2359) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 148.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2985,7 +2976,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 148.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 148.
- [22]
+[22]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2994,21 +2985,20 @@ Package acronym Info: Label `acro:ASCII' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 152.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 153.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 153.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 153.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 153.
+ [23 <./Abbildungen/Aufnahmen/Bilder/Logic Analyser/SPI_Start.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 155.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 155.
 
-[23 <./Abbildungen/Aufnahmen/Bilder/Logic Analyser/SPI_Start.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 155.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 155.
-
-<Abbildungen/Blockdiagramme/Initialisierung.pdf, id=871, 597.50829pt x 845.0471
+<Abbildungen/Blockdiagramme/Initialisierung.pdf, id=875, 597.50829pt x 845.0471
 pt>
 File: Abbildungen/Blockdiagramme/Initialisierung.pdf Graphic file (type pdf)
  <use Abbildungen/Blockdiagramme/Initialisierung.pdf>
@@ -3024,7 +3014,7 @@ Package babel Info: Redefining ngerman shorthand "~
 Package acronym Info: Label `acro:PLL' newly defined as it shall be overridden
 although it is yet undefined on input line 175.
 
-Underfull \vbox (badness 3668) has occurred while \output is active []
+Underfull \vbox (badness 1430) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 176.
@@ -3040,20 +3030,20 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 189.
 Package acronym Info: Label `acro:AGC' newly defined as it shall be overridden
-although it is yet undefined on input line 196.
+although it is yet undefined on input line 200.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 201.
  [25]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 224.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 224.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -3062,34 +3052,34 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 228.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 228.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 228.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 224.
+(babel)             in language  on input line 228.
  [26]
 Package acronym Info: Label `acro:RSSI' newly defined as it shall be overridden
 
-although it is yet undefined on input line 248.
+although it is yet undefined on input line 252.
 
-<Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1.png, id=922, 411.78844pt x 728
+<Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1.png, id=926, 411.78844pt x 728
 .7225pt>
 File: Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1.png Graphic file (type pn
 g)
  <use Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1.png>
 Package pdftex.def Info: Abbildungen/Aufnahmen/Bilder/Putty/Ubertragung1.png us
-ed on input line 261.
+ed on input line 265.
 (pdftex.def)             Requested size: 292.20706pt x 517.1075pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 269.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 269.
  [27]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3139,14 +3129,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
 
-<"Abbildungen/Aufbau Feldtest/Aufbau Feldtest".png, id=960, 335.5737pt x 330.99
-66pt>
+<"Abbildungen/Aufbau Feldtest/Aufbau Feldtest".png, id=964, 335.5737pt x 331.71
+93pt>
 File: "Abbildungen/Aufbau Feldtest/Aufbau Feldtest".png Graphic file (type png)
 
  <use "Abbildungen/Aufbau Feldtest/Aufbau Feldtest".png>
 Package pdftex.def Info: "Abbildungen/Aufbau Feldtest/Aufbau Feldtest".png used
  on input line 16.
-(pdftex.def)             Requested size: 314.68611pt x 310.39944pt.
+(pdftex.def)             Requested size: 314.68611pt x 311.07718pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3165,13 +3155,13 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 24.
 [31]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 45.
+(babel)             in language  on input line 46.
  [32 <./Abbildungen/Aufbau Feldtest/Aufbau Feldtest.png>])
 (./Abschnitte/Zusammenfassung_und_Ausblick.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -3350,7 +3340,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=1063, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=1067, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
@@ -3369,7 +3359,7 @@ mobile Basisstation/Basisstation Schematics".pdf used on input line 6.
 (pdftex.def)             Requested size: 831.10297pt x 549.04991pt.
 
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=1066, page=1, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=1070, page=1, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
@@ -3430,7 +3420,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [44 <../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics.pdf>]
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=1091, page=2, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=1095, page=2, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
@@ -3564,7 +3554,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
  [48]
-<"Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf, id=1116, 845.1575pt 
+<"Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf, id=1120, 845.1575pt 
 x 597.23125pt>
 File: "Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf Graphic file (ty
 pe pdf)
@@ -3580,7 +3570,7 @@ Package pdftex.def Info: "Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".p
 df used on input line 9.
 (pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
 
-<"Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf, id=1119, page=11, 84
+<"Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf, id=1123, page=11, 84
 5.1575pt x 597.23125pt>
 File: "Abbildungen/Aufnahmen/SmartPDF/mobile Basisstation".pdf Graphic file (ty
 pe pdf)
@@ -3633,7 +3623,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Abbildungen/Aufnahmen/Bilder/SolidWorks/BoxBildschirmSW.png, id=1134, 830.1012
+<Abbildungen/Aufnahmen/Bilder/SolidWorks/BoxBildschirmSW.png, id=1138, 830.1012
 6pt x 654.445pt>
 File: Abbildungen/Aufnahmen/Bilder/SolidWorks/BoxBildschirmSW.png Graphic file 
 (type png)
@@ -3663,7 +3653,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=1139, 
+<Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png, id=1143, 
 298.11375pt x 759.58781pt>
 File: Abbildungen/Aufnahmen/Bilder/Altium/Layout_Stefan_Erhard/Layout.png Graph
 ic file (type png)
@@ -3704,89 +3694,75 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 57.
 [52]
-Overfull \hbox (141.3521pt too wide) in paragraph at lines 63--64
-[][][][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 121.
  [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 182.
+(babel)             in language  on input line 184.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 182.
+(babel)             in language  on input line 184.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 182.
+(babel)             in language  on input line 184.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 182.
+(babel)             in language  on input line 184.
  [54]
-Overfull \hbox (18.95085pt too wide) in paragraph at lines 243--244
-[][][][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 252.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 252.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 252.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 252.
  [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 321.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 321.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 321.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 321.
  [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 390.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 390.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 385.
+(babel)             in language  on input line 390.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 385.
- [57]
-Overfull \hbox (146.45215pt too wide) in paragraph at lines 407--409
-[][][][] 
- []
+(babel)             in language  on input line 390.
+ [57])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 6.
 
-)
+(../../Dave/Basisstation/Basisstation/ISRs.c
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 6.
- (../../Dave/Basisstation/Basisstation/ISRs.c
+(babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 29.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 29.
+(babel)             in language  on input line 35.
  [58]))
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
@@ -4156,11 +4132,11 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55050 strings out of 493014
- 1210356 string characters out of 6133351
- 2174579 words of memory out of 5000000
+ 55052 strings out of 493014
+ 1210374 string characters out of 6133351
+ 2176593 words of memory out of 5000000
  54883 multiletter control sequences out of 15000+600000
- 80238 words of font info for 124 fonts, out of 8000000 for 9000
+ 80367 words of font info for 125 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  66i,18n,83p,8500b,3136s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
@@ -4181,10 +4157,10 @@ cal/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/lm/lmtt8.pfb>
-Output written on Thesis.pdf (99 pages, 2673398 bytes).
+Output written on Thesis.pdf (99 pages, 2680063 bytes).
 PDF statistics:
- 4162 PDF objects out of 4296 (max. 8388607)
- 3938 compressed objects within 40 object streams
+ 4165 PDF objects out of 4296 (max. 8388607)
+ 3941 compressed objects within 40 object streams
  2543 named destinations out of 2984 (max. 500000)
  26179 words of extra memory for PDF output out of 29859 (max. 10000000)
 

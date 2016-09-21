@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.1}{\ignorespaces Zuordnung SPI-Signale an die Pins des Mikrocontrollers.}}{20}{table.3.1}
+\contentsline {table}{\numberline {\relax 3.1}{\ignorespaces Zuordnung der SPI-Signale an die Pins des Mikrocontrollers}}{20}{table.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {\relax 3.2}{\ignorespaces SPI-Instruktionen des Transceivers und die entsprechenden Datenw\IeC {\"o}rter}}{22}{table.3.2}
 \defcounter {refsection}{0}\relax 
@@ -18,7 +18,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 4.1}{\ignorespaces Beispielhafte Empfangsleitungen des Feldtests}}{33}{table.4.1}
+\contentsline {table}{\numberline {\relax 4.1}{\ignorespaces Beispielhafte Empfangsleistungen des ersten Feldtests}}{33}{table.4.1}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

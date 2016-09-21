@@ -2,9 +2,9 @@
 \label{sec:Feldtest}
 \pagestyle{scrheadings}
 \section{Aufbau}
-Zur Evaluation der Basisstation wurde ein  XMC4500 Relax Kit von Infineon mit einem aufgesteckten Evaluations-Board für den TDA5340 betrieben. Mit Hilfe einer Powerbank konnte dieses mobil über den \ac{USB}-Anschluss des Relax Kit betrieben werden.
+Zur Evaluation der Basisstation wurde ein  XMC4500 Relax Kit von Infineon mit einem aufgesteckten Evaluations-Board für den TDA5340 betrieben. Mit Hilfe einer Powerbank konnte dieses mobil über den \ac{USB}-Anschluss des Relax Kits betrieben werden.
 Dieses wurde auf eine Sendefrequenz von \unit[868,0]{MHz} und eine Empfangsfrequenz von \unit[867,999]{MHz} programmiert was durch die Werte für die \ac{PLL} im TDA5340 eingestellt wurde. 
-Die Basisistation wurde mit sechs Antennen bestückt, die einen Verstärkungsfaktor von \unit[3,6]{dBi} und eine Mittenfrequenz von \unit[868]{MHz} aufwiesen. Die Basis wurde über \ac{USB} an den Computer zur Auswertung angeschlossen. Das Auslesen der durch virtuellen COM-Port übertragenen Daten erfolgte mit  PuTTY. Die Messungen fanden innerhalb des Gebäudes statt.
+Die Basisistation wurde mit sechs Antennen bestückt, die einen Verstärkungsfaktor von \unit[3,6]{dBi} und eine Mittenfrequenz von \unit[868]{MHz} aufwiesen. Die Basis wurde über \ac{USB} an den Computer zur Auswertung angeschlossen. Das Auslesen der durch den virtuellen COM-Port übertragenen Daten erfolgte mit  PuTTY. Die Messungen fanden innerhalb des Gebäudes statt.
 
 
 \section{Durchführung}
@@ -20,13 +20,14 @@ In beiden Test war die Basisstation so ausgerichtet, das TDA1 in Richtung der ge
 
 
 \section{Ergebnisse und Auswertung}
-Auffallend ist, dass zwar in jedem Test zehn Mal durch das Drücken des Tasters eine Übertragung ausgelöst wurde, jedoch öfter eine Übertragung an der Basistation registriert wurde. Im ersten Feldtest wurden fünfzehn, im zweiten sogar sechzehn gültige Übertragungen von der Basisstation an den Hostcomputer weitergegeben.Beispielhafte Werte der Ausgabe sind in Tabelle \ref{tab:gemesseneWerte} zu erkennen, die gesamte Ausgabe der Konsole ist im  Anhang \ref{app:Feldtest} eingefügt.
+Auffallend ist, dass zwar in jedem Test zehn Mal durch das Drücken des Tasters eine Übertragung ausgelöst wurde, jedoch öfter eine Übertragung an der Basistation registriert wurde. Im ersten Feldtest wurden fünfzehn, im zweiten sogar sechzehn, gültige Übertragungen von der Basisstation an den Hostcomputer weitergegeben. Beispielhafte Werte der Ausgabe sind in Tabelle \ref{tab:gemesseneWerte} zu erkennen, die gesamte Ausgabe der Konsole ist im  Anhang \ref{app:Feldtest} eingefügt. Darin ist zu erkennen, das die Empfangsleistung mit abnehmendem Abstand des Senders ansteigt, wie es zu erwarten war.
 
 
 \begin{table}
 	\centering
 	\begin{tabular}{c|ccccccc}
 		Position & Start & 4 & 7 & 11 & 13 & 14 & 15 \\ 
+		\hline
 		TDA1 & -114 & -114 & -114 & -114 & -104 & -104 & -97 \\ 
 		TDA2 & -110 & -37 & -50 & -33 & -32 & -32 & -32 \\ 
 		TDA3 & -114 & -114 & -114 & -114 & -109 & -106 & -106 \\ 
@@ -34,14 +35,14 @@ Auffallend ist, dass zwar in jedem Test zehn Mal durch das Drücken des Tasters 
 		TDA5 & -67 & -50 & -44 & -43 & -44 & -33 & -33 \\ 
 		TDA6 & -59 & -58 & -58 & -55 & -48 & -43 & -43 \\ 
 	\end{tabular} 
-	\caption[Beispielhafte Empfangsleitungen des Feldtests]{Empfangsleistungen für ausgewählte Übertragungen des ersten Feldtests. Alle dargestellten Werte sind in dBm angegeben}
+	\caption[Beispielhafte Empfangsleistungen des ersten Feldtests]{Empfangsleistungen für ausgewählte Übertragungen des ersten Feldtests. In der ersten Zeile sind die durchnummerierten Positionen des Feldtests aufgeführt, an denen die jeweilige Messung durchgeführt wurde. Alle dargestellten Werte sind in dBm angegeben}
 	\label{tab:gemesseneWerte}
 \end{table}
 
 
 Im ersten Test konnten bei der ersten Übertragung an den Transceivern eins bis vier keine Daten empfangen  werden. Erst in der darauffolgenden zweiten erkannten Übertragung wurde hier die gesendete Zahlenfolge empfangen. Bei der zweiten Übertragung, welche über die Konsole ausgegeben wurde, stimmten die Werte von TDA5 und TDA6 in allen ausgelesenen Registern mit den Messwerten der ersten Übertragung überein.  Daraus ist zu folgern, dass es sich bei diesen Werten noch um die Messungen aus dem ersten Transfer handelt. Somit wäre zu vermuten, dass durch eine leichte Verzögerung zwischen den TDA5340 der steuernde Mikrocontroller eine gemeinsame Übermittlung als zwei getrennte Übertragungen interpretiert hat.
 
-Transceiver 1 konnte in dem Test erst ab der vierten Übertragung gültige Daten empfangen. Außerdem waren die gemessenen Empfangsleistungen stets geringer als \unit[-100]{dBm}, lediglich  bei der letzten Übertragung, welche bei einem Abstand von \unit[30]{cm} stattfand, konnte hier ein Wert von \unit[-97]{dBm} gemessen werden. Da diese  sehr schwachen Empfangsleistungen in vorherigen Tests nicht auftraten, ist zu vermuten, dass etwa eine nicht richtig verbundene Antenne  Grund des schwachen Empfangswertes war.
+Transceiver 1 konnte in dem Test erst ab der vierten Übertragung gültige Daten empfangen. Außerdem waren die gemessenen Empfangsleistungen stets geringer als \mbox{\unit[-100]{dBm}}, lediglich  bei der letzten Übertragung, welche bei einem Abstand von \unit[30]{cm} stattfand, konnte hier ein Wert von \unit[-97]{dBm} gemessen werden. Da diese  sehr schwachen Empfangsleistungen in vorherigen Tests nicht auftraten, ist zu vermuten, dass etwa eine nicht richtig verbundene Antenne  Grund der schwachen Empfangswerte war.
 
 TDA3 konnte in keiner einzigen Übertragung passable Messwerte liefern. Die errechnete und ausgegebene Empfangsfeldstärke von \unit[-114]{dBm} entsprach dem minimal möglichen Ausgabewert der dafür verwendeten Funktion. Es ist also davon auszugehen, dass in diesem Transceiver nie eine Funkverbindung erkannt wurde. Gründe dafür wären ein Fehler im Anpassnetzwerk zwischen der Antenne und dem Transceiver oder ein Defekt des selbigen. Letzteres ist eher unwahrscheinlich, da eine Verbindung über \ac{SPI} mit dem \ac{IC} möglich war. Lediglich ein Teildefekt  in der RF-Sektion des Chips wäre also denkbar.
 Daneben waren vereinzelt auch noch Übertragungen zu erkennen, in denen Registerwerte mit den Messungen aus den folgenden oder vorherigen Übertragungen übereinstimmten. Auch hier ist zu vermuten, das einzelne Transceiver eine Übertragung nicht erkennen konnten. 

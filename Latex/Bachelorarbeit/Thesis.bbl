@@ -200,7 +200,7 @@
       \field{title}{{XMC4500 Reference Manual}}
       \field{year}{2014}
     \endentry
-    \entry{BuchSPI}{thesis}{}
+    \entry{BuchSPI}{misc}{}
       \name{author}{1}{}{%
         {{hash=ec6b9d0a81d58179384099537621e0a0}{%
            family={B\"{u}ch},
@@ -217,9 +217,8 @@
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{Physik- Seminar}
+      \field{howpublished}{Physik- Seminar, Universit\"{a}t Koblenz-Landau}
       \field{title}{{SPI - Serial Peripheral Interface}}
-      \field{type}{mathesis}
       \field{year}{2006}
     \endentry
   \endsortlist

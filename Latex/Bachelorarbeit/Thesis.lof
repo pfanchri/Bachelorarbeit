@@ -26,13 +26,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Blockdiagramm zur Peripherie des XMC4500 Mikrocontroller und die Anbindung an den Cortex-M4 Kern \cite {XMC-DataSheet}}}{18}{figure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Struktur eines Digitalpins des XMC Mikrocontroller \cite {XMC-Reference}}}{19}{figure.3.2}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Struktur eines Digitalpins des XMC Mikrocontrollers \cite {XMC-Reference}}}{19}{figure.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Start einer SPI-\IeC {\"U}bertragung zwischen dem Mikrocontroller und dem Transceiver}}{23}{figure.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Programmablauf der Basisstation}}{24}{figure.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Ausgabe des Mikrocontroller \IeC {\"u}ber den COM-Port in der Konsole bei einer beispielhaften \IeC {\"U}bertragung}}{29}{figure.3.5}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Ausgabe des Mikrocontrollers \IeC {\"u}ber den COM-Port in der Konsole bei einer beispielhaften \IeC {\"U}bertragung}}{29}{figure.3.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

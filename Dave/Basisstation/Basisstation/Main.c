@@ -60,14 +60,14 @@ int main(void) {
 	tda5340_init(TDA6);
 	tda5340_set_mode_and_config(TDA6, RX_MODE, 0);
 
-//	Ablaufschleife START+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//	Ablaufschleife START++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	COM_send_string("Initialisierung beendet - ");
 	uint8_t data_recieved = 0;
 	uint32_t istateTDA1 = 0, istateTDA2 = 0, istateTDA3 = 0, istateTDA4 = 0, istateTDA5 = 0, istateTDA6 = 0;
 	uint8_t lengthTDA1 = 0, lengthTDA2 = 0, lengthTDA3 = 0, lengthTDA4 = 0, lengthTDA5 = 0, lengthTDA6 = 0;
 	uint32_t transfernumber = 0;
 	uint32_t led_ctr = 0;
-	char rx_data_TDA1[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };//TODO: Test ob er auch wiklich gesetzt wird; aktuell sind vor und nach dem empfangen inhalt der variable gleich
+	char rx_data_TDA1[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };// wurde so initialisiert damit auffällt wenn keine neuen Messwerte eingetragen werden
 	char rx_data_TDA2[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };
 	char rx_data_TDA3[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };
 	char rx_data_TDA4[36] = { 1, 0, 3, 0, 5, 6, 7, 8, 9 };
@@ -95,7 +95,7 @@ int main(void) {
 	query_interruptTDA5_flag = 0;
 	query_interruptTDA6_flag = 0;
 
-//---------------------------------------------------------------
+//-----------------------------------------------------------------
 	COM_send_string("Warte auf Übertragungen\r\n");
 	while (1) {
 		if (query_interruptTDA1_flag) {
@@ -123,7 +123,7 @@ int main(void) {
 			led_on(LED3);
 			istateTDA6 = tda5340_interrupt_readout(TDA6);
 		}
-//----------------------------------------------------------------
+//-----------------------------------------------------------------
 
 		if (istateTDA1 & (1 << 1)) {
 			rssiTDA1.pmf = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPMF, 0xFF);
@@ -161,7 +161,7 @@ int main(void) {
 			rssiTDA6.agc = (tda5340_transfer(TDA6, READ_FROM_CHIP, AGCADRR, 0xFF) & 0x06) >> 1;
 			istateTDA6 &= ~(1 << 1);
 		}
-//-------------------------------------------------------------------------------
+//-----------------------------------------------------------------
 		if (istateTDA1 & (1 << 3)) {
 
 			rssiTDA1.prx = tda5340_transfer(TDA1, READ_FROM_CHIP, RSSIPRX, 0xFF);
@@ -240,7 +240,7 @@ int main(void) {
 			data_recieved = 1;
 			istateTDA6 &= ~(1 << 3);
 		}
-//-------------------------------------------------------------------------------------
+//-----------------------------------------------------------------
 		//send to COM
 		if (data_recieved) {
 			transfernumber++;
@@ -404,7 +404,7 @@ int main(void) {
 				led_off(LED7);
 		}
 	}
-//	Ablaufschleife ENDE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//	Ablaufschleife ENDE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //ab hier nur zum Testen
 //function for general test purposes
