@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  21 SEP 2016 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.29)  22 SEP 2016 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2412,6 +2412,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
+
+Underfull \vbox (badness 1603) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2420,7 +2423,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 20.
-[1
+ [1
 
 
 
@@ -2433,7 +2436,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 35.
-) (./Abschnitte/Platinenaufbau.tex
+)
+(./Abschnitte/Platinenaufbau.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2645,16 +2649,18 @@ png)
 Package pdftex.def Info: "Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC".png 
 used on input line 165.
 (pdftex.def)             Requested size: 314.68611pt x 245.73741pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 169.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 169.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 169.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 169.
 
-[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 169.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 169.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 169.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 169.
+ [10]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2670,6 +2676,9 @@ File: Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png Graphic file (type png)
 Package pdftex.def Info: Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png used 
 on input line 176.
 (pdftex.def)             Requested size: 314.68611pt x 217.67528pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 180.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2680,9 +2689,17 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 180.
  [11 <../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics.pdf>]
+Underfull \vbox (badness 2418) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 180.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 180.
+ [12 <./Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 188.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2693,7 +2710,7 @@ Package acronym Info: Label `acro:SOT' newly defined as it shall be overridden
 although it is yet undefined on input line 191.
 
 <"../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/Basi
-sstation Schematics".pdf, id=641, page=3, 831.105pt x 549.05125pt>
+sstation Schematics".pdf, id=647, page=3, 831.105pt x 549.05125pt>
 File: "../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation
 /Basisstation Schematics".pdf Graphic file (type pdf)
 
@@ -2710,18 +2727,6 @@ bindung des
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 198.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 198.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 198.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 198.
- [12 <./Abbildungen/Aufnahmen/Bilder/Altium/USB und XMC.png>]
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -2734,13 +2739,13 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 200.
 [13 <./Abbildungen/Aufnahmen/Bilder/Altium/Ethernet.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 215.
+(babel)             in language  on input line 213.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 215.
+(babel)             in language  on input line 213.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 215.
+(babel)             in language  on input line 213.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 215.
+(babel)             in language  on input line 213.
  [14 <../../Altium/mobile Basisstation/Project Outputs for mobile Basisstation/
 Basisstation Schematics.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
@@ -2802,6 +2807,9 @@ Package acronym Info: Label `acro:GUI' newly defined as it shall be overridden
 although it is yet undefined on input line 8.
 Package acronym Info: Label `acro:SDK' newly defined as it shall be overridden
 although it is yet undefined on input line 9.
+
+Underfull \vbox (badness 2237) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2810,7 +2818,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
-[17
+ [17
 
 
 ]
@@ -2827,7 +2835,8 @@ although it is yet undefined on input line 18.
 Package acronym Info: Label `acro:GPIO' newly defined as it shall be overridden
 
 although it is yet undefined on input line 18.
- <Abbildungen/XMCBlockdiagram.pdf, id=731, 327.97713pt x 227.57462pt>
+
+<Abbildungen/XMCBlockdiagram.pdf, id=731, 327.97713pt x 227.57462pt>
 File: Abbildungen/XMCBlockdiagram.pdf Graphic file (type pdf)
 
 <use Abbildungen/XMCBlockdiagram.pdf>
@@ -2945,11 +2954,6 @@ although it is yet undefined on input line 105.
 Package acronym Info: Label `acro:MISO' newly defined as it shall be overridden
 
 although it is yet undefined on input line 105.
-
-Overfull \hbox (13.77321pt too wide) in paragraph at lines 112--123
- [][] 
- []
-
 
 <"Abbildungen/Aufnahmen/Bilder/Logic Analyser/SPI_Start".png, id=857, 1044.9037
 5pt x 312.41719pt>
@@ -3154,6 +3158,8 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 24.
 [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3686,68 +3692,68 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 58.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 58.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 58.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 58.
 [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 122.
  [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 185.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 185.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 185.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 185.
  [54]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 253.
  [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 323.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 323.
  [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 392.
  [57])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 6.
@@ -3756,13 +3762,13 @@ Package babel Info: Redefining ngerman shorthand "~
 
 (../../Dave/Basisstation/Basisstation/ISRs.c
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 36.
  [58]))
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
@@ -3783,280 +3789,280 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 6.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 65.
  [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 133.
  [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 207.
+(babel)             in language  on input line 202.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 207.
+(babel)             in language  on input line 202.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 207.
+(babel)             in language  on input line 202.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 207.
+(babel)             in language  on input line 202.
  [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 271.
  [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 345.
+(babel)             in language  on input line 340.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 345.
+(babel)             in language  on input line 340.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 345.
+(babel)             in language  on input line 340.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 345.
+(babel)             in language  on input line 340.
  [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 409.
  [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 483.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 483.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 483.
+(babel)             in language  on input line 478.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 483.
+(babel)             in language  on input line 478.
  [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 553.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 553.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 553.
+(babel)             in language  on input line 547.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 553.
+(babel)             in language  on input line 547.
  [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 621.
+(babel)             in language  on input line 616.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 621.
+(babel)             in language  on input line 616.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 621.
+(babel)             in language  on input line 616.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 621.
+(babel)             in language  on input line 616.
  [68]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 690.
+(babel)             in language  on input line 685.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 690.
+(babel)             in language  on input line 685.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 690.
+(babel)             in language  on input line 685.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 690.
+(babel)             in language  on input line 685.
  [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 759.
+(babel)             in language  on input line 754.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 759.
+(babel)             in language  on input line 754.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 759.
+(babel)             in language  on input line 754.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 759.
+(babel)             in language  on input line 754.
  [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 829.
+(babel)             in language  on input line 823.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 829.
+(babel)             in language  on input line 823.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 829.
+(babel)             in language  on input line 823.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 829.
+(babel)             in language  on input line 823.
  [71]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 871.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 871.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 900.
+(babel)             in language  on input line 896.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 900.
+(babel)             in language  on input line 896.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 900.
+(babel)             in language  on input line 896.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 900.
+(babel)             in language  on input line 896.
 
 [72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 969.
+(babel)             in language  on input line 964.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 969.
+(babel)             in language  on input line 964.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 969.
+(babel)             in language  on input line 964.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 969.
+(babel)             in language  on input line 964.
  [73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1038.
+(babel)             in language  on input line 1033.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1038.
+(babel)             in language  on input line 1033.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1038.
+(babel)             in language  on input line 1033.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1038.
+(babel)             in language  on input line 1033.
  [74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1107.
+(babel)             in language  on input line 1103.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1107.
+(babel)             in language  on input line 1103.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1107.
+(babel)             in language  on input line 1103.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1107.
+(babel)             in language  on input line 1103.
  [75]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1176.
+(babel)             in language  on input line 1172.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1176.
+(babel)             in language  on input line 1172.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1176.
+(babel)             in language  on input line 1172.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1176.
+(babel)             in language  on input line 1172.
  [76]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1245.
+(babel)             in language  on input line 1240.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1245.
+(babel)             in language  on input line 1240.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1245.
+(babel)             in language  on input line 1240.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1245.
+(babel)             in language  on input line 1240.
  [77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1314.
+(babel)             in language  on input line 1309.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1314.
+(babel)             in language  on input line 1309.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1314.
+(babel)             in language  on input line 1309.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1314.
+(babel)             in language  on input line 1309.
  [78]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1383.
+(babel)             in language  on input line 1379.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1383.
+(babel)             in language  on input line 1379.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1383.
+(babel)             in language  on input line 1379.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1383.
+(babel)             in language  on input line 1379.
  [79]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1452.
+(babel)             in language  on input line 1448.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1452.
+(babel)             in language  on input line 1448.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1452.
+(babel)             in language  on input line 1448.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1452.
+(babel)             in language  on input line 1448.
  [80]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1521.
+(babel)             in language  on input line 1516.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1521.
+(babel)             in language  on input line 1516.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1521.
+(babel)             in language  on input line 1516.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1521.
+(babel)             in language  on input line 1516.
  [81]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1590.
+(babel)             in language  on input line 1585.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1590.
+(babel)             in language  on input line 1585.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1590.
+(babel)             in language  on input line 1585.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1590.
+(babel)             in language  on input line 1585.
  [82]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1659.
+(babel)             in language  on input line 1655.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1659.
+(babel)             in language  on input line 1655.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1659.
+(babel)             in language  on input line 1655.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1659.
+(babel)             in language  on input line 1655.
  [83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1728.
+(babel)             in language  on input line 1723.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1728.
+(babel)             in language  on input line 1723.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1728.
+(babel)             in language  on input line 1723.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1728.
+(babel)             in language  on input line 1723.
  [84]))
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 66.
@@ -4132,11 +4138,11 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55052 strings out of 493014
- 1210374 string characters out of 6133351
- 2176577 words of memory out of 5000000
+ 55046 strings out of 493014
+ 1210312 string characters out of 6133351
+ 2178579 words of memory out of 5000000
  54883 multiletter control sequences out of 15000+600000
- 80367 words of font info for 125 fonts, out of 8000000 for 9000
+ 80064 words of font info for 122 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  66i,18n,83p,8500b,3136s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
@@ -4157,7 +4163,7 @@ cal/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/lm/lmtt8.pfb>
-Output written on Thesis.pdf (99 pages, 2677057 bytes).
+Output written on Thesis.pdf (99 pages, 2677163 bytes).
 PDF statistics:
  4165 PDF objects out of 4296 (max. 8388607)
  3941 compressed objects within 40 object streams

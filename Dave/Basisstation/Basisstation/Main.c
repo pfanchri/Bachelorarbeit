@@ -43,7 +43,7 @@ int main(void) {
 
 
 	delay(40000);
-	tda5340_init(TDA1); //Verzoegerung nach set_TDA_status muss gros genug sein bis SPI Kom moeglich ist, delay(45000); müsste das richtige sein
+	tda5340_init(TDA1); //Verzoegerung nach set_TDA_status bis TDA in Sleepmode
 	tda5340_set_mode_and_config(TDA1, RX_MODE, 0);
 
 	delay(40000);
