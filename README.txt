@@ -1,9 +1,9 @@
 * DVD Basisstation
 * |
 * +-Altium										
-* | +-Box\
-* | +-Libraries\
-* | +-mobile Basisstation\
+* | +-Box\						-Daten zum erstellten Gehäuse in SolidWorks
+* | +-Libraries\					-importierte und selbst erstellte Altium Bibliotheken
+* | +-mobile Basisstation\				-Projektordner Altium
 * | | +-Project Outputs for mobile Basisstation\
 * | | +-Basisstation.SchDoc
 * | | +-TDA5340.SchDoc
