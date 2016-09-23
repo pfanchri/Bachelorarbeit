@@ -1,6 +1,3 @@
-# Bachelorarbeit
-
-
 * DVD Basisstation
 * |
 * +-Altium										
