@@ -1,3 +1,12 @@
+#### DVD zur Bachelorarbeit #####
+
+#################### Lehrstuhl für Technische Elektronik #################### Prof. Dr.-Ing. Dr.-Ing. habil. Robert Weigel, Prof. Dr.-Ing. Georg Fischer####################### Bachelorarbeit im Studiengang #######################          „Elektrotechnik, Elektronik und Informationstechnik (EEI)“
+#################### von Christof Pfannenmüller zum Thema ###################
+Aufbau und Inbetriebnahme einer mobilen Basisstation für feldstärkebasierteLokalisierung
+
+                  Betreuer: Dipl.-Ing. Felix Pflaum                  Beginn: 25.04.2016 Abgabe: 26.09.2016#############################################################################
+Die folgende Übersicht zeigt die enthaltenen Dateien und Verzeichnisse:
+
 * DVD Basisstation
 * |
 * +-Altium										
