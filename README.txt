@@ -1,4 +1,3 @@
-#### DVD zur Bachelorarbeit #####
 
 #################### Lehrstuhl für Technische Elektronik #################### Prof. Dr.-Ing. Dr.-Ing. habil. Robert Weigel, Prof. Dr.-Ing. Georg Fischer####################### Bachelorarbeit im Studiengang #######################          „Elektrotechnik, Elektronik und Informationstechnik (EEI)“
 #################### von Christof Pfannenmüller zum Thema ###################
