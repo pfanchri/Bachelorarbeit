@@ -1,0 +1,92 @@
+%% $Id: fixbullets.sty 64 2009-10-02 12:45:53Z aschmidt $
+%% Copyright 2009 Armin C. Schmidt <dunkelschorsch AT googlemail DOT com>
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Armin C. Schmidt.
+%
+% This work consists of all files listed in manifest.txt
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fixbullets}
+
+\ifpdf\relax
+\else
+  \defbeamertemplate*{section in toc}{circleb}
+  {\leavevmode\leftskip=2ex%
+    \llap{%
+      \usebeamerfont*{section number projected}%
+      \usebeamercolor{section number projected}%
+      \begin{pgfpicture}{-1ex}{-0.3ex}{1ex}{2ex}
+        \color{bg}
+        \pgfpathcircle{\pgfpoint{-0.4pt}{.65ex}}{1.5ex}
+        \pgfusepath{fill}
+        \pgftext[base]{\color{fg}\inserttocsectionnumber}
+      \end{pgfpicture}\kern1.25ex%
+    }%
+    \inserttocsection\par}
+
+  \defbeamertemplate{itemize item}{circleb}{\lower1.9pt\hbox{\resizebox{!}{8pt}{\textbullet}}}
+  \defbeamertemplate{itemize subitem}{circleb}{\lower1.9pt\hbox{\resizebox{!}{6pt}{\textbullet}}}
+  \defbeamertemplate{itemize subsubitem}{circleb}{\raise0.5pt\hbox{\textbullet}}
+
+  \defbeamertemplate{enumerate item}{circleb}
+  {
+    \usebeamerfont*{item projected}%
+    \usebeamercolor[bg]{item projected}%
+    \begin{pgfpicture}{-1ex}{-0.3ex}{1ex}{2ex}
+      \pgfpathcircle{\pgfpoint{-0.2pt}{.7ex}}{1.2ex}
+      \pgfusepath{fill}
+      \pgftext[base]{\color{fg}\insertenumlabel}
+    \end{pgfpicture}%
+  }
+  [action]
+  {\setbeamerfont{item projected}{size=\scriptsize}}
+
+  \defbeamertemplate{enumerate subitem}{circleb}
+  {
+    \usebeamerfont*{subitem projected}%
+    \usebeamercolor[bg]{subitem projected}%
+    \begin{pgfpicture}{-1ex}{-0.3ex}{1ex}{2ex}
+      \pgfpathcircle{\pgfpoint{-0.2pt}{.7ex}}{1.2ex}
+      \pgfusepath{fill}
+      \pgftext[base]{\color{fg}\insertsubenumlabel}
+    \end{pgfpicture}%
+  }
+
+  \defbeamertemplate{enumerate subsubitem}{circleb}
+  {
+    \usebeamerfont*{subsubitem projected}%
+    \usebeamercolor[bg]{subsubitem projected}%
+    \begin{pgfpicture}{-1ex}{-0.3ex}{1ex}{2ex}
+      \pgfpathcircle{\pgfpoint{-0.2pt}{.7ex}}{1.2ex}
+      \pgfusepath{fill}
+      \pgftext[base]{\color{fg}\insertsubsubenumlabel}
+    \end{pgfpicture}%
+  }
+
+  \defbeamertemplate{enumerate mini template}{circleb}
+  {
+    \usebeamerfont*{\beameritemnestingprefix item projected}%
+    \usebeamercolor[bg]{\beameritemnestingprefix item projected}%
+    \begin{pgfpicture}{-1ex}{0ex}{1ex}{2ex}
+      \pgfpathcircle{\pgfpoint{-0.4pt}{.7ex}}{1.2ex}
+      \pgfusepath{fill}
+      \pgftext[base]{\color{fg}\insertenumlabel}
+    \end{pgfpicture}%
+  }
+
+  \defbeamertemplatealias{subsection in toc}{circleb}{circle}
+  \defbeamertemplatealias{subsubsection in toc}{circleb}{circle}
+
+  \setbeamertemplate{items}[circleb]
+  \setbeamertemplate{sections/subsections in toc}[circleb]
+\fi

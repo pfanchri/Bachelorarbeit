@@ -1,0 +1,146 @@
+
+% -----------------------------------------------------------------------------
+% LaTeX 4Beamer Slide Template Institute for technical electrics
+% -----------------------------------------------------------------------------
+
+
+% -------------Preamble--------------------------------------------------------
+
+\documentclass{beamer}
+% include usepackages
+\input{input/use}
+
+% set the path for figures (save Pictures in /graphics and call it directly
+\graphicspath{{graphics/}}
+
+% ---------Data for Titlepage--------------------------------------------------
+
+% Title of Presentation
+\title[Kurzform Titel]{Hier steht der Titel}
+% Subtitle of Presentation
+\subtitle{Untertitel}
+% Authors
+\author[Kurzform der Autoren]{Hier die Autoren}
+% Affiliation
+\institute[Kurzform]{Zugehörigkeit}
+% Date (not in use)
+%\date{13. April 2016}
+
+
+% Titlepage at the beginning and end of the presentation
+\AtBeginDocument{\titleframe}
+\AtEndDocument{\titleframe}
+
+
+
+
+% -----------------------------------------------------------------------------
+% Beginn Document
+% -----------------------------------------------------------------------------
+
+
+\begin{document}
+
+% Table of Contents
+\begin{frame}
+	\frametitle{Übersicht/Content}
+	\tableofcontents[pausesections]
+\end{frame}
+
+
+% -------------Section 1------------------------------------------------------
+
+\section{First Section}
+
+
+\begin{frame}
+\frametitle{Page with Title}
+\end{frame}
+
+\begin{frame}
+Page without Title
+\end{frame}
+
+
+% -------------Section 2------------------------------------------------------
+
+\section{Second Section}
+
+% Subsection
+\subsection{Minipage}
+
+\begin{frame}
+\frametitle{Minipage}
+\begin{minipage}{0.45\textwidth}
+	Left side
+\end{minipage}	
+\hfill
+\begin{minipage}{0.49\textwidth}
+	\includegraphics[width=\textwidth]{Beispiel}
+\end{minipage}
+\end{frame}
+
+% Subsection
+\subsection{Columns}
+
+\begin{frame}
+\frametitle{Columns}
+\begin{columns}	
+	\begin{column}[c]{0.6\textwidth}
+
+		\Large\textbf{Left side}\\
+	
+	\end{column}
+
+	\begin{column}[c]{0.4\textwidth}
+
+		\Large\textbf{Right side}\\
+		
+	\end{column}
+\end{columns}
+\vspace{1.5cm}
+Below
+
+Listing:
+\begin{itemize}
+	\item First item
+	\item second item
+\end{itemize}
+\end{frame}
+
+
+% -------------Section 3------------------------------------------------------
+
+\section{Third Section}
+
+\begin{frame}
+	\begin{minipage}{0.45\textwidth}
+	\textbf{Auflistung}
+	\begin{enumerate}
+		\item Punkt 1
+		\item Punkt 2
+		\item Punkt 3
+	\end{enumerate}
+\end{minipage}	
+\hfill
+\begin{minipage}{0.49\textwidth}
+	\includegraphics[width=\textwidth]{Beispiel}
+\end{minipage}
+\end{frame}
+
+
+
+
+\begin{frame}[plain]
+\centering
+\hfill
+\hfill\\
+
+
+\centering
+\huge Vielen Dank für Ihre Aufmerksamkeit!
+\end{frame}
+
+
+
+\end{document}

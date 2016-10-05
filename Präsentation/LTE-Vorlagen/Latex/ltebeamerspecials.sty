@@ -1,0 +1,121 @@
+%% $Id: lmkbeamerspecials.sty 83 2010-02-18 10:09:37Z aschmidt $
+%% Copyright 2010 Armin C. Schmidt <dunkelschorsch AT googlemail DOT com>
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Armin C. Schmidt.
+%
+% This work consists of all files listed in manifest.txt
+
+
+% -----------------------------------------------------------------------------
+% LaTeX Beamer Folienvorlage des Lehrstuhl Mobilkommunikation
+% -----------------------------------------------------------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ltebeamerspecials}
+
+\addto\extrasngerman{%
+  \def\titlename{Titel}%
+  \def\outlinename{Inhalt}%
+  \def\chairname{Lehrstuhl f\"{u}r Technische Elektronik}%
+  \def\universityname{Universit\"{a}t Erlangen-N\"{u}rnberg}%
+}
+\addto\extrasenglish{%
+  \def\titlename{Title}%
+  \def\outlinename{Outline}%
+  \def\chairname{Institute for Technical Electronics}%
+  \def\universityname{University of Erlangen-N\"{u}rnberg}%
+}
+
+
+% automatic toc creation for the title frame
+\newif{\ifhastitleframe}
+\hastitleframefalse
+\newcommand*{\titleframe}{%
+    \ifhastitleframe%
+      \@empty
+    \else
+      \pdfbookmark[2]{\titlename}{titleframe}
+      \hastitleframetrue
+    \fi
+    \frame[plain]{%
+        \titlepage%
+    }%
+}
+
+\newcommand*{\outlineframe}[1][]{%
+  \begin{frame}{\outlinename}
+    \pdfbookmark[2]{\outlinename}{outline}
+    \tableofcontents[#1]
+  \end{frame}
+}
+
+% special treatment of the appendix
+\def\insertlastframe{1}
+\newif{\ifappendix}
+\appendixfalse
+\let\@origappendix\appendix%
+\renewcommand*{\appendix}{%
+  \immediate\write\@auxout{\string\@writefile{nav}%
+    {\noexpand\headcommand{\noexpand\def\noexpand\insertlastframe{\the\c@framenumber}}}}
+  \appendixtrue\@origappendix
+}
+
+\AtEndDocument{%
+  \ifappendix\@empty%
+  \else%
+    \immediate\write\@auxout{\string\@writefile{nav}%
+      {\noexpand\headcommand{\noexpand\def\noexpand\insertlastframe{\the\c@framenumber}}}}%
+  \fi%
+}
+
+\newlength{\beamer@textshadow@offset@x}
+\newlength{\beamer@textshadow@offset@y}
+
+\newsavebox{\beamer@tmpboxa}
+\newsavebox{\beamer@tmpboxb}
+
+\newcommand{\shadowtext}[1]{%
+    \setlength{\beamer@textshadow@offset@x}{0.05em}%
+    \setlength{\beamer@textshadow@offset@y}{0.05ex}%
+    % shadow
+    \savebox{\beamer@tmpboxa}[\textwidth][c]{%
+        \hspace{0.5\beamer@textshadow@offset@x}%
+        \parbox[t]{\textwidth}{\usebeamercolor[fg]{text shadow}#1}%
+        \hspace{-0.5\beamer@textshadow@offset@x}%
+    }%
+    % actual text
+    \savebox{\beamer@tmpboxb}[\textwidth][c]{%
+        \hspace{-0.5\beamer@textshadow@offset@x}%
+        \parbox[t]{\textwidth}{\usebeamercolor[fg]{}#1}% that's a weird workaround
+        \hspace{0.5\beamer@textshadow@offset@x}%
+    }%
+    % shadow
+     \raisebox{-0.5\beamer@textshadow@offset@y}{%
+         \usebox{\beamer@tmpboxa}%
+     }%
+    % text
+     \llap{%
+        \raisebox{0.5\beamer@textshadow@offset@y}{%
+            \hspace{-0.5\beamer@textshadow@offset@x}\usebox{\beamer@tmpboxb}%
+        }%
+     }%
+}
+
+\newcommand*{\shadowtextline}[2][gray]{%
+    \setlength{\beamer@textshadow@offset@x}{0.05em}%
+    \setlength{\beamer@textshadow@offset@y}{0.05ex}%
+%
+    \hspace{\beamer@textshadow@offset@x}%
+    \raisebox{-\beamer@textshadow@offset@y}{\usebeamercolor[fg]{text shadow}#2}%
+    \hspace{-\beamer@textshadow@offset@x}%
+    \llap{#2}%
+}

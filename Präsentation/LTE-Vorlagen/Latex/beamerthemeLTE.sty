@@ -1,0 +1,147 @@
+
+
+
+\mode<presentation>
+
+\DeclareOptionBeamer{hideframetotal}[true]{\PassOptionsToPackage{hideframetotal=#1}{beamerouterthemeLTE}}
+\DeclareOptionBeamer{numberedsections}[false]{\PassOptionsToPackage{numberedsections=#1}{beamerouterthemeLTE}}
+
+\ProcessOptionsBeamer
+
+\newcommand*{\@setupframenumberswidth}{
+    \settowidth{\beamer@framenumbers@width}{%
+    \usebeamerfont*{footline}%
+    \ifbeamer@theme@hideframetotal%
+        \resizebox{!}{0.6em}{\shadowtextline{\insertlastframe}}%
+    \else%
+        \resizebox{!}{0.6em}{\shadowtextline{\insertlastframe\,/\,\insertlastframe}}%
+    \fi%
+  }%
+}
+
+\let\lmk@originaldocument\document
+\renewcommand*{\document}{\lmk@originaldocument\@setupframenumberswidth}
+
+\RequirePackage{ragged2e}
+\RequirePackage{hyphenat}
+\RequirePackage{ifpdf}
+\RequirePackage{calc}
+\RequirePackage{fixbullets}
+
+\RequirePackage{ltebeamerspecials}
+\usecolortheme{lte}
+\usefonttheme{lte}
+\useinnertheme[shadow]{rounded}
+\useoutertheme{lte}
+
+\beamertemplatetransparentcovereddynamic
+\beamertemplatenavigationsymbolsempty
+
+
+\newcommand*{\beamer@titlepage@gradient@height}{0.3mm}
+\pgfdeclarehorizontalshading{beamer@titlepage@gradient@yellow}{\beamer@titlepage@gradient@height}{%
+    color(0mm)=(white);%
+    color(0.15\paperwidth)=(shading main);%
+    color(0.5\paperwidth)=(white)%
+}
+\pgfdeclarehorizontalshading{beamer@titlepage@gradient@blue}{\beamer@titlepage@gradient@height}{%
+    color(0mm)=(white);%
+    color(0.35\paperwidth)=(shading main);%
+    color(0.7\paperwidth)=(white)%
+}
+
+
+
+\pgfdeclareimage[width=\paperwidth]{Back}{graphics/theme/logo_oben2.pdf}
+\pgfdeclareimage[height=0.5\beamer@logocoop@height]{logoCOOP}{graphics/theme/logoCOOP.jpg}
+
+\defbeamertemplate*{title page}{LTE theme}{%
+    \newcount\@temp@hbadness%
+    \@temp@hbadness=\hbadness%
+    \hbadness=10000%
+
+    \begin{pgfpicture}   
+			\pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{-\beamer@headline@height}}
+			\pgfusepath{use as bounding box}
+    
+			
+			
+			\pgftext[at=\pgfpoint{\paperwidth-1cm}{-\paperheight+3.2cm}, bottom, right]{\pgfuseimage{Back}}
+			
+			\pgftext[at=\pgfpoint{\paperwidth-7.7cm}{2.05cm}, bottom, left]{\pgfuseimage{logoCOOP}}
+			
+			\pgftext[at=\pgfpoint{0.5\textwidth}{0},top, center]{%
+			\begin{beamercolorbox}[dp=0.5ex,wd=0.92				\textwidth, center]{title}% 
+			\usebeamerfont*{title}
+			\usebeamercolor[fg]{titlelike}
+		\inserttitle
+		\end{beamercolorbox}}
+		\pgftext[at=\pgfpoint{0.5\textwidth}{-1cm},top, center]{%
+			\begin{beamercolorbox}[dp=0.5ex,wd=0.92				\textwidth, center]{subtitle}% 
+			\usebeamerfont*{subtitle}
+			\usebeamercolor[fg]{titlelike}
+		\insertsubtitle
+		\end{beamercolorbox}}
+			\pgftext[at=\pgfpoint{0.5\textwidth}{-4cm},top, center]{%
+			\begin{beamercolorbox}[dp=0.5ex,wd=0.92				\textwidth, center]{author}% 
+			\usebeamerfont*{author}
+		\insertauthor
+		\end{beamercolorbox}}
+		\pgftext[at=\pgfpoint{0.5\textwidth}{-5cm},top, center]{%
+			\begin{beamercolorbox}[dp=0.5ex,wd=0.92				\textwidth, center]{institute}% 
+			\usebeamerfont*{institute}
+		\insertinstitute
+		\end{beamercolorbox}}
+		\end{pgfpicture}
+		%\vspace{-1cm}
+    %\usebeamerfont*{title}%
+    %{%
+        %\usebeamercolor[fg]{titlelike}%
+        %\hfill\shadowtext{\centering\nohyphens\inserttitle}%
+    %}\par%
+%%
+    %\ifx\insertsubtitle\@empty%
+        %\vspace{0.4\baselineskip}%
+    %\else%
+        %\vspace{1cm}%
+        %\usebeamerfont*{subtitle}%
+        %{%
+            %\usebeamercolor[fg]{titlelike}%
+            %\hfill\parbox[t]{\textwidth}{\centering\nohyphens{\insertsubtitle}}%
+        %}\par%
+        %\vspace{-0.4\baselineskip}%
+    %\fi%
+		%\vspace{3cm}
+		%\centering
+		%%\ifx\insertauthor\@empty
+				%%\vspace{0.4\baselineskip}
+		%%\else
+				%\vspace{1em}
+				%\usebeamerfont*{author}{
+				%\insertauthor}\\
+		%%\fx
+		%%\ifx\insertinstitute\@empty
+				%%\vspace{0.4\baselineskip}
+		%%\else
+				%\vspace{0.8em}
+				%\usebeamerfont*{institute}{
+				%\insertinstitute}
+    %\fx
+    %\hfill\pgfuseshading{beamer@titlepage@gradient@blue}~\\[8mm]
+    %\vbox{%
+		%\includegraphics[width=0.2\textwidth]{graphics/theme/LogoCOOP}%
+		%\hfill%
+		%\raggedleft
+		%\usebeamerfont*{date}\usebeamercolor[fg]{date}\insertdate\\
+		%\raggedright
+		%\begin{pgfpicture}
+		%\pgftext[at=\pgfpoint{0}{-7cm}]{\pgfuseimage{logoCOOP}}
+		%\end{pgfpicture}
+		%\vfill
+		%\includegraphics[width=0.2\textwidth]{graphics/theme/LogoCOOP}
+		%\vspace*{-1.2cm}
+    \addtocounter{framenumber}{-1}
+    \hbadness=\@temp@hbadness
+}
+
+\mode<all>

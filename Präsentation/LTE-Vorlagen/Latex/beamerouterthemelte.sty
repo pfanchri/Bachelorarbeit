@@ -1,0 +1,306 @@
+
+
+
+\mode<presentation>
+
+\newif\ifbeamer@theme@hideframetotal
+\beamer@theme@hideframetotalfalse
+\newif\ifbeamer@theme@numberedsections
+\beamer@theme@numberedsectionsfalse
+
+\DeclareOptionBeamer{hideframetotal}{\csname beamer@theme@hideframetotal#1\endcsname}
+\DeclareOptionBeamer{numberedsections}{\csname beamer@theme@numberedsections#1\endcsname}
+
+\ProcessOptionsBeamer
+
+% global lengths ---------------------------------------------------------------
+\newlength{\beamer@headline@height}
+\setlength{\beamer@headline@height}{%
+    0.75\baselineskip%
+}
+\newlength{\beamer@footline@height}
+\setlength{\beamer@footline@height}{%
+    0.8\baselineskip%
+}
+\newlength{\beamer@frametitle@height}
+\setlength{\beamer@frametitle@height}{%
+    1.2\baselineskip%
+}
+% ------------------------------------------------------------------------------
+
+% size and position for the logos -----------------------------------------------
+\newlength{\beamer@logocoop@height}
+\pgfmathsetlength{\beamer@logocoop@height}{%
+    1.8\beamer@footline@height%
+}
+\newlength{\beamer@logo@height}
+\pgfmathsetlength{\beamer@logo@height}{%
+    2\beamer@headline@height%
+}
+\pgfmathsetlengthmacro{\beamer@logo@x}{%
+    0.5\textwidth%
+}
+\pgfmathsetlengthmacro{\beamer@logo@y}{%
+   0.5\beamer@logocoop@height-\paperheight%
+}
+\newcommand*{\beamer@logo@point}{%
+    \pgfpoint{\beamer@logo@x}{\beamer@logo@y}%
+}
+
+% and the logo itself...
+
+% logo for cooperation
+
+\pgfmathsetlengthmacro{\beamer@logocoop@x}{%
+      6.5\beamer@logocoop@height%
+}
+\pgfmathsetlengthmacro{\beamer@logocoop@y}{%
+   0.8\beamer@logocoop@height-\paperheight%
+}
+\newcommand*{\beamer@logocoop@point}{%
+    \pgfpoint{\beamer@logocoop@x}{\beamer@logocoop@y}%
+}
+\pgfmathsetlengthmacro{\beamer@logofau@x}{%
+      2.2\beamer@logocoop@height%
+}
+\pgfmathsetlengthmacro{\beamer@logofau@y}{%
+   0.8\beamer@logocoop@height-\paperheight%
+}
+\newcommand*{\beamer@logofau@point}{%
+    \pgfpoint{\beamer@logofau@x}{\beamer@logofau@y}%
+}
+\pgfdeclareimage[height=\beamer@logocoop@height]{LogoLTEsmall}{graphics/theme/LogoLTE.pdf}
+% and the logo itself...
+\pgfdeclareimage[height=0.4\beamer@logocoop@height]{LogoCOOPsmall}{graphics/theme/LogoCOOP.jpg}
+%
+
+\pgfdeclareimage[height=\beamer@logocoop@height]{FAU}{graphics/theme/FAU.pdf} 
+
+%------------------------------------------------------------------------------
+
+% lengths used in the headline -------------------------------------------------
+\newcommand*{\beamer@headline@lmargin}{1.5em}
+\newcommand*{\beamer@headline@circle@radius}{0.2em}
+\newcommand*{\beamer@headline@circle@distance@totext}{1.5em}
+
+\pgfmathsetlengthmacro{\beamer@headline@circle@distance}{%
+    1.5 * \beamer@headline@circle@radius%
+}
+% these two are just temporaries
+\newlength{\beamer@headline@section@width}
+\newlength{\beamer@headline@nextdist}
+% ------------------------------------------------------------------------------
+
+
+% lengths used in the footline -------------------------------------------------
+\newlength{\beamer@framenumbers@width}
+% \AtBeginDocument{%
+%   \settowidth{\beamer@framenumbers@width}{%
+%     \usebeamerfont*{footline}\shadowtextline{\inserttotalframenumber\,/\,\inserttotalframenumber}
+%   }%
+% }
+% ------------------------------------------------------------------------------
+
+% gradients and fading separator lines -----------------------------------------
+\pgfdeclarehorizontalshading{beamer@gradient@top}{\beamer@headline@height}{%
+    color(0mm)=(shading main);%
+    color(0.75\paperwidth)=(white)%
+}
+\pgfdeclarehorizontalshading{beamer@gradient@bottom}{\beamer@footline@height}{%
+    color(0.58\paperwidth)=(white);%
+    color(\paperwidth)=(shading main)%
+}
+\pgfdeclarehorizontalshading{beamer@fadingline@short}{0.1pt}{%
+    color(0\paperwidth)=(black);%
+    color(0.80\paperwidth)=(white)%
+}
+\pgfdeclarehorizontalshading{beamer@fadingline@long}{0.1pt}{%
+    color(0\paperwidth)=(black);%
+    color(0.80\paperwidth)=(white)%
+}
+\pgfdeclarehorizontalshading{beamer@fadingline@foot}{0.1pt}{%
+    color(0.55\paperwidth)=(white);%
+    color(\paperwidth)=(black)%
+}
+% ------------------------------------------------------------------------------
+
+
+\defbeamertemplate*{headline}{LTE theme}{%
+  \ifbeamer@theme@numberedsections%
+    \let\originsertsectionhead\insertsectionhead%
+    \renewcommand*{\insertsectionhead}{%
+        \ifx\originsertsectionhead\@empty%
+        \else\shadowtextline{\thesection.~\originsertsectionhead}%
+        \fi%
+    }%
+  \fi
+    \settowidth{\beamer@headline@section@width}{\insertsectionhead}
+    \begin{pgfpicture}
+        % define the bounding box to have an exact size ------------------------
+        \pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{-\beamer@headline@height}}
+        \pgfusepath{use as bounding box}
+        % ----------------------------------------------------------------------
+        %
+        % draw the gradient
+        \pgftext[top,left]{%
+            \pgfuseshading{beamer@gradient@top}%
+        }
+        % draw the separator line
+        \pgftext[at=\pgfpoint{0mm}{-\beamer@headline@height},left]{%
+            \pgfuseshading{beamer@fadingline@short}%
+        }
+        % put the section title into a box on the left
+        \pgftext[at=\pgfpoint{\beamer@headline@lmargin}{-0.55\beamer@headline@height},left,center]{%
+            \begin{beamercolorbox}[dp=0.5ex]{section in head/foot}
+                \insertsectionhead
+            \end{beamercolorbox}
+        }
+        % ----------------------------------------------------------------------
+       
+        % if there is no subsection defined, we're through
+        \ifx\insertsubsectionhead\@empty%
+        \else%
+            % draw three circles -----------------------------------------------
+            \pgfmathsetlength{\beamer@headline@nextdist}{%
+                \beamer@headline@lmargin%
+                + \beamer@headline@section@width%
+                + \beamer@headline@circle@distance@totext%
+            }
+            % number one
+            \pgfpathcircle{%
+                \pgfpoint{%
+                    \beamer@headline@nextdist%
+                }{%
+                    -0.52\beamer@headline@height%
+                }%
+            }{\beamer@headline@circle@radius}
+            % fill it
+            \pgfsetfillcolor{circle 1}
+            \pgfusepath{fill}
+            % number two
+            \pgfmathaddtolength{\beamer@headline@nextdist}{\beamer@headline@circle@distance}
+            \pgfpathcircle{%
+                \pgfpoint{%
+                    \beamer@headline@nextdist%
+                }{%
+                    -0.52\beamer@headline@height%
+                }%
+            }{\beamer@headline@circle@radius}
+            % fill it
+            \pgfsetfillcolor{circle 2}
+            \pgfusepath{fill}
+            % number three
+            \pgfmathaddtolength{\beamer@headline@nextdist}{\beamer@headline@circle@distance}
+            \pgfpathcircle{%
+                \pgfpoint{%
+                    \beamer@headline@nextdist%
+                }{%
+                    -0.52\beamer@headline@height%
+                }%
+            }{\beamer@headline@circle@radius}
+            % fill it
+            \pgfsetfillcolor{circle 3}
+            \pgfusepath{fill}
+            
+						% ------------------------------------------------------------------
+            %
+            % and finally, put the subsection name to the right of the third circle
+            \pgfmathaddtolength{\beamer@headline@nextdist}{\beamer@headline@circle@distance@totext}
+            \pgftext[at=\pgfpoint{\beamer@headline@nextdist}{-0.55\beamer@headline@height},left,center]{%
+                \begin{beamercolorbox}[dp=0.5ex]{subsection in head/foot}%
+                    \shadowtextline{\insertsubsectionhead}%
+                \end{beamercolorbox}%
+            }
+					
+        \fi%
+    \end{pgfpicture}
+}
+
+
+\defbeamertemplate*{frametitle}{LTE theme}{%
+    \hspace*{-\beamer@leftmargin}% <- you don't delete that one, do you?
+    \begin{pgfpicture}
+        % define the bounding box to have an exact size ------------------------
+        \pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{-\beamer@frametitle@height}}
+        \pgfusepath{use as bounding box}
+        % ----------------------------------------------------------------------
+        %
+        % draw the separator line
+        \pgftext[at=\pgfpoint{0mm}{-\beamer@frametitle@height},left]{%
+            \pgfuseshading{beamer@fadingline@long}%
+        }
+        % insert the frame title
+        \pgftext[at=\pgfpoint{0.5\beamer@leftmargin}{-0.15\beamer@frametitle@height},left,top]{%
+            \usebeamerfont{frametitle in head/foot}\shadowtextline{\insertframetitle}%
+        }
+    \end{pgfpicture}%
+    \hspace*{-\beamer@rightmargin}%
+}
+
+
+\defbeamertemplate*{footline}{LTE theme}{%
+    \begin{pgfpicture}
+        % define the bounding box to have an exact size ------------------------
+        \pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{-\beamer@footline@height}}
+        \pgfusepath{use as bounding box}
+        % ----------------------------------------------------------------------
+        %
+        % draw the gradient
+        \pgftext[at=\pgfpointorigin,top,left]{%
+            \pgfuseshading{beamer@gradient@bottom}%
+        }
+        % draw the fading line
+        \pgftext[at=\pgfpointorigin,left]{%
+            \pgfuseshading{beamer@fadingline@foot}%
+        }
+				
+        % put author and title into a box in the center ---------------------
+        %\pgftext[at=\pgfpoint{\paperwidth}{-0.6\beamer@footline@height},right]{%
+            %\begin{beamercolorbox}[dp=0.5ex,left,wd=0.8\paperwidth]{title in head/foot}%
+								%\ifx\insertshortauthor\@empty%
+                    %\ifx\insertshorttitle\@empty%
+                    %\else% only title given
+                        %\usebeamerfont{title in head/foot}\insertshorttitle%
+                    %\fi%
+                %\else% author given
+                    %\usebeamerfont{author in head/foot}\insertshortauthor%
+                    %\ifx\insertshorttitle\@empty%
+                    %\else% author and title given
+                        %\usebeamerfont{title in head/foot}~--~\insertshorttitle%
+                    %\fi%
+                %\fi%
+            %\end{beamercolorbox}%
+        %}
+        % put the frame number into a box on the right side --------------------
+        \pgftext[at=\pgfpoint{\paperwidth - \beamer@framenumbers@width}{-0.55\beamer@footline@height},right]{%
+        \resizebox{!}{0.6em}{%
+          \usebeamerfont*{footline}
+          \ifappendix
+            \shadowtextline{\insertframenumber}%
+          \else
+            \ifbeamer@theme@hideframetotal
+              \shadowtextline{\insertframenumber}%
+            \else
+              \shadowtextline{\insertframenumber}%
+            \fi
+          \fi}%
+        }
+        % ----------------------------------------------------------------------
+				\pgftext[at=\pgfpoint{0.8\beamer@footline@height}{0.2\beamer@footline@height},left]{%
+            \pgfuseimage{FAU}%
+        }
+				 % draw the logo
+        \pgftext[at=\pgfpoint{0.5\paperwidth}{0.2\beamer@footline@height},center]{%
+            \pgfuseimage{LogoLTEsmall}%
+        }
+        %
+					% draw the cooperation logo
+				\pgftext[at=\pgfpoint{3.2cm}{0.2\beamer@footline@height},left]{%
+            \pgfuseimage{LogoCOOPsmall}%
+        }
+				
+    \end{pgfpicture}
+}
+
+\mode
+<all>

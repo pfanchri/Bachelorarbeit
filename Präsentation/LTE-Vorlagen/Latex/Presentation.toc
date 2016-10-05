@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{First Section}{5}{0}{1}
+\beamer@sectionintoc {2}{Second Section}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Minipage}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Columns}{8}{0}{2}
+\beamer@sectionintoc {3}{Third Section}{9}{0}{3}
